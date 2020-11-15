@@ -1,0 +1,1673 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b7fdba8be84f457abd2fba0d0ccbfd8c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b7fdba8be84f457abd2fba0d0ccbfd8c" ></div>
+        
+</body>
+<script>    
+    
+            var map_b7fdba8be84f457abd2fba0d0ccbfd8c = L.map(
+                "map_b7fdba8be84f457abd2fba0d0ccbfd8c",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_b7fdba8be84f457abd2fba0d0ccbfd8c);
+
+            
+
+        
+    
+            var tile_layer_35815832c74d463c9029d31784f7d8d1 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b7fdba8be84f457abd2fba0d0ccbfd8c);
+        
+    
+            var tile_layer_bec3682809624323834f354b5659c230 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b7fdba8be84f457abd2fba0d0ccbfd8c);
+        
+    
+            var marker_cluster_ec714f111b4a4506a7f60fa0e401e83a = L.markerClusterGroup(
+                {}
+            );
+            map_b7fdba8be84f457abd2fba0d0ccbfd8c.addLayer(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+            var marker_3049fd2306234cba8c2707a98a1cb867 = L.marker(
+                [8.466667, -83.583333],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_c91a3671725d497f885e6abb23ed7254 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8645099e8be431da28ae4aba2d22f89 = $(`<div id="html_a8645099e8be431da28ae4aba2d22f89" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Corcovado,  Llorona to Los Planes <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1989-03-01 <strong>Recolectores:</strong> Kernan, C.; Phillips, Pamela <strong>Identificadores:</strong> Gómez, Jiménez & Zamora</div>`)[0];
+            popup_c91a3671725d497f885e6abb23ed7254.setContent(html_a8645099e8be431da28ae4aba2d22f89);
+        
+
+        marker_3049fd2306234cba8c2707a98a1cb867.bindPopup(popup_c91a3671725d497f885e6abb23ed7254)
+        ;
+
+        
+    
+    
+            var marker_dc48b5192f7744808f66126c2a545f45 = L.marker(
+                [8.42, -83.33],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_67181ed9ac3443378f8c95ec13d06f0a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f9cfd384e3314c0b8e5baf38f228ce28 = $(`<div id="html_f9cfd384e3314c0b8e5baf38f228ce28" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Osa, 3 km N de playa Piro, 24 km Sur de Puerto Jiménez. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1989-03-28 <strong>Recolectores:</strong> Q. Jiménez Madrigal & B. Jaen <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_67181ed9ac3443378f8c95ec13d06f0a.setContent(html_f9cfd384e3314c0b8e5baf38f228ce28);
+        
+
+        marker_dc48b5192f7744808f66126c2a545f45.bindPopup(popup_67181ed9ac3443378f8c95ec13d06f0a)
+        ;
+
+        
+    
+    
+            var marker_82a71d5837344f62897339d1cb6172ad = L.marker(
+                [9.6917, -84.3708],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_794fa1b3e63e4c58bc9d086ac818ae2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f124c3a151e4836bdebca2ae6936589 = $(`<div id="html_0f124c3a151e4836bdebca2ae6936589" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Puriscal, Z. P. La Cangreja, Cuenca del Río Negro, Mastatal de Puriscal, Ribera Quebrada Grande. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1993-06-14 <strong>Recolectores:</strong> Q. Jiménez Madrigal & Collector unknown <strong>Identificadores:</strong> Jiménez M., Q.</div>`)[0];
+            popup_794fa1b3e63e4c58bc9d086ac818ae2d.setContent(html_0f124c3a151e4836bdebca2ae6936589);
+        
+
+        marker_82a71d5837344f62897339d1cb6172ad.bindPopup(popup_794fa1b3e63e4c58bc9d086ac818ae2d)
+        ;
+
+        
+    
+    
+            var marker_8eab543a2b5c4a17956867c3b2e4ba3b = L.marker(
+                [8.42, -83.4],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_5b56a319d2fe46d0983bc2ce6c13ad7a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41da059ed38149038f7da5e6c0d8732b = $(`<div id="html_41da059ed38149038f7da5e6c0d8732b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Osa, 3 km N de Playa Piro, Pueto Jiménez, Finca Asunción Espuivel. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1989-02-22 <strong>Recolectores:</strong> Q. Jiménez Madrigal, E. Vargas & J. J. Jiménez <strong>Identificadores:</strong> Jiménez M., Q.</div>`)[0];
+            popup_5b56a319d2fe46d0983bc2ce6c13ad7a.setContent(html_41da059ed38149038f7da5e6c0d8732b);
+        
+
+        marker_8eab543a2b5c4a17956867c3b2e4ba3b.bindPopup(popup_5b56a319d2fe46d0983bc2ce6c13ad7a)
+        ;
+
+        
+    
+    
+            var marker_a2c759a9f9a2482aab222f2452f21bce = L.marker(
+                [8.6333, -83.7167],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_76147c0687044ffeb60f53efd3c5a028 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f9747349150d40be839e3786500d77f8 = $(`<div id="html_f9747349150d40be839e3786500d77f8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce, Peninsula de Osa. <strong>Elevación:</strong> 55.0 m  <strong>Fecha:</strong> 1993-03-14 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_76147c0687044ffeb60f53efd3c5a028.setContent(html_f9747349150d40be839e3786500d77f8);
+        
+
+        marker_a2c759a9f9a2482aab222f2452f21bce.bindPopup(popup_76147c0687044ffeb60f53efd3c5a028)
+        ;
+
+        
+    
+    
+            var marker_363b3bcefff145e6b5ec07246ad67a45 = L.marker(
+                [8.525, -83.4667],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_2b5b968ee9f04489a0f183328f6e1b09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_066cc63916a64208a632f180bc1ebea0 = $(`<div id="html_066cc63916a64208a632f180bc1ebea0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Corcovado Cerro Rincón, Dos Brazos de Río Tigre. <strong>Elevación:</strong> 745.0 m  <strong>Fecha:</strong> 1990-08-01 <strong>Recolectores:</strong> G. Herrera Ch. <strong>Identificadores:</strong> Jiménez M., Q.</div>`)[0];
+            popup_2b5b968ee9f04489a0f183328f6e1b09.setContent(html_066cc63916a64208a632f180bc1ebea0);
+        
+
+        marker_363b3bcefff145e6b5ec07246ad67a45.bindPopup(popup_2b5b968ee9f04489a0f183328f6e1b09)
+        ;
+
+        
+    
+    
+            var marker_57d31f4187534b3ca47453636f9396d7 = L.marker(
+                [9.5444, -84.0417],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_472cfcbeb03a48bb8fe19793f1e02743 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_22b9d058244b4f3ebbf42604d5e1f684 = $(`<div id="html_22b9d058244b4f3ebbf42604d5e1f684" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tarrazú, Cerro Diamante. <strong>Elevación:</strong> 750.0 m  <strong>Fecha:</strong> 1999-03-24 <strong>Recolectores:</strong> A. Estrada <strong>Identificadores:</strong> Sánchez, Joaquín</div>`)[0];
+            popup_472cfcbeb03a48bb8fe19793f1e02743.setContent(html_22b9d058244b4f3ebbf42604d5e1f684);
+        
+
+        marker_57d31f4187534b3ca47453636f9396d7.bindPopup(popup_472cfcbeb03a48bb8fe19793f1e02743)
+        ;
+
+        
+    
+    
+            var marker_bc0b130f83c34223babec3a1f2a6c12f = L.marker(
+                [8.5139, -83.45],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_c5e85cefdd24499facb2ff6672bb9606 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b77bfe4835c4beb9ea1e1673f77ce5e = $(`<div id="html_1b77bfe4835c4beb9ea1e1673f77ce5e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Golfito Jiménez, Dos Brazos de Río Tigre.  Siguiendo el sendero que desciende hasta la unión de la Quebrada Patemazo con Quebrada Porsillego. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1990-11-22 <strong>Recolectores:</strong> G. Herrera Ch. <strong>Identificadores:</strong> Jiménez M., Q.</div>`)[0];
+            popup_c5e85cefdd24499facb2ff6672bb9606.setContent(html_1b77bfe4835c4beb9ea1e1673f77ce5e);
+        
+
+        marker_bc0b130f83c34223babec3a1f2a6c12f.bindPopup(popup_c5e85cefdd24499facb2ff6672bb9606)
+        ;
+
+        
+    
+    
+            var marker_e98423f60f604962809e262d8123c57c = L.marker(
+                [9.72, -84.39],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_41e9eabedace466ca878ea2e93772e4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_528a51d9f64745288422b4ef5d3a53aa = $(`<div id="html_528a51d9f64745288422b4ef5d3a53aa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. La Cangreja; Cerros de Puriscal. Cerro Pelón, charrales y bosque primario remanente en la cima del cerro y cerca del antiguo camino a Quepos. <strong>Elevación:</strong> 920.0 m  <strong>Fecha:</strong> 1995-04-20 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> A. Soto (INB)</div>`)[0];
+            popup_41e9eabedace466ca878ea2e93772e4a.setContent(html_528a51d9f64745288422b4ef5d3a53aa);
+        
+
+        marker_e98423f60f604962809e262d8123c57c.bindPopup(popup_41e9eabedace466ca878ea2e93772e4a)
+        ;
+
+        
+    
+    
+            var marker_fea1659748cf40d8b2bcd50097c178d4 = L.marker(
+                [8.52, -83.4],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_784869fb2a4e45d8bd9d3f9ecbece137 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3214b801429049579d0075532006cde3 = $(`<div id="html_3214b801429049579d0075532006cde3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce; Península de Osa. Jiménez, Dos Brazos de Río Tigre. Siguiendo el sendero que desciende hasta la unión de la Quebrada Patemazo c <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> Q. Jiménez, V</div>`)[0];
+            popup_784869fb2a4e45d8bd9d3f9ecbece137.setContent(html_3214b801429049579d0075532006cde3);
+        
+
+        marker_fea1659748cf40d8b2bcd50097c178d4.bindPopup(popup_784869fb2a4e45d8bd9d3f9ecbece137)
+        ;
+
+        
+    
+    
+            var marker_14f9b9926bbb4d5fb250a64df305f1d2 = L.marker(
+                [8.71, -83.53],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_fef6a6537d0344e1ab0421e48f3820aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_603f861915df4a2daaf7082219a696a2 = $(`<div id="html_603f861915df4a2daaf7082219a696a2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce; Península de Osa. Rincón. Fila Casa Loma, por el antiguo camino a Rancho Quemado. <strong>Elevación:</strong> 450.0 m  <strong>Fecha:</strong> 1990-09-27 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> Q. Jiménez (INB)</div>`)[0];
+            popup_fef6a6537d0344e1ab0421e48f3820aa.setContent(html_603f861915df4a2daaf7082219a696a2);
+        
+
+        marker_14f9b9926bbb4d5fb250a64df305f1d2.bindPopup(popup_fef6a6537d0344e1ab0421e48f3820aa)
+        ;
+
+        
+    
+    
+            var marker_6d123ebf5d6b4678a86ac6327485ac07 = L.marker(
+                [8.52, -83.46],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_434f34db45c14ebcb3c4c820f7fd1a1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fda4f567cc214eceb0a22023ed267091 = $(`<div id="html_fda4f567cc214eceb0a22023ed267091" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado; Península de Osa. Cerro Rincón, Dos Brazos de Río Tigre. <strong>Elevación:</strong> 745.0 m  <strong>Fecha:</strong> 1990-08-01 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> A. Pool (MO)</div>`)[0];
+            popup_434f34db45c14ebcb3c4c820f7fd1a1d.setContent(html_fda4f567cc214eceb0a22023ed267091);
+        
+
+        marker_6d123ebf5d6b4678a86ac6327485ac07.bindPopup(popup_434f34db45c14ebcb3c4c820f7fd1a1d)
+        ;
+
+        
+    
+    
+            var marker_3421cd79e3294e008d489db7d656df22 = L.marker(
+                [9.51, -84.03],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_b08afeba93014328b597f278f9e91d8a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9fa48b3efd8d4bcd899547b61f1bb357 = $(`<div id="html_9fa48b3efd8d4bcd899547b61f1bb357" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Faja Costeña del Valle de Parrita. Esquipulas. Base del Cerro San Isidro, alrededores del Río Naranjo. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1987-08-28 <strong>Recolectores:</strong> Nelson Zamora|Isidro A. Chacón G.|Gerardo Herrera Ch. <strong>Identificadores:</strong> N. Zamora, IX</div>`)[0];
+            popup_b08afeba93014328b597f278f9e91d8a.setContent(html_9fa48b3efd8d4bcd899547b61f1bb357);
+        
+
+        marker_3421cd79e3294e008d489db7d656df22.bindPopup(popup_b08afeba93014328b597f278f9e91d8a)
+        ;
+
+        
+    
+    
+            var marker_62706862d42043368372de58e686c366 = L.marker(
+                [8.61, -83.73],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_d95d511497ca46d8a51edd8c1183bfcb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b4099558fe924693977c918d6a576c70 = $(`<div id="html_b4099558fe924693977c918d6a576c70" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado; Península de Osa. Estación San Pedrillo; sendero a Río Pargo. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1993-09-13 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> R. Aguilar, Set.</div>`)[0];
+            popup_d95d511497ca46d8a51edd8c1183bfcb.setContent(html_b4099558fe924693977c918d6a576c70);
+        
+
+        marker_62706862d42043368372de58e686c366.bindPopup(popup_d95d511497ca46d8a51edd8c1183bfcb)
+        ;
+
+        
+    
+    
+            var marker_75a4aab5c1de4d5590c4f22696509f8d = L.marker(
+                [8.513889, -83.472222],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_162324ee51834b27a0f605bdecb5e684 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9eebcdaca5984889858bf54a25b25eec = $(`<div id="html_9eebcdaca5984889858bf54a25b25eec" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce.  Península de Osa.  Cerro Rincón, Puerto Jiménez.  Cabeceras de los Ríos Tigre y Rincón. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1993-05-07 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> J. González (INB)</div>`)[0];
+            popup_162324ee51834b27a0f605bdecb5e684.setContent(html_9eebcdaca5984889858bf54a25b25eec);
+        
+
+        marker_75a4aab5c1de4d5590c4f22696509f8d.bindPopup(popup_162324ee51834b27a0f605bdecb5e684)
+        ;
+
+        
+    
+    
+            var marker_69051e5cfd374e509e679565105b47e6 = L.marker(
+                [8.63, -83.71],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_fc338ed817ce48c6844d0d91d789fb60 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d398ed0b65c4a2a87cae9fa676528f5 = $(`<div id="html_5d398ed0b65c4a2a87cae9fa676528f5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce; Península de Osa. Drake. De la Estación San Pedrillo hasta Playa Campanario. <strong>Elevación:</strong> 55.0 m  <strong>Fecha:</strong> 1993-03-14 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> J. González, Sep.</div>`)[0];
+            popup_fc338ed817ce48c6844d0d91d789fb60.setContent(html_5d398ed0b65c4a2a87cae9fa676528f5);
+        
+
+        marker_69051e5cfd374e509e679565105b47e6.bindPopup(popup_fc338ed817ce48c6844d0d91d789fb60)
+        ;
+
+        
+    
+    
+            var marker_68de556bb6ad4030b8c80217c7fb28dc = L.marker(
+                [9.69, -84.37],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_b294ff29ddf14c95a8aa275d6ecd9041 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de02928de8c147acbab31e17060fa438 = $(`<div id="html_de02928de8c147acbab31e17060fa438" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zona Protectora La Cangreja, Cerros de Puriscal, Mastatal de Puriscal, Ribera Quebrada Grande <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1993-07-14 <strong>Recolectores:</strong> Quírico Jiménez|J. F. Morales|Eduardo Lépiz|Víctor H. Ramírez|E. Ureña <strong>Identificadores:</strong> Q. Jiménez, VII</div>`)[0];
+            popup_b294ff29ddf14c95a8aa275d6ecd9041.setContent(html_de02928de8c147acbab31e17060fa438);
+        
+
+        marker_68de556bb6ad4030b8c80217c7fb28dc.bindPopup(popup_b294ff29ddf14c95a8aa275d6ecd9041)
+        ;
+
+        
+    
+    
+            var marker_2a7d7517c9e04da096532ce908ea888d = L.marker(
+                [9.7, -84.33],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_e1eca4a9e4d645b2a9292a6d5fcdeaf6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_509dd8a946a54cfeb71c781edd1fa067 = $(`<div id="html_509dd8a946a54cfeb71c781edd1fa067" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zona Protectora La Cangreja, Faja Costeña del Valle de Parrita <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1986-08-01 <strong>Recolectores:</strong> Nelson Zamora|Quírico Jiménez <strong>Identificadores:</strong> A. Pool (MO)</div>`)[0];
+            popup_e1eca4a9e4d645b2a9292a6d5fcdeaf6.setContent(html_509dd8a946a54cfeb71c781edd1fa067);
+        
+
+        marker_2a7d7517c9e04da096532ce908ea888d.bindPopup(popup_e1eca4a9e4d645b2a9292a6d5fcdeaf6)
+        ;
+
+        
+    
+    
+            var marker_b1c4bf9d0c2b48a88d3337b2f12834c5 = L.marker(
+                [9.69722, -84.38194],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_b2e6e9aed9344be5b9e1bd71b1f925d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a28e26c2f1143dfb2fc2990ed0c08c4 = $(`<div id="html_7a28e26c2f1143dfb2fc2990ed0c08c4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zona Protectora La Cangreja, Cuenca del Tulín, colecta sobre sendero principal después de la Quebrada Grande <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2000-09-19 <strong>Recolectores:</strong> Luis Acosta <strong>Identificadores:</strong> L. Acosta</div>`)[0];
+            popup_b2e6e9aed9344be5b9e1bd71b1f925d2.setContent(html_7a28e26c2f1143dfb2fc2990ed0c08c4);
+        
+
+        marker_b1c4bf9d0c2b48a88d3337b2f12834c5.bindPopup(popup_b2e6e9aed9344be5b9e1bd71b1f925d2)
+        ;
+
+        
+    
+    
+            var marker_95bafb73fcae4b978ef5979e362b28c9 = L.marker(
+                [8.416667, -83.4],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_68baaa8d84b0477daa74571600e96ddc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29bf3dce34eb4b0eba6fb7191aed35ec = $(`<div id="html_29bf3dce34eb4b0eba6fb7191aed35ec" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 3 Km norte de Playa Piro, Puerto Jiménez, Finca Asunción Esquivel. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1989-02-22 <strong>Recolectores:</strong> Quírico Jiménez|E. Vargas|Juan J. Jiménez <strong>Identificadores:</strong> Q. Jiménez, II/</div>`)[0];
+            popup_68baaa8d84b0477daa74571600e96ddc.setContent(html_29bf3dce34eb4b0eba6fb7191aed35ec);
+        
+
+        marker_95bafb73fcae4b978ef5979e362b28c9.bindPopup(popup_68baaa8d84b0477daa74571600e96ddc)
+        ;
+
+        
+    
+    
+            var marker_43ff3c7f80f541828bd04453650b1fbd = L.marker(
+                [8.41, -83.33],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_dfa24edd420843858cf5d4df12b1f111 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1462a1975da04e7aac4d7acc156ed425 = $(`<div id="html_1462a1975da04e7aac4d7acc156ed425" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Osa 3 Km norte playa Piro, 24 Km. Sur de Puerto Jiménez <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1989-03-28 <strong>Recolectores:</strong> Quírico Jiménez|Bolivar Jaén <strong>Identificadores:</strong> Q. Jiménez, II/</div>`)[0];
+            popup_dfa24edd420843858cf5d4df12b1f111.setContent(html_1462a1975da04e7aac4d7acc156ed425);
+        
+
+        marker_43ff3c7f80f541828bd04453650b1fbd.bindPopup(popup_dfa24edd420843858cf5d4df12b1f111)
+        ;
+
+        
+    
+    
+            var marker_73e4ba9262d14b05b767984438e5ca1a = L.marker(
+                [9.71, -84.39],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_0dca3d4f2cdd4e30b01cc67e5f5956cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5845d656ef94236bb88c80d5cb20c87 = $(`<div id="html_c5845d656ef94236bb88c80d5cb20c87" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z. P. La Cangreja. Santa Rosa de Puriscal. Cerro Pelón. Bosque primario alterado en el cañón de una quebrada. <strong>Elevación:</strong> 450.0 m  <strong>Fecha:</strong> 1992-08-11 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> J. F. Morales (INB)</div>`)[0];
+            popup_0dca3d4f2cdd4e30b01cc67e5f5956cb.setContent(html_c5845d656ef94236bb88c80d5cb20c87);
+        
+
+        marker_73e4ba9262d14b05b767984438e5ca1a.bindPopup(popup_0dca3d4f2cdd4e30b01cc67e5f5956cb)
+        ;
+
+        
+    
+    
+            var marker_974c5971a79b4daa9fb0f185c96968f2 = L.marker(
+                [8.64, -83.61],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_316a2577ec104f2282f6bd2af8c53771 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd543c4eee414267b4f663b16201a4d8 = $(`<div id="html_dd543c4eee414267b4f663b16201a4d8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajando Cerro Brujo hacia el oeste. Sierpe. <strong>Elevación:</strong> 375.0 m  <strong>Fecha:</strong> 1991-12-04 <strong>Recolectores:</strong> Juan Marín|Geiner Trejos Ureña <strong>Identificadores:</strong> A. Soto (INB)</div>`)[0];
+            popup_316a2577ec104f2282f6bd2af8c53771.setContent(html_dd543c4eee414267b4f663b16201a4d8);
+        
+
+        marker_974c5971a79b4daa9fb0f185c96968f2.bindPopup(popup_316a2577ec104f2282f6bd2af8c53771)
+        ;
+
+        
+    
+    
+            var marker_b0f3e03eaa5f497aa350393d875f5be8 = L.marker(
+                [8.6, -83.73],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_12e4aafeae44459c8fc9f546a7df4252 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e70246788cc448ba8b19a5fd87979a08 = $(`<div id="html_e70246788cc448ba8b19a5fd87979a08" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Corcovado Llorona to Los Planes. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1989-03-25 <strong>Recolectores:</strong> Christopher Kernan|Pamela Phillips <strong>Identificadores:</strong> Gómez, Jiménez, Zamora</div>`)[0];
+            popup_12e4aafeae44459c8fc9f546a7df4252.setContent(html_e70246788cc448ba8b19a5fd87979a08);
+        
+
+        marker_b0f3e03eaa5f497aa350393d875f5be8.bindPopup(popup_12e4aafeae44459c8fc9f546a7df4252)
+        ;
+
+        
+    
+    
+            var marker_fc0696b674f1477bbfb629f4958dae50 = L.marker(
+                [8.433333, -83.35],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_e0759d467e0d4274865d644507b50fbd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3336a20285a74c38a0f4585dc2e2180c = $(`<div id="html_3336a20285a74c38a0f4585dc2e2180c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Golfito Playa Piro, sur de Puerto Jiménez. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1991-02-15 <strong>Recolectores:</strong> Quírico Jiménez|Pablo E. Sánchez V.|Carlos O. Morales <strong>Identificadores:</strong> Q. Jiménez (INB)</div>`)[0];
+            popup_e0759d467e0d4274865d644507b50fbd.setContent(html_3336a20285a74c38a0f4585dc2e2180c);
+        
+
+        marker_fc0696b674f1477bbfb629f4958dae50.bindPopup(popup_e0759d467e0d4274865d644507b50fbd)
+        ;
+
+        
+    
+    
+            var marker_3b2c47bf28c54beea66723c7c550400c = L.marker(
+                [8.425, -83.31666700000001],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_636ee90c8afe4f96b6373b815db967f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d31e6a2c0a4c42ae9eeb7f8f7b4d37d9 = $(`<div id="html_d31e6a2c0a4c42ae9eeb7f8f7b4d37d9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alto de la Carbonera, camino a Cerro de Osa. <strong>Elevación:</strong> 275.0 m  <strong>Fecha:</strong> 1990-09-18 <strong>Recolectores:</strong> Abelardo Chacón <strong>Identificadores:</strong> N. Zamora, XII/</div>`)[0];
+            popup_636ee90c8afe4f96b6373b815db967f6.setContent(html_d31e6a2c0a4c42ae9eeb7f8f7b4d37d9);
+        
+
+        marker_3b2c47bf28c54beea66723c7c550400c.bindPopup(popup_636ee90c8afe4f96b6373b815db967f6)
+        ;
+
+        
+    
+    
+            var marker_30fcee1e5d7d4bcc8f4c199711ee9ab4 = L.marker(
+                [8.65, -83.16],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_ccf0be87e97c41aeb8018e81509f07ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28b69bae76614236816b88e59adf36b2 = $(`<div id="html_28b69bae76614236816b88e59adf36b2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Refugio Nacional de Fauna Silvestre Golfito <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1994-02-28 <strong>Recolectores:</strong> Gerardo Rivera|Gerardo Herrera Ch.|Judy Hoomans <strong>Identificadores:</strong> Gómez-L., Jiménez & Zamora</div>`)[0];
+            popup_ccf0be87e97c41aeb8018e81509f07ad.setContent(html_28b69bae76614236816b88e59adf36b2);
+        
+
+        marker_30fcee1e5d7d4bcc8f4c199711ee9ab4.bindPopup(popup_ccf0be87e97c41aeb8018e81509f07ad)
+        ;
+
+        
+    
+    
+            var marker_c2b138fd29f34405b105b95a220af918 = L.marker(
+                [9.550556, -84.18777800000001],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_20e7f738f8d541ab9ceffa6f16529baf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_982b28c6e52b41898bdeaab927492aa9 = $(`<div id="html_982b28c6e52b41898bdeaab927492aa9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida. Cuenca del Pirrís-Damas. San Antonio de Pocares; 2.5 km al NE. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 2001-10-16 <strong>Recolectores:</strong> Alexánder Rodríguez|Armando Estrada|Julio Bustamante|Fabiana Murillo <strong>Identificadores:</strong> A. Rodríguez</div>`)[0];
+            popup_20e7f738f8d541ab9ceffa6f16529baf.setContent(html_982b28c6e52b41898bdeaab927492aa9);
+        
+
+        marker_c2b138fd29f34405b105b95a220af918.bindPopup(popup_20e7f738f8d541ab9ceffa6f16529baf)
+        ;
+
+        
+    
+    
+            var marker_c4e10b3f2d2147ba9797cf8acf067c12 = L.marker(
+                [8.518056, -83.469444],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_c7da49814b4b4c8585e09209e4e2a985 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ba6ab1cda7341f6adcd574f0c14b472 = $(`<div id="html_0ba6ab1cda7341f6adcd574f0c14b472" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado. Peninsula de Osa. Bosque primario. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1998-01-28 <strong>Recolectores:</strong> Billen Gamboa R.|Alberto Rojas|Alejandro Azofeifa|Eida Fletes <strong>Identificadores:</strong> J. González</div>`)[0];
+            popup_c7da49814b4b4c8585e09209e4e2a985.setContent(html_0ba6ab1cda7341f6adcd574f0c14b472);
+        
+
+        marker_c4e10b3f2d2147ba9797cf8acf067c12.bindPopup(popup_c7da49814b4b4c8585e09209e4e2a985)
+        ;
+
+        
+    
+    
+            var marker_0f78425f455840598d3a9cad0438087e = L.marker(
+                [9.693056, -84.376389],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_f948f88e89e6425eb555d9ac260b6d00 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8bb7d7df444c4cb4aea8e7df86c802f9 = $(`<div id="html_8bb7d7df444c4cb4aea8e7df86c802f9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. La Cangreja. 500 m después del cruce de la Quebrada Grande. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 2006-12-15 <strong>Recolectores:</strong> L. Acosta; Guillermo Villalobos ; Jorge Blanco <strong>Identificadores:</strong> Acosta, L.</div>`)[0];
+            popup_f948f88e89e6425eb555d9ac260b6d00.setContent(html_8bb7d7df444c4cb4aea8e7df86c802f9);
+        
+
+        marker_0f78425f455840598d3a9cad0438087e.bindPopup(popup_f948f88e89e6425eb555d9ac260b6d00)
+        ;
+
+        
+    
+    
+            var marker_f306d8afae8f48cab9e24c697018c4aa = L.marker(
+                [9.697222, -84.38194399999999],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_5e74387b1c554a5eb6c2d5bded75e062 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8225a12f12394be6a4ce0c0fe7d498f7 = $(`<div id="html_8225a12f12394be6a4ce0c0fe7d498f7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mastatal. Camino a Alto Concepci.Ribera Quebrada Grande.on <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2001-06-11 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez <strong>Identificadores:</strong> Acosta, L.</div>`)[0];
+            popup_5e74387b1c554a5eb6c2d5bded75e062.setContent(html_8225a12f12394be6a4ce0c0fe7d498f7);
+        
+
+        marker_f306d8afae8f48cab9e24c697018c4aa.bindPopup(popup_5e74387b1c554a5eb6c2d5bded75e062)
+        ;
+
+        
+    
+    
+            var marker_b146e971888744b58f213594fca9a4de = L.marker(
+                [9.550556, -84.18777800000001],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_f75659acd6244ff4b2fe332a02f2ff9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d7dedb19d6d43ee838a671009d113b7 = $(`<div id="html_5d7dedb19d6d43ee838a671009d113b7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Antonio de Pocares. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 2001-10-16 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Armando Estrada ; Julio Bustamante ; Fabiana Murillo rodríguez <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_f75659acd6244ff4b2fe332a02f2ff9d.setContent(html_5d7dedb19d6d43ee838a671009d113b7);
+        
+
+        marker_b146e971888744b58f213594fca9a4de.bindPopup(popup_f75659acd6244ff4b2fe332a02f2ff9d)
+        ;
+
+        
+    
+    
+            var marker_93f56a43724048ee891e325c3803b31b = L.marker(
+                [9.550556, -84.18777800000001],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_ab1f35d1ce0c4fccb9d774fa43dca17b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a3809e432124a9eb2325039713a5c13 = $(`<div id="html_3a3809e432124a9eb2325039713a5c13" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Antonio de Pocares. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 2001-10-16 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Armando Estrada ; Julio Bustamante ; Fabiana Murillo rodríguez <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_ab1f35d1ce0c4fccb9d774fa43dca17b.setContent(html_3a3809e432124a9eb2325039713a5c13);
+        
+
+        marker_93f56a43724048ee891e325c3803b31b.bindPopup(popup_ab1f35d1ce0c4fccb9d774fa43dca17b)
+        ;
+
+        
+    
+    
+            var marker_b1f4ba227b164f12bae717b8ebfa818d = L.marker(
+                [9.550556, -84.18777800000001],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_901c27e336244e5f84be1d7b3ba1c051 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dbc32c8142f240d181b3f7e8caedb7eb = $(`<div id="html_dbc32c8142f240d181b3f7e8caedb7eb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Antonio de Pocares. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 2001-10-16 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Armando Estrada ; Julio Bustamante ; Fabiana Murillo rodríguez <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_901c27e336244e5f84be1d7b3ba1c051.setContent(html_dbc32c8142f240d181b3f7e8caedb7eb);
+        
+
+        marker_b1f4ba227b164f12bae717b8ebfa818d.bindPopup(popup_901c27e336244e5f84be1d7b3ba1c051)
+        ;
+
+        
+    
+    
+            var marker_b50755869ac743b09dafc7f4a10205c9 = L.marker(
+                [9.697222, -84.38194399999999],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_babf066915fe46c78be1bd343ddebc44 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91e2744c90ca463786a9b7833969882a = $(`<div id="html_91e2744c90ca463786a9b7833969882a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mastatal. Camino a Alto Concepci.Ribera Quebrada Grande.on <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2000-09-19 <strong>Recolectores:</strong> L. Acosta <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_babf066915fe46c78be1bd343ddebc44.setContent(html_91e2744c90ca463786a9b7833969882a);
+        
+
+        marker_b50755869ac743b09dafc7f4a10205c9.bindPopup(popup_babf066915fe46c78be1bd343ddebc44)
+        ;
+
+        
+    
+    
+            var marker_004599f142de428cbb09e385ea4cc100 = L.marker(
+                [9.697222, -84.38194399999999],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_0856531ba50b4e279f2e4e057faf6e09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2413da01aebb4e12b2d4b11244002263 = $(`<div id="html_2413da01aebb4e12b2d4b11244002263" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mastatal. Camino a Alto Concepci.Ribera Quebrada Grande.on <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2000-09-19 <strong>Recolectores:</strong> L. Acosta <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_0856531ba50b4e279f2e4e057faf6e09.setContent(html_2413da01aebb4e12b2d4b11244002263);
+        
+
+        marker_004599f142de428cbb09e385ea4cc100.bindPopup(popup_0856531ba50b4e279f2e4e057faf6e09)
+        ;
+
+        
+    
+    
+            var marker_e469bd7b06a44d3dab011cbd92d44f68 = L.marker(
+                [9.697222, -84.38194399999999],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_b553b088930c49319a7032fe82b14c5a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_823e8c33c3184cf6980e622f985f98a5 = $(`<div id="html_823e8c33c3184cf6980e622f985f98a5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mastatal. Camino a Alto Concepci.Ribera Quebrada Grande.on <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2000-09-19 <strong>Recolectores:</strong> L. Acosta <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_b553b088930c49319a7032fe82b14c5a.setContent(html_823e8c33c3184cf6980e622f985f98a5);
+        
+
+        marker_e469bd7b06a44d3dab011cbd92d44f68.bindPopup(popup_b553b088930c49319a7032fe82b14c5a)
+        ;
+
+        
+    
+    
+            var marker_433e82e67e9f4813a5b9341fec7801d8 = L.marker(
+                [9.697222, -84.38194399999999],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_c67d60ef9a254ef8b90e112ea27e3351 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3473300748c4f7495e2b7400b386b7a = $(`<div id="html_a3473300748c4f7495e2b7400b386b7a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mastatal. Camino a Alto Concepci.Ribera Quebrada Grande.on <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2000-09-19 <strong>Recolectores:</strong> L. Acosta <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_c67d60ef9a254ef8b90e112ea27e3351.setContent(html_a3473300748c4f7495e2b7400b386b7a);
+        
+
+        marker_433e82e67e9f4813a5b9341fec7801d8.bindPopup(popup_c67d60ef9a254ef8b90e112ea27e3351)
+        ;
+
+        
+    
+    
+            var marker_72b0f4a8ffbe4b878d15f0d422500e9a = L.marker(
+                [8.525, -83.466667],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_a91cf65d930b458ea5909de5c2eba20e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c862a5f7bd6d484aac51d62792825710 = $(`<div id="html_c862a5f7bd6d484aac51d62792825710" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Rincon; abra pequena alrededor del hito instalado en la cima del cerro. <strong>Elevación:</strong> 722.5 m  <strong>Fecha:</strong> 2000-06-20 <strong>Recolectores:</strong> Jose Antonio Azofeifa Zuñiga <strong>Identificadores:</strong> Azofeifa Zuñiga, Jose Antonio</div>`)[0];
+            popup_a91cf65d930b458ea5909de5c2eba20e.setContent(html_c862a5f7bd6d484aac51d62792825710);
+        
+
+        marker_72b0f4a8ffbe4b878d15f0d422500e9a.bindPopup(popup_a91cf65d930b458ea5909de5c2eba20e)
+        ;
+
+        
+    
+    
+            var marker_df9d0c5130d945e8a21177c943eeb96d = L.marker(
+                [8.513889, -83.45],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_d319cfea5f6f45ab8ece8487cd5bc465 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f13d4f9689084cfcb85ecfdc3f0dea07 = $(`<div id="html_f13d4f9689084cfcb85ecfdc3f0dea07" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Jimenez, Dos Brazos de Rio Tigre. Siguiendo el sendero que desciende hasta la union de la Quebrada Patemazo con Quebrada Porsillego. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1990-11-22 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_d319cfea5f6f45ab8ece8487cd5bc465.setContent(html_f13d4f9689084cfcb85ecfdc3f0dea07);
+        
+
+        marker_df9d0c5130d945e8a21177c943eeb96d.bindPopup(popup_d319cfea5f6f45ab8ece8487cd5bc465)
+        ;
+
+        
+    
+    
+            var marker_294d986b6f70407ab769ef435b072f3b = L.marker(
+                [8.716667, -83.533334],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_02513fc259ae485382dbb2beb4b03e42 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be69a544961044f499b20f28291efa25 = $(`<div id="html_be69a544961044f499b20f28291efa25" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rincon. Fila Casa Loma, por el antiguo camino a Rancho Quemado. <strong>Elevación:</strong> 450.0 m  <strong>Fecha:</strong> 1990-09-27 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_02513fc259ae485382dbb2beb4b03e42.setContent(html_be69a544961044f499b20f28291efa25);
+        
+
+        marker_294d986b6f70407ab769ef435b072f3b.bindPopup(popup_02513fc259ae485382dbb2beb4b03e42)
+        ;
+
+        
+    
+    
+            var marker_551fe02ba32b44f1ba40fcae66da0dbf = L.marker(
+                [8.516667, -83.466667],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_c0d40294140e47afbaf8a995e002868d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6df2a51f3306403ebe5acefa25447a9f = $(`<div id="html_6df2a51f3306403ebe5acefa25447a9f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Rincon. Alrededores, camino de ascenso por la Fila Matahambre desde Dos Brazos <strong>Elevación:</strong> 722.5 m  <strong>Fecha:</strong> 1990-08-01 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_c0d40294140e47afbaf8a995e002868d.setContent(html_6df2a51f3306403ebe5acefa25447a9f);
+        
+
+        marker_551fe02ba32b44f1ba40fcae66da0dbf.bindPopup(popup_c0d40294140e47afbaf8a995e002868d)
+        ;
+
+        
+    
+    
+            var marker_81ed7ac8d9654a02b452d1c0d2466c6b = L.marker(
+                [8.518104, -83.469575],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_b9228f5372db48a6b1e7a147a6b3e48b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2656149e8b044afea35ef0419545c8c0 = $(`<div id="html_2656149e8b044afea35ef0419545c8c0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado. Cerro Rincon. Quebraditas. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1998-01-28 <strong>Recolectores:</strong> Billen Gamboa R.; Alexander Rojas ; Alejandro Azofeifa Zúñiga ; Eida Fletes <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_b9228f5372db48a6b1e7a147a6b3e48b.setContent(html_2656149e8b044afea35ef0419545c8c0);
+        
+
+        marker_81ed7ac8d9654a02b452d1c0d2466c6b.bindPopup(popup_b9228f5372db48a6b1e7a147a6b3e48b)
+        ;
+
+        
+    
+    
+            var marker_40d63a50a680494694c436dba20eaf21 = L.marker(
+                [8.518104, -83.469575],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_9eec02d2d9e64b0a97e353f35113d33b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f3186259cd64ecdb656771a411f002f = $(`<div id="html_6f3186259cd64ecdb656771a411f002f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado. Cerro Rincon. Quebraditas. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1998-01-28 <strong>Recolectores:</strong> Billen Gamboa R.; Alexander Rojas ; Alejandro Azofeifa Zúñiga ; Eida Fletes <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_9eec02d2d9e64b0a97e353f35113d33b.setContent(html_6f3186259cd64ecdb656771a411f002f);
+        
+
+        marker_40d63a50a680494694c436dba20eaf21.bindPopup(popup_9eec02d2d9e64b0a97e353f35113d33b)
+        ;
+
+        
+    
+    
+            var marker_ee4baa1e2e60487c84687dce41695440 = L.marker(
+                [8.518104, -83.469575],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_4bc85b2c61ca4e57943a0f584597bf73 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dbe27ca741014363a3ffb603571306e1 = $(`<div id="html_dbe27ca741014363a3ffb603571306e1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado. Cerro Rincon. Quebraditas. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1998-01-28 <strong>Recolectores:</strong> Billen Gamboa R.; Alexander Rojas ; Alejandro Azofeifa Zúñiga ; Eida Fletes <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_4bc85b2c61ca4e57943a0f584597bf73.setContent(html_dbe27ca741014363a3ffb603571306e1);
+        
+
+        marker_ee4baa1e2e60487c84687dce41695440.bindPopup(popup_4bc85b2c61ca4e57943a0f584597bf73)
+        ;
+
+        
+    
+    
+            var marker_86a14fb256c040ef8ac40f1833ef54da = L.marker(
+                [8.616667, -83.733334],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_0a7e897ff93649e1958d76bbf22a3fe8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54aea9f24c7c4862a788e032cb4a7c34 = $(`<div id="html_54aea9f24c7c4862a788e032cb4a7c34" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion San Pedrillo. Sendero a Rio Pargo. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1993-09-13 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_0a7e897ff93649e1958d76bbf22a3fe8.setContent(html_54aea9f24c7c4862a788e032cb4a7c34);
+        
+
+        marker_86a14fb256c040ef8ac40f1833ef54da.bindPopup(popup_0a7e897ff93649e1958d76bbf22a3fe8)
+        ;
+
+        
+    
+    
+            var marker_7f250f9924494be884d5094189da6c8e = L.marker(
+                [9.725278, -84.395],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_311ac98720184beab824ff3abae3a62c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca66bf81d746411b990a4ddbe67fcc60 = $(`<div id="html_ca66bf81d746411b990a4ddbe67fcc60" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Pelon, charrales y bosque primario remanente en la cima del cerro y cerca del antiguo camino a Quepos. <strong>Elevación:</strong> 920.0 m  <strong>Fecha:</strong> 1995-04-20 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_311ac98720184beab824ff3abae3a62c.setContent(html_ca66bf81d746411b990a4ddbe67fcc60);
+        
+
+        marker_7f250f9924494be884d5094189da6c8e.bindPopup(popup_311ac98720184beab824ff3abae3a62c)
+        ;
+
+        
+    
+    
+            var marker_f00a6d8f9c4b4be9bbc13aba7cdb0cef = L.marker(
+                [8.513889, -83.472222],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_056eec9d775947eb8413aa47e88146ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab157a43a22f4bc999d0377ae8fbefe4 = $(`<div id="html_ab157a43a22f4bc999d0377ae8fbefe4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Rincon, Puerto Jimenez. Cabeceras de los Rios Tigre y Rincon. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1993-05-07 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_056eec9d775947eb8413aa47e88146ba.setContent(html_ab157a43a22f4bc999d0377ae8fbefe4);
+        
+
+        marker_f00a6d8f9c4b4be9bbc13aba7cdb0cef.bindPopup(popup_056eec9d775947eb8413aa47e88146ba)
+        ;
+
+        
+    
+    
+            var marker_04f490131f644ff0a8923664d43329f8 = L.marker(
+                [8.633333, -83.716667],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_6c8ccb08b51e48bd80c78189b408b56e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e60cd62eed4b4e45b7d0dedea1dfbd99 = $(`<div id="html_e60cd62eed4b4e45b7d0dedea1dfbd99" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Drake. De la Estacion San Pedrillo hasta Playa Campanario. Bosque Primario. <strong>Elevación:</strong> 55.0 m  <strong>Fecha:</strong> 1993-03-14 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_6c8ccb08b51e48bd80c78189b408b56e.setContent(html_e60cd62eed4b4e45b7d0dedea1dfbd99);
+        
+
+        marker_04f490131f644ff0a8923664d43329f8.bindPopup(popup_6c8ccb08b51e48bd80c78189b408b56e)
+        ;
+
+        
+    
+    
+            var marker_862c583e2c344c5bac9c841de7ad4071 = L.marker(
+                [9.691667, -84.37083299999999],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_053f462fb6534dcb876e44989332c574 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8e9850e7f62646b59aa0e9c95aa300c0 = $(`<div id="html_8e9850e7f62646b59aa0e9c95aa300c0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mastatal de Puriscal, Ribera Quebrada Grande <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1993-07-14 <strong>Recolectores:</strong> Quirico Jiménez <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_053f462fb6534dcb876e44989332c574.setContent(html_8e9850e7f62646b59aa0e9c95aa300c0);
+        
+
+        marker_862c583e2c344c5bac9c841de7ad4071.bindPopup(popup_053f462fb6534dcb876e44989332c574)
+        ;
+
+        
+    
+    
+            var marker_c9f5591d6ad34cedb81579faa379b5f8 = L.marker(
+                [8.6, -83.733333],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_45d0fb847f404b60ba8c86d4695e9ae0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9999f0b780a042d9b7d0ecf2f128dddd = $(`<div id="html_9999f0b780a042d9b7d0ecf2f128dddd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Llorona to Los Planes. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1989-03-25 <strong>Recolectores:</strong> C. Kernan <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_45d0fb847f404b60ba8c86d4695e9ae0.setContent(html_9999f0b780a042d9b7d0ecf2f128dddd);
+        
+
+        marker_c9f5591d6ad34cedb81579faa379b5f8.bindPopup(popup_45d0fb847f404b60ba8c86d4695e9ae0)
+        ;
+
+        
+    
+    
+            var marker_ed4343ca854c4dee895dd2a283a9021a = L.marker(
+                [8.433333, -83.35],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_0766d7b0440d49e2896928cce796d59a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e7e3aa01356b4bbb997ad03464fa45ff = $(`<div id="html_e7e3aa01356b4bbb997ad03464fa45ff" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cuenca superior de la Quebrada Bijagual <strong>Elevación:</strong> 175.0 m  <strong>Fecha:</strong> 1991-02-15 <strong>Recolectores:</strong> Quirico Jiménez <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_0766d7b0440d49e2896928cce796d59a.setContent(html_e7e3aa01356b4bbb997ad03464fa45ff);
+        
+
+        marker_ed4343ca854c4dee895dd2a283a9021a.bindPopup(popup_0766d7b0440d49e2896928cce796d59a)
+        ;
+
+        
+    
+    
+            var marker_57cb03189e6543bda711a550c11e76d8 = L.marker(
+                [8.644444, -83.613889],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_6d04725e143a45ee91a3f635f35c29f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9bd233d8e18d438ab04a3b23f192d484 = $(`<div id="html_9bd233d8e18d438ab04a3b23f192d484" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajando Cerro Brujo hacia el oeste. <strong>Elevación:</strong> 375.0 m  <strong>Fecha:</strong> 1991-12-04 <strong>Recolectores:</strong> Juan Marin <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_6d04725e143a45ee91a3f635f35c29f3.setContent(html_9bd233d8e18d438ab04a3b23f192d484);
+        
+
+        marker_57cb03189e6543bda711a550c11e76d8.bindPopup(popup_6d04725e143a45ee91a3f635f35c29f3)
+        ;
+
+        
+    
+    
+            var marker_a6409409e062407aa4f04d72e9d1b012 = L.marker(
+                [8.425, -83.31666700000001],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_4dba145d343a43d8ab0f79724161a170 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b08edaa5f33a450f906c40aef419aa2e = $(`<div id="html_b08edaa5f33a450f906c40aef419aa2e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alto de la Carbonera. Camino a Cerro de Osa <strong>Elevación:</strong> 330.0 m  <strong>Fecha:</strong> 1990-09-18 <strong>Recolectores:</strong> Abelardo Chacon <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_4dba145d343a43d8ab0f79724161a170.setContent(html_b08edaa5f33a450f906c40aef419aa2e);
+        
+
+        marker_a6409409e062407aa4f04d72e9d1b012.bindPopup(popup_4dba145d343a43d8ab0f79724161a170)
+        ;
+
+        
+    
+    
+            var marker_6af41861387d42e091e3d444e7849af5 = L.marker(
+                [8.416667, -83.333333],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_6588bfa0daaf42059b9ffb9b9f4cfeb7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b4dc764437c4a368447b43878907e94 = $(`<div id="html_4b4dc764437c4a368447b43878907e94" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 2 Km norte de Playa Piro. Finca Asuncion Esquivel <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1989-03-28 <strong>Recolectores:</strong> Quirico Jiménez <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_6588bfa0daaf42059b9ffb9b9f4cfeb7.setContent(html_4b4dc764437c4a368447b43878907e94);
+        
+
+        marker_6af41861387d42e091e3d444e7849af5.bindPopup(popup_6588bfa0daaf42059b9ffb9b9f4cfeb7)
+        ;
+
+        
+    
+    
+            var marker_a7fdfefd9b7a4f20bbfecc55db420245 = L.marker(
+                [8.416618, -83.336444],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_92efcd8d72dd4118a91bad23be962379 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_029125608a704f5caf74c702d2fa495f = $(`<div id="html_029125608a704f5caf74c702d2fa495f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 2.5 Km norte de Playa Piro. Finca Asuncion Esquivel <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1989-02-22 <strong>Recolectores:</strong> Quirico Jiménez <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_92efcd8d72dd4118a91bad23be962379.setContent(html_029125608a704f5caf74c702d2fa495f);
+        
+
+        marker_a7fdfefd9b7a4f20bbfecc55db420245.bindPopup(popup_92efcd8d72dd4118a91bad23be962379)
+        ;
+
+        
+    
+    
+            var marker_7583193940444b24b8faa96f97b4efdd = L.marker(
+                [9.516667, -84.033333],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_2fbed456564a4784aebd9d403cdcf8a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d633a86a019d4cd7a93c11824cad03c3 = $(`<div id="html_d633a86a019d4cd7a93c11824cad03c3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Esquipulas. Base del Cerro San Isidro, alrededores del Rio Naranjo. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1987-08-28 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_2fbed456564a4784aebd9d403cdcf8a4.setContent(html_d633a86a019d4cd7a93c11824cad03c3);
+        
+
+        marker_7583193940444b24b8faa96f97b4efdd.bindPopup(popup_2fbed456564a4784aebd9d403cdcf8a4)
+        ;
+
+        
+    
+    
+            var marker_158df5d953964486a40c307bc3cc4af8 = L.marker(
+                [9.725, -84.369445],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_36e636c740764302970dcbde9b9fe12f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_177381d3eb214a7291d08154096f3798 = $(`<div id="html_177381d3eb214a7291d08154096f3798" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Cangreja. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1987-04-07 <strong>Recolectores:</strong> Quirico Jiménez <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_36e636c740764302970dcbde9b9fe12f.setContent(html_177381d3eb214a7291d08154096f3798);
+        
+
+        marker_158df5d953964486a40c307bc3cc4af8.bindPopup(popup_36e636c740764302970dcbde9b9fe12f)
+        ;
+
+        
+    
+    
+            var marker_8d9f53ccb48b4b6bad3df573408ddb2b = L.marker(
+                [9.7, -84.333334],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_89bf106ea63b45d59a072f8e32343c37 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a46a06c1abb2494d86ee8c5871b73b78 = $(`<div id="html_a46a06c1abb2494d86ee8c5871b73b78" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mastatal de Puriscal <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1986-08-01 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_89bf106ea63b45d59a072f8e32343c37.setContent(html_a46a06c1abb2494d86ee8c5871b73b78);
+        
+
+        marker_8d9f53ccb48b4b6bad3df573408ddb2b.bindPopup(popup_89bf106ea63b45d59a072f8e32343c37)
+        ;
+
+        
+    
+    
+            var marker_a119b77707e44767af4d379f6d5d5e6f = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_9d4e5e737c7f4859b74e638d71c1719e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f603528dee6045a693a472f184092826 = $(`<div id="html_f603528dee6045a693a472f184092826" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1989-03-25 <strong>Recolectores:</strong> C. Kernan & P. Phillips <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_9d4e5e737c7f4859b74e638d71c1719e.setContent(html_f603528dee6045a693a472f184092826);
+        
+
+        marker_a119b77707e44767af4d379f6d5d5e6f.bindPopup(popup_9d4e5e737c7f4859b74e638d71c1719e)
+        ;
+
+        
+    
+    
+            var marker_5397f7b8d5e34294912b5b04a1f576cd = L.marker(
+                [9.54, -84.04],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_1bca93e327194ef1b22f9d7cc9ff426d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ecb3b099a639494cb20a76fa8c532dd5 = $(`<div id="html_ecb3b099a639494cb20a76fa8c532dd5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Diamante. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1999-03-24 <strong>Recolectores:</strong> Estrada, Armando <strong>Identificadores:</strong> Sánchez, Joaquín</div>`)[0];
+            popup_1bca93e327194ef1b22f9d7cc9ff426d.setContent(html_ecb3b099a639494cb20a76fa8c532dd5);
+        
+
+        marker_5397f7b8d5e34294912b5b04a1f576cd.bindPopup(popup_1bca93e327194ef1b22f9d7cc9ff426d)
+        ;
+
+        
+    
+    
+            var marker_68d10ed1db544ef8a21f3336f01ecbb0 = L.marker(
+                [9.54, -84.02],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_d2763fe964084d3f84d607f02292178e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f84754bed68d463e9b33106011ba1ded = $(`<div id="html_f84754bed68d463e9b33106011ba1ded" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estribaciones del Cerro Diamante. <strong>Elevación:</strong> 650.0 m  <strong>Fecha:</strong> 1998-06-25 <strong>Recolectores:</strong> Estrada, Armando <strong>Identificadores:</strong> Estrada, Armando</div>`)[0];
+            popup_d2763fe964084d3f84d607f02292178e.setContent(html_f84754bed68d463e9b33106011ba1ded);
+        
+
+        marker_68d10ed1db544ef8a21f3336f01ecbb0.bindPopup(popup_d2763fe964084d3f84d607f02292178e)
+        ;
+
+        
+    
+    
+            var marker_ad4458fc710f4d67a44a9bab9c94ae89 = L.marker(
+                [8.61, -83.73],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_92d05aa7fe04479fb200bb2d7db81063 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29168cbd6f1f4e8587e00d727fc05a57 = $(`<div id="html_29168cbd6f1f4e8587e00d727fc05a57" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado Península de Osa. Estación San Pedrillo, sendero a Río Pargo <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Aguilar, Reinaldo <strong>Identificadores:</strong> Morales, Juan Francisco</div>`)[0];
+            popup_92d05aa7fe04479fb200bb2d7db81063.setContent(html_29168cbd6f1f4e8587e00d727fc05a57);
+        
+
+        marker_ad4458fc710f4d67a44a9bab9c94ae89.bindPopup(popup_92d05aa7fe04479fb200bb2d7db81063)
+        ;
+
+        
+    
+    
+            var marker_2726d61074e344fbb8ef854abe41648c = L.marker(
+                [8.63, -83.71],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_d092f8c1af424c10bb1961a3d4374f28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79a76fb3e4ab4f29934cdcc7d4a1b40d = $(`<div id="html_79a76fb3e4ab4f29934cdcc7d4a1b40d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Cordillera Volcánica Central Península de Osa. Drake. De la Estación San Pedrillo hasta Playa Campanario. Bosque Primario <strong>Elevación:</strong> 55.0 m  <strong>Fecha:</strong> 1993-04-14 <strong>Recolectores:</strong> Aguilar, Reinaldo <strong>Identificadores:</strong> González, José</div>`)[0];
+            popup_d092f8c1af424c10bb1961a3d4374f28.setContent(html_79a76fb3e4ab4f29934cdcc7d4a1b40d);
+        
+
+        marker_2726d61074e344fbb8ef854abe41648c.bindPopup(popup_d092f8c1af424c10bb1961a3d4374f28)
+        ;
+
+        
+    
+    
+            var marker_e9b179f6c1ed4cc18681be322dec3da7 = L.marker(
+                [8.51, -83.47],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_a326151fdd9c4644964177b472526305 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_657f1c91a89d4b0da319e5dc3d45829d = $(`<div id="html_657f1c91a89d4b0da319e5dc3d45829d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce Península de Osa.  Cerro Rincón. Cabeceras de los Ríos Tigre y Rincón <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Aguilar, Reinaldo <strong>Identificadores:</strong> González, José</div>`)[0];
+            popup_a326151fdd9c4644964177b472526305.setContent(html_657f1c91a89d4b0da319e5dc3d45829d);
+        
+
+        marker_e9b179f6c1ed4cc18681be322dec3da7.bindPopup(popup_a326151fdd9c4644964177b472526305)
+        ;
+
+        
+    
+    
+            var marker_7f3a0c21221946dca0e07261579e0ca2 = L.marker(
+                [8.52, -83.46],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_279ac2c39de84290b124c178abcfafdd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_34acbc2734004e0ebc9eb4dbaa2255c1 = $(`<div id="html_34acbc2734004e0ebc9eb4dbaa2255c1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado Cerro Rincón. Dos Brazos del Río Tigre <strong>Elevación:</strong> 745.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> Jiménez, Quírico</div>`)[0];
+            popup_279ac2c39de84290b124c178abcfafdd.setContent(html_34acbc2734004e0ebc9eb4dbaa2255c1);
+        
+
+        marker_7f3a0c21221946dca0e07261579e0ca2.bindPopup(popup_279ac2c39de84290b124c178abcfafdd)
+        ;
+
+        
+    
+    
+            var marker_e3ddedc82e84452ba75615fd4d2f839d = L.marker(
+                [8.65, -83.16],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_ca843f6b02d3437cb76703f812f9e2d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0faeb7bc14d54be2bcf5e68b426b3687 = $(`<div id="html_0faeb7bc14d54be2bcf5e68b426b3687" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.V.S. Golfito <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1994-02-28 <strong>Recolectores:</strong> Rivera, Gerardo <strong>Identificadores:</strong> Q. Jimémez & N. Zamora</div>`)[0];
+            popup_ca843f6b02d3437cb76703f812f9e2d2.setContent(html_0faeb7bc14d54be2bcf5e68b426b3687);
+        
+
+        marker_e3ddedc82e84452ba75615fd4d2f839d.bindPopup(popup_ca843f6b02d3437cb76703f812f9e2d2)
+        ;
+
+        
+    
+    
+            var marker_1b4026951a7d400e81d93f01773b5272 = L.marker(
+                [9.69, -84.37],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_fc3c947fde844ea7873931e9463d83f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b33f0e2d89e44d2fac9a8488e1eee39c = $(`<div id="html_b33f0e2d89e44d2fac9a8488e1eee39c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. La Cangreja Cuenca del Río Negro. Mastatal. Ribera Quebrada Grande. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1993-07-14 <strong>Recolectores:</strong> Jiménez, Quírico <strong>Identificadores:</strong> Jiménez, Quírico</div>`)[0];
+            popup_fc3c947fde844ea7873931e9463d83f0.setContent(html_b33f0e2d89e44d2fac9a8488e1eee39c);
+        
+
+        marker_1b4026951a7d400e81d93f01773b5272.bindPopup(popup_fc3c947fde844ea7873931e9463d83f0)
+        ;
+
+        
+    
+    
+            var marker_99703b286fb04302bb4c2c184a433b2b = L.marker(
+                [9.68, -84.36],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_13625187df384eeeb62aa975cb631ff3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d06d186a2bac42aa98cb082996c5ead1 = $(`<div id="html_d06d186a2bac42aa98cb082996c5ead1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. La Cangreja Mastatal. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1986-08-01 <strong>Recolectores:</strong> Zamora, Nelson <strong>Identificadores:</strong> Zamora, Nelson</div>`)[0];
+            popup_13625187df384eeeb62aa975cb631ff3.setContent(html_d06d186a2bac42aa98cb082996c5ead1);
+        
+
+        marker_99703b286fb04302bb4c2c184a433b2b.bindPopup(popup_13625187df384eeeb62aa975cb631ff3)
+        ;
+
+        
+    
+    
+            var marker_2ab7322bd4614d62a3e9dbc643edce75 = L.marker(
+                [9.51, -84.03],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_3699d1fb60044af9abae23c3f510d042 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4dd8ec2d8104f78ab3a72f123ef9036 = $(`<div id="html_a4dd8ec2d8104f78ab3a72f123ef9036" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Base del Cerro San Isidro. Alrededores del Río Naranjo. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1987-08-28 <strong>Recolectores:</strong> Zamora, Nelson <strong>Identificadores:</strong> Zamora, Nelson</div>`)[0];
+            popup_3699d1fb60044af9abae23c3f510d042.setContent(html_a4dd8ec2d8104f78ab3a72f123ef9036);
+        
+
+        marker_2ab7322bd4614d62a3e9dbc643edce75.bindPopup(popup_3699d1fb60044af9abae23c3f510d042)
+        ;
+
+        
+    
+    
+            var marker_19f10b1417544f6caf410375872c8bf0 = L.marker(
+                [8.51, -83.45],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_952744c2ca0a41d6aedbcfcb9b556801 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_058c0a52c56845fd80dc3e1378fec7c5 = $(`<div id="html_058c0a52c56845fd80dc3e1378fec7c5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Dos Brazos de Río Tigre. Siguirndo el sendero que desciende hasta la unión de la quebrada Porsillego <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> Jiménez, Quírico</div>`)[0];
+            popup_952744c2ca0a41d6aedbcfcb9b556801.setContent(html_058c0a52c56845fd80dc3e1378fec7c5);
+        
+
+        marker_19f10b1417544f6caf410375872c8bf0.bindPopup(popup_952744c2ca0a41d6aedbcfcb9b556801)
+        ;
+
+        
+    
+    
+            var marker_3005489e42404034991551a665ab7ca0 = L.marker(
+                [8.41, -83.4],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_89febbc3d71d47878abce8035477d26a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_489d04cc684e4c23be1096f9b5c66df3 = $(`<div id="html_489d04cc684e4c23be1096f9b5c66df3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 3 Km norte de Playa Piro, Puerto Jiménez, Finca Asunción Esquivel <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1989-02-22 <strong>Recolectores:</strong> Jiménez, Quírico <strong>Identificadores:</strong> Jiménez, Quírico</div>`)[0];
+            popup_89febbc3d71d47878abce8035477d26a.setContent(html_489d04cc684e4c23be1096f9b5c66df3);
+        
+
+        marker_3005489e42404034991551a665ab7ca0.bindPopup(popup_89febbc3d71d47878abce8035477d26a)
+        ;
+
+        
+    
+    
+            var marker_d9666ae9f11f4a3d8c83a244920d423f = L.marker(
+                [8.45, -83.56],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_09782d834272437fab088c8b95f688dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_286c72024aa945189ced56a9141a6b97 = $(`<div id="html_286c72024aa945189ced56a9141a6b97" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado Llorona to Los Planes <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1989-03-25 <strong>Recolectores:</strong> Kernan, C. <strong>Identificadores:</strong> N. Zamora & Q. Jiménez</div>`)[0];
+            popup_09782d834272437fab088c8b95f688dd.setContent(html_286c72024aa945189ced56a9141a6b97);
+        
+
+        marker_d9666ae9f11f4a3d8c83a244920d423f.bindPopup(popup_09782d834272437fab088c8b95f688dd)
+        ;
+
+        
+    
+    
+            var marker_3bb2d42c15d74cf2b38dda68614cb2a9 = L.marker(
+                [8.64, -83.61],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_623fee96a6544e279b9a63127dd158bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e5f5647ce2c40d995f49afd9c90a1aa = $(`<div id="html_6e5f5647ce2c40d995f49afd9c90a1aa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajando Cerro Brujo hacia el O, Sierpe <strong>Elevación:</strong> 375.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Marín, Juan <strong>Identificadores:</strong> Hammel, Barry E.</div>`)[0];
+            popup_623fee96a6544e279b9a63127dd158bd.setContent(html_6e5f5647ce2c40d995f49afd9c90a1aa);
+        
+
+        marker_3bb2d42c15d74cf2b38dda68614cb2a9.bindPopup(popup_623fee96a6544e279b9a63127dd158bd)
+        ;
+
+        
+    
+    
+            var marker_6b493a6bf22545d3ad33c0261b76b888 = L.marker(
+                [9.71, -84.39],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_3c82fcf6642b47e598916b5b80decb29 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6461516af13e4dccbc57debf14a428c3 = $(`<div id="html_6461516af13e4dccbc57debf14a428c3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. La Cangreja Santa Rosa. Cerro Pelón. Bosque primario alterado en el cañón de una quebrada. <strong>Elevación:</strong> 450.0 m  <strong>Fecha:</strong> 1992-08-11 <strong>Recolectores:</strong> Morales, Juan Francisco <strong>Identificadores:</strong> Morales, Juan Francisco</div>`)[0];
+            popup_3c82fcf6642b47e598916b5b80decb29.setContent(html_6461516af13e4dccbc57debf14a428c3);
+        
+
+        marker_6b493a6bf22545d3ad33c0261b76b888.bindPopup(popup_3c82fcf6642b47e598916b5b80decb29)
+        ;
+
+        
+    
+    
+            var marker_8e1c216d59f84d93a728bf4ca99c01c0 = L.marker(
+                [8.43, -83.35],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_6ccc8042b87a415eb56d7200813781af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3442daa40dc4cf58e976b68dd756374 = $(`<div id="html_f3442daa40dc4cf58e976b68dd756374" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Playa Piro, S de Puerto Jiménez <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1991-02-15 <strong>Recolectores:</strong> Jiménez, Quírico <strong>Identificadores:</strong> Jiménez, Quírico</div>`)[0];
+            popup_6ccc8042b87a415eb56d7200813781af.setContent(html_f3442daa40dc4cf58e976b68dd756374);
+        
+
+        marker_8e1c216d59f84d93a728bf4ca99c01c0.bindPopup(popup_6ccc8042b87a415eb56d7200813781af)
+        ;
+
+        
+    
+    
+            var marker_621c7987967f497294d835ce8b7f162d = L.marker(
+                [8.42, -83.31],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_b280b27274824079bbfdef66de3a0926 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4959aa37c7794dbc86098dec432de4c5 = $(`<div id="html_4959aa37c7794dbc86098dec432de4c5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Jiménez, Alto de La Carbonera, camino a Cerro de Osa <strong>Elevación:</strong> 275.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Chacón, Abelardo M. <strong>Identificadores:</strong> Zamora, Nelson</div>`)[0];
+            popup_b280b27274824079bbfdef66de3a0926.setContent(html_4959aa37c7794dbc86098dec432de4c5);
+        
+
+        marker_621c7987967f497294d835ce8b7f162d.bindPopup(popup_b280b27274824079bbfdef66de3a0926)
+        ;
+
+        
+    
+    
+            var marker_ef5b3e28eed2439aad795be61b085c25 = L.marker(
+                [8.51, -83.45],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_9ff8c4ef19234505a71935d1135c3feb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b791114ea1148398b5e308182bb83e2 = $(`<div id="html_1b791114ea1148398b5e308182bb83e2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Dos Brazos de Río Tigre. Siguiendo el sendero que desciende hasta La Unión de la Quebrada Patemazo con Quebrada Porsillego <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> Jiménez, Quírico</div>`)[0];
+            popup_9ff8c4ef19234505a71935d1135c3feb.setContent(html_1b791114ea1148398b5e308182bb83e2);
+        
+
+        marker_ef5b3e28eed2439aad795be61b085c25.bindPopup(popup_9ff8c4ef19234505a71935d1135c3feb)
+        ;
+
+        
+    
+    
+            var marker_d51bc144f5d74a338ae9d61e184b6ace = L.marker(
+                [9.68, -84.33],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_c725b07502b74f348d21ce2ea40157f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f35400ef7e3c413e9b98cc3b3fb0a56e = $(`<div id="html_f35400ef7e3c413e9b98cc3b3fb0a56e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. La Cangreja Zapatón. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1986-08-01 <strong>Recolectores:</strong> Zamora, Nelson <strong>Identificadores:</strong> Morales, Juan Francisco</div>`)[0];
+            popup_c725b07502b74f348d21ce2ea40157f0.setContent(html_f35400ef7e3c413e9b98cc3b3fb0a56e);
+        
+
+        marker_d51bc144f5d74a338ae9d61e184b6ace.bindPopup(popup_c725b07502b74f348d21ce2ea40157f0)
+        ;
+
+        
+    
+    
+            var marker_7081efabd4d84bf18780c8f668a755c7 = L.marker(
+                [9.7, -84.39],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_fff4cd74b80d492eb5809555bbeec8a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d33f375d9c44f7aaa780c5289b1bad0 = $(`<div id="html_2d33f375d9c44f7aaa780c5289b1bad0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. La Cangreja Santa Rosa. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1987-04-07 <strong>Recolectores:</strong> Jiménez, Quírico <strong>Identificadores:</strong> Jiménez, Quírico</div>`)[0];
+            popup_fff4cd74b80d492eb5809555bbeec8a5.setContent(html_2d33f375d9c44f7aaa780c5289b1bad0);
+        
+
+        marker_7081efabd4d84bf18780c8f668a755c7.bindPopup(popup_fff4cd74b80d492eb5809555bbeec8a5)
+        ;
+
+        
+    
+    
+            var marker_67d9178925494b3cb56523e96d93cd2d = L.marker(
+                [9.7, -84.35],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_cbf9a1dd4afe482d9a0a4d413b986eb6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_183adc0a8be64391b7593d423205ba7d = $(`<div id="html_183adc0a8be64391b7593d423205ba7d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. La Cangreja Mastatal. Faldas de Fila La Cangreja. Bosque a la orilla de la Quebrada Grande. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1986-08-24 <strong>Recolectores:</strong> Gómez Laurito, Jorge <strong>Identificadores:</strong> Morales, Juan Francisco</div>`)[0];
+            popup_cbf9a1dd4afe482d9a0a4d413b986eb6.setContent(html_183adc0a8be64391b7593d423205ba7d);
+        
+
+        marker_67d9178925494b3cb56523e96d93cd2d.bindPopup(popup_cbf9a1dd4afe482d9a0a4d413b986eb6)
+        ;
+
+        
+    
+    
+            var marker_ea62b90361f746e587f9ec214e3bc825 = L.marker(
+                [8.68333, -83.2167],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_0d27d536b70b4737961172cfdf265aa8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7649437d2dc6473296184d900a311371 = $(`<div id="html_7649437d2dc6473296184d900a311371" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Bosque de Los Austriacos" Primary Forest-Research Plot, La Gamba <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1994-04-03 <strong>Recolectores:</strong> Huber Werner, Weissenhofer Anton <strong>Identificadores:</strong> Huber Werner, Weissenhofer Anton</div>`)[0];
+            popup_0d27d536b70b4737961172cfdf265aa8.setContent(html_7649437d2dc6473296184d900a311371);
+        
+
+        marker_ea62b90361f746e587f9ec214e3bc825.bindPopup(popup_0d27d536b70b4737961172cfdf265aa8)
+        ;
+
+        
+    
+    
+            var marker_c824803adc624569a2057a653d2f31c7 = L.marker(
+                [8.68333, -83.2167],
+                {}
+            ).addTo(marker_cluster_ec714f111b4a4506a7f60fa0e401e83a);
+        
+    
+        var popup_a17965a992b14201b872eeb50ca6acf5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_81a435d417a5406da024837096fb1f7b = $(`<div id="html_81a435d417a5406da024837096fb1f7b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Bosque de Los Austriacos" Primary Forest-Research Plot, La Gamba <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1994-04-03 <strong>Recolectores:</strong> Huber Werner, Weissenhofer Anton <strong>Identificadores:</strong> Huber Werner, Weissenhofer Anton</div>`)[0];
+            popup_a17965a992b14201b872eeb50ca6acf5.setContent(html_81a435d417a5406da024837096fb1f7b);
+        
+
+        marker_c824803adc624569a2057a653d2f31c7.bindPopup(popup_a17965a992b14201b872eeb50ca6acf5)
+        ;
+
+        
+    
+    
+            var layer_control_a1bd04156b23427f8b81c7ce75cd1d65 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_35815832c74d463c9029d31784f7d8d1,
+                    "ESRI World Imagery" : tile_layer_bec3682809624323834f354b5659c230,
+                },
+                overlays :  {
+                    "macro_element_ec714f111b4a4506a7f60fa0e401e83a" : marker_cluster_ec714f111b4a4506a7f60fa0e401e83a,
+                },
+            };
+            L.control.layers(
+                layer_control_a1bd04156b23427f8b81c7ce75cd1d65.base_layers,
+                layer_control_a1bd04156b23427f8b81c7ce75cd1d65.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_b7fdba8be84f457abd2fba0d0ccbfd8c);
+            tile_layer_bec3682809624323834f354b5659c230.remove();
+        
+</script>

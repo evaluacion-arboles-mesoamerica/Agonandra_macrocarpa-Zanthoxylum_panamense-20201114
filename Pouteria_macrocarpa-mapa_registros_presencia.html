@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fa07f5f0ac9944f9af65bebbb9b11e4a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_fa07f5f0ac9944f9af65bebbb9b11e4a" ></div>
+        
+</body>
+<script>    
+    
+            var map_fa07f5f0ac9944f9af65bebbb9b11e4a = L.map(
+                "map_fa07f5f0ac9944f9af65bebbb9b11e4a",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+
+            
+
+        
+    
+            var tile_layer_b3e438cd560b48e28c2589e7abcae76f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+            var tile_layer_87042a4823204766924673ffd89eefcc = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+            var circle_marker_0524b71ef6ba40ff8e7617a8eed47543 = L.circleMarker(
+                [5.26, -52.95],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_2702fff1a21148c2b529f454698851e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35393734044b432e9684ac1f0a78e0c9 = $(`<div id="html_35393734044b432e9684ac1f0a78e0c9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1999-01-01 <strong>Recolectores:</strong> Biotope (Non renseigné) <strong>Identificadores:</strong> Non renseigné (Non renseigné)</div>`)[0];
+            popup_2702fff1a21148c2b529f454698851e9.setContent(html_35393734044b432e9684ac1f0a78e0c9);
+        
+
+        circle_marker_0524b71ef6ba40ff8e7617a8eed47543.bindPopup(popup_2702fff1a21148c2b529f454698851e9)
+        ;
+
+        
+    
+    
+            var circle_marker_4111ed3c43d544dabb603b39877ebdba = L.circleMarker(
+                [-2.9916669999999996, -47.406389000000004],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_0c702de8c42344dda31782d85a68ecf8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1511bd111a9f4dd98e6e2643b7c0fce8 = $(`<div id="html_1511bd111a9f4dd98e6e2643b7c0fce8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Área atrás da EETEPA de Paragominas. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2011-11-08 <strong>Recolectores:</strong> Oliveira, JCL de <strong>Identificadores:</strong> Cordeiro, MR</div>`)[0];
+            popup_0c702de8c42344dda31782d85a68ecf8.setContent(html_1511bd111a9f4dd98e6e2643b7c0fce8);
+        
+
+        circle_marker_4111ed3c43d544dabb603b39877ebdba.bindPopup(popup_0c702de8c42344dda31782d85a68ecf8)
+        ;
+
+        
+    
+    
+            var circle_marker_c6f8ff370a5d4427b432aa7b6be7ab4f = L.circleMarker(
+                [9.672661999999999, -83.027687],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_0f1c14bdf29c490780a1dc70418e021c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa0755a353d24b45b8030e58d62750e7 = $(`<div id="html_aa0755a353d24b45b8030e58d62750e7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.B. Hitoy Cerere.  Cuenca del Estrella.  Sendero Tepezcuintle. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2000-07-01 <strong>Recolectores:</strong> Luis Acosta|Víctor H. Ramírez|Gerardo Soto|Geovanny Sancho <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_0f1c14bdf29c490780a1dc70418e021c.setContent(html_aa0755a353d24b45b8030e58d62750e7);
+        
+
+        circle_marker_c6f8ff370a5d4427b432aa7b6be7ab4f.bindPopup(popup_0f1c14bdf29c490780a1dc70418e021c)
+        ;
+
+        
+    
+    
+            var circle_marker_fca263f2fe97454db44573999d716d8d = L.circleMarker(
+                [-2.9916669999999996, -47.406389000000004],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_50063d59f6314b8389cc0689245035be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5bddf41a14ae431ead42c3e281675eaa = $(`<div id="html_5bddf41a14ae431ead42c3e281675eaa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Área atrás da EETEPA de Paragominas. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2011-11-08 <strong>Recolectores:</strong> Oliveira, JCL de <strong>Identificadores:</strong> Cordeiro, MR</div>`)[0];
+            popup_50063d59f6314b8389cc0689245035be.setContent(html_5bddf41a14ae431ead42c3e281675eaa);
+        
+
+        circle_marker_fca263f2fe97454db44573999d716d8d.bindPopup(popup_50063d59f6314b8389cc0689245035be)
+        ;
+
+        
+    
+    
+            var circle_marker_6dc24776527e43a6a3b116f25a64fb22 = L.circleMarker(
+                [-1.873056, -48.764444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_96eb613fa4f34f55a44c09d14a4016c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8bf31b989008405c8032d5b2e8686928 = $(`<div id="html_8bf31b989008405c8032d5b2e8686928" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ao lado da ponte que dá acesso à cidade. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2015-05-26 <strong>Recolectores:</strong> Cruz, E.D.; Silva, M.V.F.; Nascimento, M.P. <strong>Identificadores:</strong> A. Alves-Araújo</div>`)[0];
+            popup_96eb613fa4f34f55a44c09d14a4016c6.setContent(html_8bf31b989008405c8032d5b2e8686928);
+        
+
+        circle_marker_6dc24776527e43a6a3b116f25a64fb22.bindPopup(popup_96eb613fa4f34f55a44c09d14a4016c6)
+        ;
+
+        
+    
+    
+            var circle_marker_8d783e9f341c4237877f4ae072e8db72 = L.circleMarker(
+                [-10.823611, -55.499444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_4c658afd8c2e434aac0c9a22959ef634 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0cd5c9ddee74a598c2884bcdc99a629 = $(`<div id="html_c0cd5c9ddee74a598c2884bcdc99a629" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Resgate da FLORA da UHE Colíder. Estrada de acesso à UHE Colíder. <strong>Elevación:</strong> 306.0 m  <strong>Fecha:</strong> 2015-01-07 <strong>Recolectores:</strong> Lautert, M. ; Oliveira, V.F.; Thomé, R.S.; Virtuoso.V.S. <strong>Identificadores:</strong> Lautert, M.</div>`)[0];
+            popup_4c658afd8c2e434aac0c9a22959ef634.setContent(html_c0cd5c9ddee74a598c2884bcdc99a629);
+        
+
+        circle_marker_8d783e9f341c4237877f4ae072e8db72.bindPopup(popup_4c658afd8c2e434aac0c9a22959ef634)
+        ;
+
+        
+    
+    
+            var circle_marker_85bc5222dfdd4a04a3a96610ca4889b7 = L.circleMarker(
+                [3.2833300000000003, -73.91667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_31ebb59eeb734dd58db21ea05e5863e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e1132f4c62a4ec791be0868c3b8740b = $(`<div id="html_2e1132f4c62a4ec791be0868c3b8740b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Carvajal, L. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_31ebb59eeb734dd58db21ea05e5863e0.setContent(html_2e1132f4c62a4ec791be0868c3b8740b);
+        
+
+        circle_marker_85bc5222dfdd4a04a3a96610ca4889b7.bindPopup(popup_31ebb59eeb734dd58db21ea05e5863e0)
+        ;
+
+        
+    
+    
+            var circle_marker_23496e425df24fa98e5f313b955cdc04 = L.circleMarker(
+                [0.17, -51.62],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_45e9cdd0cc8544d9b05558eebfa41228 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3cd88d5a2b3c4ba1a544764fce58e997 = $(`<div id="html_3cd88d5a2b3c4ba1a544764fce58e997" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camaipi. EMBRAPA reserve and vicinity <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1983-09-17 <strong>Recolectores:</strong> S. A. Mori <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_45e9cdd0cc8544d9b05558eebfa41228.setContent(html_3cd88d5a2b3c4ba1a544764fce58e997);
+        
+
+        circle_marker_23496e425df24fa98e5f313b955cdc04.bindPopup(popup_45e9cdd0cc8544d9b05558eebfa41228)
+        ;
+
+        
+    
+    
+            var circle_marker_7339db0924b244c1a60f6f129dbd9a25 = L.circleMarker(
+                [3.0794099999999998, -60.960081],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_1435c0bdd630430dae96ac4f3fce5706 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3c91cbe821f41e186767412b137cf84 = $(`<div id="html_a3c91cbe821f41e186767412b137cf84" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Salvador, 40 km north west of Boa Vista. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1967-03-01 <strong>Recolectores:</strong> G. T. Prance <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1435c0bdd630430dae96ac4f3fce5706.setContent(html_a3c91cbe821f41e186767412b137cf84);
+        
+
+        circle_marker_7339db0924b244c1a60f6f129dbd9a25.bindPopup(popup_1435c0bdd630430dae96ac4f3fce5706)
+        ;
+
+        
+    
+    
+            var circle_marker_4b07cd3b0eca4603ad3b5651e37ee063 = L.circleMarker(
+                [-1.054011, -56.05175],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_b342a73851a749b48e43e422fb770de9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dccb82e7659d4e9db0e72483e26a38e6 = $(`<div id="html_dccb82e7659d4e9db0e72483e26a38e6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Parú do Oeste, margem esquerda, ao lado da cachoeira Pancada. Mata de terra firme, solo argilo-pedregoso. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1980-09-04 <strong>Recolectores:</strong> C. A. Cid Ferreira <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_b342a73851a749b48e43e422fb770de9.setContent(html_dccb82e7659d4e9db0e72483e26a38e6);
+        
+
+        circle_marker_4b07cd3b0eca4603ad3b5651e37ee063.bindPopup(popup_b342a73851a749b48e43e422fb770de9)
+        ;
+
+        
+    
+    
+            var circle_marker_3208118d834441d4ace2c5e809ce131a = L.circleMarker(
+                [-1.7689043261024295, -55.867051049377686],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_9852a9a94f4e42bc9e5965b421ab78dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5aab86aab627473d97400d1c19bf3777 = $(`<div id="html_5aab86aab627473d97400d1c19bf3777" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Trombetas, margem direita, Porto Trombetas, estrada da Mineraçao Rio-Norte, km 60 atras da Mina de Bauxita, proximo ao igarape Saracazinho <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1980-08-31 <strong>Recolectores:</strong> C. A. Cid Ferreira <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_9852a9a94f4e42bc9e5965b421ab78dd.setContent(html_5aab86aab627473d97400d1c19bf3777);
+        
+
+        circle_marker_3208118d834441d4ace2c5e809ce131a.bindPopup(popup_9852a9a94f4e42bc9e5965b421ab78dd)
+        ;
+
+        
+    
+    
+            var circle_marker_02ade6fe6873491dae1cf9d98abb3978 = L.circleMarker(
+                [-4.4364419999999996, -47.538503000000006],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_144880b7a3d84e24a15667ca59086c6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_abab17e0ce12442a985fafaa3f203456 = $(`<div id="html_abab17e0ce12442a985fafaa3f203456" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Itinga do Pará, Fazenda Caboré. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1979-12-01 <strong>Recolectores:</strong> U. N. Maciel <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_144880b7a3d84e24a15667ca59086c6d.setContent(html_abab17e0ce12442a985fafaa3f203456);
+        
+
+        circle_marker_02ade6fe6873491dae1cf9d98abb3978.bindPopup(popup_144880b7a3d84e24a15667ca59086c6d)
+        ;
+
+        
+    
+    
+            var circle_marker_2551365d2d1c448d8501d9b440089c99 = L.circleMarker(
+                [-1.284992, -48.455521999999995],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_ebf63969bb984bc5832483f7afd89347 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d296be0f37fe484b991829fa5ab60785 = $(`<div id="html_d296be0f37fe484b991829fa5ab60785" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of Belem. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1961-09-01 <strong>Recolectores:</strong> J. M. Pires <strong>Identificadores:</strong> T. D. Pennington</div>`)[0];
+            popup_ebf63969bb984bc5832483f7afd89347.setContent(html_d296be0f37fe484b991829fa5ab60785);
+        
+
+        circle_marker_2551365d2d1c448d8501d9b440089c99.bindPopup(popup_ebf63969bb984bc5832483f7afd89347)
+        ;
+
+        
+    
+    
+            var circle_marker_4d43c2e4aa20487baed376b535e259cd = L.circleMarker(
+                [-1.054011, -56.05175],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_455f2f9e65b3445082d8f868bfcae761 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3d92fa81f544f128bfaaf4a7cce8458 = $(`<div id="html_a3d92fa81f544f128bfaaf4a7cce8458" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Parú do Oeste, margem esquerda, ao lado da cachoeira Pancada. Mata de terra firme, solo argilo-pedregoso. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1980-09-04 <strong>Recolectores:</strong> C. A. Cid Ferreira <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_455f2f9e65b3445082d8f868bfcae761.setContent(html_a3d92fa81f544f128bfaaf4a7cce8458);
+        
+
+        circle_marker_4d43c2e4aa20487baed376b535e259cd.bindPopup(popup_455f2f9e65b3445082d8f868bfcae761)
+        ;
+
+        
+    
+    
+            var circle_marker_275fc79824754899ba61ba2161b2e9e5 = L.circleMarker(
+                [-14.4231, -39.0617],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_7f60ed04926c4e8ebee8e08e5b479612 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d4c4831408547e49a17a678167efac6 = $(`<div id="html_3d4c4831408547e49a17a678167efac6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 7.3 km N of Serra Grande on rd to Itacaré. Fazenda Lagoa do Conjunto Fazenda Santa Cruz.  Southern Bahian moist forest. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> W. W. Thomas <strong>Identificadores:</strong> A. Alves-Araújo</div>`)[0];
+            popup_7f60ed04926c4e8ebee8e08e5b479612.setContent(html_3d4c4831408547e49a17a678167efac6);
+        
+
+        circle_marker_275fc79824754899ba61ba2161b2e9e5.bindPopup(popup_7f60ed04926c4e8ebee8e08e5b479612)
+        ;
+
+        
+    
+    
+            var circle_marker_87f380fd6f7b4bb88b8198889d4383df = L.circleMarker(
+                [-4.4364419999999996, -47.538503000000006],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_fcaa930562f24195abd44871b8aa60e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d7c78a7bef74658bb1038581a0563e8 = $(`<div id="html_7d7c78a7bef74658bb1038581a0563e8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Itinga do Pará, Fazenda Caboré. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1979-12-03 <strong>Recolectores:</strong> U. N. Maciel <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_fcaa930562f24195abd44871b8aa60e5.setContent(html_7d7c78a7bef74658bb1038581a0563e8);
+        
+
+        circle_marker_87f380fd6f7b4bb88b8198889d4383df.bindPopup(popup_fcaa930562f24195abd44871b8aa60e5)
+        ;
+
+        
+    
+    
+            var circle_marker_8f92e10001a141a88a6227cad3c83f05 = L.circleMarker(
+                [3.0794099999999998, -60.960081],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_31e151aa2bff4391a909a4bd4ae430ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6fe22ad10b644c988e4d8071702e31c = $(`<div id="html_d6fe22ad10b644c988e4d8071702e31c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Salvador, 40 km north west of Boa Vista. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1967-03-01 <strong>Recolectores:</strong> G. T. Prance <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_31e151aa2bff4391a909a4bd4ae430ff.setContent(html_d6fe22ad10b644c988e4d8071702e31c);
+        
+
+        circle_marker_8f92e10001a141a88a6227cad3c83f05.bindPopup(popup_31e151aa2bff4391a909a4bd4ae430ff)
+        ;
+
+        
+    
+    
+            var circle_marker_01a59cfd230a4b1c9c43c510bd930e5c = L.circleMarker(
+                [3.2833330000000003, -73.916667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_c9461675168b4c3f9c9fc5d9649f9b93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46ea424e13f74281b22c226dc89c6575 = $(`<div id="html_46ea424e13f74281b22c226dc89c6575" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vereda Monserrate Bajo, finca El Paraíso, Caño de los Dioses <strong>Elevación:</strong> 480.0 m  <strong>Fecha:</strong> 2004-04-08 <strong>Recolectores:</strong> Carvajal, Lyndon | Manjarrés, A. | Pinzón, Viviana | Bello, A. | Cortés-B., Rocío <strong>Identificadores:</strong> Carvajal, Lyndon</div>`)[0];
+            popup_c9461675168b4c3f9c9fc5d9649f9b93.setContent(html_46ea424e13f74281b22c226dc89c6575);
+        
+
+        circle_marker_01a59cfd230a4b1c9c43c510bd930e5c.bindPopup(popup_c9461675168b4c3f9c9fc5d9649f9b93)
+        ;
+
+        
+    
+    
+            var circle_marker_6ea02b8d322a45ec836cd41e78c233f2 = L.circleMarker(
+                [4.05, -52.08],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_e715244307f3438a98f1cb4967bf3e3b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6ef88a7336949b4a1c56368105366c2 = $(`<div id="html_e6ef88a7336949b4a1c56368105366c2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Interfluve Kourouaï-Kapiri, sud rivere Kourouaï <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2008-11-21 <strong>Recolectores:</strong> D. Sabatier <strong>Identificadores:</strong> Sabatier, D.</div>`)[0];
+            popup_e715244307f3438a98f1cb4967bf3e3b.setContent(html_e6ef88a7336949b4a1c56368105366c2);
+        
+
+        circle_marker_6ea02b8d322a45ec836cd41e78c233f2.bindPopup(popup_e715244307f3438a98f1cb4967bf3e3b)
+        ;
+
+        
+    
+    
+            var circle_marker_519bf7a62e2b4c29b920a1bc3d668622 = L.circleMarker(
+                [-15.251389000000001, -39.380278000000004],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_e978642d6fca4072a6abf17a6e071ceb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ff81a993dc14f1a9b0e80e9956bf35e = $(`<div id="html_0ff81a993dc14f1a9b0e80e9956bf35e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Brasil, Bahia, Arataca: PARNA de Serra das Lontras. Trilha do mirante de Seu Artur. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 2011-09-12 <strong>Recolectores:</strong> Perdiz, R. de O.; P. Leitman; J. Paixão; L.C. Gomes; L. Daneu <strong>Identificadores:</strong> A. Alves Araújo</div>`)[0];
+            popup_e978642d6fca4072a6abf17a6e071ceb.setContent(html_0ff81a993dc14f1a9b0e80e9956bf35e);
+        
+
+        circle_marker_519bf7a62e2b4c29b920a1bc3d668622.bindPopup(popup_e978642d6fca4072a6abf17a6e071ceb)
+        ;
+
+        
+    
+    
+            var circle_marker_db37ddb51946419fad92ffef835d00de = L.circleMarker(
+                [9.51, -84.06],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_9bf92446083846c88bfcc84a680e87ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_015a5e78a34e4d0cbb2ba7cb7f6bad4e = $(`<div id="html_015a5e78a34e4d0cbb2ba7cb7f6bad4e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Bustamante. San Isidro. <strong>Elevación:</strong> 845.0 m  <strong>Fecha:</strong> 1987-08-27 <strong>Recolectores:</strong> Nelson Zamora|Isidro A. Chacón G.|Gerardo Herrera Ch. <strong>Identificadores:</strong> N. Zamora, 26/V/</div>`)[0];
+            popup_9bf92446083846c88bfcc84a680e87ab.setContent(html_015a5e78a34e4d0cbb2ba7cb7f6bad4e);
+        
+
+        circle_marker_db37ddb51946419fad92ffef835d00de.bindPopup(popup_9bf92446083846c88bfcc84a680e87ab)
+        ;
+
+        
+    
+    
+            var circle_marker_feb59a7a43d1460db859f5bf40e30c6f = L.circleMarker(
+                [8.55, -83.58],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_2b289619d5874c0aba5bd456c2e67518 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a0708122f0c4b509a4018ac80427ea6 = $(`<div id="html_1a0708122f0c4b509a4018ac80427ea6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce Osa Península, Rancho Quemado, ca. 15 km W of Rincón; on ridge at NW end of valley, near Fila Ganado. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1988-05-30 <strong>Recolectores:</strong> Barry E. Hammel|Gerardo Herrera Ch.|María Marta Chavarría|Ángel Solís <strong>Identificadores:</strong> Pennington, III/</div>`)[0];
+            popup_2b289619d5874c0aba5bd456c2e67518.setContent(html_1a0708122f0c4b509a4018ac80427ea6);
+        
+
+        circle_marker_feb59a7a43d1460db859f5bf40e30c6f.bindPopup(popup_2b289619d5874c0aba5bd456c2e67518)
+        ;
+
+        
+    
+    
+            var circle_marker_a55c3572018648509a583ca437f2f8ac = L.circleMarker(
+                [8.73, -83.41],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_de63930e104847179b342106235a3bf7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e3aac6abad842d6992283296704839d = $(`<div id="html_1e3aac6abad842d6992283296704839d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> LOC: NW0883; Between Rincon de Osa and Esquinas, disturbed forest on laterite <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1984-01-17 <strong>Recolectores:</strong> T. D. Pennington|Luis J. Poveda Álvarez|Pablo E. Sánchez V.|Nelson Zamora <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_de63930e104847179b342106235a3bf7.setContent(html_1e3aac6abad842d6992283296704839d);
+        
+
+        circle_marker_a55c3572018648509a583ca437f2f8ac.bindPopup(popup_de63930e104847179b342106235a3bf7)
+        ;
+
+        
+    
+    
+            var circle_marker_4ef27b95ae314375948b7017a607c918 = L.circleMarker(
+                [2.5089599999999996, -73.88302],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_5d011b75652a4cb9839e6db272b9ae02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2fae4453b34a44d296fa9b74d0cfcac1 = $(`<div id="html_2fae4453b34a44d296fa9b74d0cfcac1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sierra de La Macarena. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Enrique  Forero|et al. <strong>Identificadores:</strong> Pennington, Fl.Neotrop. 52:</div>`)[0];
+            popup_5d011b75652a4cb9839e6db272b9ae02.setContent(html_2fae4453b34a44d296fa9b74d0cfcac1);
+        
+
+        circle_marker_4ef27b95ae314375948b7017a607c918.bindPopup(popup_5d011b75652a4cb9839e6db272b9ae02)
+        ;
+
+        
+    
+    
+            var circle_marker_8306e5c6067d433b9d5f905e4d242103 = L.circleMarker(
+                [10.5, -83.78],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_63a55cd79ad749d9adb4d3bd41388eb0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82805f983f4540248b630d722ae1d36c = $(`<div id="html_82805f983f4540248b630d722ae1d36c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hacienda Tapezcu-Las Suerte. Close to Finca La Selva. Tropical wet forest <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1978-03-10 <strong>Recolectores:</strong> Christopher Davidson <strong>Identificadores:</strong> T.D. Pennington</div>`)[0];
+            popup_63a55cd79ad749d9adb4d3bd41388eb0.setContent(html_82805f983f4540248b630d722ae1d36c);
+        
+
+        circle_marker_8306e5c6067d433b9d5f905e4d242103.bindPopup(popup_63a55cd79ad749d9adb4d3bd41388eb0)
+        ;
+
+        
+    
+    
+            var circle_marker_d680d9a3e95241c7885b04203b5fe879 = L.circleMarker(
+                [4.0569440000000005, -52.086667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_d37de21340884436a7c464f18ea80c93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05f28fbc8e5c49f8819ff895befdd9d2 = $(`<div id="html_05f28fbc8e5c49f8819ff895befdd9d2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Interfluve Kourouaï-Kapiri, sud rivière Kourouaï. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2008-11-21 <strong>Recolectores:</strong> D. Sabatier <strong>Identificadores:</strong> Sabatier</div>`)[0];
+            popup_d37de21340884436a7c464f18ea80c93.setContent(html_05f28fbc8e5c49f8819ff895befdd9d2);
+        
+
+        circle_marker_d680d9a3e95241c7885b04203b5fe879.bindPopup(popup_d37de21340884436a7c464f18ea80c93)
+        ;
+
+        
+    
+    
+            var circle_marker_19b58ec1f01243668643c9ec5a0f3c8b = L.circleMarker(
+                [9.672661999999999, -83.027687],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_1f6c701a8f1742299f93ec5e1e434493 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da9bf4ae8dcb4add854c98982e12d612 = $(`<div id="html_da9bf4ae8dcb4add854c98982e12d612" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Tepezcuintle. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2000-07-01 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez ; Gerardo Soto ; Geovanny Sancho <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_1f6c701a8f1742299f93ec5e1e434493.setContent(html_da9bf4ae8dcb4add854c98982e12d612);
+        
+
+        circle_marker_19b58ec1f01243668643c9ec5a0f3c8b.bindPopup(popup_1f6c701a8f1742299f93ec5e1e434493)
+        ;
+
+        
+    
+    
+            var circle_marker_75a9c8d9773b4f5b963461acfe6ceb41 = L.circleMarker(
+                [9.672661999999999, -83.027687],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_9d51d026118149569794dd7fdd14ccda = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8bb1275df6db49e4aa71f5272ec0c0e0 = $(`<div id="html_8bb1275df6db49e4aa71f5272ec0c0e0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Tepezcuintle. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2000-07-01 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez ; Gerardo Soto ; Geovanny Sancho <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_9d51d026118149569794dd7fdd14ccda.setContent(html_8bb1275df6db49e4aa71f5272ec0c0e0);
+        
+
+        circle_marker_75a9c8d9773b4f5b963461acfe6ceb41.bindPopup(popup_9d51d026118149569794dd7fdd14ccda)
+        ;
+
+        
+    
+    
+            var circle_marker_1f02bb24f7d74b818b92741a8bc9cdf8 = L.circleMarker(
+                [9.516667, -84.06666700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_9b8042ffdf1c4659b535597b4c680687 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8aa91de7b74046c891de106267b1bce8 = $(`<div id="html_8aa91de7b74046c891de106267b1bce8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Isidro. <strong>Elevación:</strong> 845.0 m  <strong>Fecha:</strong> 1987-08-27 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_9b8042ffdf1c4659b535597b4c680687.setContent(html_8aa91de7b74046c891de106267b1bce8);
+        
+
+        circle_marker_1f02bb24f7d74b818b92741a8bc9cdf8.bindPopup(popup_9b8042ffdf1c4659b535597b4c680687)
+        ;
+
+        
+    
+    
+            var circle_marker_fbc293114e814bd2a5dcea8102c1a4ab = L.circleMarker(
+                [8.55, -83.583333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_7f181ecda0a046ddaee2c48b0b684e1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2a3dd2f5dcc4ec3b8cc569afb63a5ff = $(`<div id="html_b2a3dd2f5dcc4ec3b8cc569afb63a5ff" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rancho Quemado, ca. 15 km W of Rincon; on ridge at NW end of valley, near Fila Ganado. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1988-05-30 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Pennington, Terence Dale</div>`)[0];
+            popup_7f181ecda0a046ddaee2c48b0b684e1e.setContent(html_b2a3dd2f5dcc4ec3b8cc569afb63a5ff);
+        
+
+        circle_marker_fbc293114e814bd2a5dcea8102c1a4ab.bindPopup(popup_7f181ecda0a046ddaee2c48b0b684e1e)
+        ;
+
+        
+    
+    
+            var circle_marker_07a3304dccc54e24a723fdd3d0d6cf81 = L.circleMarker(
+                [-10.8339, -52.8731],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_686fc297e43249d4bb8f30de241450c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b05eb99f2da43009c4a7d8bb76e15c1 = $(`<div id="html_8b05eb99f2da43009c4a7d8bb76e15c1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1932-01-01 <strong>Recolectores:</strong> P. Capucho <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_686fc297e43249d4bb8f30de241450c0.setContent(html_8b05eb99f2da43009c4a7d8bb76e15c1);
+        
+
+        circle_marker_07a3304dccc54e24a723fdd3d0d6cf81.bindPopup(popup_686fc297e43249d4bb8f30de241450c0)
+        ;
+
+        
+    
+    
+            var circle_marker_2ebde65c86b44c9785f7dc804d9df741 = L.circleMarker(
+                [-18.0, -44.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_827470d79dbd4a37aba4230fc2138302 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_674081d904854dfd91f8a6a73c7424fc = $(`<div id="html_674081d904854dfd91f8a6a73c7424fc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Y. Mexía <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_827470d79dbd4a37aba4230fc2138302.setContent(html_674081d904854dfd91f8a6a73c7424fc);
+        
+
+        circle_marker_2ebde65c86b44c9785f7dc804d9df741.bindPopup(popup_827470d79dbd4a37aba4230fc2138302)
+        ;
+
+        
+    
+    
+            var circle_marker_9592ca15e81f455a862b8982f2877d98 = L.circleMarker(
+                [-10.8339, -52.8731],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_cffb0dc817474cbdb5e91d99a27cb0c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac002b23e3294e238a7c7a91f57f451b = $(`<div id="html_ac002b23e3294e238a7c7a91f57f451b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> nan <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_cffb0dc817474cbdb5e91d99a27cb0c2.setContent(html_ac002b23e3294e238a7c7a91f57f451b);
+        
+
+        circle_marker_9592ca15e81f455a862b8982f2877d98.bindPopup(popup_cffb0dc817474cbdb5e91d99a27cb0c2)
+        ;
+
+        
+    
+    
+            var circle_marker_c40f8be22d454af1865419aa47fee636 = L.circleMarker(
+                [3.8811, -72.8667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_9d20295a4e5c41f69f0e478f79be8a30 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65212645c1f84fffa179bde843be0016 = $(`<div id="html_65212645c1f84fffa179bde843be0016" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> nan <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_9d20295a4e5c41f69f0e478f79be8a30.setContent(html_65212645c1f84fffa179bde843be0016);
+        
+
+        circle_marker_c40f8be22d454af1865419aa47fee636.bindPopup(popup_9d20295a4e5c41f69f0e478f79be8a30)
+        ;
+
+        
+    
+    
+            var circle_marker_198588fa9af64af1af5b96ad0ac2606c = L.circleMarker(
+                [-5.0, -63.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_8880f36a4b194c60bd4918c8adc0594f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2437047e146453b931f95fd77a4438f = $(`<div id="html_d2437047e146453b931f95fd77a4438f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> C. F. P. von Martius <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_8880f36a4b194c60bd4918c8adc0594f.setContent(html_d2437047e146453b931f95fd77a4438f);
+        
+
+        circle_marker_198588fa9af64af1af5b96ad0ac2606c.bindPopup(popup_8880f36a4b194c60bd4918c8adc0594f)
+        ;
+
+        
+    
+    
+            var circle_marker_6018fd81552c42a581e2b7e9d423bc95 = L.circleMarker(
+                [-10.8339, -52.8731],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_c6f81271a0914099b46e3a78f51f4e06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dfba5930c013414ea146b9baac9736b5 = $(`<div id="html_dfba5930c013414ea146b9baac9736b5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> nan <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_c6f81271a0914099b46e3a78f51f4e06.setContent(html_dfba5930c013414ea146b9baac9736b5);
+        
+
+        circle_marker_6018fd81552c42a581e2b7e9d423bc95.bindPopup(popup_c6f81271a0914099b46e3a78f51f4e06)
+        ;
+
+        
+    
+    
+            var circle_marker_cf50062572ba4cdda6b05e06031e8313 = L.circleMarker(
+                [-4.14444, -65.08583],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_f9806b3fc4ec410c90c687712afff035 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89ad8e83b0454e4aa071d9bea703fe13 = $(`<div id="html_89ad8e83b0454e4aa071d9bea703fe13" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Amazonas - Rio Negro <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Martius, C. F. P. (Coll. Delessert) <strong>Identificadores:</strong> Pennington, T. D. (1986)</div>`)[0];
+            popup_f9806b3fc4ec410c90c687712afff035.setContent(html_89ad8e83b0454e4aa071d9bea703fe13);
+        
+
+        circle_marker_cf50062572ba4cdda6b05e06031e8313.bindPopup(popup_f9806b3fc4ec410c90c687712afff035)
+        ;
+
+        
+    
+    
+            var circle_marker_b4d8a370240b49638718be0d28ee95f8 = L.circleMarker(
+                [-20.053055999999998, -40.593056],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_93311fa729ba46eb960e7c2bd082d120 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e635b12876f8497280472320089dcebe = $(`<div id="html_e635b12876f8497280472320089dcebe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Propriedade Família Balbino - Timbuí Seco - Trilha dos Tropeiros <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2005-11-27 <strong>Recolectores:</strong> A. M. Assis; A. P. Fontana, K. F. O. Faria, C. Esgario, Valdemar Pagung <strong>Identificadores:</strong> A. M. Assis & A. P. Fontana</div>`)[0];
+            popup_93311fa729ba46eb960e7c2bd082d120.setContent(html_e635b12876f8497280472320089dcebe);
+        
+
+        circle_marker_b4d8a370240b49638718be0d28ee95f8.bindPopup(popup_93311fa729ba46eb960e7c2bd082d120)
+        ;
+
+        
+    
+    
+            var circle_marker_200b932ef9534153a8d1b91641e13344 = L.circleMarker(
+                [-19.971389000000002, -40.530278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_545526e17f944f6ba0473aba1c016ad1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_babab60384044e72a126ddc6a08e8b70 = $(`<div id="html_babab60384044e72a126ddc6a08e8b70" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estação Biológica de Santa Lúcia <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2002-09-18 <strong>Recolectores:</strong> R.R. Vervloet; et al <strong>Identificadores:</strong> V. Demuner/19-05-2003</div>`)[0];
+            popup_545526e17f944f6ba0473aba1c016ad1.setContent(html_babab60384044e72a126ddc6a08e8b70);
+        
+
+        circle_marker_200b932ef9534153a8d1b91641e13344.bindPopup(popup_545526e17f944f6ba0473aba1c016ad1)
+        ;
+
+        
+    
+    
+            var circle_marker_590d0848212b4387bf1896dc2d8e975e = L.circleMarker(
+                [-19.9075, -40.553056],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_041a905f5c35442a95736cbed734bf13 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78bd257807284344abab61ad765abe77 = $(`<div id="html_78bd257807284344abab61ad765abe77" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Augusto Ruschi - Nova Lombardia <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2002-08-01 <strong>Recolectores:</strong> R.R. Vervloet; et al <strong>Identificadores:</strong> V. Demuner/19-05-2003</div>`)[0];
+            popup_041a905f5c35442a95736cbed734bf13.setContent(html_78bd257807284344abab61ad765abe77);
+        
+
+        circle_marker_590d0848212b4387bf1896dc2d8e975e.bindPopup(popup_041a905f5c35442a95736cbed734bf13)
+        ;
+
+        
+    
+    
+            var circle_marker_e079fda2341c48e18386217d1b991064 = L.circleMarker(
+                [-19.971389000000002, -40.530278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_06c95b849ab647c1b8365900b2be70e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8e34d0eb48f4e87acbcaaaada0aee54 = $(`<div id="html_f8e34d0eb48f4e87acbcaaaada0aee54" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estação Biológica de Santa Lúcia <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2001-09-05 <strong>Recolectores:</strong> L. Kollmann; et al <strong>Identificadores:</strong> V. Demuner/19-05-2003</div>`)[0];
+            popup_06c95b849ab647c1b8365900b2be70e8.setContent(html_f8e34d0eb48f4e87acbcaaaada0aee54);
+        
+
+        circle_marker_e079fda2341c48e18386217d1b991064.bindPopup(popup_06c95b849ab647c1b8365900b2be70e8)
+        ;
+
+        
+    
+    
+            var circle_marker_e6744f0fa8764744a82d5cf654bce381 = L.circleMarker(
+                [-19.984167000000003, -40.583333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_50a15abab4d94893bd19911ee336b007 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a6612e5c7404472a64e885114e4644f = $(`<div id="html_5a6612e5c7404472a64e885114e4644f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cabeceira do Rio Bonito <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2001-06-13 <strong>Recolectores:</strong> L. Kollmann; et al <strong>Identificadores:</strong> A. Alves Araújo/25-03-2014</div>`)[0];
+            popup_50a15abab4d94893bd19911ee336b007.setContent(html_5a6612e5c7404472a64e885114e4644f);
+        
+
+        circle_marker_e6744f0fa8764744a82d5cf654bce381.bindPopup(popup_50a15abab4d94893bd19911ee336b007)
+        ;
+
+        
+    
+    
+            var circle_marker_702bcdaa60b041bb9f49b28c28fdf47e = L.circleMarker(
+                [-19.931110999999998, -40.683611],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_5c5e17a4096d4761aae3d0a2736307cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_add5f72a1f4d417f9201b1bc81b7bcf3 = $(`<div id="html_add5f72a1f4d417f9201b1bc81b7bcf3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> São Lourenço, Mata Fria <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1999-01-27 <strong>Recolectores:</strong> L. Kollmann; E. Bausen & W. Pizziolo <strong>Identificadores:</strong> Cláudia E. Carneiro/Abril-2000</div>`)[0];
+            popup_5c5e17a4096d4761aae3d0a2736307cc.setContent(html_add5f72a1f4d417f9201b1bc81b7bcf3);
+        
+
+        circle_marker_702bcdaa60b041bb9f49b28c28fdf47e.bindPopup(popup_5c5e17a4096d4761aae3d0a2736307cc)
+        ;
+
+        
+    
+    
+            var circle_marker_f650060cc59c42e1ba3d120a1f8e6d41 = L.circleMarker(
+                [-10.0, -55.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_2dc923c20ab84cd28ab3a66876530586 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6b0f819d0cc404e93c61d1ca77202a2 = $(`<div id="html_d6b0f819d0cc404e93c61d1ca77202a2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> In ripa fluv. Japura. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Martius, C.F.P. von (no. Obs. 2998) <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_2dc923c20ab84cd28ab3a66876530586.setContent(html_d6b0f819d0cc404e93c61d1ca77202a2);
+        
+
+        circle_marker_f650060cc59c42e1ba3d120a1f8e6d41.bindPopup(popup_2dc923c20ab84cd28ab3a66876530586)
+        ;
+
+        
+    
+    
+            var circle_marker_36cf5faf85c44271a3cee2d946a4477d = L.circleMarker(
+                [-10.0, -55.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_81b39adeb4c74b858dae74c546f952e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd2c378bb2ca4664a107bd4e85ab3957 = $(`<div id="html_dd2c378bb2ca4664a107bd4e85ab3957" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Provinc. Japura. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Martius, C.F.P. von <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_81b39adeb4c74b858dae74c546f952e7.setContent(html_dd2c378bb2ca4664a107bd4e85ab3957);
+        
+
+        circle_marker_36cf5faf85c44271a3cee2d946a4477d.bindPopup(popup_81b39adeb4c74b858dae74c546f952e7)
+        ;
+
+        
+    
+    
+            var circle_marker_9ac5e82892c8486bbdc3e57f3bdbfdda = L.circleMarker(
+                [-10.0, -55.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_1c7da7ae3b204dcb8d337a5f7db4fd0f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79d9d9046a6a43248ca5f18e8c319d4a = $(`<div id="html_79d9d9046a6a43248ca5f18e8c319d4a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Martius, C.F.P. von <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1c7da7ae3b204dcb8d337a5f7db4fd0f.setContent(html_79d9d9046a6a43248ca5f18e8c319d4a);
+        
+
+        circle_marker_9ac5e82892c8486bbdc3e57f3bdbfdda.bindPopup(popup_1c7da7ae3b204dcb8d337a5f7db4fd0f)
+        ;
+
+        
+    
+    
+            var circle_marker_07f2191b89b349f6b702ff9c378b6c87 = L.circleMarker(
+                [-10.0, -55.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_e203cc791c8b435e880af4f29037943d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2c8bf7c359c44acabec894f050fea2c = $(`<div id="html_b2c8bf7c359c44acabec894f050fea2c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Martius, C.F.P. von <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_e203cc791c8b435e880af4f29037943d.setContent(html_b2c8bf7c359c44acabec894f050fea2c);
+        
+
+        circle_marker_07f2191b89b349f6b702ff9c378b6c87.bindPopup(popup_e203cc791c8b435e880af4f29037943d)
+        ;
+
+        
+    
+    
+            var circle_marker_3417b1ff92554350ae4b8407bcc5f0d6 = L.circleMarker(
+                [-10.0, -55.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_1b6847a0fed24b7ba5e39b00a68c28ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c40ea35266343178318d62e78fd2f37 = $(`<div id="html_0c40ea35266343178318d62e78fd2f37" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> In ripa fluv. Japura. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Martius, C.F.P. von <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1b6847a0fed24b7ba5e39b00a68c28ed.setContent(html_0c40ea35266343178318d62e78fd2f37);
+        
+
+        circle_marker_3417b1ff92554350ae4b8407bcc5f0d6.bindPopup(popup_1b6847a0fed24b7ba5e39b00a68c28ed)
+        ;
+
+        
+    
+    
+            var circle_marker_bb8252ef45004208b63e49edb2a58d6e = L.circleMarker(
+                [-10.0, -55.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_8cc35af0dd8b4d07af3141e1f69a0bc9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78f1b323bf374e199e4cb8f9f5bcc359 = $(`<div id="html_78f1b323bf374e199e4cb8f9f5bcc359" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Habitat in sylvis Japurensibus inter Maribi et São João do Principe. Provinciae Rio Negro. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Martius, C.F.P. von (no. Obs. 2998) <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_8cc35af0dd8b4d07af3141e1f69a0bc9.setContent(html_78f1b323bf374e199e4cb8f9f5bcc359);
+        
+
+        circle_marker_bb8252ef45004208b63e49edb2a58d6e.bindPopup(popup_8cc35af0dd8b4d07af3141e1f69a0bc9)
+        ;
+
+        
+    
+    
+            var circle_marker_9e440f5681c746debb239a11d556d2be = L.circleMarker(
+                [-1.365067, -48.374635999999995],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_5630a95263764523b94fb663e582defc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_63e1f7e84bdc472f97e0f8017b83120c = $(`<div id="html_63e1f7e84bdc472f97e0f8017b83120c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Águas Lindas, Coleta na Área do 15 (Embrapa Amazônia Oriental) <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Lucas, F.C.A. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_5630a95263764523b94fb663e582defc.setContent(html_63e1f7e84bdc472f97e0f8017b83120c);
+        
+
+        circle_marker_9e440f5681c746debb239a11d556d2be.bindPopup(popup_5630a95263764523b94fb663e582defc)
+        ;
+
+        
+    
+    
+            var circle_marker_15230006be4844c093a8d5b9d17ea38a = L.circleMarker(
+                [-1.982778, -51.637778000000004],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_4b4db18ff859469cb541a7979252efbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3953e8ca65fc4400910ddfb71e5bcd0c = $(`<div id="html_3953e8ca65fc4400910ddfb71e5bcd0c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Floresta Nacional de Caxiuanã, grade do PPBio <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Félix-da-Silva, MM <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_4b4db18ff859469cb541a7979252efbb.setContent(html_3953e8ca65fc4400910ddfb71e5bcd0c);
+        
+
+        circle_marker_15230006be4844c093a8d5b9d17ea38a.bindPopup(popup_4b4db18ff859469cb541a7979252efbb)
+        ;
+
+        
+    
+    
+            var circle_marker_ffbeb094d21f49e5976b273fcacfd47f = L.circleMarker(
+                [-2.9916669999999996, -47.406389000000004],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_386e0f12ff7e4beab46afe724e003780 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4bdcbabae1a74c1aadc6efee44a47cc1 = $(`<div id="html_4bdcbabae1a74c1aadc6efee44a47cc1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Área atrás da ETEPA de Paragominas. <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Oliveira, JCL de <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_386e0f12ff7e4beab46afe724e003780.setContent(html_4bdcbabae1a74c1aadc6efee44a47cc1);
+        
+
+        circle_marker_ffbeb094d21f49e5976b273fcacfd47f.bindPopup(popup_386e0f12ff7e4beab46afe724e003780)
+        ;
+
+        
+    
+    
+            var circle_marker_67d6db959da540ab840ef423ab9fe9d1 = L.circleMarker(
+                [-0.166667, -56.02],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_d8b9bad240c8448ca9313a886d1e582d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4493b90abac344b4b643dc65ccfbc5e7 = $(`<div id="html_4493b90abac344b4b643dc65ccfbc5e7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Paru do Oeste ou Erepecu ou Cuminá, margem esquerda, ao lado da Cahoeira Pancanda.  Mata de terra firme solo argilo-pedregoso. <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1980-09-04 <strong>Recolectores:</strong> Mike Hopkins <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_d8b9bad240c8448ca9313a886d1e582d.setContent(html_4493b90abac344b4b643dc65ccfbc5e7);
+        
+
+        circle_marker_67d6db959da540ab840ef423ab9fe9d1.bindPopup(popup_d8b9bad240c8448ca9313a886d1e582d)
+        ;
+
+        
+    
+    
+            var circle_marker_5670f11bd4684ebf9d61baa016246bc4 = L.circleMarker(
+                [-4.940519999999999, -60.26],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_f8efe9432bc04163a2ff64868b1d80b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_663aa3c510244b6c920db3b3b75749b3 = $(`<div id="html_663aa3c510244b6c920db3b3b75749b3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva de Desenvolvimento Sustentável do Madeira., Rio Madeira, margem esquerda. <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 2010-09-25 <strong>Recolectores:</strong> Mike Hopkins <strong>Identificadores:</strong> "Souza, S.S. de; Prata, E.M.B."</div>`)[0];
+            popup_f8efe9432bc04163a2ff64868b1d80b8.setContent(html_663aa3c510244b6c920db3b3b75749b3);
+        
+
+        circle_marker_5670f11bd4684ebf9d61baa016246bc4.bindPopup(popup_f8efe9432bc04163a2ff64868b1d80b8)
+        ;
+
+        
+    
+    
+            var circle_marker_1824cdd1b2e04e4eae9112a63bb84c74 = L.circleMarker(
+                [-0.166667, -56.02],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_9242c920afe34b8c9a78bce6bd814157 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f7e5a396f2b42f1a52d052edf0099a0 = $(`<div id="html_4f7e5a396f2b42f1a52d052edf0099a0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Paru do Oeste ou Erepecu ou Cuminá, margem esquerda, ao lado da Cahoeira Pancanda.  Mata de terra firme solo argilo-pedregoso. <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1980-09-04 <strong>Recolectores:</strong> Mike Hopkins <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_9242c920afe34b8c9a78bce6bd814157.setContent(html_4f7e5a396f2b42f1a52d052edf0099a0);
+        
+
+        circle_marker_1824cdd1b2e04e4eae9112a63bb84c74.bindPopup(popup_9242c920afe34b8c9a78bce6bd814157)
+        ;
+
+        
+    
+    
+            var circle_marker_bba55808e9ac44cc830933a305b7141a = L.circleMarker(
+                [-4.016667, -49.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_592f2455ed824ab49dc445945eeee122 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ddb630db0472416f85646aaee9999571 = $(`<div id="html_ddb630db0472416f85646aaee9999571" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Tocantins near Igarape Cajazeirinha, approx 30 km N of Itapiranga. <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1981-11-27 <strong>Recolectores:</strong> Mike Hopkins <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_592f2455ed824ab49dc445945eeee122.setContent(html_ddb630db0472416f85646aaee9999571);
+        
+
+        circle_marker_bba55808e9ac44cc830933a305b7141a.bindPopup(popup_592f2455ed824ab49dc445945eeee122)
+        ;
+
+        
+    
+    
+            var circle_marker_289a8acfa817441fb6ea0c4b93dfd90f = L.circleMarker(
+                [-4.016667, -49.35],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_d4c523459bdf4e7d84b4b6872075f938 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e7face565f2446388135d5a82549c934 = $(`<div id="html_e7face565f2446388135d5a82549c934" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Tocantins near Igarape Cajazeirinha, approx 30 km N of Itapiranga. <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1981-12-01 <strong>Recolectores:</strong> Mike Hopkins <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_d4c523459bdf4e7d84b4b6872075f938.setContent(html_e7face565f2446388135d5a82549c934);
+        
+
+        circle_marker_289a8acfa817441fb6ea0c4b93dfd90f.bindPopup(popup_d4c523459bdf4e7d84b4b6872075f938)
+        ;
+
+        
+    
+    
+            var circle_marker_57ef49b8f7b4426ca31824cb0f1db28a = L.circleMarker(
+                [-9.58, -55.92],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_146c4914f0c94f029c7447da9cf134ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9666e2d61b0b48278390225934c4d34f = $(`<div id="html_9666e2d61b0b48278390225934c4d34f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Propriedades particulares de preservação ambiental delimitadas pelo Rio Teles Pires (S), Rio Cristalino (E) e Parque Estadual Cristalino (N e W).GPS :P2 <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2008-07-18 <strong>Recolectores:</strong> Piva, J.H.; Henicka, G.S.; Santos, S.K.F.; Yamaciro, T.; Parcela 2; Sasaki, D. <strong>Identificadores:</strong> Zappi, D.C.</div>`)[0];
+            popup_146c4914f0c94f029c7447da9cf134ea.setContent(html_9666e2d61b0b48278390225934c4d34f);
+        
+
+        circle_marker_57ef49b8f7b4426ca31824cb0f1db28a.bindPopup(popup_146c4914f0c94f029c7447da9cf134ea)
+        ;
+
+        
+    
+    
+            var circle_marker_8ba53b34c2254df1a126743aa3016a1c = L.circleMarker(
+                [9.29, -83.77],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_2fa5d005f0be46f08144454d43249fca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_53362d6c8af94243b5ebf60cea14d0d3 = $(`<div id="html_53362d6c8af94243b5ebf60cea14d0d3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tinamaste, finca de los Suizos. <strong>Elevación:</strong> 650.0 m  <strong>Fecha:</strong> 1999-04-13 <strong>Recolectores:</strong> Estrada, Armando <strong>Identificadores:</strong> Estrada, Armando</div>`)[0];
+            popup_2fa5d005f0be46f08144454d43249fca.setContent(html_53362d6c8af94243b5ebf60cea14d0d3);
+        
+
+        circle_marker_8ba53b34c2254df1a126743aa3016a1c.bindPopup(popup_2fa5d005f0be46f08144454d43249fca)
+        ;
+
+        
+    
+    
+            var circle_marker_e4236f2192484e7185d7b0347e7a7b18 = L.circleMarker(
+                [9.49, -84.01],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_af9de2afa94344a9abbadb73f4d181a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76730bc6a8424f85a7a5d4c57fc1c87f = $(`<div id="html_76730bc6a8424f85a7a5d4c57fc1c87f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Cerro Nara Sobre la fila. <strong>Elevación:</strong> 950.0 m  <strong>Fecha:</strong> 1997-05-15 <strong>Recolectores:</strong> Sánchez, Joaquín <strong>Identificadores:</strong> Sánchez, Joaquín</div>`)[0];
+            popup_af9de2afa94344a9abbadb73f4d181a5.setContent(html_76730bc6a8424f85a7a5d4c57fc1c87f);
+        
+
+        circle_marker_e4236f2192484e7185d7b0347e7a7b18.bindPopup(popup_af9de2afa94344a9abbadb73f4d181a5)
+        ;
+
+        
+    
+    
+            var circle_marker_9f9f5e1572fd4235b95295cf45990c26 = L.circleMarker(
+                [9.54, -84.01],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_90322e231e3e47c9b72548706cb966b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5508fdc8bc849f4910a4792a0d3f7a8 = $(`<div id="html_c5508fdc8bc849f4910a4792a0d3f7a8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Los Llanos de Santa María, fila Las Rejas. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1997-07-09 <strong>Recolectores:</strong> Valverde, Oscar <strong>Identificadores:</strong> Valverde, Oscar</div>`)[0];
+            popup_90322e231e3e47c9b72548706cb966b5.setContent(html_c5508fdc8bc849f4910a4792a0d3f7a8);
+        
+
+        circle_marker_9f9f5e1572fd4235b95295cf45990c26.bindPopup(popup_90322e231e3e47c9b72548706cb966b5)
+        ;
+
+        
+    
+    
+            var circle_marker_e015e8c84d5e44e9817710652ee5f81b = L.circleMarker(
+                [9.55, -84.02],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_bac6262c752545fcbbcb795a02453a18 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8bf18dcbfc874ec7aa08ebf7a00d4a77 = $(`<div id="html_8bf18dcbfc874ec7aa08ebf7a00d4a77" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estribaciones del Cerro Diamante, ladera oeste del Río Naranjo. <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 1997-04-03 <strong>Recolectores:</strong> Estrada, Armando <strong>Identificadores:</strong> Estrada, Armando</div>`)[0];
+            popup_bac6262c752545fcbbcb795a02453a18.setContent(html_8bf18dcbfc874ec7aa08ebf7a00d4a77);
+        
+
+        circle_marker_e015e8c84d5e44e9817710652ee5f81b.bindPopup(popup_bac6262c752545fcbbcb795a02453a18)
+        ;
+
+        
+    
+    
+            var circle_marker_2b5dcaab5d64408495934ab5ac6ab4a2 = L.circleMarker(
+                [9.51, -84.05],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+        
+    
+        var popup_afa5694cadfc4b92a28f06bbec887a7f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d271086765db47cca96c11c75bd368d5 = $(`<div id="html_d271086765db47cca96c11c75bd368d5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Isidro. <strong>Elevación:</strong> 845.0 m  <strong>Fecha:</strong> 1987-08-27 <strong>Recolectores:</strong> Zamora, Nelson <strong>Identificadores:</strong> Zamora, Nelson</div>`)[0];
+            popup_afa5694cadfc4b92a28f06bbec887a7f.setContent(html_d271086765db47cca96c11c75bd368d5);
+        
+
+        circle_marker_2b5dcaab5d64408495934ab5ac6ab4a2.bindPopup(popup_afa5694cadfc4b92a28f06bbec887a7f)
+        ;
+
+        
+    
+    
+            var layer_control_d874ed6630d74a16a208db8aad2c70fe = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_b3e438cd560b48e28c2589e7abcae76f,
+                    "ESRI World Imagery" : tile_layer_87042a4823204766924673ffd89eefcc,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_d874ed6630d74a16a208db8aad2c70fe.base_layers,
+                layer_control_d874ed6630d74a16a208db8aad2c70fe.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_fa07f5f0ac9944f9af65bebbb9b11e4a);
+            tile_layer_87042a4823204766924673ffd89eefcc.remove();
+        
+</script>

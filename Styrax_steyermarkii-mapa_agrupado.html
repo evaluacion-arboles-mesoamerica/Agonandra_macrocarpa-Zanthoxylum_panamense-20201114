@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ddbd8dc87bcb452fa33aab2b4fe6fb51 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ddbd8dc87bcb452fa33aab2b4fe6fb51" ></div>
+        
+</body>
+<script>    
+    
+            var map_ddbd8dc87bcb452fa33aab2b4fe6fb51 = L.map(
+                "map_ddbd8dc87bcb452fa33aab2b4fe6fb51",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_ddbd8dc87bcb452fa33aab2b4fe6fb51);
+
+            
+
+        
+    
+            var tile_layer_7dba035426514710b9d13061bb5decbc = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ddbd8dc87bcb452fa33aab2b4fe6fb51);
+        
+    
+            var tile_layer_507aebb4ede749f983875f198a6cca3d = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ddbd8dc87bcb452fa33aab2b4fe6fb51);
+        
+    
+            var marker_cluster_b351684921e54b519566431162a88438 = L.markerClusterGroup(
+                {}
+            );
+            map_ddbd8dc87bcb452fa33aab2b4fe6fb51.addLayer(marker_cluster_b351684921e54b519566431162a88438);
+        
+    
+            var marker_a97d2228513841a19213f14c39128a65 = L.marker(
+                [9.29, -83.25],
+                {}
+            ).addTo(marker_cluster_b351684921e54b519566431162a88438);
+        
+    
+        var popup_910a2198ddbe4d4fb884329df2bf8795 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb1ea0aebb6b4b21a41d83d28f8cdfa0 = $(`<div id="html_eb1ea0aebb6b4b21a41d83d28f8cdfa0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.I. Ujarrás; Cordillera de Talamanca. Ujarrás. Margen izquierda de Quebrada Dorora, camino a Río Lori. <strong>Elevación:</strong> 1520.0 m  <strong>Fecha:</strong> 1993-03-11 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> P.W. Fritsch</div>`)[0];
+            popup_910a2198ddbe4d4fb884329df2bf8795.setContent(html_eb1ea0aebb6b4b21a41d83d28f8cdfa0);
+        
+
+        marker_a97d2228513841a19213f14c39128a65.bindPopup(popup_910a2198ddbe4d4fb884329df2bf8795)
+        ;
+
+        
+    
+    
+            var marker_51cf7b90aa954401babc2c425fd25445 = L.marker(
+                [9.4, -83.08],
+                {}
+            ).addTo(marker_cluster_b351684921e54b519566431162a88438);
+        
+    
+        var popup_503cd4178ded4ab29fabcd22375973c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3f5fee64d8a408b938d4cde30b62ab2 = $(`<div id="html_c3f5fee64d8a408b938d4cde30b62ab2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bratsi. Amubri, Alto Lari, Kivut. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1992-03-07 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> M. H. Grayum (MO)</div>`)[0];
+            popup_503cd4178ded4ab29fabcd22375973c4.setContent(html_c3f5fee64d8a408b938d4cde30b62ab2);
+        
+
+        marker_51cf7b90aa954401babc2c425fd25445.bindPopup(popup_503cd4178ded4ab29fabcd22375973c4)
+        ;
+
+        
+    
+    
+            var marker_f9bd7cec6d6242e3a81566f6636c3333 = L.marker(
+                [15.183610999999999, -90.204444],
+                {}
+            ).addTo(marker_cluster_b351684921e54b519566431162a88438);
+        
+    
+        var popup_d10b3385943a4d8986effe3f91a1a398 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f67a259707da4a29833b1d0052a2d6a2 = $(`<div id="html_f67a259707da4a29833b1d0052a2d6a2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Unión Barrios, E of Km 154. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1975-04-16 <strong>Recolectores:</strong> Cyrus L. Lundell|Elias Contreras <strong>Identificadores:</strong> P. Fritsch (DUKE)</div>`)[0];
+            popup_d10b3385943a4d8986effe3f91a1a398.setContent(html_f67a259707da4a29833b1d0052a2d6a2);
+        
+
+        marker_f9bd7cec6d6242e3a81566f6636c3333.bindPopup(popup_d10b3385943a4d8986effe3f91a1a398)
+        ;
+
+        
+    
+    
+            var marker_79c226b20de14395b937a9c8aba92012 = L.marker(
+                [9.404167, -83.0875],
+                {}
+            ).addTo(marker_cluster_b351684921e54b519566431162a88438);
+        
+    
+        var popup_55970f10e3c243ce8175a612812b1ddc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3c97b301be34db7b9008d99d2bebe24 = $(`<div id="html_a3c97b301be34db7b9008d99d2bebe24" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Amubri, Alto Lari, Kivut. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1992-03-07 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_55970f10e3c243ce8175a612812b1ddc.setContent(html_a3c97b301be34db7b9008d99d2bebe24);
+        
+
+        marker_79c226b20de14395b937a9c8aba92012.bindPopup(popup_55970f10e3c243ce8175a612812b1ddc)
+        ;
+
+        
+    
+    
+            var marker_4f176468d0fc4257ae4494da35389d83 = L.marker(
+                [9.297222, -83.258333],
+                {}
+            ).addTo(marker_cluster_b351684921e54b519566431162a88438);
+        
+    
+        var popup_bbdc19c18496418b8bcd2f0a0ed30838 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f85b9aaa5b064376be25037e7ee9c5be = $(`<div id="html_f85b9aaa5b064376be25037e7ee9c5be" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ujarras. Margen izquierda de Quebrada Dorora, camino a Rio Lori. <strong>Elevación:</strong> 1520.0 m  <strong>Fecha:</strong> 1993-03-11 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Fritsch, Peter W.</div>`)[0];
+            popup_bbdc19c18496418b8bcd2f0a0ed30838.setContent(html_f85b9aaa5b064376be25037e7ee9c5be);
+        
+
+        marker_4f176468d0fc4257ae4494da35389d83.bindPopup(popup_bbdc19c18496418b8bcd2f0a0ed30838)
+        ;
+
+        
+    
+    
+            var layer_control_6f0d2c2d45954485b87a56a3b45480c1 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_7dba035426514710b9d13061bb5decbc,
+                    "ESRI World Imagery" : tile_layer_507aebb4ede749f983875f198a6cca3d,
+                },
+                overlays :  {
+                    "macro_element_b351684921e54b519566431162a88438" : marker_cluster_b351684921e54b519566431162a88438,
+                },
+            };
+            L.control.layers(
+                layer_control_6f0d2c2d45954485b87a56a3b45480c1.base_layers,
+                layer_control_6f0d2c2d45954485b87a56a3b45480c1.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_ddbd8dc87bcb452fa33aab2b4fe6fb51);
+            tile_layer_507aebb4ede749f983875f198a6cca3d.remove();
+        
+</script>

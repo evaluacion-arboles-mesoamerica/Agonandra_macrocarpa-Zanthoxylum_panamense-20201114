@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_87c07d234eb14765bc8b140e0e3177c7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_87c07d234eb14765bc8b140e0e3177c7" ></div>
+        
+</body>
+<script>    
+    
+            var map_87c07d234eb14765bc8b140e0e3177c7 = L.map(
+                "map_87c07d234eb14765bc8b140e0e3177c7",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_87c07d234eb14765bc8b140e0e3177c7);
+
+            
+
+        
+    
+            var tile_layer_ea6a80fc80504b7d82614e32d64dfec4 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_87c07d234eb14765bc8b140e0e3177c7);
+        
+    
+            var tile_layer_33f2612124c7448787e7f6584b97e332 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_87c07d234eb14765bc8b140e0e3177c7);
+        
+    
+            var marker_cluster_3288eb86822e403f86fb160bf463fb9f = L.markerClusterGroup(
+                {}
+            );
+            map_87c07d234eb14765bc8b140e0e3177c7.addLayer(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+            var marker_3da6d3694f9d4d4087e152ba53a9476c = L.marker(
+                [8.5, -82.25],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_9c027960ec4e4234b62b41e21bc6ad3d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_47cdd4f849fb496a965ca3b94932f80a = $(`<div id="html_47cdd4f849fb496a965ca3b94932f80a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1971-07-01 <strong>Recolectores:</strong> T. B. Croat <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_9c027960ec4e4234b62b41e21bc6ad3d.setContent(html_47cdd4f849fb496a965ca3b94932f80a);
+        
+
+        marker_3da6d3694f9d4d4087e152ba53a9476c.bindPopup(popup_9c027960ec4e4234b62b41e21bc6ad3d)
+        ;
+
+        
+    
+    
+            var marker_c0ebc55134b04cf29e2eb3bab18ca456 = L.marker(
+                [8.785810000000001, -82.98876],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_764c407443df4b6c84da430d86404670 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5eaa80c7b5614e698fbb14bad6ea4f15 = $(`<div id="html_5eaa80c7b5614e698fbb14bad6ea4f15" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> nan <strong>Identificadores:</strong> Oviedo-Brenes, Federico</div>`)[0];
+            popup_764c407443df4b6c84da430d86404670.setContent(html_5eaa80c7b5614e698fbb14bad6ea4f15);
+        
+
+        marker_c0ebc55134b04cf29e2eb3bab18ca456.bindPopup(popup_764c407443df4b6c84da430d86404670)
+        ;
+
+        
+    
+    
+            var marker_df8096eff46e4b2e9fcd392e41db6c9c = L.marker(
+                [9.02, -82.81],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_9a8748bb872840c9b8ca2b547f22d39c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a422c1a4686f4e3c94b368b6ca10c5e3 = $(`<div id="html_a422c1a4686f4e3c94b368b6ca10c5e3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Las Tablas Cuenca Térraba- Sierpe. Sendero a Cerro Echandi a orilla de Quebrada Barú. <strong>Elevación:</strong> 2850.0 m  <strong>Fecha:</strong> 1997-08-12 <strong>Recolectores:</strong> Gamboa, Billen <strong>Identificadores:</strong> Ruiz, Armando</div>`)[0];
+            popup_9a8748bb872840c9b8ca2b547f22d39c.setContent(html_a422c1a4686f4e3c94b368b6ca10c5e3);
+        
+
+        marker_df8096eff46e4b2e9fcd392e41db6c9c.bindPopup(popup_9a8748bb872840c9b8ca2b547f22d39c)
+        ;
+
+        
+    
+    
+            var marker_5c7f011f4d6647498d41c8cca6289101 = L.marker(
+                [10.12, -84.11],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_d1f9ece3b54349f0a50468cefb31879a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c06af011301842ec841fc50e78477ba6 = $(`<div id="html_c06af011301842ec841fc50e78477ba6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo Cuenca del Tárcoles. Volcán Barva, alrededores de la Estación. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 2000-02-01 <strong>Recolectores:</strong> Acosta, Luis <strong>Identificadores:</strong> Rodríguez, Alexánder</div>`)[0];
+            popup_d1f9ece3b54349f0a50468cefb31879a.setContent(html_c06af011301842ec841fc50e78477ba6);
+        
+
+        marker_5c7f011f4d6647498d41c8cca6289101.bindPopup(popup_d1f9ece3b54349f0a50468cefb31879a)
+        ;
+
+        
+    
+    
+            var marker_997f705626da4d3b8991b757d3750c47 = L.marker(
+                [9.02, -82.81],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_df5c5acf2fbf4fd48bd825fc00b4532f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b4fda93dc5014c259f6af4c3d4c7b764 = $(`<div id="html_b4fda93dc5014c259f6af4c3d4c7b764" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z. P.  Las Tablas.  Cuenca Terraba-Sierpe. Orillas del Río Burú. <strong>Elevación:</strong> 2850.0 m  <strong>Fecha:</strong> 1998-04-14 <strong>Recolectores:</strong> Alfaro, Evelio <strong>Identificadores:</strong> Grayum, Michael</div>`)[0];
+            popup_df5c5acf2fbf4fd48bd825fc00b4532f.setContent(html_b4fda93dc5014c259f6af4c3d4c7b764);
+        
+
+        marker_997f705626da4d3b8991b757d3750c47.bindPopup(popup_df5c5acf2fbf4fd48bd825fc00b4532f)
+        ;
+
+        
+    
+    
+            var marker_8c0a79290e83494f8ff12df03f91d383 = L.marker(
+                [9.35, -83.22],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_303b06292bc0429e8a17b692796acf4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_12f5af518ca547ffacfa87ac970dbc2d = $(`<div id="html_12f5af518ca547ffacfa87ac970dbc2d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Cordillera de Talamanca.  Cordillera de Talamanca. Sendero de Quebrada Kuisa a Río Lori. Entre Ujarrás a San José Cabécar. <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1993-03-13 <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> Grayum, Michael</div>`)[0];
+            popup_303b06292bc0429e8a17b692796acf4b.setContent(html_12f5af518ca547ffacfa87ac970dbc2d);
+        
+
+        marker_8c0a79290e83494f8ff12df03f91d383.bindPopup(popup_303b06292bc0429e8a17b692796acf4b)
+        ;
+
+        
+    
+    
+            var marker_bc6706fa5ef446da83faf7539b798844 = L.marker(
+                [9.54, -83.58],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_9f18f50880db40ce86d39255288174e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ebbe240551148f4aa76cc5be6f36c25 = $(`<div id="html_4ebbe240551148f4aa76cc5be6f36c25" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.I. La Amistad Cantón de Pérez Zeledón. Cordillera de Talamanca. Sendero Herradura - Urán. Creciendo junto a la quebrada. <strong>Elevación:</strong> 2700.0 m  <strong>Fecha:</strong> 1995-04-07 <strong>Recolectores:</strong> Aguilar, Reinaldo <strong>Identificadores:</strong> Grayum, Michael</div>`)[0];
+            popup_9f18f50880db40ce86d39255288174e9.setContent(html_4ebbe240551148f4aa76cc5be6f36c25);
+        
+
+        marker_bc6706fa5ef446da83faf7539b798844.bindPopup(popup_9f18f50880db40ce86d39255288174e9)
+        ;
+
+        
+    
+    
+            var marker_a01ee8968e194dcaa37d58f517d6fe2c = L.marker(
+                [10.12, -84.1],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_4574846e2cd54dbb9ab7ce07d7f2ddd5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38829f232bc448c8992830bd21849fb9 = $(`<div id="html_38829f232bc448c8992830bd21849fb9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo Volcán Barba. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 1989-08-07 <strong>Recolectores:</strong> Rivera, Gerardo <strong>Identificadores:</strong> Callejas, Ricardo</div>`)[0];
+            popup_4574846e2cd54dbb9ab7ce07d7f2ddd5.setContent(html_38829f232bc448c8992830bd21849fb9);
+        
+
+        marker_a01ee8968e194dcaa37d58f517d6fe2c.bindPopup(popup_4574846e2cd54dbb9ab7ce07d7f2ddd5)
+        ;
+
+        
+    
+    
+            var marker_f2cbcaeea6ed4940b81eb99fec79263c = L.marker(
+                [9.44, -83.52],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_351a1266f15945c999dd29b5a20a1413 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5943f11e2e9147c4b1d4365a1aca61fe = $(`<div id="html_5943f11e2e9147c4b1d4365a1aca61fe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Chirripó Cuenca Térraba - Sierpe. Sendero a Base Crestones. <strong>Elevación:</strong> 3100.0 m  <strong>Fecha:</strong> 1996-11-08 <strong>Recolectores:</strong> Gamboa, Billen <strong>Identificadores:</strong> Grayum, Michael</div>`)[0];
+            popup_351a1266f15945c999dd29b5a20a1413.setContent(html_5943f11e2e9147c4b1d4365a1aca61fe);
+        
+
+        marker_f2cbcaeea6ed4940b81eb99fec79263c.bindPopup(popup_351a1266f15945c999dd29b5a20a1413)
+        ;
+
+        
+    
+    
+            var marker_0da8a3f3a1c54693a14f3e34e634d858 = L.marker(
+                [9.63, -83.83],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_e7ac63f59aa84b2d9e1f07c085f39873 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1a334b2e2144d349c7fdb204d6fdcf4 = $(`<div id="html_c1a334b2e2144d349c7fdb204d6fdcf4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. F. Río Macho Estación Ojo de Agua. Sendero La Quebrada. <strong>Elevación:</strong> 2850.0 m  <strong>Fecha:</strong> 1997-01-16 <strong>Recolectores:</strong> Gamboa, Billen <strong>Identificadores:</strong> Coe, F.</div>`)[0];
+            popup_e7ac63f59aa84b2d9e1f07c085f39873.setContent(html_c1a334b2e2144d349c7fdb204d6fdcf4);
+        
+
+        marker_0da8a3f3a1c54693a14f3e34e634d858.bindPopup(popup_e7ac63f59aa84b2d9e1f07c085f39873)
+        ;
+
+        
+    
+    
+            var marker_c20806a9c8324440b78fdec190d296a2 = L.marker(
+                [9.38, -83.21],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_1821b902ba41447481dd02282513f2cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e30b71e73d24496a4bd44d7cec6575d = $(`<div id="html_4e30b71e73d24496a4bd44d7cec6575d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Cordillera de Talamanca. Cordillera de Talamanca. Cerro entre Queb. Kirigú y Río Coén. Entre Ujarrás y San José Cabécar. En sotobosque. <strong>Elevación:</strong> 1900.0 m  <strong>Fecha:</strong> 1993-03-30 <strong>Recolectores:</strong> Fernández, Álvaro <strong>Identificadores:</strong> Callejas, Ricardo</div>`)[0];
+            popup_1821b902ba41447481dd02282513f2cb.setContent(html_4e30b71e73d24496a4bd44d7cec6575d);
+        
+
+        marker_c20806a9c8324440b78fdec190d296a2.bindPopup(popup_1821b902ba41447481dd02282513f2cb)
+        ;
+
+        
+    
+    
+            var marker_5e84fbd31c5c439d887391cf68a7e75d = L.marker(
+                [10.13, -84.1],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_c2a2564b201c4eb3b36590a93e1f8d90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b18287afad8480ea7d3d7d494e05364 = $(`<div id="html_4b18287afad8480ea7d3d7d494e05364" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo Upper Volcán Barva, Atlantic slope. Flat area just off N side of Main trail, 500 m beyond exit to Laguna Barva, and about 500 m before right fork to Laguna Copey Treeplot 2750 -1. <strong>Elevación:</strong> 2770.0 m  <strong>Fecha:</strong> 1992-03-16 <strong>Recolectores:</strong> Boyle, Brad <strong>Identificadores:</strong> B. Boyle</div>`)[0];
+            popup_c2a2564b201c4eb3b36590a93e1f8d90.setContent(html_4b18287afad8480ea7d3d7d494e05364);
+        
+
+        marker_5e84fbd31c5c439d887391cf68a7e75d.bindPopup(popup_c2a2564b201c4eb3b36590a93e1f8d90)
+        ;
+
+        
+    
+    
+            var marker_628a091be0d442b9abca0f007fd5636e = L.marker(
+                [9.56, -83.66],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_1077196d1b104a37834de0da8079a976 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f5a56e858fe45ce915107f8389d1e03 = $(`<div id="html_9f5a56e858fe45ce915107f8389d1e03" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> E.B. Cuericí Cerros Cuericí. (Parcela 4E1). En bosque (dosel abierto) dominado por Quercus costaricensis y Chusquea talamancensis, cresta. <strong>Elevación:</strong> 3000.0 m  <strong>Fecha:</strong> 1988-06-28 <strong>Recolectores:</strong> Wildmer, Yvonne <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1077196d1b104a37834de0da8079a976.setContent(html_9f5a56e858fe45ce915107f8389d1e03);
+        
+
+        marker_628a091be0d442b9abca0f007fd5636e.bindPopup(popup_1077196d1b104a37834de0da8079a976)
+        ;
+
+        
+    
+    
+            var marker_d0ff7730d3d34d93bca9a243ed43607f = L.marker(
+                [9.36, -83.3],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_2f69962705a644a988ce8dafc98c9bce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f6aae3c443e465582aee3587939ec3b = $(`<div id="html_1f6aae3c443e465582aee3587939ec3b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ujarrás, siguiendo la línea divisoria, base del macizo Dúrika, cabecera de Río Coén. <strong>Elevación:</strong> 2800.0 m  <strong>Fecha:</strong> 1989-10-11 <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> Grayum, Michael</div>`)[0];
+            popup_2f69962705a644a988ce8dafc98c9bce.setContent(html_1f6aae3c443e465582aee3587939ec3b);
+        
+
+        marker_d0ff7730d3d34d93bca9a243ed43607f.bindPopup(popup_2f69962705a644a988ce8dafc98c9bce)
+        ;
+
+        
+    
+    
+            var marker_94e9ad15d15049e28f7228f8e85d9f01 = L.marker(
+                [9.35, -83.29],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_c9232f5788474a45ba67e9f673708cf5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e1835125aa24c9497bdfda8b53973a7 = $(`<div id="html_7e1835125aa24c9497bdfda8b53973a7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ujarrás. El Carmen, Cerro Betsú, ladera Pacífica. Bosque aledaño a la parte alta de Sabana Murur - Bisuk. <strong>Elevación:</strong> 2500.0 m  <strong>Fecha:</strong> 1989-10-07 <strong>Recolectores:</strong> Chacón, Abelardo M. <strong>Identificadores:</strong> Grayum, Michael</div>`)[0];
+            popup_c9232f5788474a45ba67e9f673708cf5.setContent(html_7e1835125aa24c9497bdfda8b53973a7);
+        
+
+        marker_94e9ad15d15049e28f7228f8e85d9f01.bindPopup(popup_c9232f5788474a45ba67e9f673708cf5)
+        ;
+
+        
+    
+    
+            var marker_efe67c72a71142eda013cf2726b14069 = L.marker(
+                [9.67, -83.86],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_174f3c205d31421b992f385404f183e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7f446fac40d94309ad39ade17ad027e0 = $(`<div id="html_7f446fac40d94309ad39ade17ad027e0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Madre Selva; 0.5 km al norte de la Carretera Interamericana (KM). Selva de Didymopanax pittieri Prunus annularis; con:  Disterigma humboldtii, Miconia sp., Alfaroa williamsii y Cyathea sp. <strong>Elevación:</strong> 2640.0 m  <strong>Fecha:</strong> 1986-03-07 <strong>Recolectores:</strong> Kappelle, Maarten <strong>Identificadores:</strong> Burger, William</div>`)[0];
+            popup_174f3c205d31421b992f385404f183e6.setContent(html_7f446fac40d94309ad39ade17ad027e0);
+        
+
+        marker_efe67c72a71142eda013cf2726b14069.bindPopup(popup_174f3c205d31421b992f385404f183e6)
+        ;
+
+        
+    
+    
+            var marker_e23cb900eb2547d3af1c5e81dcdb5d8a = L.marker(
+                [10.21, -85.06],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_2fc75c0bf15e43759602674a2cdd7770 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea389dc8ea274059aaaeed6b31f0db40 = $(`<div id="html_ea389dc8ea274059aaaeed6b31f0db40" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo Near San Rafael. <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1987-03-29 <strong>Recolectores:</strong> Nancy Greig <strong>Identificadores:</strong> Ruiz, Armando</div>`)[0];
+            popup_2fc75c0bf15e43759602674a2cdd7770.setContent(html_ea389dc8ea274059aaaeed6b31f0db40);
+        
+
+        marker_e23cb900eb2547d3af1c5e81dcdb5d8a.bindPopup(popup_2fc75c0bf15e43759602674a2cdd7770)
+        ;
+
+        
+    
+    
+            var marker_29a4e8bcf5f24808a0cfb3ccf41feef4 = L.marker(
+                [9.13, -82.96],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_277c8bcbc9a444a2b1154aca7306d396 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0cd011f3cc934f519984ed6068024599 = $(`<div id="html_0cd011f3cc934f519984ed6068024599" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca, Atlantic slope, Valle de Silencio, area just N of Cerro Hoffman, 4 1/2 airline km W of the Costa Rican - Panamanian border. Gently sloping valley dominated complety by oak forest. <strong>Elevación:</strong> 2375.0 m  <strong>Fecha:</strong> 1984-09-08 <strong>Recolectores:</strong> Davidse, Gerrit <strong>Identificadores:</strong> Callejas, Ricardo</div>`)[0];
+            popup_277c8bcbc9a444a2b1154aca7306d396.setContent(html_0cd011f3cc934f519984ed6068024599);
+        
+
+        marker_29a4e8bcf5f24808a0cfb3ccf41feef4.bindPopup(popup_277c8bcbc9a444a2b1154aca7306d396)
+        ;
+
+        
+    
+    
+            var marker_b8e30f502ddb41078a9e02694bf2f06c = L.marker(
+                [9.18, -82.96],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_83d32a65950f4424b7917a1221dcda3d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a63160ce07f8438c926f957fcee004bb = $(`<div id="html_a63160ce07f8438c926f957fcee004bb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca, Atlantic slope, unnamed cordillera between the Río Terbí and the Río Siní. Quebrada in elfin forest. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 1984-09-13 <strong>Recolectores:</strong> Davidse, Gerrit <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_83d32a65950f4424b7917a1221dcda3d.setContent(html_a63160ce07f8438c926f957fcee004bb);
+        
+
+        marker_b8e30f502ddb41078a9e02694bf2f06c.bindPopup(popup_83d32a65950f4424b7917a1221dcda3d)
+        ;
+
+        
+    
+    
+            var marker_0f180a805a5d41e1b7fcab81708ba1ee = L.marker(
+                [9.2, -83.05],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_14712318feaf443ab69da8228d6a700e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c1757e1534748788ca3683945965a93 = $(`<div id="html_6c1757e1534748788ca3683945965a93" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puntarenas / Limón border: Cordillera de Talamanca, between Cerro Kasir and Cerro Nai; continental divide. Quercus - Podocarpus forest with Chusquea understory. <strong>Elevación:</strong> 1995.0 m  <strong>Fecha:</strong> 1984-03-22 <strong>Recolectores:</strong> Davidse, Gerrit <strong>Identificadores:</strong> Burger, William</div>`)[0];
+            popup_14712318feaf443ab69da8228d6a700e.setContent(html_6c1757e1534748788ca3683945965a93);
+        
+
+        marker_0f180a805a5d41e1b7fcab81708ba1ee.bindPopup(popup_14712318feaf443ab69da8228d6a700e)
+        ;
+
+        
+    
+    
+            var marker_938b5ee0cca14c0886e4c4fbc37359cc = L.marker(
+                [9.05, -82.83],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_4038d3dd1e6c4a478aa0d90f6510ef76 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1970476852664ca7937dce41b39e3e9d = $(`<div id="html_1970476852664ca7937dce41b39e3e9d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> BOCAS DEL TORO: Cordillera de Talamanca, 2 airline km NW of the peak of Cerro Echandi on the Costa Rican - Panamanian international border. Mixed Quercus - Podocarpus cloud forest in narrow canyon. <strong>Elevación:</strong> 2850.0 m  <strong>Fecha:</strong> 1984-02-29 <strong>Recolectores:</strong> Davidse, Gerrit <strong>Identificadores:</strong> Burger, William</div>`)[0];
+            popup_4038d3dd1e6c4a478aa0d90f6510ef76.setContent(html_1970476852664ca7937dce41b39e3e9d);
+        
+
+        marker_938b5ee0cca14c0886e4c4fbc37359cc.bindPopup(popup_4038d3dd1e6c4a478aa0d90f6510ef76)
+        ;
+
+        
+    
+    
+            var marker_e72c9efd6a0f45848ac7b9d3cac8e969 = L.marker(
+                [9.08, -82.84],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_0ec3db2259e74f1089de66f0270a3234 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1cbbe851ab647f694f5f6851fb48595 = $(`<div id="html_d1cbbe851ab647f694f5f6851fb48595" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> BOCAS DEL TORO. Cordillera de Talamanca, headwaters of the Río Culubre, 6 air - line km NW of the peak of Cerro Echandi on the Costa Rican - Panamanian international border. Mixed Quercus - Podocarpus - Magnolia - Symplocus - laurel forest with Chusque <strong>Elevación:</strong> 2550.0 m  <strong>Fecha:</strong> 1984-03-02 <strong>Recolectores:</strong> Davidse, Gerrit <strong>Identificadores:</strong> Burger, William</div>`)[0];
+            popup_0ec3db2259e74f1089de66f0270a3234.setContent(html_d1cbbe851ab647f694f5f6851fb48595);
+        
+
+        marker_e72c9efd6a0f45848ac7b9d3cac8e969.bindPopup(popup_0ec3db2259e74f1089de66f0270a3234)
+        ;
+
+        
+    
+    
+            var marker_bea60bf6084d4f1699e14de07476d0c4 = L.marker(
+                [9.02, -82.81],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_651bcd546f0548ac949d1f60db9b6397 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_335c5d8dc5c244b59895602cf66bbc89 = $(`<div id="html_335c5d8dc5c244b59895602cf66bbc89" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca, upper slopes of Cerro Echandi. Oak forest with Chusquea understory. Deep, steep, shady moist ravine with stream. <strong>Elevación:</strong> 2850.0 m  <strong>Fecha:</strong> 1983-08-23 <strong>Recolectores:</strong> Davidse, Gerrit <strong>Identificadores:</strong> Burger, William</div>`)[0];
+            popup_651bcd546f0548ac949d1f60db9b6397.setContent(html_335c5d8dc5c244b59895602cf66bbc89);
+        
+
+        marker_bea60bf6084d4f1699e14de07476d0c4.bindPopup(popup_651bcd546f0548ac949d1f60db9b6397)
+        ;
+
+        
+    
+    
+            var marker_95468bcc5827472a925f6c569e518fe6 = L.marker(
+                [9.66, -83.85],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_c3c3dec82e354c61bb3ed42694ec2c9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0cc77ec9b2f24dba8f58896e93cffd74 = $(`<div id="html_0cc77ec9b2f24dba8f58896e93cffd74" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. F. Los Santos Tres de Junio, carretera Interamericana Sur. <strong>Elevación:</strong> 2500.0 m  <strong>Fecha:</strong> 1981-01-28 <strong>Recolectores:</strong> Gómez Laurito, Jorge <strong>Identificadores:</strong> Gómez Laurito, Jorge</div>`)[0];
+            popup_c3c3dec82e354c61bb3ed42694ec2c9f.setContent(html_0cc77ec9b2f24dba8f58896e93cffd74);
+        
+
+        marker_95468bcc5827472a925f6c569e518fe6.bindPopup(popup_c3c3dec82e354c61bb3ed42694ec2c9f)
+        ;
+
+        
+    
+    
+            var marker_65f1bd618fd44d9b82626267c3050752 = L.marker(
+                [10.11, -84.11],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_e9a3cdad9caa47e7a24162978601a3b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_657ee8abaf7d4346b5215a11e26470e3 = $(`<div id="html_657ee8abaf7d4346b5215a11e26470e3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Open pasture land and forest above stream near Porrosati on the southern slope of Volcán Barba. <strong>Elevación:</strong> 2200.0 m  <strong>Fecha:</strong> 1968-06-22 <strong>Recolectores:</strong> Burger, William <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_e9a3cdad9caa47e7a24162978601a3b9.setContent(html_657ee8abaf7d4346b5215a11e26470e3);
+        
+
+        marker_65f1bd618fd44d9b82626267c3050752.bindPopup(popup_e9a3cdad9caa47e7a24162978601a3b9)
+        ;
+
+        
+    
+    
+            var marker_6bb420043af2438890d916d7ac43c34b = L.marker(
+                [9.65, -83.85],
+                {}
+            ).addTo(marker_cluster_3288eb86822e403f86fb160bf463fb9f);
+        
+    
+        var popup_c15b00f643234515aba761068149bfca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_797fda6f22cd4eb8811f91f313490eb8 = $(`<div id="html_797fda6f22cd4eb8811f91f313490eb8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Steep slope with open forest and bamboo thickets near El Trinidad and Km 72 (20 km southeast from Empalme) along the Interamerican highway. Prov. San José and Cartago. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 1968-06-19 <strong>Recolectores:</strong> Burger, William <strong>Identificadores:</strong> Burger, William</div>`)[0];
+            popup_c15b00f643234515aba761068149bfca.setContent(html_797fda6f22cd4eb8811f91f313490eb8);
+        
+
+        marker_6bb420043af2438890d916d7ac43c34b.bindPopup(popup_c15b00f643234515aba761068149bfca)
+        ;
+
+        
+    
+    
+            var layer_control_3f252530ad3042ef9e6cd7aab41a4a0a = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_ea6a80fc80504b7d82614e32d64dfec4,
+                    "ESRI World Imagery" : tile_layer_33f2612124c7448787e7f6584b97e332,
+                },
+                overlays :  {
+                    "macro_element_3288eb86822e403f86fb160bf463fb9f" : marker_cluster_3288eb86822e403f86fb160bf463fb9f,
+                },
+            };
+            L.control.layers(
+                layer_control_3f252530ad3042ef9e6cd7aab41a4a0a.base_layers,
+                layer_control_3f252530ad3042ef9e6cd7aab41a4a0a.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_87c07d234eb14765bc8b140e0e3177c7);
+            tile_layer_33f2612124c7448787e7f6584b97e332.remove();
+        
+</script>

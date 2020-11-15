@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_32f3f471e7604c0d9b7c9e8acaf751b9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_32f3f471e7604c0d9b7c9e8acaf751b9" ></div>
+        
+</body>
+<script>    
+    
+            var map_32f3f471e7604c0d9b7c9e8acaf751b9 = L.map(
+                "map_32f3f471e7604c0d9b7c9e8acaf751b9",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_32f3f471e7604c0d9b7c9e8acaf751b9);
+
+            
+
+        
+    
+            var tile_layer_a9023d25215e46d593bfb542d0c29187 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_32f3f471e7604c0d9b7c9e8acaf751b9);
+        
+    
+            var tile_layer_33a9e524f4f64c06981daa6e02883cc8 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_32f3f471e7604c0d9b7c9e8acaf751b9);
+        
+    
+            var marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c = L.markerClusterGroup(
+                {}
+            );
+            map_32f3f471e7604c0d9b7c9e8acaf751b9.addLayer(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+            var marker_91184540b8c945089d2580e9dbee83ed = L.marker(
+                [5.75, -60.583332999999996],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_eb101926fd47489a841f5de46e5a92ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c59d26070024079b0d742f690eae5ad = $(`<div id="html_4c59d26070024079b0d742f690eae5ad" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Upper Mazaruni river region, Karowtipu mountain. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1987-04-17 <strong>Recolectores:</strong> Boom B; Gopaul D <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_eb101926fd47489a841f5de46e5a92ad.setContent(html_4c59d26070024079b0d742f690eae5ad);
+        
+
+        marker_91184540b8c945089d2580e9dbee83ed.bindPopup(popup_eb101926fd47489a841f5de46e5a92ad)
+        ;
+
+        
+    
+    
+            var marker_12dd7133b03647898a688ba320e16835 = L.marker(
+                [5.75, -60.583332999999996],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_0a91fc1e4b0049ce8719dfe5fb13efc2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76159f19ed88457aa6ef4bce2d0bca17 = $(`<div id="html_76159f19ed88457aa6ef4bce2d0bca17" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Upper Mazaruni river region, Karowtipu mountain. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1987-04-19 <strong>Recolectores:</strong> Boom B; Gopaul D <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_0a91fc1e4b0049ce8719dfe5fb13efc2.setContent(html_76159f19ed88457aa6ef4bce2d0bca17);
+        
+
+        marker_12dd7133b03647898a688ba320e16835.bindPopup(popup_0a91fc1e4b0049ce8719dfe5fb13efc2)
+        ;
+
+        
+    
+    
+            var marker_51a57e850642452fae9ef68b344637b7 = L.marker(
+                [5.75, -60.583332999999996],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_9267281fe4dd426e93952a879e6385da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50cb2eb966574698b11baf0e1217af55 = $(`<div id="html_50cb2eb966574698b11baf0e1217af55" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Upper Mazaruni river region, Karowtipu mountain. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1987-04-25 <strong>Recolectores:</strong> Boom B; Gopaul D <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_9267281fe4dd426e93952a879e6385da.setContent(html_50cb2eb966574698b11baf0e1217af55);
+        
+
+        marker_51a57e850642452fae9ef68b344637b7.bindPopup(popup_9267281fe4dd426e93952a879e6385da)
+        ;
+
+        
+    
+    
+            var marker_72eb279402c3414ba610b4c392c972e3 = L.marker(
+                [5.75, -60.583332999999996],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_3e85fc7d8f1f483dadc65be59c0108af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba47f6f16ea844f1a9e948927169dfda = $(`<div id="html_ba47f6f16ea844f1a9e948927169dfda" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Upper Mazaruni River region, Karowtipu Mountain <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> nan <strong>Identificadores:</strong> D.C. Zappi</div>`)[0];
+            popup_3e85fc7d8f1f483dadc65be59c0108af.setContent(html_ba47f6f16ea844f1a9e948927169dfda);
+        
+
+        marker_72eb279402c3414ba610b4c392c972e3.bindPopup(popup_3e85fc7d8f1f483dadc65be59c0108af)
+        ;
+
+        
+    
+    
+            var marker_9e838d4229b84be7aca1b10290f6f3fe = L.marker(
+                [5.75, -60.583332999999996],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_0b333c0c82384eb08accd32ff6fa7440 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a8a784911554a639c870ff464ec86d1 = $(`<div id="html_0a8a784911554a639c870ff464ec86d1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Upper Mazaruni River region, Karowtipu Mountain <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> nan <strong>Identificadores:</strong> D.C. Zappi</div>`)[0];
+            popup_0b333c0c82384eb08accd32ff6fa7440.setContent(html_0a8a784911554a639c870ff464ec86d1);
+        
+
+        marker_9e838d4229b84be7aca1b10290f6f3fe.bindPopup(popup_0b333c0c82384eb08accd32ff6fa7440)
+        ;
+
+        
+    
+    
+            var marker_300d65cc903d4848b3895c00e17cd929 = L.marker(
+                [5.75, -60.583332999999996],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_d5af07891e3443ec826b9fb1e9bb3010 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a96d9d8c62fb4cc09be8aed4b617f551 = $(`<div id="html_a96d9d8c62fb4cc09be8aed4b617f551" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Upper Mazaruni River region, Karowtipu Mountain <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> nan <strong>Identificadores:</strong> D.C. Zappi</div>`)[0];
+            popup_d5af07891e3443ec826b9fb1e9bb3010.setContent(html_a96d9d8c62fb4cc09be8aed4b617f551);
+        
+
+        marker_300d65cc903d4848b3895c00e17cd929.bindPopup(popup_d5af07891e3443ec826b9fb1e9bb3010)
+        ;
+
+        
+    
+    
+            var marker_8f43daa733ce4edf9e04ea169da35232 = L.marker(
+                [5.75, -60.58],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_99831a1ea546490ca6f8fb00d1eaf5d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4bba314be3234b3ab89f766d51df3c71 = $(`<div id="html_4bba314be3234b3ab89f766d51df3c71" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Upper Mazaruni River region, Karowtipu Mountain. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1987-04-25 <strong>Recolectores:</strong> B. M. Boom <strong>Identificadores:</strong> D. C. Zappi</div>`)[0];
+            popup_99831a1ea546490ca6f8fb00d1eaf5d2.setContent(html_4bba314be3234b3ab89f766d51df3c71);
+        
+
+        marker_8f43daa733ce4edf9e04ea169da35232.bindPopup(popup_99831a1ea546490ca6f8fb00d1eaf5d2)
+        ;
+
+        
+    
+    
+            var marker_6479a85896154948bff6374a7a2e9e3d = L.marker(
+                [-2.4951939999999997, -62.257557999999996],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_5c6350a7093147eba725a3f13bf81abb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78b673de63884b799b7d446b1dadcdaa = $(`<div id="html_78b673de63884b799b7d446b1dadcdaa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> arredores da cidade, operação Radam. Ponto 4, SA-20-ZA <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1976-10-09 <strong>Recolectores:</strong> T. R. Bahia <strong>Identificadores:</strong> C. M. Taylor</div>`)[0];
+            popup_5c6350a7093147eba725a3f13bf81abb.setContent(html_78b673de63884b799b7d446b1dadcdaa);
+        
+
+        marker_6479a85896154948bff6374a7a2e9e3d.bindPopup(popup_5c6350a7093147eba725a3f13bf81abb)
+        ;
+
+        
+    
+    
+            var marker_0e8e3b452a6c46d7a682c54770f8a6c9 = L.marker(
+                [1.5333299999999999, -65.81666],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_106ecf125d324d85b0a6d31643625d80 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af1efd2a4e7b41ba82ec2a0c6d625703 = $(`<div id="html_af1efd2a4e7b41ba82ec2a0c6d625703" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> RIO NEGRO: Cerro Aracamuni, summit. Proa Camp. Savanna with small to large patches of forest, especially along streams, in ravines and near edge of tepui. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1987-10-30 <strong>Recolectores:</strong> Ronald L. Liesner|Germán Carnevali <strong>Identificadores:</strong> Julian A. Steyermark (MO)</div>`)[0];
+            popup_106ecf125d324d85b0a6d31643625d80.setContent(html_af1efd2a4e7b41ba82ec2a0c6d625703);
+        
+
+        marker_0e8e3b452a6c46d7a682c54770f8a6c9.bindPopup(popup_106ecf125d324d85b0a6d31643625d80)
+        ;
+
+        
+    
+    
+            var marker_149a242dd2f84396ae62ebc400b1bea2 = L.marker(
+                [3.816667, -65.716667],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_5f11267514684bebaf61b66107d00c6e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf50de61fff04799a24257535ee967c3 = $(`<div id="html_cf50de61fff04799a24257535ee967c3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ATABAPO Cerro Huachamacarí, base of main wall and slope below it, E. side. Forest. <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 1988-11-05 <strong>Recolectores:</strong> Ronald L. Liesner <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_5f11267514684bebaf61b66107d00c6e.setContent(html_cf50de61fff04799a24257535ee967c3);
+        
+
+        marker_149a242dd2f84396ae62ebc400b1bea2.bindPopup(popup_5f11267514684bebaf61b66107d00c6e)
+        ;
+
+        
+    
+    
+            var marker_9066297677ae4a25ad248bb408bf01e7 = L.marker(
+                [3.7166669999999997, -65.5],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_1cd36f9383034bb6ba8a6384df7e4208 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c78a87e9867b47a99445cc696fc20c50 = $(`<div id="html_c78a87e9867b47a99445cc696fc20c50" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ATABAPO Cerro Marahuaca. Slopes. "Sima" area. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1988-10-16 <strong>Recolectores:</strong> Ronald L. Liesner <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_1cd36f9383034bb6ba8a6384df7e4208.setContent(html_c78a87e9867b47a99445cc696fc20c50);
+        
+
+        marker_9066297677ae4a25ad248bb408bf01e7.bindPopup(popup_1cd36f9383034bb6ba8a6384df7e4208)
+        ;
+
+        
+    
+    
+            var marker_fef96c67a8a54684abc1e25b2b5bf867 = L.marker(
+                [-10.337778, -75.251944],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_c9add92783734c618ee04b4d2c450a68 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_97bb5c4135b84344b853180975fe20e4 = $(`<div id="html_97bb5c4135b84344b853180975fe20e4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Dist. Palcazú, Parque Nacional Yanachaga-Chemillen. Estación Biológica Paujil, camino al mirador. Bosque primario sobre suelo de arenisca. <strong>Elevación:</strong> 360.0 m  <strong>Fecha:</strong> 2006-10-16 <strong>Recolectores:</strong> Rodolfo Vásquez <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_c9add92783734c618ee04b4d2c450a68.setContent(html_97bb5c4135b84344b853180975fe20e4);
+        
+
+        marker_fef96c67a8a54684abc1e25b2b5bf867.bindPopup(popup_c9add92783734c618ee04b4d2c450a68)
+        ;
+
+        
+    
+    
+            var marker_5c950e43132e4b50bb387cce4ad688cd = L.marker(
+                [-10.39527, -75.08666],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_b1c8f4ede72940aab5e3cc274652d79a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d0c79b663614d7db9a027220618f2f8 = $(`<div id="html_2d0c79b663614d7db9a027220618f2f8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Dist. Palcazú. Evaluación de los Recursos del Bosque 0.5ha en la Reserva Comunal Yanesha. Comunidad Nativa Lomalinda-Laguna, Sector Nueva Aldea <strong>Elevación:</strong> 650.0 m  <strong>Fecha:</strong> 2005-10-15 <strong>Recolectores:</strong> Abel Monteagudo|Antonio Peña|Rolando Francis|L. Quicha|E. Camavilca|Camaña <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_b1c8f4ede72940aab5e3cc274652d79a.setContent(html_2d0c79b663614d7db9a027220618f2f8);
+        
+
+        marker_5c950e43132e4b50bb387cce4ad688cd.bindPopup(popup_b1c8f4ede72940aab5e3cc274652d79a)
+        ;
+
+        
+    
+    
+            var marker_09656c5eda7b42a6a0d23ec652fa17cc = L.marker(
+                [5.09888, -59.83776999999999],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_a35231d1500045d294337d5f86be4959 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0bd2e79276aa4903a3a03ffe10904fc3 = $(`<div id="html_0bd2e79276aa4903a3a03ffe10904fc3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potaro-Siparuni Region. Mt. Wokomung, NE facing slopes above second of four escarpments. Dense forest on sandstone and peat, with Guadua, Euterpe and Clusia. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2003-07-01 <strong>Recolectores:</strong> H. David Clarke|R. Williams|C. Perry|Erin A. Tripp|J. Kelly|D. Gittens|S. Stern <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_a35231d1500045d294337d5f86be4959.setContent(html_0bd2e79276aa4903a3a03ffe10904fc3);
+        
+
+        marker_09656c5eda7b42a6a0d23ec652fa17cc.bindPopup(popup_a35231d1500045d294337d5f86be4959)
+        ;
+
+        
+    
+    
+            var marker_7036459a12cb4466a70b2faf21d5fc03 = L.marker(
+                [5.115833, -59.813056],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_f4b4587764434cefae85dac5123c2aa1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43c0c052b1764c04b57c78741bfba7bc = $(`<div id="html_43c0c052b1764c04b57c78741bfba7bc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> potaro-Siparuni Region. Mt Wokomung, edge of plateau above first of four escarpments. Dense, singletiered canopy forest on gray sandy clay, with peat, sandstone, with Clusia, Schefflera and Euterpe. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2003-06-29 <strong>Recolectores:</strong> H. David Clarke|R. Williams|C. Perry|Erin A. Tripp|J. Kelly|D. Gittens|S. Stern <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_f4b4587764434cefae85dac5123c2aa1.setContent(html_43c0c052b1764c04b57c78741bfba7bc);
+        
+
+        marker_7036459a12cb4466a70b2faf21d5fc03.bindPopup(popup_f4b4587764434cefae85dac5123c2aa1)
+        ;
+
+        
+    
+    
+            var marker_4d721d3038a2405c8293d3b403fa4d17 = L.marker(
+                [5.05, -59.88333000000001],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_ae01a0a8cb38473eaa972cf223ce44c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04e86cf705f648b6bde91a1193628bf7 = $(`<div id="html_04e86cf705f648b6bde91a1193628bf7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pakaraima Mts, Mt. Wokomung, headwaters of Wusupubaru Creek, 1 km downslope to Patamona Lookout <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 1993-02-15 <strong>Recolectores:</strong> Terry W. Henkel|M. Chin <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_ae01a0a8cb38473eaa972cf223ce44c8.setContent(html_04e86cf705f648b6bde91a1193628bf7);
+        
+
+        marker_4d721d3038a2405c8293d3b403fa4d17.bindPopup(popup_ae01a0a8cb38473eaa972cf223ce44c8)
+        ;
+
+        
+    
+    
+            var marker_d6d306d092da441498adaea40a46508b = L.marker(
+                [5.05, -59.88333000000001],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_7e7248c3287a4f45af1fe6e047bc2843 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d32d4574ee0c469fb207474df6770fce = $(`<div id="html_d32d4574ee0c469fb207474df6770fce" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pakaraima Mts, Mt. Wokomung, Wusupubaru Creek, 2 km from juncture with Suruwabaru Creek <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 1993-02-13 <strong>Recolectores:</strong> Terry W. Henkel|M. Chin <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_7e7248c3287a4f45af1fe6e047bc2843.setContent(html_d32d4574ee0c469fb207474df6770fce);
+        
+
+        marker_d6d306d092da441498adaea40a46508b.bindPopup(popup_7e7248c3287a4f45af1fe6e047bc2843)
+        ;
+
+        
+    
+    
+            var marker_38e41a6674cb45fb990c4a3f73726ac6 = L.marker(
+                [-4.9166669999999995, -78.31666700000001],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_e5277b6939ee46e8ad13562167ed311a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7afb1a3a06a0422399c48b64475679db = $(`<div id="html_7afb1a3a06a0422399c48b64475679db" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito Imaza, Comunidad Aguaruna de Putuim. Bosque primario, sobre roca arenisca y abundante material org|4nico, "campau". <strong>Elevación:</strong> 740.0 m  <strong>Fecha:</strong> 1996-06-14 <strong>Recolectores:</strong> Eric F. Rodríguez Rodríguez|et al. <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_e5277b6939ee46e8ad13562167ed311a.setContent(html_7afb1a3a06a0422399c48b64475679db);
+        
+
+        marker_38e41a6674cb45fb990c4a3f73726ac6.bindPopup(popup_e5277b6939ee46e8ad13562167ed311a)
+        ;
+
+        
+    
+    
+            var marker_872e6714a05f4642bdca642da622e666 = L.marker(
+                [-10.378333, -75.1575],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_8c794f80b6cc49cdbe342f03ce40c58e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea349be376b147f885873274529c8d05 = $(`<div id="html_ea349be376b147f885873274529c8d05" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Dist. Palcazu. Sector Raya. Reserva Comunal Yanesha. <strong>Elevación:</strong> 729.0 m  <strong>Fecha:</strong> 2010-11-19 <strong>Recolectores:</strong> Luis Valenzuela G.|J.L. Mateo|C. Mateo|J. Chiguanco|R. Casimiro|E. Joaquín <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_8c794f80b6cc49cdbe342f03ce40c58e.setContent(html_ea349be376b147f885873274529c8d05);
+        
+
+        marker_872e6714a05f4642bdca642da622e666.bindPopup(popup_8c794f80b6cc49cdbe342f03ce40c58e)
+        ;
+
+        
+    
+    
+            var marker_ecb7b71d6c124f13a6b43cd7dd22f8df = L.marker(
+                [-10.415556, -75.310833],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_858def2bad414f2ba863a85ed114b1ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5927d80aab7143b3bda525863e35bbb7 = $(`<div id="html_5927d80aab7143b3bda525863e35bbb7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Dist. Palcazu. Parque Nacional Yanachaga-Chemillen. Sector Rotpen. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 2010-10-28 <strong>Recolectores:</strong> Rodolfo Vásquez|Juan Perea|A. Santiago <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_858def2bad414f2ba863a85ed114b1ea.setContent(html_5927d80aab7143b3bda525863e35bbb7);
+        
+
+        marker_ecb7b71d6c124f13a6b43cd7dd22f8df.bindPopup(popup_858def2bad414f2ba863a85ed114b1ea)
+        ;
+
+        
+    
+    
+            var marker_e91b9e0e3ac54d168ed43e51f593b869 = L.marker(
+                [5.75, -60.583332999999996],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_08927029afe64f649f63cb887c9c342f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40b349158a2f401cb436107841d9e80b = $(`<div id="html_40b349158a2f401cb436107841d9e80b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Upper Mazaruni River region, Karowtipu Mountain. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1987-04-19 <strong>Recolectores:</strong> Brian M. Boom|Doorjoohan Gopaul <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_08927029afe64f649f63cb887c9c342f.setContent(html_40b349158a2f401cb436107841d9e80b);
+        
+
+        marker_e91b9e0e3ac54d168ed43e51f593b869.bindPopup(popup_08927029afe64f649f63cb887c9c342f)
+        ;
+
+        
+    
+    
+            var marker_48d395a3d64b42a2a69b15827aa5b981 = L.marker(
+                [5.75, -60.583332999999996],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_feb9c75335684a2d8707e37f820ddd2f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ecdc568ab61f42c4bf8fa9fafca6fc12 = $(`<div id="html_ecdc568ab61f42c4bf8fa9fafca6fc12" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Upper Mazaruni River region, Karowtipu Mountain. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1987-04-25 <strong>Recolectores:</strong> Brian M. Boom|Doorjoohan Gopaul <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_feb9c75335684a2d8707e37f820ddd2f.setContent(html_ecdc568ab61f42c4bf8fa9fafca6fc12);
+        
+
+        marker_48d395a3d64b42a2a69b15827aa5b981.bindPopup(popup_feb9c75335684a2d8707e37f820ddd2f)
+        ;
+
+        
+    
+    
+            var marker_10513ae73ddd40eb806eacf36485e726 = L.marker(
+                [-12.866667, -60.2],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_68446366f870435a9e9e37513c4ba2a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92c98b18a40c473aa7f4b1875e6a7e39 = $(`<div id="html_92c98b18a40c473aa7f4b1875e6a7e39" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Road Vilhena to Colorado, 28 km from Vilhena ( 20 km from BR-364) forest on sandy soil at Rio Vermelho. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1979-10-28 <strong>Recolectores:</strong> James L. Zarucchi|M.G. Vieira|R.H. Petersen|Bruce W. Nelson|C.D.A. da Mota|José F. Ramos <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_68446366f870435a9e9e37513c4ba2a2.setContent(html_92c98b18a40c473aa7f4b1875e6a7e39);
+        
+
+        marker_10513ae73ddd40eb806eacf36485e726.bindPopup(popup_68446366f870435a9e9e37513c4ba2a2)
+        ;
+
+        
+    
+    
+            var marker_2177d24620d04783b9b809c8773daa06 = L.marker(
+                [5.75, -60.583332999999996],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_e4dcadd9555c482fb5c871d9e350ee82 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5761b38b8ef542578100769c03ee2131 = $(`<div id="html_5761b38b8ef542578100769c03ee2131" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Upper Mazaruni River region, Karowtipu Mountain. <strong>Elevación:</strong> 920.0 m  <strong>Fecha:</strong> 1987-04-17 <strong>Recolectores:</strong> Brian M. Boom|Doorjoohan Gopaul <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_e4dcadd9555c482fb5c871d9e350ee82.setContent(html_5761b38b8ef542578100769c03ee2131);
+        
+
+        marker_2177d24620d04783b9b809c8773daa06.bindPopup(popup_e4dcadd9555c482fb5c871d9e350ee82)
+        ;
+
+        
+    
+    
+            var marker_b85f1e0f9e5a4f0fbd50558783eda0eb = L.marker(
+                [-9.05, -75.583333],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_34340fe27a604530b1eb686d10ba0f88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82459da4fd8c451e93b91a0f6cc73e62 = $(`<div id="html_82459da4fd8c451e93b91a0f6cc73e62" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito de Padre Abad. Pampa del Sacramento, al oeste del Caserio La Libertad. Bosque primario, terreno pantanoso <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 2004-02-11 <strong>Recolectores:</strong> José Schunke V.|J.G. Graham <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_34340fe27a604530b1eb686d10ba0f88.setContent(html_82459da4fd8c451e93b91a0f6cc73e62);
+        
+
+        marker_b85f1e0f9e5a4f0fbd50558783eda0eb.bindPopup(popup_34340fe27a604530b1eb686d10ba0f88)
+        ;
+
+        
+    
+    
+            var marker_94172755a734468399910f9bf4e6bc16 = L.marker(
+                [7.0758, -65.9119],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_feafb42009b0430c92fdaa9e85f1d7ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be9707a50b7642d3a6aa67ba251fdc0f = $(`<div id="html_be9707a50b7642d3a6aa67ba251fdc0f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1929-01-01 <strong>Recolectores:</strong> G. H. H. Tate <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_feafb42009b0430c92fdaa9e85f1d7ac.setContent(html_be9707a50b7642d3a6aa67ba251fdc0f);
+        
+
+        marker_94172755a734468399910f9bf4e6bc16.bindPopup(popup_feafb42009b0430c92fdaa9e85f1d7ac)
+        ;
+
+        
+    
+    
+            var marker_ba97250583274191898ed011e01a9565 = L.marker(
+                [7.0758, -65.9119],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_2583355da088445caff41d1072cd0e03 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_02df73ef62cc4c4d8144e81a85b653bc = $(`<div id="html_02df73ef62cc4c4d8144e81a85b653bc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1944-08-25 <strong>Recolectores:</strong> J. A. Steyermark <strong>Identificadores:</strong> C. M. Taylor</div>`)[0];
+            popup_2583355da088445caff41d1072cd0e03.setContent(html_02df73ef62cc4c4d8144e81a85b653bc);
+        
+
+        marker_ba97250583274191898ed011e01a9565.bindPopup(popup_2583355da088445caff41d1072cd0e03)
+        ;
+
+        
+    
+    
+            var marker_6a4737c140114d088437038752ca864e = L.marker(
+                [3.82, -65.72],
+                {}
+            ).addTo(marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c);
+        
+    
+        var popup_f5b055d6d609456b8e86138a7236626d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35d521c00db34853a660a43984e92737 = $(`<div id="html_35d521c00db34853a660a43984e92737" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Veenzuela. Terr. Fed. Amazonas, Dpto. Atabapo: Cerro Huachamacarí, base of main wall and slope below it. <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 1988-11-05 <strong>Recolectores:</strong> Ronald Liesner <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_f5b055d6d609456b8e86138a7236626d.setContent(html_35d521c00db34853a660a43984e92737);
+        
+
+        marker_6a4737c140114d088437038752ca864e.bindPopup(popup_f5b055d6d609456b8e86138a7236626d)
+        ;
+
+        
+    
+    
+            var layer_control_dbaf4ef297b44c9d86bc3d797ebcbecf = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_a9023d25215e46d593bfb542d0c29187,
+                    "ESRI World Imagery" : tile_layer_33a9e524f4f64c06981daa6e02883cc8,
+                },
+                overlays :  {
+                    "macro_element_f6e722dd8a8341b8bb6ced438e0fa20c" : marker_cluster_f6e722dd8a8341b8bb6ced438e0fa20c,
+                },
+            };
+            L.control.layers(
+                layer_control_dbaf4ef297b44c9d86bc3d797ebcbecf.base_layers,
+                layer_control_dbaf4ef297b44c9d86bc3d797ebcbecf.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_32f3f471e7604c0d9b7c9e8acaf751b9);
+            tile_layer_33a9e524f4f64c06981daa6e02883cc8.remove();
+        
+</script>

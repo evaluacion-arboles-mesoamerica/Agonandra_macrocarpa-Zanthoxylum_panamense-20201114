@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9ee4b4805e0c48edb1ecd2af9654138b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9ee4b4805e0c48edb1ecd2af9654138b" ></div>
+        
+</body>
+<script>    
+    
+            var map_9ee4b4805e0c48edb1ecd2af9654138b = L.map(
+                "map_9ee4b4805e0c48edb1ecd2af9654138b",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_9ee4b4805e0c48edb1ecd2af9654138b);
+
+            
+
+        
+    
+            var tile_layer_9f7000a237b84e21a32849d65e98d2cd = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9ee4b4805e0c48edb1ecd2af9654138b);
+        
+    
+            var tile_layer_368f74447c8c4ca2ac656f36cb711855 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9ee4b4805e0c48edb1ecd2af9654138b);
+        
+    
+            var marker_cluster_639942367d494548ac7e33c58f995a44 = L.markerClusterGroup(
+                {}
+            );
+            map_9ee4b4805e0c48edb1ecd2af9654138b.addLayer(marker_cluster_639942367d494548ac7e33c58f995a44);
+        
+    
+            var marker_15039af708a442a989861ef098a41242 = L.marker(
+                [10.3, -84.78],
+                {}
+            ).addTo(marker_cluster_639942367d494548ac7e33c58f995a44);
+        
+    
+        var popup_e53a97cf52b7433e910266fde98a80f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2820366475b346bb932cccd3e123deb3 = $(`<div id="html_2820366475b346bb932cccd3e123deb3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde, Cordille de Tilarán, Alrededor de la Torre Rancho Alegre. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1991-11-18 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> J. E. Jiménez (USJ), P. Juárez & J. M. Chaves-Fallas</div>`)[0];
+            popup_e53a97cf52b7433e910266fde98a80f6.setContent(html_2820366475b346bb932cccd3e123deb3);
+        
+
+        marker_15039af708a442a989861ef098a41242.bindPopup(popup_e53a97cf52b7433e910266fde98a80f6)
+        ;
+
+        
+    
+    
+            var marker_788c29c1771e404d9f11efb39a0d02ec = L.marker(
+                [10.3, -84.8],
+                {}
+            ).addTo(marker_cluster_639942367d494548ac7e33c58f995a44);
+        
+    
+        var popup_83f11ea303624629995e97d57c9ef778 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b4c78cf0e5ce4a84b0e04ca327f973e7 = $(`<div id="html_b4c78cf0e5ce4a84b0e04ca327f973e7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. Monteverde, Pacific slope, wet forest. John Campbell farm. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1992-04-14 <strong>Recolectores:</strong> William A. Haber|Willow Zuchowski <strong>Identificadores:</strong> J. E. Jiménez (USJ), P. Juárez & J. M. Chaves-Fallas</div>`)[0];
+            popup_83f11ea303624629995e97d57c9ef778.setContent(html_b4c78cf0e5ce4a84b0e04ca327f973e7);
+        
+
+        marker_788c29c1771e404d9f11efb39a0d02ec.bindPopup(popup_83f11ea303624629995e97d57c9ef778)
+        ;
+
+        
+    
+    
+            var marker_e330c22b42f9410fb7455a0b3ff398af = L.marker(
+                [10.3, -84.8],
+                {}
+            ).addTo(marker_cluster_639942367d494548ac7e33c58f995a44);
+        
+    
+        var popup_7634084b88034559a0923ec1dad6d433 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd223425de3a487ea8fd556cc02e3140 = $(`<div id="html_cd223425de3a487ea8fd556cc02e3140" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, Pacific slope, ridge above Quebrada Maquina. Finca Haber. <strong>Elevación:</strong> 1360.0 m  <strong>Fecha:</strong> 1992-02-12 <strong>Recolectores:</strong> William A. Haber|Willow Zuchowski <strong>Identificadores:</strong> J. E. Jiménez (USJ), P. Juárez & J. M. Chaves-Fallas</div>`)[0];
+            popup_7634084b88034559a0923ec1dad6d433.setContent(html_cd223425de3a487ea8fd556cc02e3140);
+        
+
+        marker_e330c22b42f9410fb7455a0b3ff398af.bindPopup(popup_7634084b88034559a0923ec1dad6d433)
+        ;
+
+        
+    
+    
+            var marker_1109bd18712d4b1785615eb5e6092b6a = L.marker(
+                [10.308611, -84.8075],
+                {}
+            ).addTo(marker_cluster_639942367d494548ac7e33c58f995a44);
+        
+    
+        var popup_2a8d94da71794e27b8fcb5c2b7fd25ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b1f40f5510e04d01a2b33148cb7d3700 = $(`<div id="html_b1f40f5510e04d01a2b33148cb7d3700" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, lower community, pasture <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 1979-01-27 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> J. E. Jiménez (USJ), P. Juárez & J. M. Chaves-Fallas</div>`)[0];
+            popup_2a8d94da71794e27b8fcb5c2b7fd25ee.setContent(html_b1f40f5510e04d01a2b33148cb7d3700);
+        
+
+        marker_1109bd18712d4b1785615eb5e6092b6a.bindPopup(popup_2a8d94da71794e27b8fcb5c2b7fd25ee)
+        ;
+
+        
+    
+    
+            var marker_bf9564ab472544639a8c9982925f01ad = L.marker(
+                [10.3, -84.8],
+                {}
+            ).addTo(marker_cluster_639942367d494548ac7e33c58f995a44);
+        
+    
+        var popup_689e2e63e01046e6a4e958d923483c25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce3f0b40b746427daff1dbfcc6ec68b0 = $(`<div id="html_ce3f0b40b746427daff1dbfcc6ec68b0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Puntarenas Monteverde, valley of Quebrada Máquina on N side, 200 m NE of Hotel Belmar. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1990-05-06 <strong>Recolectores:</strong> William A. Haber|Willow Zuchowski <strong>Identificadores:</strong> J. E. Jiménez (USJ), P. Juárez & J. M. Chaves-Fallas</div>`)[0];
+            popup_689e2e63e01046e6a4e958d923483c25.setContent(html_ce3f0b40b746427daff1dbfcc6ec68b0);
+        
+
+        marker_bf9564ab472544639a8c9982925f01ad.bindPopup(popup_689e2e63e01046e6a4e958d923483c25)
+        ;
+
+        
+    
+    
+            var marker_cc5b143cc30b4ed2ab6b08b0c0353dd3 = L.marker(
+                [10.3, -84.8],
+                {}
+            ).addTo(marker_cluster_639942367d494548ac7e33c58f995a44);
+        
+    
+        var popup_4a8f2b0be16849b18e0912c4c0cec6e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d47f2a0c60a4ffe995ac29d904de7a5 = $(`<div id="html_9d47f2a0c60a4ffe995ac29d904de7a5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, forest and pasture along Quebrada Máquina. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1990-03-12 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> J. E. Jiménez (USJ), P. Juárez & J. M. Chaves-Fallas</div>`)[0];
+            popup_4a8f2b0be16849b18e0912c4c0cec6e9.setContent(html_9d47f2a0c60a4ffe995ac29d904de7a5);
+        
+
+        marker_cc5b143cc30b4ed2ab6b08b0c0353dd3.bindPopup(popup_4a8f2b0be16849b18e0912c4c0cec6e9)
+        ;
+
+        
+    
+    
+            var marker_8603a5fd75834f669df8e9c370aeb11a = L.marker(
+                [10.210833000000001, -84.1125],
+                {}
+            ).addTo(marker_cluster_639942367d494548ac7e33c58f995a44);
+        
+    
+        var popup_e5b40e3ccc484d858e441acb9f50c45c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61e3ecdee623448fb0f36e2ff62c7352 = $(`<div id="html_61e3ecdee623448fb0f36e2ff62c7352" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca Montreal, ridge between headwaters of Ríos Volcán and San Fernando, just above trail to refugio at 1800 m. <strong>Elevación:</strong> 1740.0 m  <strong>Fecha:</strong> 1992-10-09 <strong>Recolectores:</strong> Brad Boyle|Alice Boyle|H. Nelson <strong>Identificadores:</strong> J. E. Jiménez (USJ), P. Juárez & J. M. Chaves-Fallas</div>`)[0];
+            popup_e5b40e3ccc484d858e441acb9f50c45c.setContent(html_61e3ecdee623448fb0f36e2ff62c7352);
+        
+
+        marker_8603a5fd75834f669df8e9c370aeb11a.bindPopup(popup_e5b40e3ccc484d858e441acb9f50c45c)
+        ;
+
+        
+    
+    
+            var marker_5068d373f2d24a8cb4c694b66b411873 = L.marker(
+                [10.25, -84.251389],
+                {}
+            ).addTo(marker_cluster_639942367d494548ac7e33c58f995a44);
+        
+    
+        var popup_7287782bcacf48839bb95d4ab0c097ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49fcf9297abd411b97f32a74d5c9acf4 = $(`<div id="html_49fcf9297abd411b97f32a74d5c9acf4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajos del Toro, Sarchí <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1988-08-05 <strong>Recolectores:</strong> Quírico Jiménez|Luis H. Elizondo|R. Hernández <strong>Identificadores:</strong> J. E. Jiménez (USJ), P. Juárez & J. M. Chaves-Fallas</div>`)[0];
+            popup_7287782bcacf48839bb95d4ab0c097ee.setContent(html_49fcf9297abd411b97f32a74d5c9acf4);
+        
+
+        marker_5068d373f2d24a8cb4c694b66b411873.bindPopup(popup_7287782bcacf48839bb95d4ab0c097ee)
+        ;
+
+        
+    
+    
+            var marker_17103fedebda4025963edd7218e2a8ed = L.marker(
+                [10.241266, -84.11079699999999],
+                {}
+            ).addTo(marker_cluster_639942367d494548ac7e33c58f995a44);
+        
+    
+        var popup_0ec2c4069ea8457a96c8ec6ebd08c428 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7efb59edc4874d769ea49b2175aab361 = $(`<div id="html_7efb59edc4874d769ea49b2175aab361" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Cordillera Volcánica Central.  Cuenca del Sarapiquí.  Al SE del albergue ALAS-1500. <strong>Elevación:</strong> 1485.0 m  <strong>Fecha:</strong> 2005-04-10 <strong>Recolectores:</strong> Frank González|Armando Soto <strong>Identificadores:</strong> J. E. Jiménez (USJ), P. Juárez & J. M. Chaves-Fallas</div>`)[0];
+            popup_0ec2c4069ea8457a96c8ec6ebd08c428.setContent(html_7efb59edc4874d769ea49b2175aab361);
+        
+
+        marker_17103fedebda4025963edd7218e2a8ed.bindPopup(popup_0ec2c4069ea8457a96c8ec6ebd08c428)
+        ;
+
+        
+    
+    
+            var layer_control_ed0fdd1b0cd14ed2aaabc26e8895f81c = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_9f7000a237b84e21a32849d65e98d2cd,
+                    "ESRI World Imagery" : tile_layer_368f74447c8c4ca2ac656f36cb711855,
+                },
+                overlays :  {
+                    "macro_element_639942367d494548ac7e33c58f995a44" : marker_cluster_639942367d494548ac7e33c58f995a44,
+                },
+            };
+            L.control.layers(
+                layer_control_ed0fdd1b0cd14ed2aaabc26e8895f81c.base_layers,
+                layer_control_ed0fdd1b0cd14ed2aaabc26e8895f81c.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_9ee4b4805e0c48edb1ecd2af9654138b);
+            tile_layer_368f74447c8c4ca2ac656f36cb711855.remove();
+        
+</script>

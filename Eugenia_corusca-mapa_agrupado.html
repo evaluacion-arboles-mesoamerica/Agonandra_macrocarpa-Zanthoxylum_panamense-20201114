@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5e19e02512484073a844c1c18149b464 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5e19e02512484073a844c1c18149b464" ></div>
+        
+</body>
+<script>    
+    
+            var map_5e19e02512484073a844c1c18149b464 = L.map(
+                "map_5e19e02512484073a844c1c18149b464",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_5e19e02512484073a844c1c18149b464);
+
+            
+
+        
+    
+            var tile_layer_22663a76a06e4ca7b90a23f1f9f20e25 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5e19e02512484073a844c1c18149b464);
+        
+    
+            var tile_layer_f77d165561bc4f3caf20fa9cd26b6767 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5e19e02512484073a844c1c18149b464);
+        
+    
+            var marker_cluster_6477f7c83bb54ff185f8abe1e960424f = L.markerClusterGroup(
+                {}
+            );
+            map_5e19e02512484073a844c1c18149b464.addLayer(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+            var marker_ead37312ab674193b6c1557c22901183 = L.marker(
+                [10.583333, -84.93333299999999],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_1f04c2caf9524470a08d722807146705 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff66a41b75fd4b49918b11c6bce8e5d6 = $(`<div id="html_ff66a41b75fd4b49918b11c6bce8e5d6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. 1-2 km west of Lago de Cote, 13 km north of Tilarán, continental divide on SE slope of Volcán Tenorio, Eco-Lodge cloud forest reserve. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1993-08-24 <strong>Recolectores:</strong> William A. Haber|Willow Zuchowski <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_1f04c2caf9524470a08d722807146705.setContent(html_ff66a41b75fd4b49918b11c6bce8e5d6);
+        
+
+        marker_ead37312ab674193b6c1557c22901183.bindPopup(popup_1f04c2caf9524470a08d722807146705)
+        ;
+
+        
+    
+    
+            var marker_e7d5eb8348a845189aa9c4a228cd93b1 = L.marker(
+                [10.4, -84.65],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_078e74561f9545b7a237435c18007fac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69c8edcc57924ad3b863ba1b280d6906 = $(`<div id="html_69c8edcc57924ad3b863ba1b280d6906" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque Eterno De Los Niños, Cordillera de Tilarán, 5 km W of Chachagua, Quebrada Chachaguita drainage, Premontane rain forest, Zona Monteverde <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1993-07-17 <strong>Recolectores:</strong> William A. Haber|Jason C. Bradford|G. Céspedes <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_078e74561f9545b7a237435c18007fac.setContent(html_69c8edcc57924ad3b863ba1b280d6906);
+        
+
+        marker_e7d5eb8348a845189aa9c4a228cd93b1.bindPopup(popup_078e74561f9545b7a237435c18007fac)
+        ;
+
+        
+    
+    
+            var marker_26586692132b4f80b9f25fc4a2ea112d = L.marker(
+                [10.63, -83.68],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_aaa6f991eecf4c9bbd7f4094b3751166 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d19b96051de948c887517215267ce98d = $(`<div id="html_d19b96051de948c887517215267ce98d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zapota Dos, ca. 20 km NW of Tortuguero village. On farom of Ronulfo Vargas. One-ha sample plot in tall forest on level ground, dominated by Pentachlethra macroloba (31% of basal area) Brosimum lactescens and Iriatea. Understory dominated by Protium pittieri, Socratea and Welfia <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1995-03-17 <strong>Recolectores:</strong> Karsten Thomsen|J. Korning <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_aaa6f991eecf4c9bbd7f4094b3751166.setContent(html_d19b96051de948c887517215267ce98d);
+        
+
+        marker_26586692132b4f80b9f25fc4a2ea112d.bindPopup(popup_aaa6f991eecf4c9bbd7f4094b3751166)
+        ;
+
+        
+    
+    
+            var marker_14be017375c945cfa449c5da18ce326d = L.marker(
+                [10.65, -83.677778],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_efa46191701f4303961f9a3ef674ec64 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aff0da0b287940b484fb13954ad6c36a = $(`<div id="html_aff0da0b287940b484fb13954ad6c36a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hills 3 1/2 airline km S of Islas Buena Vista in the Río Colorado, 16 airline km SW of Barra del Colorado. <strong>Elevación:</strong> 65.0 m  <strong>Fecha:</strong> 1986-09-15 <strong>Recolectores:</strong> Gerrit Davidse|Gerardo Herrera Ch. <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_efa46191701f4303961f9a3ef674ec64.setContent(html_aff0da0b287940b484fb13954ad6c36a);
+        
+
+        marker_14be017375c945cfa449c5da18ce326d.bindPopup(popup_efa46191701f4303961f9a3ef674ec64)
+        ;
+
+        
+    
+    
+            var marker_4b814a1cbcdc441281a56627e426ab7d = L.marker(
+                [10.332778, -84.078889],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_af3d9da0f7a1440bab9ad347988f6d54 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6338137061ae4093a7f5bf688cdc8617 = $(`<div id="html_6338137061ae4093a7f5bf688cdc8617" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Puesto El Ceibo, gently sloping area just above the steep rim of the Río Peje gorge on the west side, along side path that goes from guard house to water supply intake, about 15 minutes uphill. <strong>Elevación:</strong> 520.0 m  <strong>Fecha:</strong> 1992-12-09 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_af3d9da0f7a1440bab9ad347988f6d54.setContent(html_6338137061ae4093a7f5bf688cdc8617);
+        
+
+        marker_4b814a1cbcdc441281a56627e426ab7d.bindPopup(popup_af3d9da0f7a1440bab9ad347988f6d54)
+        ;
+
+        
+    
+    
+            var marker_e86ab9afe2c4425a92c258349ce53544 = L.marker(
+                [10.58888, -84.93055],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_16dfda4eb7f7451ea499e21c5d5a1614 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_169e7a7bf9234925afbfddf98e3adb6a = $(`<div id="html_169e7a7bf9234925afbfddf98e3adb6a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán, 5 km norte del Lago Arenal, cercanías del Lago Coter, sendero Montaña, Finca Coter-Lago Coter <strong>Elevación:</strong> 450.0 m  <strong>Fecha:</strong> 1994-10-15 <strong>Recolectores:</strong> Joaquín Sánchez González|Alfredo Cascante <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_16dfda4eb7f7451ea499e21c5d5a1614.setContent(html_169e7a7bf9234925afbfddf98e3adb6a);
+        
+
+        marker_e86ab9afe2c4425a92c258349ce53544.bindPopup(popup_16dfda4eb7f7451ea499e21c5d5a1614)
+        ;
+
+        
+    
+    
+            var marker_155f3834e4af494fa53b15f7dcb84e39 = L.marker(
+                [10.42222, -84.02221999999999],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_736fe201cd414f6cbecfaf2634f0111c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2deedcfbc9343a7b6963a1bf7c14f90 = $(`<div id="html_d2deedcfbc9343a7b6963a1bf7c14f90" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station, beside CC trail at 1200m, tropical wet forest, on well-drained upland soils, tenth hectare transect LS-2 <strong>Elevación:</strong> 9.0 m  <strong>Fecha:</strong> 1998-07-27 <strong>Recolectores:</strong> Brad Boyle|Michael H. Grayum|Barry E. Hammel|Orlando Vargas|OTS Pl. Syst. Students, course 98-9 <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_736fe201cd414f6cbecfaf2634f0111c.setContent(html_d2deedcfbc9343a7b6963a1bf7c14f90);
+        
+
+        marker_155f3834e4af494fa53b15f7dcb84e39.bindPopup(popup_736fe201cd414f6cbecfaf2634f0111c)
+        ;
+
+        
+    
+    
+            var marker_48835dae1be041efa1a8d080066c5996 = L.marker(
+                [10.611111, -85.0],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_964303fa6f7748bda8b27a6a68157c55 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1264cb804ae481682a8dd3702636e11 = $(`<div id="html_c1264cb804ae481682a8dd3702636e11" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Tenorio; Cordillera de Guanacaste; Tierras Morenas; alrededores Río San Lorenzo. <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 1993-05-04 <strong>Recolectores:</strong> G. Rodríguez <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_964303fa6f7748bda8b27a6a68157c55.setContent(html_c1264cb804ae481682a8dd3702636e11);
+        
+
+        marker_48835dae1be041efa1a8d080066c5996.bindPopup(popup_964303fa6f7748bda8b27a6a68157c55)
+        ;
+
+        
+    
+    
+            var marker_97ffcc793add4e1fb6a498c328a58aff = L.marker(
+                [10.60833, -85.0],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_2fd14eb4f343400286c9796e4ff82ad1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c1bd24bcc024df2b14ef226f03397b5 = $(`<div id="html_9c1bd24bcc024df2b14ef226f03397b5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zona Protectora Tenorio Tierras Morenas. Río San Lorenzo. Bosque 1º, 2º y potreros. Borde del bosque virgen. <strong>Elevación:</strong> 105.0 m  <strong>Fecha:</strong> 1991-03-24 <strong>Recolectores:</strong> Celso Alvarado <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_2fd14eb4f343400286c9796e4ff82ad1.setContent(html_9c1bd24bcc024df2b14ef226f03397b5);
+        
+
+        marker_97ffcc793add4e1fb6a498c328a58aff.bindPopup(popup_2fd14eb4f343400286c9796e4ff82ad1)
+        ;
+
+        
+    
+    
+            var marker_a2df2f79bce5446fa22db6110c43704f = L.marker(
+                [10.28333, -84.6],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_a4aae5995f504b0aa6c0f37fccc86102 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6174b5c7276240ea81edc7a5bc6e1885 = $(`<div id="html_6174b5c7276240ea81edc7a5bc6e1885" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Los Angeles, Reserva Biológica de San Ramón, Las Rocas, 2 km al Oeste de Finca de Carlos González <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1994-02-16 <strong>Recolectores:</strong> Gerardo Herrera Ch.|Mora, V. <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_a4aae5995f504b0aa6c0f37fccc86102.setContent(html_6174b5c7276240ea81edc7a5bc6e1885);
+        
+
+        marker_a2df2f79bce5446fa22db6110c43704f.bindPopup(popup_a4aae5995f504b0aa6c0f37fccc86102)
+        ;
+
+        
+    
+    
+            var marker_79b0302ec3ab4b94895b33595541039b = L.marker(
+                [10.431389, -84.00361099999999],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_295751aed0c440b885b8d36fc0a243d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28f8e6a095214a6c829abc497b2b9ffe = $(`<div id="html_28f8e6a095214a6c829abc497b2b9ffe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1985-05-26 <strong>Recolectores:</strong> Brian Jacobs <strong>Identificadores:</strong> F. Barrie (MO)</div>`)[0];
+            popup_295751aed0c440b885b8d36fc0a243d3.setContent(html_28f8e6a095214a6c829abc497b2b9ffe);
+        
+
+        marker_79b0302ec3ab4b94895b33595541039b.bindPopup(popup_295751aed0c440b885b8d36fc0a243d3)
+        ;
+
+        
+    
+    
+            var marker_cbc15e2639894553b21341f194966867 = L.marker(
+                [10.431389, -84.00361099999999],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_92c642c3be00453aa5f98f0e43ed80cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93ef0e6c901544d1a56f801134effcc6 = $(`<div id="html_93ef0e6c901544d1a56f801134effcc6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1985-05-26 <strong>Recolectores:</strong> Brian Jacobs <strong>Identificadores:</strong> F. Barrie (MO)</div>`)[0];
+            popup_92c642c3be00453aa5f98f0e43ed80cf.setContent(html_93ef0e6c901544d1a56f801134effcc6);
+        
+
+        marker_cbc15e2639894553b21341f194966867.bindPopup(popup_92c642c3be00453aa5f98f0e43ed80cf)
+        ;
+
+        
+    
+    
+            var marker_dd27afe4e6074cef90eb35624e8b8d30 = L.marker(
+                [10.43138, -84.00361],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_7c7553626c994e1c8febbdb66876e089 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a55b91b0cb90445a9a9e8e137628ea7d = $(`<div id="html_a55b91b0cb90445a9a9e8e137628ea7d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, the OTS field station on the Río Puerto Viejo just E of its junction with the Río Sarapiquí. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1982-07-15 <strong>Recolectores:</strong> Barry E. Hammel|Jill Trainer <strong>Identificadores:</strong> F. Barrie, MO</div>`)[0];
+            popup_7c7553626c994e1c8febbdb66876e089.setContent(html_a55b91b0cb90445a9a9e8e137628ea7d);
+        
+
+        marker_dd27afe4e6074cef90eb35624e8b8d30.bindPopup(popup_7c7553626c994e1c8febbdb66876e089)
+        ;
+
+        
+    
+    
+            var marker_f600a20cd0f740b89511293e24a8ad3e = L.marker(
+                [10.43138, -84.00361],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_336f43379aba4923979613e3620b46b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8157d873cd6e41c784b6fbc88b65da2e = $(`<div id="html_8157d873cd6e41c784b6fbc88b65da2e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, the OTS field station on the Río Puerto Viejo just E of its junction with the Río Sarapiquí. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1982-04-14 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_336f43379aba4923979613e3620b46b2.setContent(html_8157d873cd6e41c784b6fbc88b65da2e);
+        
+
+        marker_f600a20cd0f740b89511293e24a8ad3e.bindPopup(popup_336f43379aba4923979613e3620b46b2)
+        ;
+
+        
+    
+    
+            var marker_230c3c7f5f8e4293876db5119adbe61c = L.marker(
+                [10.43333, -84.01666],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_d0ecffc38bdc430ba366b3c9dd8f4989 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d545dd5c4ad43778317aa8f4e8e9667 = $(`<div id="html_5d545dd5c4ad43778317aa8f4e8e9667" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, Puerto Viejo, leaning over Quebrada Esquina, ca. 2 km upstream from southern boundary of La Selva <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1973-11-15 <strong>Recolectores:</strong> Gary S. Hartshorn <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_d0ecffc38bdc430ba366b3c9dd8f4989.setContent(html_5d545dd5c4ad43778317aa8f4e8e9667);
+        
+
+        marker_230c3c7f5f8e4293876db5119adbe61c.bindPopup(popup_d0ecffc38bdc430ba366b3c9dd8f4989)
+        ;
+
+        
+    
+    
+            var marker_aad0373d2b3b4e29a6e25513be679ee8 = L.marker(
+                [11.15, -84.16666],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_cbefe9d7ed0b42da93cb1093c7335d58 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b365153a5994669bfacf6020e46092e = $(`<div id="html_6b365153a5994669bfacf6020e46092e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Indio-Maíz, Municipio de el Castillo, a lo largo del Caño Chontaleño. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1997-06-10 <strong>Recolectores:</strong> R. M. Rueda|I. Coronado G.|O. Aráuz|F. Flores <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_cbefe9d7ed0b42da93cb1093c7335d58.setContent(html_6b365153a5994669bfacf6020e46092e);
+        
+
+        marker_aad0373d2b3b4e29a6e25513be679ee8.bindPopup(popup_cbefe9d7ed0b42da93cb1093c7335d58)
+        ;
+
+        
+    
+    
+            var marker_f8711986118c40819c7b3e3aeb8ce0a4 = L.marker(
+                [11.01666, -84.2],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_71ee4b15c85a448490a1e7e6f5e734f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7145e76b6f347bbbbbb4dcde2e16c57 = $(`<div id="html_d7145e76b6f347bbbbbb4dcde2e16c57" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Indio-Maíz, Municipio de el Castillo, Cerro el Diablo. <strong>Elevación:</strong> 504.5 m  <strong>Fecha:</strong> 1997-01-08 <strong>Recolectores:</strong> R. M. Rueda|I. Coronado G.|O. Aráuz|F. Flores <strong>Identificadores:</strong> A. Pool</div>`)[0];
+            popup_71ee4b15c85a448490a1e7e6f5e734f6.setContent(html_d7145e76b6f347bbbbbb4dcde2e16c57);
+        
+
+        marker_f8711986118c40819c7b3e3aeb8ce0a4.bindPopup(popup_71ee4b15c85a448490a1e7e6f5e734f6)
+        ;
+
+        
+    
+    
+            var marker_f1206cda93e348bc98ed427dd7b2aec9 = L.marker(
+                [11.016667, -84.2],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_ab5c77b84e9341dfb0564bef852e7b60 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c71f1009cb84edc954ce1da0b03909c = $(`<div id="html_3c71f1009cb84edc954ce1da0b03909c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Indio-Maíz, Municipio de el Castillo, Cerro el Diablo. <strong>Elevación:</strong> 325.0 m  <strong>Fecha:</strong> 1997-01-06 <strong>Recolectores:</strong> R. M. Rueda|I. Coronado G.|O. Aráuz|F. Flores <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_ab5c77b84e9341dfb0564bef852e7b60.setContent(html_3c71f1009cb84edc954ce1da0b03909c);
+        
+
+        marker_f1206cda93e348bc98ed427dd7b2aec9.bindPopup(popup_ab5c77b84e9341dfb0564bef852e7b60)
+        ;
+
+        
+    
+    
+            var marker_c0a3425f33244a9db544a11846b9eda6 = L.marker(
+                [11.01666, -84.23333000000001],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_aaaedf294c7c48d0aa78b8c5ecd2172e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a0a35a7073447e0aa99fd213262e121 = $(`<div id="html_4a0a35a7073447e0aa99fd213262e121" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Indio-Maíz, Municipio de el Castillo, a 8 km de la cabecera del Río Bartola, en dirección hacia el Cerro el Diablo. <strong>Elevación:</strong> 120.0 m  <strong>Fecha:</strong> 1997-01-03 <strong>Recolectores:</strong> R. M. Rueda|I. Coronado G.|O. Aráuz|F. Flores <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_aaaedf294c7c48d0aa78b8c5ecd2172e.setContent(html_4a0a35a7073447e0aa99fd213262e121);
+        
+
+        marker_c0a3425f33244a9db544a11846b9eda6.bindPopup(popup_aaaedf294c7c48d0aa78b8c5ecd2172e)
+        ;
+
+        
+    
+    
+            var marker_4c1479eb72bb4642963496c9c46f0df5 = L.marker(
+                [10.704603, -84.9923],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_d12e0807b36440afab0f686d67cbb3c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d86735620864d8eb383f70ac8b0af25 = $(`<div id="html_8d86735620864d8eb383f70ac8b0af25" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Volcán Tenorio. Cuenca del Río Frío. El Pilón. Sector La Catarata. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 2000-05-11 <strong>Recolectores:</strong> José Luis Chaves <strong>Identificadores:</strong> D. Santamaría</div>`)[0];
+            popup_d12e0807b36440afab0f686d67cbb3c7.setContent(html_8d86735620864d8eb383f70ac8b0af25);
+        
+
+        marker_4c1479eb72bb4642963496c9c46f0df5.bindPopup(popup_d12e0807b36440afab0f686d67cbb3c7)
+        ;
+
+        
+    
+    
+            var marker_fd934c89b3384be587a1aa5c3a83ffce = L.marker(
+                [10.703555999999999, -84.997056],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_9f4163d327644c9c985b52d54003b2c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91bdeb2a5f5b4aa2a4d546e7002cf8e9 = $(`<div id="html_91bdeb2a5f5b4aa2a4d546e7002cf8e9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Guatuso. P. N. Volcán Tenorio. Área de Conservación Arenal. Est. Pilón. Sendero a los Teñideros, Valle del Río Roble. <strong>Elevación:</strong> 717.0 m  <strong>Fecha:</strong> 2015-07-19 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Roberto Espinoza ; Soo-Yong Kim ; Jose Antonio Azofeifa Zuñiga <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_9f4163d327644c9c985b52d54003b2c8.setContent(html_91bdeb2a5f5b4aa2a4d546e7002cf8e9);
+        
+
+        marker_fd934c89b3384be587a1aa5c3a83ffce.bindPopup(popup_9f4163d327644c9c985b52d54003b2c8)
+        ;
+
+        
+    
+    
+            var marker_a972dbac03db4608990fee1250ecc46b = L.marker(
+                [10.703555999999999, -84.997056],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_d63c87e319a44cf5985124d71612a330 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_77c48872cf5a415a8642bf4d6e688105 = $(`<div id="html_77c48872cf5a415a8642bf4d6e688105" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Guatuso. P. N. Volcán Tenorio. Área de Conservación Arenal. Est. Pilón. Sendero a los Teñideros, Valle del Río Roble. <strong>Elevación:</strong> 717.0 m  <strong>Fecha:</strong> 2015-07-19 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Roberto Espinoza ; Soo-Yong Kim ; Jose Antonio Azofeifa Zuñiga <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_d63c87e319a44cf5985124d71612a330.setContent(html_77c48872cf5a415a8642bf4d6e688105);
+        
+
+        marker_a972dbac03db4608990fee1250ecc46b.bindPopup(popup_d63c87e319a44cf5985124d71612a330)
+        ;
+
+        
+    
+    
+            var marker_09d66bc24c674917b7ec7e8fcb3762bd = L.marker(
+                [10.703555999999999, -84.997056],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_f5b928d484c244c681fd6f549093ef2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad37fa8caf2d405d95d60e52e6649c07 = $(`<div id="html_ad37fa8caf2d405d95d60e52e6649c07" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Guatuso. P. N. Volcán Tenorio. Área de Conservación Arenal. Est. Pilón. Sendero a los Teñideros, Valle del Río Roble. <strong>Elevación:</strong> 717.0 m  <strong>Fecha:</strong> 2015-07-19 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Roberto Espinoza ; Soo-Yong Kim ; Jose Antonio Azofeifa Zuñiga <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_f5b928d484c244c681fd6f549093ef2c.setContent(html_ad37fa8caf2d405d95d60e52e6649c07);
+        
+
+        marker_09d66bc24c674917b7ec7e8fcb3762bd.bindPopup(popup_f5b928d484c244c681fd6f549093ef2c)
+        ;
+
+        
+    
+    
+            var marker_1889a70653484582a0951a5921c02735 = L.marker(
+                [10.704603, -84.992304],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_a5cf1cba25654254bc9b8bc0361a3e4d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0bac5042ecfe4808b26111885335dd9f = $(`<div id="html_0bac5042ecfe4808b26111885335dd9f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Volcán Tenorio. Sector El Pilón. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 2000-05-11 <strong>Recolectores:</strong> Jose Luis Chaves; Eleomar Muñoz <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_a5cf1cba25654254bc9b8bc0361a3e4d.setContent(html_0bac5042ecfe4808b26111885335dd9f);
+        
+
+        marker_1889a70653484582a0951a5921c02735.bindPopup(popup_a5cf1cba25654254bc9b8bc0361a3e4d)
+        ;
+
+        
+    
+    
+            var marker_887fce9e1199415eb16ab65f264c1bde = L.marker(
+                [10.422222, -84.022222],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_61c518649c714282a1fec6c21c310887 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42e07505e6a7481ab40f35c52c26d43e = $(`<div id="html_42e07505e6a7481ab40f35c52c26d43e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. Beside CC trail at 1200 m. Tropical wet forest, on well-drained upland soils. Tenth hectare transect LS-2. <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 1998-07-27 <strong>Recolectores:</strong> Brad Boyle; Michael H. Grayum ; Barry Hammel <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_61c518649c714282a1fec6c21c310887.setContent(html_42e07505e6a7481ab40f35c52c26d43e);
+        
+
+        marker_887fce9e1199415eb16ab65f264c1bde.bindPopup(popup_61c518649c714282a1fec6c21c310887)
+        ;
+
+        
+    
+    
+            var marker_2af0cb2cdca942a28f6039dbfa5c5c46 = L.marker(
+                [10.4, -84.65],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_53d3e5dbf7f34ddf805583faa3e2a6a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a309f6a70154dc4bffb4dec8cc09e5f = $(`<div id="html_1a309f6a70154dc4bffb4dec8cc09e5f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 5 km W of Chachagua, Queb. Chachaguita drainage. Premontane rain forest. Zona Monteverde. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1993-07-17 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_53d3e5dbf7f34ddf805583faa3e2a6a9.setContent(html_1a309f6a70154dc4bffb4dec8cc09e5f);
+        
+
+        marker_2af0cb2cdca942a28f6039dbfa5c5c46.bindPopup(popup_53d3e5dbf7f34ddf805583faa3e2a6a9)
+        ;
+
+        
+    
+    
+            var marker_1cbd7a24b2e947a8881f10c303f46acc = L.marker(
+                [10.588889, -84.93055600000001],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_a168e790dce642df931628daf8f9fbf4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e320bd561c74c58badc71342971f366 = $(`<div id="html_5e320bd561c74c58badc71342971f366" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 1-2 km west of Lago de Cote, 13 km north of Tilaran, continental divide on SE slope of Volcan Tenorio, Eco-Lodge cloud forest reserve. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1993-08-24 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_a168e790dce642df931628daf8f9fbf4.setContent(html_5e320bd561c74c58badc71342971f366);
+        
+
+        marker_1cbd7a24b2e947a8881f10c303f46acc.bindPopup(popup_a168e790dce642df931628daf8f9fbf4)
+        ;
+
+        
+    
+    
+            var marker_b35ac077ef8342fb9daf67dd8393f86b = L.marker(
+                [10.608333, -85.0],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_a50f45e697cc4b489658f2e817e83df8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b51798af32b841b0bb11e08d89b08d2a = $(`<div id="html_b51798af32b841b0bb11e08d89b08d2a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tierras Morenas. Rio San Lorenzo. Bosque primario, secundario y potreros. <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 1991-03-24 <strong>Recolectores:</strong> Celso Alvarado <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_a50f45e697cc4b489658f2e817e83df8.setContent(html_b51798af32b841b0bb11e08d89b08d2a);
+        
+
+        marker_b35ac077ef8342fb9daf67dd8393f86b.bindPopup(popup_a50f45e697cc4b489658f2e817e83df8)
+        ;
+
+        
+    
+    
+            var marker_b03cb5e7d2464a2ab2e7a61aa466f5ed = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_0116f1e7053c4c498d1d516bfdbd4863 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2802c6e70757453a9add2a8e1be1b84c = $(`<div id="html_2802c6e70757453a9add2a8e1be1b84c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1993-07-17 <strong>Recolectores:</strong> W. A. Haber <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_0116f1e7053c4c498d1d516bfdbd4863.setContent(html_2802c6e70757453a9add2a8e1be1b84c);
+        
+
+        marker_b03cb5e7d2464a2ab2e7a61aa466f5ed.bindPopup(popup_0116f1e7053c4c498d1d516bfdbd4863)
+        ;
+
+        
+    
+    
+            var marker_4c678e1f986642a48b8dbc18ad05c65e = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_6477f7c83bb54ff185f8abe1e960424f);
+        
+    
+        var popup_df796e812f5044c4af5dad460fbd488f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee37df8cbf7848db9c58dc208edce748 = $(`<div id="html_ee37df8cbf7848db9c58dc208edce748" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1993-07-17 <strong>Recolectores:</strong> W. A. Haber <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_df796e812f5044c4af5dad460fbd488f.setContent(html_ee37df8cbf7848db9c58dc208edce748);
+        
+
+        marker_4c678e1f986642a48b8dbc18ad05c65e.bindPopup(popup_df796e812f5044c4af5dad460fbd488f)
+        ;
+
+        
+    
+    
+            var layer_control_d332d14e969040b69038d8481c5a0a00 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_22663a76a06e4ca7b90a23f1f9f20e25,
+                    "ESRI World Imagery" : tile_layer_f77d165561bc4f3caf20fa9cd26b6767,
+                },
+                overlays :  {
+                    "macro_element_6477f7c83bb54ff185f8abe1e960424f" : marker_cluster_6477f7c83bb54ff185f8abe1e960424f,
+                },
+            };
+            L.control.layers(
+                layer_control_d332d14e969040b69038d8481c5a0a00.base_layers,
+                layer_control_d332d14e969040b69038d8481c5a0a00.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_5e19e02512484073a844c1c18149b464);
+            tile_layer_f77d165561bc4f3caf20fa9cd26b6767.remove();
+        
+</script>

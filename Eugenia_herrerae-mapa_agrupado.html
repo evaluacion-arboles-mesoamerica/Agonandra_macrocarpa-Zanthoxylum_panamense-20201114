@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_79019d61de854a4ba2f31c2e7ff1249a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_79019d61de854a4ba2f31c2e7ff1249a" ></div>
+        
+</body>
+<script>    
+    
+            var map_79019d61de854a4ba2f31c2e7ff1249a = L.map(
+                "map_79019d61de854a4ba2f31c2e7ff1249a",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_79019d61de854a4ba2f31c2e7ff1249a);
+
+            
+
+        
+    
+            var tile_layer_296b7b5a04f9422d96f15d39ae36ab4b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_79019d61de854a4ba2f31c2e7ff1249a);
+        
+    
+            var tile_layer_1c6da3e894424f93a73358edffe1b56d = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_79019d61de854a4ba2f31c2e7ff1249a);
+        
+    
+            var marker_cluster_ba66d80c33c84d9ca0746b1edcbb8a0e = L.markerClusterGroup(
+                {}
+            );
+            map_79019d61de854a4ba2f31c2e7ff1249a.addLayer(marker_cluster_ba66d80c33c84d9ca0746b1edcbb8a0e);
+        
+    
+            var marker_eb2d744165394833afc714e47b9726cd = L.marker(
+                [10.125, -83.845833],
+                {}
+            ).addTo(marker_cluster_ba66d80c33c84d9ca0746b1edcbb8a0e);
+        
+    
+        var popup_596dbf84155f45099abbdca5ac2a2665 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8041cbef4b344a44bbb42d7949ade0f9 = $(`<div id="html_8041cbef4b344a44bbb42d7949ade0f9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Guápiles Los Angeles, San Miguel. Aledaño a la catarata. Río Blanco. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1990-02-24 <strong>Recolectores:</strong> Gerardo Herrera Ch.|Susan Schik <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_596dbf84155f45099abbdca5ac2a2665.setContent(html_8041cbef4b344a44bbb42d7949ade0f9);
+        
+
+        marker_eb2d744165394833afc714e47b9726cd.bindPopup(popup_596dbf84155f45099abbdca5ac2a2665)
+        ;
+
+        
+    
+    
+            var marker_4de9a9d4e61546f996217b9a4b046579 = L.marker(
+                [8.7675, -82.213889],
+                {}
+            ).addTo(marker_cluster_ba66d80c33c84d9ca0746b1edcbb8a0e);
+        
+    
+        var popup_7b8600b4011b4e5fa39fcca625381ba5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_90186061315d4f4897de153a727f3fcc = $(`<div id="html_90186061315d4f4897de153a727f3fcc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of Fortuna Dam, on trail along continental divide. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1988-03-10 <strong>Recolectores:</strong> Gordon McPherson <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_7b8600b4011b4e5fa39fcca625381ba5.setContent(html_90186061315d4f4897de153a727f3fcc);
+        
+
+        marker_4de9a9d4e61546f996217b9a4b046579.bindPopup(popup_7b8600b4011b4e5fa39fcca625381ba5)
+        ;
+
+        
+    
+    
+            var marker_6ccde66ac0f64689b998d39a9a88951a = L.marker(
+                [8.522778, -81.125833],
+                {}
+            ).addTo(marker_cluster_ba66d80c33c84d9ca0746b1edcbb8a0e);
+        
+    
+        var popup_d4e0d6848cc144528e54bd7a400ac17c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b2048558d2b495da778b9aa0777ef4c = $(`<div id="html_2b2048558d2b495da778b9aa0777ef4c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> N of Santa Fé, ca. 2 km N of Escuela Agricola Alto de Piedra. In forest <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1974-10-18 <strong>Recolectores:</strong> Scott A. Mori|Jacquelyn A. Kallunki <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_d4e0d6848cc144528e54bd7a400ac17c.setContent(html_2b2048558d2b495da778b9aa0777ef4c);
+        
+
+        marker_6ccde66ac0f64689b998d39a9a88951a.bindPopup(popup_d4e0d6848cc144528e54bd7a400ac17c)
+        ;
+
+        
+    
+    
+            var marker_0315f9b341d1414fa92e619865866be7 = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_ba66d80c33c84d9ca0746b1edcbb8a0e);
+        
+    
+        var popup_ea737a7f07444059a61f5220788bc8b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d2320ffabc24cb78c024ab78c0c26a9 = $(`<div id="html_7d2320ffabc24cb78c024ab78c0c26a9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1990-02-24 <strong>Recolectores:</strong> G. Herrera C. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_ea737a7f07444059a61f5220788bc8b1.setContent(html_7d2320ffabc24cb78c024ab78c0c26a9);
+        
+
+        marker_0315f9b341d1414fa92e619865866be7.bindPopup(popup_ea737a7f07444059a61f5220788bc8b1)
+        ;
+
+        
+    
+    
+            var layer_control_c293f24f57ba45e591d905ed92a257df = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_296b7b5a04f9422d96f15d39ae36ab4b,
+                    "ESRI World Imagery" : tile_layer_1c6da3e894424f93a73358edffe1b56d,
+                },
+                overlays :  {
+                    "macro_element_ba66d80c33c84d9ca0746b1edcbb8a0e" : marker_cluster_ba66d80c33c84d9ca0746b1edcbb8a0e,
+                },
+            };
+            L.control.layers(
+                layer_control_c293f24f57ba45e591d905ed92a257df.base_layers,
+                layer_control_c293f24f57ba45e591d905ed92a257df.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_79019d61de854a4ba2f31c2e7ff1249a);
+            tile_layer_1c6da3e894424f93a73358edffe1b56d.remove();
+        
+</script>

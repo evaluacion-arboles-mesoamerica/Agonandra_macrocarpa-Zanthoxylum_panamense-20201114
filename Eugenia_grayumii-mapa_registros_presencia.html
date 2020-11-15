@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4cb5a2c475fc4c21a54f8ffc4de6cd8a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4cb5a2c475fc4c21a54f8ffc4de6cd8a" ></div>
+        
+</body>
+<script>    
+    
+            var map_4cb5a2c475fc4c21a54f8ffc4de6cd8a = L.map(
+                "map_4cb5a2c475fc4c21a54f8ffc4de6cd8a",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_4cb5a2c475fc4c21a54f8ffc4de6cd8a);
+
+            
+
+        
+    
+            var tile_layer_c58fc104ece84ae7befe3f8edc58fb71 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4cb5a2c475fc4c21a54f8ffc4de6cd8a);
+        
+    
+            var tile_layer_32daee54a13045369a3964b1407b2754 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4cb5a2c475fc4c21a54f8ffc4de6cd8a);
+        
+    
+            var circle_marker_59d593d55f50400f8e2cd0f3c9e8c40f = L.circleMarker(
+                [9.77, -84.57],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4cb5a2c475fc4c21a54f8ffc4de6cd8a);
+        
+    
+        var popup_2ecf62e312ea4387b3b8ee209a68df4f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c02c4ce866614954b3d1c11409a0a7f1 = $(`<div id="html_c02c4ce866614954b3d1c11409a0a7f1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Jose: Reserva Biologica Carara Bijagual. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1989-12-28 <strong>Recolectores:</strong> Zuniga, R.; Hammel, B.; Evans, R.; Grayum, M. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_2ecf62e312ea4387b3b8ee209a68df4f.setContent(html_c02c4ce866614954b3d1c11409a0a7f1);
+        
+
+        circle_marker_59d593d55f50400f8e2cd0f3c9e8c40f.bindPopup(popup_2ecf62e312ea4387b3b8ee209a68df4f)
+        ;
+
+        
+    
+    
+            var circle_marker_801a5269aa054381a2271066cb55922e = L.circleMarker(
+                [9.77, -84.57],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4cb5a2c475fc4c21a54f8ffc4de6cd8a);
+        
+    
+        var popup_ccb16430692d487d92161c10b7a5fbd2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dcc7f9db00f24a7083031576aeae55f4 = $(`<div id="html_dcc7f9db00f24a7083031576aeae55f4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Jose: Reserva Biologica Carara Bijagual. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1989-12-28 <strong>Recolectores:</strong> Zuniga, R.; Hammel, B.; Grayum, M. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_ccb16430692d487d92161c10b7a5fbd2.setContent(html_dcc7f9db00f24a7083031576aeae55f4);
+        
+
+        circle_marker_801a5269aa054381a2271066cb55922e.bindPopup(popup_ccb16430692d487d92161c10b7a5fbd2)
+        ;
+
+        
+    
+    
+            var circle_marker_d140806eb33341ab949d4c0bbd47efba = L.circleMarker(
+                [9.96, -83.69],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4cb5a2c475fc4c21a54f8ffc4de6cd8a);
+        
+    
+        var popup_2c2ccede12f540e297c1e7f927a8eb14 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0959c1f69cca4f7db6f643bcf6a443c4 = $(`<div id="html_0959c1f69cca4f7db6f643bcf6a443c4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cartago: Turrialba, Monumento Nacional Guayabo, camino arriba de la cada de la Administracion. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1992-09-03 <strong>Recolectores:</strong> Esquivel, E.; Hodmams, J.; Rivera, G. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_2c2ccede12f540e297c1e7f927a8eb14.setContent(html_0959c1f69cca4f7db6f643bcf6a443c4);
+        
+
+        circle_marker_d140806eb33341ab949d4c0bbd47efba.bindPopup(popup_2c2ccede12f540e297c1e7f927a8eb14)
+        ;
+
+        
+    
+    
+            var circle_marker_eb4ce9243d35470488716afcebb7eb9b = L.circleMarker(
+                [9.75, -84.55],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4cb5a2c475fc4c21a54f8ffc4de6cd8a);
+        
+    
+        var popup_a36383f810cf41d0afa63b02ef86b7f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80e8e7efdb8445a2b6a316bf738c9cee = $(`<div id="html_80e8e7efdb8445a2b6a316bf738c9cee" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Carara, Valle del Tárcoles, Sector Bijagual, bordes de bosque secundario en el límite de la Reserva <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 1995-03-10 <strong>Recolectores:</strong> Quírico Jiménez|Víctor H. Ramírez <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_a36383f810cf41d0afa63b02ef86b7f2.setContent(html_80e8e7efdb8445a2b6a316bf738c9cee);
+        
+
+        circle_marker_eb4ce9243d35470488716afcebb7eb9b.bindPopup(popup_a36383f810cf41d0afa63b02ef86b7f2)
+        ;
+
+        
+    
+    
+            var circle_marker_b0efbc4687fe49ceaff79ef648a4d0ec = L.circleMarker(
+                [9.76, -84.56],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4cb5a2c475fc4c21a54f8ffc4de6cd8a);
+        
+    
+        var popup_67283bcc70a2451ea9ab1d6b143d9525 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c3ba6f3254c40b5851713d96122d701 = $(`<div id="html_4c3ba6f3254c40b5851713d96122d701" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Carara, Valle del Tárcoles, Bijagual, márgenes de bosque secundario o remanentes de bosque primario <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1989-12-28 <strong>Recolectores:</strong> Barry E. Hammel|Randall J. Evans|Michael H. Grayum|Rodolfo Zúñiga <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_67283bcc70a2451ea9ab1d6b143d9525.setContent(html_4c3ba6f3254c40b5851713d96122d701);
+        
+
+        circle_marker_b0efbc4687fe49ceaff79ef648a4d0ec.bindPopup(popup_67283bcc70a2451ea9ab1d6b143d9525)
+        ;
+
+        
+    
+    
+            var circle_marker_99852f0f39b14e979abed3d3328f7a8c = L.circleMarker(
+                [8.783333, -82.966667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4cb5a2c475fc4c21a54f8ffc4de6cd8a);
+        
+    
+        var popup_2ab5c94fd06345ffa21ea87b9b20feec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_83406fc035044d2c807ad66f1aaedf97 = $(`<div id="html_83406fc035044d2c807ad66f1aaedf97" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Somewhat disturbed primary forest along Río Jaba, ca. 1 km SW of Las Cruces Botanical Garden. <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 1987-03-10 <strong>Recolectores:</strong> Michael H. Grayum|James M. Affolter <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_2ab5c94fd06345ffa21ea87b9b20feec.setContent(html_83406fc035044d2c807ad66f1aaedf97);
+        
+
+        circle_marker_99852f0f39b14e979abed3d3328f7a8c.bindPopup(popup_2ab5c94fd06345ffa21ea87b9b20feec)
+        ;
+
+        
+    
+    
+            var circle_marker_ae25afbe479a4a2daa749936300821a9 = L.circleMarker(
+                [8.78611, -82.98916],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4cb5a2c475fc4c21a54f8ffc4de6cd8a);
+        
+    
+        var popup_6e9bd5aebd8c4e669e0b6f03ca6d2761 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79ab538b35c84f8698eb7f08107cc001 = $(`<div id="html_79ab538b35c84f8698eb7f08107cc001" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Slopes of Cerro Paraguas <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1993-01-05 <strong>Recolectores:</strong> P. Aldrich <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_6e9bd5aebd8c4e669e0b6f03ca6d2761.setContent(html_79ab538b35c84f8698eb7f08107cc001);
+        
+
+        circle_marker_ae25afbe479a4a2daa749936300821a9.bindPopup(popup_6e9bd5aebd8c4e669e0b6f03ca6d2761)
+        ;
+
+        
+    
+    
+            var circle_marker_9a3c8332d08d4ac58342ef922f8cf2fd = L.circleMarker(
+                [9.96388, -83.69166],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4cb5a2c475fc4c21a54f8ffc4de6cd8a);
+        
+    
+        var popup_107ff4c9009b466cb4516905937e6aca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b644ae66f8a74bcfbeb2cff4c29835bd = $(`<div id="html_b644ae66f8a74bcfbeb2cff4c29835bd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monumento Nacional Guayabo, camino arriba de la casa de la Administración, 600 m <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1992-09-03 <strong>Recolectores:</strong> Gerardo Rivera|E. Esquivel|Judy Hoomans <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_107ff4c9009b466cb4516905937e6aca.setContent(html_b644ae66f8a74bcfbeb2cff4c29835bd);
+        
+
+        circle_marker_9a3c8332d08d4ac58342ef922f8cf2fd.bindPopup(popup_107ff4c9009b466cb4516905937e6aca)
+        ;
+
+        
+    
+    
+            var circle_marker_3a6945029f2845bc83e08b32d9ffd626 = L.circleMarker(
+                [8.88, -83.08],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4cb5a2c475fc4c21a54f8ffc4de6cd8a);
+        
+    
+        var popup_367ed4f66f684c91aa8c81734c6338b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0893d1a3e6ce40288b7cf8968d466ac9 = $(`<div id="html_0893d1a3e6ce40288b7cf8968d466ac9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca 17 km north of San Vito on dirt road to Potrero Grande, small patch of regrowth forest in a steep draw, surrounded by agricultural clearing <strong>Elevación:</strong> 845.82 m  <strong>Fecha:</strong> 1978-03-30 <strong>Recolectores:</strong> Christopher Davidson <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_367ed4f66f684c91aa8c81734c6338b8.setContent(html_0893d1a3e6ce40288b7cf8968d466ac9);
+        
+
+        circle_marker_3a6945029f2845bc83e08b32d9ffd626.bindPopup(popup_367ed4f66f684c91aa8c81734c6338b8)
+        ;
+
+        
+    
+    
+            var circle_marker_36039d0707eb47d78d22dd185b8d7479 = L.circleMarker(
+                [8.8, -82.96666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4cb5a2c475fc4c21a54f8ffc4de6cd8a);
+        
+    
+        var popup_f0500287b4c542fd8f78da495f0eca61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c6a6d27099c43de90d1e0e6e5a0ffd5 = $(`<div id="html_8c6a6d27099c43de90d1e0e6e5a0ffd5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Las Cruces Botanical Garden native volunteer in garden <strong>Elevación:</strong> 120.0 m  <strong>Fecha:</strong> 1978-03-15 <strong>Recolectores:</strong> Gary S. Hartshorn <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_f0500287b4c542fd8f78da495f0eca61.setContent(html_8c6a6d27099c43de90d1e0e6e5a0ffd5);
+        
+
+        circle_marker_36039d0707eb47d78d22dd185b8d7479.bindPopup(popup_f0500287b4c542fd8f78da495f0eca61)
+        ;
+
+        
+    
+    
+            var circle_marker_29f7eda5b34b456c8de523ee29b42d88 = L.circleMarker(
+                [9.455556, -83.19],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4cb5a2c475fc4c21a54f8ffc4de6cd8a);
+        
+    
+        var popup_19a207c789ec48adaf6b0493ee0a2b54 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43551afa992c493a85930e70079560af = $(`<div id="html_43551afa992c493a85930e70079560af" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. La Amistad. Cuenca del Sixaola. Fila Bugu. <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 2007-03-01 <strong>Recolectores:</strong> Daniel Santamaría|Alex K. Monro|Billen Gamboa R.|Marcos Moraga <strong>Identificadores:</strong> A. Rodríguez</div>`)[0];
+            popup_19a207c789ec48adaf6b0493ee0a2b54.setContent(html_43551afa992c493a85930e70079560af);
+        
+
+        circle_marker_29f7eda5b34b456c8de523ee29b42d88.bindPopup(popup_19a207c789ec48adaf6b0493ee0a2b54)
+        ;
+
+        
+    
+    
+            var circle_marker_e9a0237093bf495ea48ed86f2f028acf = L.circleMarker(
+                [9.455556, -83.19],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4cb5a2c475fc4c21a54f8ffc4de6cd8a);
+        
+    
+        var popup_4cc4a3e4c53e45ddacf35b5365765098 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d91e88109224a7f952a9cd0bcc52a01 = $(`<div id="html_7d91e88109224a7f952a9cd0bcc52a01" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Bugu. <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 2007-03-01 <strong>Recolectores:</strong> Daniel Santamaría; A. K. Monro ; Billen Gamboa R. ; Marcos Moraga <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_4cc4a3e4c53e45ddacf35b5365765098.setContent(html_7d91e88109224a7f952a9cd0bcc52a01);
+        
+
+        circle_marker_e9a0237093bf495ea48ed86f2f028acf.bindPopup(popup_4cc4a3e4c53e45ddacf35b5365765098)
+        ;
+
+        
+    
+    
+            var circle_marker_36d6e6d00f0349a5abeee8722057f5d1 = L.circleMarker(
+                [9.455556, -83.19],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4cb5a2c475fc4c21a54f8ffc4de6cd8a);
+        
+    
+        var popup_b95de179cb1a484a99503a5c333651ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3bb6f1791aab4ef4b7f73727d7ee0586 = $(`<div id="html_3bb6f1791aab4ef4b7f73727d7ee0586" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Bugu. <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 2007-03-01 <strong>Recolectores:</strong> Daniel Santamaría; A. K. Monro ; Billen Gamboa R. ; Marcos Moraga <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_b95de179cb1a484a99503a5c333651ec.setContent(html_3bb6f1791aab4ef4b7f73727d7ee0586);
+        
+
+        circle_marker_36d6e6d00f0349a5abeee8722057f5d1.bindPopup(popup_b95de179cb1a484a99503a5c333651ec)
+        ;
+
+        
+    
+    
+            var circle_marker_83dcd8c09ad0468d856a506c15ec9ffe = L.circleMarker(
+                [9.455556, -83.19],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4cb5a2c475fc4c21a54f8ffc4de6cd8a);
+        
+    
+        var popup_20f29732cadc459a9afbe4ec17e5078a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04c1cb6fc67349669deb9a4362edf74c = $(`<div id="html_04c1cb6fc67349669deb9a4362edf74c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Bugu. <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 2007-03-01 <strong>Recolectores:</strong> Daniel Santamaría; A. K. Monro ; Billen Gamboa R. ; Marcos Moraga <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_20f29732cadc459a9afbe4ec17e5078a.setContent(html_04c1cb6fc67349669deb9a4362edf74c);
+        
+
+        circle_marker_83dcd8c09ad0468d856a506c15ec9ffe.bindPopup(popup_20f29732cadc459a9afbe4ec17e5078a)
+        ;
+
+        
+    
+    
+            var circle_marker_37b13a01a9434b91b8902a476e671496 = L.circleMarker(
+                [9.455556, -83.19],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4cb5a2c475fc4c21a54f8ffc4de6cd8a);
+        
+    
+        var popup_d08246ddbd3145668ffe8bb2ed872476 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44c8e9cbad2e4873ac6e13996fd9bc3c = $(`<div id="html_44c8e9cbad2e4873ac6e13996fd9bc3c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Bugu. <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 2007-03-01 <strong>Recolectores:</strong> Daniel Santamaría; A. K. Monro ; Billen Gamboa R. ; Marcos Moraga <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_d08246ddbd3145668ffe8bb2ed872476.setContent(html_44c8e9cbad2e4873ac6e13996fd9bc3c);
+        
+
+        circle_marker_37b13a01a9434b91b8902a476e671496.bindPopup(popup_d08246ddbd3145668ffe8bb2ed872476)
+        ;
+
+        
+    
+    
+            var circle_marker_339c3f052cd04e03918eaaa553ead66e = L.circleMarker(
+                [8.783333, -82.966667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4cb5a2c475fc4c21a54f8ffc4de6cd8a);
+        
+    
+        var popup_fae8d27ee1a54c9d888e4c6c79d03cca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6555be2cd71a429f903fc7ccfa6e300a = $(`<div id="html_6555be2cd71a429f903fc7ccfa6e300a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Somewhat disturbed primary forest along Rio Jaba, ca. 1 km SW of Las Cruces Botanical Garden. <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 1987-03-10 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_fae8d27ee1a54c9d888e4c6c79d03cca.setContent(html_6555be2cd71a429f903fc7ccfa6e300a);
+        
+
+        circle_marker_339c3f052cd04e03918eaaa553ead66e.bindPopup(popup_fae8d27ee1a54c9d888e4c6c79d03cca)
+        ;
+
+        
+    
+    
+            var circle_marker_b285336fdedd40f58232cc5f642e3ecd = L.circleMarker(
+                [8.78801, -82.98668],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4cb5a2c475fc4c21a54f8ffc4de6cd8a);
+        
+    
+        var popup_5ec33e473c8c4ef09b0f1088bf893998 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_051df0fe129849b38d0c6f0870f95500 = $(`<div id="html_051df0fe129849b38d0c6f0870f95500" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> nan <strong>Identificadores:</strong> Quirós, Rodolfo</div>`)[0];
+            popup_5ec33e473c8c4ef09b0f1088bf893998.setContent(html_051df0fe129849b38d0c6f0870f95500);
+        
+
+        circle_marker_b285336fdedd40f58232cc5f642e3ecd.bindPopup(popup_5ec33e473c8c4ef09b0f1088bf893998)
+        ;
+
+        
+    
+    
+            var circle_marker_9328dffe74cb4ec9b64a7aa497285c2a = L.circleMarker(
+                [8.784861, -82.961],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4cb5a2c475fc4c21a54f8ffc4de6cd8a);
+        
+    
+        var popup_af242ba0cdc645eda0d6ae3d2af65cea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea0396fd998c4de592e9d9ce28067832 = $(`<div id="html_ea0396fd998c4de592e9d9ce28067832" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> nan <strong>Identificadores:</strong> -</div>`)[0];
+            popup_af242ba0cdc645eda0d6ae3d2af65cea.setContent(html_ea0396fd998c4de592e9d9ce28067832);
+        
+
+        circle_marker_9328dffe74cb4ec9b64a7aa497285c2a.bindPopup(popup_af242ba0cdc645eda0d6ae3d2af65cea)
+        ;
+
+        
+    
+    
+            var layer_control_1199a11f9de74c41b00e90644990c988 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_c58fc104ece84ae7befe3f8edc58fb71,
+                    "ESRI World Imagery" : tile_layer_32daee54a13045369a3964b1407b2754,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_1199a11f9de74c41b00e90644990c988.base_layers,
+                layer_control_1199a11f9de74c41b00e90644990c988.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_4cb5a2c475fc4c21a54f8ffc4de6cd8a);
+            tile_layer_32daee54a13045369a3964b1407b2754.remove();
+        
+</script>

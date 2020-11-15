@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3bc24133c54b4bac88afd17fe0ebab8d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3bc24133c54b4bac88afd17fe0ebab8d" ></div>
+        
+</body>
+<script>    
+    
+            var map_3bc24133c54b4bac88afd17fe0ebab8d = L.map(
+                "map_3bc24133c54b4bac88afd17fe0ebab8d",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_3bc24133c54b4bac88afd17fe0ebab8d);
+
+            
+
+        
+    
+            var tile_layer_4f1de657236141b29598ffe17b7851b3 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3bc24133c54b4bac88afd17fe0ebab8d);
+        
+    
+            var tile_layer_0e3637fd287a4221bfd9e661425cbdae = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3bc24133c54b4bac88afd17fe0ebab8d);
+        
+    
+            var marker_cluster_608ac548a9a247df8e3c3b8107489d3f = L.markerClusterGroup(
+                {}
+            );
+            map_3bc24133c54b4bac88afd17fe0ebab8d.addLayer(marker_cluster_608ac548a9a247df8e3c3b8107489d3f);
+        
+    
+            var marker_cdd1a11555b44ac795e8ac8d999ca4c8 = L.marker(
+                [9.294444, -82.39027800000001],
+                {}
+            ).addTo(marker_cluster_608ac548a9a247df8e3c3b8107489d3f);
+        
+    
+        var popup_5218e964fc214af6b78dce766fe30a26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e68607dcf9ee47ea90bd81448cfd2672 = $(`<div id="html_e68607dcf9ee47ea90bd81448cfd2672" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Daytonia Farm. Region of Almirante. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1928-01-01 <strong>Recolectores:</strong> George P. Cooper <strong>Identificadores:</strong> A. Pool</div>`)[0];
+            popup_5218e964fc214af6b78dce766fe30a26.setContent(html_e68607dcf9ee47ea90bd81448cfd2672);
+        
+
+        marker_cdd1a11555b44ac795e8ac8d999ca4c8.bindPopup(popup_5218e964fc214af6b78dce766fe30a26)
+        ;
+
+        
+    
+    
+            var marker_c6e7070f04fc4faba4808324a8130961 = L.marker(
+                [9.606944, -82.914167],
+                {}
+            ).addTo(marker_cluster_608ac548a9a247df8e3c3b8107489d3f);
+        
+    
+        var popup_2a099e2467924e45975a45147d996739 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08d7c14cc14a45f38ac2d95581de7d5f = $(`<div id="html_08d7c14cc14a45f38ac2d95581de7d5f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Talamanca. R.I. Talamanca. Cuenca del Sixaola. A lo largo de camino entre Uatsi (Vollo) y Suretka. Parcela 34--48. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 2009-09-27 <strong>Recolectores:</strong> S. Ortega Gómez <strong>Identificadores:</strong> A. Pool</div>`)[0];
+            popup_2a099e2467924e45975a45147d996739.setContent(html_08d7c14cc14a45f38ac2d95581de7d5f);
+        
+
+        marker_c6e7070f04fc4faba4808324a8130961.bindPopup(popup_2a099e2467924e45975a45147d996739)
+        ;
+
+        
+    
+    
+            var marker_05384aaa3292428e9994b17d9cab9ce6 = L.marker(
+                [9.9, -83.7],
+                {}
+            ).addTo(marker_cluster_608ac548a9a247df8e3c3b8107489d3f);
+        
+    
+        var popup_1b071d77ca494af0993d9e74f94ffdfc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a5d6c995aca4452ada6feae5aaf57e4 = $(`<div id="html_1a5d6c995aca4452ada6feae5aaf57e4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cord. Central, near Turrialba. <strong>Elevación:</strong> 750.0 m  <strong>Fecha:</strong> 2011-07-06 <strong>Recolectores:</strong> A. Zamora|M. García <strong>Identificadores:</strong> A. Pool</div>`)[0];
+            popup_1b071d77ca494af0993d9e74f94ffdfc.setContent(html_1a5d6c995aca4452ada6feae5aaf57e4);
+        
+
+        marker_05384aaa3292428e9994b17d9cab9ce6.bindPopup(popup_1b071d77ca494af0993d9e74f94ffdfc)
+        ;
+
+        
+    
+    
+            var marker_1d67fa04be13497faed0ded8ff7b1a2b = L.marker(
+                [9.673611, -83.026389],
+                {}
+            ).addTo(marker_cluster_608ac548a9a247df8e3c3b8107489d3f);
+        
+    
+        var popup_329273eaf35a46eba31ae4a3e7e3b9ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a125d6703c54d5d91acdbf0205eb995 = $(`<div id="html_8a125d6703c54d5d91acdbf0205eb995" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.B. Hitoy Cerere.  Cuenca del Estrella.  Reserva Biológica Hitoy Cerere, Sendero en alrededores de la estación. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1999-05-12 <strong>Recolectores:</strong> Alexánder Rodríguez|Víctor H. Ramírez|E. Salas <strong>Identificadores:</strong> A. Pool</div>`)[0];
+            popup_329273eaf35a46eba31ae4a3e7e3b9ae.setContent(html_8a125d6703c54d5d91acdbf0205eb995);
+        
+
+        marker_1d67fa04be13497faed0ded8ff7b1a2b.bindPopup(popup_329273eaf35a46eba31ae4a3e7e3b9ae)
+        ;
+
+        
+    
+    
+            var marker_3e57aef00c8b42049d1754c75eb66373 = L.marker(
+                [9.606944, -82.914167],
+                {}
+            ).addTo(marker_cluster_608ac548a9a247df8e3c3b8107489d3f);
+        
+    
+        var popup_26040476df6348d389568c82a0f1f04f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea56cf09de114c82959b9fa03cdcf0c1 = $(`<div id="html_ea56cf09de114c82959b9fa03cdcf0c1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Talamanca. A lo largo de camino entre Uatsi (Volio) y Suretka. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 2009-09-27 <strong>Recolectores:</strong> Sidaly Ortega Gómez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_26040476df6348d389568c82a0f1f04f.setContent(html_ea56cf09de114c82959b9fa03cdcf0c1);
+        
+
+        marker_3e57aef00c8b42049d1754c75eb66373.bindPopup(popup_26040476df6348d389568c82a0f1f04f)
+        ;
+
+        
+    
+    
+            var marker_52dd653765ff496b97f0007e5662971e = L.marker(
+                [9.606944, -82.914167],
+                {}
+            ).addTo(marker_cluster_608ac548a9a247df8e3c3b8107489d3f);
+        
+    
+        var popup_1939097b99184007a5f33e2218207951 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d58122434b714cb2814f3ab5934c56a2 = $(`<div id="html_d58122434b714cb2814f3ab5934c56a2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Talamanca. A lo largo de camino entre Uatsi (Volio) y Suretka. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 2009-09-27 <strong>Recolectores:</strong> Sidaly Ortega Gómez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_1939097b99184007a5f33e2218207951.setContent(html_d58122434b714cb2814f3ab5934c56a2);
+        
+
+        marker_52dd653765ff496b97f0007e5662971e.bindPopup(popup_1939097b99184007a5f33e2218207951)
+        ;
+
+        
+    
+    
+            var marker_2189092c0acb40d5861e2aabede0f05c = L.marker(
+                [9.606944, -82.914167],
+                {}
+            ).addTo(marker_cluster_608ac548a9a247df8e3c3b8107489d3f);
+        
+    
+        var popup_99bac033535a47808217d7258ada7358 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae4fa99000db40a89eb6fe6d5392a44d = $(`<div id="html_ae4fa99000db40a89eb6fe6d5392a44d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Talamanca. A lo largo de camino entre Uatsi (Volio) y Suretka. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 2009-09-27 <strong>Recolectores:</strong> Sidaly Ortega Gómez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_99bac033535a47808217d7258ada7358.setContent(html_ae4fa99000db40a89eb6fe6d5392a44d);
+        
+
+        marker_2189092c0acb40d5861e2aabede0f05c.bindPopup(popup_99bac033535a47808217d7258ada7358)
+        ;
+
+        
+    
+    
+            var marker_91ff244249e14cafbbfc0b827cc68bca = L.marker(
+                [9.606944, -82.914167],
+                {}
+            ).addTo(marker_cluster_608ac548a9a247df8e3c3b8107489d3f);
+        
+    
+        var popup_e9f4945725a840c69050b5d7b17b3f45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd598304320d4cc892fd98c0a91b0085 = $(`<div id="html_fd598304320d4cc892fd98c0a91b0085" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Talamanca. A lo largo de camino entre Uatsi (Volio) y Suretka. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 2009-09-27 <strong>Recolectores:</strong> Sidaly Ortega Gómez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_e9f4945725a840c69050b5d7b17b3f45.setContent(html_fd598304320d4cc892fd98c0a91b0085);
+        
+
+        marker_91ff244249e14cafbbfc0b827cc68bca.bindPopup(popup_e9f4945725a840c69050b5d7b17b3f45)
+        ;
+
+        
+    
+    
+            var marker_9333b6abc8ef4dd5afe2ebaf726bebca = L.marker(
+                [9.673611, -83.026389],
+                {}
+            ).addTo(marker_cluster_608ac548a9a247df8e3c3b8107489d3f);
+        
+    
+        var popup_caa32c92abdc4eb880bbeea4697b23fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e07a2dcd6ca419d89e858d316d72202 = $(`<div id="html_9e07a2dcd6ca419d89e858d316d72202" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> En limite con la Reserva Biologica Hitoy-Cerere. Bosque primario y secundario. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1999-05-12 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; Elvira Salas <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_caa32c92abdc4eb880bbeea4697b23fb.setContent(html_9e07a2dcd6ca419d89e858d316d72202);
+        
+
+        marker_9333b6abc8ef4dd5afe2ebaf726bebca.bindPopup(popup_caa32c92abdc4eb880bbeea4697b23fb)
+        ;
+
+        
+    
+    
+            var marker_c3ae84683fb044c88cc94a95c0b23ef0 = L.marker(
+                [9.673611, -83.026389],
+                {}
+            ).addTo(marker_cluster_608ac548a9a247df8e3c3b8107489d3f);
+        
+    
+        var popup_b4f4bf11fbac40baae0b743c592822ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cfc0ba28dd344f16868c4fd1d3c3c72b = $(`<div id="html_cfc0ba28dd344f16868c4fd1d3c3c72b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> En limite con la Reserva Biologica Hitoy-Cerere. Bosque primario y secundario. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1999-05-12 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; Elvira Salas <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_b4f4bf11fbac40baae0b743c592822ef.setContent(html_cfc0ba28dd344f16868c4fd1d3c3c72b);
+        
+
+        marker_c3ae84683fb044c88cc94a95c0b23ef0.bindPopup(popup_b4f4bf11fbac40baae0b743c592822ef)
+        ;
+
+        
+    
+    
+            var marker_1b4fe345e57a4a19a002a272f284dc8c = L.marker(
+                [9.673611, -83.026389],
+                {}
+            ).addTo(marker_cluster_608ac548a9a247df8e3c3b8107489d3f);
+        
+    
+        var popup_97e2b4a594594d598d27872bdd90f45a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e42015d902d4ac2866d04c6cd5218e9 = $(`<div id="html_1e42015d902d4ac2866d04c6cd5218e9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> En limite con la Reserva Biologica Hitoy-Cerere. Bosque primario y secundario. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1999-05-12 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; Elvira Salas <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_97e2b4a594594d598d27872bdd90f45a.setContent(html_1e42015d902d4ac2866d04c6cd5218e9);
+        
+
+        marker_1b4fe345e57a4a19a002a272f284dc8c.bindPopup(popup_97e2b4a594594d598d27872bdd90f45a)
+        ;
+
+        
+    
+    
+            var marker_5f430df97bd542799fd246e7e39b4ca9 = L.marker(
+                [9.673611, -83.026389],
+                {}
+            ).addTo(marker_cluster_608ac548a9a247df8e3c3b8107489d3f);
+        
+    
+        var popup_0f20a6c8d3b34437942833d833fb3431 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0626854572334cc5a642ddc0aed4d4f3 = $(`<div id="html_0626854572334cc5a642ddc0aed4d4f3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> En limite con la Reserva Biologica Hitoy-Cerere. Bosque primario y secundario. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1999-05-12 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; Elvira Salas <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_0f20a6c8d3b34437942833d833fb3431.setContent(html_0626854572334cc5a642ddc0aed4d4f3);
+        
+
+        marker_5f430df97bd542799fd246e7e39b4ca9.bindPopup(popup_0f20a6c8d3b34437942833d833fb3431)
+        ;
+
+        
+    
+    
+            var marker_92f78ffb00484db78081541dbd6b3bf8 = L.marker(
+                [9.673611, -83.026389],
+                {}
+            ).addTo(marker_cluster_608ac548a9a247df8e3c3b8107489d3f);
+        
+    
+        var popup_7bdfad60abc54bdbb363781de97bbc58 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98e8e8bb76a24062810d759340659eaa = $(`<div id="html_98e8e8bb76a24062810d759340659eaa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> En limite con la Reserva Biologica Hitoy-Cerere. Bosque primario y secundario. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1999-05-12 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; Elvira Salas <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_7bdfad60abc54bdbb363781de97bbc58.setContent(html_98e8e8bb76a24062810d759340659eaa);
+        
+
+        marker_92f78ffb00484db78081541dbd6b3bf8.bindPopup(popup_7bdfad60abc54bdbb363781de97bbc58)
+        ;
+
+        
+    
+    
+            var marker_7ee6f9d804de45c9b8ac83f67a8b024e = L.marker(
+                [8.8333, -82.1667],
+                {}
+            ).addTo(marker_cluster_608ac548a9a247df8e3c3b8107489d3f);
+        
+    
+        var popup_d28cb27f341d4ad4906b641f5aa57010 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c14336e996ba45f289e745e1aebf0d34 = $(`<div id="html_c14336e996ba45f289e745e1aebf0d34" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1928-01-01 <strong>Recolectores:</strong> G. Proctor Cooper <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_d28cb27f341d4ad4906b641f5aa57010.setContent(html_c14336e996ba45f289e745e1aebf0d34);
+        
+
+        marker_7ee6f9d804de45c9b8ac83f67a8b024e.bindPopup(popup_d28cb27f341d4ad4906b641f5aa57010)
+        ;
+
+        
+    
+    
+            var layer_control_363d5a1a250c4bcfaf77579ae501f0f6 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_4f1de657236141b29598ffe17b7851b3,
+                    "ESRI World Imagery" : tile_layer_0e3637fd287a4221bfd9e661425cbdae,
+                },
+                overlays :  {
+                    "macro_element_608ac548a9a247df8e3c3b8107489d3f" : marker_cluster_608ac548a9a247df8e3c3b8107489d3f,
+                },
+            };
+            L.control.layers(
+                layer_control_363d5a1a250c4bcfaf77579ae501f0f6.base_layers,
+                layer_control_363d5a1a250c4bcfaf77579ae501f0f6.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_3bc24133c54b4bac88afd17fe0ebab8d);
+            tile_layer_0e3637fd287a4221bfd9e661425cbdae.remove();
+        
+</script>

@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2f886cff4ac14f28af1d13d0282d22a8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2f886cff4ac14f28af1d13d0282d22a8" ></div>
+        
+</body>
+<script>    
+    
+            var map_2f886cff4ac14f28af1d13d0282d22a8 = L.map(
+                "map_2f886cff4ac14f28af1d13d0282d22a8",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+
+            
+
+        
+    
+            var tile_layer_e6b1110a5e194f559695c9646218c42a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+            var tile_layer_d3bc60290a554b18ac8726e5997cacca = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+            var circle_marker_5f9c1302bb5f4af695e07e151bfa8dfe = L.circleMarker(
+                [10.433333, -84.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_808e8e8177b145fda6be2ec1a958e60b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7642d6b2047a465d9f6d9d58b6b69b2e = $(`<div id="html_7642d6b2047a465d9f6d9d58b6b69b2e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Field Station, about 3 m from 3100/250 pole <strong>Elevación:</strong> 140.0 m  <strong>Fecha:</strong> 2005-01-30 <strong>Recolectores:</strong> Paul, J. <strong>Identificadores:</strong> C.M. Taylor 2006</div>`)[0];
+            popup_808e8e8177b145fda6be2ec1a958e60b.setContent(html_7642d6b2047a465d9f6d9d58b6b69b2e);
+        
+
+        circle_marker_5f9c1302bb5f4af695e07e151bfa8dfe.bindPopup(popup_808e8e8177b145fda6be2ec1a958e60b)
+        ;
+
+        
+    
+    
+            var circle_marker_c6a994abb24749c98b456ddc6eddabc2 = L.circleMarker(
+                [10.433333, -83.766667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_9451313686994e3599d20f3631ba4e7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5fc311434ad64ec5a6c12be65799ff26 = $(`<div id="html_5fc311434ad64ec5a6c12be65799ff26" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Suerte Biological Field Station, off SR trail in the "Large Forest" <strong>Elevación:</strong> 25.0 m  <strong>Fecha:</strong> 2005-02-21 <strong>Recolectores:</strong> Paul, J. <strong>Identificadores:</strong> C.M. Taylor 2006</div>`)[0];
+            popup_9451313686994e3599d20f3631ba4e7d.setContent(html_5fc311434ad64ec5a6c12be65799ff26);
+        
+
+        circle_marker_c6a994abb24749c98b456ddc6eddabc2.bindPopup(popup_9451313686994e3599d20f3631ba4e7d)
+        ;
+
+        
+    
+    
+            var circle_marker_52079d613e5343ad977329080164901b = L.circleMarker(
+                [10.433333, -83.766667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_990d62ca168541cd9965ee1570fc0fc2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_494030e2749b4313ad38d602d3d9c853 = $(`<div id="html_494030e2749b4313ad38d602d3d9c853" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Suerte Biological Field Station, along C1 trail in selectively logged part of the "Large Forest" <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 2005-02-21 <strong>Recolectores:</strong> Paul, J. <strong>Identificadores:</strong> C.M. Taylor 2006</div>`)[0];
+            popup_990d62ca168541cd9965ee1570fc0fc2.setContent(html_494030e2749b4313ad38d602d3d9c853);
+        
+
+        circle_marker_52079d613e5343ad977329080164901b.bindPopup(popup_990d62ca168541cd9965ee1570fc0fc2)
+        ;
+
+        
+    
+    
+            var circle_marker_f4b1c5e57a574d2cb71bd3dd5f88a5e7 = L.circleMarker(
+                [10.683333, -83.633333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_3635caa3e3f84ff393422438917db2aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9fce3fd36520483ea1fc93de1273fc22 = $(`<div id="html_9fce3fd36520483ea1fc93de1273fc22" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Coronel, E of Laguna Danto. <strong>Elevación:</strong> 95.0 m  <strong>Fecha:</strong> 1986-09-15 <strong>Recolectores:</strong> W. D. Stevens|O. M. Montiel J. <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_3635caa3e3f84ff393422438917db2aa.setContent(html_9fce3fd36520483ea1fc93de1273fc22);
+        
+
+        circle_marker_f4b1c5e57a574d2cb71bd3dd5f88a5e7.bindPopup(popup_3635caa3e3f84ff393422438917db2aa)
+        ;
+
+        
+    
+    
+            var circle_marker_167261cc91f04c6597f5b5683555d083 = L.circleMarker(
+                [10.666667, -83.666667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_3ddd532642e44fddb518e39e889d872c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a84358575a5048488e9f71d835728fcf = $(`<div id="html_a84358575a5048488e9f71d835728fcf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Coronel, E of Río Zapote, along and above near road. <strong>Elevación:</strong> 55.0 m  <strong>Fecha:</strong> 1986-01-24 <strong>Recolectores:</strong> W. D. Stevens <strong>Identificadores:</strong> D. Lorence</div>`)[0];
+            popup_3ddd532642e44fddb518e39e889d872c.setContent(html_a84358575a5048488e9f71d835728fcf);
+        
+
+        circle_marker_167261cc91f04c6597f5b5683555d083.bindPopup(popup_3ddd532642e44fddb518e39e889d872c)
+        ;
+
+        
+    
+    
+            var circle_marker_f7b8ad50daaf44758a4aef44d92b3bab = L.circleMarker(
+                [10.683333, -83.633333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_abd37a84da42480698f4eaa1823d5282 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b95e77d7a3b4c57a36e53cbe105c7de = $(`<div id="html_9b95e77d7a3b4c57a36e53cbe105c7de" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Coronel, E of Laguna Danto. <strong>Elevación:</strong> 95.0 m  <strong>Fecha:</strong> 1986-01-16 <strong>Recolectores:</strong> W. D. Stevens <strong>Identificadores:</strong> C.M.Taylor, 1991 (MO)</div>`)[0];
+            popup_abd37a84da42480698f4eaa1823d5282.setContent(html_9b95e77d7a3b4c57a36e53cbe105c7de);
+        
+
+        circle_marker_f7b8ad50daaf44758a4aef44d92b3bab.bindPopup(popup_abd37a84da42480698f4eaa1823d5282)
+        ;
+
+        
+    
+    
+            var circle_marker_9b170deeb82847e2a76f077d9d3f9de8 = L.circleMarker(
+                [10.64444, -83.68333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_33289a2b734242b68eae971a83d4f3aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_608b31e0cb2e40eab0eeb671ecf5ed38 = $(`<div id="html_608b31e0cb2e40eab0eeb671ecf5ed38" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ca. 4-5 airline km S of Islas Buena Vista in the Río Colorado. Premontane wet forest on low hills. <strong>Elevación:</strong> 140.0 m  <strong>Fecha:</strong> 1986-09-17 <strong>Recolectores:</strong> Gerrit Davidse|Gerardo Herrera Ch. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_33289a2b734242b68eae971a83d4f3aa.setContent(html_608b31e0cb2e40eab0eeb671ecf5ed38);
+        
+
+        circle_marker_9b170deeb82847e2a76f077d9d3f9de8.bindPopup(popup_33289a2b734242b68eae971a83d4f3aa)
+        ;
+
+        
+    
+    
+            var circle_marker_f2f24c0341bc4519a7fb9cfeaacbeee0 = L.circleMarker(
+                [10.666667, -83.666667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_3bb23d8713f64a11bf50fad899d74e60 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_622b55c729604f6ebd96bb941b656a4a = $(`<div id="html_622b55c729604f6ebd96bb941b656a4a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hills 2 airline km SSE of Islas Buena Vista in the Río Colorado, 14 airline km SW of Barra del Colorado. <strong>Elevación:</strong> 65.0 m  <strong>Fecha:</strong> 1986-09-13 <strong>Recolectores:</strong> Gerrit Davidse|Gerardo Herrera Ch. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_3bb23d8713f64a11bf50fad899d74e60.setContent(html_622b55c729604f6ebd96bb941b656a4a);
+        
+
+        circle_marker_f2f24c0341bc4519a7fb9cfeaacbeee0.bindPopup(popup_3bb23d8713f64a11bf50fad899d74e60)
+        ;
+
+        
+    
+    
+            var circle_marker_3c129c46c09e4418ada2c4cdf743ce2f = L.circleMarker(
+                [10.643880000000001, -83.73611],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_cdc4bdba039d48cea1302b128d7a00ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38a73dc05e48410da3b53474652c103e = $(`<div id="html_38a73dc05e48410da3b53474652c103e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Pococi. R.N.F.S. Barra del Colorado. Llanura de Tortuguero. Sardinas, recorrido a las cimas por camino Los Berrocales rumbo Noreste de la estacop|4n. <strong>Elevación:</strong> 17.5 m  <strong>Fecha:</strong> 1994-05-26 <strong>Recolectores:</strong> Álvaro Fernández <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_cdc4bdba039d48cea1302b128d7a00ee.setContent(html_38a73dc05e48410da3b53474652c103e);
+        
+
+        circle_marker_3c129c46c09e4418ada2c4cdf743ce2f.bindPopup(popup_cdc4bdba039d48cea1302b128d7a00ee)
+        ;
+
+        
+    
+    
+            var circle_marker_e2247c9cc81d4254b3ea2cb43aad808e = L.circleMarker(
+                [10.43138, -84.00361],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_de727ac560f6424fa44b437858e8c010 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c380bd10fd984adca28d1401814152d8 = $(`<div id="html_c380bd10fd984adca28d1401814152d8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1981-05-04 <strong>Recolectores:</strong> James P. Folsom <strong>Identificadores:</strong> W.C. Burger & C.M. Taylor VII</div>`)[0];
+            popup_de727ac560f6424fa44b437858e8c010.setContent(html_c380bd10fd984adca28d1401814152d8);
+        
+
+        circle_marker_e2247c9cc81d4254b3ea2cb43aad808e.bindPopup(popup_de727ac560f6424fa44b437858e8c010)
+        ;
+
+        
+    
+    
+            var circle_marker_2b49f778fba145fe9fc796f5ab404629 = L.circleMarker(
+                [10.43333, -83.76666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_b6d00a5527fb435187e3a97a1d8cc4e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca81d4a7be5a419f8dff050495d85d99 = $(`<div id="html_ca81d4a7be5a419f8dff050495d85d99" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Suerte Biological Field Station. <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 2005-02-21 <strong>Recolectores:</strong> John R. Paul <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_b6d00a5527fb435187e3a97a1d8cc4e1.setContent(html_ca81d4a7be5a419f8dff050495d85d99);
+        
+
+        circle_marker_2b49f778fba145fe9fc796f5ab404629.bindPopup(popup_b6d00a5527fb435187e3a97a1d8cc4e1)
+        ;
+
+        
+    
+    
+            var circle_marker_fa1b4560d0944284b5b2a07971cf1e2d = L.circleMarker(
+                [10.43333, -83.76666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_bf47e7bed1d248d5a0be4a3ad6d01737 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_465a2f495a8b4beb8f38a68b7d1133a0 = $(`<div id="html_465a2f495a8b4beb8f38a68b7d1133a0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Suerte Biological Field Station. <strong>Elevación:</strong> 25.0 m  <strong>Fecha:</strong> 2005-02-21 <strong>Recolectores:</strong> John R. Paul <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_bf47e7bed1d248d5a0be4a3ad6d01737.setContent(html_465a2f495a8b4beb8f38a68b7d1133a0);
+        
+
+        circle_marker_fa1b4560d0944284b5b2a07971cf1e2d.bindPopup(popup_bf47e7bed1d248d5a0be4a3ad6d01737)
+        ;
+
+        
+    
+    
+            var circle_marker_889e25e87e9a422088a2f5f0fc8b45ac = L.circleMarker(
+                [10.43333, -84.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_954f12fe32194b35afbc3074e5429937 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5895ce7b413b49109c769e037a4925f7 = $(`<div id="html_5895ce7b413b49109c769e037a4925f7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Field Station. <strong>Elevación:</strong> 140.0 m  <strong>Fecha:</strong> 2005-01-30 <strong>Recolectores:</strong> John R. Paul <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_954f12fe32194b35afbc3074e5429937.setContent(html_5895ce7b413b49109c769e037a4925f7);
+        
+
+        circle_marker_889e25e87e9a422088a2f5f0fc8b45ac.bindPopup(popup_954f12fe32194b35afbc3074e5429937)
+        ;
+
+        
+    
+    
+            var circle_marker_6f29d6288f8c41ce90a2a08308ec3a6c = L.circleMarker(
+                [10.43138, -84.00361],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_d0f36473a0da4c9eab150f90e14bf449 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44a8bc4733c24523a2bb243c28d93497 = $(`<div id="html_44a8bc4733c24523a2bb243c28d93497" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1985-05-29 <strong>Recolectores:</strong> Robert L. Wilbur <strong>Identificadores:</strong> W.C. Burger & C.M. Taylor VII</div>`)[0];
+            popup_d0f36473a0da4c9eab150f90e14bf449.setContent(html_44a8bc4733c24523a2bb243c28d93497);
+        
+
+        circle_marker_6f29d6288f8c41ce90a2a08308ec3a6c.bindPopup(popup_d0f36473a0da4c9eab150f90e14bf449)
+        ;
+
+        
+    
+    
+            var circle_marker_5286636ec6a848779238a2e383f3712e = L.circleMarker(
+                [10.43138, -84.00361],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_6afd4ac0c0dc4493be9218065b811ce8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c485ef753a77408aa3bb6f2294ea3a05 = $(`<div id="html_c485ef753a77408aa3bb6f2294ea3a05" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1984-05-13 <strong>Recolectores:</strong> Robert L. Wilbur|Brian Jacobs <strong>Identificadores:</strong> W.C. Burger & C.M. Taylor VII</div>`)[0];
+            popup_6afd4ac0c0dc4493be9218065b811ce8.setContent(html_c485ef753a77408aa3bb6f2294ea3a05);
+        
+
+        circle_marker_5286636ec6a848779238a2e383f3712e.bindPopup(popup_6afd4ac0c0dc4493be9218065b811ce8)
+        ;
+
+        
+    
+    
+            var circle_marker_7db65062b44b4bce873af1a90ff332e2 = L.circleMarker(
+                [10.43138, -84.00361],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_333057064cb14355a897b9d8054f5f6a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b4deca3d2f84a179a06d71569fc554d = $(`<div id="html_7b4deca3d2f84a179a06d71569fc554d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1985-06-05 <strong>Recolectores:</strong> Brian Jacobs <strong>Identificadores:</strong> W.C. Burger & C.M. Taylor VII</div>`)[0];
+            popup_333057064cb14355a897b9d8054f5f6a.setContent(html_7b4deca3d2f84a179a06d71569fc554d);
+        
+
+        circle_marker_7db65062b44b4bce873af1a90ff332e2.bindPopup(popup_333057064cb14355a897b9d8054f5f6a)
+        ;
+
+        
+    
+    
+            var circle_marker_84febaddc63542e58b1f74a917f018cd = L.circleMarker(
+                [10.43138, -84.00361],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_2a91a51221844dbb82bbc69832d87bca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_210e05ac400248aa8141d26525aff7c4 = $(`<div id="html_210e05ac400248aa8141d26525aff7c4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1985-05-25 <strong>Recolectores:</strong> Brian Jacobs <strong>Identificadores:</strong> W.C. Burger & C.M. Taylor VII</div>`)[0];
+            popup_2a91a51221844dbb82bbc69832d87bca.setContent(html_210e05ac400248aa8141d26525aff7c4);
+        
+
+        circle_marker_84febaddc63542e58b1f74a917f018cd.bindPopup(popup_2a91a51221844dbb82bbc69832d87bca)
+        ;
+
+        
+    
+    
+            var circle_marker_ba6f08bf8ed94da6957fcc9fb4e93b47 = L.circleMarker(
+                [10.43138, -84.00361],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_a1e07bd8beaa4818bb5c976594e1926f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80976e053b954484a286c28bdaf94200 = $(`<div id="html_80976e053b954484a286c28bdaf94200" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1985-05-18 <strong>Recolectores:</strong> Brian Jacobs <strong>Identificadores:</strong> W.C. Burger & C.M. Taylor VII</div>`)[0];
+            popup_a1e07bd8beaa4818bb5c976594e1926f.setContent(html_80976e053b954484a286c28bdaf94200);
+        
+
+        circle_marker_ba6f08bf8ed94da6957fcc9fb4e93b47.bindPopup(popup_a1e07bd8beaa4818bb5c976594e1926f)
+        ;
+
+        
+    
+    
+            var circle_marker_c357277c0f7a4a61a81d6b24edb08adc = L.circleMarker(
+                [10.43138, -84.00361],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_4f30a484942c4b03b452bf9d5fcfcf79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5071987a51e4e83a20069b229f383fd = $(`<div id="html_d5071987a51e4e83a20069b229f383fd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1985-05-23 <strong>Recolectores:</strong> Robert L. Wilbur <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_4f30a484942c4b03b452bf9d5fcfcf79.setContent(html_d5071987a51e4e83a20069b229f383fd);
+        
+
+        circle_marker_c357277c0f7a4a61a81d6b24edb08adc.bindPopup(popup_4f30a484942c4b03b452bf9d5fcfcf79)
+        ;
+
+        
+    
+    
+            var circle_marker_38ef79b9cf054f0fae735492ac8fbc47 = L.circleMarker(
+                [10.5, -83.78],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_4d0abe369d3945209aa54ce54c562ef0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a5dbbebca17448f9a8a38afc4494940 = $(`<div id="html_4a5dbbebca17448f9a8a38afc4494940" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hacienda Tapezco-Hacienda La Suerte. 29 air km W of Tortuguero. Primary rainforest in an area being selectively looged. Area of low hills and mounds, a few small streams <strong>Elevación:</strong> 40.0 m  <strong>Fecha:</strong> 1978-03-14 <strong>Recolectores:</strong> Christopher Davidson|Amy Kaminer|L. Middleton|B. Rasnow <strong>Identificadores:</strong> C. M. Taylor (MO)</div>`)[0];
+            popup_4d0abe369d3945209aa54ce54c562ef0.setContent(html_4a5dbbebca17448f9a8a38afc4494940);
+        
+
+        circle_marker_38ef79b9cf054f0fae735492ac8fbc47.bindPopup(popup_4d0abe369d3945209aa54ce54c562ef0)
+        ;
+
+        
+    
+    
+            var circle_marker_86c7d7afdd134ee5a9865fa0dd353b98 = L.circleMarker(
+                [10.43138, -84.00361],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_524cd33ffefb4b6c88aeb4416d04e543 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_932287a511b345098af291035a3158cc = $(`<div id="html_932287a511b345098af291035a3158cc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, the OTS field station on the Río Puerto Viejo just E of its junction with the Río Sarapiquí. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1982-03-28 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> W.C. Burger & C.M. Taylor VII</div>`)[0];
+            popup_524cd33ffefb4b6c88aeb4416d04e543.setContent(html_932287a511b345098af291035a3158cc);
+        
+
+        circle_marker_86c7d7afdd134ee5a9865fa0dd353b98.bindPopup(popup_524cd33ffefb4b6c88aeb4416d04e543)
+        ;
+
+        
+    
+    
+            var circle_marker_da5cb8325c7949c79139132ad33593d1 = L.circleMarker(
+                [10.43138, -84.00361],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_cc7ada38b61e44bca13dd1645ed447d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8339031a14b04faf8fdf541f54cf1262 = $(`<div id="html_8339031a14b04faf8fdf541f54cf1262" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, the OTS field station on the Río Puerto Viejo just E of its junction with the Río Sarapiquí. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1981-07-01 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_cc7ada38b61e44bca13dd1645ed447d6.setContent(html_8339031a14b04faf8fdf541f54cf1262);
+        
+
+        circle_marker_da5cb8325c7949c79139132ad33593d1.bindPopup(popup_cc7ada38b61e44bca13dd1645ed447d6)
+        ;
+
+        
+    
+    
+            var circle_marker_eb65e138c77744acba7503dc2052fdea = L.circleMarker(
+                [10.431389, -84.00361099999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_0446ff6a2f4f41549c01a108e2370276 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af90842056094fb4a01e85b221b6224a = $(`<div id="html_af90842056094fb4a01e85b221b6224a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, the OTS Field Station on the Río Puerto Viejo just E of its junction with the Río Sarapiquí. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1980-05-19 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_0446ff6a2f4f41549c01a108e2370276.setContent(html_af90842056094fb4a01e85b221b6224a);
+        
+
+        circle_marker_eb65e138c77744acba7503dc2052fdea.bindPopup(popup_0446ff6a2f4f41549c01a108e2370276)
+        ;
+
+        
+    
+    
+            var circle_marker_7215b3a814dd4658a39d0df53f99fe9c = L.circleMarker(
+                [10.431389, -84.00361099999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_a63755b523244dc58bd780886575789c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2d1d63290ea4be6bba26e9ffa7bf1b1 = $(`<div id="html_b2d1d63290ea4be6bba26e9ffa7bf1b1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1981-05-01 <strong>Recolectores:</strong> James P. Folsom <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_a63755b523244dc58bd780886575789c.setContent(html_b2d1d63290ea4be6bba26e9ffa7bf1b1);
+        
+
+        circle_marker_7215b3a814dd4658a39d0df53f99fe9c.bindPopup(popup_a63755b523244dc58bd780886575789c)
+        ;
+
+        
+    
+    
+            var circle_marker_df1e0da881e4480da94d3f673fdc9689 = L.circleMarker(
+                [10.85, -83.766667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_82bbd64d8f594cea8c1f3d67aba22e7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4428195d6f7c4cd0beaf9a7886a9cece = $(`<div id="html_4428195d6f7c4cd0beaf9a7886a9cece" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Indio-Maíz, Municipio de San Juan del Norte, sendero de cazadores, al lado sur de la Laguna de Silico. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1996-08-02 <strong>Recolectores:</strong> R. M. Rueda|I. Coronado G.|N. Tercero <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_82bbd64d8f594cea8c1f3d67aba22e7d.setContent(html_4428195d6f7c4cd0beaf9a7886a9cece);
+        
+
+        circle_marker_df1e0da881e4480da94d3f673fdc9689.bindPopup(popup_82bbd64d8f594cea8c1f3d67aba22e7d)
+        ;
+
+        
+    
+    
+            var circle_marker_2d093b22c4744fefa338fbaec6ab21f1 = L.circleMarker(
+                [9.118611, -82.668056],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_2a549dc9bae24d49b29e1ea60fce8ea8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46ce29522725481f969cfb2819c143b1 = $(`<div id="html_46ce29522725481f969cfb2819c143b1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alto Uri, Rancho Santin, PILA, Punto #7, Aprox. 1 km al Norte de R. Santin. <strong>Elevación:</strong> 1293.0 m  <strong>Fecha:</strong> 2008-07-31 <strong>Recolectores:</strong> Daniel Santamaría|Daniel Solano|Á. Solís|Nelson Zamora|Alex K. Monro <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_2a549dc9bae24d49b29e1ea60fce8ea8.setContent(html_46ce29522725481f969cfb2819c143b1);
+        
+
+        circle_marker_2d093b22c4744fefa338fbaec6ab21f1.bindPopup(popup_2a549dc9bae24d49b29e1ea60fce8ea8)
+        ;
+
+        
+    
+    
+            var circle_marker_ebedd6300af14689a3a5ba97d10fc534 = L.circleMarker(
+                [9.113889, -82.663333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_f1a05e59ca904c109623a740b636d95f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_615864f0f4e2425fbec3d5533dc587e2 = $(`<div id="html_615864f0f4e2425fbec3d5533dc587e2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> PILA. Estación Santín. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2008-07-30 <strong>Recolectores:</strong> Daniel Solano|Nelson Zamora|Alex K. Monro|Á. Solís|A. Harttmann|Daniel Santamaría <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_f1a05e59ca904c109623a740b636d95f.setContent(html_615864f0f4e2425fbec3d5533dc587e2);
+        
+
+        circle_marker_ebedd6300af14689a3a5ba97d10fc534.bindPopup(popup_f1a05e59ca904c109623a740b636d95f)
+        ;
+
+        
+    
+    
+            var circle_marker_65ad1ebd4de8459db8d5e252369f5278 = L.circleMarker(
+                [9.118889, -82.664167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_9cf68af31861444cbd717d61399934ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3486e187ac1495f9b02a0f39a5cd230 = $(`<div id="html_a3486e187ac1495f9b02a0f39a5cd230" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> PILA. Estación Santín. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2008-08-01 <strong>Recolectores:</strong> Daniel Solano|Nelson Zamora|Alex K. Monro|Á. Solís|A. Harttmann|Daniel Santamaría <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_9cf68af31861444cbd717d61399934ce.setContent(html_a3486e187ac1495f9b02a0f39a5cd230);
+        
+
+        circle_marker_65ad1ebd4de8459db8d5e252369f5278.bindPopup(popup_9cf68af31861444cbd717d61399934ce)
+        ;
+
+        
+    
+    
+            var circle_marker_d5dbe078e9c14bfc99716e3b1df5ee9b = L.circleMarker(
+                [9.81788, -83.15871],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_8267272061cc4f14a1c43f71904e1e99 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_144618214233497cae7d9060ca2dc953 = $(`<div id="html_144618214233497cae7d9060ca2dc953" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Limon, Valle de la Estrella, Fila Matama. Cerca de 11 km SW del pueblo de Aguas Zarcas. Punto S1. Bosque, predominando arboles de Sloanea sp., Dussia sp., Garcinia, Cecropia insignis, 13-30 m. Sotobosque con Renealmia, Meliosma sp., Geonoma sp. y Chamaedorea costaricensis. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 2007-11-01 <strong>Recolectores:</strong> Daniel Santamaría <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_8267272061cc4f14a1c43f71904e1e99.setContent(html_144618214233497cae7d9060ca2dc953);
+        
+
+        circle_marker_d5dbe078e9c14bfc99716e3b1df5ee9b.bindPopup(popup_8267272061cc4f14a1c43f71904e1e99)
+        ;
+
+        
+    
+    
+            var circle_marker_6c3afd06e77648a7bd41e522d5921f22 = L.circleMarker(
+                [9.8132, -83.16813],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_f1db3942151049a8a461417398bda856 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de959b7687b74522ae6bdff21138b2ee = $(`<div id="html_de959b7687b74522ae6bdff21138b2ee" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Limon, Valle de la Estrella, Fila Matama. Cerca de 11 km SW del pueblo de Aguas Zarcas. Alrededores del campamento. Bosque nuboso primario. Predominando arboles de Elaegia sp., Geonoma, Lauraceae. El sotobosque con Melastomataceae, Caliptrogyne, Heliconia, Calathea. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2007-10-22 <strong>Recolectores:</strong> Daniel Santamaría <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_f1db3942151049a8a461417398bda856.setContent(html_de959b7687b74522ae6bdff21138b2ee);
+        
+
+        circle_marker_6c3afd06e77648a7bd41e522d5921f22.bindPopup(popup_f1db3942151049a8a461417398bda856)
+        ;
+
+        
+    
+    
+            var circle_marker_46847ede10cd42359af0c987b31fb0d1 = L.circleMarker(
+                [10.33, -84.06],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_74ef9969fb09402fb7802b2b347be36d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c22a52d969647dbb8363cc645954a05 = $(`<div id="html_6c22a52d969647dbb8363cc645954a05" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 8 km E of San Ramon; transitional premontane rainforest - perhumid life zone. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1985-09-01 <strong>Recolectores:</strong> B. A. Loiselle <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_74ef9969fb09402fb7802b2b347be36d.setContent(html_6c22a52d969647dbb8363cc645954a05);
+        
+
+        circle_marker_46847ede10cd42359af0c987b31fb0d1.bindPopup(popup_74ef9969fb09402fb7802b2b347be36d)
+        ;
+
+        
+    
+    
+            var circle_marker_4ae3d3ae868142b08ff1926e3679bac5 = L.circleMarker(
+                [10.643889, -83.736112],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_6b1997dc2e824e6a902874e19db0a671 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d54b9eeec3b4467290b3c80e69da0ebd = $(`<div id="html_d54b9eeec3b4467290b3c80e69da0ebd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sardinas, recorrido a las cimas por camino Los Berrocales rumbo Noreste de la estacion. <strong>Elevación:</strong> 17.5 m  <strong>Fecha:</strong> 1994-05-26 <strong>Recolectores:</strong> Alvaro Fernandez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_6b1997dc2e824e6a902874e19db0a671.setContent(html_d54b9eeec3b4467290b3c80e69da0ebd);
+        
+
+        circle_marker_4ae3d3ae868142b08ff1926e3679bac5.bindPopup(popup_6b1997dc2e824e6a902874e19db0a671)
+        ;
+
+        
+    
+    
+            var circle_marker_bdc78817ad2e4afe853c1bc1f042d7c5 = L.circleMarker(
+                [10.0114, -83.9519],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_783588afcc784c509b83c597c449cb4f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e244bdc340d24ba1a40476d157910642 = $(`<div id="html_e244bdc340d24ba1a40476d157910642" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1980-05-19 <strong>Recolectores:</strong> B. E. Hammel <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_783588afcc784c509b83c597c449cb4f.setContent(html_e244bdc340d24ba1a40476d157910642);
+        
+
+        circle_marker_bdc78817ad2e4afe853c1bc1f042d7c5.bindPopup(popup_783588afcc784c509b83c597c449cb4f)
+        ;
+
+        
+    
+    
+            var circle_marker_e59abd529c164e0483866aca5999e486 = L.circleMarker(
+                [10.5, -84.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_5904fa9523ab4c5bb74264e1ed801d1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8632824a7e0946a3b62408a9655cee35 = $(`<div id="html_8632824a7e0946a3b62408a9655cee35" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1981-05-01 <strong>Recolectores:</strong> J. P. Folsom <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_5904fa9523ab4c5bb74264e1ed801d1e.setContent(html_8632824a7e0946a3b62408a9655cee35);
+        
+
+        circle_marker_e59abd529c164e0483866aca5999e486.bindPopup(popup_5904fa9523ab4c5bb74264e1ed801d1e)
+        ;
+
+        
+    
+    
+            var circle_marker_6dc6582c131a4d3383e9f39cca0eb938 = L.circleMarker(
+                [10.68333, -83.63333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_cb1d27a5b2a94399882c8c0c427a0586 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1d79cd5e19847a58c97644bcf691581 = $(`<div id="html_f1d79cd5e19847a58c97644bcf691581" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Limon: Cerro Coronel, E of Laguna Danto <strong>Elevación:</strong> 95.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> W.D. Stevens <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_cb1d27a5b2a94399882c8c0c427a0586.setContent(html_f1d79cd5e19847a58c97644bcf691581);
+        
+
+        circle_marker_6dc6582c131a4d3383e9f39cca0eb938.bindPopup(popup_cb1d27a5b2a94399882c8c0c427a0586)
+        ;
+
+        
+    
+    
+            var circle_marker_cbb416a90e794c5593423ef666f06d1d = L.circleMarker(
+                [10.66, -83.66],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_8e0ef68b14254b01b164a6e4f35b102b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37cfdc3655a144da8934da6b3838a1be = $(`<div id="html_37cfdc3655a144da8934da6b3838a1be" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hills 2 airline km SSE of Islas Buena Vista in the rìo Colorado. 14 airline km SW of Barra del Colorado. Premontane wet forest on low hills. <strong>Elevación:</strong> 110.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Davidse, Gerrit <strong>Identificadores:</strong> Burger, William</div>`)[0];
+            popup_8e0ef68b14254b01b164a6e4f35b102b.setContent(html_37cfdc3655a144da8934da6b3838a1be);
+        
+
+        circle_marker_cbb416a90e794c5593423ef666f06d1d.bindPopup(popup_8e0ef68b14254b01b164a6e4f35b102b)
+        ;
+
+        
+    
+    
+            var circle_marker_97270ce9bd694f058160b9de4aad0eae = L.circleMarker(
+                [10.68, -83.63],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_81dd5de3393647299638a35570d5ba08 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c620a0fb0f648e4bb88f55d2da7d646 = $(`<div id="html_0c620a0fb0f648e4bb88f55d2da7d646" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Coronel, E of Laguna Danto. Tall evergreen forest on gentle to moderately steep slopes. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Stevens, Warren D. <strong>Identificadores:</strong> Burger, William</div>`)[0];
+            popup_81dd5de3393647299638a35570d5ba08.setContent(html_0c620a0fb0f648e4bb88f55d2da7d646);
+        
+
+        circle_marker_97270ce9bd694f058160b9de4aad0eae.bindPopup(popup_81dd5de3393647299638a35570d5ba08)
+        ;
+
+        
+    
+    
+            var circle_marker_62dce722a0e34022a030b5f783819c84 = L.circleMarker(
+                [10.64, -83.68],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_2191359eafb240488447dbd5d2bc8608 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1605fbcd14594cae952b33ea83fa0079 = $(`<div id="html_1605fbcd14594cae952b33ea83fa0079" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ca. 4.5 airline km S of Islas Buena Vista in the Rìo Colorado. Premontane wet forest on low hills. <strong>Elevación:</strong> 140.0 m  <strong>Fecha:</strong> 1986-09-17 <strong>Recolectores:</strong> Davidse, Gerrit <strong>Identificadores:</strong> Valverde, Oscar</div>`)[0];
+            popup_2191359eafb240488447dbd5d2bc8608.setContent(html_1605fbcd14594cae952b33ea83fa0079);
+        
+
+        circle_marker_62dce722a0e34022a030b5f783819c84.bindPopup(popup_2191359eafb240488447dbd5d2bc8608)
+        ;
+
+        
+    
+    
+            var circle_marker_b0221ba543c14634a980e2b316562916 = L.circleMarker(
+                [10.68, -83.63],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_370f516407eb460093d12a32da0833fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4674eb7de6b24f0094b9626ab4438997 = $(`<div id="html_4674eb7de6b24f0094b9626ab4438997" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Coronel, E of Laguna Danto, Tall evergreen forest on gentle to moderately steep slopes. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Stevens, Warren D. <strong>Identificadores:</strong> Burger, William</div>`)[0];
+            popup_370f516407eb460093d12a32da0833fe.setContent(html_4674eb7de6b24f0094b9626ab4438997);
+        
+
+        circle_marker_b0221ba543c14634a980e2b316562916.bindPopup(popup_370f516407eb460093d12a32da0833fe)
+        ;
+
+        
+    
+    
+            var circle_marker_e1e5838eab794115b1a818ae3c8cfea9 = L.circleMarker(
+                [10.43, -84.03],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+        
+    
+        var popup_4d9c53bc11434161b5fe0a5a4ad525d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_603b24ea09c7472cac64826c37f1ecb0 = $(`<div id="html_603b24ea09c7472cac64826c37f1ecb0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> E.B. La Selva Finca La Selva, the OTS Field Station on the Rìo Puerto Viejo just E of its junction with the Rìo Sarapiquì. Sabalo-Esquina Trail, 1200 m line. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1981-05-01 <strong>Recolectores:</strong> Folsom, James P. <strong>Identificadores:</strong> C. Hamilton</div>`)[0];
+            popup_4d9c53bc11434161b5fe0a5a4ad525d9.setContent(html_603b24ea09c7472cac64826c37f1ecb0);
+        
+
+        circle_marker_e1e5838eab794115b1a818ae3c8cfea9.bindPopup(popup_4d9c53bc11434161b5fe0a5a4ad525d9)
+        ;
+
+        
+    
+    
+            var layer_control_5d2f2ec8e05540e0a5737e0ae2084f61 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_e6b1110a5e194f559695c9646218c42a,
+                    "ESRI World Imagery" : tile_layer_d3bc60290a554b18ac8726e5997cacca,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_5d2f2ec8e05540e0a5737e0ae2084f61.base_layers,
+                layer_control_5d2f2ec8e05540e0a5737e0ae2084f61.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_2f886cff4ac14f28af1d13d0282d22a8);
+            tile_layer_d3bc60290a554b18ac8726e5997cacca.remove();
+        
+</script>

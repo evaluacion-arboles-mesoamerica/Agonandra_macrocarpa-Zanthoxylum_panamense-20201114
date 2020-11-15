@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4b7a761b560d4ed1bdc1c8788e59924c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4b7a761b560d4ed1bdc1c8788e59924c" ></div>
+        
+</body>
+<script>    
+    
+            var map_4b7a761b560d4ed1bdc1c8788e59924c = L.map(
+                "map_4b7a761b560d4ed1bdc1c8788e59924c",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_4b7a761b560d4ed1bdc1c8788e59924c);
+
+            
+
+        
+    
+            var tile_layer_acc5683b470f4ce3851a29d27325f32d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4b7a761b560d4ed1bdc1c8788e59924c);
+        
+    
+            var tile_layer_10cce625027840deb9d2f5be87821202 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4b7a761b560d4ed1bdc1c8788e59924c);
+        
+    
+            var marker_cluster_6f1bcc5200ce43b280e37e7ffbc74b3d = L.markerClusterGroup(
+                {}
+            );
+            map_4b7a761b560d4ed1bdc1c8788e59924c.addLayer(marker_cluster_6f1bcc5200ce43b280e37e7ffbc74b3d);
+        
+    
+            var marker_a485d8d311d44669b8a0ec148f1212c7 = L.marker(
+                [9.794444, -83.108333],
+                {}
+            ).addTo(marker_cluster_6f1bcc5200ce43b280e37e7ffbc74b3d);
+        
+    
+        var popup_30b36179b3fa4cb3b72aa5d24fabb01a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9010f278cff94eb29177815187cb20f1 = $(`<div id="html_9010f278cff94eb29177815187cb20f1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Muchilla, Fila Matama. Entrando por pueblo El Progreso. Bosque nuboso de Vochysia, con sotobosque de Chamaedorea, Geonoma y otras. CORDILLERA DE TALAMANCA. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1989-04-11 <strong>Recolectores:</strong> Rafael Robles|Abelardo Chacón <strong>Identificadores:</strong> B. E. Hammel (MO)</div>`)[0];
+            popup_30b36179b3fa4cb3b72aa5d24fabb01a.setContent(html_9010f278cff94eb29177815187cb20f1);
+        
+
+        marker_a485d8d311d44669b8a0ec148f1212c7.bindPopup(popup_30b36179b3fa4cb3b72aa5d24fabb01a)
+        ;
+
+        
+    
+    
+            var marker_ee599ed865cf4c539de75453c08e57a4 = L.marker(
+                [9.79, -83.1],
+                {}
+            ).addTo(marker_cluster_6f1bcc5200ce43b280e37e7ffbc74b3d);
+        
+    
+        var popup_759eac355a7846478e64ad0fa61cffab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a304cc9e6b64d089c7664dd2abf8f96 = $(`<div id="html_5a304cc9e6b64d089c7664dd2abf8f96" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Limón El Progreso, entre Cerro Muchilla y Cerro Avioneta, cabeceras de Río Suruy. Fila Matama, Valle de la Estrella. <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 1989-04-17 <strong>Recolectores:</strong> Gerardo Herrera Ch.|Abelardo Chacón <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_759eac355a7846478e64ad0fa61cffab.setContent(html_5a304cc9e6b64d089c7664dd2abf8f96);
+        
+
+        marker_ee599ed865cf4c539de75453c08e57a4.bindPopup(popup_759eac355a7846478e64ad0fa61cffab)
+        ;
+
+        
+    
+    
+            var marker_1cfed82d8757403db1e3057f5d9a3f27 = L.marker(
+                [10.033333, -83.43333299999999],
+                {}
+            ).addTo(marker_cluster_6f1bcc5200ce43b280e37e7ffbc74b3d);
+        
+    
+        var popup_c7d0064ab9424a01aeb4ccde3dc40986 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5746180cb7cb469c99c18fb3d97028cc = $(`<div id="html_5746180cb7cb469c99c18fb3d97028cc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca, ridge separating Quebrada Cañabral from Río Barbilla, and slope leading down to the latter. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1988-09-04 <strong>Recolectores:</strong> Michael H. Grayum|Gerardo Herrera Ch.|Rafael Robles <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_c7d0064ab9424a01aeb4ccde3dc40986.setContent(html_5746180cb7cb469c99c18fb3d97028cc);
+        
+
+        marker_1cfed82d8757403db1e3057f5d9a3f27.bindPopup(popup_c7d0064ab9424a01aeb4ccde3dc40986)
+        ;
+
+        
+    
+    
+            var marker_1a41355dc7f74abdbce6ae22a8d0066a = L.marker(
+                [9.95, -83.43055600000001],
+                {}
+            ).addTo(marker_cluster_6f1bcc5200ce43b280e37e7ffbc74b3d);
+        
+    
+        var popup_7a3e8a4a94a74952a8eddb550c3f8d8b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed4cf89e0a51493086818dcb26285de6 = $(`<div id="html_ed4cf89e0a51493086818dcb26285de6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Siquirres, Barbilla [Río Barbilla]. Siguiendo quebrada innominada, entre Quebrada Jesús y Quebrada San Miguel. En ruta a Cerro Tigre [Cerro Barbilla] <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1996-03-20 <strong>Recolectores:</strong> Gerardo Herrera Ch.|G. Valverde M. <strong>Identificadores:</strong> B. E. Hammel (MO)</div>`)[0];
+            popup_7a3e8a4a94a74952a8eddb550c3f8d8b.setContent(html_ed4cf89e0a51493086818dcb26285de6);
+        
+
+        marker_1a41355dc7f74abdbce6ae22a8d0066a.bindPopup(popup_7a3e8a4a94a74952a8eddb550c3f8d8b)
+        ;
+
+        
+    
+    
+            var marker_fe68b4c205824ba6a6c702d8a7b56c09 = L.marker(
+                [5.26527, -76.61666],
+                {}
+            ).addTo(marker_cluster_6f1bcc5200ce43b280e37e7ffbc74b3d);
+        
+    
+        var popup_f958920eb1d140e48d605d7797ede881 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e4a288a56d54279927a870178166cb5 = $(`<div id="html_9e4a288a56d54279927a870178166cb5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 2 km S of Las Animas on road to Istmina, pluvial forest being selectively logged, understory rather dense. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1976-08-13 <strong>Recolectores:</strong> Alwyn H. Gentry|Mary E. Fallen <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_f958920eb1d140e48d605d7797ede881.setContent(html_9e4a288a56d54279927a870178166cb5);
+        
+
+        marker_fe68b4c205824ba6a6c702d8a7b56c09.bindPopup(popup_f958920eb1d140e48d605d7797ede881)
+        ;
+
+        
+    
+    
+            var marker_53fcac136a9c4e8d9cf594ca0bf37cc9 = L.marker(
+                [9.980687, -83.47239],
+                {}
+            ).addTo(marker_cluster_6f1bcc5200ce43b280e37e7ffbc74b3d);
+        
+    
+        var popup_34e9698559424d3daf86dede9174ae24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e52d9c7c2cf04ec0bad7e2e6df53e723 = $(`<div id="html_e52d9c7c2cf04ec0bad7e2e6df53e723" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camino a Valle Escondido, 2 km al sur de Rio Dantas. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 2000-01-08 <strong>Recolectores:</strong> Edgar Mora; Elias Rojas <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_34e9698559424d3daf86dede9174ae24.setContent(html_e52d9c7c2cf04ec0bad7e2e6df53e723);
+        
+
+        marker_53fcac136a9c4e8d9cf594ca0bf37cc9.bindPopup(popup_34e9698559424d3daf86dede9174ae24)
+        ;
+
+        
+    
+    
+            var marker_8698297a3dc94612950f36c7e300159e = L.marker(
+                [9.980687, -83.47239],
+                {}
+            ).addTo(marker_cluster_6f1bcc5200ce43b280e37e7ffbc74b3d);
+        
+    
+        var popup_e10e85f882a9424fa84465aecd4bed7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6df83270886e4c8585666c3eb18d86cf = $(`<div id="html_6df83270886e4c8585666c3eb18d86cf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camino a Valle Escondido, 2 km al sur de Rio Dantas. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 2000-01-08 <strong>Recolectores:</strong> Edgar Mora; Elias Rojas <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_e10e85f882a9424fa84465aecd4bed7d.setContent(html_6df83270886e4c8585666c3eb18d86cf);
+        
+
+        marker_8698297a3dc94612950f36c7e300159e.bindPopup(popup_e10e85f882a9424fa84465aecd4bed7d)
+        ;
+
+        
+    
+    
+            var marker_b177b828bf714c00bbcf8e4e7a2cb366 = L.marker(
+                [9.980687, -83.47239],
+                {}
+            ).addTo(marker_cluster_6f1bcc5200ce43b280e37e7ffbc74b3d);
+        
+    
+        var popup_421b860b64cb4aada2d30aff61360b46 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e462040fafe74228ac9054aa84e4f09d = $(`<div id="html_e462040fafe74228ac9054aa84e4f09d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camino a Valle Escondido, 2 km al sur de Rio Dantas. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 2000-01-08 <strong>Recolectores:</strong> Edgar Mora; Elias Rojas <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_421b860b64cb4aada2d30aff61360b46.setContent(html_e462040fafe74228ac9054aa84e4f09d);
+        
+
+        marker_b177b828bf714c00bbcf8e4e7a2cb366.bindPopup(popup_421b860b64cb4aada2d30aff61360b46)
+        ;
+
+        
+    
+    
+            var marker_8941bb733f5a4dfa8ef77abd3861c12b = L.marker(
+                [9.980687, -83.47239],
+                {}
+            ).addTo(marker_cluster_6f1bcc5200ce43b280e37e7ffbc74b3d);
+        
+    
+        var popup_537ffc80d13d4fa0b31e5b836c17548a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e36b0a3ca28c40f0abc5cfd6a88a0906 = $(`<div id="html_e36b0a3ca28c40f0abc5cfd6a88a0906" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camino a Valle Escondido, 2 km al sur de Rio Dantas. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 2000-01-08 <strong>Recolectores:</strong> Edgar Mora; Elias Rojas <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_537ffc80d13d4fa0b31e5b836c17548a.setContent(html_e36b0a3ca28c40f0abc5cfd6a88a0906);
+        
+
+        marker_8941bb733f5a4dfa8ef77abd3861c12b.bindPopup(popup_537ffc80d13d4fa0b31e5b836c17548a)
+        ;
+
+        
+    
+    
+            var marker_63e5fdb690e04a27a02d3ebf60f57899 = L.marker(
+                [9.980687, -83.47239],
+                {}
+            ).addTo(marker_cluster_6f1bcc5200ce43b280e37e7ffbc74b3d);
+        
+    
+        var popup_e8ccb1dd278e4eb080f6f3109c94e5a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a6275dcf32249839bd3bc3e8ec58482 = $(`<div id="html_7a6275dcf32249839bd3bc3e8ec58482" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camino a Valle Escondido, 2 km al sur de Rio Dantas. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 2000-01-08 <strong>Recolectores:</strong> Edgar Mora; Elias Rojas <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_e8ccb1dd278e4eb080f6f3109c94e5a3.setContent(html_7a6275dcf32249839bd3bc3e8ec58482);
+        
+
+        marker_63e5fdb690e04a27a02d3ebf60f57899.bindPopup(popup_e8ccb1dd278e4eb080f6f3109c94e5a3)
+        ;
+
+        
+    
+    
+            var layer_control_fe5d8fb91cbe4e308f6ca88f1ed9cc07 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_acc5683b470f4ce3851a29d27325f32d,
+                    "ESRI World Imagery" : tile_layer_10cce625027840deb9d2f5be87821202,
+                },
+                overlays :  {
+                    "macro_element_6f1bcc5200ce43b280e37e7ffbc74b3d" : marker_cluster_6f1bcc5200ce43b280e37e7ffbc74b3d,
+                },
+            };
+            L.control.layers(
+                layer_control_fe5d8fb91cbe4e308f6ca88f1ed9cc07.base_layers,
+                layer_control_fe5d8fb91cbe4e308f6ca88f1ed9cc07.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_4b7a761b560d4ed1bdc1c8788e59924c);
+            tile_layer_10cce625027840deb9d2f5be87821202.remove();
+        
+</script>

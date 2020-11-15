@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aa4c68a0bbe94032b2e3c036bfd735a3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_aa4c68a0bbe94032b2e3c036bfd735a3" ></div>
+        
+</body>
+<script>    
+    
+            var map_aa4c68a0bbe94032b2e3c036bfd735a3 = L.map(
+                "map_aa4c68a0bbe94032b2e3c036bfd735a3",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_aa4c68a0bbe94032b2e3c036bfd735a3);
+
+            
+
+        
+    
+            var tile_layer_357e8356a7b949c9bfc9740324e208d7 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_aa4c68a0bbe94032b2e3c036bfd735a3);
+        
+    
+            var tile_layer_1c9ad4adfb1f423c8912b7dc64655718 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_aa4c68a0bbe94032b2e3c036bfd735a3);
+        
+    
+            var marker_cluster_6fb59820e1a84663b42834bcf00f2fc0 = L.markerClusterGroup(
+                {}
+            );
+            map_aa4c68a0bbe94032b2e3c036bfd735a3.addLayer(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+            var marker_8a936c516a4a4799b59f773d5f9a4aeb = L.marker(
+                [9.73, -84.39],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_dc6ec7e8700d4dc396becdfb172203d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d744e3e94c024068bb5c80b428251cb0 = $(`<div id="html_d744e3e94c024068bb5c80b428251cb0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerros de Puriscal. San Martín de Puriscal, bosque primario remanente en la Fila Vara Blanca, cabecera de Río Negro,límite NW Cangreja <strong>Elevación:</strong> 875.0 m  <strong>Fecha:</strong> 1995-04-21 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> F. R. Barrie, V/</div>`)[0];
+            popup_dc6ec7e8700d4dc396becdfb172203d6.setContent(html_d744e3e94c024068bb5c80b428251cb0);
+        
+
+        marker_8a936c516a4a4799b59f773d5f9a4aeb.bindPopup(popup_dc6ec7e8700d4dc396becdfb172203d6)
+        ;
+
+        
+    
+    
+            var marker_fe21d16e39dd4b6e99576139593a39bd = L.marker(
+                [9.69, -84.38],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_e99f93f4e61f47adb248972bbdab5745 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_64c294fd28d04a9abe18de2d318f6247 = $(`<div id="html_64c294fd28d04a9abe18de2d318f6247" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. La Cangreja; Cerros de Puriscal. Santa Rosa de Puriscal. Bosque primario en las faldas de Fila La Cangreja. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1992-08-27 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_e99f93f4e61f47adb248972bbdab5745.setContent(html_64c294fd28d04a9abe18de2d318f6247);
+        
+
+        marker_fe21d16e39dd4b6e99576139593a39bd.bindPopup(popup_e99f93f4e61f47adb248972bbdab5745)
+        ;
+
+        
+    
+    
+            var marker_1990e7a2a1704462a6f3fb546c4454d4 = L.marker(
+                [9.711111, -84.386111],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_7186ac532a8f4010bb80be71c3eaa940 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00b460b7679d49fba58225c4b8b835ee = $(`<div id="html_00b460b7679d49fba58225c4b8b835ee" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zona Protectora La Cangreja, Santa Rosa de Puriscal <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1988-04-29 <strong>Recolectores:</strong> Quírico Jiménez|Pablo E. Sánchez V. <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_7186ac532a8f4010bb80be71c3eaa940.setContent(html_00b460b7679d49fba58225c4b8b835ee);
+        
+
+        marker_1990e7a2a1704462a6f3fb546c4454d4.bindPopup(popup_7186ac532a8f4010bb80be71c3eaa940)
+        ;
+
+        
+    
+    
+            var marker_51d014141ad340f3acab2ee8eb4582c9 = L.marker(
+                [9.7, -84.386111],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_4030544bcfc240ceba291fa8f973ce21 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5c0a5f16ecb4e48934d63788ee9c2e6 = $(`<div id="html_c5c0a5f16ecb4e48934d63788ee9c2e6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zona Protectora La Cangrega. Puriscal. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1990-10-27 <strong>Recolectores:</strong> Quírico Jiménez <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_4030544bcfc240ceba291fa8f973ce21.setContent(html_c5c0a5f16ecb4e48934d63788ee9c2e6);
+        
+
+        marker_51d014141ad340f3acab2ee8eb4582c9.bindPopup(popup_4030544bcfc240ceba291fa8f973ce21)
+        ;
+
+        
+    
+    
+            var marker_46311b2c861d4d0cab88f86ed26c0700 = L.marker(
+                [9.71, -84.37],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_b4ffca5602114efb8779cad559a6ff65 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2701f04140d4f7ab0eb0802d8832868 = $(`<div id="html_f2701f04140d4f7ab0eb0802d8832868" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque la Cangreja, Santa Rosa de Puriscal <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1986-12-09 <strong>Recolectores:</strong> Nelson Zamora|Quírico Jiménez <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_b4ffca5602114efb8779cad559a6ff65.setContent(html_f2701f04140d4f7ab0eb0802d8832868);
+        
+
+        marker_46311b2c861d4d0cab88f86ed26c0700.bindPopup(popup_b4ffca5602114efb8779cad559a6ff65)
+        ;
+
+        
+    
+    
+            var marker_0e09c505e852416b9779698e99f7ce68 = L.marker(
+                [9.69722, -84.40833],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_6f44fba2ec284ba68a61491dcffc6e1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ba1ada3b6b445cfa955b47ce6fb0ff0 = $(`<div id="html_6ba1ada3b6b445cfa955b47ce6fb0ff0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cuenca del Tulín. Margen de Quebrada Grande. <strong>Elevación:</strong> 450.0 m  <strong>Fecha:</strong> 1999-09-06 <strong>Recolectores:</strong> Luis Diego Vargas <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_6f44fba2ec284ba68a61491dcffc6e1d.setContent(html_6ba1ada3b6b445cfa955b47ce6fb0ff0);
+        
+
+        marker_0e09c505e852416b9779698e99f7ce68.bindPopup(popup_6f44fba2ec284ba68a61491dcffc6e1d)
+        ;
+
+        
+    
+    
+            var marker_530491cbb3264466a835406ee96deda1 = L.marker(
+                [9.697222, -84.38194399999999],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_9b913939f7c94f54bdf18ce8e4840f10 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_850418b2c5814e5b996989e7b9cb568d = $(`<div id="html_850418b2c5814e5b996989e7b9cb568d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zona Protectora La Cangreja,  Cuenca del Tulín.  Vecindades de Quebrada Grande y Zona Protectora la Cangreja. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1999-02-09 <strong>Recolectores:</strong> Priscilla Hurtado <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_9b913939f7c94f54bdf18ce8e4840f10.setContent(html_850418b2c5814e5b996989e7b9cb568d);
+        
+
+        marker_530491cbb3264466a835406ee96deda1.bindPopup(popup_9b913939f7c94f54bdf18ce8e4840f10)
+        ;
+
+        
+    
+    
+            var marker_7b35041562054afe85caebdc8aec19b7 = L.marker(
+                [9.73, -84.39],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_f5a6725419a2421da282aecbaedd7075 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a95e745417ac4501851ab3ef8a6c14c9 = $(`<div id="html_a95e745417ac4501851ab3ef8a6c14c9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Martin de Puriscal. Cerros de Puriscal. En Tacotal. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1994-11-25 <strong>Recolectores:</strong> Víctor H. Ramírez|et al. <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_f5a6725419a2421da282aecbaedd7075.setContent(html_a95e745417ac4501851ab3ef8a6c14c9);
+        
+
+        marker_7b35041562054afe85caebdc8aec19b7.bindPopup(popup_f5a6725419a2421da282aecbaedd7075)
+        ;
+
+        
+    
+    
+            var marker_84a26a8cb2234e22b4f2da8f4d940cb3 = L.marker(
+                [10.283333, -84.416667],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_621f434e597546c4a48793d014d270b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06adb3eb734e4d05acfacbe6fc35abce = $(`<div id="html_06adb3eb734e4d05acfacbe6fc35abce" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potreros; a orilla de la calle, ruta al Parque Nacional Castrro Blanco, entrando por San Vicente. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-07-19 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; L. Acosta ; Gerardo Soto ; Geovanny Sancho <strong>Identificadores:</strong> Holst, Bruce K.</div>`)[0];
+            popup_621f434e597546c4a48793d014d270b0.setContent(html_06adb3eb734e4d05acfacbe6fc35abce);
+        
+
+        marker_84a26a8cb2234e22b4f2da8f4d940cb3.bindPopup(popup_621f434e597546c4a48793d014d270b0)
+        ;
+
+        
+    
+    
+            var marker_ed3165c0c6d046d0a61ac5b1639567e6 = L.marker(
+                [10.283333, -84.416667],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_7d82d5c48cf04512a6533bee5f7b3f19 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_660c8e81f7074295a2180505d9fdba6e = $(`<div id="html_660c8e81f7074295a2180505d9fdba6e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potreros; a orilla de la calle, ruta al Parque Nacional Castrro Blanco, entrando por San Vicente. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-07-19 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; L. Acosta ; Gerardo Soto ; Geovanny Sancho <strong>Identificadores:</strong> Holst, Bruce K.</div>`)[0];
+            popup_7d82d5c48cf04512a6533bee5f7b3f19.setContent(html_660c8e81f7074295a2180505d9fdba6e);
+        
+
+        marker_ed3165c0c6d046d0a61ac5b1639567e6.bindPopup(popup_7d82d5c48cf04512a6533bee5f7b3f19)
+        ;
+
+        
+    
+    
+            var marker_b427b6008d9a435b9e11f44bc7a1499f = L.marker(
+                [10.283333, -84.416667],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_6fb939c2eb1643df879d97f1640bc0ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6359147fcaf490aae753cb5e987c47b = $(`<div id="html_c6359147fcaf490aae753cb5e987c47b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potreros; a orilla de la calle, ruta al Parque Nacional Castrro Blanco, entrando por San Vicente. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-07-19 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; L. Acosta ; Gerardo Soto ; Geovanny Sancho <strong>Identificadores:</strong> Holst, Bruce K.</div>`)[0];
+            popup_6fb939c2eb1643df879d97f1640bc0ff.setContent(html_c6359147fcaf490aae753cb5e987c47b);
+        
+
+        marker_b427b6008d9a435b9e11f44bc7a1499f.bindPopup(popup_6fb939c2eb1643df879d97f1640bc0ff)
+        ;
+
+        
+    
+    
+            var marker_1169d44ff1ec47cd8390dd5793c74e27 = L.marker(
+                [9.697222, -84.38194399999999],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_8cd1583809084ca7811a2f61ecceed87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94f7dcc4394447fd9e46a7aedac2e0d7 = $(`<div id="html_94f7dcc4394447fd9e46a7aedac2e0d7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mastatal. Camino a Alto Concepci.Ribera Quebrada Grande.on <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2001-06-11 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez <strong>Identificadores:</strong> Acosta, L.</div>`)[0];
+            popup_8cd1583809084ca7811a2f61ecceed87.setContent(html_94f7dcc4394447fd9e46a7aedac2e0d7);
+        
+
+        marker_1169d44ff1ec47cd8390dd5793c74e27.bindPopup(popup_8cd1583809084ca7811a2f61ecceed87)
+        ;
+
+        
+    
+    
+            var marker_7f335a5f077b40e6830aff258c4d2fb1 = L.marker(
+                [9.697222, -84.38194399999999],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_b7ed1d7f39594472945268d2000d3fc1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba9e428e0ecd4b778c5dba3ae545c845 = $(`<div id="html_ba9e428e0ecd4b778c5dba3ae545c845" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mastatal. Camino a Alto Concepci.Ribera Quebrada Grande.on <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2001-06-11 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez <strong>Identificadores:</strong> Acosta, L.</div>`)[0];
+            popup_b7ed1d7f39594472945268d2000d3fc1.setContent(html_ba9e428e0ecd4b778c5dba3ae545c845);
+        
+
+        marker_7f335a5f077b40e6830aff258c4d2fb1.bindPopup(popup_b7ed1d7f39594472945268d2000d3fc1)
+        ;
+
+        
+    
+    
+            var marker_6dae332efa7140e593ed7742f0a315f8 = L.marker(
+                [10.283333, -84.416667],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_c5d4a9e7137348a7837c1c2cb34d67d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1ff7e296d2c4a1abc4b98a10cf87b31 = $(`<div id="html_c1ff7e296d2c4a1abc4b98a10cf87b31" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potreros; a orilla de la calle, ruta al Parque Nacional Castrro Blanco, entrando por San Vicente. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-07-19 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; L. Acosta ; Gerardo Soto ; Geovanny Sancho <strong>Identificadores:</strong> Holst, Bruce K.</div>`)[0];
+            popup_c5d4a9e7137348a7837c1c2cb34d67d7.setContent(html_c1ff7e296d2c4a1abc4b98a10cf87b31);
+        
+
+        marker_6dae332efa7140e593ed7742f0a315f8.bindPopup(popup_c5d4a9e7137348a7837c1c2cb34d67d7)
+        ;
+
+        
+    
+    
+            var marker_e9c4d49a2d914d2aa50668d26c42bded = L.marker(
+                [10.283333, -84.416667],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_003150c96c1b452fa6134a594478b6de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a54ac26c5ff4eff95b55b2f4b21d592 = $(`<div id="html_9a54ac26c5ff4eff95b55b2f4b21d592" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potreros; a orilla de la calle, ruta al Parque Nacional Castrro Blanco, entrando por San Vicente. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-07-19 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; L. Acosta ; Gerardo Soto ; Geovanny Sancho <strong>Identificadores:</strong> Holst, Bruce K.</div>`)[0];
+            popup_003150c96c1b452fa6134a594478b6de.setContent(html_9a54ac26c5ff4eff95b55b2f4b21d592);
+        
+
+        marker_e9c4d49a2d914d2aa50668d26c42bded.bindPopup(popup_003150c96c1b452fa6134a594478b6de)
+        ;
+
+        
+    
+    
+            var marker_66f31775d3744c0db2d75fb986284675 = L.marker(
+                [10.283333, -84.416667],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_8d61103cb3934d49bbb22ae827a1adab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46b65cea866d4c13b0673609c79396d2 = $(`<div id="html_46b65cea866d4c13b0673609c79396d2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potreros; a orilla de la calle, ruta al Parque Nacional Castrro Blanco, entrando por San Vicente. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-07-19 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; L. Acosta ; Gerardo Soto ; Geovanny Sancho <strong>Identificadores:</strong> Holst, Bruce K.</div>`)[0];
+            popup_8d61103cb3934d49bbb22ae827a1adab.setContent(html_46b65cea866d4c13b0673609c79396d2);
+        
+
+        marker_66f31775d3744c0db2d75fb986284675.bindPopup(popup_8d61103cb3934d49bbb22ae827a1adab)
+        ;
+
+        
+    
+    
+            var marker_3ea2b2cd1fd449a5a0ceed00f8186d65 = L.marker(
+                [10.283333, -84.416667],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_ab4f57eab52040c7bf5cc8f2ebbe08b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ce27dc87480458d8a7d861e9cc09b70 = $(`<div id="html_6ce27dc87480458d8a7d861e9cc09b70" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potreros; a orilla de la calle, ruta al Parque Nacional Castrro Blanco, entrando por San Vicente. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-07-19 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; L. Acosta ; Gerardo Soto ; Geovanny Sancho <strong>Identificadores:</strong> Holst, Bruce K.</div>`)[0];
+            popup_ab4f57eab52040c7bf5cc8f2ebbe08b3.setContent(html_6ce27dc87480458d8a7d861e9cc09b70);
+        
+
+        marker_3ea2b2cd1fd449a5a0ceed00f8186d65.bindPopup(popup_ab4f57eab52040c7bf5cc8f2ebbe08b3)
+        ;
+
+        
+    
+    
+            var marker_05bb93b3600f4f319f3ca8bc2d749dc7 = L.marker(
+                [10.283333, -84.416667],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_2799a715bcf547638649add13850d444 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_140077b01760411e8c5cfcac6e5b8e28 = $(`<div id="html_140077b01760411e8c5cfcac6e5b8e28" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potreros; a orilla de la calle, ruta al Parque Nacional Castrro Blanco, entrando por San Vicente. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-07-19 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; L. Acosta ; Gerardo Soto ; Geovanny Sancho <strong>Identificadores:</strong> Holst, Bruce K.</div>`)[0];
+            popup_2799a715bcf547638649add13850d444.setContent(html_140077b01760411e8c5cfcac6e5b8e28);
+        
+
+        marker_05bb93b3600f4f319f3ca8bc2d749dc7.bindPopup(popup_2799a715bcf547638649add13850d444)
+        ;
+
+        
+    
+    
+            var marker_f979599de8084e2caaf008d2188c8acd = L.marker(
+                [10.283333, -84.416667],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_137f5194da53426b90ef6e392e52eb87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_171fc50a47a749f18b97a0ee05d8bfbb = $(`<div id="html_171fc50a47a749f18b97a0ee05d8bfbb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potreros; a orilla de la calle, ruta al Parque Nacional Castrro Blanco, entrando por San Vicente. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-07-19 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; L. Acosta ; Gerardo Soto ; Geovanny Sancho <strong>Identificadores:</strong> Holst, Bruce K.</div>`)[0];
+            popup_137f5194da53426b90ef6e392e52eb87.setContent(html_171fc50a47a749f18b97a0ee05d8bfbb);
+        
+
+        marker_f979599de8084e2caaf008d2188c8acd.bindPopup(popup_137f5194da53426b90ef6e392e52eb87)
+        ;
+
+        
+    
+    
+            var marker_4c49f142260f46dfa43044a4288cd4d5 = L.marker(
+                [10.283333, -84.416667],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_41152d4f8c2a437695cc5bf61fbd3dfc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44e657d03249484d994887f4fe2fe03a = $(`<div id="html_44e657d03249484d994887f4fe2fe03a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potreros; a orilla de la calle, ruta al Parque Nacional Castrro Blanco, entrando por San Vicente. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-07-19 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; L. Acosta ; Gerardo Soto ; Geovanny Sancho <strong>Identificadores:</strong> Holst, Bruce K.</div>`)[0];
+            popup_41152d4f8c2a437695cc5bf61fbd3dfc.setContent(html_44e657d03249484d994887f4fe2fe03a);
+        
+
+        marker_4c49f142260f46dfa43044a4288cd4d5.bindPopup(popup_41152d4f8c2a437695cc5bf61fbd3dfc)
+        ;
+
+        
+    
+    
+            var marker_42a2c4fd871b40e6956a52d0f75497fb = L.marker(
+                [10.283333, -84.416667],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_9d29c4ba4d254f1ba5d0177b501634d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d283764aae34aefae7e7285bd439001 = $(`<div id="html_4d283764aae34aefae7e7285bd439001" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potreros; a orilla de la calle, ruta al Parque Nacional Castrro Blanco, entrando por San Vicente. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-07-19 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; L. Acosta ; Gerardo Soto ; Geovanny Sancho <strong>Identificadores:</strong> Holst, Bruce K.</div>`)[0];
+            popup_9d29c4ba4d254f1ba5d0177b501634d5.setContent(html_4d283764aae34aefae7e7285bd439001);
+        
+
+        marker_42a2c4fd871b40e6956a52d0f75497fb.bindPopup(popup_9d29c4ba4d254f1ba5d0177b501634d5)
+        ;
+
+        
+    
+    
+            var marker_08e041a574de41ddb5842e0d5ca8cba9 = L.marker(
+                [10.283333, -84.416667],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_4e1e733f66fa40e5b1dd2c04a6f38d17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3aeb4a03cd304822bf5d863e688c4b47 = $(`<div id="html_3aeb4a03cd304822bf5d863e688c4b47" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potreros; a orilla de la calle, ruta al Parque Nacional Castrro Blanco, entrando por San Vicente. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-07-19 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; L. Acosta ; Gerardo Soto ; Geovanny Sancho <strong>Identificadores:</strong> Holst, Bruce K.</div>`)[0];
+            popup_4e1e733f66fa40e5b1dd2c04a6f38d17.setContent(html_3aeb4a03cd304822bf5d863e688c4b47);
+        
+
+        marker_08e041a574de41ddb5842e0d5ca8cba9.bindPopup(popup_4e1e733f66fa40e5b1dd2c04a6f38d17)
+        ;
+
+        
+    
+    
+            var marker_333d919bd4d149339a56dac8adbf9d26 = L.marker(
+                [9.699722, -84.38444399999999],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_19ea077e2df344a2bfb7824e6053e92d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bbf9f6bbea3241af99f1691b22f68101 = $(`<div id="html_bbf9f6bbea3241af99f1691b22f68101" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Santa Rosa de Puriscal. Bosque primario en las faldas de Fila La Cangreja. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1992-08-27 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_19ea077e2df344a2bfb7824e6053e92d.setContent(html_bbf9f6bbea3241af99f1691b22f68101);
+        
+
+        marker_333d919bd4d149339a56dac8adbf9d26.bindPopup(popup_19ea077e2df344a2bfb7824e6053e92d)
+        ;
+
+        
+    
+    
+            var marker_decde3bae46a47bcae7647dd190be1a7 = L.marker(
+                [9.697222, -84.408333],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_89b12acbda3141e1b0505e432ca2fda2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c828769268624d1ab7ebe8a2d169f7c7 = $(`<div id="html_c828769268624d1ab7ebe8a2d169f7c7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Margen de Quebrada Grande. <strong>Elevación:</strong> 450.0 m  <strong>Fecha:</strong> 1999-09-06 <strong>Recolectores:</strong> Luis Diego Vargas; Victor Ramírez <strong>Identificadores:</strong> Vargas, Luis Diego</div>`)[0];
+            popup_89b12acbda3141e1b0505e432ca2fda2.setContent(html_c828769268624d1ab7ebe8a2d169f7c7);
+        
+
+        marker_decde3bae46a47bcae7647dd190be1a7.bindPopup(popup_89b12acbda3141e1b0505e432ca2fda2)
+        ;
+
+        
+    
+    
+            var marker_06a5c2d0dc214a71b210f645ac7bb31f = L.marker(
+                [9.697222, -84.408333],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_b2584a64b3f8490cb7466fcd2fd867e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e28db1dfd1094cefb6a3262866c9393f = $(`<div id="html_e28db1dfd1094cefb6a3262866c9393f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Margen de Quebrada Grande. <strong>Elevación:</strong> 450.0 m  <strong>Fecha:</strong> 1999-09-06 <strong>Recolectores:</strong> Luis Diego Vargas; Victor Ramírez <strong>Identificadores:</strong> Vargas, Luis Diego</div>`)[0];
+            popup_b2584a64b3f8490cb7466fcd2fd867e7.setContent(html_e28db1dfd1094cefb6a3262866c9393f);
+        
+
+        marker_06a5c2d0dc214a71b210f645ac7bb31f.bindPopup(popup_b2584a64b3f8490cb7466fcd2fd867e7)
+        ;
+
+        
+    
+    
+            var marker_6589e78a15d445ff99a1ae10a2c12b71 = L.marker(
+                [9.697222, -84.38194399999999],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_438d35f1bcde4a13bd7f90900b8db8d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed8cc34f2af046029926c2aa1aad2f16 = $(`<div id="html_ed8cc34f2af046029926c2aa1aad2f16" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mastatal. Camino a Alto Concepci.Ribera Quebrada Grande.on <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1999-02-09 <strong>Recolectores:</strong> Priscila Hurtado <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_438d35f1bcde4a13bd7f90900b8db8d6.setContent(html_ed8cc34f2af046029926c2aa1aad2f16);
+        
+
+        marker_6589e78a15d445ff99a1ae10a2c12b71.bindPopup(popup_438d35f1bcde4a13bd7f90900b8db8d6)
+        ;
+
+        
+    
+    
+            var marker_cb239d4db39e407d841203b66424deaa = L.marker(
+                [9.697222, -84.38194399999999],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_50de2d6e4d894596804aa4f83116323c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5dce121ecff44a6a65853df7e6cd9dc = $(`<div id="html_f5dce121ecff44a6a65853df7e6cd9dc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mastatal. Camino a Alto Concepci.Ribera Quebrada Grande.on <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1999-02-09 <strong>Recolectores:</strong> Priscila Hurtado <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_50de2d6e4d894596804aa4f83116323c.setContent(html_f5dce121ecff44a6a65853df7e6cd9dc);
+        
+
+        marker_cb239d4db39e407d841203b66424deaa.bindPopup(popup_50de2d6e4d894596804aa4f83116323c)
+        ;
+
+        
+    
+    
+            var marker_49ce3fb0e61a47948cb13c7a41569e81 = L.marker(
+                [9.736111, -84.394444],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_8b1c76de96a74d248b86c2f5e6697490 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee122552b276447e86916c68660132df = $(`<div id="html_ee122552b276447e86916c68660132df" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Martin de Puriscal. En Tacotal. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1994-11-25 <strong>Recolectores:</strong> Victor Ramírez <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_8b1c76de96a74d248b86c2f5e6697490.setContent(html_ee122552b276447e86916c68660132df);
+        
+
+        marker_49ce3fb0e61a47948cb13c7a41569e81.bindPopup(popup_8b1c76de96a74d248b86c2f5e6697490)
+        ;
+
+        
+    
+    
+            var marker_72c3ff4cc4cb4c26a60987360bd46120 = L.marker(
+                [9.733889, -84.392222],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_75bd95a724584fe998b05b8ac03bc619 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b58cc5545e9a4d68924b38fb4613cd3b = $(`<div id="html_b58cc5545e9a4d68924b38fb4613cd3b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Martin de Puriscal, bosque primario remanente en la Fila Vara Blanca, cabecera de Rio Negro,limite NW Cangreja <strong>Elevación:</strong> 875.0 m  <strong>Fecha:</strong> 1995-04-21 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_75bd95a724584fe998b05b8ac03bc619.setContent(html_b58cc5545e9a4d68924b38fb4613cd3b);
+        
+
+        marker_72c3ff4cc4cb4c26a60987360bd46120.bindPopup(popup_75bd95a724584fe998b05b8ac03bc619)
+        ;
+
+        
+    
+    
+            var marker_c944ee37280845e59e941e73ed56b94c = L.marker(
+                [9.711111, -84.386111],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_40f22c46ea9245c2b2856c61819ce8a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e2c365e8cca45389152177c42a0117f = $(`<div id="html_5e2c365e8cca45389152177c42a0117f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1990-10-27 <strong>Recolectores:</strong> Quirico Jiménez <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_40f22c46ea9245c2b2856c61819ce8a3.setContent(html_5e2c365e8cca45389152177c42a0117f);
+        
+
+        marker_c944ee37280845e59e941e73ed56b94c.bindPopup(popup_40f22c46ea9245c2b2856c61819ce8a3)
+        ;
+
+        
+    
+    
+            var marker_050a9fc379c64a05bf6e9dd1512deb89 = L.marker(
+                [9.711111, -84.386111],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_b0a9790e616b43a8a8ec797c78d8efad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef5ad7a0c4874a668c54c599dafbe676 = $(`<div id="html_ef5ad7a0c4874a668c54c599dafbe676" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Santa Rosa de Puriscal. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1988-04-29 <strong>Recolectores:</strong> Quirico Jiménez <strong>Identificadores:</strong> Sánchez Vindas, Pablo E.</div>`)[0];
+            popup_b0a9790e616b43a8a8ec797c78d8efad.setContent(html_ef5ad7a0c4874a668c54c599dafbe676);
+        
+
+        marker_050a9fc379c64a05bf6e9dd1512deb89.bindPopup(popup_b0a9790e616b43a8a8ec797c78d8efad)
+        ;
+
+        
+    
+    
+            var marker_bc083f44e99c4a49a25ce4848a08da26 = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_33a9d80e20db415eb4288c7631602ea6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49d467ce8d454129bb5f407dca459278 = $(`<div id="html_49d467ce8d454129bb5f407dca459278" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1988-04-29 <strong>Recolectores:</strong> Q. Jiménez M. & R. Sánchez <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_33a9d80e20db415eb4288c7631602ea6.setContent(html_49d467ce8d454129bb5f407dca459278);
+        
+
+        marker_bc083f44e99c4a49a25ce4848a08da26.bindPopup(popup_33a9d80e20db415eb4288c7631602ea6)
+        ;
+
+        
+    
+    
+            var marker_6555cacc80b24072ab69cc87577f7561 = L.marker(
+                [9.71, -84.39],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_d34f7ed011cb4f42bc57829dbe6253b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01eebb40f61e42cc8c20b99a3a57645e = $(`<div id="html_01eebb40f61e42cc8c20b99a3a57645e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Jose: Zona Protectora La Cangreja Santa Rosa de Puriscal <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1988-04-29 <strong>Recolectores:</strong> Jimenez, Q.; Sanchez, P. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_d34f7ed011cb4f42bc57829dbe6253b5.setContent(html_01eebb40f61e42cc8c20b99a3a57645e);
+        
+
+        marker_6555cacc80b24072ab69cc87577f7561.bindPopup(popup_d34f7ed011cb4f42bc57829dbe6253b5)
+        ;
+
+        
+    
+    
+            var marker_e4325a8d33e840d28e3de0a797cbda11 = L.marker(
+                [9.67, -84.39],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_8ae818fb519e4bbdbb51946ffec73c88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91e42f92e4664b48b02af8ecb4a4fc60 = $(`<div id="html_91e42f92e4664b48b02af8ecb4a4fc60" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. La Cangreja Mastatal. Margen de Río Negro. Bosque en ladera. <strong>Elevación:</strong> 450.0 m  <strong>Fecha:</strong> 2003-11-06 <strong>Recolectores:</strong> Lobo, Silvia <strong>Identificadores:</strong> Lobo, Silvia</div>`)[0];
+            popup_8ae818fb519e4bbdbb51946ffec73c88.setContent(html_91e42f92e4664b48b02af8ecb4a4fc60);
+        
+
+        marker_e4325a8d33e840d28e3de0a797cbda11.bindPopup(popup_8ae818fb519e4bbdbb51946ffec73c88)
+        ;
+
+        
+    
+    
+            var marker_83037a04a22d4b258f19a28d89912d52 = L.marker(
+                [9.71, -84.38],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_bb7bf5211d7d4c8d9b4c5df8dc800e60 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3d8e8401c96463bbe044dbdcc0a4b97 = $(`<div id="html_b3d8e8401c96463bbe044dbdcc0a4b97" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. La Cangreja Santa Rosa de Puriscal. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1988-04-29 <strong>Recolectores:</strong> Jiménez, Quírico <strong>Identificadores:</strong> Sánchez, Pablo E.</div>`)[0];
+            popup_bb7bf5211d7d4c8d9b4c5df8dc800e60.setContent(html_b3d8e8401c96463bbe044dbdcc0a4b97);
+        
+
+        marker_83037a04a22d4b258f19a28d89912d52.bindPopup(popup_bb7bf5211d7d4c8d9b4c5df8dc800e60)
+        ;
+
+        
+    
+    
+            var marker_8089bff97e924f91baff3b28152fbf20 = L.marker(
+                [9.7, -84.39],
+                {}
+            ).addTo(marker_cluster_6fb59820e1a84663b42834bcf00f2fc0);
+        
+    
+        var popup_6556b0c8d8964f6d83ce39b71c059a09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69403410505c40b097117049acf06335 = $(`<div id="html_69403410505c40b097117049acf06335" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. La Cangreja Santa Rosa de Puriscal, Bosque la Cangreja. Común en ladera junto al río Negro. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1986-11-12 <strong>Recolectores:</strong> Zamora, Nelson <strong>Identificadores:</strong> P. Sánchez y Q. Jiménez</div>`)[0];
+            popup_6556b0c8d8964f6d83ce39b71c059a09.setContent(html_69403410505c40b097117049acf06335);
+        
+
+        marker_8089bff97e924f91baff3b28152fbf20.bindPopup(popup_6556b0c8d8964f6d83ce39b71c059a09)
+        ;
+
+        
+    
+    
+            var layer_control_a6349af3c7414c61a49050ee4118bbb6 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_357e8356a7b949c9bfc9740324e208d7,
+                    "ESRI World Imagery" : tile_layer_1c9ad4adfb1f423c8912b7dc64655718,
+                },
+                overlays :  {
+                    "macro_element_6fb59820e1a84663b42834bcf00f2fc0" : marker_cluster_6fb59820e1a84663b42834bcf00f2fc0,
+                },
+            };
+            L.control.layers(
+                layer_control_a6349af3c7414c61a49050ee4118bbb6.base_layers,
+                layer_control_a6349af3c7414c61a49050ee4118bbb6.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_aa4c68a0bbe94032b2e3c036bfd735a3);
+            tile_layer_1c9ad4adfb1f423c8912b7dc64655718.remove();
+        
+</script>

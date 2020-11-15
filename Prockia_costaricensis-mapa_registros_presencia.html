@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2b78375a19304bd8a440597c05a94d1e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2b78375a19304bd8a440597c05a94d1e" ></div>
+        
+</body>
+<script>    
+    
+            var map_2b78375a19304bd8a440597c05a94d1e = L.map(
+                "map_2b78375a19304bd8a440597c05a94d1e",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_2b78375a19304bd8a440597c05a94d1e);
+
+            
+
+        
+    
+            var tile_layer_acc2abb1d6764d6896615912d023aa2c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+            var tile_layer_52d45444f6c64612bf07ac0c5d731e40 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+            var circle_marker_d2d39a9621d54e3f9af9a3ecd9807304 = L.circleMarker(
+                [11.020306, -85.49292],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_979046a37b004eb48657a012f81bea6e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_609b1ed73643462f8f93f201dea06843 = $(`<div id="html_609b1ed73643462f8f93f201dea06843" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2019-04-17 10:00:00 <strong>Recolectores:</strong> nan <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_979046a37b004eb48657a012f81bea6e.setContent(html_609b1ed73643462f8f93f201dea06843);
+        
+
+        circle_marker_d2d39a9621d54e3f9af9a3ecd9807304.bindPopup(popup_979046a37b004eb48657a012f81bea6e)
+        ;
+
+        
+    
+    
+            var circle_marker_3e024fd2b0a34f10a1454bd6903b8abb = L.circleMarker(
+                [10.765722, -85.201833],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_dd1f1ea389a44131a5c029f1c7876a1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65a6c81d315544b08b283452d3905aff = $(`<div id="html_65a6c81d315544b08b283452d3905aff" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2019-04-17 10:00:00 <strong>Recolectores:</strong> nan <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_dd1f1ea389a44131a5c029f1c7876a1b.setContent(html_65a6c81d315544b08b283452d3905aff);
+        
+
+        circle_marker_3e024fd2b0a34f10a1454bd6903b8abb.bindPopup(popup_dd1f1ea389a44131a5c029f1c7876a1b)
+        ;
+
+        
+    
+    
+            var circle_marker_149db074e8584ddea6b0d935f285b018 = L.circleMarker(
+                [10.58, -84.98527],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_107e163883044304b4d4e9558190ffff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f5592dccc9d4e298cf6dbe3212a3868 = $(`<div id="html_2f5592dccc9d4e298cf6dbe3212a3868" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcán Tenorio. Cuenca del San Carlos. Sector Rancho Capú. Colectando en bosque secundario y potrero. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 2000-07-10 00:00:00 <strong>Recolectores:</strong> José Luis Chaves <strong>Identificadores:</strong> N. Zamora, VII/</div>`)[0];
+            popup_107e163883044304b4d4e9558190ffff.setContent(html_2f5592dccc9d4e298cf6dbe3212a3868);
+        
+
+        circle_marker_149db074e8584ddea6b0d935f285b018.bindPopup(popup_107e163883044304b4d4e9558190ffff)
+        ;
+
+        
+    
+    
+            var circle_marker_a80fd3164ac94b26ae160dbcffd6a3ff = L.circleMarker(
+                [10.72, -85.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_49c6488e59ff4270bdf36ca980dca77d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_574c26275c34421eb4acee28678a84b3 = $(`<div id="html_574c26275c34421eb4acee28678a84b3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bijagua El Pilón, de la intersección del camino San Miguel a El Pilón con el Río Chimurria, aguas arriba, margen izquierda <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1988-07-13 00:00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> M.H. Alford (BH)</div>`)[0];
+            popup_49c6488e59ff4270bdf36ca980dca77d.setContent(html_574c26275c34421eb4acee28678a84b3);
+        
+
+        circle_marker_a80fd3164ac94b26ae160dbcffd6a3ff.bindPopup(popup_49c6488e59ff4270bdf36ca980dca77d)
+        ;
+
+        
+    
+    
+            var circle_marker_4e706640f8ea4270b0842360b742c95b = L.circleMarker(
+                [10.73833, -85.25555],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_ed64e6d6096d49129bd359538d759fd4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e727f3ec01c4466bbc6e6976001cef6 = $(`<div id="html_0e727f3ec01c4466bbc6e6976001cef6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. Nac. Rincón de la Vieja Sector Sureste. Camino a Don Lalo. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1991-07-11 00:00:00 <strong>Recolectores:</strong> Gerardo Rivera <strong>Identificadores:</strong> M.H. Alford (BH)</div>`)[0];
+            popup_ed64e6d6096d49129bd359538d759fd4.setContent(html_0e727f3ec01c4466bbc6e6976001cef6);
+        
+
+        circle_marker_4e706640f8ea4270b0842360b742c95b.bindPopup(popup_ed64e6d6096d49129bd359538d759fd4)
+        ;
+
+        
+    
+    
+            var circle_marker_b9b9f2fafe8e4937950c2235f972d13e = L.circleMarker(
+                [10.768056, -85.294444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_8249fd6a451a49f997a6b2d492323221 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac734ef311754964b9fa2d561412195e = $(`<div id="html_ac734ef311754964b9fa2d561412195e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. Nac. Rincón de la Vieja.  Sendero de la toma de agua, a 3 Km. de la estación. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1990-09-17 00:00:00 <strong>Recolectores:</strong> Gerardo Rivera <strong>Identificadores:</strong> M.H. Alford (BH)</div>`)[0];
+            popup_8249fd6a451a49f997a6b2d492323221.setContent(html_ac734ef311754964b9fa2d561412195e);
+        
+
+        circle_marker_b9b9f2fafe8e4937950c2235f972d13e.bindPopup(popup_8249fd6a451a49f997a6b2d492323221)
+        ;
+
+        
+    
+    
+            var circle_marker_cf943bcec87b49558c5f420a8fc8f312 = L.circleMarker(
+                [10.766667, -85.3125],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_cdb92df9110348a6a6854c3105c9d950 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6761fd853e2847fb8c5e63ee3bc5f8c9 = $(`<div id="html_6761fd853e2847fb8c5e63ee3bc5f8c9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. Nac. Rincón de la Vieja Sendero Laguna Santa María. Finca Las Moras. Sendero Las Pailas. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1990-10-12 00:00:00 <strong>Recolectores:</strong> Gerardo Rivera <strong>Identificadores:</strong> M.H. Alford (BH)</div>`)[0];
+            popup_cdb92df9110348a6a6854c3105c9d950.setContent(html_6761fd853e2847fb8c5e63ee3bc5f8c9);
+        
+
+        circle_marker_cf943bcec87b49558c5f420a8fc8f312.bindPopup(popup_cdb92df9110348a6a6854c3105c9d950)
+        ;
+
+        
+    
+    
+            var circle_marker_9429ab45a9864194b0eb3eeff6496915 = L.circleMarker(
+                [10.75, -85.28333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_98011951fbaf4e4487dd54bc157d8ab4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_abcbe0d746cc41bf8cf5e946a1e64274 = $(`<div id="html_abcbe0d746cc41bf8cf5e946a1e64274" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 25 Km NE of Liberia on the road to Colonia Blanca. Tropical moist forest. <strong>Elevación:</strong> 1048.0 m  <strong>Fecha:</strong> 2002-03-21 00:00:00 <strong>Recolectores:</strong> Mac H. Alford <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_98011951fbaf4e4487dd54bc157d8ab4.setContent(html_abcbe0d746cc41bf8cf5e946a1e64274);
+        
+
+        circle_marker_9429ab45a9864194b0eb3eeff6496915.bindPopup(popup_98011951fbaf4e4487dd54bc157d8ab4)
+        ;
+
+        
+    
+    
+            var circle_marker_1ef73d172a834fba98ffc360218477fc = L.circleMarker(
+                [9.89166, -83.19166],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_ba4e9999657b43549062a5a35ef53406 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2a16412974e42f4b10c7fc40894550f = $(`<div id="html_a2a16412974e42f4b10c7fc40894550f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Faja Costeña de Limón. Asunción. La Bomba <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1995-05-16 00:00:00 <strong>Recolectores:</strong> Alexánder Rodríguez|Armando Estrada|Quírico Jiménez <strong>Identificadores:</strong> M.H. Alford (BH)</div>`)[0];
+            popup_ba4e9999657b43549062a5a35ef53406.setContent(html_a2a16412974e42f4b10c7fc40894550f);
+        
+
+        circle_marker_1ef73d172a834fba98ffc360218477fc.bindPopup(popup_ba4e9999657b43549062a5a35ef53406)
+        ;
+
+        
+    
+    
+            var circle_marker_77c476c5ed32487db4358cc7c07356b2 = L.circleMarker(
+                [10.8, -85.32],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_482ab2cdb24d4f36baad2e3e34d77c37 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e854d05d93514eb08b4889426847888f = $(`<div id="html_e854d05d93514eb08b4889426847888f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Rincón de la Vieja <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1984-10-18 00:00:00 <strong>Recolectores:</strong> Nelson Zamora|Luis J. Poveda Álvarez|Curso de Dendrología II <strong>Identificadores:</strong> M.H. Alford (BH)</div>`)[0];
+            popup_482ab2cdb24d4f36baad2e3e34d77c37.setContent(html_e854d05d93514eb08b4889426847888f);
+        
+
+        circle_marker_77c476c5ed32487db4358cc7c07356b2.bindPopup(popup_482ab2cdb24d4f36baad2e3e34d77c37)
+        ;
+
+        
+    
+    
+            var circle_marker_06a967dc02684ad39e9fbc11fabb4e0b = L.circleMarker(
+                [10.553611, -84.975],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_9d1a4efb3ca04c9d853e95716db6e9f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af85a35594e140fe859b14c80b450836 = $(`<div id="html_af85a35594e140fe859b14c80b450836" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> NW edge of Lake Arenal. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1965-07-13 00:00:00 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> Mac Alford (BH)</div>`)[0];
+            popup_9d1a4efb3ca04c9d853e95716db6e9f0.setContent(html_af85a35594e140fe859b14c80b450836);
+        
+
+        circle_marker_06a967dc02684ad39e9fbc11fabb4e0b.bindPopup(popup_9d1a4efb3ca04c9d853e95716db6e9f0)
+        ;
+
+        
+    
+    
+            var circle_marker_4cbea4eb9fc743478a09c3cb6da5dff9 = L.circleMarker(
+                [10.76, -85.28],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_e2f1004244c548bebf8354294719645c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc28fb2573b344c3983102006b95e4b3 = $(`<div id="html_bc28fb2573b344c3983102006b95e4b3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rich rain forest being selectively cut about 25.5 km northeast of Liberia on the road to Colonia Blancas <strong>Elevación:</strong> 822.96 m  <strong>Fecha:</strong> 1976-07-09 00:00:00 <strong>Recolectores:</strong> Robert L. Wilbur <strong>Identificadores:</strong> M.H. Alford (BH)</div>`)[0];
+            popup_e2f1004244c548bebf8354294719645c.setContent(html_bc28fb2573b344c3983102006b95e4b3);
+        
+
+        circle_marker_4cbea4eb9fc743478a09c3cb6da5dff9.bindPopup(popup_e2f1004244c548bebf8354294719645c)
+        ;
+
+        
+    
+    
+            var circle_marker_0d178c30ac574a5aa5e69294a43bd7a0 = L.circleMarker(
+                [10.965833, -85.321333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_b77bef2382fd417283a2c41e3e7eebcd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ea4d0a3a379497eb222b47493c0e57c = $(`<div id="html_5ea4d0a3a379497eb222b47493c0e57c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alajuela, Upala, Dos Ríos, La Jabalina. Área de Conservación Guanacaste, Sector Rincon Rain Forest, Estación Wege. <strong>Elevación:</strong> 415.0 m  <strong>Fecha:</strong> 2015-09-12 00:00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Roberto Espinoza ; Enia Navarro ; Braulio Hernández ; Jorge Hernández <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_b77bef2382fd417283a2c41e3e7eebcd.setContent(html_5ea4d0a3a379497eb222b47493c0e57c);
+        
+
+        circle_marker_0d178c30ac574a5aa5e69294a43bd7a0.bindPopup(popup_b77bef2382fd417283a2c41e3e7eebcd)
+        ;
+
+        
+    
+    
+            var circle_marker_e8d151d8f90c441ca57daa57570cf7ae = L.circleMarker(
+                [10.965833, -85.321333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_4cd741f14eb449ce869a51e1de7c4615 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_894dfe716b3440eb9717aa203b9b14ba = $(`<div id="html_894dfe716b3440eb9717aa203b9b14ba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alajuela, Upala, Dos Ríos, La Jabalina. Área de Conservación Guanacaste, Sector Rincon Rain Forest, Estación Wege. <strong>Elevación:</strong> 415.0 m  <strong>Fecha:</strong> 2015-09-12 00:00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Roberto Espinoza ; Enia Navarro ; Braulio Hernández ; Jorge Hernández <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_4cd741f14eb449ce869a51e1de7c4615.setContent(html_894dfe716b3440eb9717aa203b9b14ba);
+        
+
+        circle_marker_e8d151d8f90c441ca57daa57570cf7ae.bindPopup(popup_4cd741f14eb449ce869a51e1de7c4615)
+        ;
+
+        
+    
+    
+            var circle_marker_cca231722e324c9eada80357c7d005c9 = L.circleMarker(
+                [10.965833, -85.321333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_514544ed40a34054b64155eccc658df9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86c5edb852fb41b582ad9da7d36091ea = $(`<div id="html_86c5edb852fb41b582ad9da7d36091ea" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alajuela, Upala, Dos Ríos, La Jabalina. Área de Conservación Guanacaste, Sector Rincon Rain Forest, Estación Wege. <strong>Elevación:</strong> 415.0 m  <strong>Fecha:</strong> 2015-09-12 00:00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Roberto Espinoza ; Enia Navarro ; Braulio Hernández ; Jorge Hernández <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_514544ed40a34054b64155eccc658df9.setContent(html_86c5edb852fb41b582ad9da7d36091ea);
+        
+
+        circle_marker_cca231722e324c9eada80357c7d005c9.bindPopup(popup_514544ed40a34054b64155eccc658df9)
+        ;
+
+        
+    
+    
+            var circle_marker_21cae24e85284f1ea8849ef406686305 = L.circleMarker(
+                [10.765722, -85.201833],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_a1fd1b8e6707413bbe69ac281cb310bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f66afd700f5468a882c6ccd4742dd37 = $(`<div id="html_3f66afd700f5468a882c6ccd4742dd37" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Naranjales. Camino a Colonia Blanca, hacia el canal de la toma de agua de Liberia. <strong>Elevación:</strong> 625.0 m  <strong>Fecha:</strong> 2015-02-14 00:00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Roberto Espinoza ; Enia Navarro ; Alejandro Azofeifa Zúñiga ; Carlos Viquez <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_a1fd1b8e6707413bbe69ac281cb310bd.setContent(html_3f66afd700f5468a882c6ccd4742dd37);
+        
+
+        circle_marker_21cae24e85284f1ea8849ef406686305.bindPopup(popup_a1fd1b8e6707413bbe69ac281cb310bd)
+        ;
+
+        
+    
+    
+            var circle_marker_50910e3f6ded48f8a98c7a30c59fbace = L.circleMarker(
+                [10.765722, -85.201833],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_20868816eb0a465498a292720fefc989 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bab35e517c3e4ca792f909bd1c500c5e = $(`<div id="html_bab35e517c3e4ca792f909bd1c500c5e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Naranjales. Camino a Colonia Blanca, hacia el canal de la toma de agua de Liberia. <strong>Elevación:</strong> 625.0 m  <strong>Fecha:</strong> 2015-02-14 00:00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Roberto Espinoza ; Enia Navarro ; Alejandro Azofeifa Zúñiga ; Carlos Viquez <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_20868816eb0a465498a292720fefc989.setContent(html_bab35e517c3e4ca792f909bd1c500c5e);
+        
+
+        circle_marker_50910e3f6ded48f8a98c7a30c59fbace.bindPopup(popup_20868816eb0a465498a292720fefc989)
+        ;
+
+        
+    
+    
+            var circle_marker_1fb6393f8f4e4258ba31a9267addc616 = L.circleMarker(
+                [10.765722, -85.201833],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_6afbdf1828f94c378caa4c8dca126d9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3e172841ba04ea2ad94f4c230286848 = $(`<div id="html_c3e172841ba04ea2ad94f4c230286848" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Naranjales. Camino a Colonia Blanca, hacia el canal de la toma de agua de Liberia. <strong>Elevación:</strong> 625.0 m  <strong>Fecha:</strong> 2015-02-14 00:00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Roberto Espinoza ; Enia Navarro ; Alejandro Azofeifa Zúñiga ; Carlos Viquez <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_6afbdf1828f94c378caa4c8dca126d9c.setContent(html_c3e172841ba04ea2ad94f4c230286848);
+        
+
+        circle_marker_1fb6393f8f4e4258ba31a9267addc616.bindPopup(popup_6afbdf1828f94c378caa4c8dca126d9c)
+        ;
+
+        
+    
+    
+            var circle_marker_c36bcdf67d2c44309e8b147db7e4c2c6 = L.circleMarker(
+                [10.649611, -85.042611],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_3d64f91ffaf547f2906406340c6be550 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f314e44dad0a46e7ace60c393a4b7a3f = $(`<div id="html_f314e44dad0a46e7ace60c393a4b7a3f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cañas, Palmira, Nueva Guatemala. Cuenca alta del Río Martirio, cerca al punto de la torre de la Paja de Agua. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 2012-07-12 00:00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Alejandro Azofeifa Zúñiga ; O. Jarquin <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_3d64f91ffaf547f2906406340c6be550.setContent(html_f314e44dad0a46e7ace60c393a4b7a3f);
+        
+
+        circle_marker_c36bcdf67d2c44309e8b147db7e4c2c6.bindPopup(popup_3d64f91ffaf547f2906406340c6be550)
+        ;
+
+        
+    
+    
+            var circle_marker_54a452bac6214d42b03f150a286d284a = L.circleMarker(
+                [10.649611, -85.042611],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_e611a4b02ea049b6bc4abd01e9c9c06f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a673fa18adca403dad2eeb31c2d269e3 = $(`<div id="html_a673fa18adca403dad2eeb31c2d269e3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cañas, Palmira, Nueva Guatemala. Cuenca alta del Río Martirio, cerca al punto de la torre de la Paja de Agua. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 2012-07-12 00:00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Alejandro Azofeifa Zúñiga ; O. Jarquin <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_e611a4b02ea049b6bc4abd01e9c9c06f.setContent(html_a673fa18adca403dad2eeb31c2d269e3);
+        
+
+        circle_marker_54a452bac6214d42b03f150a286d284a.bindPopup(popup_e611a4b02ea049b6bc4abd01e9c9c06f)
+        ;
+
+        
+    
+    
+            var circle_marker_605fb5d6dd7c4a6a9d0b321d9bfae8a7 = L.circleMarker(
+                [10.649611, -85.042611],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_c9d5cf369b9a4afdb1359db85bdbef6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89e1a789f5814e63a24e3cfbbe581388 = $(`<div id="html_89e1a789f5814e63a24e3cfbbe581388" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cañas, Palmira, Nueva Guatemala. Cuenca alta del Río Martirio, cerca al punto de la torre de la Paja de Agua. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 2012-07-12 00:00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Alejandro Azofeifa Zúñiga ; O. Jarquin <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_c9d5cf369b9a4afdb1359db85bdbef6d.setContent(html_89e1a789f5814e63a24e3cfbbe581388);
+        
+
+        circle_marker_605fb5d6dd7c4a6a9d0b321d9bfae8a7.bindPopup(popup_c9d5cf369b9a4afdb1359db85bdbef6d)
+        ;
+
+        
+    
+    
+            var circle_marker_1f2c2d8333f54bebb0a2e9fad21aa6f5 = L.circleMarker(
+                [10.649611, -85.042611],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_034ccabef44a477bb4674f76277c621c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0939c373da0c4e69ac90832e088f9df7 = $(`<div id="html_0939c373da0c4e69ac90832e088f9df7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cañas, Palmira, Nueva Guatemala. Cuenca alta del Río Martirio, cerca al punto de la torre de la Paja de Agua. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 2012-07-12 00:00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Alejandro Azofeifa Zúñiga ; O. Jarquin <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_034ccabef44a477bb4674f76277c621c.setContent(html_0939c373da0c4e69ac90832e088f9df7);
+        
+
+        circle_marker_1f2c2d8333f54bebb0a2e9fad21aa6f5.bindPopup(popup_034ccabef44a477bb4674f76277c621c)
+        ;
+
+        
+    
+    
+            var circle_marker_f41bd46129b44dd9b80fd29af8b5ffc3 = L.circleMarker(
+                [10.740886999999999, -85.094444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_ba60889a95b449598986a890087438ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fbd7b1715c544b23bdf6400dffd9cb8c = $(`<div id="html_fbd7b1715c544b23bdf6400dffd9cb8c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Miravalles. Sector Altamira. <strong>Elevación:</strong> 675.0 m  <strong>Fecha:</strong> 1995-08-23 00:00:00 <strong>Recolectores:</strong> Darin Penneys; William Haber ; Willow Zuchowski <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_ba60889a95b449598986a890087438ef.setContent(html_fbd7b1715c544b23bdf6400dffd9cb8c);
+        
+
+        circle_marker_f41bd46129b44dd9b80fd29af8b5ffc3.bindPopup(popup_ba60889a95b449598986a890087438ef)
+        ;
+
+        
+    
+    
+            var circle_marker_08fa89cf630549a0a68a14e258d935ea = L.circleMarker(
+                [10.740886999999999, -85.094444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_2ca52885555e4c21af3f630cbc8ebc3c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ccb27441862a4eaaad6061cb1845044a = $(`<div id="html_ccb27441862a4eaaad6061cb1845044a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Miravalles. Sector Altamira. <strong>Elevación:</strong> 675.0 m  <strong>Fecha:</strong> 1995-08-23 00:00:00 <strong>Recolectores:</strong> Darin Penneys; William Haber ; Willow Zuchowski <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_2ca52885555e4c21af3f630cbc8ebc3c.setContent(html_ccb27441862a4eaaad6061cb1845044a);
+        
+
+        circle_marker_08fa89cf630549a0a68a14e258d935ea.bindPopup(popup_2ca52885555e4c21af3f630cbc8ebc3c)
+        ;
+
+        
+    
+    
+            var circle_marker_cd2cbc9bfd16448fab23870fd1b3cf4b = L.circleMarker(
+                [10.740886999999999, -85.094444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_0a5a139eae4e4642ab2ef16a98b92940 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8c5b3ee31cc4ac2aceb03b23500f017 = $(`<div id="html_d8c5b3ee31cc4ac2aceb03b23500f017" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Miravalles. Sector Altamira. <strong>Elevación:</strong> 675.0 m  <strong>Fecha:</strong> 1995-08-23 00:00:00 <strong>Recolectores:</strong> Darin Penneys; William Haber ; Willow Zuchowski <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_0a5a139eae4e4642ab2ef16a98b92940.setContent(html_d8c5b3ee31cc4ac2aceb03b23500f017);
+        
+
+        circle_marker_cd2cbc9bfd16448fab23870fd1b3cf4b.bindPopup(popup_0a5a139eae4e4642ab2ef16a98b92940)
+        ;
+
+        
+    
+    
+            var circle_marker_24a0061675f84a7e9c5c7d498158cf25 = L.circleMarker(
+                [10.740886999999999, -85.094444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_74879f9d84db47c7b29e6eeac2bb336d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7bc64929a07c470987e9326f2a8551c9 = $(`<div id="html_7bc64929a07c470987e9326f2a8551c9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Miravalles. Sector Altamira. <strong>Elevación:</strong> 675.0 m  <strong>Fecha:</strong> 1995-08-23 00:00:00 <strong>Recolectores:</strong> Darin Penneys; William Haber ; Willow Zuchowski <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_74879f9d84db47c7b29e6eeac2bb336d.setContent(html_7bc64929a07c470987e9326f2a8551c9);
+        
+
+        circle_marker_24a0061675f84a7e9c5c7d498158cf25.bindPopup(popup_74879f9d84db47c7b29e6eeac2bb336d)
+        ;
+
+        
+    
+    
+            var circle_marker_67a4f269327743f789188a0eee05e6bf = L.circleMarker(
+                [10.740886999999999, -85.094444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_a9ab6a8f1e734dbe8d1f35d80e1d21e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7cb7652ff10c4f779083bcfc197c900a = $(`<div id="html_7cb7652ff10c4f779083bcfc197c900a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Miravalles. Sector Altamira. <strong>Elevación:</strong> 675.0 m  <strong>Fecha:</strong> 1995-08-23 00:00:00 <strong>Recolectores:</strong> Darin Penneys; William Haber ; Willow Zuchowski <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_a9ab6a8f1e734dbe8d1f35d80e1d21e2.setContent(html_7cb7652ff10c4f779083bcfc197c900a);
+        
+
+        circle_marker_67a4f269327743f789188a0eee05e6bf.bindPopup(popup_a9ab6a8f1e734dbe8d1f35d80e1d21e2)
+        ;
+
+        
+    
+    
+            var circle_marker_ba16408691664707ba3c3e2603cefe1d = L.circleMarker(
+                [10.58, -84.98527800000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_4fc7b192e5594cb8a0cccdbee7809fa3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c875191d1c6546a8b1f42c5d188649da = $(`<div id="html_c875191d1c6546a8b1f42c5d188649da" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Volcán Tenorio. Sector Rancho Capú. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 2000-07-10 00:00:00 <strong>Recolectores:</strong> Jose Luis Chaves <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_4fc7b192e5594cb8a0cccdbee7809fa3.setContent(html_c875191d1c6546a8b1f42c5d188649da);
+        
+
+        circle_marker_ba16408691664707ba3c3e2603cefe1d.bindPopup(popup_4fc7b192e5594cb8a0cccdbee7809fa3)
+        ;
+
+        
+    
+    
+            var circle_marker_29e5b82a7d7b47909c1715ffc5779548 = L.circleMarker(
+                [10.58, -84.98527800000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_63051923a7904b23a1468902a2fd16cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b295554a62fe4e988b8da38443568b0a = $(`<div id="html_b295554a62fe4e988b8da38443568b0a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Volcán Tenorio. Sector Rancho Capú. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 2000-07-10 00:00:00 <strong>Recolectores:</strong> Jose Luis Chaves <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_63051923a7904b23a1468902a2fd16cc.setContent(html_b295554a62fe4e988b8da38443568b0a);
+        
+
+        circle_marker_29e5b82a7d7b47909c1715ffc5779548.bindPopup(popup_63051923a7904b23a1468902a2fd16cc)
+        ;
+
+        
+    
+    
+            var circle_marker_fb7a98e246f94e428e956196b8534798 = L.circleMarker(
+                [10.58, -84.98527800000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_efd9fb5b8b7042d7bb5da20909ff8111 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_452fbb28d25541188bb33caf168fc2bb = $(`<div id="html_452fbb28d25541188bb33caf168fc2bb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Volcán Tenorio. Sector Rancho Capú. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 2000-07-10 00:00:00 <strong>Recolectores:</strong> Jose Luis Chaves <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_efd9fb5b8b7042d7bb5da20909ff8111.setContent(html_452fbb28d25541188bb33caf168fc2bb);
+        
+
+        circle_marker_fb7a98e246f94e428e956196b8534798.bindPopup(popup_efd9fb5b8b7042d7bb5da20909ff8111)
+        ;
+
+        
+    
+    
+            var circle_marker_69bf7228594a4614bcb1311c3928a8a3 = L.circleMarker(
+                [10.58, -84.98527800000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_e2736529d41349f6b9066fbed72863dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c36712a9eaf7454db7c44a37609a9afa = $(`<div id="html_c36712a9eaf7454db7c44a37609a9afa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Volcán Tenorio. Sector Rancho Capú. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 2000-07-10 00:00:00 <strong>Recolectores:</strong> Jose Luis Chaves <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_e2736529d41349f6b9066fbed72863dc.setContent(html_c36712a9eaf7454db7c44a37609a9afa);
+        
+
+        circle_marker_69bf7228594a4614bcb1311c3928a8a3.bindPopup(popup_e2736529d41349f6b9066fbed72863dc)
+        ;
+
+        
+    
+    
+            var circle_marker_bb82ca4c07134fc4ad9ca40a02fb4d3e = L.circleMarker(
+                [9.891667, -83.19166700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_180dae3b7d5647b6beca24f0231296d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e07bb6410b7841cd88ed77e806eb1809 = $(`<div id="html_e07bb6410b7841cd88ed77e806eb1809" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Bomba. Asuncion. Fila de Matama. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1995-09-05 00:00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_180dae3b7d5647b6beca24f0231296d1.setContent(html_e07bb6410b7841cd88ed77e806eb1809);
+        
+
+        circle_marker_bb82ca4c07134fc4ad9ca40a02fb4d3e.bindPopup(popup_180dae3b7d5647b6beca24f0231296d1)
+        ;
+
+        
+    
+    
+            var circle_marker_89c5cee86bf84ecab64a67a18039ec38 = L.circleMarker(
+                [10.75, -85.291111],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_fa29db65ad204e358ca712b435572e13 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_118a733c49ac4f6fa1d8020e6157615a = $(`<div id="html_118a733c49ac4f6fa1d8020e6157615a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Los Naranjos, sobre camino a San Jorge, en el limite del parque nac. <strong>Elevación:</strong> 750.0 m  <strong>Fecha:</strong> 1990-10-16 00:00:00 <strong>Recolectores:</strong> Gerardo Rivera <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_fa29db65ad204e358ca712b435572e13.setContent(html_118a733c49ac4f6fa1d8020e6157615a);
+        
+
+        circle_marker_89c5cee86bf84ecab64a67a18039ec38.bindPopup(popup_fa29db65ad204e358ca712b435572e13)
+        ;
+
+        
+    
+    
+            var circle_marker_156290cccd6f400a82385da118efe6ab = L.circleMarker(
+                [10.738333, -85.255556],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_1c0c2ef30c844c678c65b4fa71b855ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d2fcf837f124186843c5440b6119c91 = $(`<div id="html_9d2fcf837f124186843c5440b6119c91" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Sureste. Camino a Don Lalo. Alrededores del Cerro Mogote. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1991-07-11 00:00:00 <strong>Recolectores:</strong> Gerardo Rivera <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_1c0c2ef30c844c678c65b4fa71b855ea.setContent(html_9d2fcf837f124186843c5440b6119c91);
+        
+
+        circle_marker_156290cccd6f400a82385da118efe6ab.bindPopup(popup_1c0c2ef30c844c678c65b4fa71b855ea)
+        ;
+
+        
+    
+    
+            var circle_marker_3cae02ab6e114e35a9531b6cf81e7ac4 = L.circleMarker(
+                [9.891667, -83.19166700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_ac6e33030178433283d532ad4c6e47ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b22b26546af54b119f7b4a82dc030ee6 = $(`<div id="html_b22b26546af54b119f7b4a82dc030ee6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Asuncion. La Bomba. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1995-05-16 00:00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_ac6e33030178433283d532ad4c6e47ad.setContent(html_b22b26546af54b119f7b4a82dc030ee6);
+        
+
+        circle_marker_3cae02ab6e114e35a9531b6cf81e7ac4.bindPopup(popup_ac6e33030178433283d532ad4c6e47ad)
+        ;
+
+        
+    
+    
+            var circle_marker_4a871560495f432d8bf1b04ce8548e4b = L.circleMarker(
+                [10.0114, -83.9519],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_fc61f4229f6a4c62be40220cfaa64ec9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_481772e44c26477ebf5aef9569b6c7dc = $(`<div id="html_481772e44c26477ebf5aef9569b6c7dc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1926-01-25 00:00:00 <strong>Recolectores:</strong> P. C. Standley & J. Valerio Rodríguez <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_fc61f4229f6a4c62be40220cfaa64ec9.setContent(html_481772e44c26477ebf5aef9569b6c7dc);
+        
+
+        circle_marker_4a871560495f432d8bf1b04ce8548e4b.bindPopup(popup_fc61f4229f6a4c62be40220cfaa64ec9)
+        ;
+
+        
+    
+    
+            var circle_marker_f988536b86db4efaac97025dc2dbffa5 = L.circleMarker(
+                [10.58, -84.98],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_3607ea87795f4963897092f6be623984 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc544c4055074c98961fdcc96179e546 = $(`<div id="html_bc544c4055074c98961fdcc96179e546" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. V. Tenorio Cuenca del San Carlos. Sector Rancho Capú. Colectado en bosque secundario y potrero. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 2000-07-10 00:00:00 <strong>Recolectores:</strong> Chaves, José Luis <strong>Identificadores:</strong> González, Luis</div>`)[0];
+            popup_3607ea87795f4963897092f6be623984.setContent(html_bc544c4055074c98961fdcc96179e546);
+        
+
+        circle_marker_f988536b86db4efaac97025dc2dbffa5.bindPopup(popup_3607ea87795f4963897092f6be623984)
+        ;
+
+        
+    
+    
+            var circle_marker_3386da9a94334ab28593b813f433e495 = L.circleMarker(
+                [9.89, -83.19],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_ba7dd42c916b46289f4f435e0ea625ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cda36ab7bded486bb647c0ced030e37a = $(`<div id="html_cda36ab7bded486bb647c0ced030e37a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Asunción. Faja Costeña de Limón. La Bomba. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1995-05-16 00:00:00 <strong>Recolectores:</strong> Rodríguez, Alexánder <strong>Identificadores:</strong> González, Luis</div>`)[0];
+            popup_ba7dd42c916b46289f4f435e0ea625ad.setContent(html_cda36ab7bded486bb647c0ced030e37a);
+        
+
+        circle_marker_3386da9a94334ab28593b813f433e495.bindPopup(popup_ba7dd42c916b46289f4f435e0ea625ad)
+        ;
+
+        
+    
+    
+            var circle_marker_e97a08c2d6cb42eab05fbb7cfca30b4d = L.circleMarker(
+                [10.73, -85.25],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_82f2444184d64dc4a5ff1ba6c233d350 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e9be7ff6e784de1b104d3660844cdae = $(`<div id="html_5e9be7ff6e784de1b104d3660844cdae" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Rincón de la Vieja Sector Sureste. Camino a Don Lalo. alrededores del Cerro Mogote. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1991-07-11 00:00:00 <strong>Recolectores:</strong> Rivera, Gerardo <strong>Identificadores:</strong> González, Luis</div>`)[0];
+            popup_82f2444184d64dc4a5ff1ba6c233d350.setContent(html_5e9be7ff6e784de1b104d3660844cdae);
+        
+
+        circle_marker_e97a08c2d6cb42eab05fbb7cfca30b4d.bindPopup(popup_82f2444184d64dc4a5ff1ba6c233d350)
+        ;
+
+        
+    
+    
+            var circle_marker_6eb01d53767840128a669c49b686b360 = L.circleMarker(
+                [10.75, -85.29],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_f1e02b41354646e6b59a41491fbedffc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_228d06bf9fff40799e8f9ccaf2c0167a = $(`<div id="html_228d06bf9fff40799e8f9ccaf2c0167a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Rincón de la Vieja Sector Los Naranjos, sobre camino a San Jorge, en el límite del parque. <strong>Elevación:</strong> 750.0 m  <strong>Fecha:</strong> 1990-10-16 00:00:00 <strong>Recolectores:</strong> Rivera, Gerardo <strong>Identificadores:</strong> González, Luis</div>`)[0];
+            popup_f1e02b41354646e6b59a41491fbedffc.setContent(html_228d06bf9fff40799e8f9ccaf2c0167a);
+        
+
+        circle_marker_6eb01d53767840128a669c49b686b360.bindPopup(popup_f1e02b41354646e6b59a41491fbedffc)
+        ;
+
+        
+    
+    
+            var circle_marker_4507f5fc2d014d8f9f33543c3f480bea = L.circleMarker(
+                [10.72, -85.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+        
+    
+        var popup_ac9e0881a5154aaaaa7c5171d41d030e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b4c4ac91ed94133a591190ff0dd3cb6 = $(`<div id="html_3b4c4ac91ed94133a591190ff0dd3cb6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Pilón, de la intersección del camino a San Miguel al Pilón con el río Chimurria, aguas arriba, margen izquierda. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1988-07-13 00:00:00 <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> González, Luis</div>`)[0];
+            popup_ac9e0881a5154aaaaa7c5171d41d030e.setContent(html_3b4c4ac91ed94133a591190ff0dd3cb6);
+        
+
+        circle_marker_4507f5fc2d014d8f9f33543c3f480bea.bindPopup(popup_ac9e0881a5154aaaaa7c5171d41d030e)
+        ;
+
+        
+    
+    
+            var layer_control_b849f586a0124bcd97f22d92f9b87d83 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_acc2abb1d6764d6896615912d023aa2c,
+                    "ESRI World Imagery" : tile_layer_52d45444f6c64612bf07ac0c5d731e40,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_b849f586a0124bcd97f22d92f9b87d83.base_layers,
+                layer_control_b849f586a0124bcd97f22d92f9b87d83.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_2b78375a19304bd8a440597c05a94d1e);
+            tile_layer_52d45444f6c64612bf07ac0c5d731e40.remove();
+        
+</script>
