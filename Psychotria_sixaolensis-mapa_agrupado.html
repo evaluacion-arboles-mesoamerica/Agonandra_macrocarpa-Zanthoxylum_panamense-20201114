@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_be903cd30ab9402f90d1eafcd3bb3eb3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_be903cd30ab9402f90d1eafcd3bb3eb3" ></div>
+        
+</body>
+<script>    
+    
+            var map_be903cd30ab9402f90d1eafcd3bb3eb3 = L.map(
+                "map_be903cd30ab9402f90d1eafcd3bb3eb3",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_be903cd30ab9402f90d1eafcd3bb3eb3);
+
+            
+
+        
+    
+            var tile_layer_f558cb99e74744e79d780783a37bbbff = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_be903cd30ab9402f90d1eafcd3bb3eb3);
+        
+    
+            var tile_layer_4edd86dc960947438ac98c29daad0c6d = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_be903cd30ab9402f90d1eafcd3bb3eb3);
+        
+    
+            var marker_cluster_3d52b2818b074040967ce9e1eea355e1 = L.markerClusterGroup(
+                {}
+            );
+            map_be903cd30ab9402f90d1eafcd3bb3eb3.addLayer(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+            var marker_17b1d15831c14fe1b661183bbf67d098 = L.marker(
+                [9.67, -83.02],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_03ff6fad19244a788f18bb414cacafa7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3618e070baf24dceb6cbc32d0dbb4fd4 = $(`<div id="html_3618e070baf24dceb6cbc32d0dbb4fd4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Hitoy Cerere, Valle de la Estrella. Bosque primario, Refugio de Fauna Silvestre Las Gemelas. Bosque secundario. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1991-04-18 <strong>Recolectores:</strong> Gerardo Carballo <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_03ff6fad19244a788f18bb414cacafa7.setContent(html_3618e070baf24dceb6cbc32d0dbb4fd4);
+        
+
+        marker_17b1d15831c14fe1b661183bbf67d098.bindPopup(popup_03ff6fad19244a788f18bb414cacafa7)
+        ;
+
+        
+    
+    
+            var marker_5550cd82e799475592d0798c72d0cdce = L.marker(
+                [9.7, -83.03],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_0dce7ea1d1934f71abd226720fbcaca9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f99df88399da45b9b8734f242cd47faa = $(`<div id="html_f99df88399da45b9b8734f242cd47faa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hitoy Cerere Reserve and vicinity in Valle La Estrella S of Finca Concepcion; from station to top of ridge Miramaror Los Jabillos. <strong>Elevación:</strong> 320.0 m  <strong>Fecha:</strong> 1985-08-01 <strong>Recolectores:</strong> Barry E. Hammel|Michael H. Grayum <strong>Identificadores:</strong> D.H. Lorence</div>`)[0];
+            popup_0dce7ea1d1934f71abd226720fbcaca9.setContent(html_f99df88399da45b9b8734f242cd47faa);
+        
+
+        marker_5550cd82e799475592d0798c72d0cdce.bindPopup(popup_0dce7ea1d1934f71abd226720fbcaca9)
+        ;
+
+        
+    
+    
+            var marker_2b9cf87eb15f45eca19edfe4f5ba0bfd = L.marker(
+                [9.49, -82.98],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_2b7ba3319ab1453187c9de96b0e35d84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f01f644c5b8464b82d5c2fe36774046 = $(`<div id="html_0f01f644c5b8464b82d5c2fe36774046" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Amubri. Camino entre Amubri y Soki. Siguiendo las filas que conducen al Alto Soki. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1989-06-30 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> C. M. Taylor (MO)</div>`)[0];
+            popup_2b7ba3319ab1453187c9de96b0e35d84.setContent(html_0f01f644c5b8464b82d5c2fe36774046);
+        
+
+        marker_2b9cf87eb15f45eca19edfe4f5ba0bfd.bindPopup(popup_2b7ba3319ab1453187c9de96b0e35d84)
+        ;
+
+        
+    
+    
+            var marker_befe274a363949fcb69777236f906ddc = L.marker(
+                [9.7, -83.03],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_ef64bf68ff4b48499fb3ea6b4c90b56d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14704ff526dc4b05a279ec95f1e31176 = $(`<div id="html_14704ff526dc4b05a279ec95f1e31176" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hitoy Cerere Reserve and vicinity in Valle La Estrella S of Finca Concepcion; from station to top of ridge Miramaror Los Jabillos. <strong>Elevación:</strong> 320.0 m  <strong>Fecha:</strong> 1985-08-01 <strong>Recolectores:</strong> Barry E. Hammel|Michael H. Grayum <strong>Identificadores:</strong> David H. Lorence</div>`)[0];
+            popup_ef64bf68ff4b48499fb3ea6b4c90b56d.setContent(html_14704ff526dc4b05a279ec95f1e31176);
+        
+
+        marker_befe274a363949fcb69777236f906ddc.bindPopup(popup_ef64bf68ff4b48499fb3ea6b4c90b56d)
+        ;
+
+        
+    
+    
+            var marker_8c9fdf3199b04418bde775997cdc6159 = L.marker(
+                [8.830556, -80.658333],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_d18b89265b9c4606844c97d2538d4a8b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d861f560e4ed4b09ba19abdcfd38cc52 = $(`<div id="html_d861f560e4ed4b09ba19abdcfd38cc52" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Teck Cominco Mining Concession. Camp Colina. Forests along Quebrada Colina. <strong>Elevación:</strong> 152.0 m  <strong>Fecha:</strong> 2008-03-02 <strong>Recolectores:</strong> Mary Merello|José Isabel González <strong>Identificadores:</strong> C. Taylor</div>`)[0];
+            popup_d18b89265b9c4606844c97d2538d4a8b.setContent(html_d861f560e4ed4b09ba19abdcfd38cc52);
+        
+
+        marker_8c9fdf3199b04418bde775997cdc6159.bindPopup(popup_d18b89265b9c4606844c97d2538d4a8b)
+        ;
+
+        
+    
+    
+            var marker_74030a2429fa4c2fa666cc472589e5c9 = L.marker(
+                [9.373333, -82.708333],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_83558e9c105048b5bd2647acb8d30c8f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e3f8cd47edb46b0a38bd80e6a515f8c = $(`<div id="html_4e3f8cd47edb46b0a38bd80e6a515f8c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Río Teribe, between Quebrada Treglo and Puerto Palenque. Mostly gallery forest with cloud forest elements. <strong>Elevación:</strong> 99.06 m  <strong>Fecha:</strong> 1968-04-12 <strong>Recolectores:</strong> Joseph H. Kirkbride, Jr.|James A. Duke <strong>Identificadores:</strong> Clement W. Hamilton, 1984-5</div>`)[0];
+            popup_83558e9c105048b5bd2647acb8d30c8f.setContent(html_4e3f8cd47edb46b0a38bd80e6a515f8c);
+        
+
+        marker_74030a2429fa4c2fa666cc472589e5c9.bindPopup(popup_83558e9c105048b5bd2647acb8d30c8f)
+        ;
+
+        
+    
+    
+            var marker_698fe903b42d4b4fa41bc5abcea207dc = L.marker(
+                [9.566667, -82.733333],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_b2a48e0bc7d84c4f9ffd936757d555b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be6c877520424002978459fd5cb488dc = $(`<div id="html_be6c877520424002978459fd5cb488dc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of Nievecita <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1938-08-08 <strong>Recolectores:</strong> R. E. Woodson, Jr.|Paul H. Allen|Russell J. Seibert <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_b2a48e0bc7d84c4f9ffd936757d555b8.setContent(html_be6c877520424002978459fd5cb488dc);
+        
+
+        marker_698fe903b42d4b4fa41bc5abcea207dc.bindPopup(popup_b2a48e0bc7d84c4f9ffd936757d555b8)
+        ;
+
+        
+    
+    
+            var marker_bf02fd8e7fae49c488b9711e517b1e45 = L.marker(
+                [9.677769999999999, -83.02360999999999],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_51b51911434e484880aeaeab039ec383 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f9fc112e20404d2e8a85f22c7ef73bf8 = $(`<div id="html_f9fc112e20404d2e8a85f22c7ef73bf8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cuenca del Estrella Hitoy Cerere; sendero a los alrededores de la estacion.9 <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 1997-06-17 <strong>Recolectores:</strong> Alexánder Rodríguez|Armando Soto <strong>Identificadores:</strong> Hammel, 10 SET</div>`)[0];
+            popup_51b51911434e484880aeaeab039ec383.setContent(html_f9fc112e20404d2e8a85f22c7ef73bf8);
+        
+
+        marker_bf02fd8e7fae49c488b9711e517b1e45.bindPopup(popup_51b51911434e484880aeaeab039ec383)
+        ;
+
+        
+    
+    
+            var marker_3715364f81e24585b34f2e87a82a4135 = L.marker(
+                [9.56666, -82.63333],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_841c8008803749e99da07db3921ce029 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87391134afb2459295cb259a618ff409 = $(`<div id="html_87391134afb2459295cb259a618ff409" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Canton. Cuenca del Sixaola. San Miguel de Sixaola. <strong>Elevación:</strong> 40.0 m  <strong>Fecha:</strong> 1999-03-06 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Evelio Alfaro, 06/03/</div>`)[0];
+            popup_841c8008803749e99da07db3921ce029.setContent(html_87391134afb2459295cb259a618ff409);
+        
+
+        marker_3715364f81e24585b34f2e87a82a4135.bindPopup(popup_841c8008803749e99da07db3921ce029)
+        ;
+
+        
+    
+    
+            var marker_566f071decd04f948fee938b5914f9c6 = L.marker(
+                [9.55, -82.89],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_f0313d8314704717b63c388e9761eb0c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a031e38557494203a5f8d9d36f4f3a8c = $(`<div id="html_a031e38557494203a5f8d9d36f4f3a8c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along road between Limón and Shiroles, along Río Sixaola, 0.9 mi SW of Bambu, 6.5 mi SW of Bribri. Along stream on steep slope <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1977-08-12 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> W.C. Burger</div>`)[0];
+            popup_f0313d8314704717b63c388e9761eb0c.setContent(html_a031e38557494203a5f8d9d36f4f3a8c);
+        
+
+        marker_566f071decd04f948fee938b5914f9c6.bindPopup(popup_f0313d8314704717b63c388e9761eb0c)
+        ;
+
+        
+    
+    
+            var marker_051a3a25f0fb4a0b91e2bef747296aac = L.marker(
+                [9.673611, -83.026389],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_3b6bba420eaf4af7920cac4236f030e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a159b5cf84074a9b94b43d6453de07d5 = $(`<div id="html_a159b5cf84074a9b94b43d6453de07d5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.B. Hitoy Cerere.  Cuenca del Estrella.  Reserva Biológica Hitoy Cerere, Sendero en alrededores de la estación. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1999-05-12 <strong>Recolectores:</strong> Alexánder Rodríguez|Víctor H. Ramírez|E. Salas <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_3b6bba420eaf4af7920cac4236f030e7.setContent(html_a159b5cf84074a9b94b43d6453de07d5);
+        
+
+        marker_051a3a25f0fb4a0b91e2bef747296aac.bindPopup(popup_3b6bba420eaf4af7920cac4236f030e7)
+        ;
+
+        
+    
+    
+            var marker_c1a23793bd3f4cf2a2f76d8c11bfcfa5 = L.marker(
+                [9.640278, -83.008333],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_a13124ce51ae4317baf35d76ded8db6c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44d77254719845b79707eb89160c1ed4 = $(`<div id="html_44d77254719845b79707eb89160c1ed4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Indigena Cabecar. Cuenca del Rio Moy. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 1999-06-17 <strong>Recolectores:</strong> Óscar Valverde|et al. <strong>Identificadores:</strong> O. Valverde, Oct.</div>`)[0];
+            popup_a13124ce51ae4317baf35d76ded8db6c.setContent(html_44d77254719845b79707eb89160c1ed4);
+        
+
+        marker_c1a23793bd3f4cf2a2f76d8c11bfcfa5.bindPopup(popup_a13124ce51ae4317baf35d76ded8db6c)
+        ;
+
+        
+    
+    
+            var marker_680f7a9d0a904ab98a9f36c4016c8811 = L.marker(
+                [9.59, -82.87],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_9805c9d4976d4872a1c2c6f6cca65b7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_617b5d9a62464d26834f22518eef3d09 = $(`<div id="html_617b5d9a62464d26834f22518eef3d09" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Near Río Sixaola, ca. 1/2 mile SW of Bambu, ca. 3 miles NE of Bratsi. Steep ravine along stream; primary forest <strong>Elevación:</strong> 15.0 m  <strong>Fecha:</strong> 1977-08-12 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_9805c9d4976d4872a1c2c6f6cca65b7c.setContent(html_617b5d9a62464d26834f22518eef3d09);
+        
+
+        marker_680f7a9d0a904ab98a9f36c4016c8811.bindPopup(popup_9805c9d4976d4872a1c2c6f6cca65b7c)
+        ;
+
+        
+    
+    
+            var marker_7b64e3aec5974d85be437d456805282b = L.marker(
+                [9.664664, -83.02469],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_bbc90f8182454fd7931cf8264685b3f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b44365c49844a89a37c39752eebb4c3 = $(`<div id="html_0b44365c49844a89a37c39752eebb4c3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle de la Estrella, Reserva Biol. Hitoy Cerere, Sendero Espavel. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 2006-11-20 <strong>Recolectores:</strong> Daniel Santamaría; Daniel Solano ; Marcos Moraga ; Billen Gamboa R. <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_bbc90f8182454fd7931cf8264685b3f2.setContent(html_0b44365c49844a89a37c39752eebb4c3);
+        
+
+        marker_7b64e3aec5974d85be437d456805282b.bindPopup(popup_bbc90f8182454fd7931cf8264685b3f2)
+        ;
+
+        
+    
+    
+            var marker_64d0cdb098124e52a3b0104d38407dbc = L.marker(
+                [9.664664, -83.02469],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_a33df523e7874360a54a47fd2e58d0f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_259f0c96d40b48018caf35ee6eaaf020 = $(`<div id="html_259f0c96d40b48018caf35ee6eaaf020" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle de la Estrella, Reserva Biol. Hitoy Cerere, Sendero Espavel. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 2006-11-20 <strong>Recolectores:</strong> Daniel Santamaría; Daniel Solano ; Marcos Moraga ; Billen Gamboa R. <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_a33df523e7874360a54a47fd2e58d0f8.setContent(html_259f0c96d40b48018caf35ee6eaaf020);
+        
+
+        marker_64d0cdb098124e52a3b0104d38407dbc.bindPopup(popup_a33df523e7874360a54a47fd2e58d0f8)
+        ;
+
+        
+    
+    
+            var marker_884da485312d40c8a9fc087c33da7208 = L.marker(
+                [9.664664, -83.02469],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_c8bf106f5cb14b9a82198a3af56ca0cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09fe20094dfd40c28442490f1056bbe1 = $(`<div id="html_09fe20094dfd40c28442490f1056bbe1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle de la Estrella, Reserva Biol. Hitoy Cerere, Sendero Espavel. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 2006-11-20 <strong>Recolectores:</strong> Daniel Santamaría; Daniel Solano ; Marcos Moraga ; Billen Gamboa R. <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_c8bf106f5cb14b9a82198a3af56ca0cf.setContent(html_09fe20094dfd40c28442490f1056bbe1);
+        
+
+        marker_884da485312d40c8a9fc087c33da7208.bindPopup(popup_c8bf106f5cb14b9a82198a3af56ca0cf)
+        ;
+
+        
+    
+    
+            var marker_75ffa695646c4d1bb2e24fa59ebba3fa = L.marker(
+                [9.67537, -83.024953],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_a06b223f281b47e88076c9ba7e6fe579 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b904cb85869d4a789c85749e765f7e39 = $(`<div id="html_b904cb85869d4a789c85749e765f7e39" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Hitoy Cerere, Sendero Indio Alejo <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2000-06-27 <strong>Recolectores:</strong> L. Acosta <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_a06b223f281b47e88076c9ba7e6fe579.setContent(html_b904cb85869d4a789c85749e765f7e39);
+        
+
+        marker_75ffa695646c4d1bb2e24fa59ebba3fa.bindPopup(popup_a06b223f281b47e88076c9ba7e6fe579)
+        ;
+
+        
+    
+    
+            var marker_b455930ecbf64b839c38ea3d95df5510 = L.marker(
+                [9.67537, -83.024953],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_6b1c213d3ca34e6d9f322a26dfdbf725 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6bfd7f3cae424ca391cd29a6b3b3ff7c = $(`<div id="html_6bfd7f3cae424ca391cd29a6b3b3ff7c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Hitoy Cerere, Sendero Indio Alejo <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2000-06-27 <strong>Recolectores:</strong> L. Acosta <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_6b1c213d3ca34e6d9f322a26dfdbf725.setContent(html_6bfd7f3cae424ca391cd29a6b3b3ff7c);
+        
+
+        marker_b455930ecbf64b839c38ea3d95df5510.bindPopup(popup_6b1c213d3ca34e6d9f322a26dfdbf725)
+        ;
+
+        
+    
+    
+            var marker_a36c213eb3ed4d79a5695d166f9b5075 = L.marker(
+                [9.67537, -83.024953],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_d4cc38920e904aceb7fa1abd64e91d75 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4cba24b5f8844dd5b977f51c3ea20b94 = $(`<div id="html_4cba24b5f8844dd5b977f51c3ea20b94" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Hitoy Cerere, Sendero Indio Alejo <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2000-06-27 <strong>Recolectores:</strong> L. Acosta <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_d4cc38920e904aceb7fa1abd64e91d75.setContent(html_4cba24b5f8844dd5b977f51c3ea20b94);
+        
+
+        marker_a36c213eb3ed4d79a5695d166f9b5075.bindPopup(popup_d4cc38920e904aceb7fa1abd64e91d75)
+        ;
+
+        
+    
+    
+            var marker_8c54ddda0e674808ab2ffa8071dcdd22 = L.marker(
+                [9.67537, -83.024953],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_fc5702dac0964038902d950c2e89120a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_081e0f9342034022a2520dcc6ca9d7d0 = $(`<div id="html_081e0f9342034022a2520dcc6ca9d7d0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Hitoy Cerere, Sendero Indio Alejo <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2000-06-27 <strong>Recolectores:</strong> L. Acosta <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_fc5702dac0964038902d950c2e89120a.setContent(html_081e0f9342034022a2520dcc6ca9d7d0);
+        
+
+        marker_8c54ddda0e674808ab2ffa8071dcdd22.bindPopup(popup_fc5702dac0964038902d950c2e89120a)
+        ;
+
+        
+    
+    
+            var marker_da2d50a46e18447ebe3c39499ecb97e1 = L.marker(
+                [9.673611, -83.026389],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_8926d90082a3433c818602072815bb42 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2a61401ca5e4ee1a8f263aad5c22aa0 = $(`<div id="html_e2a61401ca5e4ee1a8f263aad5c22aa0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> En limite con la Reserva Biologica Hitoy-Cerere. Bosque primario y secundario. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1999-05-12 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; Elvira Salas <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_8926d90082a3433c818602072815bb42.setContent(html_e2a61401ca5e4ee1a8f263aad5c22aa0);
+        
+
+        marker_da2d50a46e18447ebe3c39499ecb97e1.bindPopup(popup_8926d90082a3433c818602072815bb42)
+        ;
+
+        
+    
+    
+            var marker_ebab278d18114dbc9899f9fba5093c63 = L.marker(
+                [9.673611, -83.026389],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_a0894cf35c2d4134b3607d88652ae2b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_794ff4ef813640a0a6256659c39eec7c = $(`<div id="html_794ff4ef813640a0a6256659c39eec7c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> En limite con la Reserva Biologica Hitoy-Cerere. Bosque primario y secundario. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1999-05-12 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; Elvira Salas <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_a0894cf35c2d4134b3607d88652ae2b8.setContent(html_794ff4ef813640a0a6256659c39eec7c);
+        
+
+        marker_ebab278d18114dbc9899f9fba5093c63.bindPopup(popup_a0894cf35c2d4134b3607d88652ae2b8)
+        ;
+
+        
+    
+    
+            var marker_1525412ee3bb4cf2a6cf3201750999f9 = L.marker(
+                [9.673611, -83.026389],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_b853d83f630c471c921920edad4d0aca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a98d681e101642c595c43099ab7e8df2 = $(`<div id="html_a98d681e101642c595c43099ab7e8df2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> En limite con la Reserva Biologica Hitoy-Cerere. Bosque primario y secundario. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1999-05-12 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; Elvira Salas <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_b853d83f630c471c921920edad4d0aca.setContent(html_a98d681e101642c595c43099ab7e8df2);
+        
+
+        marker_1525412ee3bb4cf2a6cf3201750999f9.bindPopup(popup_b853d83f630c471c921920edad4d0aca)
+        ;
+
+        
+    
+    
+            var marker_7eb6753fea0d4185b523803920d8a149 = L.marker(
+                [9.497222, -82.986111],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_6aa53c3cf2ea42a68c491852904c71dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba004a3a05234649843d3049bb561aa9 = $(`<div id="html_ba004a3a05234649843d3049bb561aa9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Amubri. Camino entre Amubri y Soki. Siguiendo las filas que conducen al Alto Soki. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1989-06-30 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_6aa53c3cf2ea42a68c491852904c71dd.setContent(html_ba004a3a05234649843d3049bb561aa9);
+        
+
+        marker_7eb6753fea0d4185b523803920d8a149.bindPopup(popup_6aa53c3cf2ea42a68c491852904c71dd)
+        ;
+
+        
+    
+    
+            var marker_98aedd54644246989fc9dc81c03b5e78 = L.marker(
+                [9.677778, -83.023611],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_14fa86d3e4e54902b1b4597c831294ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2fe8fb0e58b34b348e55d8cfa9fcd7c6 = $(`<div id="html_2fe8fb0e58b34b348e55d8cfa9fcd7c6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hitoy Cerere; alrededores de la estacion. <strong>Elevación:</strong> 95.0 m  <strong>Fecha:</strong> 1997-06-17 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Armando Soto <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_14fa86d3e4e54902b1b4597c831294ed.setContent(html_2fe8fb0e58b34b348e55d8cfa9fcd7c6);
+        
+
+        marker_98aedd54644246989fc9dc81c03b5e78.bindPopup(popup_14fa86d3e4e54902b1b4597c831294ed)
+        ;
+
+        
+    
+    
+            var marker_4c2061084ba54f70b7a37ea41fbc6d8a = L.marker(
+                [9.677778, -83.023611],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_7bb29827839e494c8a8e06c895811453 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8b2ee2738b34e5f95110a791a78571d = $(`<div id="html_a8b2ee2738b34e5f95110a791a78571d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hitoy Cerere; alrededores de la estacion. <strong>Elevación:</strong> 95.0 m  <strong>Fecha:</strong> 1997-06-17 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Armando Soto <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_7bb29827839e494c8a8e06c895811453.setContent(html_a8b2ee2738b34e5f95110a791a78571d);
+        
+
+        marker_4c2061084ba54f70b7a37ea41fbc6d8a.bindPopup(popup_7bb29827839e494c8a8e06c895811453)
+        ;
+
+        
+    
+    
+            var marker_dc0c04ed864e42829ae43bfecb0069d2 = L.marker(
+                [9.677778, -83.023611],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_8ca1e99a657a430aa653040ba293b63d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39622f6e70a74ee98f26e0a42a287a5e = $(`<div id="html_39622f6e70a74ee98f26e0a42a287a5e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hitoy Cerere; alrededores de la estacion. <strong>Elevación:</strong> 95.0 m  <strong>Fecha:</strong> 1997-06-17 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Armando Soto <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_8ca1e99a657a430aa653040ba293b63d.setContent(html_39622f6e70a74ee98f26e0a42a287a5e);
+        
+
+        marker_dc0c04ed864e42829ae43bfecb0069d2.bindPopup(popup_8ca1e99a657a430aa653040ba293b63d)
+        ;
+
+        
+    
+    
+            var marker_a5de8c606e634a42bda72516783dfe75 = L.marker(
+                [9.677778, -83.023611],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_bb5ceffa076b4523b87c3db3c6d8577f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b4fc6003f8ba4ab48a8ecfb7c2dc3a1d = $(`<div id="html_b4fc6003f8ba4ab48a8ecfb7c2dc3a1d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hitoy Cerere; alrededores de la estacion. <strong>Elevación:</strong> 95.0 m  <strong>Fecha:</strong> 1997-06-17 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Armando Soto <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_bb5ceffa076b4523b87c3db3c6d8577f.setContent(html_b4fc6003f8ba4ab48a8ecfb7c2dc3a1d);
+        
+
+        marker_a5de8c606e634a42bda72516783dfe75.bindPopup(popup_bb5ceffa076b4523b87c3db3c6d8577f)
+        ;
+
+        
+    
+    
+            var marker_dc9f6af1c7754e338c0ee07c4d5e863c = L.marker(
+                [9.566667, -82.638889],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_cf762c36fd2c448e961514ea45004bd6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_277e7ab0c9cd4b99a354babf84bd8ada = $(`<div id="html_277e7ab0c9cd4b99a354babf84bd8ada" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Miguel de Sixaola. <strong>Elevación:</strong> 40.0 m  <strong>Fecha:</strong> 1999-03-06 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Alfaro, Evelio</div>`)[0];
+            popup_cf762c36fd2c448e961514ea45004bd6.setContent(html_277e7ab0c9cd4b99a354babf84bd8ada);
+        
+
+        marker_dc9f6af1c7754e338c0ee07c4d5e863c.bindPopup(popup_cf762c36fd2c448e961514ea45004bd6)
+        ;
+
+        
+    
+    
+            var marker_63561ae9d16c4a3e837b351b17ee9b1b = L.marker(
+                [9.566667, -82.638889],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_46735db232e541f5b070e1521811a7e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e1d55f7ea116442c95c848142687b403 = $(`<div id="html_e1d55f7ea116442c95c848142687b403" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Miguel de Sixaola. <strong>Elevación:</strong> 40.0 m  <strong>Fecha:</strong> 1999-03-06 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Alfaro, Evelio</div>`)[0];
+            popup_46735db232e541f5b070e1521811a7e9.setContent(html_e1d55f7ea116442c95c848142687b403);
+        
+
+        marker_63561ae9d16c4a3e837b351b17ee9b1b.bindPopup(popup_46735db232e541f5b070e1521811a7e9)
+        ;
+
+        
+    
+    
+            var marker_199666a8089b4d7cad5906a4fb671393 = L.marker(
+                [9.675, -83.025],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_21f6c749bd034d2bb937bb1a99da882c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_688ee9a4c6c143d785cb71e1b09f136f = $(`<div id="html_688ee9a4c6c143d785cb71e1b09f136f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alrededores de la Estacion. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1991-12-04 <strong>Recolectores:</strong> Alberth Moreno <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_21f6c749bd034d2bb937bb1a99da882c.setContent(html_688ee9a4c6c143d785cb71e1b09f136f);
+        
+
+        marker_199666a8089b4d7cad5906a4fb671393.bindPopup(popup_21f6c749bd034d2bb937bb1a99da882c)
+        ;
+
+        
+    
+    
+            var marker_737b2e857a344390a33b970e853c2be0 = L.marker(
+                [9.675, -83.022222],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_c920a91b4aac47fba37e51fe3de5342a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_427d9cf6e32f4a51a66d4cc4e678e989 = $(`<div id="html_427d9cf6e32f4a51a66d4cc4e678e989" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque primario, Bosque secundario. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1991-04-18 <strong>Recolectores:</strong> Gerardo Carballo <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_c920a91b4aac47fba37e51fe3de5342a.setContent(html_427d9cf6e32f4a51a66d4cc4e678e989);
+        
+
+        marker_737b2e857a344390a33b970e853c2be0.bindPopup(popup_c920a91b4aac47fba37e51fe3de5342a)
+        ;
+
+        
+    
+    
+            var marker_a6585c86b6254ff2ae298a2b6d8f04a0 = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_3eb61dd8bcb9418eb591bc250f067878 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f38b6dfb5f464f5ab980c4a953f15578 = $(`<div id="html_f38b6dfb5f464f5ab980c4a953f15578" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1977-08-13 <strong>Recolectores:</strong> T. B. Croat <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_3eb61dd8bcb9418eb591bc250f067878.setContent(html_f38b6dfb5f464f5ab980c4a953f15578);
+        
+
+        marker_a6585c86b6254ff2ae298a2b6d8f04a0.bindPopup(popup_3eb61dd8bcb9418eb591bc250f067878)
+        ;
+
+        
+    
+    
+            var marker_6f79420af347490abf2915e44692bffd = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_0206138654864c7e9f7de712c71b6502 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_196467b4e40d4c25bf8f912bc43905e9 = $(`<div id="html_196467b4e40d4c25bf8f912bc43905e9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1977-08-12 <strong>Recolectores:</strong> T. B. Croat <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_0206138654864c7e9f7de712c71b6502.setContent(html_196467b4e40d4c25bf8f912bc43905e9);
+        
+
+        marker_6f79420af347490abf2915e44692bffd.bindPopup(popup_0206138654864c7e9f7de712c71b6502)
+        ;
+
+        
+    
+    
+            var marker_84bd28119b4e4ce0879907d23b3bc214 = L.marker(
+                [10.0, -83.8667],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_90a24104ff1e49ab8586c27650967a92 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b78aef6ea768452c89e64bc8ec500340 = $(`<div id="html_b78aef6ea768452c89e64bc8ec500340" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1989-06-30 <strong>Recolectores:</strong> G. Herrera C. <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_90a24104ff1e49ab8586c27650967a92.setContent(html_b78aef6ea768452c89e64bc8ec500340);
+        
+
+        marker_84bd28119b4e4ce0879907d23b3bc214.bindPopup(popup_90a24104ff1e49ab8586c27650967a92)
+        ;
+
+        
+    
+    
+            var marker_12bd6a83e7294ac79595bc3a45708405 = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_ae0cf6be5c344df284c19be6c7b6ce8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_95320e054094435e9e9818572e970d16 = $(`<div id="html_95320e054094435e9e9818572e970d16" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1977-08-13 <strong>Recolectores:</strong> T. B. Croat <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_ae0cf6be5c344df284c19be6c7b6ce8c.setContent(html_95320e054094435e9e9818572e970d16);
+        
+
+        marker_12bd6a83e7294ac79595bc3a45708405.bindPopup(popup_ae0cf6be5c344df284c19be6c7b6ce8c)
+        ;
+
+        
+    
+    
+            var marker_70be9178ce034c3e8ff0065a27ccb41c = L.marker(
+                [9.97, -83.45],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_4fa50542c4104a72a277f6a38d40f402 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_012cc6140c694281bebf7094ee4d9552 = $(`<div id="html_012cc6140c694281bebf7094ee4d9552" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Barbilla Cuenca del Matina. Sendero Quebradas, saliendo por el Sendero El Felino. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2000-08-23 <strong>Recolectores:</strong> Mora, Edgar <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_4fa50542c4104a72a277f6a38d40f402.setContent(html_012cc6140c694281bebf7094ee4d9552);
+        
+
+        marker_70be9178ce034c3e8ff0065a27ccb41c.bindPopup(popup_4fa50542c4104a72a277f6a38d40f402)
+        ;
+
+        
+    
+    
+            var marker_2a9263fdf9774ca8b9eab16742a91695 = L.marker(
+                [9.64, -83.0],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_c0160d8aa095443f8b03544ed14281ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_502b8df1392341fbac8b10cc7bfc028e = $(`<div id="html_502b8df1392341fbac8b10cc7bfc028e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. I. Cabécar Cuenca del Río Moy. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 1999-06-17 <strong>Recolectores:</strong> Valverde, Oscar <strong>Identificadores:</strong> Valverde, Oscar</div>`)[0];
+            popup_c0160d8aa095443f8b03544ed14281ff.setContent(html_502b8df1392341fbac8b10cc7bfc028e);
+        
+
+        marker_2a9263fdf9774ca8b9eab16742a91695.bindPopup(popup_c0160d8aa095443f8b03544ed14281ff)
+        ;
+
+        
+    
+    
+            var marker_865c1fd840c54825a69ba45e76b2e957 = L.marker(
+                [9.67, -83.02],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_9c8074f941d64056b38c7a21c0af4263 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_898ad87717144e8ca8118679c6028928 = $(`<div id="html_898ad87717144e8ca8118679c6028928" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. B. Hitoy Cerere Sendero en los alrededores de la estación. Cuenca del Estrella. <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 1997-06-17 <strong>Recolectores:</strong> Rodríguez, Alexánder <strong>Identificadores:</strong> Hammel, Barry E.</div>`)[0];
+            popup_9c8074f941d64056b38c7a21c0af4263.setContent(html_898ad87717144e8ca8118679c6028928);
+        
+
+        marker_865c1fd840c54825a69ba45e76b2e957.bindPopup(popup_9c8074f941d64056b38c7a21c0af4263)
+        ;
+
+        
+    
+    
+            var marker_2c2a49aab5ea4724aa8fa9a598e66c29 = L.marker(
+                [9.49, -82.98],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_15d81702bbbf452dbc74f89cf8c628f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dab2b3e38dde4c52936126bafca583d6 = $(`<div id="html_dab2b3e38dde4c52936126bafca583d6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Amubri. Camino entre Amubri y Soki. Siguiendo las filas que conducen al Alto Soki. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1989-06-30 <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> Grayum, Michael</div>`)[0];
+            popup_15d81702bbbf452dbc74f89cf8c628f1.setContent(html_dab2b3e38dde4c52936126bafca583d6);
+        
+
+        marker_2c2a49aab5ea4724aa8fa9a598e66c29.bindPopup(popup_15d81702bbbf452dbc74f89cf8c628f1)
+        ;
+
+        
+    
+    
+            var marker_7a500998d80b4ca09fe1c822f5302cfb = L.marker(
+                [9.67, -83.02],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_9f4abba5a7384d8993516519e5bc6f60 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2af54f303624558a91ff07ff24a8dfd = $(`<div id="html_a2af54f303624558a91ff07ff24a8dfd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.B. Hitoy Cerere Sendero en alrededores de la estación. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1999-05-12 <strong>Recolectores:</strong> Rodríguez, Alexánder <strong>Identificadores:</strong> Rodríguez, Alexánder</div>`)[0];
+            popup_9f4abba5a7384d8993516519e5bc6f60.setContent(html_a2af54f303624558a91ff07ff24a8dfd);
+        
+
+        marker_7a500998d80b4ca09fe1c822f5302cfb.bindPopup(popup_9f4abba5a7384d8993516519e5bc6f60)
+        ;
+
+        
+    
+    
+            var marker_006b3179bf7047fd8aed56a903e36770 = L.marker(
+                [9.7, -83.03],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_8e2164db70074042ae0e95713e5b34c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_208a0a436c0541488cbd9b870407e306 = $(`<div id="html_208a0a436c0541488cbd9b870407e306" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. B. Hitoy Cerere And vicinity in Valle La Estrella S of Finca Concepción, from station to top of ridge Miramaror, Los Jabillos. <strong>Elevación:</strong> 315.0 m  <strong>Fecha:</strong> 1985-08-01 <strong>Recolectores:</strong> Hammel, Barry E. <strong>Identificadores:</strong> Grayum, Michael</div>`)[0];
+            popup_8e2164db70074042ae0e95713e5b34c7.setContent(html_208a0a436c0541488cbd9b870407e306);
+        
+
+        marker_006b3179bf7047fd8aed56a903e36770.bindPopup(popup_8e2164db70074042ae0e95713e5b34c7)
+        ;
+
+        
+    
+    
+            var marker_392d82434cc54afd89ccfb9888191785 = L.marker(
+                [9.7, -83.03],
+                {}
+            ).addTo(marker_cluster_3d52b2818b074040967ce9e1eea355e1);
+        
+    
+        var popup_7df1051678714eddae70a3c42b8d39e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7953ff836614d89bcd5e583c7f5fb8e = $(`<div id="html_b7953ff836614d89bcd5e583c7f5fb8e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. B. Hitoy Cerere And vicinity in Valle La Estrella S of Finca Concepciòn, from station to top of ridge Miramaror, Los Jabillos. <strong>Elevación:</strong> 315.0 m  <strong>Fecha:</strong> 1985-08-01 <strong>Recolectores:</strong> Hammel, Barry E. <strong>Identificadores:</strong> Grayum, Michael</div>`)[0];
+            popup_7df1051678714eddae70a3c42b8d39e4.setContent(html_b7953ff836614d89bcd5e583c7f5fb8e);
+        
+
+        marker_392d82434cc54afd89ccfb9888191785.bindPopup(popup_7df1051678714eddae70a3c42b8d39e4)
+        ;
+
+        
+    
+    
+            var layer_control_4932d9d6fded4837afcf1e1905623113 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_f558cb99e74744e79d780783a37bbbff,
+                    "ESRI World Imagery" : tile_layer_4edd86dc960947438ac98c29daad0c6d,
+                },
+                overlays :  {
+                    "macro_element_3d52b2818b074040967ce9e1eea355e1" : marker_cluster_3d52b2818b074040967ce9e1eea355e1,
+                },
+            };
+            L.control.layers(
+                layer_control_4932d9d6fded4837afcf1e1905623113.base_layers,
+                layer_control_4932d9d6fded4837afcf1e1905623113.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_be903cd30ab9402f90d1eafcd3bb3eb3);
+            tile_layer_4edd86dc960947438ac98c29daad0c6d.remove();
+        
+</script>

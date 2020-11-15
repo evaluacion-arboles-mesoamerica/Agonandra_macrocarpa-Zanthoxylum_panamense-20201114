@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f954d3c176e749edb966e0d7da41a15d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f954d3c176e749edb966e0d7da41a15d" ></div>
+        
+</body>
+<script>    
+    
+            var map_f954d3c176e749edb966e0d7da41a15d = L.map(
+                "map_f954d3c176e749edb966e0d7da41a15d",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_f954d3c176e749edb966e0d7da41a15d);
+
+            
+
+        
+    
+            var tile_layer_930f2963966946b5a2406d75d89f1cc6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f954d3c176e749edb966e0d7da41a15d);
+        
+    
+            var tile_layer_6d510d490ac74e34ad7c723d5d793041 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f954d3c176e749edb966e0d7da41a15d);
+        
+    
+            var marker_cluster_5ab1e299ce7c4f008882234b1bd252d3 = L.markerClusterGroup(
+                {}
+            );
+            map_f954d3c176e749edb966e0d7da41a15d.addLayer(marker_cluster_5ab1e299ce7c4f008882234b1bd252d3);
+        
+    
+            var marker_e9a533bfa02e41ac8a382d2c39b50694 = L.marker(
+                [8.69, -83.6],
+                {}
+            ).addTo(marker_cluster_5ab1e299ce7c4f008882234b1bd252d3);
+        
+    
+        var popup_7fc35471ce814ef6a51f9da3baa99d9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7438136723de44f09b2caa08c5d441ab = $(`<div id="html_7438136723de44f09b2caa08c5d441ab" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce Entre Rancho Quemado y Drake. Golfito. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1991-03-29 <strong>Recolectores:</strong> Reinaldo Aguilar|Juan C. Saborío|Barry E. Hammel <strong>Identificadores:</strong> C. M. Taylor</div>`)[0];
+            popup_7fc35471ce814ef6a51f9da3baa99d9c.setContent(html_7438136723de44f09b2caa08c5d441ab);
+        
+
+        marker_e9a533bfa02e41ac8a382d2c39b50694.bindPopup(popup_7fc35471ce814ef6a51f9da3baa99d9c)
+        ;
+
+        
+    
+    
+            var marker_4dcd01fe2ce04a6eb471cbb04d60e6ad = L.marker(
+                [8.7, -83.516667],
+                {}
+            ).addTo(marker_cluster_5ab1e299ce7c4f008882234b1bd252d3);
+        
+    
+        var popup_483b56da49cb40e9916913ca192d5344 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_234b6b2d88214cc091279bf2d8284d0e = $(`<div id="html_234b6b2d88214cc091279bf2d8284d0e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1992-08-18 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> B. Hammel, I/</div>`)[0];
+            popup_483b56da49cb40e9916913ca192d5344.setContent(html_234b6b2d88214cc091279bf2d8284d0e);
+        
+
+        marker_4dcd01fe2ce04a6eb471cbb04d60e6ad.bindPopup(popup_483b56da49cb40e9916913ca192d5344)
+        ;
+
+        
+    
+    
+            var marker_c4cef81e533f4ce58ce17515226029ce = L.marker(
+                [8.7, -83.52],
+                {}
+            ).addTo(marker_cluster_5ab1e299ce7c4f008882234b1bd252d3);
+        
+    
+        var popup_0b67b27a76864fcc80f6f3f4327b3da9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9a531b6c53a4e66882af246991f39a8 = $(`<div id="html_d9a531b6c53a4e66882af246991f39a8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce Aguabuena. Sector oeste. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1991-11-22 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> C. M. Taylor</div>`)[0];
+            popup_0b67b27a76864fcc80f6f3f4327b3da9.setContent(html_d9a531b6c53a4e66882af246991f39a8);
+        
+
+        marker_c4cef81e533f4ce58ce17515226029ce.bindPopup(popup_0b67b27a76864fcc80f6f3f4327b3da9)
+        ;
+
+        
+    
+    
+            var marker_afaf49245ffc4202adc53de7d87f17d6 = L.marker(
+                [8.55, -81.8],
+                {}
+            ).addTo(marker_cluster_5ab1e299ce7c4f008882234b1bd252d3);
+        
+    
+        var popup_eb17ac8c7d4b484284dfd228f9c7df1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff71e4e7b32c438ab51e054bb1091b13 = $(`<div id="html_ff71e4e7b32c438ab51e054bb1091b13" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of Cerro Colorado mine above San Félix. Along trail north of road along continental divide. <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 1988-01-27 <strong>Recolectores:</strong> Gordon McPherson <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_eb17ac8c7d4b484284dfd228f9c7df1e.setContent(html_ff71e4e7b32c438ab51e054bb1091b13);
+        
+
+        marker_afaf49245ffc4202adc53de7d87f17d6.bindPopup(popup_eb17ac8c7d4b484284dfd228f9c7df1e)
+        ;
+
+        
+    
+    
+            var marker_0baef3a1a2a74fcda2f5b8704676f9e0 = L.marker(
+                [8.695, -80.476667],
+                {}
+            ).addTo(marker_cluster_5ab1e299ce7c4f008882234b1bd252d3);
+        
+    
+        var popup_bc38b7b699934c1aad595e46914b2b3f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_092e755c378245ada5c17777935b9074 = $(`<div id="html_092e755c378245ada5c17777935b9074" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 4 mi past Llano Grande on road to Cascajal, rocky faced cliff ca. 2 km W along continental divide. Low cloud forest. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1981-05-07 <strong>Recolectores:</strong> Kenneth J. Sytsma|Lennart Andersson|David Brenner <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_bc38b7b699934c1aad595e46914b2b3f.setContent(html_092e755c378245ada5c17777935b9074);
+        
+
+        marker_0baef3a1a2a74fcda2f5b8704676f9e0.bindPopup(popup_bc38b7b699934c1aad595e46914b2b3f)
+        ;
+
+        
+    
+    
+            var marker_1a29af6800824517a0631a2c3fef32da = L.marker(
+                [10.05, -83.5],
+                {}
+            ).addTo(marker_cluster_5ab1e299ce7c4f008882234b1bd252d3);
+        
+    
+        var popup_57dcc0d3cbfc4e458f1529dc4ccf0f41 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2ac6279d34043f895efa7f2e2edfeff = $(`<div id="html_f2ac6279d34043f895efa7f2e2edfeff" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Las Brisas de Pacuarito. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1985-04-18 <strong>Recolectores:</strong> Luis Diego Gómez P.|Gerardo Herrera Ch.|E. Herrera|W. Murillo <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_57dcc0d3cbfc4e458f1529dc4ccf0f41.setContent(html_f2ac6279d34043f895efa7f2e2edfeff);
+        
+
+        marker_1a29af6800824517a0631a2c3fef32da.bindPopup(popup_57dcc0d3cbfc4e458f1529dc4ccf0f41)
+        ;
+
+        
+    
+    
+            var marker_8675bdfea6c4436e9f274a288411cb33 = L.marker(
+                [8.533333, -81.81666700000001],
+                {}
+            ).addTo(marker_cluster_5ab1e299ce7c4f008882234b1bd252d3);
+        
+    
+        var popup_eeaf0378d43a4bfe894f38517a0e1f34 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ca46accc6d34ef9a412b71a1b3785fe = $(`<div id="html_9ca46accc6d34ef9a412b71a1b3785fe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Colorado, above San Félix along mining road 18-27 miles off of Pan-American Highway (above Chame or turn- off to Escopeta). <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 1976-03-12 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_eeaf0378d43a4bfe894f38517a0e1f34.setContent(html_9ca46accc6d34ef9a412b71a1b3785fe);
+        
+
+        marker_8675bdfea6c4436e9f274a288411cb33.bindPopup(popup_eeaf0378d43a4bfe894f38517a0e1f34)
+        ;
+
+        
+    
+    
+            var marker_cc98354e23f247cb8acded7bb738d032 = L.marker(
+                [8.7, -83.525],
+                {}
+            ).addTo(marker_cluster_5ab1e299ce7c4f008882234b1bd252d3);
+        
+    
+        var popup_a49b6e15fc5e4472b59d18aec91fd908 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f50c6c4db1bf4479a9638b1a9f64d5ca = $(`<div id="html_f50c6c4db1bf4479a9638b1a9f64d5ca" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Aguabuena, sector oeste. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1991-11-22 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_a49b6e15fc5e4472b59d18aec91fd908.setContent(html_f50c6c4db1bf4479a9638b1a9f64d5ca);
+        
+
+        marker_cc98354e23f247cb8acded7bb738d032.bindPopup(popup_a49b6e15fc5e4472b59d18aec91fd908)
+        ;
+
+        
+    
+    
+            var marker_842c88a16fb242ebb140553bd715c63f = L.marker(
+                [8.683333, -83.516667],
+                {}
+            ).addTo(marker_cluster_5ab1e299ce7c4f008882234b1bd252d3);
+        
+    
+        var popup_cf01fc8f213e46c6869ce411cc985bc7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d0baf59ec5204ad1a56596a26ba68486 = $(`<div id="html_d0baf59ec5204ad1a56596a26ba68486" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Agua Buena, Rincon. Aguas arriba a partir del tanque de agua del pueblo. Bosque primario. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1990-09-05 <strong>Recolectores:</strong> Carlos Morales <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_cf01fc8f213e46c6869ce411cc985bc7.setContent(html_d0baf59ec5204ad1a56596a26ba68486);
+        
+
+        marker_842c88a16fb242ebb140553bd715c63f.bindPopup(popup_cf01fc8f213e46c6869ce411cc985bc7)
+        ;
+
+        
+    
+    
+            var marker_b6f10fb721844a8e857c7bf9c962919b = L.marker(
+                [8.7, -83.51666800000001],
+                {}
+            ).addTo(marker_cluster_5ab1e299ce7c4f008882234b1bd252d3);
+        
+    
+        var popup_eb15dfdb41cd471a9af2c376b813208c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3dc2e065aa34ef19c2cfd1069a4ce06 = $(`<div id="html_c3dc2e065aa34ef19c2cfd1069a4ce06" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Aguabuena, alrededores. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1992-08-23 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_eb15dfdb41cd471a9af2c376b813208c.setContent(html_c3dc2e065aa34ef19c2cfd1069a4ce06);
+        
+
+        marker_b6f10fb721844a8e857c7bf9c962919b.bindPopup(popup_eb15dfdb41cd471a9af2c376b813208c)
+        ;
+
+        
+    
+    
+            var marker_3b9812ae6d914b37baaae99d80c6f659 = L.marker(
+                [8.7, -83.525001],
+                {}
+            ).addTo(marker_cluster_5ab1e299ce7c4f008882234b1bd252d3);
+        
+    
+        var popup_245938d41f974d048de540f26fd13114 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_302decd2113b4749a4b82dbec1dfcedc = $(`<div id="html_302decd2113b4749a4b82dbec1dfcedc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Aguabuena, sector norte. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1991-11-07 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_245938d41f974d048de540f26fd13114.setContent(html_302decd2113b4749a4b82dbec1dfcedc);
+        
+
+        marker_3b9812ae6d914b37baaae99d80c6f659.bindPopup(popup_245938d41f974d048de540f26fd13114)
+        ;
+
+        
+    
+    
+            var marker_c1533e7f98834bdcb2a22d363f20d133 = L.marker(
+                [8.683333, -83.602778],
+                {}
+            ).addTo(marker_cluster_5ab1e299ce7c4f008882234b1bd252d3);
+        
+    
+        var popup_ee01bd1e8441415bb0f060c3538f9623 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff0ba3edf10c49f59d09b14e725d0f4b = $(`<div id="html_ff0ba3edf10c49f59d09b14e725d0f4b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Rancho Quemado y Drake. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1991-03-29 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_ee01bd1e8441415bb0f060c3538f9623.setContent(html_ff0ba3edf10c49f59d09b14e725d0f4b);
+        
+
+        marker_c1533e7f98834bdcb2a22d363f20d133.bindPopup(popup_ee01bd1e8441415bb0f060c3538f9623)
+        ;
+
+        
+    
+    
+            var marker_5085b1993f184593ae1d3a2aba07c2bf = L.marker(
+                [9.99, -83.38],
+                {}
+            ).addTo(marker_cluster_5ab1e299ce7c4f008882234b1bd252d3);
+        
+    
+        var popup_072b77fc6dd642478e9bf2ed3e48cd2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7267c1d9532487ab7921cbdabe8d067 = $(`<div id="html_c7267c1d9532487ab7921cbdabe8d067" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Barbilla Cuenca del Matina. Colonia Puriscaleña. Sendero Cerro Azul. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1999-05-20 <strong>Recolectores:</strong> Mora, Edgar <strong>Identificadores:</strong> Rodríguez, Alexánder</div>`)[0];
+            popup_072b77fc6dd642478e9bf2ed3e48cd2c.setContent(html_c7267c1d9532487ab7921cbdabe8d067);
+        
+
+        marker_5085b1993f184593ae1d3a2aba07c2bf.bindPopup(popup_072b77fc6dd642478e9bf2ed3e48cd2c)
+        ;
+
+        
+    
+    
+            var marker_95319d4cb84f4ef2b059185c09b896f1 = L.marker(
+                [9.53, -84.03],
+                {}
+            ).addTo(marker_cluster_5ab1e299ce7c4f008882234b1bd252d3);
+        
+    
+        var popup_6c0e95ec0b6b4d75ac5e680434ccc84e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9d5a917080a4bf291f1e755c9f95531 = $(`<div id="html_d9d5a917080a4bf291f1e755c9f95531" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Diamante, camino a Quepos. <strong>Elevación:</strong> 650.0 m  <strong>Fecha:</strong> 1998-01-28 <strong>Recolectores:</strong> Sánchez, Joaquín <strong>Identificadores:</strong> Sánchez, Joaquín</div>`)[0];
+            popup_6c0e95ec0b6b4d75ac5e680434ccc84e.setContent(html_d9d5a917080a4bf291f1e755c9f95531);
+        
+
+        marker_95319d4cb84f4ef2b059185c09b896f1.bindPopup(popup_6c0e95ec0b6b4d75ac5e680434ccc84e)
+        ;
+
+        
+    
+    
+            var marker_f952ad92bade4ae38b60e1b8e9e1818a = L.marker(
+                [8.68, -83.51],
+                {}
+            ).addTo(marker_cluster_5ab1e299ce7c4f008882234b1bd252d3);
+        
+    
+        var popup_b95ea09da2374d28a45ee4c7e7883fb1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf7969a83eee4a0ca52367d17e809158 = $(`<div id="html_bf7969a83eee4a0ca52367d17e809158" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Agua Buena, Rincòn. Aguas arriba a partir del tanque de agua del pueblo. Bosque primario. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1990-09-05 <strong>Recolectores:</strong> Morales, Carlos O. <strong>Identificadores:</strong> N. Zamora & Chavarrìa</div>`)[0];
+            popup_b95ea09da2374d28a45ee4c7e7883fb1.setContent(html_bf7969a83eee4a0ca52367d17e809158);
+        
+
+        marker_f952ad92bade4ae38b60e1b8e9e1818a.bindPopup(popup_b95ea09da2374d28a45ee4c7e7883fb1)
+        ;
+
+        
+    
+    
+            var marker_4804fdfc7df94f3c9b231885b1977386 = L.marker(
+                [8.71, -83.51],
+                {}
+            ).addTo(marker_cluster_5ab1e299ce7c4f008882234b1bd252d3);
+        
+    
+        var popup_61e5c5ee2f10485b8c79114bc26d9076 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c547f2b61764d258a83a4d149d8f6d3 = $(`<div id="html_4c547f2b61764d258a83a4d149d8f6d3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Aguabuena, 3.5 km W of Rincòn. Four hectare permanent sample plot 1 km N of Boscosa station in well drained undulanting terrain with slopes of 15-35º. Tall primary forest with many palms and large lianas. Characteristic species: Symphonia, Carapa, Brosi <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 1993-02-28 <strong>Recolectores:</strong> Thomsen, Karsten <strong>Identificadores:</strong> Thomsen, Karsten</div>`)[0];
+            popup_61e5c5ee2f10485b8c79114bc26d9076.setContent(html_4c547f2b61764d258a83a4d149d8f6d3);
+        
+
+        marker_4804fdfc7df94f3c9b231885b1977386.bindPopup(popup_61e5c5ee2f10485b8c79114bc26d9076)
+        ;
+
+        
+    
+    
+            var marker_482680357f9c48d4bb7d54fc4effb1ce = L.marker(
+                [8.71, -83.51],
+                {}
+            ).addTo(marker_cluster_5ab1e299ce7c4f008882234b1bd252d3);
+        
+    
+        var popup_94db7546e6c342889fcd068634812cf2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28c6e2511c1e466da46949318705e558 = $(`<div id="html_28c6e2511c1e466da46949318705e558" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Aguabuena, 3.5 km W of Rincòn. Four hectare permanent sample plot 1 km N of Boscosa station in well drained undulanting terrain with slopes of 15-35º. Tall primary forest with many palms and large lianas. Characteristic species: Symphonia, Carapa, Brosi <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 1992-09-09 <strong>Recolectores:</strong> Thomsen, Karsten <strong>Identificadores:</strong> Thomsen, Karsten</div>`)[0];
+            popup_94db7546e6c342889fcd068634812cf2.setContent(html_28c6e2511c1e466da46949318705e558);
+        
+
+        marker_482680357f9c48d4bb7d54fc4effb1ce.bindPopup(popup_94db7546e6c342889fcd068634812cf2)
+        ;
+
+        
+    
+    
+            var marker_153de31b314342a2b93b5e9aa17abe38 = L.marker(
+                [8.69, -83.6],
+                {}
+            ).addTo(marker_cluster_5ab1e299ce7c4f008882234b1bd252d3);
+        
+    
+        var popup_ff0d33e4bd5c4af78f0aff3ea26495c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d174a55b3cba4140913b0b8394adabfc = $(`<div id="html_d174a55b3cba4140913b0b8394adabfc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. F. Golfo Dulce Entre Rancho Quemado y Drake, Golfito. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1991-03-29 <strong>Recolectores:</strong> Aguilar, Reinaldo <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_ff0d33e4bd5c4af78f0aff3ea26495c3.setContent(html_d174a55b3cba4140913b0b8394adabfc);
+        
+
+        marker_153de31b314342a2b93b5e9aa17abe38.bindPopup(popup_ff0d33e4bd5c4af78f0aff3ea26495c3)
+        ;
+
+        
+    
+    
+            var marker_a4408ba029df402f99a0859ebd4fc192 = L.marker(
+                [8.7, -83.52],
+                {}
+            ).addTo(marker_cluster_5ab1e299ce7c4f008882234b1bd252d3);
+        
+    
+        var popup_5a0bbeee89cd45eeab3706fce4965cf9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_66acf197549846b1b8d947896ce2974f = $(`<div id="html_66acf197549846b1b8d947896ce2974f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. F. Golfo Dulce Aguabuena. Sector Oeste. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1991-11-22 <strong>Recolectores:</strong> Aguilar, Reinaldo <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_5a0bbeee89cd45eeab3706fce4965cf9.setContent(html_66acf197549846b1b8d947896ce2974f);
+        
+
+        marker_a4408ba029df402f99a0859ebd4fc192.bindPopup(popup_5a0bbeee89cd45eeab3706fce4965cf9)
+        ;
+
+        
+    
+    
+            var layer_control_104e827232cc4ab6b05e30fdd72ff0b2 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_930f2963966946b5a2406d75d89f1cc6,
+                    "ESRI World Imagery" : tile_layer_6d510d490ac74e34ad7c723d5d793041,
+                },
+                overlays :  {
+                    "macro_element_5ab1e299ce7c4f008882234b1bd252d3" : marker_cluster_5ab1e299ce7c4f008882234b1bd252d3,
+                },
+            };
+            L.control.layers(
+                layer_control_104e827232cc4ab6b05e30fdd72ff0b2.base_layers,
+                layer_control_104e827232cc4ab6b05e30fdd72ff0b2.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_f954d3c176e749edb966e0d7da41a15d);
+            tile_layer_6d510d490ac74e34ad7c723d5d793041.remove();
+        
+</script>

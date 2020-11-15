@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d97946deb2bf42f78b3017ceaf01cb5a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d97946deb2bf42f78b3017ceaf01cb5a" ></div>
+        
+</body>
+<script>    
+    
+            var map_d97946deb2bf42f78b3017ceaf01cb5a = L.map(
+                "map_d97946deb2bf42f78b3017ceaf01cb5a",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_d97946deb2bf42f78b3017ceaf01cb5a);
+
+            
+
+        
+    
+            var tile_layer_279c721a76c3477bbf38e253ce43c16c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d97946deb2bf42f78b3017ceaf01cb5a);
+        
+    
+            var tile_layer_1afbb7d744d4489aaa47a1236e814814 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d97946deb2bf42f78b3017ceaf01cb5a);
+        
+    
+            var marker_cluster_abe182b4b2a44a5299d1ea81d77ebb6a = L.markerClusterGroup(
+                {}
+            );
+            map_d97946deb2bf42f78b3017ceaf01cb5a.addLayer(marker_cluster_abe182b4b2a44a5299d1ea81d77ebb6a);
+        
+    
+            var marker_11a3b00de99d4a438ad094db94f86c7f = L.marker(
+                [5.544444, -87.05555600000001],
+                {}
+            ).addTo(marker_cluster_abe182b4b2a44a5299d1ea81d77ebb6a);
+        
+    
+        var popup_0ccb79b915f3411fad15cfe2b16183af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d953fb2fd831401aa89a686c0d6180d0 = $(`<div id="html_d953fb2fd831401aa89a686c0d6180d0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Isla del Coco. Isla del Coco. De Bahía Wafer a Catarata Wesler. <strong>Elevación:</strong> 50.5 m  <strong>Fecha:</strong> 1994-10-12 00:00:00 <strong>Recolectores:</strong> F. J. Quesada <strong>Identificadores:</strong> C.C. Berg (BG)</div>`)[0];
+            popup_0ccb79b915f3411fad15cfe2b16183af.setContent(html_d953fb2fd831401aa89a686c0d6180d0);
+        
+
+        marker_11a3b00de99d4a438ad094db94f86c7f.bindPopup(popup_0ccb79b915f3411fad15cfe2b16183af)
+        ;
+
+        
+    
+    
+            var marker_f60fa1d66b7541319654a288aee318ba = L.marker(
+                [5.543423000000001, -87.05673],
+                {}
+            ).addTo(marker_cluster_abe182b4b2a44a5299d1ea81d77ebb6a);
+        
+    
+        var popup_d5197bbad9784027809073a52b905838 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a02042b18ef4b7ca699c2349e73153c = $(`<div id="html_1a02042b18ef4b7ca699c2349e73153c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2019-03-05 11:56:00 <strong>Recolectores:</strong> Richard Joyce <strong>Identificadores:</strong> Richard Joyce</div>`)[0];
+            popup_d5197bbad9784027809073a52b905838.setContent(html_1a02042b18ef4b7ca699c2349e73153c);
+        
+
+        marker_f60fa1d66b7541319654a288aee318ba.bindPopup(popup_d5197bbad9784027809073a52b905838)
+        ;
+
+        
+    
+    
+            var marker_e05ed577593747cea34e728bde83276a = L.marker(
+                [5.53555, -87.06083000000001],
+                {}
+            ).addTo(marker_cluster_abe182b4b2a44a5299d1ea81d77ebb6a);
+        
+    
+        var popup_4e51f1eb9c9b46aa93e4b4cf1524c5f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e5076a707d114f498299e8c947253ec3 = $(`<div id="html_e5076a707d114f498299e8c947253ec3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Isla de Cocos, Bahía de Wafer <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1981-08-01 00:00:00 <strong>Recolectores:</strong> Jorge Gómez-Laurito <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_4e51f1eb9c9b46aa93e4b4cf1524c5f4.setContent(html_e5076a707d114f498299e8c947253ec3);
+        
+
+        marker_e05ed577593747cea34e728bde83276a.bindPopup(popup_4e51f1eb9c9b46aa93e4b4cf1524c5f4)
+        ;
+
+        
+    
+    
+            var marker_536bfd4f9de2470fae35523b136607df = L.marker(
+                [5.544444, -87.05555600000001],
+                {}
+            ).addTo(marker_cluster_abe182b4b2a44a5299d1ea81d77ebb6a);
+        
+    
+        var popup_6731047cbb81430dbd06d27e31f49650 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ced4302bfdf4b0f86fffdaff4edde5e = $(`<div id="html_3ced4302bfdf4b0f86fffdaff4edde5e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Isla del Coco.  Isla del Coco.  Camino de Bahía Chatam a Bahía Wafer. <strong>Elevación:</strong> 50.5 m  <strong>Fecha:</strong> 1996-08-24 00:00:00 <strong>Recolectores:</strong> José Á. González R. <strong>Identificadores:</strong> M. F. O. Silva (RB)</div>`)[0];
+            popup_6731047cbb81430dbd06d27e31f49650.setContent(html_3ced4302bfdf4b0f86fffdaff4edde5e);
+        
+
+        marker_536bfd4f9de2470fae35523b136607df.bindPopup(popup_6731047cbb81430dbd06d27e31f49650)
+        ;
+
+        
+    
+    
+            var marker_769509c5069a4e15be8640f89210af24 = L.marker(
+                [5.551111, -87.05111099999999],
+                {}
+            ).addTo(marker_cluster_abe182b4b2a44a5299d1ea81d77ebb6a);
+        
+    
+        var popup_5cac546264eb4478a04ce4fa39dd2b40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_109ed4c76a5c4f7fa51dcf50e2630ded = $(`<div id="html_109ed4c76a5c4f7fa51dcf50e2630ded" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bahía Chatham, Isla del Coco <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1973-08-13 00:00:00 <strong>Recolectores:</strong> Luis G. Carrasquilla <strong>Identificadores:</strong> C.C. Berg (U)</div>`)[0];
+            popup_5cac546264eb4478a04ce4fa39dd2b40.setContent(html_109ed4c76a5c4f7fa51dcf50e2630ded);
+        
+
+        marker_769509c5069a4e15be8640f89210af24.bindPopup(popup_5cac546264eb4478a04ce4fa39dd2b40)
+        ;
+
+        
+    
+    
+            var marker_02f5541f1db94065b2bcca8a37e1626c = L.marker(
+                [5.55166, -87.05027],
+                {}
+            ).addTo(marker_cluster_abe182b4b2a44a5299d1ea81d77ebb6a);
+        
+    
+        var popup_57e395889a3e4605beb4133304797523 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_666972731d884f428600891208ed62c3 = $(`<div id="html_666972731d884f428600891208ed62c3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Isla de Coco, Bahía de Chatham <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1965-04-13 00:00:00 <strong>Recolectores:</strong> Alfonso Jiménez M. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_57e395889a3e4605beb4133304797523.setContent(html_666972731d884f428600891208ed62c3);
+        
+
+        marker_02f5541f1db94065b2bcca8a37e1626c.bindPopup(popup_57e395889a3e4605beb4133304797523)
+        ;
+
+        
+    
+    
+            var marker_8c5e9b65c3334768b4ee39173f570fc3 = L.marker(
+                [5.5375, -87.03194],
+                {}
+            ).addTo(marker_cluster_abe182b4b2a44a5299d1ea81d77ebb6a);
+        
+    
+        var popup_5eac5ba3dcec44ae881168015e9985a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_698ce12757514cac9c265684214a34d9 = $(`<div id="html_698ce12757514cac9c265684214a34d9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Isla del Coco. Sendera a Cabo Atrevido, parte alta. <strong>Elevación:</strong> 225.0 m  <strong>Fecha:</strong> 1997-06-25 00:00:00 <strong>Recolectores:</strong> Alexander Rojas <strong>Identificadores:</strong> J.F. Morales, 13/I/</div>`)[0];
+            popup_5eac5ba3dcec44ae881168015e9985a7.setContent(html_698ce12757514cac9c265684214a34d9);
+        
+
+        marker_8c5e9b65c3334768b4ee39173f570fc3.bindPopup(popup_5eac5ba3dcec44ae881168015e9985a7)
+        ;
+
+        
+    
+    
+            var marker_eb78b02f561b489494643392fce4d87e = L.marker(
+                [5.541148000000001, -87.054819],
+                {}
+            ).addTo(marker_cluster_abe182b4b2a44a5299d1ea81d77ebb6a);
+        
+    
+        var popup_b736aecb68ed47499e9bdcd04985e9f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_336c44572c974fcabf3bd1ef467d9cb5 = $(`<div id="html_336c44572c974fcabf3bd1ef467d9cb5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Isla del Coco. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 2001-08-01 00:00:00 <strong>Recolectores:</strong> Jennifer Trusty <strong>Identificadores:</strong> Trusty, Jennifer</div>`)[0];
+            popup_b736aecb68ed47499e9bdcd04985e9f5.setContent(html_336c44572c974fcabf3bd1ef467d9cb5);
+        
+
+        marker_eb78b02f561b489494643392fce4d87e.bindPopup(popup_b736aecb68ed47499e9bdcd04985e9f5)
+        ;
+
+        
+    
+    
+            var marker_f3c9412d5f2c41e286ef91f1b9cbb6a2 = L.marker(
+                [5.544444, -87.05555600000001],
+                {}
+            ).addTo(marker_cluster_abe182b4b2a44a5299d1ea81d77ebb6a);
+        
+    
+        var popup_7d4940f29faa41a091b93dc3d5529752 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f28c3e3bb433445a8d5b9a3e729eecca = $(`<div id="html_f28c3e3bb433445a8d5b9a3e729eecca" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> De Bahia Wafer a Catarata Wesler. <strong>Elevación:</strong> 50.5 m  <strong>Fecha:</strong> 1994-10-12 00:00:00 <strong>Recolectores:</strong> Javier Quesada <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_7d4940f29faa41a091b93dc3d5529752.setContent(html_f28c3e3bb433445a8d5b9a3e729eecca);
+        
+
+        marker_f3c9412d5f2c41e286ef91f1b9cbb6a2.bindPopup(popup_7d4940f29faa41a091b93dc3d5529752)
+        ;
+
+        
+    
+    
+            var marker_1523203b7a764b3abb06eaf39ea65afe = L.marker(
+                [5.544444, -87.05555600000001],
+                {}
+            ).addTo(marker_cluster_abe182b4b2a44a5299d1ea81d77ebb6a);
+        
+    
+        var popup_17494ee304034547b17bfd1090fb5f29 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_914cc14ccc3e4e5ca997887840411590 = $(`<div id="html_914cc14ccc3e4e5ca997887840411590" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camino de Bahia Chatam a Bahia Wafer. <strong>Elevación:</strong> 50.5 m  <strong>Fecha:</strong> 1996-08-24 00:00:00 <strong>Recolectores:</strong> Jose González <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_17494ee304034547b17bfd1090fb5f29.setContent(html_914cc14ccc3e4e5ca997887840411590);
+        
+
+        marker_1523203b7a764b3abb06eaf39ea65afe.bindPopup(popup_17494ee304034547b17bfd1090fb5f29)
+        ;
+
+        
+    
+    
+            var marker_3324e2e04a2e4d4fa08f29a591ecd845 = L.marker(
+                [5.5375, -87.031944],
+                {}
+            ).addTo(marker_cluster_abe182b4b2a44a5299d1ea81d77ebb6a);
+        
+    
+        var popup_58a0be62730d49a5a1af67fb76b1d9d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0ddcd7c94ea479ab8de6b4000ed1628 = $(`<div id="html_f0ddcd7c94ea479ab8de6b4000ed1628" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero a Cabo Atrevido, parte alta. <strong>Elevación:</strong> 225.0 m  <strong>Fecha:</strong> 1997-06-25 00:00:00 <strong>Recolectores:</strong> Alexander Rojas <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_58a0be62730d49a5a1af67fb76b1d9d3.setContent(html_f0ddcd7c94ea479ab8de6b4000ed1628);
+        
+
+        marker_3324e2e04a2e4d4fa08f29a591ecd845.bindPopup(popup_58a0be62730d49a5a1af67fb76b1d9d3)
+        ;
+
+        
+    
+    
+            var marker_aad1cbb24bd64210adfda9904b389bfa = L.marker(
+                [5.5375, -87.031944],
+                {}
+            ).addTo(marker_cluster_abe182b4b2a44a5299d1ea81d77ebb6a);
+        
+    
+        var popup_0880119d2e3d42659873a0decba570fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a57f365cb2d24845a357a4a488db869d = $(`<div id="html_a57f365cb2d24845a357a4a488db869d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero a Cabo Atrevido, parte alta. <strong>Elevación:</strong> 225.0 m  <strong>Fecha:</strong> 1997-06-25 00:00:00 <strong>Recolectores:</strong> Alexander Rojas <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_0880119d2e3d42659873a0decba570fb.setContent(html_a57f365cb2d24845a357a4a488db869d);
+        
+
+        marker_aad1cbb24bd64210adfda9904b389bfa.bindPopup(popup_0880119d2e3d42659873a0decba570fb)
+        ;
+
+        
+    
+    
+            var marker_ef161b421065411ebf611645f6f5b9ab = L.marker(
+                [5.5375, -87.031944],
+                {}
+            ).addTo(marker_cluster_abe182b4b2a44a5299d1ea81d77ebb6a);
+        
+    
+        var popup_330c4479d0204f359e9d4437a9c7eb86 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6cffbb260bb349d9a8be6ee54ae57b7b = $(`<div id="html_6cffbb260bb349d9a8be6ee54ae57b7b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero a Cabo Atrevido, parte alta. <strong>Elevación:</strong> 225.0 m  <strong>Fecha:</strong> 1997-06-25 00:00:00 <strong>Recolectores:</strong> Alexander Rojas <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_330c4479d0204f359e9d4437a9c7eb86.setContent(html_6cffbb260bb349d9a8be6ee54ae57b7b);
+        
+
+        marker_ef161b421065411ebf611645f6f5b9ab.bindPopup(popup_330c4479d0204f359e9d4437a9c7eb86)
+        ;
+
+        
+    
+    
+            var marker_185008096ee5410f8f9f092f7f3c484f = L.marker(
+                [5.5375, -87.031944],
+                {}
+            ).addTo(marker_cluster_abe182b4b2a44a5299d1ea81d77ebb6a);
+        
+    
+        var popup_efded313ec424f9bab107214c434d7cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4122f2f2f7834235889e153b720a3f90 = $(`<div id="html_4122f2f2f7834235889e153b720a3f90" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero a Cabo Atrevido, parte alta. <strong>Elevación:</strong> 225.0 m  <strong>Fecha:</strong> 1997-06-25 00:00:00 <strong>Recolectores:</strong> Alexander Rojas <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_efded313ec424f9bab107214c434d7cf.setContent(html_4122f2f2f7834235889e153b720a3f90);
+        
+
+        marker_185008096ee5410f8f9f092f7f3c484f.bindPopup(popup_efded313ec424f9bab107214c434d7cf)
+        ;
+
+        
+    
+    
+            var marker_6557ace018e94481a730268df5ab3017 = L.marker(
+                [5.54, -87.05],
+                {}
+            ).addTo(marker_cluster_abe182b4b2a44a5299d1ea81d77ebb6a);
+        
+    
+        var popup_9ec23882d0dc4de7af9c6197821a7c5e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1c179b845ab4a36aad5227e20703bc9 = $(`<div id="html_a1c179b845ab4a36aad5227e20703bc9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Isla del Coco Isla del Coco. Camino de bahía Chatam a Bahía Wafer. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1996-08-24 00:00:00 <strong>Recolectores:</strong> González, José <strong>Identificadores:</strong> González, José</div>`)[0];
+            popup_9ec23882d0dc4de7af9c6197821a7c5e.setContent(html_a1c179b845ab4a36aad5227e20703bc9);
+        
+
+        marker_6557ace018e94481a730268df5ab3017.bindPopup(popup_9ec23882d0dc4de7af9c6197821a7c5e)
+        ;
+
+        
+    
+    
+            var marker_d5810d194eff4c85a281745f9a2a945c = L.marker(
+                [5.53, -87.01],
+                {}
+            ).addTo(marker_cluster_abe182b4b2a44a5299d1ea81d77ebb6a);
+        
+    
+        var popup_e5bbf930e1824a56a7134c3d9cb1a925 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96daa35352674abe8b07f63745784cf3 = $(`<div id="html_96daa35352674abe8b07f63745784cf3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Isla del Coco <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 2002-02-01 00:00:00 <strong>Recolectores:</strong> Trusty, Jennifer <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_e5bbf930e1824a56a7134c3d9cb1a925.setContent(html_96daa35352674abe8b07f63745784cf3);
+        
+
+        marker_d5810d194eff4c85a281745f9a2a945c.bindPopup(popup_e5bbf930e1824a56a7134c3d9cb1a925)
+        ;
+
+        
+    
+    
+            var marker_e6a862573cda455e91b96f9a4476d8cc = L.marker(
+                [5.55, -87.04],
+                {}
+            ).addTo(marker_cluster_abe182b4b2a44a5299d1ea81d77ebb6a);
+        
+    
+        var popup_7afcef52ecb0437cae0d8226077c215b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f8a1332e0ab4c9fb54b35f0dfcf4b4c = $(`<div id="html_9f8a1332e0ab4c9fb54b35f0dfcf4b4c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Isla del Coco sendero a Cabo Atrevido, parte alta. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1997-06-25 00:00:00 <strong>Recolectores:</strong> Rojas, Alexander <strong>Identificadores:</strong> Morales, Juan Francisco</div>`)[0];
+            popup_7afcef52ecb0437cae0d8226077c215b.setContent(html_9f8a1332e0ab4c9fb54b35f0dfcf4b4c);
+        
+
+        marker_e6a862573cda455e91b96f9a4476d8cc.bindPopup(popup_7afcef52ecb0437cae0d8226077c215b)
+        ;
+
+        
+    
+    
+            var marker_88d0f446ee3a4607a24aac69b4e50ae4 = L.marker(
+                [5.54, -87.05],
+                {}
+            ).addTo(marker_cluster_abe182b4b2a44a5299d1ea81d77ebb6a);
+        
+    
+        var popup_dd09cf70fd7c45a4b248f00f6f67404b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c1fd75274364b86a9edae8ae562c9b5 = $(`<div id="html_3c1fd75274364b86a9edae8ae562c9b5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Isla del Coco Isla del Coco. De Bahía Wafer a Catarata Wesler. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1994-10-12 00:00:00 <strong>Recolectores:</strong> Quesada, Francisco <strong>Identificadores:</strong> González, José</div>`)[0];
+            popup_dd09cf70fd7c45a4b248f00f6f67404b.setContent(html_3c1fd75274364b86a9edae8ae562c9b5);
+        
+
+        marker_88d0f446ee3a4607a24aac69b4e50ae4.bindPopup(popup_dd09cf70fd7c45a4b248f00f6f67404b)
+        ;
+
+        
+    
+    
+            var marker_8d23ed27f7ff471e8b95e089972f369d = L.marker(
+                [5.55, -87.04],
+                {}
+            ).addTo(marker_cluster_abe182b4b2a44a5299d1ea81d77ebb6a);
+        
+    
+        var popup_cd7f1347dcbe4a458210c0fbbae4101b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6878840295814c15a8b24bedf7a30b64 = $(`<div id="html_6878840295814c15a8b24bedf7a30b64" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Isla del Coco Région inferiére, sur le littoral ouest et nord. Cocos Island. Pacifique. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Pittier, Henry <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_cd7f1347dcbe4a458210c0fbbae4101b.setContent(html_6878840295814c15a8b24bedf7a30b64);
+        
+
+        marker_8d23ed27f7ff471e8b95e089972f369d.bindPopup(popup_cd7f1347dcbe4a458210c0fbbae4101b)
+        ;
+
+        
+    
+    
+            var layer_control_0623eafd3913485cb93cfdb4a2e6ac62 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_279c721a76c3477bbf38e253ce43c16c,
+                    "ESRI World Imagery" : tile_layer_1afbb7d744d4489aaa47a1236e814814,
+                },
+                overlays :  {
+                    "macro_element_abe182b4b2a44a5299d1ea81d77ebb6a" : marker_cluster_abe182b4b2a44a5299d1ea81d77ebb6a,
+                },
+            };
+            L.control.layers(
+                layer_control_0623eafd3913485cb93cfdb4a2e6ac62.base_layers,
+                layer_control_0623eafd3913485cb93cfdb4a2e6ac62.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_d97946deb2bf42f78b3017ceaf01cb5a);
+            tile_layer_1afbb7d744d4489aaa47a1236e814814.remove();
+        
+</script>

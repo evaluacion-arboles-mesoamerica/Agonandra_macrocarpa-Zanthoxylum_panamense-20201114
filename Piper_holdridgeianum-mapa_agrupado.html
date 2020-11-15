@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d81cf758f0254f3e97dc91d82b390a0f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d81cf758f0254f3e97dc91d82b390a0f" ></div>
+        
+</body>
+<script>    
+    
+            var map_d81cf758f0254f3e97dc91d82b390a0f = L.map(
+                "map_d81cf758f0254f3e97dc91d82b390a0f",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_d81cf758f0254f3e97dc91d82b390a0f);
+
+            
+
+        
+    
+            var tile_layer_b916553903914af892b015855b8a02f3 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d81cf758f0254f3e97dc91d82b390a0f);
+        
+    
+            var tile_layer_bd24d69547464523ad510bad0b431797 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d81cf758f0254f3e97dc91d82b390a0f);
+        
+    
+            var marker_cluster_93b7c32219954cf788954d5d74cbed8c = L.markerClusterGroup(
+                {}
+            );
+            map_d81cf758f0254f3e97dc91d82b390a0f.addLayer(marker_cluster_93b7c32219954cf788954d5d74cbed8c);
+        
+    
+            var marker_ebbe1e2414d54848b579497ff1ab84d1 = L.marker(
+                [10.5, -84.0],
+                {}
+            ).addTo(marker_cluster_93b7c32219954cf788954d5d74cbed8c);
+        
+    
+        var popup_40cfb29f64874f49bd472eca6782e6c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_287095ea14fe4d5b8ef6134a478eaeca = $(`<div id="html_287095ea14fe4d5b8ef6134a478eaeca" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1968-06-01 <strong>Recolectores:</strong> W. C. Burger & R. G. Stolze <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_40cfb29f64874f49bd472eca6782e6c3.setContent(html_287095ea14fe4d5b8ef6134a478eaeca);
+        
+
+        marker_ebbe1e2414d54848b579497ff1ab84d1.bindPopup(popup_40cfb29f64874f49bd472eca6782e6c3)
+        ;
+
+        
+    
+    
+            var marker_5d6aa820d06a49d18744f8743bfdb74e = L.marker(
+                [10.71, -85.05],
+                {}
+            ).addTo(marker_cluster_93b7c32219954cf788954d5d74cbed8c);
+        
+    
+        var popup_416c5da9bcc8402ea4b3398af76fd6d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24716f1013484e5d92fbffe7cfb5c102 = $(`<div id="html_24716f1013484e5d92fbffe7cfb5c102" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z. P. Tenorio. Cordillera de Guanacaste. Primary forest at Volcán Tenorio. Premontane rain forest. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1995-04-21 <strong>Recolectores:</strong> Penneys, Darin S. <strong>Identificadores:</strong> Grayum, Michael</div>`)[0];
+            popup_416c5da9bcc8402ea4b3398af76fd6d3.setContent(html_24716f1013484e5d92fbffe7cfb5c102);
+        
+
+        marker_5d6aa820d06a49d18744f8743bfdb74e.bindPopup(popup_416c5da9bcc8402ea4b3398af76fd6d3)
+        ;
+
+        
+    
+    
+            var marker_0713507224f84e9e9bee8bd9af2fb0fd = L.marker(
+                [10.43, -84.03],
+                {}
+            ).addTo(marker_cluster_93b7c32219954cf788954d5d74cbed8c);
+        
+    
+        var popup_f577d14a28e14dcba3d91248205e5869 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_886fd1e2879d4608b3fefd171d05642e = $(`<div id="html_886fd1e2879d4608b3fefd171d05642e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, the OTS Field Station on the Río Puerto Viejo just E of its junction with the Río Sarapiquí. Along west boundary of new property, edge of forest, about 1500 m. south of the Río Sarapiquí. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1982-05-24 <strong>Recolectores:</strong> Hammel, Barry E. <strong>Identificadores:</strong> Wilbur, Robert L.</div>`)[0];
+            popup_f577d14a28e14dcba3d91248205e5869.setContent(html_886fd1e2879d4608b3fefd171d05642e);
+        
+
+        marker_0713507224f84e9e9bee8bd9af2fb0fd.bindPopup(popup_f577d14a28e14dcba3d91248205e5869)
+        ;
+
+        
+    
+    
+            var marker_d362afbaf5f9442891b4837a590a10af = L.marker(
+                [10.43, -84.03],
+                {}
+            ).addTo(marker_cluster_93b7c32219954cf788954d5d74cbed8c);
+        
+    
+        var popup_80a97e9e458b4aa0970345c972dfabf7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33e2b8e581e04773879b652edbba64ff = $(`<div id="html_33e2b8e581e04773879b652edbba64ff" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, the OTS Field Station on the Río Puerto Viejo just E of its junction with the Río Sarapiquí. In forest along trail between station & AC lab. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1982-05-12 <strong>Recolectores:</strong> Hammel, Barry E. <strong>Identificadores:</strong> Wilbur, Robert L.</div>`)[0];
+            popup_80a97e9e458b4aa0970345c972dfabf7.setContent(html_33e2b8e581e04773879b652edbba64ff);
+        
+
+        marker_d362afbaf5f9442891b4837a590a10af.bindPopup(popup_80a97e9e458b4aa0970345c972dfabf7)
+        ;
+
+        
+    
+    
+            var marker_df460eb8ca6d4727a87333c720ba2159 = L.marker(
+                [10.43, -84.03],
+                {}
+            ).addTo(marker_cluster_93b7c32219954cf788954d5d74cbed8c);
+        
+    
+        var popup_33b86046e08b43d78d7ce3f71447533e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51c59879528e4ae789e27f290ebd1179 = $(`<div id="html_51c59879528e4ae789e27f290ebd1179" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, the OTS Field Station on the Río Puerto Viejo just E of its junction with the Río Sarapiquí. West boundary trail 1600 m (2200 m. South); in forest on slopes and ridges. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1982-05-07 <strong>Recolectores:</strong> Hammel, Barry E. <strong>Identificadores:</strong> Wilbur, Robert L.</div>`)[0];
+            popup_33b86046e08b43d78d7ce3f71447533e.setContent(html_51c59879528e4ae789e27f290ebd1179);
+        
+
+        marker_df460eb8ca6d4727a87333c720ba2159.bindPopup(popup_33b86046e08b43d78d7ce3f71447533e)
+        ;
+
+        
+    
+    
+            var marker_a61b04ffe5984c6e9499879ba94c79d6 = L.marker(
+                [10.37, -84.03],
+                {}
+            ).addTo(marker_cluster_93b7c32219954cf788954d5d74cbed8c);
+        
+    
+        var popup_f1cc8db882b74e4e9b05ab002387218a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b27596cce1f4fb399a62aca9e93a8b9 = $(`<div id="html_0b27596cce1f4fb399a62aca9e93a8b9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo Estación El Ceibo. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1989-11-22 <strong>Recolectores:</strong> Aguilar, Reinaldo <strong>Identificadores:</strong> Morales, Carlos O.</div>`)[0];
+            popup_f1cc8db882b74e4e9b05ab002387218a.setContent(html_0b27596cce1f4fb399a62aca9e93a8b9);
+        
+
+        marker_a61b04ffe5984c6e9499879ba94c79d6.bindPopup(popup_f1cc8db882b74e4e9b05ab002387218a)
+        ;
+
+        
+    
+    
+            var marker_380ee5c984f140ef9a59951643e65c45 = L.marker(
+                [9.43, -83.05],
+                {}
+            ).addTo(marker_cluster_93b7c32219954cf788954d5d74cbed8c);
+        
+    
+        var popup_0d526594ef9d4e3aa5d42b9c1de782a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_855e813b25594608ab7d80c5a0e6389d = $(`<div id="html_855e813b25594608ab7d80c5a0e6389d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 1 km down the trail from the camp in direction to Surayo. Primary Forest. Camp by the river Lari. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1992-02-28 <strong>Recolectores:</strong> Bittner, Jens <strong>Identificadores:</strong> Vargas, Gustavo</div>`)[0];
+            popup_0d526594ef9d4e3aa5d42b9c1de782a6.setContent(html_855e813b25594608ab7d80c5a0e6389d);
+        
+
+        marker_380ee5c984f140ef9a59951643e65c45.bindPopup(popup_0d526594ef9d4e3aa5d42b9c1de782a6)
+        ;
+
+        
+    
+    
+            var marker_e05a8f2301ea4003909f2e4e2a3e2fbe = L.marker(
+                [10.43, -83.98],
+                {}
+            ).addTo(marker_cluster_93b7c32219954cf788954d5d74cbed8c);
+        
+    
+        var popup_f47af54f38b34991a2ab5c1192c935e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7fee39ed6868427a9d691779bf9ea581 = $(`<div id="html_7fee39ed6868427a9d691779bf9ea581" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, The OTS Field Station near junction of the Puerto Viejo and Sarapiquí rivers. Forest understory. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1987-02-16 <strong>Recolectores:</strong> Nancy Greig <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_f47af54f38b34991a2ab5c1192c935e8.setContent(html_7fee39ed6868427a9d691779bf9ea581);
+        
+
+        marker_e05a8f2301ea4003909f2e4e2a3e2fbe.bindPopup(popup_f47af54f38b34991a2ab5c1192c935e8)
+        ;
+
+        
+    
+    
+            var marker_5428339e90ce45809f5a123ed5a2bdf4 = L.marker(
+                [10.28, -84.06],
+                {}
+            ).addTo(marker_cluster_93b7c32219954cf788954d5d74cbed8c);
+        
+    
+        var popup_4ef837043db943acaf0da22a259507c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a12fbf1334c8456dbe9bd2b3ce486ff4 = $(`<div id="html_a12fbf1334c8456dbe9bd2b3ce486ff4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Forest between Río Peje and Río Sardinalito, Atlantic slope of Volcán Barva. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1986-04-07 <strong>Recolectores:</strong> Grayum, Michael <strong>Identificadores:</strong> Grayum, Michael</div>`)[0];
+            popup_4ef837043db943acaf0da22a259507c2.setContent(html_a12fbf1334c8456dbe9bd2b3ce486ff4);
+        
+
+        marker_5428339e90ce45809f5a123ed5a2bdf4.bindPopup(popup_4ef837043db943acaf0da22a259507c2)
+        ;
+
+        
+    
+    
+            var marker_3a0065e0c91e4bb0baf330783724298c = L.marker(
+                [10.0, -83.46],
+                {}
+            ).addTo(marker_cluster_93b7c32219954cf788954d5d74cbed8c);
+        
+    
+        var popup_9ce815d80aa447cdb72eb00f8fcc3565 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_918e97062de844f1ab05606bc28ba9d9 = $(`<div id="html_918e97062de844f1ab05606bc28ba9d9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zona Protectora Barbilla W side of plateau separating headwaters of north fork of Río Dantas from headwaters of Quebrada Barreal, río Barbilla drainage (SE of Siquirres). <strong>Elevación:</strong> 630.0 m  <strong>Fecha:</strong> 1987-01-11 <strong>Recolectores:</strong> Grayum, Michael <strong>Identificadores:</strong> Grayum, Michael</div>`)[0];
+            popup_9ce815d80aa447cdb72eb00f8fcc3565.setContent(html_918e97062de844f1ab05606bc28ba9d9);
+        
+
+        marker_3a0065e0c91e4bb0baf330783724298c.bindPopup(popup_9ce815d80aa447cdb72eb00f8fcc3565)
+        ;
+
+        
+    
+    
+            var marker_20c2ecc64c6049fd8d3a06dc7fc627bf = L.marker(
+                [10.4, -84.11],
+                {}
+            ).addTo(marker_cluster_93b7c32219954cf788954d5d74cbed8c);
+        
+    
+        var popup_d199aafbf6184b4e938b418926a35341 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_692492af08964954a3665266d608cd78 = $(`<div id="html_692492af08964954a3665266d608cd78" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Small hills of cleared agricultural land and areas of remnant original forest now being logged. Near Tirimbina east of the Río Sarapiquí. <strong>Elevación:</strong> 175.0 m  <strong>Fecha:</strong> 1971-08-12 <strong>Recolectores:</strong> Burger, William <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_d199aafbf6184b4e938b418926a35341.setContent(html_692492af08964954a3665266d608cd78);
+        
+
+        marker_20c2ecc64c6049fd8d3a06dc7fc627bf.bindPopup(popup_d199aafbf6184b4e938b418926a35341)
+        ;
+
+        
+    
+    
+            var marker_426a27b0b0ce4f858635245c5b794b11 = L.marker(
+                [10.43, -84.0],
+                {}
+            ).addTo(marker_cluster_93b7c32219954cf788954d5d74cbed8c);
+        
+    
+        var popup_6e6357bfdf5b4306b1ba7468028a77a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6126ce98e5fd406a980cf0d682dc56fa = $(`<div id="html_6126ce98e5fd406a980cf0d682dc56fa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> E.B. La Selva Original forest near to Río Puerto Viejo, about 2 Km upstream from to confluence with Río Sarapiquí. Formerly of Finca La Selva of L. R. Holdridge. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1968-06-15 <strong>Recolectores:</strong> Burger, William <strong>Identificadores:</strong> Burger, William</div>`)[0];
+            popup_6e6357bfdf5b4306b1ba7468028a77a8.setContent(html_6126ce98e5fd406a980cf0d682dc56fa);
+        
+
+        marker_426a27b0b0ce4f858635245c5b794b11.bindPopup(popup_6e6357bfdf5b4306b1ba7468028a77a8)
+        ;
+
+        
+    
+    
+            var layer_control_5407880ba2964d8ca1b0c56f4ac0c4ed = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_b916553903914af892b015855b8a02f3,
+                    "ESRI World Imagery" : tile_layer_bd24d69547464523ad510bad0b431797,
+                },
+                overlays :  {
+                    "macro_element_93b7c32219954cf788954d5d74cbed8c" : marker_cluster_93b7c32219954cf788954d5d74cbed8c,
+                },
+            };
+            L.control.layers(
+                layer_control_5407880ba2964d8ca1b0c56f4ac0c4ed.base_layers,
+                layer_control_5407880ba2964d8ca1b0c56f4ac0c4ed.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_d81cf758f0254f3e97dc91d82b390a0f);
+            tile_layer_bd24d69547464523ad510bad0b431797.remove();
+        
+</script>

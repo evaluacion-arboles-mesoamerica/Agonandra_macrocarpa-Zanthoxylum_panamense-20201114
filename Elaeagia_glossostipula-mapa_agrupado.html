@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a0038c6926b74b228e8b6994ec85c29c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a0038c6926b74b228e8b6994ec85c29c" ></div>
+        
+</body>
+<script>    
+    
+            var map_a0038c6926b74b228e8b6994ec85c29c = L.map(
+                "map_a0038c6926b74b228e8b6994ec85c29c",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_a0038c6926b74b228e8b6994ec85c29c);
+
+            
+
+        
+    
+            var tile_layer_0bdbdc1abb9a4d91a3b6df74b950c949 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a0038c6926b74b228e8b6994ec85c29c);
+        
+    
+            var tile_layer_ac761f2a1eb84640ba19ed4eed91693d = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a0038c6926b74b228e8b6994ec85c29c);
+        
+    
+            var marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda = L.markerClusterGroup(
+                {}
+            );
+            map_a0038c6926b74b228e8b6994ec85c29c.addLayer(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+            var marker_899a2887e80d402ca5986fd637620444 = L.marker(
+                [9.79, -84.46],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_954d0cc4ced24378a29e83b534b7753a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dcb4209f5d984e559728238ba15e0436 = $(`<div id="html_dcb4209f5d984e559728238ba15e0436" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zona Protectora Cerros de Turrubares, Cerros de Puriscal, vecindades de Llano Caite <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1993-03-05 <strong>Recolectores:</strong> Quírico Jiménez|R. Quesada <strong>Identificadores:</strong> B. E. Hammel (MO)</div>`)[0];
+            popup_954d0cc4ced24378a29e83b534b7753a.setContent(html_dcb4209f5d984e559728238ba15e0436);
+        
+
+        marker_899a2887e80d402ca5986fd637620444.bindPopup(popup_954d0cc4ced24378a29e83b534b7753a)
+        ;
+
+        
+    
+    
+            var marker_f6667ebcdf7d4972872146c5956eb584 = L.marker(
+                [8.801667, -82.208333],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_17324ecc923b432787ec249ba9fb1f14 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57282fe9151448cc85b15700827472fb = $(`<div id="html_57282fe9151448cc85b15700827472fb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along old pipeline road from continental divide. [Coordinates on orginal label: 8º55'4"N, 82º10'4"W]. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1986-12-27 <strong>Recolectores:</strong> Gordon McPherson|Jorge E. Aranda B. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_17324ecc923b432787ec249ba9fb1f14.setContent(html_57282fe9151448cc85b15700827472fb);
+        
+
+        marker_f6667ebcdf7d4972872146c5956eb584.bindPopup(popup_17324ecc923b432787ec249ba9fb1f14)
+        ;
+
+        
+    
+    
+            var marker_282d20961c5d4bd083f49650b804cf83 = L.marker(
+                [8.771666999999999, -82.216667],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_748627aa45454cc38e95d8b4fe3591a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9094d1ffe30046dd9f20773b302ba8c5 = $(`<div id="html_9094d1ffe30046dd9f20773b302ba8c5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fortuna Dam region, along continental divide trail bordering Chiriqui. [Coordinates on orginal label: 8º45'4"N, 82º15'4W"]. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1986-12-23 <strong>Recolectores:</strong> Gordon McPherson|Jorge E. Aranda B. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_748627aa45454cc38e95d8b4fe3591a1.setContent(html_9094d1ffe30046dd9f20773b302ba8c5);
+        
+
+        marker_282d20961c5d4bd083f49650b804cf83.bindPopup(popup_748627aa45454cc38e95d8b4fe3591a1)
+        ;
+
+        
+    
+    
+            var marker_fd30a82debd6490ab42e1e1e88aaf9c1 = L.marker(
+                [8.773333000000001, -82.215],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_efd8b9700c424a1a870141787ab2f39a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b00572cdb1104a7ea270f923be2593e5 = $(`<div id="html_b00572cdb1104a7ea270f923be2593e5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bocas del Toro-Chiriqui border, Fortuna Dam region, along continental divide trail. [Coordinates on orginal label: 8º45'N, 82º15'W] <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1989-01-16 <strong>Recolectores:</strong> Gordon McPherson <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_efd8b9700c424a1a870141787ab2f39a.setContent(html_b00572cdb1104a7ea270f923be2593e5);
+        
+
+        marker_fd30a82debd6490ab42e1e1e88aaf9c1.bindPopup(popup_efd8b9700c424a1a870141787ab2f39a)
+        ;
+
+        
+    
+    
+            var marker_e4f5084a33a04da2acca3c4999f2eb66 = L.marker(
+                [8.773333000000001, -82.215],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_dcabe65ab0fd45978f242f6ce739a5e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bdc9ee0b73e24f63bd9d9bc3e8ca0d53 = $(`<div id="html_bdc9ee0b73e24f63bd9d9bc3e8ca0d53" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bocas del Toro-Chiriqui border, Fortuna Dam region, along continental divide trail. [Coordinates on orginal label: 8º45'N, 82º15'W] <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1989-01-16 <strong>Recolectores:</strong> Gordon McPherson <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_dcabe65ab0fd45978f242f6ce739a5e2.setContent(html_bdc9ee0b73e24f63bd9d9bc3e8ca0d53);
+        
+
+        marker_e4f5084a33a04da2acca3c4999f2eb66.bindPopup(popup_dcabe65ab0fd45978f242f6ce739a5e2)
+        ;
+
+        
+    
+    
+            var marker_7418b45752d34a8898455d21612f7b64 = L.marker(
+                [8.75, -82.25],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_56e65090d24443aa9eda732c5dc095ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4472161cc3b24a27ba0f0078cf3e16d8 = $(`<div id="html_4472161cc3b24a27ba0f0078cf3e16d8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of Fortuna Dam. Along trail near Río Hornito, c. 8º45'N, 82º15'W. Forest. c. 1100 m. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1986-08-09 <strong>Recolectores:</strong> Gordon McPherson <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_56e65090d24443aa9eda732c5dc095ba.setContent(html_4472161cc3b24a27ba0f0078cf3e16d8);
+        
+
+        marker_7418b45752d34a8898455d21612f7b64.bindPopup(popup_56e65090d24443aa9eda732c5dc095ba)
+        ;
+
+        
+    
+    
+            var marker_424352b364e64df2927d033359f10c51 = L.marker(
+                [9.586111, -84.148611],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_c788fec29ddf4b1aa6c8d9c7af089152 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_838fee5405ef4a42b6307272259b2f71 = $(`<div id="html_838fee5405ef4a42b6307272259b2f71" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cuenca del Naranjo y Paquita. Fila Chonta, La Virgen, sector SE, Fila entre la vuelta del Pallo, cabeceras Río Palo Seco y Fila Chonta. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1997-12-27 <strong>Recolectores:</strong> J. F. Morales|R. J. Abarca <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_c788fec29ddf4b1aa6c8d9c7af089152.setContent(html_838fee5405ef4a42b6307272259b2f71);
+        
+
+        marker_424352b364e64df2927d033359f10c51.bindPopup(popup_c788fec29ddf4b1aa6c8d9c7af089152)
+        ;
+
+        
+    
+    
+            var marker_200a9f4a919a426f9bbcd2cbbe1cc7c9 = L.marker(
+                [8.75, -82.25],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_0a8e3ff9d0c04a9088f9436f73c855aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9cb226ad6896430aac56fe6436b6e971 = $(`<div id="html_9cb226ad6896430aac56fe6436b6e971" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> NE del campamento de Fortuna (Hornito). Sitio de presa, después de caseta de excavaciones geológicas <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1976-09-26 <strong>Recolectores:</strong> Mireya D. Correa A.|Robert L. Dressler|Noris Salazar A.|Jorge A. Mendieta M.|Cristina Garibaldi E.|Francisco Farnum|Tania Béliz <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_0a8e3ff9d0c04a9088f9436f73c855aa.setContent(html_9cb226ad6896430aac56fe6436b6e971);
+        
+
+        marker_200a9f4a919a426f9bbcd2cbbe1cc7c9.bindPopup(popup_0a8e3ff9d0c04a9088f9436f73c855aa)
+        ;
+
+        
+    
+    
+            var marker_07fac28170304eb6a9187f5c8489ca71 = L.marker(
+                [9.29, -83.76],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_372a0ff4bd424da0b01a8b7a6163e5ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_397a94b7216d420385e70f5325c5a4e8 = $(`<div id="html_397a94b7216d420385e70f5325c5a4e8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Costeña, Fila Tinamastes, en la Fila del Farallón remanentes de bosque y márgenes de bosque <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1996-02-23 <strong>Recolectores:</strong> Barry E. Hammel|Sachiko Yasuda|José Á. González R.|T. Bermúdez <strong>Identificadores:</strong> B. E. Hammel (MO)</div>`)[0];
+            popup_372a0ff4bd424da0b01a8b7a6163e5ee.setContent(html_397a94b7216d420385e70f5325c5a4e8);
+        
+
+        marker_07fac28170304eb6a9187f5c8489ca71.bindPopup(popup_372a0ff4bd424da0b01a8b7a6163e5ee)
+        ;
+
+        
+    
+    
+            var marker_c7c3181ff52b446caec73238f40a2e5f = L.marker(
+                [8.766667, -82.216667],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_301a540d447e47ed8ec17e2e4c12ca49 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_928221c2d6cc46b28dc9ca832140ce89 = $(`<div id="html_928221c2d6cc46b28dc9ca832140ce89" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Road from Fortuna Lake to Chiriquí Grande, 5 km along track just S of continental divide.  [Coordinates on original label: 8.49N 82.12W; and elevation 700 m] <strong>Elevación:</strong> 1120.0 m  <strong>Fecha:</strong> 1985-03-10 <strong>Recolectores:</strong> Rachel J. Hampshire|Caroline Whitefoord <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_301a540d447e47ed8ec17e2e4c12ca49.setContent(html_928221c2d6cc46b28dc9ca832140ce89);
+        
+
+        marker_c7c3181ff52b446caec73238f40a2e5f.bindPopup(popup_301a540d447e47ed8ec17e2e4c12ca49)
+        ;
+
+        
+    
+    
+            var marker_e9c2ba7f22ea4cfeb5c29cc2d975d36d = L.marker(
+                [9.81371, -83.1673],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_1a94b055655d4676b3c4fd29c3821f16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3adbe46861494503bc68f17434edbfe0 = $(`<div id="html_3adbe46861494503bc68f17434edbfe0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Matama: buffer zone for PILA, camp 1. Regenerating landslide, ca 1 km x 50 m, much bare earth/rock colonised by mosses and ferns with clumps of relict vegetation, some Cecropia (='Barranco' plot). <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 2007-10-23 <strong>Recolectores:</strong> Alex K. Monro <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_1a94b055655d4676b3c4fd29c3821f16.setContent(html_3adbe46861494503bc68f17434edbfe0);
+        
+
+        marker_e9c2ba7f22ea4cfeb5c29cc2d975d36d.bindPopup(popup_1a94b055655d4676b3c4fd29c3821f16)
+        ;
+
+        
+    
+    
+            var marker_9ec8e2742bfc4d49a8bad68cd8d4c749 = L.marker(
+                [9.748056, -83.781944],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_966173a1499349838cca03c3de406558 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_11891b0395834390bb50679a6b6157cd = $(`<div id="html_11891b0395834390bb50679a6b6157cd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Oropéndula. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2014-03-18 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Soo-Yong Kim ; Guillermo Villalobos <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_966173a1499349838cca03c3de406558.setContent(html_11891b0395834390bb50679a6b6157cd);
+        
+
+        marker_9ec8e2742bfc4d49a8bad68cd8d4c749.bindPopup(popup_966173a1499349838cca03c3de406558)
+        ;
+
+        
+    
+    
+            var marker_2b826ff0b69b4dcdb39d104f8d9be645 = L.marker(
+                [9.748056, -83.781944],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_b9f10bda5c1e4b749f4238e1796deff9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13e8fd6803c542268e80ca9c85d4c4ac = $(`<div id="html_13e8fd6803c542268e80ca9c85d4c4ac" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Oropéndula. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2014-03-18 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Soo-Yong Kim ; Guillermo Villalobos <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_b9f10bda5c1e4b749f4238e1796deff9.setContent(html_13e8fd6803c542268e80ca9c85d4c4ac);
+        
+
+        marker_2b826ff0b69b4dcdb39d104f8d9be645.bindPopup(popup_b9f10bda5c1e4b749f4238e1796deff9)
+        ;
+
+        
+    
+    
+            var marker_08d5665cf4314728985f95558b3ae465 = L.marker(
+                [9.748056, -83.781944],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_9b89280aabef42a88732d2a3ab9e8a50 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5523113e68f4c959af27b2b398bfa91 = $(`<div id="html_b5523113e68f4c959af27b2b398bfa91" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Oropéndula. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2014-03-18 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Soo-Yong Kim ; Guillermo Villalobos <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_9b89280aabef42a88732d2a3ab9e8a50.setContent(html_b5523113e68f4c959af27b2b398bfa91);
+        
+
+        marker_08d5665cf4314728985f95558b3ae465.bindPopup(popup_9b89280aabef42a88732d2a3ab9e8a50)
+        ;
+
+        
+    
+    
+            var marker_d139e28e325e4cf1b485ac67b0bb70f2 = L.marker(
+                [9.6075, -84.100833],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_fc3bfd802f964b4d80fc041dbfada9ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3ee509f1bf949ffbc40665279cd09c8 = $(`<div id="html_b3ee509f1bf949ffbc40665279cd09c8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 17 km suroeste de San Marcos de Tarrazú, por el camino a Cerro Cura. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 2006-01-12 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez ; Daniel Santamaría <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_fc3bfd802f964b4d80fc041dbfada9ef.setContent(html_b3ee509f1bf949ffbc40665279cd09c8);
+        
+
+        marker_d139e28e325e4cf1b485ac67b0bb70f2.bindPopup(popup_fc3bfd802f964b4d80fc041dbfada9ef)
+        ;
+
+        
+    
+    
+            var marker_a8176daee94448aca80ad623f324a4a4 = L.marker(
+                [9.6075, -84.100833],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_b1d47f7324924da28142606f05e2bd66 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5eed1fcd81e34de8b4221c5f02088cec = $(`<div id="html_5eed1fcd81e34de8b4221c5f02088cec" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 17 km suroeste de San Marcos de Tarrazú, por el camino a Cerro Cura. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 2006-01-12 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez ; Daniel Santamaría <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_b1d47f7324924da28142606f05e2bd66.setContent(html_5eed1fcd81e34de8b4221c5f02088cec);
+        
+
+        marker_a8176daee94448aca80ad623f324a4a4.bindPopup(popup_b1d47f7324924da28142606f05e2bd66)
+        ;
+
+        
+    
+    
+            var marker_002adb8fd07d4bb9ac1a4052c2a79df7 = L.marker(
+                [9.618611, -84.07583299999999],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_989dc630a2c049178997bdc336ae7f06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a830295b65a24ffca9489a32bb12ab41 = $(`<div id="html_a830295b65a24ffca9489a32bb12ab41" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 12 km suroeste de San Marcos de Tarrazú, por el cementerio. <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 2006-01-12 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez ; Daniel Santamaría <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_989dc630a2c049178997bdc336ae7f06.setContent(html_a830295b65a24ffca9489a32bb12ab41);
+        
+
+        marker_002adb8fd07d4bb9ac1a4052c2a79df7.bindPopup(popup_989dc630a2c049178997bdc336ae7f06)
+        ;
+
+        
+    
+    
+            var marker_dab12d3db7d34be5b4aba564d157866a = L.marker(
+                [9.618611, -84.07583299999999],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_221b13dbbfdc4b40bf1fa5dfd59ba0b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba5d7b440d4f4de78056d507711e1eae = $(`<div id="html_ba5d7b440d4f4de78056d507711e1eae" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 12 km suroeste de San Marcos de Tarrazú, por el cementerio. <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 2006-01-12 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez ; Daniel Santamaría <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_221b13dbbfdc4b40bf1fa5dfd59ba0b4.setContent(html_ba5d7b440d4f4de78056d507711e1eae);
+        
+
+        marker_dab12d3db7d34be5b4aba564d157866a.bindPopup(popup_221b13dbbfdc4b40bf1fa5dfd59ba0b4)
+        ;
+
+        
+    
+    
+            var marker_f4574dc55c814dffbc8a17398607a4f1 = L.marker(
+                [9.618611, -84.07583299999999],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_b35962c29b68465c9dbf1770fd94903d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_971a1e85e13744ab99252c90f7f553bb = $(`<div id="html_971a1e85e13744ab99252c90f7f553bb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 12 km suroeste de San Marcos de Tarrazú, por el cementerio. <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 2006-01-12 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez ; Daniel Santamaría <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_b35962c29b68465c9dbf1770fd94903d.setContent(html_971a1e85e13744ab99252c90f7f553bb);
+        
+
+        marker_f4574dc55c814dffbc8a17398607a4f1.bindPopup(popup_b35962c29b68465c9dbf1770fd94903d)
+        ;
+
+        
+    
+    
+            var marker_ca7b4a1c34e04f3ba0ed4d2755a2335a = L.marker(
+                [9.785833, -84.448611],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_97fb10731b9e40c68cbcfea78cb359a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c745b7c5cae4169a09dafc6f6e6c868 = $(`<div id="html_3c745b7c5cae4169a09dafc6f6e6c868" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, alrededores del albergue La Potenciana. <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 2004-12-09 <strong>Recolectores:</strong> Daniel Santamaría <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_97fb10731b9e40c68cbcfea78cb359a5.setContent(html_3c745b7c5cae4169a09dafc6f6e6c868);
+        
+
+        marker_ca7b4a1c34e04f3ba0ed4d2755a2335a.bindPopup(popup_97fb10731b9e40c68cbcfea78cb359a5)
+        ;
+
+        
+    
+    
+            var marker_70d9a714ac354b6dbd96caabea1c486e = L.marker(
+                [9.785833, -84.448611],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_5c01db5f6a0d4c0a90c4eff887cd6e23 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f4af8c7dc06149859e25b0f4a42836c7 = $(`<div id="html_f4af8c7dc06149859e25b0f4a42836c7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Turrubares, alrededores del albergue La Potenciana. <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 2004-12-09 <strong>Recolectores:</strong> Daniel Santamaría <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_5c01db5f6a0d4c0a90c4eff887cd6e23.setContent(html_f4af8c7dc06149859e25b0f4a42836c7);
+        
+
+        marker_70d9a714ac354b6dbd96caabea1c486e.bindPopup(popup_5c01db5f6a0d4c0a90c4eff887cd6e23)
+        ;
+
+        
+    
+    
+            var marker_28335d07d4b14575a92faa1de2db2d3c = L.marker(
+                [9.477778, -83.690278],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_327e362726734f21804960dc31e21ef1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13be51d70adc446f98458ff8ae76fbbe = $(`<div id="html_13be51d70adc446f98458ff8ae76fbbe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fortuna, 1 Km al NE <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2003-11-12 <strong>Recolectores:</strong> Daniel Solano; Ricardo Kriebel <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_327e362726734f21804960dc31e21ef1.setContent(html_13be51d70adc446f98458ff8ae76fbbe);
+        
+
+        marker_28335d07d4b14575a92faa1de2db2d3c.bindPopup(popup_327e362726734f21804960dc31e21ef1)
+        ;
+
+        
+    
+    
+            var marker_5a240e66add44ea48a70d48084d7a037 = L.marker(
+                [9.477778, -83.690278],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_e7166b630d884a6486303e39149e8b25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e86beae93b3e4532951813e03ca7ab56 = $(`<div id="html_e86beae93b3e4532951813e03ca7ab56" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fortuna, 1 Km al NE <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2003-11-12 <strong>Recolectores:</strong> Daniel Solano; Ricardo Kriebel <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_e7166b630d884a6486303e39149e8b25.setContent(html_e86beae93b3e4532951813e03ca7ab56);
+        
+
+        marker_5a240e66add44ea48a70d48084d7a037.bindPopup(popup_e7166b630d884a6486303e39149e8b25)
+        ;
+
+        
+    
+    
+            var marker_3dc47326a3b14c8b9e9e3095eef7da8d = L.marker(
+                [9.477778, -83.690278],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_53209dd892c84bd8b4679f9718948ab2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9379dc96cfe44c998251023f9211ddcb = $(`<div id="html_9379dc96cfe44c998251023f9211ddcb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fortuna, 1 Km al NE <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2003-11-12 <strong>Recolectores:</strong> Daniel Solano; Ricardo Kriebel <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_53209dd892c84bd8b4679f9718948ab2.setContent(html_9379dc96cfe44c998251023f9211ddcb);
+        
+
+        marker_3dc47326a3b14c8b9e9e3095eef7da8d.bindPopup(popup_53209dd892c84bd8b4679f9718948ab2)
+        ;
+
+        
+    
+    
+            var marker_9cf046310a6a43c6b11082ed64b59775 = L.marker(
+                [9.477778, -83.690278],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_419d4a88c68a4dfba6140cced26b0d36 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1361dbe45e8149889e75eda5a6433a4f = $(`<div id="html_1361dbe45e8149889e75eda5a6433a4f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fortuna, 1 Km al NE <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2003-11-12 <strong>Recolectores:</strong> Daniel Solano; Ricardo Kriebel <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_419d4a88c68a4dfba6140cced26b0d36.setContent(html_1361dbe45e8149889e75eda5a6433a4f);
+        
+
+        marker_9cf046310a6a43c6b11082ed64b59775.bindPopup(popup_419d4a88c68a4dfba6140cced26b0d36)
+        ;
+
+        
+    
+    
+            var marker_3cc8178066f646b9b2da9fc08a5b67aa = L.marker(
+                [9.586111, -84.148611],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_211e4e1cf0584f569358093d7530f30b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a4f45f473444c1d8431a61bf46d7cfa = $(`<div id="html_0a4f45f473444c1d8431a61bf46d7cfa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Chonta, La Virgen, sector SE, Fila entre la vuelta del Pallo, cabeceras Rio Palo Seco y Fila Chonta. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1997-12-27 <strong>Recolectores:</strong> Juan Francisco Morales Quirós; R. J. Abarca <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_211e4e1cf0584f569358093d7530f30b.setContent(html_0a4f45f473444c1d8431a61bf46d7cfa);
+        
+
+        marker_3cc8178066f646b9b2da9fc08a5b67aa.bindPopup(popup_211e4e1cf0584f569358093d7530f30b)
+        ;
+
+        
+    
+    
+            var marker_21919cfe73724678a43446b98c98cf73 = L.marker(
+                [9.586111, -84.148611],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_5a4d7942b42a4c8792dab6a35717ab7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_386d89725ee14dc2890711f046753b2c = $(`<div id="html_386d89725ee14dc2890711f046753b2c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Chonta, La Virgen, sector SE, Fila entre la vuelta del Pallo, cabeceras Rio Palo Seco y Fila Chonta. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1997-12-27 <strong>Recolectores:</strong> Juan Francisco Morales Quirós; R. J. Abarca <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_5a4d7942b42a4c8792dab6a35717ab7d.setContent(html_386d89725ee14dc2890711f046753b2c);
+        
+
+        marker_21919cfe73724678a43446b98c98cf73.bindPopup(popup_5a4d7942b42a4c8792dab6a35717ab7d)
+        ;
+
+        
+    
+    
+            var marker_69aab13cb1fd4812807c3cd11bacad02 = L.marker(
+                [9.794444, -84.466667],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_e9d8e3ebebad45fb97dc5fbacad571cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fda375598d664df9a9abb38dd5ec41cd = $(`<div id="html_fda375598d664df9a9abb38dd5ec41cd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vecindades de Llano Caite. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1993-03-05 <strong>Recolectores:</strong> Quirico Jiménez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_e9d8e3ebebad45fb97dc5fbacad571cb.setContent(html_fda375598d664df9a9abb38dd5ec41cd);
+        
+
+        marker_69aab13cb1fd4812807c3cd11bacad02.bindPopup(popup_e9d8e3ebebad45fb97dc5fbacad571cb)
+        ;
+
+        
+    
+    
+            var marker_2d2f67996c7d4aabbb8f1a2ac909f3ad = L.marker(
+                [9.294722, -83.764167],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_118cbde88d374889b78f581ec6426771 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c16c91171897494fb919cef2fa6e8365 = $(`<div id="html_c16c91171897494fb919cef2fa6e8365" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Tinamastes, en la Fila del Farallon Remanentes de bosque y margenes de bosque. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1996-02-23 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_118cbde88d374889b78f581ec6426771.setContent(html_c16c91171897494fb919cef2fa6e8365);
+        
+
+        marker_2d2f67996c7d4aabbb8f1a2ac909f3ad.bindPopup(popup_118cbde88d374889b78f581ec6426771)
+        ;
+
+        
+    
+    
+            var marker_ef68a4b48b0642619bc327d49a06653e = L.marker(
+                [9.62, -84.08],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_3bfe8bf002e9477b8cbbe722edb0a652 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57d543668ca54920bf32a2ed9f62417e = $(`<div id="html_57d543668ca54920bf32a2ed9f62417e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Flora de Costa Rica. San José: Tarrazú. No protegida. Cuenca del Pirrís-Damas. 12 km suroeste de San Marcos de Tarrazú, por el cementerio. <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 2006-01-12 <strong>Recolectores:</strong> B. Hammel, I. Perez, D. Santamaría <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_3bfe8bf002e9477b8cbbe722edb0a652.setContent(html_57d543668ca54920bf32a2ed9f62417e);
+        
+
+        marker_ef68a4b48b0642619bc327d49a06653e.bindPopup(popup_3bfe8bf002e9477b8cbbe722edb0a652)
+        ;
+
+        
+    
+    
+            var marker_d888be19c35642919a0cf81692778615 = L.marker(
+                [8.507188000000001, -80.102665],
+                {}
+            ).addTo(marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda);
+        
+    
+        var popup_558a6f5bcaa74ee084b4631193abdd53 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4797b88de3114aa3b8e333ead17d9176 = $(`<div id="html_4797b88de3114aa3b8e333ead17d9176" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> 1525.0 m  <strong>Fecha:</strong> 2004-03-10 <strong>Recolectores:</strong> A.K. Monro & E. Alfaro <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_558a6f5bcaa74ee084b4631193abdd53.setContent(html_4797b88de3114aa3b8e333ead17d9176);
+        
+
+        marker_d888be19c35642919a0cf81692778615.bindPopup(popup_558a6f5bcaa74ee084b4631193abdd53)
+        ;
+
+        
+    
+    
+            var layer_control_e12db7d3396f4569a7187c909dfa0615 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_0bdbdc1abb9a4d91a3b6df74b950c949,
+                    "ESRI World Imagery" : tile_layer_ac761f2a1eb84640ba19ed4eed91693d,
+                },
+                overlays :  {
+                    "macro_element_a2dee4e371f6499ca28ff7a9aa528fda" : marker_cluster_a2dee4e371f6499ca28ff7a9aa528fda,
+                },
+            };
+            L.control.layers(
+                layer_control_e12db7d3396f4569a7187c909dfa0615.base_layers,
+                layer_control_e12db7d3396f4569a7187c909dfa0615.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_a0038c6926b74b228e8b6994ec85c29c);
+            tile_layer_ac761f2a1eb84640ba19ed4eed91693d.remove();
+        
+</script>

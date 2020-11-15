@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f0edfe95e46e442bb99bd2738ea3dec4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f0edfe95e46e442bb99bd2738ea3dec4" ></div>
+        
+</body>
+<script>    
+    
+            var map_f0edfe95e46e442bb99bd2738ea3dec4 = L.map(
+                "map_f0edfe95e46e442bb99bd2738ea3dec4",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_f0edfe95e46e442bb99bd2738ea3dec4);
+
+            
+
+        
+    
+            var tile_layer_48cfc389188f4a1e8f4cc1475e9682d3 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f0edfe95e46e442bb99bd2738ea3dec4);
+        
+    
+            var tile_layer_4eabb48de5144503b76a83b88d0c52fd = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f0edfe95e46e442bb99bd2738ea3dec4);
+        
+    
+            var marker_cluster_355a52e5544a4ef3a2dbc725127996bd = L.markerClusterGroup(
+                {}
+            );
+            map_f0edfe95e46e442bb99bd2738ea3dec4.addLayer(marker_cluster_355a52e5544a4ef3a2dbc725127996bd);
+        
+    
+            var marker_141db2f9f28e4be189e29415a8934a64 = L.marker(
+                [5.518111, -87.07777800000001],
+                {}
+            ).addTo(marker_cluster_355a52e5544a4ef3a2dbc725127996bd);
+        
+    
+        var popup_a7235f2490694ba791ff4b2045018c6c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8c846d9147f4d29bc5092c6d484cfc1 = $(`<div id="html_e8c846d9147f4d29bc5092c6d484cfc1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Isla del Coco.  P.N. Isla del Coco.  Al Norte de Cabo Dampier, Fila que lleva al Cerro Las Madres. <strong>Elevación:</strong> 425.0 m  <strong>Fecha:</strong> 2016-11-11 <strong>Recolectores:</strong> Alexánder Rodríguez|G. Blanco-Segura <strong>Identificadores:</strong> A. Rodriguez</div>`)[0];
+            popup_a7235f2490694ba791ff4b2045018c6c.setContent(html_e8c846d9147f4d29bc5092c6d484cfc1);
+        
+
+        marker_141db2f9f28e4be189e29415a8934a64.bindPopup(popup_a7235f2490694ba791ff4b2045018c6c)
+        ;
+
+        
+    
+    
+            var marker_458f5ac1d3df4b558fda0c60864b1360 = L.marker(
+                [5.54111, -87.06416],
+                {}
+            ).addTo(marker_cluster_355a52e5544a4ef3a2dbc725127996bd);
+        
+    
+        var popup_ed42a0a8dd214d75936e0fb75575b4ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f8138218a5843d089f517ea00e164f1 = $(`<div id="html_6f8138218a5843d089f517ea00e164f1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Isla de Cocos, valleé de Wafer buissons dans la valleé <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1902-01-01 <strong>Recolectores:</strong> Henri Pittier <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_ed42a0a8dd214d75936e0fb75575b4ff.setContent(html_6f8138218a5843d089f517ea00e164f1);
+        
+
+        marker_458f5ac1d3df4b558fda0c60864b1360.bindPopup(popup_ed42a0a8dd214d75936e0fb75575b4ff)
+        ;
+
+        
+    
+    
+            var marker_8fbd9d435468435eb5a82bcdeb51de0c = L.marker(
+                [5.5375, -87.06194],
+                {}
+            ).addTo(marker_cluster_355a52e5544a4ef3a2dbc725127996bd);
+        
+    
+        var popup_5c00a04ecda14613b3264eb4689f4db5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e135a495ea47450a8100b2321e646cda = $(`<div id="html_e135a495ea47450a8100b2321e646cda" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Isla del Cocos, Lomeríos de Bahía Wafer <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1981-08-01 <strong>Recolectores:</strong> Jorge Gómez-Laurito <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_5c00a04ecda14613b3264eb4689f4db5.setContent(html_e135a495ea47450a8100b2321e646cda);
+        
+
+        marker_8fbd9d435468435eb5a82bcdeb51de0c.bindPopup(popup_5c00a04ecda14613b3264eb4689f4db5)
+        ;
+
+        
+    
+    
+            var marker_a14bacf7ea4f434eab6be9170e6ff73e = L.marker(
+                [5.55, -87.03],
+                {}
+            ).addTo(marker_cluster_355a52e5544a4ef3a2dbc725127996bd);
+        
+    
+        var popup_c9fe79dc825c451b86bbedda50651a78 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6449d31219964142ae962447cf5e8feb = $(`<div id="html_6449d31219964142ae962447cf5e8feb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cocos Island, high plateau southeast of Chatham Bay <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1979-04-09 <strong>Recolectores:</strong> Robin B. Foster <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_c9fe79dc825c451b86bbedda50651a78.setContent(html_6449d31219964142ae962447cf5e8feb);
+        
+
+        marker_a14bacf7ea4f434eab6be9170e6ff73e.bindPopup(popup_c9fe79dc825c451b86bbedda50651a78)
+        ;
+
+        
+    
+    
+            var marker_9fe7e3b824154c46b5f1d4a70b2254f8 = L.marker(
+                [5.52805, -87.06166],
+                {}
+            ).addTo(marker_cluster_355a52e5544a4ef3a2dbc725127996bd);
+        
+    
+        var popup_d24f4f67419b4f228e1d044bdbf1420f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a35659c868941138574987d9171b74d = $(`<div id="html_6a35659c868941138574987d9171b74d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Isla de Cocos <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1963-02-22 <strong>Recolectores:</strong> Leslie R. Holdridge <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_d24f4f67419b4f228e1d044bdbf1420f.setContent(html_6a35659c868941138574987d9171b74d);
+        
+
+        marker_9fe7e3b824154c46b5f1d4a70b2254f8.bindPopup(popup_d24f4f67419b4f228e1d044bdbf1420f)
+        ;
+
+        
+    
+    
+            var marker_8f106ef2c8e8407792ddf8e5d243ee23 = L.marker(
+                [5.54138, -87.06416],
+                {}
+            ).addTo(marker_cluster_355a52e5544a4ef3a2dbc725127996bd);
+        
+    
+        var popup_49463f6df5cc426babaa687d0cce5cb1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82a917d9b8164cf2bb1f507de007c9b0 = $(`<div id="html_82a917d9b8164cf2bb1f507de007c9b0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cocos Island, Wafer Bay river valley <strong>Elevación:</strong> 30.0 m  <strong>Fecha:</strong> 1963-02-22 <strong>Recolectores:</strong> Leslie R. Holdridge <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_49463f6df5cc426babaa687d0cce5cb1.setContent(html_82a917d9b8164cf2bb1f507de007c9b0);
+        
+
+        marker_8f106ef2c8e8407792ddf8e5d243ee23.bindPopup(popup_49463f6df5cc426babaa687d0cce5cb1)
+        ;
+
+        
+    
+    
+            var marker_75fd6aadd1cc4481955fd0f44e8e57a7 = L.marker(
+                [5.53916, -87.04777],
+                {}
+            ).addTo(marker_cluster_355a52e5544a4ef3a2dbc725127996bd);
+        
+    
+        var popup_1e23f1706b26425fb0f1dea875ec1af1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d71cac23164d4d4085b8b323418be07c = $(`<div id="html_d71cac23164d4d4085b8b323418be07c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cocos Island <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 1964-03-09 <strong>Recolectores:</strong> Luis A. Fournier O. <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_1e23f1706b26425fb0f1dea875ec1af1.setContent(html_d71cac23164d4d4085b8b323418be07c);
+        
+
+        marker_75fd6aadd1cc4481955fd0f44e8e57a7.bindPopup(popup_1e23f1706b26425fb0f1dea875ec1af1)
+        ;
+
+        
+    
+    
+            var marker_cdd718355a8a49c4bcb42cc5ecce9403 = L.marker(
+                [5.55, -87.03],
+                {}
+            ).addTo(marker_cluster_355a52e5544a4ef3a2dbc725127996bd);
+        
+    
+        var popup_0e03b18530e44d13ad5c12a7ed30c963 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d931e3b3ad0404786501de73d55f12d = $(`<div id="html_8d931e3b3ad0404786501de73d55f12d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cocos Island, high plateau southeast of Chatham Bay <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1979-04-09 <strong>Recolectores:</strong> Robin B. Foster <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_0e03b18530e44d13ad5c12a7ed30c963.setContent(html_8d931e3b3ad0404786501de73d55f12d);
+        
+
+        marker_cdd718355a8a49c4bcb42cc5ecce9403.bindPopup(popup_0e03b18530e44d13ad5c12a7ed30c963)
+        ;
+
+        
+    
+    
+            var marker_870cbcce39d84a2fb214f8b410349d08 = L.marker(
+                [5.54, -87.05],
+                {}
+            ).addTo(marker_cluster_355a52e5544a4ef3a2dbc725127996bd);
+        
+    
+        var popup_be58be8cca464707a9da2ddcdf4eba00 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc0c561b2e4f45efb4a7c7d4d3a6e8c1 = $(`<div id="html_bc0c561b2e4f45efb4a7c7d4d3a6e8c1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Isla del Coco. Isla del Coco. Camino a Cerro Iglesias. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1994-10-12 <strong>Recolectores:</strong> F. J. Quesada <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_be58be8cca464707a9da2ddcdf4eba00.setContent(html_bc0c561b2e4f45efb4a7c7d4d3a6e8c1);
+        
+
+        marker_870cbcce39d84a2fb214f8b410349d08.bindPopup(popup_be58be8cca464707a9da2ddcdf4eba00)
+        ;
+
+        
+    
+    
+            var marker_410fc9d77df84e77aa148f4bffdac8f2 = L.marker(
+                [5.524381, -87.052514],
+                {}
+            ).addTo(marker_cluster_355a52e5544a4ef3a2dbc725127996bd);
+        
+    
+        var popup_cbe1f06c9b3e4375adcfc5859a331cfb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5d0373679dd4b9c884431f22b26d70d = $(`<div id="html_a5d0373679dd4b9c884431f22b26d70d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Isla del Coco. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 2001-11-25 <strong>Recolectores:</strong> Jennifer Trusty <strong>Identificadores:</strong> Trusty, Jennifer</div>`)[0];
+            popup_cbe1f06c9b3e4375adcfc5859a331cfb.setContent(html_a5d0373679dd4b9c884431f22b26d70d);
+        
+
+        marker_410fc9d77df84e77aa148f4bffdac8f2.bindPopup(popup_cbe1f06c9b3e4375adcfc5859a331cfb)
+        ;
+
+        
+    
+    
+            var marker_05e441d3739e453fa017adb02bb66dfe = L.marker(
+                [5.544444, -87.05555600000001],
+                {}
+            ).addTo(marker_cluster_355a52e5544a4ef3a2dbc725127996bd);
+        
+    
+        var popup_550ee7c470ad4199ac9c65828e147090 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_99b4a24f5ed348d7b367ccfe76670dfd = $(`<div id="html_99b4a24f5ed348d7b367ccfe76670dfd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Pelon. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1994-06-13 <strong>Recolectores:</strong> Eduardo Lepiz <strong>Identificadores:</strong> Sánchez Vindas, Pablo E.</div>`)[0];
+            popup_550ee7c470ad4199ac9c65828e147090.setContent(html_99b4a24f5ed348d7b367ccfe76670dfd);
+        
+
+        marker_05e441d3739e453fa017adb02bb66dfe.bindPopup(popup_550ee7c470ad4199ac9c65828e147090)
+        ;
+
+        
+    
+    
+            var marker_f607fc17be31446a9fed75c2afad082a = L.marker(
+                [5.544444, -87.05555600000001],
+                {}
+            ).addTo(marker_cluster_355a52e5544a4ef3a2dbc725127996bd);
+        
+    
+        var popup_8017e7be5e844156a6a4a68bb2a4aaba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5dccb88a05d9460d981236b6243acea6 = $(`<div id="html_5dccb88a05d9460d981236b6243acea6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camino a Cerro Yglesias. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1994-10-12 <strong>Recolectores:</strong> Javier Quesada <strong>Identificadores:</strong> Sánchez Vindas, Pablo E.</div>`)[0];
+            popup_8017e7be5e844156a6a4a68bb2a4aaba.setContent(html_5dccb88a05d9460d981236b6243acea6);
+        
+
+        marker_f607fc17be31446a9fed75c2afad082a.bindPopup(popup_8017e7be5e844156a6a4a68bb2a4aaba)
+        ;
+
+        
+    
+    
+            var marker_44a783e3c396461891f6a31ed1eb6064 = L.marker(
+                [5.53015, -87.06196700000001],
+                {}
+            ).addTo(marker_cluster_355a52e5544a4ef3a2dbc725127996bd);
+        
+    
+        var popup_f4c4360b501441ecb4b06d38bbf4559d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a1102acf927472da664fc963f3e63b1 = $(`<div id="html_7a1102acf927472da664fc963f3e63b1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Isla del Coco. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2001-07-31 <strong>Recolectores:</strong> J. Trusty <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_f4c4360b501441ecb4b06d38bbf4559d.setContent(html_7a1102acf927472da664fc963f3e63b1);
+        
+
+        marker_44a783e3c396461891f6a31ed1eb6064.bindPopup(popup_f4c4360b501441ecb4b06d38bbf4559d)
+        ;
+
+        
+    
+    
+            var marker_d01a04ccc1f64072a610bbb2a59f1879 = L.marker(
+                [5.526533000000001, -87.050717],
+                {}
+            ).addTo(marker_cluster_355a52e5544a4ef3a2dbc725127996bd);
+        
+    
+        var popup_101de8c47773491ca61ba6db58718bc9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55c44f701b5b4176a55216336a95b88e = $(`<div id="html_55c44f701b5b4176a55216336a95b88e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Isla del Coco. Very common tree of Los Llanos <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2002-11-15 <strong>Recolectores:</strong> J. Trusty <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_101de8c47773491ca61ba6db58718bc9.setContent(html_55c44f701b5b4176a55216336a95b88e);
+        
+
+        marker_d01a04ccc1f64072a610bbb2a59f1879.bindPopup(popup_101de8c47773491ca61ba6db58718bc9)
+        ;
+
+        
+    
+    
+            var marker_3a269cb2fcf34ea8a4e691ca08857162 = L.marker(
+                [5.54, -87.05],
+                {}
+            ).addTo(marker_cluster_355a52e5544a4ef3a2dbc725127996bd);
+        
+    
+        var popup_6f76e13d4cff4e77833e876b9fddffde = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4edb46bba9614ed5b9bcde6f1115d45d = $(`<div id="html_4edb46bba9614ed5b9bcde6f1115d45d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Isla del Coco Isla del Coco. Camino a Cerro Iglesias. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1994-10-12 <strong>Recolectores:</strong> Quesada, Francisco <strong>Identificadores:</strong> Sánchez, Pablo E.</div>`)[0];
+            popup_6f76e13d4cff4e77833e876b9fddffde.setContent(html_4edb46bba9614ed5b9bcde6f1115d45d);
+        
+
+        marker_3a269cb2fcf34ea8a4e691ca08857162.bindPopup(popup_6f76e13d4cff4e77833e876b9fddffde)
+        ;
+
+        
+    
+    
+            var marker_3f4511da70cc4b5b92de42331485d38c = L.marker(
+                [5.55, -87.06],
+                {}
+            ).addTo(marker_cluster_355a52e5544a4ef3a2dbc725127996bd);
+        
+    
+        var popup_79818b14fc104ec289ea5b7873d739e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d349cee12e664471b8bf4050c67971a6 = $(`<div id="html_d349cee12e664471b8bf4050c67971a6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Isla del Coco Bahía Wafer. <strong>Elevación:</strong> 30.0 m  <strong>Fecha:</strong> 1994-02-07 <strong>Recolectores:</strong> Dauphin, Gregorio <strong>Identificadores:</strong> Dauphin, Gregorio</div>`)[0];
+            popup_79818b14fc104ec289ea5b7873d739e4.setContent(html_d349cee12e664471b8bf4050c67971a6);
+        
+
+        marker_3f4511da70cc4b5b92de42331485d38c.bindPopup(popup_79818b14fc104ec289ea5b7873d739e4)
+        ;
+
+        
+    
+    
+            var marker_527a0ccaba2a46f2856839ba1af7fcdd = L.marker(
+                [5.55, -87.04],
+                {}
+            ).addTo(marker_cluster_355a52e5544a4ef3a2dbc725127996bd);
+        
+    
+        var popup_1b37beb861df46048719396ef1ea823b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5080b48829a453e970a6b3c8bab3585 = $(`<div id="html_c5080b48829a453e970a6b3c8bab3585" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Isla del Coco Buissons dans la vallée de Wafer. Cocos Island Pacifique. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Pittier, Henry <strong>Identificadores:</strong> Robinson</div>`)[0];
+            popup_1b37beb861df46048719396ef1ea823b.setContent(html_c5080b48829a453e970a6b3c8bab3585);
+        
+
+        marker_527a0ccaba2a46f2856839ba1af7fcdd.bindPopup(popup_1b37beb861df46048719396ef1ea823b)
+        ;
+
+        
+    
+    
+            var layer_control_892dc21cffc8419b862e3647d63ec255 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_48cfc389188f4a1e8f4cc1475e9682d3,
+                    "ESRI World Imagery" : tile_layer_4eabb48de5144503b76a83b88d0c52fd,
+                },
+                overlays :  {
+                    "macro_element_355a52e5544a4ef3a2dbc725127996bd" : marker_cluster_355a52e5544a4ef3a2dbc725127996bd,
+                },
+            };
+            L.control.layers(
+                layer_control_892dc21cffc8419b862e3647d63ec255.base_layers,
+                layer_control_892dc21cffc8419b862e3647d63ec255.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_f0edfe95e46e442bb99bd2738ea3dec4);
+            tile_layer_4eabb48de5144503b76a83b88d0c52fd.remove();
+        
+</script>

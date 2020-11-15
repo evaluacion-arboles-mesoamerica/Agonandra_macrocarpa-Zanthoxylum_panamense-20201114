@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4fcaced59be7479381f9308e46770726 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4fcaced59be7479381f9308e46770726" ></div>
+        
+</body>
+<script>    
+    
+            var map_4fcaced59be7479381f9308e46770726 = L.map(
+                "map_4fcaced59be7479381f9308e46770726",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_4fcaced59be7479381f9308e46770726);
+
+            
+
+        
+    
+            var tile_layer_e4a408f3c09f47ef9266fd8b256ec52a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4fcaced59be7479381f9308e46770726);
+        
+    
+            var tile_layer_83133fc80720454888d60511a5a7a5d2 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4fcaced59be7479381f9308e46770726);
+        
+    
+            var marker_cluster_a7e4b6d07e4e4613a0e11a9420413560 = L.markerClusterGroup(
+                {}
+            );
+            map_4fcaced59be7479381f9308e46770726.addLayer(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+            var marker_0ef7c631aec2402e935d2e72ebeaac67 = L.marker(
+                [10.325555, -84.077776],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_ebdf6ceb08194000afca42dd2f9d27e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_903d3d04cfb94259a3c1081d25d6dd78 = $(`<div id="html_903d3d04cfb94259a3c1081d25d6dd78" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Heredia. San Ramón de la Virgen de Sarapiquí, Área de Conservación Cordillera Volcánica Central, Estación El Ceibo, Sendero Río Peje y orilla del cauce del río. <strong>Elevación:</strong> 446.0 m  <strong>Fecha:</strong> 2016-03-09 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Braulio Hernández <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_ebdf6ceb08194000afca42dd2f9d27e2.setContent(html_903d3d04cfb94259a3c1081d25d6dd78);
+        
+
+        marker_0ef7c631aec2402e935d2e72ebeaac67.bindPopup(popup_ebdf6ceb08194000afca42dd2f9d27e2)
+        ;
+
+        
+    
+    
+            var marker_56bc9c5025444be9a333a1d3575946af = L.marker(
+                [10.325555, -84.077776],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_5725d24486734c9caef2ec9231be9af4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2395c0e0685436ba4a5061ac5479d80 = $(`<div id="html_d2395c0e0685436ba4a5061ac5479d80" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Heredia. San Ramón de la Virgen de Sarapiquí, Área de Conservación Cordillera Volcánica Central, Estación El Ceibo, Sendero Río Peje y orilla del cauce del río. <strong>Elevación:</strong> 446.0 m  <strong>Fecha:</strong> 2016-03-09 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Braulio Hernández <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_5725d24486734c9caef2ec9231be9af4.setContent(html_d2395c0e0685436ba4a5061ac5479d80);
+        
+
+        marker_56bc9c5025444be9a333a1d3575946af.bindPopup(popup_5725d24486734c9caef2ec9231be9af4)
+        ;
+
+        
+    
+    
+            var marker_2c469eb3704340129d6931351b6add15 = L.marker(
+                [10.325555, -84.077776],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_ef0e60a799874717953cca62c4f06a23 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_024e0d6015774f60962c56d4e2d29800 = $(`<div id="html_024e0d6015774f60962c56d4e2d29800" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Heredia. San Ramón de la Virgen de Sarapiquí, Área de Conservación Cordillera Volcánica Central, Estación El Ceibo, Sendero Río Peje y orilla del cauce del río. <strong>Elevación:</strong> 446.0 m  <strong>Fecha:</strong> 2016-03-09 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Braulio Hernández <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_ef0e60a799874717953cca62c4f06a23.setContent(html_024e0d6015774f60962c56d4e2d29800);
+        
+
+        marker_2c469eb3704340129d6931351b6add15.bindPopup(popup_ef0e60a799874717953cca62c4f06a23)
+        ;
+
+        
+    
+    
+            var marker_616356cb858d4e68824f81fb4212899d = L.marker(
+                [1.0, -78.4],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_c36d4545405745b7adc11107b8944f47 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fccf251bd45b4b24a6f9f84dd2dff030 = $(`<div id="html_fccf251bd45b4b24a6f9f84dd2dff030" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parroquia Tobar Donoso. Sector Sabalera. Reserva Indígena Awá. Bosque primario Noreste Casa Comunal. <strong>Elevación:</strong> 375.0 m  <strong>Fecha:</strong> 1992-06-19 <strong>Recolectores:</strong> Galo A. Tipaz|Jorge Zuleta|N. Guanga <strong>Identificadores:</strong> T.D. Pennington (K)</div>`)[0];
+            popup_c36d4545405745b7adc11107b8944f47.setContent(html_fccf251bd45b4b24a6f9f84dd2dff030);
+        
+
+        marker_616356cb858d4e68824f81fb4212899d.bindPopup(popup_c36d4545405745b7adc11107b8944f47)
+        ;
+
+        
+    
+    
+            var marker_ed26836988034e1b8889b28ad8dda422 = L.marker(
+                [5.623333000000001, -77.4175],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_343fdc1f5f8043fd8a88bf28ae468a77 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de8a20180b01497983f7f7ae2a2c954d = $(`<div id="html_de8a20180b01497983f7f7ae2a2c954d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Corregimiento Termales, entre Jobi y Arusi. Bosque cerca a las cabañas Pijibá. Costa Pacifica colombiana, estribaciones de la serrania del Baudó, Cabo Corrientes. Bosque primario. <strong>Elevación:</strong> 27.5 m  <strong>Fecha:</strong> 1995-01-31 <strong>Recolectores:</strong> Julio C. Betancur B.|W. John Kress|Beatriz E. Echeverry C. <strong>Identificadores:</strong> T.D. Pennington (K)</div>`)[0];
+            popup_343fdc1f5f8043fd8a88bf28ae468a77.setContent(html_de8a20180b01497983f7f7ae2a2c954d);
+        
+
+        marker_ed26836988034e1b8889b28ad8dda422.bindPopup(popup_343fdc1f5f8043fd8a88bf28ae468a77)
+        ;
+
+        
+    
+    
+            var marker_708e8188737f4fabbb263f23441b79a3 = L.marker(
+                [10.966667, -84.333333],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_40d14ec5c50047babb1d216862c13399 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f222a662e2c4c76900a37a60878a535 = $(`<div id="html_3f222a662e2c4c76900a37a60878a535" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Municipio de El Castillo, Refugio Bartola. <strong>Elevación:</strong> 60.0 m  <strong>Fecha:</strong> 2005-02-15 <strong>Recolectores:</strong> R. M. Rueda|L.D. Paguaga|H. Mendoza|Nelson Zamora|Daniel Solano <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_40d14ec5c50047babb1d216862c13399.setContent(html_3f222a662e2c4c76900a37a60878a535);
+        
+
+        marker_708e8188737f4fabbb263f23441b79a3.bindPopup(popup_40d14ec5c50047babb1d216862c13399)
+        ;
+
+        
+    
+    
+            var marker_eaab839f97c94713baf387ea7fbed9ac = L.marker(
+                [10.43138, -84.00361],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_6edd1b0244704bd5a4068b83f0295ede = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2645b0859e594681bc4b3035aeed1217 = $(`<div id="html_2645b0859e594681bc4b3035aeed1217" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> In pasture along main road to Quebrada Cantarana, La Selva Protection Zone <strong>Elevación:</strong> 275.0 m  <strong>Fecha:</strong> 1983-01-14 <strong>Recolectores:</strong> Gary S. Hartshorn <strong>Identificadores:</strong> N. Zamora, July 2003 (MO)</div>`)[0];
+            popup_6edd1b0244704bd5a4068b83f0295ede.setContent(html_2645b0859e594681bc4b3035aeed1217);
+        
+
+        marker_eaab839f97c94713baf387ea7fbed9ac.bindPopup(popup_6edd1b0244704bd5a4068b83f0295ede)
+        ;
+
+        
+    
+    
+            var marker_93bae4291db44c82a8c87d43da20e3c6 = L.marker(
+                [10.43138, -84.00361],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_675a59bda50a405e843643248b17ea1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a95358f2c39e40a2abed66ec23d3cdc3 = $(`<div id="html_a95358f2c39e40a2abed66ec23d3cdc3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, the OTS field station on the Río Puerto Viejo just E of its junction with the Río Sarapiquí. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1982-02-22 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> R.L. Wilbur</div>`)[0];
+            popup_675a59bda50a405e843643248b17ea1d.setContent(html_a95358f2c39e40a2abed66ec23d3cdc3);
+        
+
+        marker_93bae4291db44c82a8c87d43da20e3c6.bindPopup(popup_675a59bda50a405e843643248b17ea1d)
+        ;
+
+        
+    
+    
+            var marker_157b28254d1d4ba9af3b0c75d5510953 = L.marker(
+                [10.433333, -84.0],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_d477461cb5c941f685d095654623e7c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9aa523742e134f5dbde0c8b1e037f7eb = $(`<div id="html_9aa523742e134f5dbde0c8b1e037f7eb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1973-05-23 <strong>Recolectores:</strong> Gary S. Hartshorn <strong>Identificadores:</strong> T.D. Pennington</div>`)[0];
+            popup_d477461cb5c941f685d095654623e7c6.setContent(html_9aa523742e134f5dbde0c8b1e037f7eb);
+        
+
+        marker_157b28254d1d4ba9af3b0c75d5510953.bindPopup(popup_d477461cb5c941f685d095654623e7c6)
+        ;
+
+        
+    
+    
+            var marker_f7b2a07a83bf4123a215007f0d7e03ac = L.marker(
+                [10.43138, -84.00361],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_f464fe8755ad4124bf41c647822b3d9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58614b59113545b5b74fbfa6d0b26dff = $(`<div id="html_58614b59113545b5b74fbfa6d0b26dff" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, the OTS field station on the Río Puerto Viejo just E of its junction with the Río Sarapiquí. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1980-05-17 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> R. L. Wilbur, DUKE</div>`)[0];
+            popup_f464fe8755ad4124bf41c647822b3d9a.setContent(html_58614b59113545b5b74fbfa6d0b26dff);
+        
+
+        marker_f7b2a07a83bf4123a215007f0d7e03ac.bindPopup(popup_f464fe8755ad4124bf41c647822b3d9a)
+        ;
+
+        
+    
+    
+            var marker_3d0cfd9487dd4f9bb2219c2b1fb65b13 = L.marker(
+                [10.43, -84.01],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_ced8f73503114e97ae9cd2a369f4a4a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b8aa8547a1fd4911b2f7c903642e975f = $(`<div id="html_b8aa8547a1fd4911b2f7c903642e975f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, Puerto Viejo. In successional plot along the east trail, south of Line 1600 <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1974-03-29 <strong>Recolectores:</strong> Gary S. Hartshorn <strong>Identificadores:</strong> T.D. Pennington</div>`)[0];
+            popup_ced8f73503114e97ae9cd2a369f4a4a8.setContent(html_b8aa8547a1fd4911b2f7c903642e975f);
+        
+
+        marker_3d0cfd9487dd4f9bb2219c2b1fb65b13.bindPopup(popup_ced8f73503114e97ae9cd2a369f4a4a8)
+        ;
+
+        
+    
+    
+            var marker_91cc156946ea42ddac5cdc4b5007b8bc = L.marker(
+                [10.53, -83.73],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_b193bdd541714381a9c6e0370303f68c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4cb530d84ac64122b28dbba77d795b11 = $(`<div id="html_4cb530d84ac64122b28dbba77d795b11" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Llanura de Santa Clara. La Rita. Cedrales. Cerca de la carretera a Puerto Lindo. <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1995-08-18 <strong>Recolectores:</strong> Elías Rojas <strong>Identificadores:</strong> N. Zamora</div>`)[0];
+            popup_b193bdd541714381a9c6e0370303f68c.setContent(html_4cb530d84ac64122b28dbba77d795b11);
+        
+
+        marker_91cc156946ea42ddac5cdc4b5007b8bc.bindPopup(popup_b193bdd541714381a9c6e0370303f68c)
+        ;
+
+        
+    
+    
+            var marker_94873c005c4549098e6dd4966aabf6c6 = L.marker(
+                [10.43, -83.78],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_f48a6144fe5a44c9847e9cd041da1433 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0544360b02940f7931b5604f63c99af = $(`<div id="html_c0544360b02940f7931b5604f63c99af" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Suerte. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1995-08-05 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> N. Zamora (INB)</div>`)[0];
+            popup_f48a6144fe5a44c9847e9cd041da1433.setContent(html_c0544360b02940f7931b5604f63c99af);
+        
+
+        marker_94873c005c4549098e6dd4966aabf6c6.bindPopup(popup_f48a6144fe5a44c9847e9cd041da1433)
+        ;
+
+        
+    
+    
+            var marker_56b84b17fc3c4e529b89457da33e7c5e = L.marker(
+                [9.891667, -83.19166700000001],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_04fa04f332b54cd68c794aa5d2bed1ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e9a4bd16c9dc4eec9f8bf3112ed10b71 = $(`<div id="html_e9a4bd16c9dc4eec9f8bf3112ed10b71" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila de Matama. Pandora. Cerro Hule. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1995-03-09 <strong>Recolectores:</strong> Alexánder Rodríguez <strong>Identificadores:</strong> N. Zamora</div>`)[0];
+            popup_04fa04f332b54cd68c794aa5d2bed1ff.setContent(html_e9a4bd16c9dc4eec9f8bf3112ed10b71);
+        
+
+        marker_56b84b17fc3c4e529b89457da33e7c5e.bindPopup(popup_04fa04f332b54cd68c794aa5d2bed1ff)
+        ;
+
+        
+    
+    
+            var marker_40f3c8c7d910498ea953d05b1508c719 = L.marker(
+                [10.666667, -84.233333],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_c70120c914974500a76b7cb7191475cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0fec531088c9432a9011757d9bd90eaa = $(`<div id="html_0fec531088c9432a9011757d9bd90eaa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pital, Boca Tapada. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2004-01-26 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> N. Zamora</div>`)[0];
+            popup_c70120c914974500a76b7cb7191475cc.setContent(html_0fec531088c9432a9011757d9bd90eaa);
+        
+
+        marker_40f3c8c7d910498ea953d05b1508c719.bindPopup(popup_c70120c914974500a76b7cb7191475cc)
+        ;
+
+        
+    
+    
+            var marker_bcdd8ff08d504d11b22ed44eaf889b7b = L.marker(
+                [8.869444999999999, -80.666667],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_7837b9185bd14d5ebeb45b152ddc093c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04b1b03d45fa4f8f8fb79cdc35b99869 = $(`<div id="html_04b1b03d45fa4f8f8fb79cdc35b99869" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Westernmost part of province, site of proposed copper mine (INMET). Tailings Area. Lowland forest. Collected with Jean-Yves Serein. <strong>Elevación:</strong> 75.0 m  <strong>Fecha:</strong> 2009-04-13 <strong>Recolectores:</strong> Gordon McPherson <strong>Identificadores:</strong> McPherson</div>`)[0];
+            popup_7837b9185bd14d5ebeb45b152ddc093c.setContent(html_04b1b03d45fa4f8f8fb79cdc35b99869);
+        
+
+        marker_bcdd8ff08d504d11b22ed44eaf889b7b.bindPopup(popup_7837b9185bd14d5ebeb45b152ddc093c)
+        ;
+
+        
+    
+    
+            var marker_d6c164da9b1740b5829e3db398b09d2b = L.marker(
+                [10.676228, -84.234616],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_493735a53c4d4774a1429d11c7f2b66f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b272d57e2bcb4902849d7b30e44b68c8 = $(`<div id="html_b272d57e2bcb4902849d7b30e44b68c8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Carlos, Pital, Boca Tapada. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2004-01-26 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_493735a53c4d4774a1429d11c7f2b66f.setContent(html_b272d57e2bcb4902849d7b30e44b68c8);
+        
+
+        marker_d6c164da9b1740b5829e3db398b09d2b.bindPopup(popup_493735a53c4d4774a1429d11c7f2b66f)
+        ;
+
+        
+    
+    
+            var marker_28d2f9fb3fe549d5bec28795e77ca23f = L.marker(
+                [10.431957, -84.008187],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_0fe79b4a98084bfa8e8c8570492dc8e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1bf32381e89c48b79372c4e14f79b2e8 = $(`<div id="html_1bf32381e89c48b79372c4e14f79b2e8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> A.C.C.V.C, Sarapiquí, Zona Prot La Selva, Estación Biol La Selva <strong>Elevación:</strong> 75.0 m  <strong>Fecha:</strong> 1998-06-20 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Aguilar, Reinaldo</div>`)[0];
+            popup_0fe79b4a98084bfa8e8c8570492dc8e9.setContent(html_1bf32381e89c48b79372c4e14f79b2e8);
+        
+
+        marker_28d2f9fb3fe549d5bec28795e77ca23f.bindPopup(popup_0fe79b4a98084bfa8e8c8570492dc8e9)
+        ;
+
+        
+    
+    
+            var marker_bcaaf08af34d4708bc36d5d9983a78b6 = L.marker(
+                [10.431957, -84.008187],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_e80f6f877323442983152d7b6935705f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2c54579f1634bcda79151545db01778 = $(`<div id="html_b2c54579f1634bcda79151545db01778" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> A.C.C.V.C, Sarapiquí, Zona Prot La Selva, Estación Biol La Selva <strong>Elevación:</strong> 75.0 m  <strong>Fecha:</strong> 1998-06-20 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Aguilar, Reinaldo</div>`)[0];
+            popup_e80f6f877323442983152d7b6935705f.setContent(html_b2c54579f1634bcda79151545db01778);
+        
+
+        marker_bcaaf08af34d4708bc36d5d9983a78b6.bindPopup(popup_e80f6f877323442983152d7b6935705f)
+        ;
+
+        
+    
+    
+            var marker_b15344e0b7bd444cbc9ffeea69efcc97 = L.marker(
+                [10.431957, -84.008187],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_b1759c30273646a2bc9684f1d7606fb5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a394ae7bb96b46c8916288c1eb899561 = $(`<div id="html_a394ae7bb96b46c8916288c1eb899561" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> A.C.C.V.C, Sarapiquí, Zona Prot La Selva, Estación Biol La Selva <strong>Elevación:</strong> 75.0 m  <strong>Fecha:</strong> 1998-06-20 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Aguilar, Reinaldo</div>`)[0];
+            popup_b1759c30273646a2bc9684f1d7606fb5.setContent(html_a394ae7bb96b46c8916288c1eb899561);
+        
+
+        marker_b15344e0b7bd444cbc9ffeea69efcc97.bindPopup(popup_b1759c30273646a2bc9684f1d7606fb5)
+        ;
+
+        
+    
+    
+            var marker_035241e5e7ad4002976e7c7f327ff681 = L.marker(
+                [10.431957, -84.008187],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_4d5b3edea4ba4ad6a1aeaa2a72d98124 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3bd83a6671a544cf9fbc727f71f86282 = $(`<div id="html_3bd83a6671a544cf9fbc727f71f86282" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> A.C.C.V.C, Sarapiquí, Zona Prot La Selva, Estación Biol La Selva <strong>Elevación:</strong> 75.0 m  <strong>Fecha:</strong> 1998-06-20 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Aguilar, Reinaldo</div>`)[0];
+            popup_4d5b3edea4ba4ad6a1aeaa2a72d98124.setContent(html_3bd83a6671a544cf9fbc727f71f86282);
+        
+
+        marker_035241e5e7ad4002976e7c7f327ff681.bindPopup(popup_4d5b3edea4ba4ad6a1aeaa2a72d98124)
+        ;
+
+        
+    
+    
+            var marker_f79d367136924bca9aaf0b01084c3cd1 = L.marker(
+                [10.431957, -84.008187],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_4e97ae8cdfc94e6da28099daa145de0a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_268ce9e2b4be4c7488070bed7e73bf82 = $(`<div id="html_268ce9e2b4be4c7488070bed7e73bf82" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> A.C.C.V.C, Sarapiquí, Zona Prot La Selva, Estación Biol La Selva <strong>Elevación:</strong> 75.0 m  <strong>Fecha:</strong> 1998-06-20 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Aguilar, Reinaldo</div>`)[0];
+            popup_4e97ae8cdfc94e6da28099daa145de0a.setContent(html_268ce9e2b4be4c7488070bed7e73bf82);
+        
+
+        marker_f79d367136924bca9aaf0b01084c3cd1.bindPopup(popup_4e97ae8cdfc94e6da28099daa145de0a)
+        ;
+
+        
+    
+    
+            var marker_c0129e5714c04f6f9b1b078de12f8bb1 = L.marker(
+                [9.891667, -83.19166700000001],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_1f346d18d8724c88b64d059894340c81 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d829139638e145bf8c5b58c821693bcb = $(`<div id="html_d829139638e145bf8c5b58c821693bcb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pandora. Cerro Hule. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1995-03-09 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_1f346d18d8724c88b64d059894340c81.setContent(html_d829139638e145bf8c5b58c821693bcb);
+        
+
+        marker_c0129e5714c04f6f9b1b078de12f8bb1.bindPopup(popup_1f346d18d8724c88b64d059894340c81)
+        ;
+
+        
+    
+    
+            var marker_708cd6549064434b91d6df0f7ab93a31 = L.marker(
+                [10.533333, -83.733333],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_586f2ba5369f4da7a373095c091e7e80 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3eb2502c1ea2465881d0f252a650977a = $(`<div id="html_3eb2502c1ea2465881d0f252a650977a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Rita. Cedrales. Cerca de la carretera a Puerto Lindo. <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1995-08-18 <strong>Recolectores:</strong> Elias Rojas <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_586f2ba5369f4da7a373095c091e7e80.setContent(html_3eb2502c1ea2465881d0f252a650977a);
+        
+
+        marker_708cd6549064434b91d6df0f7ab93a31.bindPopup(popup_586f2ba5369f4da7a373095c091e7e80)
+        ;
+
+        
+    
+    
+            var marker_fa6d0f10069c4016b2fa6ba756b1ba0c = L.marker(
+                [10.441667, -83.788889],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_67091e0f925d4bfdb25bec0f7d0e633c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0447ad9122f64f3fa02e1dba67079b5f = $(`<div id="html_0447ad9122f64f3fa02e1dba67079b5f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Suerte. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1995-08-05 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_67091e0f925d4bfdb25bec0f7d0e633c.setContent(html_0447ad9122f64f3fa02e1dba67079b5f);
+        
+
+        marker_fa6d0f10069c4016b2fa6ba756b1ba0c.bindPopup(popup_67091e0f925d4bfdb25bec0f7d0e633c)
+        ;
+
+        
+    
+    
+            var marker_13c483da1a52454cae649fdb7df26715 = L.marker(
+                [10.5, -84.0],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_bccd4ec8583948bc93ae95295981fc8f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1989b557b0e4b97ac5cf01414b40263 = $(`<div id="html_f1989b557b0e4b97ac5cf01414b40263" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1974-03-29 <strong>Recolectores:</strong> G. S. Hartshorn <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_bccd4ec8583948bc93ae95295981fc8f.setContent(html_f1989b557b0e4b97ac5cf01414b40263);
+        
+
+        marker_13c483da1a52454cae649fdb7df26715.bindPopup(popup_bccd4ec8583948bc93ae95295981fc8f)
+        ;
+
+        
+    
+    
+            var marker_f877783a49e44926bf3a0a4a5428ef7c = L.marker(
+                [10.43, -84.02],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_0725b3dc272246a1ba1bf0717c109bae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a13b71654ab4c0b9d10b2a64ca9151a = $(`<div id="html_5a13b71654ab4c0b9d10b2a64ca9151a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Guinea (annex A) just south of line 1200 Finca la Selva, Puerto Viejo, Sarapiqui, Heredia Province <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1973-05-24 <strong>Recolectores:</strong> Hartshorn, G.S. <strong>Identificadores:</strong> Pennington, T.D.</div>`)[0];
+            popup_0725b3dc272246a1ba1bf0717c109bae.setContent(html_5a13b71654ab4c0b9d10b2a64ca9151a);
+        
+
+        marker_f877783a49e44926bf3a0a4a5428ef7c.bindPopup(popup_0725b3dc272246a1ba1bf0717c109bae)
+        ;
+
+        
+    
+    
+            var marker_1727c64c581b42ce9ee2653d9ca5be12 = L.marker(
+                [10.53, -83.73],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_1d3ee223e77747f99413344be0102f93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e37721ceb60b4438aba6302f402d640e = $(`<div id="html_e37721ceb60b4438aba6302f402d640e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cedraes, cerca de la carretera a Puerto Lindo.- <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1995-08-18 <strong>Recolectores:</strong> Rojas, Elías <strong>Identificadores:</strong> Zamora, Nelson</div>`)[0];
+            popup_1d3ee223e77747f99413344be0102f93.setContent(html_e37721ceb60b4438aba6302f402d640e);
+        
+
+        marker_1727c64c581b42ce9ee2653d9ca5be12.bindPopup(popup_1d3ee223e77747f99413344be0102f93)
+        ;
+
+        
+    
+    
+            var marker_75fffae83aa943d9892abd55ad6b22b6 = L.marker(
+                [10.44, -83.78],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_0ea815d528704c61ad0a39b75437e625 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ae54ddd011b42b78399aca01e0cf5fe = $(`<div id="html_3ae54ddd011b42b78399aca01e0cf5fe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Suerte. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1995-08-05 <strong>Recolectores:</strong> Aguilar, Reinaldo <strong>Identificadores:</strong> Zamora, Nelson</div>`)[0];
+            popup_0ea815d528704c61ad0a39b75437e625.setContent(html_3ae54ddd011b42b78399aca01e0cf5fe);
+        
+
+        marker_75fffae83aa943d9892abd55ad6b22b6.bindPopup(popup_0ea815d528704c61ad0a39b75437e625)
+        ;
+
+        
+    
+    
+            var marker_af38370f732b486b8616db2f962d41fb = L.marker(
+                [10.43, -84.01],
+                {}
+            ).addTo(marker_cluster_a7e4b6d07e4e4613a0e11a9420413560);
+        
+    
+        var popup_17a51bacba8247efaaaec0501747e6f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e1568e0bf21942599a0d3d6b61b0b580 = $(`<div id="html_e1568e0bf21942599a0d3d6b61b0b580" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> E.B. La Selva In successional plot along the east trail, South of line 1600. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1974-03-29 <strong>Recolectores:</strong> Hartshorn, Gary S. <strong>Identificadores:</strong> Pennington, Terence D.</div>`)[0];
+            popup_17a51bacba8247efaaaec0501747e6f7.setContent(html_e1568e0bf21942599a0d3d6b61b0b580);
+        
+
+        marker_af38370f732b486b8616db2f962d41fb.bindPopup(popup_17a51bacba8247efaaaec0501747e6f7)
+        ;
+
+        
+    
+    
+            var layer_control_c17568a2041f49b4b8084b668a52a063 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_e4a408f3c09f47ef9266fd8b256ec52a,
+                    "ESRI World Imagery" : tile_layer_83133fc80720454888d60511a5a7a5d2,
+                },
+                overlays :  {
+                    "macro_element_a7e4b6d07e4e4613a0e11a9420413560" : marker_cluster_a7e4b6d07e4e4613a0e11a9420413560,
+                },
+            };
+            L.control.layers(
+                layer_control_c17568a2041f49b4b8084b668a52a063.base_layers,
+                layer_control_c17568a2041f49b4b8084b668a52a063.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_4fcaced59be7479381f9308e46770726);
+            tile_layer_83133fc80720454888d60511a5a7a5d2.remove();
+        
+</script>

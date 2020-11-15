@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4db52f39cfa344e091af8a7a8073c62a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4db52f39cfa344e091af8a7a8073c62a" ></div>
+        
+</body>
+<script>    
+    
+            var map_4db52f39cfa344e091af8a7a8073c62a = L.map(
+                "map_4db52f39cfa344e091af8a7a8073c62a",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_4db52f39cfa344e091af8a7a8073c62a);
+
+            
+
+        
+    
+            var tile_layer_dd56e84406a740ee9d3c9885c7fc81a6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4db52f39cfa344e091af8a7a8073c62a);
+        
+    
+            var tile_layer_4aee5e37c2b142f19f98ddf4cc2c1556 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4db52f39cfa344e091af8a7a8073c62a);
+        
+    
+            var marker_cluster_3c8112f407af4d359e7ac8addfd07b53 = L.markerClusterGroup(
+                {}
+            );
+            map_4db52f39cfa344e091af8a7a8073c62a.addLayer(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+            var marker_eb6fae1dca9742f5991fd1e74d99b1da = L.marker(
+                [17.79, -94.1],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_b6cc8a81482348c9a487b15bf2e9c635 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1f82ae23dd140fca78531f6fa347646 = $(`<div id="html_a1f82ae23dd140fca78531f6fa347646" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Playa Escondiada-Jicacal <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1971-08-01 <strong>Recolectores:</strong> Juan Calzada <strong>Identificadores:</strong> Lundell, C. L.</div>`)[0];
+            popup_b6cc8a81482348c9a487b15bf2e9c635.setContent(html_a1f82ae23dd140fca78531f6fa347646);
+        
+
+        marker_eb6fae1dca9742f5991fd1e74d99b1da.bindPopup(popup_b6cc8a81482348c9a487b15bf2e9c635)
+        ;
+
+        
+    
+    
+            var marker_843589e123fa4005a9cba0e9007de7de = L.marker(
+                [19.25, -96.68333299999999],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_5a9edfdc438c48369e35af933b696669 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c666e52e6654037858c76ee9ab883d4 = $(`<div id="html_9c666e52e6654037858c76ee9ab883d4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rancho El Camarón <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1922-04-01 <strong>Recolectores:</strong> C.A. Purpus <strong>Identificadores:</strong> C.L. Lundell</div>`)[0];
+            popup_5a9edfdc438c48369e35af933b696669.setContent(html_9c666e52e6654037858c76ee9ab883d4);
+        
+
+        marker_843589e123fa4005a9cba0e9007de7de.bindPopup(popup_5a9edfdc438c48369e35af933b696669)
+        ;
+
+        
+    
+    
+            var marker_0d8537725783492fa2615e85593d80d4 = L.marker(
+                [18.5786, -95.0904],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_42cc5ae0861240698f6dee28137bed95 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_21128c5a52cf42fdb38686e2e244a009 = $(`<div id="html_21128c5a52cf42fdb38686e2e244a009" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Lote 69 de la Estación Biológica de Los Tuxtlas, UNAM, alrededores de Laguna Azul <strong>Elevación:</strong> 206.0 m  <strong>Fecha:</strong> 2005-01-24 <strong>Recolectores:</strong> E. Velasco-Sinaca <strong>Identificadores:</strong> D. Daly; M. Ricker</div>`)[0];
+            popup_42cc5ae0861240698f6dee28137bed95.setContent(html_21128c5a52cf42fdb38686e2e244a009);
+        
+
+        marker_0d8537725783492fa2615e85593d80d4.bindPopup(popup_42cc5ae0861240698f6dee28137bed95)
+        ;
+
+        
+    
+    
+            var marker_3966588d411249e89d14e5e31cddf69d = L.marker(
+                [18.207994, -93.022522],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_7004f7c28eb34337a538d109923b26c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9a1bd496730439e857716314dfb127a = $(`<div id="html_a9a1bd496730439e857716314dfb127a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 6 km de la carretera a Tecoluta <strong>Elevación:</strong> 6.0 m  <strong>Fecha:</strong> 1978-10-09 <strong>Recolectores:</strong> J.I. Calzada <strong>Identificadores:</strong> C.L. Lundell</div>`)[0];
+            popup_7004f7c28eb34337a538d109923b26c1.setContent(html_a9a1bd496730439e857716314dfb127a);
+        
+
+        marker_3966588d411249e89d14e5e31cddf69d.bindPopup(popup_7004f7c28eb34337a538d109923b26c1)
+        ;
+
+        
+    
+    
+            var marker_905dbcd175534b51aeced3cdbb1e14c3 = L.marker(
+                [18.493333, -95.104444],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_ac10a69c0039472c983ff8c0cbfb21ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ae5438313114f90be02a675498d0902 = $(`<div id="html_9ae5438313114f90be02a675498d0902" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camino a la colonia Cuauhtémoc <strong>Elevación:</strong> 845.0 m  <strong>Fecha:</strong> 2012-01-25 <strong>Recolectores:</strong> A. Campos V.; R. Coates; I. Ramírez L.; A. Aguirre J. <strong>Identificadores:</strong> A. Campos V.</div>`)[0];
+            popup_ac10a69c0039472c983ff8c0cbfb21ca.setContent(html_9ae5438313114f90be02a675498d0902);
+        
+
+        marker_905dbcd175534b51aeced3cdbb1e14c3.bindPopup(popup_ac10a69c0039472c983ff8c0cbfb21ca)
+        ;
+
+        
+    
+    
+            var marker_f4e7c82a35544816bfa81fe316bdc0f6 = L.marker(
+                [18.620832999999998, -95.075],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_8e7291a4f78145cb9fd9f923eae70081 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb3af37cfbeb4ef3b7869f03653362fe = $(`<div id="html_cb3af37cfbeb4ef3b7869f03653362fe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Balzapote, Finca La Iguana <strong>Elevación:</strong> 9.0 m  <strong>Fecha:</strong> 2013-03-18 <strong>Recolectores:</strong> R. Coates <strong>Identificadores:</strong> A. Campos V.</div>`)[0];
+            popup_8e7291a4f78145cb9fd9f923eae70081.setContent(html_cb3af37cfbeb4ef3b7869f03653362fe);
+        
+
+        marker_f4e7c82a35544816bfa81fe316bdc0f6.bindPopup(popup_8e7291a4f78145cb9fd9f923eae70081)
+        ;
+
+        
+    
+    
+            var marker_bf22fba9a8cf430fad01585a9fb776bd = L.marker(
+                [18.5786, -95.0904],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_ef15215c965a4c6d8a0a83f2cd4a32b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_881cddc09f3144da999dea6f81a627a8 = $(`<div id="html_881cddc09f3144da999dea6f81a627a8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Lote 69 de la Estación Biológica de Los Tuxtlas, UNAM, alrededores de Laguna Azul <strong>Elevación:</strong> 206.0 m  <strong>Fecha:</strong> 2005-03-28 <strong>Recolectores:</strong> E. Velasco-Sinaca <strong>Identificadores:</strong> D. Daly; M. Ricker</div>`)[0];
+            popup_ef15215c965a4c6d8a0a83f2cd4a32b3.setContent(html_881cddc09f3144da999dea6f81a627a8);
+        
+
+        marker_bf22fba9a8cf430fad01585a9fb776bd.bindPopup(popup_ef15215c965a4c6d8a0a83f2cd4a32b3)
+        ;
+
+        
+    
+    
+            var marker_75a46fecfea848558b16da014e3ed0ac = L.marker(
+                [18.207994, -93.022522],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_cd9f98869f924979809669fab254c32e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dcba16d4cb92496daa7e1726d6bb35c1 = $(`<div id="html_dcba16d4cb92496daa7e1726d6bb35c1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 6 km de la carretera a Tecoluta <strong>Elevación:</strong> 6.0 m  <strong>Fecha:</strong> 1978-10-09 <strong>Recolectores:</strong> J.I. Calzada <strong>Identificadores:</strong> C.L. Lundell</div>`)[0];
+            popup_cd9f98869f924979809669fab254c32e.setContent(html_dcba16d4cb92496daa7e1726d6bb35c1);
+        
+
+        marker_75a46fecfea848558b16da014e3ed0ac.bindPopup(popup_cd9f98869f924979809669fab254c32e)
+        ;
+
+        
+    
+    
+            var marker_47cc4f23871346b9a16bb6e7ad242682 = L.marker(
+                [15.416667000000002, -89.208333],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_42f3de1e437d4d338b79e2d25f8d1a7f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db2828682c5b4db2a964b5a95eac0afd = $(`<div id="html_db2828682c5b4db2a964b5a95eac0afd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> East shores of Río Dulce near San Felipe, Vicinity of Lago Izabal. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1966-04-29 <strong>Recolectores:</strong> Jones GC; Proctor GR; Facey L <strong>Identificadores:</strong> Biral L</div>`)[0];
+            popup_42f3de1e437d4d338b79e2d25f8d1a7f.setContent(html_db2828682c5b4db2a964b5a95eac0afd);
+        
+
+        marker_47cc4f23871346b9a16bb6e7ad242682.bindPopup(popup_42f3de1e437d4d338b79e2d25f8d1a7f)
+        ;
+
+        
+    
+    
+            var marker_37a312b23d674233ae0af64eb105fec9 = L.marker(
+                [17.79, -94.1],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_861c41f780c3486595e4e23070feabb7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc40cc51ab654258a0b5312cda34f8b8 = $(`<div id="html_fc40cc51ab654258a0b5312cda34f8b8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Playa Escondiada-Jicacal <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1971-08-01 <strong>Recolectores:</strong> J. I. Calzada <strong>Identificadores:</strong> C. L. Lundell</div>`)[0];
+            popup_861c41f780c3486595e4e23070feabb7.setContent(html_fc40cc51ab654258a0b5312cda34f8b8);
+        
+
+        marker_37a312b23d674233ae0af64eb105fec9.bindPopup(popup_861c41f780c3486595e4e23070feabb7)
+        ;
+
+        
+    
+    
+            var marker_103473c2a57c4956a924d56c62dcbddf = L.marker(
+                [17.754049971691337, -91.26435058461954],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_1d6cb35eea884bbc983fe8cedeaa1f3d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8cb176f160e4b67a78c6953faf866ce = $(`<div id="html_f8cb176f160e4b67a78c6953faf866ce" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> REFORMA <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1939-05-22 <strong>Recolectores:</strong> E. Matuda <strong>Identificadores:</strong> C. L. Lundell</div>`)[0];
+            popup_1d6cb35eea884bbc983fe8cedeaa1f3d.setContent(html_f8cb176f160e4b67a78c6953faf866ce);
+        
+
+        marker_103473c2a57c4956a924d56c62dcbddf.bindPopup(popup_1d6cb35eea884bbc983fe8cedeaa1f3d)
+        ;
+
+        
+    
+    
+            var marker_ca0a06fcc27c438b85d25725b2a41351 = L.marker(
+                [10.92, -85.47],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_c6d5fb1cd54f4df69437b56bdb75b596 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab1c0e8d51574f5bb36994ba064c9986 = $(`<div id="html_ab1c0e8d51574f5bb36994ba064c9986" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Guanacaste Estación Cacao. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1990-10-27 <strong>Recolectores:</strong> Carlos Chávez <strong>Identificadores:</strong> R.Liesner (MO)</div>`)[0];
+            popup_c6d5fb1cd54f4df69437b56bdb75b596.setContent(html_ab1c0e8d51574f5bb36994ba064c9986);
+        
+
+        marker_ca0a06fcc27c438b85d25725b2a41351.bindPopup(popup_c6d5fb1cd54f4df69437b56bdb75b596)
+        ;
+
+        
+    
+    
+            var marker_d6c029492171409f8f3ad77aa3436d0f = L.marker(
+                [10.7125, -85.04083299999999],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_abf4bcc51f0a4204bd0afb61e3101c12 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc065fcfab3743fe896b4edacf50aec6 = $(`<div id="html_dc065fcfab3743fe896b4edacf50aec6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Volcán Tenorio. Cuenca del Zapote. Estación Heliconias; colectado en bosque a orilla de sendero Laguna Danta <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 2001-04-27 <strong>Recolectores:</strong> José Luis Chaves|Reinaldo Aguilar <strong>Identificadores:</strong> B. E. Hammel (MO)</div>`)[0];
+            popup_abf4bcc51f0a4204bd0afb61e3101c12.setContent(html_dc065fcfab3743fe896b4edacf50aec6);
+        
+
+        marker_d6c029492171409f8f3ad77aa3436d0f.bindPopup(popup_abf4bcc51f0a4204bd0afb61e3101c12)
+        ;
+
+        
+    
+    
+            var marker_38f8e3119eda4ebba3c093615a75762e = L.marker(
+                [14.272778, -89.457778],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_481babab12e7400c86fcc14fbce4ff35 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c1d839900c442fa8952ceb2ef80bd5a = $(`<div id="html_6c1d839900c442fa8952ceb2ef80bd5a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 7 km al S de Metapán, campos de lava vieja del Volcán de San Diego (km 106 de la carretera Santa Ana-Metapán). Veg. selva baja caducifolia. <strong>Elevación:</strong> 650.0 m  <strong>Fecha:</strong> 2004-06-03 <strong>Recolectores:</strong> José Linares <strong>Identificadores:</strong> R.Liesner (MO)</div>`)[0];
+            popup_481babab12e7400c86fcc14fbce4ff35.setContent(html_6c1d839900c442fa8952ceb2ef80bd5a);
+        
+
+        marker_38f8e3119eda4ebba3c093615a75762e.bindPopup(popup_481babab12e7400c86fcc14fbce4ff35)
+        ;
+
+        
+    
+    
+            var marker_57013b51101e437298f1e727f71683df = L.marker(
+                [10.99, -85.419722],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_d4ae30b5d9a04e36933b9a0941944f8e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08ca8588a2254a74bf9345cda8800d5f = $(`<div id="html_08ca8588a2254a74bf9345cda8800d5f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca del Estado. volcan Orosi. Estacion Pittilla. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1998-06-30 <strong>Recolectores:</strong> Calixto Moraga <strong>Identificadores:</strong> R.Liesner (MO)</div>`)[0];
+            popup_d4ae30b5d9a04e36933b9a0941944f8e.setContent(html_08ca8588a2254a74bf9345cda8800d5f);
+        
+
+        marker_57013b51101e437298f1e727f71683df.bindPopup(popup_d4ae30b5d9a04e36933b9a0941944f8e)
+        ;
+
+        
+    
+    
+            var marker_ee1ec9446a2f420e8de23a8670fb99f1 = L.marker(
+                [20.36, -87.33],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_3a865cef096d4deaa6ad5655487bd7cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_077dd9d55c4d44cdbb42034886c00004 = $(`<div id="html_077dd9d55c4d44cdbb42034886c00004" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> A 5 km al sur de Akumal, sobre la carretera Cancún-Tulum, selva baja a mediana, con Sideroxyllum, Pseudophoenix, Manilkara <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1983-09-24 <strong>Recolectores:</strong> Edgar Fco. Cabrera C.|H. de Cabrera <strong>Identificadores:</strong> R.Liesner (MO)</div>`)[0];
+            popup_3a865cef096d4deaa6ad5655487bd7cc.setContent(html_077dd9d55c4d44cdbb42034886c00004);
+        
+
+        marker_ee1ec9446a2f420e8de23a8670fb99f1.bindPopup(popup_3a865cef096d4deaa6ad5655487bd7cc)
+        ;
+
+        
+    
+    
+            var marker_3e8cf834e99f4d1ab69391db00c7d313 = L.marker(
+                [20.35, -87.34],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_e6c2c1c41503460a97b08d7d3b598ca4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c2c44b49927455e99bdf1eb10f5c5df = $(`<div id="html_3c2c44b49927455e99bdf1eb10f5c5df" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> A 7 km al sur de Akumal, por la carretera Cancún-Tulum. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1982-12-17 <strong>Recolectores:</strong> Edgar Fco. Cabrera C.|H. de Cabrera <strong>Identificadores:</strong> R.Liesner (MO)</div>`)[0];
+            popup_e6c2c1c41503460a97b08d7d3b598ca4.setContent(html_3c2c44b49927455e99bdf1eb10f5c5df);
+        
+
+        marker_3e8cf834e99f4d1ab69391db00c7d313.bindPopup(popup_e6c2c1c41503460a97b08d7d3b598ca4)
+        ;
+
+        
+    
+    
+            var marker_60c9e5257d994d6a8415c05c88d33ba9 = L.marker(
+                [10.959722, -85.493055],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_95297b22e3524bfd9dae65750224695c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_571d9a40138c45a9aabc44c9c1d3afd6 = $(`<div id="html_571d9a40138c45a9aabc44c9c1d3afd6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Guanacaste Estación Maritza Bosque primario y secundario. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1990-08-29 <strong>Recolectores:</strong> Ulises Chavarría|Curso II de Parataxónomos <strong>Identificadores:</strong> B. E. Hammel (MO)</div>`)[0];
+            popup_95297b22e3524bfd9dae65750224695c.setContent(html_571d9a40138c45a9aabc44c9c1d3afd6);
+        
+
+        marker_60c9e5257d994d6a8415c05c88d33ba9.bindPopup(popup_95297b22e3524bfd9dae65750224695c)
+        ;
+
+        
+    
+    
+            var marker_b28746277aa041aabe6470e2c04cd2b6 = L.marker(
+                [19.233333, -96.68333299999999],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_b01b381044294f27a5870490822eaf1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_569793bdb6f2447f975f187e0721450e = $(`<div id="html_569793bdb6f2447f975f187e0721450e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cameron [Rancho Camarón] <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1922-04-01 <strong>Recolectores:</strong> C.A. Purpus <strong>Identificadores:</strong> R.Liesner (MO)</div>`)[0];
+            popup_b01b381044294f27a5870490822eaf1c.setContent(html_569793bdb6f2447f975f187e0721450e);
+        
+
+        marker_b28746277aa041aabe6470e2c04cd2b6.bindPopup(popup_b01b381044294f27a5870490822eaf1c)
+        ;
+
+        
+    
+    
+            var marker_1b069ccac0ff402d91b7f224b8ae2b0f = L.marker(
+                [10.880556, -85.401389],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_3e7f61794d084b3fa75aeeddc6bdd244 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1bdd4e9f62a464083f672f102c2232a = $(`<div id="html_a1bdd4e9f62a464083f672f102c2232a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion San Ramon. Dos Rios. Sendero Argentina. <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 1996-08-17 <strong>Recolectores:</strong> Duvalier Briceño <strong>Identificadores:</strong> R.Liesner (MO)</div>`)[0];
+            popup_3e7f61794d084b3fa75aeeddc6bdd244.setContent(html_a1bdd4e9f62a464083f672f102c2232a);
+        
+
+        marker_1b069ccac0ff402d91b7f224b8ae2b0f.bindPopup(popup_3e7f61794d084b3fa75aeeddc6bdd244)
+        ;
+
+        
+    
+    
+            var marker_59f6f89ded9847c39ff0175b5196b9f2 = L.marker(
+                [10.88, -85.4],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_e67909fa653f45f9800bb4d438ad1fa8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5bc7a90b8fb4518834c31824b7f41f1 = $(`<div id="html_a5bc7a90b8fb4518834c31824b7f41f1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Guanacaste, Cordillera de Guanacaste, De Nueva Zelandia 1 km antes de Finca San Cristóbal. <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 1994-11-11 <strong>Recolectores:</strong> Roberto Espinoza|R. Hurtado|F. Carmona <strong>Identificadores:</strong> L. Biral</div>`)[0];
+            popup_e67909fa653f45f9800bb4d438ad1fa8.setContent(html_a5bc7a90b8fb4518834c31824b7f41f1);
+        
+
+        marker_59f6f89ded9847c39ff0175b5196b9f2.bindPopup(popup_e67909fa653f45f9800bb4d438ad1fa8)
+        ;
+
+        
+    
+    
+            var marker_7ce19d4938884a988da5474e4f475154 = L.marker(
+                [10.8, -85.31],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_a93931ed10554a0d96b0532e508b5b35 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8137317b5cd74b838fa973e40b0beacd = $(`<div id="html_8137317b5cd74b838fa973e40b0beacd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Rincón de la Vieja. Hacienda Santa Maria; de la planta hidroelectrica siguiendo el canal hasta "El Chaguite". <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1987-10-13 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> R.Liesner (MO)</div>`)[0];
+            popup_a93931ed10554a0d96b0532e508b5b35.setContent(html_8137317b5cd74b838fa973e40b0beacd);
+        
+
+        marker_7ce19d4938884a988da5474e4f475154.bindPopup(popup_a93931ed10554a0d96b0532e508b5b35)
+        ;
+
+        
+    
+    
+            var marker_360f1f94e2b148e3a112d292284c092b = L.marker(
+                [18.5786, -95.0904],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_d7743ba36bc3411cbb0f0f2a0d865ab8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c50222b4cfd94c319f757cbef84a21a1 = $(`<div id="html_c50222b4cfd94c319f757cbef84a21a1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Lote 69, Estación de Bilogía "Los Tuxtlas", 30 km de Catemaco a Montepio. Los Tuxtlas. Lat. dentro de 800 m de 18.5786. Long. -95.0904. <strong>Elevación:</strong> 206.0 m  <strong>Fecha:</strong> 2005-01-24 <strong>Recolectores:</strong> E. Velasco-Sinaca <strong>Identificadores:</strong> R.Liesner (MO)</div>`)[0];
+            popup_d7743ba36bc3411cbb0f0f2a0d865ab8.setContent(html_c50222b4cfd94c319f757cbef84a21a1);
+        
+
+        marker_360f1f94e2b148e3a112d292284c092b.bindPopup(popup_d7743ba36bc3411cbb0f0f2a0d865ab8)
+        ;
+
+        
+    
+    
+            var marker_220919d382b04aa2b7543364155feebc = L.marker(
+                [10.916667, -85.5],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_1c72146c07034d3c91ded15db8df6407 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_844c97b633c542b18bf11ef4b6cd3e30 = $(`<div id="html_844c97b633c542b18bf11ef4b6cd3e30" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro El Hacha, SW face of Volcán Cacao. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1987-08-07 <strong>Recolectores:</strong> G. Stevens <strong>Identificadores:</strong> L. Biral</div>`)[0];
+            popup_1c72146c07034d3c91ded15db8df6407.setContent(html_844c97b633c542b18bf11ef4b6cd3e30);
+        
+
+        marker_220919d382b04aa2b7543364155feebc.bindPopup(popup_1c72146c07034d3c91ded15db8df6407)
+        ;
+
+        
+    
+    
+            var marker_8df1339a0b3c4578abbfefd85079b779 = L.marker(
+                [9.9, -84.272222],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_0fb4c1565443443c9da216caac9276ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_02dfaea6bb444e25b99906a8ac0fb14a = $(`<div id="html_02dfaea6bb444e25b99906a8ac0fb14a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Mora. Z.P. El Rodeo. Cuenca del Tárcoles. Terrenos Universidad para La Paz. Fila Diamante. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1997-02-21 <strong>Recolectores:</strong> Quírico Jiménez <strong>Identificadores:</strong> R.Liesner (MO)</div>`)[0];
+            popup_0fb4c1565443443c9da216caac9276ae.setContent(html_02dfaea6bb444e25b99906a8ac0fb14a);
+        
+
+        marker_8df1339a0b3c4578abbfefd85079b779.bindPopup(popup_0fb4c1565443443c9da216caac9276ae)
+        ;
+
+        
+    
+    
+            var marker_3df73fc13aa8474c8801cd39b79d9159 = L.marker(
+                [10.358333, -84.641667],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_6c2939f67e314f6c87b2cf36fc36f9db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9681678c8d04b1ebe1d5b7eb9d908b5 = $(`<div id="html_c9681678c8d04b1ebe1d5b7eb9d908b5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida. Cuenca del San Carlos. De San Miguel, sobre carretera de lastre; ruta a Laguna Pocosol, ca. de 1.5 km antes del puente del río San Lorenzo. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 2001-05-23 <strong>Recolectores:</strong> Alexánder Rodríguez|Eduardo Lépiz <strong>Identificadores:</strong> R.Liesner (MO)</div>`)[0];
+            popup_6c2939f67e314f6c87b2cf36fc36f9db.setContent(html_c9681678c8d04b1ebe1d5b7eb9d908b5);
+        
+
+        marker_3df73fc13aa8474c8801cd39b79d9159.bindPopup(popup_6c2939f67e314f6c87b2cf36fc36f9db)
+        ;
+
+        
+    
+    
+            var marker_4fe7647f3aae41efa8da0643ff7b74f7 = L.marker(
+                [19.3333, -96.6667],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_6187e98013644c4c8e78c783bb69d66d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8e727e648e174f08a36bd018427a15c1 = $(`<div id="html_8e727e648e174f08a36bd018427a15c1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1969-09-29 <strong>Recolectores:</strong> G. Martínez Calderón <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_6187e98013644c4c8e78c783bb69d66d.setContent(html_8e727e648e174f08a36bd018427a15c1);
+        
+
+        marker_4fe7647f3aae41efa8da0643ff7b74f7.bindPopup(popup_6187e98013644c4c8e78c783bb69d66d)
+        ;
+
+        
+    
+    
+            var marker_6bf1341f68db47e68a56162bd8846fad = L.marker(
+                [19.3333, -96.6667],
+                {}
+            ).addTo(marker_cluster_3c8112f407af4d359e7ac8addfd07b53);
+        
+    
+        var popup_22e0bcd3db9f4f1883b19308e6a56886 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0831fb4bb9594d0aaa5dcc9a9ffdab27 = $(`<div id="html_0831fb4bb9594d0aaa5dcc9a9ffdab27" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1967-09-30 <strong>Recolectores:</strong> M. Sousa S. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_22e0bcd3db9f4f1883b19308e6a56886.setContent(html_0831fb4bb9594d0aaa5dcc9a9ffdab27);
+        
+
+        marker_6bf1341f68db47e68a56162bd8846fad.bindPopup(popup_22e0bcd3db9f4f1883b19308e6a56886)
+        ;
+
+        
+    
+    
+            var layer_control_11024bff584f4ca28e98322303abdd54 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_dd56e84406a740ee9d3c9885c7fc81a6,
+                    "ESRI World Imagery" : tile_layer_4aee5e37c2b142f19f98ddf4cc2c1556,
+                },
+                overlays :  {
+                    "macro_element_3c8112f407af4d359e7ac8addfd07b53" : marker_cluster_3c8112f407af4d359e7ac8addfd07b53,
+                },
+            };
+            L.control.layers(
+                layer_control_11024bff584f4ca28e98322303abdd54.base_layers,
+                layer_control_11024bff584f4ca28e98322303abdd54.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_4db52f39cfa344e091af8a7a8073c62a);
+            tile_layer_4aee5e37c2b142f19f98ddf4cc2c1556.remove();
+        
+</script>

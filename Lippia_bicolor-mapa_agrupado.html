@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a4759d9ccb5246a4bc8e7667d4e278c0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a4759d9ccb5246a4bc8e7667d4e278c0" ></div>
+        
+</body>
+<script>    
+    
+            var map_a4759d9ccb5246a4bc8e7667d4e278c0 = L.map(
+                "map_a4759d9ccb5246a4bc8e7667d4e278c0",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_a4759d9ccb5246a4bc8e7667d4e278c0);
+
+            
+
+        
+    
+            var tile_layer_2145345379e34a7a83395c9319138103 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a4759d9ccb5246a4bc8e7667d4e278c0);
+        
+    
+            var tile_layer_d89643dcba0149ee848e44ef6fb39ffc = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a4759d9ccb5246a4bc8e7667d4e278c0);
+        
+    
+            var marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a = L.markerClusterGroup(
+                {}
+            );
+            map_a4759d9ccb5246a4bc8e7667d4e278c0.addLayer(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+            var marker_a0bbc9987e134cbdbbe50391142b1ca7 = L.marker(
+                [17.616670000000003, -99.68333],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_1997d4e830a4477fa64a6f514d9b7728 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6def615e65ae4987b693ecdd2d8af173 = $(`<div id="html_6def615e65ae4987b693ecdd2d8af173" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along the rd to Filo de Caballo, 27 mi from Mex Hwy 95 ca Chilpancingo <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1983-01-17 <strong>Recolectores:</strong> James S. Miller|David A. Neill|Fred Neill <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1997d4e830a4477fa64a6f514d9b7728.setContent(html_6def615e65ae4987b693ecdd2d8af173);
+        
+
+        marker_a0bbc9987e134cbdbbe50391142b1ca7.bindPopup(popup_1997d4e830a4477fa64a6f514d9b7728)
+        ;
+
+        
+    
+    
+            var marker_7942646a6fc948b88d25d6f1067d43b3 = L.marker(
+                [17.650264898487478, -99.698138861214],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_6d074a2295d34ac986d873b7cddff7b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d1da24ec23a4410bcfe5b8c0cce50e1 = $(`<div id="html_2d1da24ec23a4410bcfe5b8c0cce50e1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along rd between Chilpancingo de los Bravos and Filo del Caballo via Chichihualco, 26.3 mi W of turn-off from Hwy 95, 8.1 mi W of turn-off to Chichihualco <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1979-01-14 <strong>Recolectores:</strong> T. B. Croat <strong>Identificadores:</strong> Nesom</div>`)[0];
+            popup_6d074a2295d34ac986d873b7cddff7b1.setContent(html_2d1da24ec23a4410bcfe5b8c0cce50e1);
+        
+
+        marker_7942646a6fc948b88d25d6f1067d43b3.bindPopup(popup_6d074a2295d34ac986d873b7cddff7b1)
+        ;
+
+        
+    
+    
+            var marker_0ea4a03d29994bb6a798ffdcd982d683 = L.marker(
+                [17.916667, -101.0],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_87ffac7f5f594b9a852b1932ba26ee3d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_173dc7b6ca724c208e895aa1fd080363 = $(`<div id="html_173dc7b6ca724c208e895aa1fd080363" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zapo Dto Mina <strong>Elevación:</strong> 370.0 m  <strong>Fecha:</strong> 1936-11-17 <strong>Recolectores:</strong> G. H. <strong>Identificadores:</strong> Nesom</div>`)[0];
+            popup_87ffac7f5f594b9a852b1932ba26ee3d.setContent(html_173dc7b6ca724c208e895aa1fd080363);
+        
+
+        marker_0ea4a03d29994bb6a798ffdcd982d683.bindPopup(popup_87ffac7f5f594b9a852b1932ba26ee3d)
+        ;
+
+        
+    
+    
+            var marker_1313b9ee44ba4d53bcead63c0326d620 = L.marker(
+                [17.616667, -99.68333299999999],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_ba1b0fb92533407483a43e012f605f5d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9576e7d9a3fb486b8444956afe9f8d3b = $(`<div id="html_9576e7d9a3fb486b8444956afe9f8d3b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along the rd to Filo de Caballo, 27 mi from Mex Hwy 95 ca Chilpancingo <strong>Elevación:</strong> 765.0 m  <strong>Fecha:</strong> 1983-01-17 <strong>Recolectores:</strong> J. S. Miller; D. Neill; F. Neil <strong>Identificadores:</strong> Nesom</div>`)[0];
+            popup_ba1b0fb92533407483a43e012f605f5d.setContent(html_9576e7d9a3fb486b8444956afe9f8d3b);
+        
+
+        marker_1313b9ee44ba4d53bcead63c0326d620.bindPopup(popup_ba1b0fb92533407483a43e012f605f5d)
+        ;
+
+        
+    
+    
+            var marker_6c9fcf89254842fca643583d7fe74739 = L.marker(
+                [19.025, -99.58555600000001],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_46d0ae0dbc9d4ddcadb5035e8e257e9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42e27f3d5cad4debb4748cb7e6b96ad3 = $(`<div id="html_42e27f3d5cad4debb4748cb7e6b96ad3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 10 KM AL S DE VILLA GUERRERO SOBRE LA CARR. IXTAPAN DE LA SAL <strong>Elevación:</strong> 1070.0 m  <strong>Fecha:</strong> 1970-11-06 <strong>Recolectores:</strong> J.M. Díaz M. <strong>Identificadores:</strong> A. R. López F._</div>`)[0];
+            popup_46d0ae0dbc9d4ddcadb5035e8e257e9c.setContent(html_42e27f3d5cad4debb4748cb7e6b96ad3);
+        
+
+        marker_6c9fcf89254842fca643583d7fe74739.bindPopup(popup_46d0ae0dbc9d4ddcadb5035e8e257e9c)
+        ;
+
+        
+    
+    
+            var marker_1be996a7badd49c4b8f654e5e39cc7b2 = L.marker(
+                [18.863138, -99.66199399999999],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_ad7b408c67d34802aacc0b597bb57507 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e470fee75097411b9fe43c16086e7160 = $(`<div id="html_e470fee75097411b9fe43c16086e7160" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 68.5 KM DE LA CARR. TOLUCA-IXTAPAN <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1970-11-06 <strong>Recolectores:</strong> E. SEGURA R. <strong>Identificadores:</strong> A. R. López F._</div>`)[0];
+            popup_ad7b408c67d34802aacc0b597bb57507.setContent(html_e470fee75097411b9fe43c16086e7160);
+        
+
+        marker_1be996a7badd49c4b8f654e5e39cc7b2.bindPopup(popup_ad7b408c67d34802aacc0b597bb57507)
+        ;
+
+        
+    
+    
+            var marker_a08076310f054f34a4ce73cfe6d1522b = L.marker(
+                [19.673333, -103.255],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_9ac49a9e7a7348d0bd6a54f6ceaa0f11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_66b9e92ce4964eadb82e74673f4968ae = $(`<div id="html_66b9e92ce4964eadb82e74673f4968ae" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 15 KM AL E DE TAMAZULA BRRECHA A SAN JUAN DE LA MONTAÑA <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1989-11-13 <strong>Recolectores:</strong> J. Villa C.; et al. <strong>Identificadores:</strong> J. García P.</div>`)[0];
+            popup_9ac49a9e7a7348d0bd6a54f6ceaa0f11.setContent(html_66b9e92ce4964eadb82e74673f4968ae);
+        
+
+        marker_a08076310f054f34a4ce73cfe6d1522b.bindPopup(popup_9ac49a9e7a7348d0bd6a54f6ceaa0f11)
+        ;
+
+        
+    
+    
+            var marker_c134a7e1ed554e92885a3203802f4b6b = L.marker(
+                [18.735, -102.788333],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_d0b4cac34dae4c238f45d0dd15d3738b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7fd990340994c2788a65667b3626556 = $(`<div id="html_a7fd990340994c2788a65667b3626556" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 22 KM AL NW DE AGUILILLA, MICH. <strong>Elevación:</strong> 855.0 m  <strong>Fecha:</strong> 1985-04-09 <strong>Recolectores:</strong> J.C. Soto; et al. <strong>Identificadores:</strong> J.C. Soto</div>`)[0];
+            popup_d0b4cac34dae4c238f45d0dd15d3738b.setContent(html_a7fd990340994c2788a65667b3626556);
+        
+
+        marker_c134a7e1ed554e92885a3203802f4b6b.bindPopup(popup_d0b4cac34dae4c238f45d0dd15d3738b)
+        ;
+
+        
+    
+    
+            var marker_f697c67414414d7aa08305a5be9c8175 = L.marker(
+                [17.921667000000003, -101.32],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_da859cd859094b10bdb2ae346fbebe6c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8dbd89a9acc544e5ba29407c9d29460c = $(`<div id="html_8dbd89a9acc544e5ba29407c9d29460c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 14 KM AL NE DE VALLECITO DE ZARAGOZA, MPIO. AZUETA <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 1985-12-10 <strong>Recolectores:</strong> J.C. Soto <strong>Identificadores:</strong> J.C. Soto</div>`)[0];
+            popup_da859cd859094b10bdb2ae346fbebe6c.setContent(html_8dbd89a9acc544e5ba29407c9d29460c);
+        
+
+        marker_f697c67414414d7aa08305a5be9c8175.bindPopup(popup_da859cd859094b10bdb2ae346fbebe6c)
+        ;
+
+        
+    
+    
+            var marker_1082a15a13c741c7ba25804607957332 = L.marker(
+                [20.195, -103.289167],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_13a0244a50f547bc865575b8ab189b25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7088ca63723c4f1683f9dc12b0f522c0 = $(`<div id="html_7088ca63723c4f1683f9dc12b0f522c0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> BARRANCA LA GLORIA, APROX. 3 KM AL W DE JIQUIALPAN <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1987-10-20 <strong>Recolectores:</strong> I. García <strong>Identificadores:</strong> I. García</div>`)[0];
+            popup_13a0244a50f547bc865575b8ab189b25.setContent(html_7088ca63723c4f1683f9dc12b0f522c0);
+        
+
+        marker_1082a15a13c741c7ba25804607957332.bindPopup(popup_13a0244a50f547bc865575b8ab189b25)
+        ;
+
+        
+    
+    
+            var marker_b515975590aa46a8811dfac7adf060b2 = L.marker(
+                [18.673111, -99.691722],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_98180b52c5a74b1db59776a6bcd33211 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8845344bd2494eedbe3c58be93048088 = $(`<div id="html_8845344bd2494eedbe3c58be93048088" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camino a Noxtepec. <strong>Elevación:</strong> 945.5 m  <strong>Fecha:</strong> 2013-02-21 <strong>Recolectores:</strong> RGJ; FMI; MAE; OGA <strong>Identificadores:</strong> LPL</div>`)[0];
+            popup_98180b52c5a74b1db59776a6bcd33211.setContent(html_8845344bd2494eedbe3c58be93048088);
+        
+
+        marker_b515975590aa46a8811dfac7adf060b2.bindPopup(popup_98180b52c5a74b1db59776a6bcd33211)
+        ;
+
+        
+    
+    
+            var marker_df956ea3e89d46af870cfd7f8eff0d93 = L.marker(
+                [18.582167000000002, -99.57866700000001],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_8e4d121174e645b2b96d24bb0a2c669c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54ff75a3d34140d9a3d3d6d0087a8c6c = $(`<div id="html_54ff75a3d34140d9a3d3d6d0087a8c6c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> A 1.5 km de la Caseta de cobro Taxco. <strong>Elevación:</strong> 869.0 m  <strong>Fecha:</strong> 2013-01-16 <strong>Recolectores:</strong> RGJ; MGM; FMI; GVD <strong>Identificadores:</strong> LPL</div>`)[0];
+            popup_8e4d121174e645b2b96d24bb0a2c669c.setContent(html_54ff75a3d34140d9a3d3d6d0087a8c6c);
+        
+
+        marker_df956ea3e89d46af870cfd7f8eff0d93.bindPopup(popup_8e4d121174e645b2b96d24bb0a2c669c)
+        ;
+
+        
+    
+    
+            var marker_04c15507fce048f58c6f9834c73ab50e = L.marker(
+                [21.977222, -103.505],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_08dbcbaceac148018e9f3af8a06b7064 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_124b4ef145a940ab867b812ef851c3a4 = $(`<div id="html_124b4ef145a940ab867b812ef851c3a4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 10 Km al S de Villa Guerrero, sobre la carretera a Ixtapan de la Sal. <strong>Elevación:</strong> 1870.0 m  <strong>Fecha:</strong> 1970-09-06 <strong>Recolectores:</strong> J.M. Díaz M. <strong>Identificadores:</strong> A. Pool</div>`)[0];
+            popup_08dbcbaceac148018e9f3af8a06b7064.setContent(html_124b4ef145a940ab867b812ef851c3a4);
+        
+
+        marker_04c15507fce048f58c6f9834c73ab50e.bindPopup(popup_08dbcbaceac148018e9f3af8a06b7064)
+        ;
+
+        
+    
+    
+            var marker_d2e4c791b5e7445aa4e0925038917c98 = L.marker(
+                [17.55, -100.15],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_2531abd23b5d4433a27f54068e8ab770 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2aef2ac0d3cd4bbd9f70d7d70340c9e7 = $(`<div id="html_2aef2ac0d3cd4bbd9f70d7d70340c9e7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Las Juntas. District Mina <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1937-12-24 <strong>Recolectores:</strong> George B. Hinton|James C. Hinton <strong>Identificadores:</strong> A. Pool</div>`)[0];
+            popup_2531abd23b5d4433a27f54068e8ab770.setContent(html_2aef2ac0d3cd4bbd9f70d7d70340c9e7);
+        
+
+        marker_d2e4c791b5e7445aa4e0925038917c98.bindPopup(popup_2531abd23b5d4433a27f54068e8ab770)
+        ;
+
+        
+    
+    
+            var marker_9b77f4a8aae94223b17c1c9bb258fe65 = L.marker(
+                [18.0, -101.23333000000001],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_c5896ddfa7f94ebe92cef81605ece40b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89012cb58c014a07bfa893a949209bf9 = $(`<div id="html_89012cb58c014a07bfa893a949209bf9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along Hwy 134 to Mexico City, about 40-50 mi NE of Jct Hwy 200, in secondary oak forest. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1989-01-14 <strong>Recolectores:</strong> Lindsay P. Woodruff|Carol A. Todzia|Alvaro Campos V. <strong>Identificadores:</strong> A. Pool</div>`)[0];
+            popup_c5896ddfa7f94ebe92cef81605ece40b.setContent(html_89012cb58c014a07bfa893a949209bf9);
+        
+
+        marker_9b77f4a8aae94223b17c1c9bb258fe65.bindPopup(popup_c5896ddfa7f94ebe92cef81605ece40b)
+        ;
+
+        
+    
+    
+            var marker_5c382f05212946c8a23d046930e60751 = L.marker(
+                [18.8025, -102.877778],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_40b019b943e4407c823cb4b47ea07c1f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be8594a0b82c41088ad56c6f797c7e2a = $(`<div id="html_be8594a0b82c41088ad56c6f797c7e2a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> A 10 Km al E de Dos Aguas, Carr. Coalcomán-Aguilillas. <strong>Elevación:</strong> 1900.0 m  <strong>Fecha:</strong> 1980-03-28 <strong>Recolectores:</strong> José C. Soto Núñez|Brian M. Boom <strong>Identificadores:</strong> A. Pool</div>`)[0];
+            popup_40b019b943e4407c823cb4b47ea07c1f.setContent(html_be8594a0b82c41088ad56c6f797c7e2a);
+        
+
+        marker_5c382f05212946c8a23d046930e60751.bindPopup(popup_40b019b943e4407c823cb4b47ea07c1f)
+        ;
+
+        
+    
+    
+            var marker_f9e6bb63e29a4fefb541667269458ec9 = L.marker(
+                [17.61666, -99.68333],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_32e05383dc704837b749b8263b9bd9bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3937e4640c234aafb92a6e56a7291955 = $(`<div id="html_3937e4640c234aafb92a6e56a7291955" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along road to Filo de Caballo, 27 mi from Mex. Hwy 95 near Chilapancingo. Oak-Pine forest. <strong>Elevación:</strong> 1530.0 m  <strong>Fecha:</strong> 1983-01-17 <strong>Recolectores:</strong> James S. Miller|David A. Neill|Frederick Neill <strong>Identificadores:</strong> A. Pool</div>`)[0];
+            popup_32e05383dc704837b749b8263b9bd9bd.setContent(html_3937e4640c234aafb92a6e56a7291955);
+        
+
+        marker_f9e6bb63e29a4fefb541667269458ec9.bindPopup(popup_32e05383dc704837b749b8263b9bd9bd)
+        ;
+
+        
+    
+    
+            var marker_426e8fc8133a4d5baea186c7e95a4b15 = L.marker(
+                [17.733333, -100.266667],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_9a6d9587f3574fd7ae9ac3019d68c3ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6afe891df29458aae9a7f79275bcf98 = $(`<div id="html_b6afe891df29458aae9a7f79275bcf98" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Petlacala-Las Rosas. District Mina <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1939-11-20 <strong>Recolectores:</strong> George B. Hinton|James C. Hinton <strong>Identificadores:</strong> A. Pool</div>`)[0];
+            popup_9a6d9587f3574fd7ae9ac3019d68c3ef.setContent(html_b6afe891df29458aae9a7f79275bcf98);
+        
+
+        marker_426e8fc8133a4d5baea186c7e95a4b15.bindPopup(popup_9a6d9587f3574fd7ae9ac3019d68c3ef)
+        ;
+
+        
+    
+    
+            var marker_3870b684abaf46eb906fad46ff16eded = L.marker(
+                [19.6, -101.19],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_2a4c57408a1f48eea7781ee37ded5531 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c377849204e41879572a4f1f6ef5223 = $(`<div id="html_6c377849204e41879572a4f1f6ef5223" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sierra Torrecillas [Torricillas] <strong>Elevación:</strong> 2500.0 m  <strong>Fecha:</strong> 1938-10-15 <strong>Recolectores:</strong> George B. Hinton|James C. Hinton <strong>Identificadores:</strong> A. Pool</div>`)[0];
+            popup_2a4c57408a1f48eea7781ee37ded5531.setContent(html_6c377849204e41879572a4f1f6ef5223);
+        
+
+        marker_3870b684abaf46eb906fad46ff16eded.bindPopup(popup_2a4c57408a1f48eea7781ee37ded5531)
+        ;
+
+        
+    
+    
+            var marker_31dcceb5e2f746e9a63b8f7d72414ea0 = L.marker(
+                [17.7, -99.73333000000001],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_123e5c6430ec42b387af3d5c920a559b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ecd3af001c494cfa8e4032a98a4d827f = $(`<div id="html_ecd3af001c494cfa8e4032a98a4d827f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along road between Chilpancingo de los Bravos and Filo del Caballo via Chichihualco, 29.2 mi W of turn-off from Highway 95 and 11 mi W of turn-off to Chichihualco <strong>Elevación:</strong> 2200.0 m  <strong>Fecha:</strong> 1979-01-14 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> A. Pool</div>`)[0];
+            popup_123e5c6430ec42b387af3d5c920a559b.setContent(html_ecd3af001c494cfa8e4032a98a4d827f);
+        
+
+        marker_31dcceb5e2f746e9a63b8f7d72414ea0.bindPopup(popup_123e5c6430ec42b387af3d5c920a559b)
+        ;
+
+        
+    
+    
+            var marker_39d2da180f3946508e7f5a981d574b83 = L.marker(
+                [18.116667, -101.016667],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_53c9e058ec3d4fec88d6b9cc7bf91a06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f3ec7c1035a4836a47af09f520a4c86 = $(`<div id="html_5f3ec7c1035a4836a47af09f520a4c86" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> District Mina. Manchón. <strong>Elevación:</strong> 1270.0 m  <strong>Fecha:</strong> 1937-12-05 <strong>Recolectores:</strong> George B. Hinton|James C. Hinton <strong>Identificadores:</strong> A. Pool</div>`)[0];
+            popup_53c9e058ec3d4fec88d6b9cc7bf91a06.setContent(html_5f3ec7c1035a4836a47af09f520a4c86);
+        
+
+        marker_39d2da180f3946508e7f5a981d574b83.bindPopup(popup_53c9e058ec3d4fec88d6b9cc7bf91a06)
+        ;
+
+        
+    
+    
+            var marker_cf9e2a26e0ca41f7b6523427541e5ab3 = L.marker(
+                [18.411111, -99.52166700000001],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_0adb8da60aef4ce9af287553c6ab6c03 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2f9ff425a0e44b798dac5af88c8bb9d = $(`<div id="html_c2f9ff425a0e44b798dac5af88c8bb9d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Iguala y Buenavista. Camon de La Mano. entre La Mano, entre Los Amates y El Naranjo, 10 Km al N de Iguala por el ferrocarril. <strong>Elevación:</strong> 950.0 m  <strong>Fecha:</strong> 1986-11-02 <strong>Recolectores:</strong> C. Catalán H.|F. Terán C. <strong>Identificadores:</strong> F. Salimena</div>`)[0];
+            popup_0adb8da60aef4ce9af287553c6ab6c03.setContent(html_c2f9ff425a0e44b798dac5af88c8bb9d);
+        
+
+        marker_cf9e2a26e0ca41f7b6523427541e5ab3.bindPopup(popup_0adb8da60aef4ce9af287553c6ab6c03)
+        ;
+
+        
+    
+    
+            var marker_6f84cbbfdaf64204b15ed714be47872f = L.marker(
+                [17.71, -99.71],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_f6a54251394a4f1885559c22c2325532 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad3e4d7a54e143e3978c31648fcebb8a = $(`<div id="html_ad3e4d7a54e143e3978c31648fcebb8a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along road between Chilpancingo de los Bravos and Filo del Caballo via Chichihualco, 26.3 mi W of turn-off from Highway 92, 8.1 mi W of turn-off to Chichihualco <strong>Elevación:</strong> 2400.0 m  <strong>Fecha:</strong> 1979-01-14 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> A. Pool</div>`)[0];
+            popup_f6a54251394a4f1885559c22c2325532.setContent(html_ad3e4d7a54e143e3978c31648fcebb8a);
+        
+
+        marker_6f84cbbfdaf64204b15ed714be47872f.bindPopup(popup_f6a54251394a4f1885559c22c2325532)
+        ;
+
+        
+    
+    
+            var marker_4133cbc0774a468eaf709e05f66094db = L.marker(
+                [14.618332999999998, -90.62],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_5c0b0d669a9c4a9a94920ab83521e643 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6993b678312e473baa584c8a016e3f58 = $(`<div id="html_6993b678312e473baa584c8a016e3f58" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 4.7 miles east of San Lucas on Hwy. CA-1. From mesic ravine in drty oak woodland <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1970-01-25 <strong>Recolectores:</strong> William E. Harmon|John D. Dwyer <strong>Identificadores:</strong> R. Rueda</div>`)[0];
+            popup_5c0b0d669a9c4a9a94920ab83521e643.setContent(html_6993b678312e473baa584c8a016e3f58);
+        
+
+        marker_4133cbc0774a468eaf709e05f66094db.bindPopup(popup_5c0b0d669a9c4a9a94920ab83521e643)
+        ;
+
+        
+    
+    
+            var marker_8b976206ebf34711a0c4325f6a1a59cb = L.marker(
+                [-10.8339, -52.8731],
+                {}
+            ).addTo(marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a);
+        
+    
+        var popup_bc6933e287484d86afce7837cddd0eb7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_11d030b62f824ba18304ffa83521c185 = $(`<div id="html_11d030b62f824ba18304ffa83521c185" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> C. F. P. von Martius <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_bc6933e287484d86afce7837cddd0eb7.setContent(html_11d030b62f824ba18304ffa83521c185);
+        
+
+        marker_8b976206ebf34711a0c4325f6a1a59cb.bindPopup(popup_bc6933e287484d86afce7837cddd0eb7)
+        ;
+
+        
+    
+    
+            var layer_control_9a1c1de57aee411d8b4d2f713955b6ca = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_2145345379e34a7a83395c9319138103,
+                    "ESRI World Imagery" : tile_layer_d89643dcba0149ee848e44ef6fb39ffc,
+                },
+                overlays :  {
+                    "macro_element_5bae8111b48243bcadcfbeea1ecd7e1a" : marker_cluster_5bae8111b48243bcadcfbeea1ecd7e1a,
+                },
+            };
+            L.control.layers(
+                layer_control_9a1c1de57aee411d8b4d2f713955b6ca.base_layers,
+                layer_control_9a1c1de57aee411d8b4d2f713955b6ca.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_a4759d9ccb5246a4bc8e7667d4e278c0);
+            tile_layer_d89643dcba0149ee848e44ef6fb39ffc.remove();
+        
+</script>

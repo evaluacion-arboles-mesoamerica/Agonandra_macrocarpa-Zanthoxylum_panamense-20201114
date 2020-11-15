@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_eb6aa45398914daeb42b6a24dffa2dde {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_eb6aa45398914daeb42b6a24dffa2dde" ></div>
+        
+</body>
+<script>    
+    
+            var map_eb6aa45398914daeb42b6a24dffa2dde = L.map(
+                "map_eb6aa45398914daeb42b6a24dffa2dde",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_eb6aa45398914daeb42b6a24dffa2dde);
+
+            
+
+        
+    
+            var tile_layer_5ac4f91aa22543aca90c423c7c9964cd = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_eb6aa45398914daeb42b6a24dffa2dde);
+        
+    
+            var tile_layer_99fc33ce318948ac86a72891660a98f7 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_eb6aa45398914daeb42b6a24dffa2dde);
+        
+    
+            var marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7 = L.markerClusterGroup(
+                {}
+            );
+            map_eb6aa45398914daeb42b6a24dffa2dde.addLayer(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+            var marker_22901be6166c473f83c528208882fe85 = L.marker(
+                [9.1375, -82.9519],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_9cf6033d5e314acfb7174e9f9ced8f1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f70ff8eb5baa4fb08ee130a02b0c3e09 = $(`<div id="html_f70ff8eb5baa4fb08ee130a02b0c3e09" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Limón: Talamanca. P.N. La Amistad. Tararia. Valle del Silencio <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2000-10-10 <strong>Recolectores:</strong> E. Alfaro <strong>Identificadores:</strong> Antonio Rodríguez</div>`)[0];
+            popup_9cf6033d5e314acfb7174e9f9ced8f1e.setContent(html_f70ff8eb5baa4fb08ee130a02b0c3e09);
+        
+
+        marker_22901be6166c473f83c528208882fe85.bindPopup(popup_9cf6033d5e314acfb7174e9f9ced8f1e)
+        ;
+
+        
+    
+    
+            var marker_4360735f92394558ac814e48a274cc66 = L.marker(
+                [9.1375, -82.9519],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_911fb2f9932440f38e1140fd560bf75f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca1cb01cfbb449a19e23489a3de96e61 = $(`<div id="html_ca1cb01cfbb449a19e23489a3de96e61" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Limón: Talamanca. P.N. La amistad. Tararia. Valle del Silencio <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2000-10-10 <strong>Recolectores:</strong> E. Alfaro <strong>Identificadores:</strong> Antonio Rodríguez</div>`)[0];
+            popup_911fb2f9932440f38e1140fd560bf75f.setContent(html_ca1cb01cfbb449a19e23489a3de96e61);
+        
+
+        marker_4360735f92394558ac814e48a274cc66.bindPopup(popup_911fb2f9932440f38e1140fd560bf75f)
+        ;
+
+        
+    
+    
+            var marker_36e3bd8055394fefacf01bf5b9486e69 = L.marker(
+                [9.67861, -83.86944],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_127827254e3d410b8ab08d7b4bfcb567 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_512e485711c84b39a8f46946ef686fb4 = $(`<div id="html_512e485711c84b39a8f46946ef686fb4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica, Cartago Province, Canton El Guarco. Cerro de la Muerte nr. Trinidad de Dota, 2 km north of km 64 of Interamericana highway. Finca Truchas Selva Madre, on trail between first and second cascada. <strong>Elevación:</strong> 2620.0 m  <strong>Fecha:</strong> 2015-02-15 <strong>Recolectores:</strong> Berger,A. <strong>Identificadores:</strong> A. Berger 2015-02</div>`)[0];
+            popup_127827254e3d410b8ab08d7b4bfcb567.setContent(html_512e485711c84b39a8f46946ef686fb4);
+        
+
+        marker_36e3bd8055394fefacf01bf5b9486e69.bindPopup(popup_127827254e3d410b8ab08d7b4bfcb567)
+        ;
+
+        
+    
+    
+            var marker_7977c0ff8bdb431ab34d4c7a6f5031aa = L.marker(
+                [9.67861, -83.86944],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_01c55e5aa291482c92a5128ada31fdad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_510a2a367d78400787f67270a214b3c3 = $(`<div id="html_510a2a367d78400787f67270a214b3c3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica, Cartago Province, Canton El Guarco. Cerro de la Muerte nr. Trinidad de Dota, 2 km north of km 64 of Interamericana highway. Finca Truchas Selva Madre, on trail between first and second cascada. <strong>Elevación:</strong> 2620.0 m  <strong>Fecha:</strong> 2015-02-15 <strong>Recolectores:</strong> Berger,A. <strong>Identificadores:</strong> A. Berger 2015-02</div>`)[0];
+            popup_01c55e5aa291482c92a5128ada31fdad.setContent(html_510a2a367d78400787f67270a214b3c3);
+        
+
+        marker_7977c0ff8bdb431ab34d4c7a6f5031aa.bindPopup(popup_01c55e5aa291482c92a5128ada31fdad)
+        ;
+
+        
+    
+    
+            var marker_07b1a0b4d8554633a77f8bae46ecbb63 = L.marker(
+                [5.263056, -73.24333299999999],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_eb27c032be884631815a80c360ea21b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4db6525ba9854a6f837ffbc46d1b7e2c = $(`<div id="html_4db6525ba9854a6f837ffbc46d1b7e2c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vereda Guanatá, Bosque al lado izquierdo de poliducto de ECOPETROL. Kilometro 67 <strong>Elevación:</strong> 2138.0 m  <strong>Fecha:</strong> 2009-12-22 <strong>Recolectores:</strong> Zabala-Rivera, J. | Gil-L., P. | Garzón-Peña, O. | Manrique-Valderrama, N. | Arias-Sanabria, S. | Bravo, W. | Gómez, C. | Suárez, I. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_eb27c032be884631815a80c360ea21b5.setContent(html_4db6525ba9854a6f837ffbc46d1b7e2c);
+        
+
+        marker_07b1a0b4d8554633a77f8bae46ecbb63.bindPopup(popup_eb27c032be884631815a80c360ea21b5)
+        ;
+
+        
+    
+    
+            var marker_bd521c796f87403995030f88101d594d = L.marker(
+                [9.0, -82.966667],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_a3468e0c88ad4b4bbc553b0abbcf3683 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_045caa02bcc14d3b9f58468e464bca15 = $(`<div id="html_045caa02bcc14d3b9f58468e464bca15" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca, Atlantic slope, unnamed cordillera between the Río Terbi and the Río Siní. <strong>Elevación:</strong> 2575.0 m  <strong>Fecha:</strong> 1984-09-13 <strong>Recolectores:</strong> Gerrit Davidse|Gerardo Herrera Ch.|Michael H. Grayum <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_a3468e0c88ad4b4bbc553b0abbcf3683.setContent(html_045caa02bcc14d3b9f58468e464bca15);
+        
+
+        marker_bd521c796f87403995030f88101d594d.bindPopup(popup_a3468e0c88ad4b4bbc553b0abbcf3683)
+        ;
+
+        
+    
+    
+            var marker_564348b844174067b3ba1bf58fcf78b0 = L.marker(
+                [9.15, -82.966667],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_f54ad47805db4168beff04628ae638e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2319bba717864ef08aa931b6da50d732 = $(`<div id="html_2319bba717864ef08aa931b6da50d732" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca, Atlantic slope, Cerros Tararia (locally known as Tres Picos). <strong>Elevación:</strong> 2500.0 m  <strong>Fecha:</strong> 1984-09-10 <strong>Recolectores:</strong> Gerrit Davidse|Gerardo Herrera Ch.|Michael H. Grayum <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_f54ad47805db4168beff04628ae638e1.setContent(html_2319bba717864ef08aa931b6da50d732);
+        
+
+        marker_564348b844174067b3ba1bf58fcf78b0.bindPopup(popup_f54ad47805db4168beff04628ae638e1)
+        ;
+
+        
+    
+    
+            var marker_ac953289c49346c09fe615421925d0e1 = L.marker(
+                [9.05, -82.833333],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_f1b59e4d7031408c8f2cc6da3325e5a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3dab445e70a4436913e7004ef5de3d0 = $(`<div id="html_f3dab445e70a4436913e7004ef5de3d0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca, 2-5 airline km NW of the peak of Cerro Echandi on the Costa Rican-Panamanian international border. <strong>Elevación:</strong> 2725.0 m  <strong>Fecha:</strong> 1984-03-01 <strong>Recolectores:</strong> Gerrit Davidse|Luis Diego Gómez P.|Gerardo Herrera Ch.|C.R. Chacón|Isidro A. Chacón G.|Abelardo Chacón <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_f1b59e4d7031408c8f2cc6da3325e5a3.setContent(html_f3dab445e70a4436913e7004ef5de3d0);
+        
+
+        marker_ac953289c49346c09fe615421925d0e1.bindPopup(popup_f1b59e4d7031408c8f2cc6da3325e5a3)
+        ;
+
+        
+    
+    
+            var marker_bfab36aa292644a6a904a0daf7f1ce26 = L.marker(
+                [9.116667, -82.966667],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_d738a22ea63e4c26be80dff633d2955c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc86a20f21a640f8964910cf84cec0f3 = $(`<div id="html_cc86a20f21a640f8964910cf84cec0f3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.I. La Amistad. Cordillera de Talamanca. Estación Altamira. Sendero del Valle del Silencio. Hacia el Jardín Natural la Amistad. Margenes del Río Terbi. <strong>Elevación:</strong> 2450.0 m  <strong>Fecha:</strong> 1995-04-18 <strong>Recolectores:</strong> Luis Angulo <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_d738a22ea63e4c26be80dff633d2955c.setContent(html_cc86a20f21a640f8964910cf84cec0f3);
+        
+
+        marker_bfab36aa292644a6a904a0daf7f1ce26.bindPopup(popup_d738a22ea63e4c26be80dff633d2955c)
+        ;
+
+        
+    
+    
+            var marker_aac8ce89e60e4f41a2793d35f0f5eab8 = L.marker(
+                [9.08, -82.869722],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_ce789738b2b3476baff538dfdfe7efbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_74477758f2cb4a24a2decdb0264bec6a = $(`<div id="html_74477758f2cb4a24a2decdb0264bec6a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Upper Río Colubre. <strong>Elevación:</strong> 2750.0 m  <strong>Fecha:</strong> 1983-08-01 <strong>Recolectores:</strong> Luis Diego Gómez P.|Rafael Chacón|Isidro A. Chacón G.|Gerardo Herrera Ch. <strong>Identificadores:</strong> C. M. Taylor</div>`)[0];
+            popup_ce789738b2b3476baff538dfdfe7efbb.setContent(html_74477758f2cb4a24a2decdb0264bec6a);
+        
+
+        marker_aac8ce89e60e4f41a2793d35f0f5eab8.bindPopup(popup_ce789738b2b3476baff538dfdfe7efbb)
+        ;
+
+        
+    
+    
+            var marker_7ff50b4dcec14f8dbfaf621e11c88b64 = L.marker(
+                [9.644722, -83.85055600000001],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_74a7ef4c0490419691b7616042daf6d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be6d0d78de8941989dcde93f8c79ac86 = $(`<div id="html_be6d0d78de8941989dcde93f8c79ac86" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along a road to the south from the Panamerica Highway at km 67, about 1 km along the road, wet forest <strong>Elevación:</strong> 2750.0 m  <strong>Fecha:</strong> 1985-03-05 <strong>Recolectores:</strong> Charlotte M. Taylor|C. Skotak <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_74a7ef4c0490419691b7616042daf6d6.setContent(html_be6d0d78de8941989dcde93f8c79ac86);
+        
+
+        marker_7ff50b4dcec14f8dbfaf621e11c88b64.bindPopup(popup_74a7ef4c0490419691b7616042daf6d6)
+        ;
+
+        
+    
+    
+            var marker_a8de018a3c54473a8478cfd671522571 = L.marker(
+                [9.47, -82.93],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_7cf2926b752a4bccbdec960eac536a72 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_944158c9fa1a4d619561ce3749fc14cf = $(`<div id="html_944158c9fa1a4d619561ce3749fc14cf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica/Panama <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1967-03-23 <strong>Recolectores:</strong> Peter H. Raven <strong>Identificadores:</strong> W.Burger</div>`)[0];
+            popup_7cf2926b752a4bccbdec960eac536a72.setContent(html_944158c9fa1a4d619561ce3749fc14cf);
+        
+
+        marker_a8de018a3c54473a8478cfd671522571.bindPopup(popup_7cf2926b752a4bccbdec960eac536a72)
+        ;
+
+        
+    
+    
+            var marker_8abc7a5396d345a98a71fe71be537a31 = L.marker(
+                [9.12, -82.96],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_d156a512861f45fda351e51a67a9812c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f64f8a5d1534052a8d34274b89bbb97 = $(`<div id="html_5f64f8a5d1534052a8d34274b89bbb97" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle del Silencio, sendero a Ceros Tararia. <strong>Elevación:</strong> 2400.0 m  <strong>Fecha:</strong> 1997-04-24 <strong>Recolectores:</strong> Billen Gamboa R. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_d156a512861f45fda351e51a67a9812c.setContent(html_5f64f8a5d1534052a8d34274b89bbb97);
+        
+
+        marker_8abc7a5396d345a98a71fe71be537a31.bindPopup(popup_d156a512861f45fda351e51a67a9812c)
+        ;
+
+        
+    
+    
+            var marker_aab7a86e361246c1aa39fce4bfab1bd9 = L.marker(
+                [9.678611, -83.869444],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_dfea8629863a49f3bd61ae4d58da56be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_454840f7af6a4d69b467fab06a93a4d7 = $(`<div id="html_454840f7af6a4d69b467fab06a93a4d7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro de la Muerte nr. Trinidad de Dota, 2 km north of km 64 of Interamericana highway. Finca Truchas Selva Madre, on trail between first and second cascada. <strong>Elevación:</strong> 2620.0 m  <strong>Fecha:</strong> 2015-02-15 <strong>Recolectores:</strong> A. Berger <strong>Identificadores:</strong> A. Berger</div>`)[0];
+            popup_dfea8629863a49f3bd61ae4d58da56be.setContent(html_454840f7af6a4d69b467fab06a93a4d7);
+        
+
+        marker_aab7a86e361246c1aa39fce4bfab1bd9.bindPopup(popup_dfea8629863a49f3bd61ae4d58da56be)
+        ;
+
+        
+    
+    
+            var marker_50c666dc3f344bbdb4a6a97a610b89c4 = L.marker(
+                [9.132333000000001, -82.958444],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_8fe85c75560f4c08a29b36eb7677abb6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d41659cb58f4c208c6a9a5dd9dad319 = $(`<div id="html_0d41659cb58f4c208c6a9a5dd9dad319" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Internacional La Amistad, el Valle de Silencio, Rio Tirbe. <strong>Elevación:</strong> 2400.0 m  <strong>Fecha:</strong> 2012-02-16 <strong>Recolectores:</strong> Daniel Santamaría|Alex K. Monro|N. A. Brummitt <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_8fe85c75560f4c08a29b36eb7677abb6.setContent(html_0d41659cb58f4c208c6a9a5dd9dad319);
+        
+
+        marker_50c666dc3f344bbdb4a6a97a610b89c4.bindPopup(popup_8fe85c75560f4c08a29b36eb7677abb6)
+        ;
+
+        
+    
+    
+            var marker_3d595765035a46b99642bc177b30b734 = L.marker(
+                [9.148139, -82.965222],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_ae8015633a134996939cc24b51ae8df8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75280f974a9c4f13bacc56d5578cda22 = $(`<div id="html_75280f974a9c4f13bacc56d5578cda22" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Internacional La Amistad, Cerros Tararias minor. <strong>Elevación:</strong> 2650.0 m  <strong>Fecha:</strong> 2012-02-14 <strong>Recolectores:</strong> Daniel Santamaría|Alex K. Monro|N. A. Brummitt <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_ae8015633a134996939cc24b51ae8df8.setContent(html_75280f974a9c4f13bacc56d5578cda22);
+        
+
+        marker_3d595765035a46b99642bc177b30b734.bindPopup(popup_ae8015633a134996939cc24b51ae8df8)
+        ;
+
+        
+    
+    
+            var marker_2d41c3316704459f8617050a28e9b866 = L.marker(
+                [9.119083, -82.95347199999999],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_2e59503acb8a4524b12fc01d932dd388 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a37035c88d584ca5a1e6454f64b85ab5 = $(`<div id="html_a37035c88d584ca5a1e6454f64b85ab5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Internacional La Amistad, el Valle de Silencio, Bajo Asidbeta. <strong>Elevación:</strong> 2700.0 m  <strong>Fecha:</strong> 2012-02-17 <strong>Recolectores:</strong> Alex K. Monro|Daniel Santamaría|N. A. Brummitt|Tom Simpson <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_2e59503acb8a4524b12fc01d932dd388.setContent(html_a37035c88d584ca5a1e6454f64b85ab5);
+        
+
+        marker_2d41c3316704459f8617050a28e9b866.bindPopup(popup_2e59503acb8a4524b12fc01d932dd388)
+        ;
+
+        
+    
+    
+            var marker_3da99c6fa263420a9909a46421536e0a = L.marker(
+                [9.134083, -82.957278],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_17b59d7753144249af8eaff8e5fa13cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9082d411e2c5493fa16daab9705e59d2 = $(`<div id="html_9082d411e2c5493fa16daab9705e59d2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Internacional La Amistad, el Valle de Silencio, Turberas #2. <strong>Elevación:</strong> 2400.0 m  <strong>Fecha:</strong> 2012-02-15 <strong>Recolectores:</strong> Alex K. Monro|Daniel Santamaría|N. A. Brummitt|Tom Simpson <strong>Identificadores:</strong> A.K. Monro</div>`)[0];
+            popup_17b59d7753144249af8eaff8e5fa13cc.setContent(html_9082d411e2c5493fa16daab9705e59d2);
+        
+
+        marker_3da99c6fa263420a9909a46421536e0a.bindPopup(popup_17b59d7753144249af8eaff8e5fa13cc)
+        ;
+
+        
+    
+    
+            var marker_309556e24f3b462893cd21d52a229c5b = L.marker(
+                [9.137777999999999, -82.951944],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_d04d27e4dc334cc2895b1d7ad3c116dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_179eff5686c742eea6b421ccc1e90e85 = $(`<div id="html_179eff5686c742eea6b421ccc1e90e85" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. La Amistad. Tararia. Valle del Silencio. Colectado en bosque. <strong>Elevación:</strong> 2300.0 m  <strong>Fecha:</strong> 2000-10-10 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_d04d27e4dc334cc2895b1d7ad3c116dc.setContent(html_179eff5686c742eea6b421ccc1e90e85);
+        
+
+        marker_309556e24f3b462893cd21d52a229c5b.bindPopup(popup_d04d27e4dc334cc2895b1d7ad3c116dc)
+        ;
+
+        
+    
+    
+            var marker_9fe3d7d04c6e499ab35df08e8aac3918 = L.marker(
+                [9.133056, -82.964167],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_01cf1a6f15f14f5bb45d7fa1a7c93fe5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c1361572a9c4e28860ab594013982d1 = $(`<div id="html_2c1361572a9c4e28860ab594013982d1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. La Amistad. Tararia. Estación el Valle del silencio. Entre el Campamento y el Jardín. <strong>Elevación:</strong> 2440.0 m  <strong>Fecha:</strong> 2003-06-22 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_01cf1a6f15f14f5bb45d7fa1a7c93fe5.setContent(html_2c1361572a9c4e28860ab594013982d1);
+        
+
+        marker_9fe3d7d04c6e499ab35df08e8aac3918.bindPopup(popup_01cf1a6f15f14f5bb45d7fa1a7c93fe5)
+        ;
+
+        
+    
+    
+            var marker_d17f3825df974272901c79e623a01c57 = L.marker(
+                [9.33083, -83.2282],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_f7388ef7adfd48fa93069cec8650fd24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ef6860f26c14dafa1a83cf2c1d3a698 = $(`<div id="html_8ef6860f26c14dafa1a83cf2c1d3a698" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transecto Transtalamanca, Ujarrás-San José Cabécar. <strong>Elevación:</strong> 2320.0 m  <strong>Fecha:</strong> 2007-02-26 <strong>Recolectores:</strong> Daniel Solano <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_f7388ef7adfd48fa93069cec8650fd24.setContent(html_8ef6860f26c14dafa1a83cf2c1d3a698);
+        
+
+        marker_d17f3825df974272901c79e623a01c57.bindPopup(popup_f7388ef7adfd48fa93069cec8650fd24)
+        ;
+
+        
+    
+    
+            var marker_4280f00feb0c46d6925ed5156d7d1835 = L.marker(
+                [9.33083, -83.2282],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_e4b0bb669c3f48c7aa7605b7af902007 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1fa2067d937e44c4b30e8a779f29c0b9 = $(`<div id="html_1fa2067d937e44c4b30e8a779f29c0b9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transecto Transtalamanca, Ujarrás-San José Cabécar. <strong>Elevación:</strong> 2320.0 m  <strong>Fecha:</strong> 2007-02-26 <strong>Recolectores:</strong> Daniel Solano <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_e4b0bb669c3f48c7aa7605b7af902007.setContent(html_1fa2067d937e44c4b30e8a779f29c0b9);
+        
+
+        marker_4280f00feb0c46d6925ed5156d7d1835.bindPopup(popup_e4b0bb669c3f48c7aa7605b7af902007)
+        ;
+
+        
+    
+    
+            var marker_29fda91fec464e58b1359ff0909d3c0a = L.marker(
+                [9.33083, -83.2282],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_1ccf3de07fda4d25b700dfb7dd879344 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d659ee248824466ba15d3cd7d1822a89 = $(`<div id="html_d659ee248824466ba15d3cd7d1822a89" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transecto Transtalamanca, Ujarrás-San José Cabécar. <strong>Elevación:</strong> 2320.0 m  <strong>Fecha:</strong> 2007-02-26 <strong>Recolectores:</strong> Daniel Solano <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_1ccf3de07fda4d25b700dfb7dd879344.setContent(html_d659ee248824466ba15d3cd7d1822a89);
+        
+
+        marker_29fda91fec464e58b1359ff0909d3c0a.bindPopup(popup_1ccf3de07fda4d25b700dfb7dd879344)
+        ;
+
+        
+    
+    
+            var marker_218f7ea30b88450695e21c3809ad6fc5 = L.marker(
+                [9.120365, -82.96241500000001],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_87882a48678948dcaaeffc4ba07a6d2b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6685f6585a074ec7a68f2335ce0303df = $(`<div id="html_6685f6585a074ec7a68f2335ce0303df" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle del silecio. <strong>Elevación:</strong> 2450.0 m  <strong>Fecha:</strong> 2004-11-19 <strong>Recolectores:</strong> Luis González; Armando Soto <strong>Identificadores:</strong> González, Luis</div>`)[0];
+            popup_87882a48678948dcaaeffc4ba07a6d2b.setContent(html_6685f6585a074ec7a68f2335ce0303df);
+        
+
+        marker_218f7ea30b88450695e21c3809ad6fc5.bindPopup(popup_87882a48678948dcaaeffc4ba07a6d2b)
+        ;
+
+        
+    
+    
+            var marker_1d1e8ba1734a4a768daf5df68a1d67cf = L.marker(
+                [9.120365, -82.96241500000001],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_84fff765632449be8218019d1d85a4d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c324bc8dd9e485981846919cca122c2 = $(`<div id="html_1c324bc8dd9e485981846919cca122c2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle del silecio. <strong>Elevación:</strong> 2450.0 m  <strong>Fecha:</strong> 2004-11-19 <strong>Recolectores:</strong> Luis González; Armando Soto <strong>Identificadores:</strong> González, Luis</div>`)[0];
+            popup_84fff765632449be8218019d1d85a4d6.setContent(html_1c324bc8dd9e485981846919cca122c2);
+        
+
+        marker_1d1e8ba1734a4a768daf5df68a1d67cf.bindPopup(popup_84fff765632449be8218019d1d85a4d6)
+        ;
+
+        
+    
+    
+            var marker_db4b3146daf644d2b69ea88010dc64c0 = L.marker(
+                [9.120365, -82.96241500000001],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_f68c387d115e4f2aa1ea7270b92f21a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44aca3f99b4c41a48d75c867a78664e9 = $(`<div id="html_44aca3f99b4c41a48d75c867a78664e9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle del silecio. <strong>Elevación:</strong> 2450.0 m  <strong>Fecha:</strong> 2004-11-19 <strong>Recolectores:</strong> Luis González; Armando Soto <strong>Identificadores:</strong> González, Luis</div>`)[0];
+            popup_f68c387d115e4f2aa1ea7270b92f21a0.setContent(html_44aca3f99b4c41a48d75c867a78664e9);
+        
+
+        marker_db4b3146daf644d2b69ea88010dc64c0.bindPopup(popup_f68c387d115e4f2aa1ea7270b92f21a0)
+        ;
+
+        
+    
+    
+            var marker_16a8012b60ae45fd968bbbc31a5ae3be = L.marker(
+                [9.408333, -83.309722],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_aee66ec668114549b6d530661be493b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a9b01c1d733433189617f9399b351b9 = $(`<div id="html_5a9b01c1d733433189617f9399b351b9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero entre Cerro Durika y sabanas de Durika, siguiendo el cauce de la Quebrada Intermitente <strong>Elevación:</strong> 2475.0 m  <strong>Fecha:</strong> 2003-09-22 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_aee66ec668114549b6d530661be493b1.setContent(html_5a9b01c1d733433189617f9399b351b9);
+        
+
+        marker_16a8012b60ae45fd968bbbc31a5ae3be.bindPopup(popup_aee66ec668114549b6d530661be493b1)
+        ;
+
+        
+    
+    
+            var marker_7d34a1400bca41e9818ed6501f886372 = L.marker(
+                [9.133056, -82.964167],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_29c45d7bd5524e57ac8a6473664871c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_310a0d823a8a4a6d9ef47a84db9fac64 = $(`<div id="html_310a0d823a8a4a6d9ef47a84db9fac64" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle El Silencio. <strong>Elevación:</strong> 2400.0 m  <strong>Fecha:</strong> 2003-06-22 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Alfaro, Evelio</div>`)[0];
+            popup_29c45d7bd5524e57ac8a6473664871c0.setContent(html_310a0d823a8a4a6d9ef47a84db9fac64);
+        
+
+        marker_7d34a1400bca41e9818ed6501f886372.bindPopup(popup_29c45d7bd5524e57ac8a6473664871c0)
+        ;
+
+        
+    
+    
+            var marker_02801c50603646fe89f9875a9371a181 = L.marker(
+                [9.133056, -82.964167],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_ebc421045ab648a6970774cbe50b0525 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_583524c9713744189058b272eaef3fd1 = $(`<div id="html_583524c9713744189058b272eaef3fd1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle El Silencio. <strong>Elevación:</strong> 2400.0 m  <strong>Fecha:</strong> 2003-06-22 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Alfaro, Evelio</div>`)[0];
+            popup_ebc421045ab648a6970774cbe50b0525.setContent(html_583524c9713744189058b272eaef3fd1);
+        
+
+        marker_02801c50603646fe89f9875a9371a181.bindPopup(popup_ebc421045ab648a6970774cbe50b0525)
+        ;
+
+        
+    
+    
+            var marker_1d4eb0f9a7db4f5f8a12f95cd81f83e7 = L.marker(
+                [9.133056, -82.964167],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_b3aa0b75a39d4650a39c52737b9e2c79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_284ea23b0cc6481f89f333aeee39387c = $(`<div id="html_284ea23b0cc6481f89f333aeee39387c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle El Silencio. <strong>Elevación:</strong> 2400.0 m  <strong>Fecha:</strong> 2003-06-22 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Alfaro, Evelio</div>`)[0];
+            popup_b3aa0b75a39d4650a39c52737b9e2c79.setContent(html_284ea23b0cc6481f89f333aeee39387c);
+        
+
+        marker_1d4eb0f9a7db4f5f8a12f95cd81f83e7.bindPopup(popup_b3aa0b75a39d4650a39c52737b9e2c79)
+        ;
+
+        
+    
+    
+            var marker_6a91f1c771de4009bdeb0451f5a14750 = L.marker(
+                [9.137677, -82.952016],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_69405df47dcf46009c25362581268387 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5b5d6f31bc74ee78843742b427a2291 = $(`<div id="html_d5b5d6f31bc74ee78843742b427a2291" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Talamanca, Valle del Silencio <strong>Elevación:</strong> 2300.0 m  <strong>Fecha:</strong> 2000-10-10 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_69405df47dcf46009c25362581268387.setContent(html_d5b5d6f31bc74ee78843742b427a2291);
+        
+
+        marker_6a91f1c771de4009bdeb0451f5a14750.bindPopup(popup_69405df47dcf46009c25362581268387)
+        ;
+
+        
+    
+    
+            var marker_fb105dcdb9144a7b9c8c916f4ae529a8 = L.marker(
+                [9.137677, -82.952016],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_6e92705b584643e6a6a77b0f1744cf93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33005ccd1e244248a61cb5f98dd4a566 = $(`<div id="html_33005ccd1e244248a61cb5f98dd4a566" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Talamanca, Valle del Silencio <strong>Elevación:</strong> 2300.0 m  <strong>Fecha:</strong> 2000-10-10 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_6e92705b584643e6a6a77b0f1744cf93.setContent(html_33005ccd1e244248a61cb5f98dd4a566);
+        
+
+        marker_fb105dcdb9144a7b9c8c916f4ae529a8.bindPopup(popup_6e92705b584643e6a6a77b0f1744cf93)
+        ;
+
+        
+    
+    
+            var marker_421ba21b35254618a4e1e116b38b0995 = L.marker(
+                [9.137677, -82.952016],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_d1a762a78f3a4461a2ace3b04b855348 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_047a2aecded3438fbcc7058747bba4dd = $(`<div id="html_047a2aecded3438fbcc7058747bba4dd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Talamanca, Valle del Silencio <strong>Elevación:</strong> 2300.0 m  <strong>Fecha:</strong> 2000-10-10 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_d1a762a78f3a4461a2ace3b04b855348.setContent(html_047a2aecded3438fbcc7058747bba4dd);
+        
+
+        marker_421ba21b35254618a4e1e116b38b0995.bindPopup(popup_d1a762a78f3a4461a2ace3b04b855348)
+        ;
+
+        
+    
+    
+            var marker_79647967942d4fd1923b71fd1a1f0883 = L.marker(
+                [9.137677, -82.952016],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_a72ea6ffc73c49f2ab13424ff6cbd75e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e1f2e9bb69340a8a91a07d3460fe9ba = $(`<div id="html_0e1f2e9bb69340a8a91a07d3460fe9ba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Talamanca, Valle del Silencio <strong>Elevación:</strong> 2300.0 m  <strong>Fecha:</strong> 2000-10-10 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_a72ea6ffc73c49f2ab13424ff6cbd75e.setContent(html_0e1f2e9bb69340a8a91a07d3460fe9ba);
+        
+
+        marker_79647967942d4fd1923b71fd1a1f0883.bindPopup(popup_a72ea6ffc73c49f2ab13424ff6cbd75e)
+        ;
+
+        
+    
+    
+            var marker_6ffd2a62162c4c28bfec132e77211e57 = L.marker(
+                [9.137677, -82.952016],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_bde2a0f20d2f426a8a61c6a8903f2e4f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_667920b5228c48a7b32f6e4b635b0794 = $(`<div id="html_667920b5228c48a7b32f6e4b635b0794" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Talamanca, Valle del Silencio <strong>Elevación:</strong> 2300.0 m  <strong>Fecha:</strong> 2000-10-10 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_bde2a0f20d2f426a8a61c6a8903f2e4f.setContent(html_667920b5228c48a7b32f6e4b635b0794);
+        
+
+        marker_6ffd2a62162c4c28bfec132e77211e57.bindPopup(popup_bde2a0f20d2f426a8a61c6a8903f2e4f)
+        ;
+
+        
+    
+    
+            var marker_f05a8ea1642e4dd2b0a65335d3f43b31 = L.marker(
+                [9.713889, -83.836111],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_92064d2097f547eeb1af2c33b654bacd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7cbac78a149849739a76b3408bbf3d93 = $(`<div id="html_7cbac78a149849739a76b3408bbf3d93" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Queveri, camino a el ICE. <strong>Elevación:</strong> 2200.0 m  <strong>Fecha:</strong> 1998-04-22 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_92064d2097f547eeb1af2c33b654bacd.setContent(html_7cbac78a149849739a76b3408bbf3d93);
+        
+
+        marker_f05a8ea1642e4dd2b0a65335d3f43b31.bindPopup(popup_92064d2097f547eeb1af2c33b654bacd)
+        ;
+
+        
+    
+    
+            var marker_f19400c89d80458c89a81893614d12d0 = L.marker(
+                [9.116667, -82.966667],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_89748c7f335544828df8d1247f45e7c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f596b0eb4ce5401e8410b4018cdd041d = $(`<div id="html_f596b0eb4ce5401e8410b4018cdd041d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Altamira. Sendero del Valle del Silencio. Hacia el Jardin Natural la Amistad. Margenes del Rio Terbi. <strong>Elevación:</strong> 2450.0 m  <strong>Fecha:</strong> 1995-04-18 <strong>Recolectores:</strong> Luis Angulo <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_89748c7f335544828df8d1247f45e7c3.setContent(html_f596b0eb4ce5401e8410b4018cdd041d);
+        
+
+        marker_f19400c89d80458c89a81893614d12d0.bindPopup(popup_89748c7f335544828df8d1247f45e7c3)
+        ;
+
+        
+    
+    
+            var marker_86245298c6c2406e8b30d7cda33eaed3 = L.marker(
+                [9.128749000000001, -82.964316],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_db3be14e79d2421ea98fa353366c0c84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5fc428c656264b8486b7c965180e2dad = $(`<div id="html_5fc428c656264b8486b7c965180e2dad" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Talamanca, Sendero Valle del Silencio al Jardin Natural. <strong>Elevación:</strong> 2400.0 m  <strong>Fecha:</strong> 1997-04-24 <strong>Recolectores:</strong> Billen Gamboa R.; Oscar Esquivel ; Ronald Villalobos ; Javier Quesada <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_db3be14e79d2421ea98fa353366c0c84.setContent(html_5fc428c656264b8486b7c965180e2dad);
+        
+
+        marker_86245298c6c2406e8b30d7cda33eaed3.bindPopup(popup_db3be14e79d2421ea98fa353366c0c84)
+        ;
+
+        
+    
+    
+            var marker_a7990a504d104c9b8863c301ec171dc5 = L.marker(
+                [9.128749000000001, -82.964316],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_01180edfa9094d108df9c26795691deb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ab18722067d4919a549a7970b82e41f = $(`<div id="html_2ab18722067d4919a549a7970b82e41f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Talamanca, Sendero Valle del Silencio al Jardin Natural. <strong>Elevación:</strong> 2400.0 m  <strong>Fecha:</strong> 1997-04-24 <strong>Recolectores:</strong> Billen Gamboa R.; Oscar Esquivel ; Ronald Villalobos ; Javier Quesada <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_01180edfa9094d108df9c26795691deb.setContent(html_2ab18722067d4919a549a7970b82e41f);
+        
+
+        marker_a7990a504d104c9b8863c301ec171dc5.bindPopup(popup_01180edfa9094d108df9c26795691deb)
+        ;
+
+        
+    
+    
+            var marker_4a763ae7b0a143d9b91d4da4ab0fb8e7 = L.marker(
+                [9.128749000000001, -82.964316],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_e12541d6883643069c91d5203d500b09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2040891e0a94659a7ec924c272535bc = $(`<div id="html_b2040891e0a94659a7ec924c272535bc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Talamanca, Sendero Valle del Silencio al Jardin Natural. <strong>Elevación:</strong> 2400.0 m  <strong>Fecha:</strong> 1997-04-24 <strong>Recolectores:</strong> Billen Gamboa R.; Oscar Esquivel ; Ronald Villalobos ; Javier Quesada <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_e12541d6883643069c91d5203d500b09.setContent(html_b2040891e0a94659a7ec924c272535bc);
+        
+
+        marker_4a763ae7b0a143d9b91d4da4ab0fb8e7.bindPopup(popup_e12541d6883643069c91d5203d500b09)
+        ;
+
+        
+    
+    
+            var marker_a3addddf48824aeaa0861c885ea929ba = L.marker(
+                [9.8333, -83.75],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_76c1262a984f4377b64caea9162d7ab3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bbed5a8abd08481b8af89a52b57dc760 = $(`<div id="html_bbed5a8abd08481b8af89a52b57dc760" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1967-03-23 <strong>Recolectores:</strong> P. H. Raven <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_76c1262a984f4377b64caea9162d7ab3.setContent(html_bbed5a8abd08481b8af89a52b57dc760);
+        
+
+        marker_a3addddf48824aeaa0861c885ea929ba.bindPopup(popup_76c1262a984f4377b64caea9162d7ab3)
+        ;
+
+        
+    
+    
+            var marker_960f6e47d96f45658f5ad47e6552bda1 = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_f40241fc17f643589818a118caf364cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa2ed3963d424ac2923acf39390f9419 = $(`<div id="html_aa2ed3963d424ac2923acf39390f9419" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1985-03-05 <strong>Recolectores:</strong> C. M. Taylor & C. Skotak <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_f40241fc17f643589818a118caf364cd.setContent(html_aa2ed3963d424ac2923acf39390f9419);
+        
+
+        marker_960f6e47d96f45658f5ad47e6552bda1.bindPopup(popup_f40241fc17f643589818a118caf364cd)
+        ;
+
+        
+    
+    
+            var marker_7044aca366df4d768bb633cc32d771a1 = L.marker(
+                [9.120280000000001, -82.9625],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_626d7c28918640a3a8aef52cca486562 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ddeac7910ac54741b9892c170615952a = $(`<div id="html_ddeac7910ac54741b9892c170615952a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle del Silencio - Limón: Talamanca. P. N. La Amistad. Tararia. Valle del Silencio. Camino al jardín/Provincia de Puntarenas <strong>Elevación:</strong> 2400.0 m  <strong>Fecha:</strong> 2004-11-19 <strong>Recolectores:</strong> González, L. A. & A. Soto <strong>Identificadores:</strong> González, L. A. (2004)</div>`)[0];
+            popup_626d7c28918640a3a8aef52cca486562.setContent(html_ddeac7910ac54741b9892c170615952a);
+        
+
+        marker_7044aca366df4d768bb633cc32d771a1.bindPopup(popup_626d7c28918640a3a8aef52cca486562)
+        ;
+
+        
+    
+    
+            var marker_f140a00dc5904bd28a2087b5a4ca780d = L.marker(
+                [9.7, -83.91],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_81af5fb029114d0d9a68974d78ce097a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a944cfd6bac40268051591478131a81 = $(`<div id="html_4a944cfd6bac40268051591478131a81" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Damita <strong>Elevación:</strong> 2430.0 m  <strong>Fecha:</strong> 1996-06-14 <strong>Recolectores:</strong> Oosterhoorn, M. <strong>Identificadores:</strong> Poveda, Luis Jorge</div>`)[0];
+            popup_81af5fb029114d0d9a68974d78ce097a.setContent(html_4a944cfd6bac40268051591478131a81);
+        
+
+        marker_f140a00dc5904bd28a2087b5a4ca780d.bindPopup(popup_81af5fb029114d0d9a68974d78ce097a)
+        ;
+
+        
+    
+    
+            var marker_16610271e3054a628f3bc31750a4a6c0 = L.marker(
+                [9.7, -83.91],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_6075175e32214f319ebdd85451bbd3c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e06887f3ad1f4a659276b9b8f031a4d6 = $(`<div id="html_e06887f3ad1f4a659276b9b8f031a4d6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. F. Río Macho Cordillera de Talamanca.La Damita del Guarco. <strong>Elevación:</strong> 2430.0 m  <strong>Fecha:</strong> 1996-06-14 <strong>Recolectores:</strong> Oosterhoorn, M. <strong>Identificadores:</strong> Poveda, Luis Jorge</div>`)[0];
+            popup_6075175e32214f319ebdd85451bbd3c2.setContent(html_e06887f3ad1f4a659276b9b8f031a4d6);
+        
+
+        marker_16610271e3054a628f3bc31750a4a6c0.bindPopup(popup_6075175e32214f319ebdd85451bbd3c2)
+        ;
+
+        
+    
+    
+            var marker_619cd6a062c344c9bf6c7547904067f2 = L.marker(
+                [9.15, -82.96],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_d6864b4f53284a83880316ccbe691f43 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ecbbce9eab494798a128e8688d709325 = $(`<div id="html_ecbbce9eab494798a128e8688d709325" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca. Atlantic slope, Cerros Tararia (locally known as Tres Picos). <strong>Elevación:</strong> 2500.0 m  <strong>Fecha:</strong> 1984-09-10 <strong>Recolectores:</strong> Davidse, Gerrit <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_d6864b4f53284a83880316ccbe691f43.setContent(html_ecbbce9eab494798a128e8688d709325);
+        
+
+        marker_619cd6a062c344c9bf6c7547904067f2.bindPopup(popup_d6864b4f53284a83880316ccbe691f43)
+        ;
+
+        
+    
+    
+            var marker_8943e7e11fa44edd965c4b95693d9d82 = L.marker(
+                [9.05, -82.83],
+                {}
+            ).addTo(marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7);
+        
+    
+        var popup_7e3b80ba052d47d483224008571b09b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15fc63561c934f15b4cb9ebd549777cb = $(`<div id="html_15fc63561c934f15b4cb9ebd549777cb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bocas del Toro: Cordillera de Talamanca, 2-5 airline km NW of the peak of Cerro Echandi on the Costa Rican-Panamaniam international border.Mixed Quercus-Podocarpus forest with Chusquea understory on steep slopes with quebradas. <strong>Elevación:</strong> 2725.0 m  <strong>Fecha:</strong> 1984-03-19 <strong>Recolectores:</strong> Davidse, Gerrit <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_7e3b80ba052d47d483224008571b09b0.setContent(html_15fc63561c934f15b4cb9ebd549777cb);
+        
+
+        marker_8943e7e11fa44edd965c4b95693d9d82.bindPopup(popup_7e3b80ba052d47d483224008571b09b0)
+        ;
+
+        
+    
+    
+            var layer_control_98dc87b4ccd54932b41826fe37da3703 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_5ac4f91aa22543aca90c423c7c9964cd,
+                    "ESRI World Imagery" : tile_layer_99fc33ce318948ac86a72891660a98f7,
+                },
+                overlays :  {
+                    "macro_element_fe2dd9529dc74c7ebfc31eee819b23c7" : marker_cluster_fe2dd9529dc74c7ebfc31eee819b23c7,
+                },
+            };
+            L.control.layers(
+                layer_control_98dc87b4ccd54932b41826fe37da3703.base_layers,
+                layer_control_98dc87b4ccd54932b41826fe37da3703.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_eb6aa45398914daeb42b6a24dffa2dde);
+            tile_layer_99fc33ce318948ac86a72891660a98f7.remove();
+        
+</script>

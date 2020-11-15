@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3a842a663bca4efc9e08573a4c0a5525 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3a842a663bca4efc9e08573a4c0a5525" ></div>
+        
+</body>
+<script>    
+    
+            var map_3a842a663bca4efc9e08573a4c0a5525 = L.map(
+                "map_3a842a663bca4efc9e08573a4c0a5525",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_3a842a663bca4efc9e08573a4c0a5525);
+
+            
+
+        
+    
+            var tile_layer_2438374eba254aa8850232bad2ccb3a0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3a842a663bca4efc9e08573a4c0a5525);
+        
+    
+            var tile_layer_3699041122574508bb87943bfb2cab86 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3a842a663bca4efc9e08573a4c0a5525);
+        
+    
+            var marker_cluster_c436618ee2d9457ab0c8e341144f2e26 = L.markerClusterGroup(
+                {}
+            );
+            map_3a842a663bca4efc9e08573a4c0a5525.addLayer(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+            var marker_4910a5fb30c243d78b1887ec9d5bb7e7 = L.marker(
+                [8.498145, -81.772756],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_2144c40715fd433a9eccca783241a745 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0b5d976464c4b03beb43ac3ac479e12 = $(`<div id="html_a0b5d976464c4b03beb43ac3ac479e12" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera Central. Note Duima/Kankantú.  Cerca de la Entrada de Jacha.  La Nevera.  Filo de la cordillera. E414947  N939454 <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2013-08-25 <strong>Recolectores:</strong> Melisa Ayala|Alicia Ibáñez|Ángela Celis|N. Flores|Jorge Castillo <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_2144c40715fd433a9eccca783241a745.setContent(html_a0b5d976464c4b03beb43ac3ac479e12);
+        
+
+        marker_4910a5fb30c243d78b1887ec9d5bb7e7.bindPopup(popup_2144c40715fd433a9eccca783241a745)
+        ;
+
+        
+    
+    
+            var marker_3a9b46bc48c8452481cffdd8ba1992d0 = L.marker(
+                [9.75, -83.78333],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_47ab5aa39cea42b79fc1c91cbf70d2e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2fd66814532245ada9864200eac3ce3f = $(`<div id="html_2fd66814532245ada9864200eac3ce3f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica. Prov. Cartago. Tapantí, Refugio National de Fauna Silvestre; near to the border of Río Grande de Orosi; ca. 83°47'W 9°45'N, ca. 1200–1400 m. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1988-03-19 <strong>Recolectores:</strong> Kiehn,M., Kiehn,M. & Sanchez-Vindas,P. <strong>Identificadores:</strong> C. M. Taylor (MO) 1992</div>`)[0];
+            popup_47ab5aa39cea42b79fc1c91cbf70d2e3.setContent(html_2fd66814532245ada9864200eac3ce3f);
+        
+
+        marker_3a9b46bc48c8452481cffdd8ba1992d0.bindPopup(popup_47ab5aa39cea42b79fc1c91cbf70d2e3)
+        ;
+
+        
+    
+    
+            var marker_32e890cca28a4dd8bff9602cfd37e741 = L.marker(
+                [9.75, -83.78],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_ca70126d799c44d48023c0635f65aacf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4ff04634c2c4d8388eed4bddb62f408 = $(`<div id="html_a4ff04634c2c4d8388eed4bddb62f408" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Tapantí, Valle del Reventazón, Sendero Palmito, Sendero La Pava <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1994-07-15 <strong>Recolectores:</strong> Flor Araya <strong>Identificadores:</strong> B. E. Hammel (MO)</div>`)[0];
+            popup_ca70126d799c44d48023c0635f65aacf.setContent(html_a4ff04634c2c4d8388eed4bddb62f408);
+        
+
+        marker_32e890cca28a4dd8bff9602cfd37e741.bindPopup(popup_ca70126d799c44d48023c0635f65aacf)
+        ;
+
+        
+    
+    
+            var marker_0a49577352824d28937d7e6d1a6dc8c3 = L.marker(
+                [9.404167, -83.084722],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_56ac48afcce44bf99cc9395cf2f67051 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_294f8e1cf6944a788b386b2f2d6055d6 = $(`<div id="html_294f8e1cf6944a788b386b2f2d6055d6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camp by Kivut Trail up from the camp 3 Km sourtwest of the camp Primary Forest <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 1992-03-09 <strong>Recolectores:</strong> Jens Bittner <strong>Identificadores:</strong> B. E. Hammel (MO)</div>`)[0];
+            popup_56ac48afcce44bf99cc9395cf2f67051.setContent(html_294f8e1cf6944a788b386b2f2d6055d6);
+        
+
+        marker_0a49577352824d28937d7e6d1a6dc8c3.bindPopup(popup_56ac48afcce44bf99cc9395cf2f67051)
+        ;
+
+        
+    
+    
+            var marker_25391f10f19b4fda848bd9d79652388c = L.marker(
+                [10.06666, -83.98333000000001],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_3ed1e9db75804492bc497d8472905ef0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c311b38191a474099892f5548b92a7d = $(`<div id="html_3c311b38191a474099892f5548b92a7d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nac. Braulio Carrillo Cantón: Vázquez de Coronado, trail from highway at La Ventana to Bajo La Hondura. Wet montane forest with abundant epiphytes and palms. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1990-09-04 <strong>Recolectores:</strong> James C. Solomon <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_3ed1e9db75804492bc497d8472905ef0.setContent(html_3c311b38191a474099892f5548b92a7d);
+        
+
+        marker_25391f10f19b4fda848bd9d79652388c.bindPopup(popup_3ed1e9db75804492bc497d8472905ef0)
+        ;
+
+        
+    
+    
+            var marker_7db4094ae025468287b27d8fcc15d2d7 = L.marker(
+                [8.490556, -81.765833],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_e31c9fbdeed54216a804ed8b76a913c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1251ef29fcec433999f969c4aaa1e285 = $(`<div id="html_1251ef29fcec433999f969c4aaa1e285" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Near Cerro Colorado, c. 10 miles from Chami [Chame] Camp. Along ridge trail in forest. [Coordinates on original label: 8º35'N, 81º45W] <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1986-04-15 <strong>Recolectores:</strong> Gordon McPherson <strong>Identificadores:</strong> C.m. Taylor</div>`)[0];
+            popup_e31c9fbdeed54216a804ed8b76a913c3.setContent(html_1251ef29fcec433999f969c4aaa1e285);
+        
+
+        marker_7db4094ae025468287b27d8fcc15d2d7.bindPopup(popup_e31c9fbdeed54216a804ed8b76a913c3)
+        ;
+
+        
+    
+    
+            var marker_132e4ea8cf42439aac96ed0b68a060cd = L.marker(
+                [9.775, -83.79555],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_c3a558affba64020beb4ed2a2d5cd375 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ab41e790b204fa7898df2b397ad5238 = $(`<div id="html_4ab41e790b204fa7898df2b397ad5238" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cuenca del Reventazón, Orosí, 5 km antes de Tausito, a orilla del camino <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 1999-02-17 <strong>Recolectores:</strong> Alexánder Rodríguez|Luis Diego Vargas|Víctor H. Ramírez <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_c3a558affba64020beb4ed2a2d5cd375.setContent(html_4ab41e790b204fa7898df2b397ad5238);
+        
+
+        marker_132e4ea8cf42439aac96ed0b68a060cd.bindPopup(popup_c3a558affba64020beb4ed2a2d5cd375)
+        ;
+
+        
+    
+    
+            var marker_d45aa381da09474e81e14c8e763a1c7b = L.marker(
+                [9.74805, -83.78194],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_925adb065f514a509f61fcb50323db9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f1b432c0356498e886fab5e7ef670cb = $(`<div id="html_0f1b432c0356498e886fab5e7ef670cb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Tapantí, Cuenca del Reventazón, en alrededores del Mirador <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1999-02-04 <strong>Recolectores:</strong> Alexánder Rodríguez|Luis Diego Vargas <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_925adb065f514a509f61fcb50323db9c.setContent(html_0f1b432c0356498e886fab5e7ef670cb);
+        
+
+        marker_d45aa381da09474e81e14c8e763a1c7b.bindPopup(popup_925adb065f514a509f61fcb50323db9c)
+        ;
+
+        
+    
+    
+            var marker_739107c7ee5c490e9628ccb10c47815a = L.marker(
+                [8.531945, -81.813889],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_b5c89ed423e748dbabe698e1dc78d9c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5648ce42407344a08fed2212a75cb833 = $(`<div id="html_5648ce42407344a08fed2212a75cb833" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Colorado, 50 km N of San Félix on the continental divide. <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 1975-08-18 <strong>Recolectores:</strong> Scott A. Mori|Robert L. Dressler <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_b5c89ed423e748dbabe698e1dc78d9c2.setContent(html_5648ce42407344a08fed2212a75cb833);
+        
+
+        marker_739107c7ee5c490e9628ccb10c47815a.bindPopup(popup_b5c89ed423e748dbabe698e1dc78d9c2)
+        ;
+
+        
+    
+    
+            var marker_2896365196144549805ac324fb73aba5 = L.marker(
+                [8.766667, -82.25],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_6fb83a0c871f468aaf3226e6df179b3b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c58fe8bb19104edcaa135d7933646e59 = $(`<div id="html_c58fe8bb19104edcaa135d7933646e59" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Between Quebrada Hondo and divide on Caldera-Chiriquicito [Chiriquí] Trail. <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1968-04-20 <strong>Recolectores:</strong> Joseph H. Kirkbride, Jr.|James A. Duke <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_6fb83a0c871f468aaf3226e6df179b3b.setContent(html_c58fe8bb19104edcaa135d7933646e59);
+        
+
+        marker_2896365196144549805ac324fb73aba5.bindPopup(popup_6fb83a0c871f468aaf3226e6df179b3b)
+        ;
+
+        
+    
+    
+            var marker_92bc1a96dd194fb8b841f4d0335d057c = L.marker(
+                [9.73, -83.78],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_f31fe377623446279dd1e1b6614e40f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa511426960e489c95639c924c423960 = $(`<div id="html_aa511426960e489c95639c924c423960" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Heavily forested slopes about 4.5 km from bridge at Tapantí above the Río Grande de Orosi <strong>Elevación:</strong> 1402.08 m  <strong>Fecha:</strong> 1968-08-27 <strong>Recolectores:</strong> Robert L. Wilbur|Donald E. Stone <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_f31fe377623446279dd1e1b6614e40f5.setContent(html_aa511426960e489c95639c924c423960);
+        
+
+        marker_92bc1a96dd194fb8b841f4d0335d057c.bindPopup(popup_f31fe377623446279dd1e1b6614e40f5)
+        ;
+
+        
+    
+    
+            var marker_ee7ae8c32f274a2683df50c15b8a17e4 = L.marker(
+                [9.781111, -83.81222199999999],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_e0a99d8103c04ede9b2610e3a393b10a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_555d156e845542e9b980999e7826bda4 = $(`<div id="html_555d156e845542e9b980999e7826bda4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva de Tapantí. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1982-11-01 <strong>Recolectores:</strong> Luis Diego Gómez P. <strong>Identificadores:</strong> C. M. Taylor</div>`)[0];
+            popup_e0a99d8103c04ede9b2610e3a393b10a.setContent(html_555d156e845542e9b980999e7826bda4);
+        
+
+        marker_ee7ae8c32f274a2683df50c15b8a17e4.bindPopup(popup_e0a99d8103c04ede9b2610e3a393b10a)
+        ;
+
+        
+    
+    
+            var marker_8c8d42adca2b47e68f2e4558bd03a32b = L.marker(
+                [9.77, -83.79],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_2088c9e88a2a47be8ebcde9e48c88071 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be7598b272bd4e4c8aae922e0d942bda = $(`<div id="html_be7598b272bd4e4c8aae922e0d942bda" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Orosi, 5 km antes de Tausito. <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 1999-02-17 <strong>Recolectores:</strong> Alexánder Rodríguez|et al. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_2088c9e88a2a47be8ebcde9e48c88071.setContent(html_be7598b272bd4e4c8aae922e0d942bda);
+        
+
+        marker_8c8d42adca2b47e68f2e4558bd03a32b.bindPopup(popup_2088c9e88a2a47be8ebcde9e48c88071)
+        ;
+
+        
+    
+    
+            var marker_a785a29fd0894da2a1a3fb5c78482f94 = L.marker(
+                [9.755611, -83.78283],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_fb367279615849b39acb99ce065f1c26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91784347c5904681b8f55e055f27a225 = $(`<div id="html_91784347c5904681b8f55e055f27a225" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Tapantí-Macizo de La Muerte. Cuenca del Reventazón. P. N. Tapantí. 500 meters after Rangers Station. <strong>Elevación:</strong> 1222.0 m  <strong>Fecha:</strong> 2009-05-21 <strong>Recolectores:</strong> Luis Diego Vargas|G. Villalobos <strong>Identificadores:</strong> N. Zamora (INB)</div>`)[0];
+            popup_fb367279615849b39acb99ce065f1c26.setContent(html_91784347c5904681b8f55e055f27a225);
+        
+
+        marker_a785a29fd0894da2a1a3fb5c78482f94.bindPopup(popup_fb367279615849b39acb99ce065f1c26)
+        ;
+
+        
+    
+    
+            var marker_62299c884e6a48d2851ada6a10fb15be = L.marker(
+                [10.072222, -83.98889],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_a49ccc96fb7e47218948545c10813a90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f8559a6b24341ebb59da733e35c476b = $(`<div id="html_1f8559a6b24341ebb59da733e35c476b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo. Cuenca del Sarapiquí. Sector La Ventana. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2003-12-04 <strong>Recolectores:</strong> Luis Diego Vargas|G. Lizano <strong>Identificadores:</strong> B. Hammel</div>`)[0];
+            popup_a49ccc96fb7e47218948545c10813a90.setContent(html_1f8559a6b24341ebb59da733e35c476b);
+        
+
+        marker_62299c884e6a48d2851ada6a10fb15be.bindPopup(popup_a49ccc96fb7e47218948545c10813a90)
+        ;
+
+        
+    
+    
+            var marker_b035f00964d345728be860187cb73e0c = L.marker(
+                [9.755611, -83.782833],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_72c5af82cfcc4609ad6910165bff0a51 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a4e7d0f60bb4a28acc42bfbbc701d1c = $(`<div id="html_7a4e7d0f60bb4a28acc42bfbbc701d1c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Tapantí. 500 m después de la estación. <strong>Elevación:</strong> 1222.0 m  <strong>Fecha:</strong> 2009-05-21 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_72c5af82cfcc4609ad6910165bff0a51.setContent(html_7a4e7d0f60bb4a28acc42bfbbc701d1c);
+        
+
+        marker_b035f00964d345728be860187cb73e0c.bindPopup(popup_72c5af82cfcc4609ad6910165bff0a51)
+        ;
+
+        
+    
+    
+            var marker_1959f720d8d44d93a8e9ee1465e26a5d = L.marker(
+                [9.755611, -83.782833],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_a3794835515148798f7bba149f7520ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f49e00f86a3e4f82b306e42a2cf80d86 = $(`<div id="html_f49e00f86a3e4f82b306e42a2cf80d86" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Tapantí. 500 m después de la estación. <strong>Elevación:</strong> 1222.0 m  <strong>Fecha:</strong> 2009-05-21 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_a3794835515148798f7bba149f7520ac.setContent(html_f49e00f86a3e4f82b306e42a2cf80d86);
+        
+
+        marker_1959f720d8d44d93a8e9ee1465e26a5d.bindPopup(popup_a3794835515148798f7bba149f7520ac)
+        ;
+
+        
+    
+    
+            var marker_0e8ec4e948194f2d871dd0baf2be23a4 = L.marker(
+                [9.755611, -83.782833],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_63cf641ed58e49daaa40fc42198743e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1cbceba0e4ef41cd918637b7ea849a0b = $(`<div id="html_1cbceba0e4ef41cd918637b7ea849a0b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Tapantí. 500 m después de la estación. <strong>Elevación:</strong> 1222.0 m  <strong>Fecha:</strong> 2009-05-21 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_63cf641ed58e49daaa40fc42198743e8.setContent(html_1cbceba0e4ef41cd918637b7ea849a0b);
+        
+
+        marker_0e8ec4e948194f2d871dd0baf2be23a4.bindPopup(popup_63cf641ed58e49daaa40fc42198743e8)
+        ;
+
+        
+    
+    
+            var marker_ee788916035b46a781698cacd54d16bc = L.marker(
+                [9.755611, -83.782833],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_46ce6f0b846a4bf8a2d2de548bfdc06f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_17c176b9912c4dbca72cdb05cc6a69d6 = $(`<div id="html_17c176b9912c4dbca72cdb05cc6a69d6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Tapantí. 500 m después de la estación. <strong>Elevación:</strong> 1222.0 m  <strong>Fecha:</strong> 2009-05-21 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_46ce6f0b846a4bf8a2d2de548bfdc06f.setContent(html_17c176b9912c4dbca72cdb05cc6a69d6);
+        
+
+        marker_ee788916035b46a781698cacd54d16bc.bindPopup(popup_46ce6f0b846a4bf8a2d2de548bfdc06f)
+        ;
+
+        
+    
+    
+            var marker_2e42bc975e0447619ee9564669bfc3d7 = L.marker(
+                [9.755611, -83.782833],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_d28e3eb7068640cf9d2ccd7c70318154 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89a077b4e6c14151a44643075b49d960 = $(`<div id="html_89a077b4e6c14151a44643075b49d960" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Tapantí. 500 m después de la estación. <strong>Elevación:</strong> 1222.0 m  <strong>Fecha:</strong> 2009-05-21 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_d28e3eb7068640cf9d2ccd7c70318154.setContent(html_89a077b4e6c14151a44643075b49d960);
+        
+
+        marker_2e42bc975e0447619ee9564669bfc3d7.bindPopup(popup_d28e3eb7068640cf9d2ccd7c70318154)
+        ;
+
+        
+    
+    
+            var marker_ee36a4382df24fae9583553aa352c9af = L.marker(
+                [10.072222, -83.988889],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_626e09867832434c88b1dae24b0324ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fdfbeef87360426f81b93a5a2b9e5188 = $(`<div id="html_fdfbeef87360426f81b93a5a2b9e5188" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Braulio Carrillo. Cerca del Túnel Zurquí. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2003-12-04 <strong>Recolectores:</strong> Luis Diego Vargas; Gustavo Lizano <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_626e09867832434c88b1dae24b0324ba.setContent(html_fdfbeef87360426f81b93a5a2b9e5188);
+        
+
+        marker_ee36a4382df24fae9583553aa352c9af.bindPopup(popup_626e09867832434c88b1dae24b0324ba)
+        ;
+
+        
+    
+    
+            var marker_01e57007ed774d91a834fcf1e4147c96 = L.marker(
+                [10.072222, -83.988889],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_36a43e34f5fe46c6918383ceb3fbd616 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b2b73fa14c34aba83c5221be4f719a9 = $(`<div id="html_0b2b73fa14c34aba83c5221be4f719a9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Braulio Carrillo. Cerca del Túnel Zurquí. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2003-12-04 <strong>Recolectores:</strong> Luis Diego Vargas; Gustavo Lizano <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_36a43e34f5fe46c6918383ceb3fbd616.setContent(html_0b2b73fa14c34aba83c5221be4f719a9);
+        
+
+        marker_01e57007ed774d91a834fcf1e4147c96.bindPopup(popup_36a43e34f5fe46c6918383ceb3fbd616)
+        ;
+
+        
+    
+    
+            var marker_a7202aaf8a6a46119cf91f6ab960da43 = L.marker(
+                [10.072222, -83.988889],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_f4cc7dec76874f0a89dd972eb8c55fbc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e986483b58564f8981bec3ac03047433 = $(`<div id="html_e986483b58564f8981bec3ac03047433" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Braulio Carrillo. Cerca del Túnel Zurquí. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2003-12-04 <strong>Recolectores:</strong> Luis Diego Vargas; Gustavo Lizano <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_f4cc7dec76874f0a89dd972eb8c55fbc.setContent(html_e986483b58564f8981bec3ac03047433);
+        
+
+        marker_a7202aaf8a6a46119cf91f6ab960da43.bindPopup(popup_f4cc7dec76874f0a89dd972eb8c55fbc)
+        ;
+
+        
+    
+    
+            var marker_c93b78bcbbbb431eaefa221b7c10b2f4 = L.marker(
+                [9.761672, -83.787414],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_dbf1575214834e948441d68d849bb36c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_403e4c19d31d48c498d29a855ec2e8bf = $(`<div id="html_403e4c19d31d48c498d29a855ec2e8bf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quebrada Segundo. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2005-06-09 <strong>Recolectores:</strong> Frank  Alonso González Brenes; Armando Soto ; Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_dbf1575214834e948441d68d849bb36c.setContent(html_403e4c19d31d48c498d29a855ec2e8bf);
+        
+
+        marker_c93b78bcbbbb431eaefa221b7c10b2f4.bindPopup(popup_dbf1575214834e948441d68d849bb36c)
+        ;
+
+        
+    
+    
+            var marker_bbd09dc7c6ab43d7897803aa5a837641 = L.marker(
+                [9.761672, -83.787414],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_3d543cb7d48548c0818f813129586a63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b687a1c0db8445739f0b37e043856c2b = $(`<div id="html_b687a1c0db8445739f0b37e043856c2b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quebrada Segundo. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2005-06-09 <strong>Recolectores:</strong> Frank  Alonso González Brenes; Armando Soto ; Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_3d543cb7d48548c0818f813129586a63.setContent(html_b687a1c0db8445739f0b37e043856c2b);
+        
+
+        marker_bbd09dc7c6ab43d7897803aa5a837641.bindPopup(popup_3d543cb7d48548c0818f813129586a63)
+        ;
+
+        
+    
+    
+            var marker_b84ee3d808d849678c76d168322a38fe = L.marker(
+                [9.483333, -84.05],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_477a72fc09874426b4d6420ac3c452da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0681db38df845e28bae927f4303ff71 = $(`<div id="html_e0681db38df845e28bae927f4303ff71" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Faldas del Cerro Nara, cerca Esquipulas, limite Quepos (Puntarenas) y Tarrazu. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 1987-07-11 <strong>Recolectores:</strong> Jorge Gómez Laurito <strong>Identificadores:</strong> Gómez Laurito, Jorge</div>`)[0];
+            popup_477a72fc09874426b4d6420ac3c452da.setContent(html_e0681db38df845e28bae927f4303ff71);
+        
+
+        marker_b84ee3d808d849678c76d168322a38fe.bindPopup(popup_477a72fc09874426b4d6420ac3c452da)
+        ;
+
+        
+    
+    
+            var marker_79cec39141d4482ab00bf2c3becb28df = L.marker(
+                [9.775253999999999, -83.795597],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_c8b1b6a5bd82487780c8fc797043f170 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d53ed50fb38c403bbf709bbb4d359b6a = $(`<div id="html_d53ed50fb38c403bbf709bbb4d359b6a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tapanti, Rio Grande de Orosi <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 1999-02-17 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Luis Diego Vargas ; Victor Ramírez <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_c8b1b6a5bd82487780c8fc797043f170.setContent(html_d53ed50fb38c403bbf709bbb4d359b6a);
+        
+
+        marker_79cec39141d4482ab00bf2c3becb28df.bindPopup(popup_c8b1b6a5bd82487780c8fc797043f170)
+        ;
+
+        
+    
+    
+            var marker_6a18370097ad4984a812ae76fae260d7 = L.marker(
+                [9.775253999999999, -83.795597],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_ab1fd98a62904a9a9293bf42e2fdb300 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84aa27621cc94424a24ae89fc354f90f = $(`<div id="html_84aa27621cc94424a24ae89fc354f90f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tapanti, Rio Grande de Orosi <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 1999-02-17 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Luis Diego Vargas ; Victor Ramírez <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_ab1fd98a62904a9a9293bf42e2fdb300.setContent(html_84aa27621cc94424a24ae89fc354f90f);
+        
+
+        marker_6a18370097ad4984a812ae76fae260d7.bindPopup(popup_ab1fd98a62904a9a9293bf42e2fdb300)
+        ;
+
+        
+    
+    
+            var marker_b2bab2eb8bac4fa9850dcddc9d637d52 = L.marker(
+                [9.775253999999999, -83.795597],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_156e810625bc42bbbdd90030de383f3c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a212e8ad1d814a1c80c98de7dcaecf24 = $(`<div id="html_a212e8ad1d814a1c80c98de7dcaecf24" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tapanti, Rio Grande de Orosi <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 1999-02-17 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Luis Diego Vargas ; Victor Ramírez <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_156e810625bc42bbbdd90030de383f3c.setContent(html_a212e8ad1d814a1c80c98de7dcaecf24);
+        
+
+        marker_b2bab2eb8bac4fa9850dcddc9d637d52.bindPopup(popup_156e810625bc42bbbdd90030de383f3c)
+        ;
+
+        
+    
+    
+            var marker_dc7c46f263bf4acc86e3b00e349267e8 = L.marker(
+                [9.775253999999999, -83.795597],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_eb4867e749c1454cb6409ab82b570365 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fec90a05c20143849d8133502e3a8e86 = $(`<div id="html_fec90a05c20143849d8133502e3a8e86" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tapanti, Rio Grande de Orosi <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 1999-02-17 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Luis Diego Vargas ; Victor Ramírez <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_eb4867e749c1454cb6409ab82b570365.setContent(html_fec90a05c20143849d8133502e3a8e86);
+        
+
+        marker_dc7c46f263bf4acc86e3b00e349267e8.bindPopup(popup_eb4867e749c1454cb6409ab82b570365)
+        ;
+
+        
+    
+    
+            var marker_1927d79ce7f74e99b35e90926b93aa91 = L.marker(
+                [9.748056, -83.781944],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_3c04923ccb44425caf5b13182ea2c3ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b23f989f04c94ec79890feb62b082e82 = $(`<div id="html_b23f989f04c94ec79890feb62b082e82" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque primario en el sendero Arboles caidos (Alto Patillos) por la torre. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1999-02-04 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Luis Diego Vargas <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_3c04923ccb44425caf5b13182ea2c3ce.setContent(html_b23f989f04c94ec79890feb62b082e82);
+        
+
+        marker_1927d79ce7f74e99b35e90926b93aa91.bindPopup(popup_3c04923ccb44425caf5b13182ea2c3ce)
+        ;
+
+        
+    
+    
+            var marker_56fe7844e09a4b53b113e121ca0ab3ca = L.marker(
+                [9.748056, -83.781944],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_fa4f0c81d6b14171b7aa203bdb778d97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c65b1a8fd4d047ac872afdeb764a8a28 = $(`<div id="html_c65b1a8fd4d047ac872afdeb764a8a28" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque primario en el sendero Arboles caidos (Alto Patillos) por la torre. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1999-02-04 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Luis Diego Vargas <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_fa4f0c81d6b14171b7aa203bdb778d97.setContent(html_c65b1a8fd4d047ac872afdeb764a8a28);
+        
+
+        marker_56fe7844e09a4b53b113e121ca0ab3ca.bindPopup(popup_fa4f0c81d6b14171b7aa203bdb778d97)
+        ;
+
+        
+    
+    
+            var marker_3aae711f60ba4c91a32050943cb52f69 = L.marker(
+                [9.748056, -83.781944],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_82f7c917fadd4b2693fb74feb1a865dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_caaaeb3a9eb144cba26ee42b312739d3 = $(`<div id="html_caaaeb3a9eb144cba26ee42b312739d3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque primario en el sendero Arboles caidos (Alto Patillos) por la torre. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1999-02-04 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Luis Diego Vargas <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_82f7c917fadd4b2693fb74feb1a865dc.setContent(html_caaaeb3a9eb144cba26ee42b312739d3);
+        
+
+        marker_3aae711f60ba4c91a32050943cb52f69.bindPopup(popup_82f7c917fadd4b2693fb74feb1a865dc)
+        ;
+
+        
+    
+    
+            var marker_92d9e592aec7460b9df8750fbd2e7101 = L.marker(
+                [9.755556, -83.783333],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_9f6d44e956544662949f0aada37e9215 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b2058a6eeca40df9c61219d3dd9860f = $(`<div id="html_5b2058a6eeca40df9c61219d3dd9860f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Tapanti, Rio Grande de Orosi. <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 1994-09-01 <strong>Recolectores:</strong> Gerardo Mora <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_9f6d44e956544662949f0aada37e9215.setContent(html_5b2058a6eeca40df9c61219d3dd9860f);
+        
+
+        marker_92d9e592aec7460b9df8750fbd2e7101.bindPopup(popup_9f6d44e956544662949f0aada37e9215)
+        ;
+
+        
+    
+    
+            var marker_12acac6c938b41d6954e65c8aee60ae7 = L.marker(
+                [9.75, -83.783333],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_2577f2e27a5147baa596e765e49f4cf2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e7fc010c37f4f0ca728364d05b1befe = $(`<div id="html_7e7fc010c37f4f0ca728364d05b1befe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tapanti, Sendero los Arboles Caidos. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1994-07-21 <strong>Recolectores:</strong> Freddy A. Quesada <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_2577f2e27a5147baa596e765e49f4cf2.setContent(html_7e7fc010c37f4f0ca728364d05b1befe);
+        
+
+        marker_12acac6c938b41d6954e65c8aee60ae7.bindPopup(popup_2577f2e27a5147baa596e765e49f4cf2)
+        ;
+
+        
+    
+    
+            var marker_1c38c7041b1340e69b6ca2772c36f0e2 = L.marker(
+                [9.75, -83.783334],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_093b9597fc1c45088b4e9b71f26e045a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04b3a9c0f6694260948dcb57f0cc1493 = $(`<div id="html_04b3a9c0f6694260948dcb57f0cc1493" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tapanti, Sendero Palmito, Sendero La Pava. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1994-07-15 <strong>Recolectores:</strong> F. Araya <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_093b9597fc1c45088b4e9b71f26e045a.setContent(html_04b3a9c0f6694260948dcb57f0cc1493);
+        
+
+        marker_1c38c7041b1340e69b6ca2772c36f0e2.bindPopup(popup_093b9597fc1c45088b4e9b71f26e045a)
+        ;
+
+        
+    
+    
+            var marker_dd6def7cbc564b548bf76f4ee35d276d = L.marker(
+                [10.066667, -83.983333],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_02f5bd063e1b4585b56c06238d12e667 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c898b83ab0a4c3686f4a5d592272516 = $(`<div id="html_4c898b83ab0a4c3686f4a5d592272516" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Trail from highway at La Ventana to Bajo La Hondura. Wet montane forest with abundant epiphytes and palms. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1990-09-04 <strong>Recolectores:</strong> James Solomon <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_02f5bd063e1b4585b56c06238d12e667.setContent(html_4c898b83ab0a4c3686f4a5d592272516);
+        
+
+        marker_dd6def7cbc564b548bf76f4ee35d276d.bindPopup(popup_02f5bd063e1b4585b56c06238d12e667)
+        ;
+
+        
+    
+    
+            var marker_bc68efd3ffe440b2b524992c0301bf95 = L.marker(
+                [9.404167, -83.084722],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_a26373af046c4ef58066180ffc0a7025 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2ee20def9cd4fd68ff48a1229ca61f6 = $(`<div id="html_c2ee20def9cd4fd68ff48a1229ca61f6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camp by Kivut Trail up from the camp 3 Km SW of the camp. Primary Forest. <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 1992-03-09 <strong>Recolectores:</strong> Jens Bittner <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_a26373af046c4ef58066180ffc0a7025.setContent(html_c2ee20def9cd4fd68ff48a1229ca61f6);
+        
+
+        marker_bc68efd3ffe440b2b524992c0301bf95.bindPopup(popup_a26373af046c4ef58066180ffc0a7025)
+        ;
+
+        
+    
+    
+            var marker_04237c5f77474e0cae0e8c508aa445a7 = L.marker(
+                [9.75, -83.78],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_967cad7f8e3943789bffb1e60d6581bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_edf55afd251b498096b89c3ce847cd93 = $(`<div id="html_edf55afd251b498096b89c3ce847cd93" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Tapantí SE of Cartago, in the Tapantí reserve, in the valley of the Ríos Humo and Macho, ca. 3-4 km from the reserve gate, along the main road and the trail to meteorological station. Wet forest and roadsides. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1984-06-05 <strong>Recolectores:</strong> Taylor, Charlotte M. <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_967cad7f8e3943789bffb1e60d6581bd.setContent(html_edf55afd251b498096b89c3ce847cd93);
+        
+
+        marker_04237c5f77474e0cae0e8c508aa445a7.bindPopup(popup_967cad7f8e3943789bffb1e60d6581bd)
+        ;
+
+        
+    
+    
+            var marker_2b7cb8ddf1fc4daab5d680021a956615 = L.marker(
+                [9.76, -83.95],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_354214304334471b956900ef2f7afdca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1627fedd461b42858b085119175ed37b = $(`<div id="html_1627fedd461b42858b085119175ed37b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 10 km S of Cartago by air. Along confluence of Río Empalme and Río Estrella. 1 km S of Palo Verde by road. Paloverde is 1.5 km S of Panamerican Hwy on road to Estrella. <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 1983-04-21 <strong>Recolectores:</strong> Liesner, Ronald <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_354214304334471b956900ef2f7afdca.setContent(html_1627fedd461b42858b085119175ed37b);
+        
+
+        marker_2b7cb8ddf1fc4daab5d680021a956615.bindPopup(popup_354214304334471b956900ef2f7afdca)
+        ;
+
+        
+    
+    
+            var marker_31e6cddf5cc540f8abd75c391d4bd44f = L.marker(
+                [9.75, -83.78],
+                {}
+            ).addTo(marker_cluster_c436618ee2d9457ab0c8e341144f2e26);
+        
+    
+        var popup_fd76cb22772d45ab97e9ca6b500e4c66 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f4c0b21424634b36afc7e493583fec36 = $(`<div id="html_f4c0b21424634b36afc7e493583fec36" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Tapantí Common at edge of wet forest. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1964-11-01 <strong>Recolectores:</strong> Hatheway, W. H. <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_fd76cb22772d45ab97e9ca6b500e4c66.setContent(html_f4c0b21424634b36afc7e493583fec36);
+        
+
+        marker_31e6cddf5cc540f8abd75c391d4bd44f.bindPopup(popup_fd76cb22772d45ab97e9ca6b500e4c66)
+        ;
+
+        
+    
+    
+            var layer_control_6f1d0be74e4d42acb5f1ce21f41298e0 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_2438374eba254aa8850232bad2ccb3a0,
+                    "ESRI World Imagery" : tile_layer_3699041122574508bb87943bfb2cab86,
+                },
+                overlays :  {
+                    "macro_element_c436618ee2d9457ab0c8e341144f2e26" : marker_cluster_c436618ee2d9457ab0c8e341144f2e26,
+                },
+            };
+            L.control.layers(
+                layer_control_6f1d0be74e4d42acb5f1ce21f41298e0.base_layers,
+                layer_control_6f1d0be74e4d42acb5f1ce21f41298e0.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_3a842a663bca4efc9e08573a4c0a5525);
+            tile_layer_3699041122574508bb87943bfb2cab86.remove();
+        
+</script>

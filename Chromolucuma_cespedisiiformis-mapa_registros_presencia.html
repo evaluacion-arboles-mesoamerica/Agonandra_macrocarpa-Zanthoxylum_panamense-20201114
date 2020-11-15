@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0836f13a295347eba517630c2442fbef {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0836f13a295347eba517630c2442fbef" ></div>
+        
+</body>
+<script>    
+    
+            var map_0836f13a295347eba517630c2442fbef = L.map(
+                "map_0836f13a295347eba517630c2442fbef",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_0836f13a295347eba517630c2442fbef);
+
+            
+
+        
+    
+            var tile_layer_da13c5b660444934b564725adc33c93f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0836f13a295347eba517630c2442fbef);
+        
+    
+            var tile_layer_1a6d506f2ff8426a93bc1813fa8f2027 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0836f13a295347eba517630c2442fbef);
+        
+    
+            var circle_marker_aef2b139a9524edabd22344138c18eeb = L.circleMarker(
+                [8.66, -83.7],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0836f13a295347eba517630c2442fbef);
+        
+    
+        var popup_2214dd831df44eb5894c56e44411a3a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_377a8cc97b274a2988e60c181aa46fb8 = $(`<div id="html_377a8cc97b274a2988e60c181aa46fb8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica. Prov. Puntarenas. Osa Peninsula. Los Planes, north of Corcovado National Park. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2006-03-19 <strong>Recolectores:</strong> Arne Anderberg, Jenny Smedmark, Ulf Swenson, Igor Bartish, James Richardson & Reinaldo Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_2214dd831df44eb5894c56e44411a3a2.setContent(html_377a8cc97b274a2988e60c181aa46fb8);
+        
+
+        circle_marker_aef2b139a9524edabd22344138c18eeb.bindPopup(popup_2214dd831df44eb5894c56e44411a3a2)
+        ;
+
+        
+    
+    
+            var layer_control_1b419a693c4a4d0b94c81499bbbb9288 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_da13c5b660444934b564725adc33c93f,
+                    "ESRI World Imagery" : tile_layer_1a6d506f2ff8426a93bc1813fa8f2027,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_1b419a693c4a4d0b94c81499bbbb9288.base_layers,
+                layer_control_1b419a693c4a4d0b94c81499bbbb9288.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_0836f13a295347eba517630c2442fbef);
+            tile_layer_1a6d506f2ff8426a93bc1813fa8f2027.remove();
+        
+</script>

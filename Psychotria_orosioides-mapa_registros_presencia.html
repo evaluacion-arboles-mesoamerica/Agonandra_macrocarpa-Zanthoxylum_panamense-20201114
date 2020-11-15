@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b02867d763a74c22a85f4b67b2e9f32e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b02867d763a74c22a85f4b67b2e9f32e" ></div>
+        
+</body>
+<script>    
+    
+            var map_b02867d763a74c22a85f4b67b2e9f32e = L.map(
+                "map_b02867d763a74c22a85f4b67b2e9f32e",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+
+            
+
+        
+    
+            var tile_layer_1988b5bf04af4941b757d0ade3401188 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+            var tile_layer_225124e13ca141c993c4b2f704ee510e = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+            var circle_marker_b871408e858945f9bc109f6c22dad5c6 = L.circleMarker(
+                [10.366667, -84.783333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_662b302ef1b74038af9ae95dc15f1748 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1060bab555fb42538a529345505ffc90 = $(`<div id="html_1060bab555fb42538a529345505ffc90" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Gerardo Field Station, Bosque Eterno de Los Niños, along Sendero Congo <strong>Elevación:</strong> 1215.0 m  <strong>Fecha:</strong> 2005-03-21 <strong>Recolectores:</strong> Paul, J. <strong>Identificadores:</strong> C.M. Taylor 2006</div>`)[0];
+            popup_662b302ef1b74038af9ae95dc15f1748.setContent(html_1060bab555fb42538a529345505ffc90);
+        
+
+        circle_marker_b871408e858945f9bc109f6c22dad5c6.bindPopup(popup_662b302ef1b74038af9ae95dc15f1748)
+        ;
+
+        
+    
+    
+            var circle_marker_f90300ce9b184cb8b5dac4a1bb20d949 = L.circleMarker(
+                [10.43778, -84.69083],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_66829a8567bb44dd9f53745c2e6dddde = L.popup({"maxWidth": "100%"});
+
+        
+            var html_53c3821807df46a9b403a394d90b973c = $(`<div id="html_53c3821807df46a9b403a394d90b973c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica, Alajuela Province, boarder region of Cantons San Carlos and San Ramón. Sendero Cerro Chato, around halfway on descent from Laguna Cerro Chato to pastures surrounding the Arenal Observatory Lodge. <strong>Elevación:</strong> 1040.0 m  <strong>Fecha:</strong> 2015-02-07 <strong>Recolectores:</strong> Berger,A. <strong>Identificadores:</strong> A. Berger 2015-04</div>`)[0];
+            popup_66829a8567bb44dd9f53745c2e6dddde.setContent(html_53c3821807df46a9b403a394d90b973c);
+        
+
+        circle_marker_f90300ce9b184cb8b5dac4a1bb20d949.bindPopup(popup_66829a8567bb44dd9f53745c2e6dddde)
+        ;
+
+        
+    
+    
+            var circle_marker_ab64242bccbb4ff29f7a7cbbfb4cdcb9 = L.circleMarker(
+                [10.43778, -84.69083],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_e56d4985ea9747ad9a96bc9e458094ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1f817e1971f46e38df4cbf940fd8341 = $(`<div id="html_c1f817e1971f46e38df4cbf940fd8341" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica, Alajuela Province, boarder region of Cantons San Carlos and San Ramón. Sendero Cerro Chato, around halfway on descent from Laguna Cerro Chato to pastures surrounding the Arenal Observatory Lodge. <strong>Elevación:</strong> 1040.0 m  <strong>Fecha:</strong> 2015-02-07 <strong>Recolectores:</strong> Berger,A. <strong>Identificadores:</strong> A. Berger 2015-04</div>`)[0];
+            popup_e56d4985ea9747ad9a96bc9e458094ae.setContent(html_c1f817e1971f46e38df4cbf940fd8341);
+        
+
+        circle_marker_ab64242bccbb4ff29f7a7cbbfb4cdcb9.bindPopup(popup_e56d4985ea9747ad9a96bc9e458094ae)
+        ;
+
+        
+    
+    
+            var circle_marker_6a4479066d9f4ed4a7e226e94782515f = L.circleMarker(
+                [10.31, -84.75],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_b81558ea25e248188fe2f59f2723f2c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_32dd2dce1aa34198b0669dd0430dcc60 = $(`<div id="html_32dd2dce1aa34198b0669dd0430dcc60" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde, Cordillera de Tilarán, Valle del Río Peñas Blancas, Ref. Alema. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1993-11-10 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_b81558ea25e248188fe2f59f2723f2c4.setContent(html_32dd2dce1aa34198b0669dd0430dcc60);
+        
+
+        circle_marker_6a4479066d9f4ed4a7e226e94782515f.bindPopup(popup_b81558ea25e248188fe2f59f2723f2c4)
+        ;
+
+        
+    
+    
+            var circle_marker_cb3dedea14de4ba7b25763c494374f94 = L.circleMarker(
+                [10.38, -84.7],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_119515bf9941498093ae020717dcb83f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15eef89fd0cd4687b54012722be84c66 = $(`<div id="html_15eef89fd0cd4687b54012722be84c66" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestale Monteverde, Bosque Eterno De Los Niños, Cordillera de Tilarán, Río Peñas Blancas, Quebrada Gata, riachuelo de Fernando Villalobos. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1990-04-18 <strong>Recolectores:</strong> Erick Bello C.|William A. Haber|Willow Zuchowski <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_119515bf9941498093ae020717dcb83f.setContent(html_15eef89fd0cd4687b54012722be84c66);
+        
+
+        circle_marker_cb3dedea14de4ba7b25763c494374f94.bindPopup(popup_119515bf9941498093ae020717dcb83f)
+        ;
+
+        
+    
+    
+            var circle_marker_d82e70fad1f94ab5a1a7287ea11c21a5 = L.circleMarker(
+                [10.36, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_f75bbf5222104e48b1c0b54348c69b9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df0da32222224f45b47df33b1d9f65f3 = $(`<div id="html_df0da32222224f45b47df33b1d9f65f3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Arenal; Cordillera de Tilarán. Quebrada San Gerardo, Río Caño Negro. Finca de Los Mejías. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1990-02-17 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_f75bbf5222104e48b1c0b54348c69b9a.setContent(html_df0da32222224f45b47df33b1d9f65f3);
+        
+
+        circle_marker_d82e70fad1f94ab5a1a7287ea11c21a5.bindPopup(popup_f75bbf5222104e48b1c0b54348c69b9a)
+        ;
+
+        
+    
+    
+            var circle_marker_ed42074937304c269cbc8f155287d625 = L.circleMarker(
+                [10.38, -84.7],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_9967381fbb954b6b8a15d0e25563afb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3bb1faf068c41e18a7b555646e073f0 = $(`<div id="html_c3bb1faf068c41e18a7b555646e073f0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque Eterno De Los Niños, Cordillera de Tilarán, Valley of Río Agua Gata, Atlantic slope, Road from Lagarto at Inter-American <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1991-04-18 <strong>Recolectores:</strong> William A. Haber|Willow Zuchowski <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_9967381fbb954b6b8a15d0e25563afb8.setContent(html_c3bb1faf068c41e18a7b555646e073f0);
+        
+
+        circle_marker_ed42074937304c269cbc8f155287d625.bindPopup(popup_9967381fbb954b6b8a15d0e25563afb8)
+        ;
+
+        
+    
+    
+            var circle_marker_93ad4f4dab6f46c0ad8764cfd78dd7a0 = L.circleMarker(
+                [10.3, -84.75],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_b38d755535d34d51b16a305f30302602 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0aa3f474d93e44959e4333f2e113534d = $(`<div id="html_0aa3f474d93e44959e4333f2e113534d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde Río Peñas Blancas. Parcela de Alemán. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1989-06-25 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_b38d755535d34d51b16a305f30302602.setContent(html_0aa3f474d93e44959e4333f2e113534d);
+        
+
+        circle_marker_93ad4f4dab6f46c0ad8764cfd78dd7a0.bindPopup(popup_b38d755535d34d51b16a305f30302602)
+        ;
+
+        
+    
+    
+            var circle_marker_20bb74a1a03040b8b07a465229bc16fa = L.circleMarker(
+                [10.28, -84.71],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_deda2eb54ab74a9ea371322989f60028 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d5457e01dac4b1183bcd7881fe74158 = $(`<div id="html_5d5457e01dac4b1183bcd7881fe74158" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde Río Peñas Blancas, Altos de Quebrada Portal. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1989-05-23 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_deda2eb54ab74a9ea371322989f60028.setContent(html_5d5457e01dac4b1183bcd7881fe74158);
+        
+
+        circle_marker_20bb74a1a03040b8b07a465229bc16fa.bindPopup(popup_deda2eb54ab74a9ea371322989f60028)
+        ;
+
+        
+    
+    
+            var circle_marker_709d5bbc01ba4722ad3ca309563b5f66 = L.circleMarker(
+                [10.56, -84.9],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_f9b80cc03c424ae49d1ed844a9188135 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee9bc24109cd4573a6e2b47a21cb02a0 = $(`<div id="html_ee9bc24109cd4573a6e2b47a21cb02a0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 15 km northwest of Arenal by air, 2 km northwest of Nuevo Arenal on road to Tilarán, then 3 km northeast on road to San Rafael de Guatuso, then 2 km west on road to Finca Cote, on N side of road <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1983-04-30 <strong>Recolectores:</strong> Ronald L. Liesner|Emmet J. Judziewicz|Blanca Pérez G. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_f9b80cc03c424ae49d1ed844a9188135.setContent(html_ee9bc24109cd4573a6e2b47a21cb02a0);
+        
+
+        circle_marker_709d5bbc01ba4722ad3ca309563b5f66.bindPopup(popup_f9b80cc03c424ae49d1ed844a9188135)
+        ;
+
+        
+    
+    
+            var circle_marker_6ce5c413727b4793974e9ad24bc54bfa = L.circleMarker(
+                [10.366667, -84.866667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_fbe8f6d4dd554917b2dbfb060a1e61c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f114206d87b84b26804581ba3cc6caec = $(`<div id="html_f114206d87b84b26804581ba3cc6caec" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Río Chiquito de Tilarán, Río Negro valley, Atlantic slope, lower montane wet forest. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1986-07-30 <strong>Recolectores:</strong> William A. Haber|Erick Bello C. <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_fbe8f6d4dd554917b2dbfb060a1e61c3.setContent(html_f114206d87b84b26804581ba3cc6caec);
+        
+
+        circle_marker_6ce5c413727b4793974e9ad24bc54bfa.bindPopup(popup_fbe8f6d4dd554917b2dbfb060a1e61c3)
+        ;
+
+        
+    
+    
+            var circle_marker_f289d3fb4ae349448429810c6a821dbc = L.circleMarker(
+                [10.366667, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_5f5ddb1142bb470a9eb714425078eb2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59f50820ce8b4284b81b666af3873a09 = $(`<div id="html_59f50820ce8b4284b81b666af3873a09" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. Monteverde. San Gerardo Biological Station. Sendero Congo, 1 km W of Station. Semi-disturbed primary forest. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1995-05-10 <strong>Recolectores:</strong> Darin S. Penneys <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_5f5ddb1142bb470a9eb714425078eb2c.setContent(html_59f50820ce8b4284b81b666af3873a09);
+        
+
+        circle_marker_f289d3fb4ae349448429810c6a821dbc.bindPopup(popup_5f5ddb1142bb470a9eb714425078eb2c)
+        ;
+
+        
+    
+    
+            var circle_marker_77893281b8554e418eacb08d0c92effb = L.circleMarker(
+                [10.366660000000001, -84.78333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_17dbb66c68c04f49be44fc637d3e2572 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b516ab387d7742afbde4e049b519d349 = $(`<div id="html_b516ab387d7742afbde4e049b519d349" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Guanacaste. Monteverde. San Gerardo Biological Station. Premontane rain forest. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1995-07-01 <strong>Recolectores:</strong> Darin S. Penneys <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_17dbb66c68c04f49be44fc637d3e2572.setContent(html_b516ab387d7742afbde4e049b519d349);
+        
+
+        circle_marker_77893281b8554e418eacb08d0c92effb.bindPopup(popup_17dbb66c68c04f49be44fc637d3e2572)
+        ;
+
+        
+    
+    
+            var circle_marker_9f0772e6620440e99311d492fab25dc0 = L.circleMarker(
+                [10.366660000000001, -84.78333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_4da74cda669940c4abcaa90198d2cbcc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9641e8d708a240669419b0894d9ffe55 = $(`<div id="html_9641e8d708a240669419b0894d9ffe55" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Gerardo Field Station, Bosque Eterno de Los Niños, along Sendero Congo. <strong>Elevación:</strong> 1215.0 m  <strong>Fecha:</strong> 2005-03-21 <strong>Recolectores:</strong> John R. Paul <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_4da74cda669940c4abcaa90198d2cbcc.setContent(html_9641e8d708a240669419b0894d9ffe55);
+        
+
+        circle_marker_9f0772e6620440e99311d492fab25dc0.bindPopup(popup_4da74cda669940c4abcaa90198d2cbcc)
+        ;
+
+        
+    
+    
+            var circle_marker_f7065d61a77f45b3a8be619f4da07ec7 = L.circleMarker(
+                [10.437778, -84.690833],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_169f4df0df274ded8d7244b4c48e3682 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0be7d8cf30bd4adba611b26a9a9cddef = $(`<div id="html_0be7d8cf30bd4adba611b26a9a9cddef" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Boarder region of Cantons San Carlos and San Ramón. Sendero Cerro Chato, around halfway on descent from Laguna Cerro Chato to pastures surrounding the Arenal Observatory Lodge. <strong>Elevación:</strong> 1040.0 m  <strong>Fecha:</strong> 2015-02-07 <strong>Recolectores:</strong> A. Berger <strong>Identificadores:</strong> A. Berger</div>`)[0];
+            popup_169f4df0df274ded8d7244b4c48e3682.setContent(html_0be7d8cf30bd4adba611b26a9a9cddef);
+        
+
+        circle_marker_f7065d61a77f45b3a8be619f4da07ec7.bindPopup(popup_169f4df0df274ded8d7244b4c48e3682)
+        ;
+
+        
+    
+    
+            var circle_marker_02d6ee7072c74a8faa5988605f8bd55e = L.circleMarker(
+                [10.722937, -85.03681],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_63ee2f07c8a043deab91011df11b19e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08ff2781d98e4a6198441ad70579910a = $(`<div id="html_08ff2781d98e4a6198441ad70579910a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Altos Los Brenes, bosques aleda?os al hotel Las Heliconias, sendero que lleva a Laguna Danta.                                                                                                                                                                                                                                                                                                                                                                                                                     " <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2000-11-21 <strong>Recolectores:</strong> Alexánder Rodríguez <strong>Identificadores:</strong> C. Taylor</div>`)[0];
+            popup_63ee2f07c8a043deab91011df11b19e6.setContent(html_08ff2781d98e4a6198441ad70579910a);
+        
+
+        circle_marker_02d6ee7072c74a8faa5988605f8bd55e.bindPopup(popup_63ee2f07c8a043deab91011df11b19e6)
+        ;
+
+        
+    
+    
+            var circle_marker_1b806884630e464ba8b155e491d6c694 = L.circleMarker(
+                [10.671389, -84.990278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_50c74872e61d4ecb9b51144e78f0a706 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f6ff5a5f82c4c0bbf0e749164cf21a5 = $(`<div id="html_1f6ff5a5f82c4c0bbf0e749164cf21a5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio, Cuenca del Río Frío, Alto Masís, Colectado en bosque secundario; a orilla de sendero <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2001-02-13 <strong>Recolectores:</strong> José Luis Chaves <strong>Identificadores:</strong> B. Hammel (INB), 3 May./</div>`)[0];
+            popup_50c74872e61d4ecb9b51144e78f0a706.setContent(html_1f6ff5a5f82c4c0bbf0e749164cf21a5);
+        
+
+        circle_marker_1b806884630e464ba8b155e491d6c694.bindPopup(popup_50c74872e61d4ecb9b51144e78f0a706)
+        ;
+
+        
+    
+    
+            var circle_marker_541b7e4ca5e546f2a8da6834f15dfb1c = L.circleMarker(
+                [10.58, -84.98527800000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_cd1a7c3bb2e54956857de554ba93f186 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fdf56ecfcfa0448184c9edec0b2ff12e = $(`<div id="html_fdf56ecfcfa0448184c9edec0b2ff12e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Volcán Tenorio. Cuenca del Río Frío. Tenorio. Alto Masís. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 2000-08-08 <strong>Recolectores:</strong> José Luis Chaves <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_cd1a7c3bb2e54956857de554ba93f186.setContent(html_fdf56ecfcfa0448184c9edec0b2ff12e);
+        
+
+        circle_marker_541b7e4ca5e546f2a8da6834f15dfb1c.bindPopup(popup_cd1a7c3bb2e54956857de554ba93f186)
+        ;
+
+        
+    
+    
+            var circle_marker_d1328b55dbd649f3a2f0ea9dfd9b906e = L.circleMarker(
+                [10.722937, -85.036806],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_5d11be327f374913a16af19fb5e6047f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_486e9f8149e248c8aca71a6aee2dc361 = $(`<div id="html_486e9f8149e248c8aca71a6aee2dc361" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Albergue Helinonias,sendero Heliconias. Área de Conservación Arenal <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 2000-11-21 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_5d11be327f374913a16af19fb5e6047f.setContent(html_486e9f8149e248c8aca71a6aee2dc361);
+        
+
+        circle_marker_d1328b55dbd649f3a2f0ea9dfd9b906e.bindPopup(popup_5d11be327f374913a16af19fb5e6047f)
+        ;
+
+        
+    
+    
+            var circle_marker_305f3534b2cd42e7bab88121fcb956cf = L.circleMarker(
+                [10.722937, -85.036806],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_9e621cd838ac4747bb58bf9ddb88d17d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d94011ad43ed40438fca6cedf35c7f68 = $(`<div id="html_d94011ad43ed40438fca6cedf35c7f68" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Albergue Helinonias,sendero Heliconias. Área de Conservación Arenal <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 2000-11-21 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_9e621cd838ac4747bb58bf9ddb88d17d.setContent(html_d94011ad43ed40438fca6cedf35c7f68);
+        
+
+        circle_marker_305f3534b2cd42e7bab88121fcb956cf.bindPopup(popup_9e621cd838ac4747bb58bf9ddb88d17d)
+        ;
+
+        
+    
+    
+            var circle_marker_1beaa2af23b34b68b181e876ac54bdd8 = L.circleMarker(
+                [10.722937, -85.036806],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_ffc80d5da4d74223a5ec706636b2a393 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5cd831abbc8c468eb06b1a3b07e3fffb = $(`<div id="html_5cd831abbc8c468eb06b1a3b07e3fffb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Albergue Helinonias,sendero Heliconias. Área de Conservación Arenal <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 2000-11-21 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_ffc80d5da4d74223a5ec706636b2a393.setContent(html_5cd831abbc8c468eb06b1a3b07e3fffb);
+        
+
+        circle_marker_1beaa2af23b34b68b181e876ac54bdd8.bindPopup(popup_ffc80d5da4d74223a5ec706636b2a393)
+        ;
+
+        
+    
+    
+            var circle_marker_f45fb2259a654c2ba7838c7d7613b577 = L.circleMarker(
+                [10.722937, -85.036806],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_fc3f54608e974657b259227e659dbd40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5e5f5322a6743988e863453494fac4d = $(`<div id="html_d5e5f5322a6743988e863453494fac4d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Albergue Helinonias,sendero Heliconias. Área de Conservación Arenal <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 2000-11-21 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_fc3f54608e974657b259227e659dbd40.setContent(html_d5e5f5322a6743988e863453494fac4d);
+        
+
+        circle_marker_f45fb2259a654c2ba7838c7d7613b577.bindPopup(popup_fc3f54608e974657b259227e659dbd40)
+        ;
+
+        
+    
+    
+            var circle_marker_f6dd01cd07c941dfa311bfc4b3353664 = L.circleMarker(
+                [10.671389, -84.990278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_9e40981cf751401dbc701d64d5840cbf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6502ab1b89754c919949819bc6d799d3 = $(`<div id="html_6502ab1b89754c919949819bc6d799d3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2001-02-13 <strong>Recolectores:</strong> Jose Luis Chaves <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_9e40981cf751401dbc701d64d5840cbf.setContent(html_6502ab1b89754c919949819bc6d799d3);
+        
+
+        circle_marker_f6dd01cd07c941dfa311bfc4b3353664.bindPopup(popup_9e40981cf751401dbc701d64d5840cbf)
+        ;
+
+        
+    
+    
+            var circle_marker_e5de6a544b75485fa3a82d73ac25c7e0 = L.circleMarker(
+                [10.671389, -84.990278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_172e9b04f8ba4e6295e9010e102ea0db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_371ec0328e8243e0bb1d7fddff8ad4b3 = $(`<div id="html_371ec0328e8243e0bb1d7fddff8ad4b3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2001-02-13 <strong>Recolectores:</strong> Jose Luis Chaves <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_172e9b04f8ba4e6295e9010e102ea0db.setContent(html_371ec0328e8243e0bb1d7fddff8ad4b3);
+        
+
+        circle_marker_e5de6a544b75485fa3a82d73ac25c7e0.bindPopup(popup_172e9b04f8ba4e6295e9010e102ea0db)
+        ;
+
+        
+    
+    
+            var circle_marker_2f2027fe26274c468aa0fb1059d25f57 = L.circleMarker(
+                [10.671389, -84.990278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_f1937de74df2438f82428423ceb2a83a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a990fca0c0ec4ce48e5b810eb6b671fb = $(`<div id="html_a990fca0c0ec4ce48e5b810eb6b671fb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2001-02-13 <strong>Recolectores:</strong> Jose Luis Chaves <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_f1937de74df2438f82428423ceb2a83a.setContent(html_a990fca0c0ec4ce48e5b810eb6b671fb);
+        
+
+        circle_marker_2f2027fe26274c468aa0fb1059d25f57.bindPopup(popup_f1937de74df2438f82428423ceb2a83a)
+        ;
+
+        
+    
+    
+            var circle_marker_3dbe781a585f40d0abb3118fb89f8594 = L.circleMarker(
+                [10.671389, -84.990278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_416dbe3a74fc4d919e3224df34c1e7e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d4f79f5d1524231862ae61cd34d41c2 = $(`<div id="html_3d4f79f5d1524231862ae61cd34d41c2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2001-02-13 <strong>Recolectores:</strong> Jose Luis Chaves <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_416dbe3a74fc4d919e3224df34c1e7e6.setContent(html_3d4f79f5d1524231862ae61cd34d41c2);
+        
+
+        circle_marker_3dbe781a585f40d0abb3118fb89f8594.bindPopup(popup_416dbe3a74fc4d919e3224df34c1e7e6)
+        ;
+
+        
+    
+    
+            var circle_marker_e327569b7af34fb7b2cba7eb60e0033b = L.circleMarker(
+                [10.671389, -84.990278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_47351b9f41ee4569a9dae383b7d1469f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f763dd7f88b2401abf3496a897e9e938 = $(`<div id="html_f763dd7f88b2401abf3496a897e9e938" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2001-02-13 <strong>Recolectores:</strong> Jose Luis Chaves <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_47351b9f41ee4569a9dae383b7d1469f.setContent(html_f763dd7f88b2401abf3496a897e9e938);
+        
+
+        circle_marker_e327569b7af34fb7b2cba7eb60e0033b.bindPopup(popup_47351b9f41ee4569a9dae383b7d1469f)
+        ;
+
+        
+    
+    
+            var circle_marker_ed617580e8d24c17ad0755b5710a0755 = L.circleMarker(
+                [10.671389, -84.990278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_2a292ad3377641b6af26ab7d795baaec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd2320812bfc4657af0d1e784772ec02 = $(`<div id="html_cd2320812bfc4657af0d1e784772ec02" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-04-06 <strong>Recolectores:</strong> Jose Luis Chaves; Eleomar Muñoz <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_2a292ad3377641b6af26ab7d795baaec.setContent(html_cd2320812bfc4657af0d1e784772ec02);
+        
+
+        circle_marker_ed617580e8d24c17ad0755b5710a0755.bindPopup(popup_2a292ad3377641b6af26ab7d795baaec)
+        ;
+
+        
+    
+    
+            var circle_marker_01cee5f385464d978aa474b2ef783160 = L.circleMarker(
+                [10.671389, -84.990278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_6ebd01c8db3f44628a2035bdd7f75550 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_630a8782ae7e4b6e93084ad3681c976c = $(`<div id="html_630a8782ae7e4b6e93084ad3681c976c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-04-06 <strong>Recolectores:</strong> Jose Luis Chaves; Eleomar Muñoz <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_6ebd01c8db3f44628a2035bdd7f75550.setContent(html_630a8782ae7e4b6e93084ad3681c976c);
+        
+
+        circle_marker_01cee5f385464d978aa474b2ef783160.bindPopup(popup_6ebd01c8db3f44628a2035bdd7f75550)
+        ;
+
+        
+    
+    
+            var circle_marker_171553484f184a2195c3b07123ef1a6f = L.circleMarker(
+                [10.671389, -84.990278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_3ffae339ece14f27b1326cbb62cc6211 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_efc82dc9b4304b52a655b192e7135bec = $(`<div id="html_efc82dc9b4304b52a655b192e7135bec" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-04-06 <strong>Recolectores:</strong> Jose Luis Chaves; Eleomar Muñoz <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_3ffae339ece14f27b1326cbb62cc6211.setContent(html_efc82dc9b4304b52a655b192e7135bec);
+        
+
+        circle_marker_171553484f184a2195c3b07123ef1a6f.bindPopup(popup_3ffae339ece14f27b1326cbb62cc6211)
+        ;
+
+        
+    
+    
+            var circle_marker_f3022cd4419a4c67b0e808711a4a4d65 = L.circleMarker(
+                [10.671389, -84.990278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_08ebe5c1650447b184cd4f4178169504 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_710092e7808a44dcb9ca01b88a41b97a = $(`<div id="html_710092e7808a44dcb9ca01b88a41b97a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-04-06 <strong>Recolectores:</strong> Jose Luis Chaves; Eleomar Muñoz <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_08ebe5c1650447b184cd4f4178169504.setContent(html_710092e7808a44dcb9ca01b88a41b97a);
+        
+
+        circle_marker_f3022cd4419a4c67b0e808711a4a4d65.bindPopup(popup_08ebe5c1650447b184cd4f4178169504)
+        ;
+
+        
+    
+    
+            var circle_marker_1866b012a74e4e49b469948b3d0b74b1 = L.circleMarker(
+                [10.671389, -84.990278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_4e29abc45f8940939b080df194e43b9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf42b9c8205e4ce68abe27aa60073c6c = $(`<div id="html_bf42b9c8205e4ce68abe27aa60073c6c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-08-07 <strong>Recolectores:</strong> Jose Luis Chaves; Eleomar Muñoz <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_4e29abc45f8940939b080df194e43b9a.setContent(html_bf42b9c8205e4ce68abe27aa60073c6c);
+        
+
+        circle_marker_1866b012a74e4e49b469948b3d0b74b1.bindPopup(popup_4e29abc45f8940939b080df194e43b9a)
+        ;
+
+        
+    
+    
+            var circle_marker_157132c7ec3b46f8ac4f89a8e0868c49 = L.circleMarker(
+                [10.671389, -84.990278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_28601c18be4147cbaaa327651fec9b2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f16dbc379c0148dcbd032b1e5b7f1d12 = $(`<div id="html_f16dbc379c0148dcbd032b1e5b7f1d12" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-08-07 <strong>Recolectores:</strong> Jose Luis Chaves; Eleomar Muñoz <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_28601c18be4147cbaaa327651fec9b2d.setContent(html_f16dbc379c0148dcbd032b1e5b7f1d12);
+        
+
+        circle_marker_157132c7ec3b46f8ac4f89a8e0868c49.bindPopup(popup_28601c18be4147cbaaa327651fec9b2d)
+        ;
+
+        
+    
+    
+            var circle_marker_608d205847a148a9b0d4fffe26c5200d = L.circleMarker(
+                [10.671389, -84.990278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_7739008d22f84342bb384000d4d1d291 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c96040b6f4044d1c88de7144cf7ae543 = $(`<div id="html_c96040b6f4044d1c88de7144cf7ae543" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-08-07 <strong>Recolectores:</strong> Jose Luis Chaves; Eleomar Muñoz <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_7739008d22f84342bb384000d4d1d291.setContent(html_c96040b6f4044d1c88de7144cf7ae543);
+        
+
+        circle_marker_608d205847a148a9b0d4fffe26c5200d.bindPopup(popup_7739008d22f84342bb384000d4d1d291)
+        ;
+
+        
+    
+    
+            var circle_marker_01ad4364bbb14cf4a550710da2ea444e = L.circleMarker(
+                [10.671389, -84.990278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_d7f0b066b4334b64b62b4ba9cb176b4f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8aa043391cd4040b35f9fd52904b1a1 = $(`<div id="html_e8aa043391cd4040b35f9fd52904b1a1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-08-07 <strong>Recolectores:</strong> Jose Luis Chaves; Eleomar Muñoz <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_d7f0b066b4334b64b62b4ba9cb176b4f.setContent(html_e8aa043391cd4040b35f9fd52904b1a1);
+        
+
+        circle_marker_01ad4364bbb14cf4a550710da2ea444e.bindPopup(popup_d7f0b066b4334b64b62b4ba9cb176b4f)
+        ;
+
+        
+    
+    
+            var circle_marker_02722070c76649f9a039e0dce2bbd0be = L.circleMarker(
+                [10.671389, -84.990278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_8ccd90d30aa54b9cab02170f064ce993 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_382576345b054f68a5f52e00eaa2bb4c = $(`<div id="html_382576345b054f68a5f52e00eaa2bb4c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-08-07 <strong>Recolectores:</strong> Jose Luis Chaves; Eleomar Muñoz <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_8ccd90d30aa54b9cab02170f064ce993.setContent(html_382576345b054f68a5f52e00eaa2bb4c);
+        
+
+        circle_marker_02722070c76649f9a039e0dce2bbd0be.bindPopup(popup_8ccd90d30aa54b9cab02170f064ce993)
+        ;
+
+        
+    
+    
+            var circle_marker_f659f818d44e4eec972269e52acabb26 = L.circleMarker(
+                [10.366667, -84.783334],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_40402b06855a4b2a92e1ed6c76879aa2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43229514ef7747e9a2ac49620b66d908 = $(`<div id="html_43229514ef7747e9a2ac49620b66d908" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde. San Gerardo Biological Station. Sendero Viejo, 500 m S of Station. Premontane rain forest. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1995-07-01 <strong>Recolectores:</strong> Darin Penneys <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_40402b06855a4b2a92e1ed6c76879aa2.setContent(html_43229514ef7747e9a2ac49620b66d908);
+        
+
+        circle_marker_f659f818d44e4eec972269e52acabb26.bindPopup(popup_40402b06855a4b2a92e1ed6c76879aa2)
+        ;
+
+        
+    
+    
+            var circle_marker_0dfef834c6bb4090a9613aece646445e = L.circleMarker(
+                [10.366667, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_12ad5edf271a4cd9aa27b7e46107096e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed3d91f8c234470486ef20c87441440b = $(`<div id="html_ed3d91f8c234470486ef20c87441440b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde. San Gerardo Biological Station. Sendero Congo, 1 km W of Station. Semi-disturbed primary forest. Premontane rain forest. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1995-05-10 <strong>Recolectores:</strong> Darin Penneys <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_12ad5edf271a4cd9aa27b7e46107096e.setContent(html_ed3d91f8c234470486ef20c87441440b);
+        
+
+        circle_marker_0dfef834c6bb4090a9613aece646445e.bindPopup(popup_12ad5edf271a4cd9aa27b7e46107096e)
+        ;
+
+        
+    
+    
+            var circle_marker_9923f96ae9c04b01a8bc32f5a9d8df2c = L.circleMarker(
+                [10.383333, -84.7],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_aacb035fca86467692cd2f634e5a52a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51586d95ebbb4fe7bf18ec1c71af964f = $(`<div id="html_51586d95ebbb4fe7bf18ec1c71af964f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Penas Blancas, Quebrada Gata, riachuelo de Fernando Villalobos. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1990-04-18 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_aacb035fca86467692cd2f634e5a52a7.setContent(html_51586d95ebbb4fe7bf18ec1c71af964f);
+        
+
+        circle_marker_9923f96ae9c04b01a8bc32f5a9d8df2c.bindPopup(popup_aacb035fca86467692cd2f634e5a52a7)
+        ;
+
+        
+    
+    
+            var circle_marker_dbcb6eeece334382821d5c723c3a5988 = L.circleMarker(
+                [10.366667, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+        
+    
+        var popup_5a52042a24104ecf9514b7c5b99ecc51 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_10040bb0d4854e26ab77d707e22766af = $(`<div id="html_10040bb0d4854e26ab77d707e22766af" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quebrada San Gerardo, Rio Cano Negro. Finca de Los Mejias. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1990-02-17 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_5a52042a24104ecf9514b7c5b99ecc51.setContent(html_10040bb0d4854e26ab77d707e22766af);
+        
+
+        circle_marker_dbcb6eeece334382821d5c723c3a5988.bindPopup(popup_5a52042a24104ecf9514b7c5b99ecc51)
+        ;
+
+        
+    
+    
+            var layer_control_b080d8b3a16c4937a175aeb4df6d7b2b = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_1988b5bf04af4941b757d0ade3401188,
+                    "ESRI World Imagery" : tile_layer_225124e13ca141c993c4b2f704ee510e,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_b080d8b3a16c4937a175aeb4df6d7b2b.base_layers,
+                layer_control_b080d8b3a16c4937a175aeb4df6d7b2b.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_b02867d763a74c22a85f4b67b2e9f32e);
+            tile_layer_225124e13ca141c993c4b2f704ee510e.remove();
+        
+</script>

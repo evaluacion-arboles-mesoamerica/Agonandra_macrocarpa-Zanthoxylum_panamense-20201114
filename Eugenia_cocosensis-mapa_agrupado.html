@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_725fb326baaa45629072f6f6e4ec1888 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_725fb326baaa45629072f6f6e4ec1888" ></div>
+        
+</body>
+<script>    
+    
+            var map_725fb326baaa45629072f6f6e4ec1888 = L.map(
+                "map_725fb326baaa45629072f6f6e4ec1888",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_725fb326baaa45629072f6f6e4ec1888);
+
+            
+
+        
+    
+            var tile_layer_72bb851fa57b49449a4f67a1f4bcfa05 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_725fb326baaa45629072f6f6e4ec1888);
+        
+    
+            var tile_layer_625d635c6c7d4e9da49f2b3e43432a1d = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_725fb326baaa45629072f6f6e4ec1888);
+        
+    
+            var marker_cluster_80910589f3614317b061d102d284a6d0 = L.markerClusterGroup(
+                {}
+            );
+            map_725fb326baaa45629072f6f6e4ec1888.addLayer(marker_cluster_80910589f3614317b061d102d284a6d0);
+        
+    
+            var marker_76d5be41b1b84b2cb286525c97020bf5 = L.marker(
+                [5.518111, -87.07777800000001],
+                {}
+            ).addTo(marker_cluster_80910589f3614317b061d102d284a6d0);
+        
+    
+        var popup_86dffdb5ee1f404baa4f03bca24fbf34 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_227dbb93dfc9426a8c13026661fb5c70 = $(`<div id="html_227dbb93dfc9426a8c13026661fb5c70" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Isla del Coco.  P.N. Isla del Coco.  Al Norte de Cabo Dampier,Fila que lleva al Cerro Las Madres. <strong>Elevación:</strong> 425.0 m  <strong>Fecha:</strong> 2016-11-11 <strong>Recolectores:</strong> Alexánder Rodríguez|G. Blanco-Segura <strong>Identificadores:</strong> A. Rodriguez</div>`)[0];
+            popup_86dffdb5ee1f404baa4f03bca24fbf34.setContent(html_227dbb93dfc9426a8c13026661fb5c70);
+        
+
+        marker_76d5be41b1b84b2cb286525c97020bf5.bindPopup(popup_86dffdb5ee1f404baa4f03bca24fbf34)
+        ;
+
+        
+    
+    
+            var marker_363f11889fde46d6ad7a6fca859293be = L.marker(
+                [5.55, -87.03],
+                {}
+            ).addTo(marker_cluster_80910589f3614317b061d102d284a6d0);
+        
+    
+        var popup_1ef05f2ffe3b43da8b0bac0f48afd2b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2583aba549d54f658e20ec37c9951892 = $(`<div id="html_2583aba549d54f658e20ec37c9951892" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cocos Island, high plateau southeast of Chatham Bay <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1979-04-09 <strong>Recolectores:</strong> Robin B. Foster <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_1ef05f2ffe3b43da8b0bac0f48afd2b3.setContent(html_2583aba549d54f658e20ec37c9951892);
+        
+
+        marker_363f11889fde46d6ad7a6fca859293be.bindPopup(popup_1ef05f2ffe3b43da8b0bac0f48afd2b3)
+        ;
+
+        
+    
+    
+            var marker_8f0e3ec943a3418e8e0f0a56c78d6590 = L.marker(
+                [5.55, -87.03],
+                {}
+            ).addTo(marker_cluster_80910589f3614317b061d102d284a6d0);
+        
+    
+        var popup_e71cc484b0d24c3c99865c6bf8d059a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ba050690b4c4c838d5ef2b2a0719a0f = $(`<div id="html_4ba050690b4c4c838d5ef2b2a0719a0f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cocos Island, high plateau southeast of Chatham Bay <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1979-04-09 <strong>Recolectores:</strong> Robin B. Foster <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_e71cc484b0d24c3c99865c6bf8d059a6.setContent(html_4ba050690b4c4c838d5ef2b2a0719a0f);
+        
+
+        marker_8f0e3ec943a3418e8e0f0a56c78d6590.bindPopup(popup_e71cc484b0d24c3c99865c6bf8d059a6)
+        ;
+
+        
+    
+    
+            var marker_27366739c9b342beb9050a8e6b1243e5 = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_80910589f3614317b061d102d284a6d0);
+        
+    
+        var popup_59ea844eb9bc443d96ceb56eafe6779b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69eb5be79cd443caafba1f8156711404 = $(`<div id="html_69eb5be79cd443caafba1f8156711404" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> R. B. Foster <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_59ea844eb9bc443d96ceb56eafe6779b.setContent(html_69eb5be79cd443caafba1f8156711404);
+        
+
+        marker_27366739c9b342beb9050a8e6b1243e5.bindPopup(popup_59ea844eb9bc443d96ceb56eafe6779b)
+        ;
+
+        
+    
+    
+            var layer_control_dcf49cc6249b4a3eb61cbfb18b27baec = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_72bb851fa57b49449a4f67a1f4bcfa05,
+                    "ESRI World Imagery" : tile_layer_625d635c6c7d4e9da49f2b3e43432a1d,
+                },
+                overlays :  {
+                    "macro_element_80910589f3614317b061d102d284a6d0" : marker_cluster_80910589f3614317b061d102d284a6d0,
+                },
+            };
+            L.control.layers(
+                layer_control_dcf49cc6249b4a3eb61cbfb18b27baec.base_layers,
+                layer_control_dcf49cc6249b4a3eb61cbfb18b27baec.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_725fb326baaa45629072f6f6e4ec1888);
+            tile_layer_625d635c6c7d4e9da49f2b3e43432a1d.remove();
+        
+</script>

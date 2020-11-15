@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_18c8ce3b660f44d8a39f5f934016a3d5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_18c8ce3b660f44d8a39f5f934016a3d5" ></div>
+        
+</body>
+<script>    
+    
+            var map_18c8ce3b660f44d8a39f5f934016a3d5 = L.map(
+                "map_18c8ce3b660f44d8a39f5f934016a3d5",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_18c8ce3b660f44d8a39f5f934016a3d5);
+
+            
+
+        
+    
+            var tile_layer_f983184980b04eb5a1cf18ed89a9b2ca = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_18c8ce3b660f44d8a39f5f934016a3d5);
+        
+    
+            var tile_layer_bf58d0ec9bc3484fb3addeef4d8ffe40 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_18c8ce3b660f44d8a39f5f934016a3d5);
+        
+    
+            var marker_cluster_05123e2976b94530abf95ef66916f4bd = L.markerClusterGroup(
+                {}
+            );
+            map_18c8ce3b660f44d8a39f5f934016a3d5.addLayer(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+            var marker_6491d6285ed3452a947e17bd2effac80 = L.marker(
+                [10.298055999999999, -84.783611],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_d1296b05c4064e749dc69924703c65e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5880cd537c54dedb4f9f8a92f86ee0c = $(`<div id="html_a5880cd537c54dedb4f9f8a92f86ee0c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2020-09-13 12:51:03 <strong>Recolectores:</strong> Leonardo Álvarez <strong>Identificadores:</strong> Leonardo Álvarez</div>`)[0];
+            popup_d1296b05c4064e749dc69924703c65e9.setContent(html_a5880cd537c54dedb4f9f8a92f86ee0c);
+        
+
+        marker_6491d6285ed3452a947e17bd2effac80.bindPopup(popup_d1296b05c4064e749dc69924703c65e9)
+        ;
+
+        
+    
+    
+            var marker_c8f00f85059448a1a5084cc8f1070d3f = L.marker(
+                [10.316667, -84.8],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_ba7f6b64f3df4fbda8c471711a9edf69 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_811bc7573c6149b79d8ce3eeeef06ad0 = $(`<div id="html_811bc7573c6149b79d8ce3eeeef06ad0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estación Biológica Monteverde, Monteverde, off of Sendero Mirador, at Volcon Arenal viewpoint <strong>Elevación:</strong> 1815.0 m  <strong>Fecha:</strong> 2005-02-07 00:00:00 <strong>Recolectores:</strong> Paul, J. <strong>Identificadores:</strong> C.M. Taylor 2006</div>`)[0];
+            popup_ba7f6b64f3df4fbda8c471711a9edf69.setContent(html_811bc7573c6149b79d8ce3eeeef06ad0);
+        
+
+        marker_c8f00f85059448a1a5084cc8f1070d3f.bindPopup(popup_ba7f6b64f3df4fbda8c471711a9edf69)
+        ;
+
+        
+    
+    
+            var marker_3040264053e748aab767109fe6bc42df = L.marker(
+                [10.316667, -84.8],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_053f547dcb0c4eb9914eb91d7ba8ae8d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76f1d60890bb4db4b63790be7e55a280 = $(`<div id="html_76f1d60890bb4db4b63790be7e55a280" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estación Biológica Monteverde, Monteverde, off of Sendero Mirador <strong>Elevación:</strong> 1820.0 m  <strong>Fecha:</strong> 2005-02-07 00:00:00 <strong>Recolectores:</strong> Paul, J. <strong>Identificadores:</strong> C.M. Taylor 2006</div>`)[0];
+            popup_053f547dcb0c4eb9914eb91d7ba8ae8d.setContent(html_76f1d60890bb4db4b63790be7e55a280);
+        
+
+        marker_3040264053e748aab767109fe6bc42df.bindPopup(popup_053f547dcb0c4eb9914eb91d7ba8ae8d)
+        ;
+
+        
+    
+    
+            var marker_8d6962fd7f774b1fa7f985158ddd2cd3 = L.marker(
+                [10.10028, -84.05944000000001],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_fb056e038d904c35b57a8856ef0fc030 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_076d936bb4a14b5a9bd8007f1502391e = $(`<div id="html_076d936bb4a14b5a9bd8007f1502391e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica, Heredia Province, Canton San Rafael. Braulio Carrillo National Park, Refugio de Vida Silvestre Cerro Dantas, Round Trail, ca. half way. <strong>Elevación:</strong> 2135.0 m  <strong>Fecha:</strong> 2016-10-22 00:00:00 <strong>Recolectores:</strong> Berger,A. <strong>Identificadores:</strong> A. Berger 2016-10</div>`)[0];
+            popup_fb056e038d904c35b57a8856ef0fc030.setContent(html_076d936bb4a14b5a9bd8007f1502391e);
+        
+
+        marker_8d6962fd7f774b1fa7f985158ddd2cd3.bindPopup(popup_fb056e038d904c35b57a8856ef0fc030)
+        ;
+
+        
+    
+    
+            var marker_5283e2ac0344438190c5d420108593b9 = L.marker(
+                [10.09667, -84.06028],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_62413ea998e045e7a40aefa8a114a5e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be616b9a4b444280a70700ecd77e7574 = $(`<div id="html_be616b9a4b444280a70700ecd77e7574" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica, Heredia Province, Canton San Rafael. Braulio Carrillo National Park, Refugio de Vida Silvestre Cerro Dantas, beginning of Round Trail. <strong>Elevación:</strong> 2030.0 m  <strong>Fecha:</strong> 2016-10-22 00:00:00 <strong>Recolectores:</strong> Berger,A. <strong>Identificadores:</strong> A. Berger 2016-10</div>`)[0];
+            popup_62413ea998e045e7a40aefa8a114a5e6.setContent(html_be616b9a4b444280a70700ecd77e7574);
+        
+
+        marker_5283e2ac0344438190c5d420108593b9.bindPopup(popup_62413ea998e045e7a40aefa8a114a5e6)
+        ;
+
+        
+    
+    
+            var marker_d1d640519a71499ea3dd03ce42c58a53 = L.marker(
+                [10.1, -84.07],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_7b5ba51e28df4107896cbc08601a0370 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_17e119ebb4d34f5aa12262becad9b6bb = $(`<div id="html_17e119ebb4d34f5aa12262becad9b6bb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Vueltas, (upper Río Patria), eastern slope of Volcan Barba near the Continnetal Divide <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1983-07-02 00:00:00 <strong>Recolectores:</strong> K. Barringer & E. Christensen <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_7b5ba51e28df4107896cbc08601a0370.setContent(html_17e119ebb4d34f5aa12262becad9b6bb);
+        
+
+        marker_d1d640519a71499ea3dd03ce42c58a53.bindPopup(popup_7b5ba51e28df4107896cbc08601a0370)
+        ;
+
+        
+    
+    
+            var marker_c9c060b772ae47f6819fb19fbada8d71 = L.marker(
+                [10.1, -84.07],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_30839f1155f4491e94338e3a0ff8290c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9199dfd5c3cf47bfa569b66df8ae7201 = $(`<div id="html_9199dfd5c3cf47bfa569b66df8ae7201" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Río Las Vueltas (Río Patria), eastern slope of Volcan Barba near the Continental Divide <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1969-11-22 00:00:00 <strong>Recolectores:</strong> W. C. Burger & R. L. Liesner <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_30839f1155f4491e94338e3a0ff8290c.setContent(html_9199dfd5c3cf47bfa569b66df8ae7201);
+        
+
+        marker_c9c060b772ae47f6819fb19fbada8d71.bindPopup(popup_30839f1155f4491e94338e3a0ff8290c)
+        ;
+
+        
+    
+    
+            var marker_f3239d0898db46d0bd848d3bddeffd0a = L.marker(
+                [10.28, -84.78],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_9482adf91c6145409e98452bf2dc9f0c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_777c2647e0724f8c8b6bcb42cb090e98 = $(`<div id="html_777c2647e0724f8c8b6bcb42cb090e98" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde reserve; along Brillante trail and on south to headwaters of Río Vera Cruz. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1986-05-02 00:00:00 <strong>Recolectores:</strong> Barry E. Hammel|Erick Bello C.|L. Lierheimer <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_9482adf91c6145409e98452bf2dc9f0c.setContent(html_777c2647e0724f8c8b6bcb42cb090e98);
+        
+
+        marker_f3239d0898db46d0bd848d3bddeffd0a.bindPopup(popup_9482adf91c6145409e98452bf2dc9f0c)
+        ;
+
+        
+    
+    
+            var marker_39af47f07ea0450688af1e6f85461663 = L.marker(
+                [10.333333, -84.833333],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_01e8f9c61e964573b3804b91cd03eac2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9da103be625549818502dca50328cd47 = $(`<div id="html_9da103be625549818502dca50328cd47" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde Cloud Forest Reserve, on continental divide in area of TV towers. Lower montane rain forest. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1985-12-29 00:00:00 <strong>Recolectores:</strong> William A. Haber|Erick Bello C. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_01e8f9c61e964573b3804b91cd03eac2.setContent(html_9da103be625549818502dca50328cd47);
+        
+
+        marker_39af47f07ea0450688af1e6f85461663.bindPopup(popup_01e8f9c61e964573b3804b91cd03eac2)
+        ;
+
+        
+    
+    
+            var marker_86d0c48d24924e3881741b4f72b36596 = L.marker(
+                [10.3, -84.783333],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_1b5160c33e0c47bb867c28aba209355a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c31d798dd244ae68bdfcba33775b9cf = $(`<div id="html_0c31d798dd244ae68bdfcba33775b9cf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde Cloud Forest Reserve, Pacific slope and continental divide, road to divide, swamp along Sendero Pantanoso and Sendero Chomogo <strong>Elevación:</strong> 1575.0 m  <strong>Fecha:</strong> 1990-03-14 00:00:00 <strong>Recolectores:</strong> William A. Haber|Willow Zuchowski <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_1b5160c33e0c47bb867c28aba209355a.setContent(html_0c31d798dd244ae68bdfcba33775b9cf);
+        
+
+        marker_86d0c48d24924e3881741b4f72b36596.bindPopup(popup_1b5160c33e0c47bb867c28aba209355a)
+        ;
+
+        
+    
+    
+            var marker_6adc4d30fbfa41aabd157162d346d0d4 = L.marker(
+                [10.316667, -84.8],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_c96999a8dd0c450499d7d10445973901 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a9cd5d2f9c542e6b6cbbeb05c970b83 = $(`<div id="html_1a9cd5d2f9c542e6b6cbbeb05c970b83" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estación Biológica Monteverde. <strong>Elevación:</strong> 1815.0 m  <strong>Fecha:</strong> 2005-02-07 00:00:00 <strong>Recolectores:</strong> John R. Paul <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_c96999a8dd0c450499d7d10445973901.setContent(html_1a9cd5d2f9c542e6b6cbbeb05c970b83);
+        
+
+        marker_6adc4d30fbfa41aabd157162d346d0d4.bindPopup(popup_c96999a8dd0c450499d7d10445973901)
+        ;
+
+        
+    
+    
+            var marker_33acd34e434742939d8c69cb15392913 = L.marker(
+                [10.316667, -84.8],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_dca597611982469fa67e537d3ae345e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c7464291c444b99908e1da3b0f36c91 = $(`<div id="html_3c7464291c444b99908e1da3b0f36c91" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estación Biológica Monteverde. <strong>Elevación:</strong> 1820.0 m  <strong>Fecha:</strong> 2005-02-07 00:00:00 <strong>Recolectores:</strong> John R. Paul <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_dca597611982469fa67e537d3ae345e9.setContent(html_3c7464291c444b99908e1da3b0f36c91);
+        
+
+        marker_33acd34e434742939d8c69cb15392913.bindPopup(popup_dca597611982469fa67e537d3ae345e9)
+        ;
+
+        
+    
+    
+            var marker_e740e0dd1db74dcc87a07f3a81411bc0 = L.marker(
+                [10.316667, -83.8],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_c7549ff916c242e3a2900d5b9a3ecd70 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_83a7aa0e1efa4a8791d4dee8bc2036c4 = $(`<div id="html_83a7aa0e1efa4a8791d4dee8bc2036c4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> high ridge north of the television relay tower above Monteverde and bordering the Monteverde Cloud Forest Nature Reserve. Elfin forest on steep slopes and ridges with taller cloud forest in protected sites. Near the juncture of the Provinces of Alajuela, Guanacaste. <strong>Elevación:</strong> 1775.0 m  <strong>Fecha:</strong> 1977-02-27 00:00:00 <strong>Recolectores:</strong> William C. Burger|Gary Visconti|Johnnie L. Gentry, Jr. <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_c7549ff916c242e3a2900d5b9a3ecd70.setContent(html_83a7aa0e1efa4a8791d4dee8bc2036c4);
+        
+
+        marker_e740e0dd1db74dcc87a07f3a81411bc0.bindPopup(popup_c7549ff916c242e3a2900d5b9a3ecd70)
+        ;
+
+        
+    
+    
+            var marker_070fcc811c95459ea56674964bc156ca = L.marker(
+                [10.3, -84.81666700000001],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_d0e2a485d38d44478b7cab473e571d9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c188e15ae86649a78ea3b75973975b86 = $(`<div id="html_c188e15ae86649a78ea3b75973975b86" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Guanacaste-Puntarenas Border: Along the Continental Divide, in the Reserva Bosque Nuboso along the Sendero Brillante. <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 1984-05-02 00:00:00 <strong>Recolectores:</strong> Charlotte M. Taylor <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_d0e2a485d38d44478b7cab473e571d9f.setContent(html_c188e15ae86649a78ea3b75973975b86);
+        
+
+        marker_070fcc811c95459ea56674964bc156ca.bindPopup(popup_d0e2a485d38d44478b7cab473e571d9f)
+        ;
+
+        
+    
+    
+            var marker_58acf4f2bc664e82bfbb0276e13f079e = L.marker(
+                [10.308889, -84.79555500000001],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_fd33271856bf48feb7a2d71135df5a9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff1465a1ea8e4b6bbc5e40189bd553cd = $(`<div id="html_ff1465a1ea8e4b6bbc5e40189bd553cd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde Coud Forest Reserve (Reserva Bosque Nuboso de Monteverde) Lower Montane Rain Forest (Holdrige Classification) Pacific slope of Continental Divide <strong>Elevación:</strong> 1580.0 m  <strong>Fecha:</strong> 1983-04-19 00:00:00 <strong>Recolectores:</strong> Peter Feinsinger|William H. Busby <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_fd33271856bf48feb7a2d71135df5a9f.setContent(html_ff1465a1ea8e4b6bbc5e40189bd553cd);
+        
+
+        marker_58acf4f2bc664e82bfbb0276e13f079e.bindPopup(popup_fd33271856bf48feb7a2d71135df5a9f)
+        ;
+
+        
+    
+    
+            var marker_f5618cc2233f4874ba33d1bb9005141b = L.marker(
+                [10.3175, -84.806667],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_2f96ccb5bc5f43c8a58f2cb7131edc5b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4758a36a61b14926979bfd21b389c68f = $(`<div id="html_4758a36a61b14926979bfd21b389c68f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, swamp, lower mountain rain forest <strong>Elevación:</strong> 1540.0 m  <strong>Fecha:</strong> 1979-11-25 00:00:00 <strong>Recolectores:</strong> S. Koptur <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_2f96ccb5bc5f43c8a58f2cb7131edc5b.setContent(html_4758a36a61b14926979bfd21b389c68f);
+        
+
+        marker_f5618cc2233f4874ba33d1bb9005141b.bindPopup(popup_2f96ccb5bc5f43c8a58f2cb7131edc5b)
+        ;
+
+        
+    
+    
+            var marker_c0dba77b092043d2a5f513a56abeea30 = L.marker(
+                [10.1, -84.06666700000001],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_06b07506f9ac4491aa073c1db11a6c2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5822246d39fe42cab04c00f85171cdeb = $(`<div id="html_5822246d39fe42cab04c00f85171cdeb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Wet secondary forest about 15 m high with many epiphytes and with frequent rain and wind from the Caribbean, Río Vueltas (upper Río Patria) on the eastern slope of Volcán Barba on the Caribbean side of the Continental Divide <strong>Elevación:</strong> 1900.0 m  <strong>Fecha:</strong> 1973-04-01 00:00:00 <strong>Recolectores:</strong> William C. Burger|Johnnie L. Gentry, Jr. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_06b07506f9ac4491aa073c1db11a6c2d.setContent(html_5822246d39fe42cab04c00f85171cdeb);
+        
+
+        marker_c0dba77b092043d2a5f513a56abeea30.bindPopup(popup_06b07506f9ac4491aa073c1db11a6c2d)
+        ;
+
+        
+    
+    
+            var marker_0ff51bd57d2245f79bdabbb005cab930 = L.marker(
+                [10.3, -84.78],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_4b2846c2b655464a913dddbae0aa58ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd6887fa523146be905984e3a8e99871 = $(`<div id="html_cd6887fa523146be905984e3a8e99871" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cloud forest and swamp forest (premontane and lower montane rain forest formations) in and around the Monteverde Nature reserve, mostly on the Pacific watershed. Puntarenas and Alajuela Provinces. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1975-10-31 00:00:00 <strong>Recolectores:</strong> William C. Burger|Richard A. Baker <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_4b2846c2b655464a913dddbae0aa58ac.setContent(html_cd6887fa523146be905984e3a8e99871);
+        
+
+        marker_0ff51bd57d2245f79bdabbb005cab930.bindPopup(popup_4b2846c2b655464a913dddbae0aa58ac)
+        ;
+
+        
+    
+    
+            var marker_57ae1023b08540c09b43ab8f60fb3a52 = L.marker(
+                [10.083333, -84.083333],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_f626223da94c4402ab87acbc1c1a60b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b43b6369c674061be24cc3e7f95c64a = $(`<div id="html_0b43b6369c674061be24cc3e7f95c64a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along Rio Vueltas from the hold road to Carillo; Alto de Roble" above San Raphael and Uvita. Moist tropical forest. <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1982-05-06 00:00:00 <strong>Recolectores:</strong> Michael J. Huft|Kerry Barringer <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_f626223da94c4402ab87acbc1c1a60b3.setContent(html_0b43b6369c674061be24cc3e7f95c64a);
+        
+
+        marker_57ae1023b08540c09b43ab8f60fb3a52.bindPopup(popup_f626223da94c4402ab87acbc1c1a60b3)
+        ;
+
+        
+    
+    
+            var marker_ce3b5b33f0944c198b58fb3ae97feed5 = L.marker(
+                [10.09, -84.07],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_4fd4605dd86f4a0b916412c1287b9144 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b83198c225984f4797d17b5ace4fb5ed = $(`<div id="html_b83198c225984f4797d17b5ace4fb5ed" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Forest of Río Vueltas <strong>Elevación:</strong> 2100.0 m  <strong>Fecha:</strong> 1969-05-23 00:00:00 <strong>Recolectores:</strong> Luis Diego Gómez P. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_4fd4605dd86f4a0b916412c1287b9144.setContent(html_b83198c225984f4797d17b5ace4fb5ed);
+        
+
+        marker_ce3b5b33f0944c198b58fb3ae97feed5.bindPopup(popup_4fd4605dd86f4a0b916412c1287b9144)
+        ;
+
+        
+    
+    
+            var marker_0bcc45ca68284d378642d9df182e853e = L.marker(
+                [10.08, -84.08],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_8400a0870eef4c30ad9b5537b5bdcf60 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_83b763660cb6469e93bec7135aafba8d = $(`<div id="html_83b763660cb6469e93bec7135aafba8d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Río Vueltas above San Raphael and Uvita "Alto del Roble" on the old road to Carillo. <strong>Elevación:</strong> 1950.0 m  <strong>Fecha:</strong> 1982-05-06 00:00:00 <strong>Recolectores:</strong> Kerry Barringer|Michael J. Huft <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_8400a0870eef4c30ad9b5537b5bdcf60.setContent(html_83b763660cb6469e93bec7135aafba8d);
+        
+
+        marker_0bcc45ca68284d378642d9df182e853e.bindPopup(popup_8400a0870eef4c30ad9b5537b5bdcf60)
+        ;
+
+        
+    
+    
+            var marker_8724a0936aba4fd8898da24f6527c67d = L.marker(
+                [10.07, -84.05],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_5a7a58a2e9644892a21169e509350f24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2965d12b964644bcb04d413145331108 = $(`<div id="html_2965d12b964644bcb04d413145331108" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro de Las Lajas, north of San Isidro <strong>Elevación:</strong> 2200.0 m  <strong>Fecha:</strong> 1926-03-07 00:00:00 <strong>Recolectores:</strong> Paul C. Standley|Juvenal Valerio R. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_5a7a58a2e9644892a21169e509350f24.setContent(html_2965d12b964644bcb04d413145331108);
+        
+
+        marker_8724a0936aba4fd8898da24f6527c67d.bindPopup(popup_5a7a58a2e9644892a21169e509350f24)
+        ;
+
+        
+    
+    
+            var marker_e28f5f40c4c846d196c889a06d0a2b81 = L.marker(
+                [10.05, -84.026667],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_721e5eab6db341fb93eab25422483d8a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6c88eec18f84ea486b6adf946f8f479 = $(`<div id="html_d6c88eec18f84ea486b6adf946f8f479" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pass between Volcán Irazú and Volcán Barba, beyond San Rafael de Heredia. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1969-04-22 00:00:00 <strong>Recolectores:</strong> Gerrit Davidse|Richard W. Pohl <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_721e5eab6db341fb93eab25422483d8a.setContent(html_d6c88eec18f84ea486b6adf946f8f479);
+        
+
+        marker_e28f5f40c4c846d196c889a06d0a2b81.bindPopup(popup_721e5eab6db341fb93eab25422483d8a)
+        ;
+
+        
+    
+    
+            var marker_75e2cc76b3054defbcdd65dc5670b5ec = L.marker(
+                [10.1, -84.06],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_2a251dd3c94c41deb20d12f9733967b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_afc55f273cdb422c858d31ef574f7d1b = $(`<div id="html_afc55f273cdb422c858d31ef574f7d1b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Wet secondary forest about 15 m high, with many epiphytes, with frequent wind and rain forest from the Caribbean, Río Vueltas (upper Río Patria), eastern slope of Volcán Barba near the Continental Divide <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1983-07-02 00:00:00 <strong>Recolectores:</strong> Kerry Barringer|Eric A. Christenson <strong>Identificadores:</strong> C.Taylor</div>`)[0];
+            popup_2a251dd3c94c41deb20d12f9733967b6.setContent(html_afc55f273cdb422c858d31ef574f7d1b);
+        
+
+        marker_75e2cc76b3054defbcdd65dc5670b5ec.bindPopup(popup_2a251dd3c94c41deb20d12f9733967b6)
+        ;
+
+        
+    
+    
+            var marker_ff4b77f2a4c848f8b7d0bca07786734f = L.marker(
+                [10.54, -84.84],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_610d407bc3d94478b2ecc2feceb50fd9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4b5ce4f751a4359bdec4a51b4bf9ee9 = $(`<div id="html_d4b5ce4f751a4359bdec4a51b4bf9ee9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica/Panama <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1983-09-16 00:00:00 <strong>Recolectores:</strong> William H. Busby <strong>Identificadores:</strong> P.Matekaitis</div>`)[0];
+            popup_610d407bc3d94478b2ecc2feceb50fd9.setContent(html_d4b5ce4f751a4359bdec4a51b4bf9ee9);
+        
+
+        marker_ff4b77f2a4c848f8b7d0bca07786734f.bindPopup(popup_610d407bc3d94478b2ecc2feceb50fd9)
+        ;
+
+        
+    
+    
+            var marker_68c493ed73f24caa88ac17b6fb220ce2 = L.marker(
+                [10.083333, -84.06666700000001],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_b7d1e41867a0445989d36c01575b09b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee1c67f4eefc4044a290ee5eb1521365 = $(`<div id="html_ee1c67f4eefc4044a290ee5eb1521365" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Road between San Rafael and Río Las Vueltas, along Río Patria above bridge. <strong>Elevación:</strong> 2030.0 m  <strong>Fecha:</strong> 1979-09-04 00:00:00 <strong>Recolectores:</strong> W. D. Stevens <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_b7d1e41867a0445989d36c01575b09b2.setContent(html_ee1c67f4eefc4044a290ee5eb1521365);
+        
+
+        marker_68c493ed73f24caa88ac17b6fb220ce2.bindPopup(popup_b7d1e41867a0445989d36c01575b09b2)
+        ;
+
+        
+    
+    
+            var marker_df3ab02a8b3c40649ad8484218052c5e = L.marker(
+                [10.695153999999999, -85.0276],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_d421c22c97c64d45b12576362371dfcc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d8b033523e64a2da3ed62d3f6d629b8 = $(`<div id="html_5d8b033523e64a2da3ed62d3f6d629b8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Vocán Tenorio. Cuenca del Zapote.  P.N. Tenorio. Cerro Montezuma. Punto 4, cráter 2. Acompaña Erin Poet y Enrique Méndez. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2010-01-23 00:00:00 <strong>Recolectores:</strong> Daniel Solano|J. A. Azofeifa <strong>Identificadores:</strong> B. Hammel</div>`)[0];
+            popup_d421c22c97c64d45b12576362371dfcc.setContent(html_5d8b033523e64a2da3ed62d3f6d629b8);
+        
+
+        marker_df3ab02a8b3c40649ad8484218052c5e.bindPopup(popup_d421c22c97c64d45b12576362371dfcc)
+        ;
+
+        
+    
+    
+            var marker_68617b3c569f46e8b4f7a52050c74289 = L.marker(
+                [10.695153999999999, -85.027602],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_6370197e82434cf89303299e45046871 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f32f35962dd44aebe27078cf045ba08 = $(`<div id="html_4f32f35962dd44aebe27078cf045ba08" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Punto 4: Cerro Montezuma. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2010-01-23 00:00:00 <strong>Recolectores:</strong> Daniel Solano; Jose Antonio Azofeifa Zuñiga <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_6370197e82434cf89303299e45046871.setContent(html_4f32f35962dd44aebe27078cf045ba08);
+        
+
+        marker_68617b3c569f46e8b4f7a52050c74289.bindPopup(popup_6370197e82434cf89303299e45046871)
+        ;
+
+        
+    
+    
+            var marker_de8f76997b334684a8de88b0c828cff7 = L.marker(
+                [10.695153999999999, -85.027602],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_321de2153a5e4af3ac66974c732d5685 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_83d984a37b7d4425aaea726d8a429a85 = $(`<div id="html_83d984a37b7d4425aaea726d8a429a85" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Punto 4: Cerro Montezuma. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2010-01-23 00:00:00 <strong>Recolectores:</strong> Daniel Solano; Jose Antonio Azofeifa Zuñiga <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_321de2153a5e4af3ac66974c732d5685.setContent(html_83d984a37b7d4425aaea726d8a429a85);
+        
+
+        marker_de8f76997b334684a8de88b0c828cff7.bindPopup(popup_321de2153a5e4af3ac66974c732d5685)
+        ;
+
+        
+    
+    
+            var marker_75deb5457f1d45ef8b13ff8c0af23ffa = L.marker(
+                [10.695153999999999, -85.027602],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_5827aeb095414df5abb8ec42221abde8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87dca4e360f6474683295cd5e890620b = $(`<div id="html_87dca4e360f6474683295cd5e890620b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Punto 4: Cerro Montezuma. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2010-01-23 00:00:00 <strong>Recolectores:</strong> Daniel Solano; Jose Antonio Azofeifa Zuñiga <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_5827aeb095414df5abb8ec42221abde8.setContent(html_87dca4e360f6474683295cd5e890620b);
+        
+
+        marker_75deb5457f1d45ef8b13ff8c0af23ffa.bindPopup(popup_5827aeb095414df5abb8ec42221abde8)
+        ;
+
+        
+    
+    
+            var marker_b190c7a1025a41faa501e12d3410e478 = L.marker(
+                [10.283333, -84.833334],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_9cc8167693104521a73c086bc56a999d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_97c5bded6b7a4d78a78d98329f282f8c = $(`<div id="html_97c5bded6b7a4d78a78d98329f282f8c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde. Lower montane wet forest near TV towers. <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1991-01-05 00:00:00 <strong>Recolectores:</strong> W. J. Hahn <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_9cc8167693104521a73c086bc56a999d.setContent(html_97c5bded6b7a4d78a78d98329f282f8c);
+        
+
+        marker_b190c7a1025a41faa501e12d3410e478.bindPopup(popup_9cc8167693104521a73c086bc56a999d)
+        ;
+
+        
+    
+    
+            var marker_14a7a09bf1dc4a64beddca1bc8c8daca = L.marker(
+                [10.3, -84.783334],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_229674dc2d7542dcaad2623b3ae6aa3a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1890ef5486c3462b802f25d7a1baf58c = $(`<div id="html_1890ef5486c3462b802f25d7a1baf58c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pacific slope and continental divide, across to divide, swamp along Sendero Pantanoso and Sendero Chomogo. <strong>Elevación:</strong> 1575.0 m  <strong>Fecha:</strong> 1990-03-14 00:00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_229674dc2d7542dcaad2623b3ae6aa3a.setContent(html_1890ef5486c3462b802f25d7a1baf58c);
+        
+
+        marker_14a7a09bf1dc4a64beddca1bc8c8daca.bindPopup(popup_229674dc2d7542dcaad2623b3ae6aa3a)
+        ;
+
+        
+    
+    
+            var marker_af0a5261c01f4544b28e8bba37b32a6f = L.marker(
+                [10.0, -84.8333],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_462a39cce56f4e16a804db55a3e0cefb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_781bec055f1e4ac9bd99bf35f7d1674e = $(`<div id="html_781bec055f1e4ac9bd99bf35f7d1674e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1983-09-16 00:00:00 <strong>Recolectores:</strong> W. Busby <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_462a39cce56f4e16a804db55a3e0cefb.setContent(html_781bec055f1e4ac9bd99bf35f7d1674e);
+        
+
+        marker_af0a5261c01f4544b28e8bba37b32a6f.bindPopup(popup_462a39cce56f4e16a804db55a3e0cefb)
+        ;
+
+        
+    
+    
+            var marker_bd9544b35fea4e438d32d284e51e00ba = L.marker(
+                [10.5, -84.0],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_ad7da19db5b24631aedfdc8b17ebd837 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41523289bf8a439a811190c886330bd9 = $(`<div id="html_41523289bf8a439a811190c886330bd9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1983-07-02 00:00:00 <strong>Recolectores:</strong> K. A. Barringer <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_ad7da19db5b24631aedfdc8b17ebd837.setContent(html_41523289bf8a439a811190c886330bd9);
+        
+
+        marker_bd9544b35fea4e438d32d284e51e00ba.bindPopup(popup_ad7da19db5b24631aedfdc8b17ebd837)
+        ;
+
+        
+    
+    
+            var marker_323d8c573279415da6a6a2ecb410d671 = L.marker(
+                [9.97028, -84.18806],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_e2fc4d54356f4c998d46c1dbbbeed960 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_034dd49443974448bc78f85706a85260 = $(`<div id="html_034dd49443974448bc78f85706a85260" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica - Forêts de l'Alto del Roble, massif du volc. de Bacha <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Pittier, H. <strong>Identificadores:</strong> Taylor, C. M. (2010)</div>`)[0];
+            popup_e2fc4d54356f4c998d46c1dbbbeed960.setContent(html_034dd49443974448bc78f85706a85260);
+        
+
+        marker_323d8c573279415da6a6a2ecb410d671.bindPopup(popup_e2fc4d54356f4c998d46c1dbbbeed960)
+        ;
+
+        
+    
+    
+            var marker_50d47737c49f4d60be6b22b5f81c2d71 = L.marker(
+                [10.28, -84.78],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_a231f723107740878fca0048a54d91c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0dbf7fcb735f4d8ab5447fcf1438f578 = $(`<div id="html_0dbf7fcb735f4d8ab5447fcf1438f578" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. B. Monteverde Along Brillante trail and on south to headwaters of Rìo Vera Cruz. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1986-05-02 00:00:00 <strong>Recolectores:</strong> Hammel, Barry E. <strong>Identificadores:</strong> Hammel, Barry E.</div>`)[0];
+            popup_a231f723107740878fca0048a54d91c8.setContent(html_0dbf7fcb735f4d8ab5447fcf1438f578);
+        
+
+        marker_50d47737c49f4d60be6b22b5f81c2d71.bindPopup(popup_a231f723107740878fca0048a54d91c8)
+        ;
+
+        
+    
+    
+            var marker_4818d6c86eeb48d5a990d1c6a08dc473 = L.marker(
+                [10.1, -84.06],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_c8666cc7eb944fe28c408f3e93ec1a0c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_02bb802c821a45848642e28dce9906e9 = $(`<div id="html_02bb802c821a45848642e28dce9906e9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Wet secondary forest about 15 m. high, with many epiphytes, with frequent wind and rain from the Caribbean. Rìo Vueltas, (upper Rìo Patria), eastern slope of Volcàn Barva near the Continental Divide at about 2000 m. <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1983-07-02 00:00:00 <strong>Recolectores:</strong> Barringer, Kerry A. <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_c8666cc7eb944fe28c408f3e93ec1a0c.setContent(html_02bb802c821a45848642e28dce9906e9);
+        
+
+        marker_4818d6c86eeb48d5a990d1c6a08dc473.bindPopup(popup_c8666cc7eb944fe28c408f3e93ec1a0c)
+        ;
+
+        
+    
+    
+            var marker_f48ac3ae7fe64a6e9a60064e4de14d32 = L.marker(
+                [10.13, -84.55],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_2621a77660fe47f783622134a605492c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c469df9c1259484bac42b25b79784f7b = $(`<div id="html_c469df9c1259484bac42b25b79784f7b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerros de La Palma de San Ramòn. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1984-01-24 00:00:00 <strong>Recolectores:</strong> Gómez Laurito, Jorge <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_2621a77660fe47f783622134a605492c.setContent(html_c469df9c1259484bac42b25b79784f7b);
+        
+
+        marker_f48ac3ae7fe64a6e9a60064e4de14d32.bindPopup(popup_2621a77660fe47f783622134a605492c)
+        ;
+
+        
+    
+    
+            var marker_93de615c3a2747a4af626f37770c7c7c = L.marker(
+                [10.31, -83.8],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_167d47d49c3a481baea11b4e38d4b461 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a777ff136a143ce9f22c4437e8b44ec = $(`<div id="html_8a777ff136a143ce9f22c4437e8b44ec" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. B. Monteverde High ride north of the television relay tower above Monteverde and bordering the Monteverde Cloud Forest Nature Reserve at 1750 to 1800 m. elevation. Elfin forest on steep slopes and ridges with taler cloud forest in protected sites. Nea <strong>Elevación:</strong> 1775.0 m  <strong>Fecha:</strong> 1977-02-27 00:00:00 <strong>Recolectores:</strong> Burger, William <strong>Identificadores:</strong> Burger, William</div>`)[0];
+            popup_167d47d49c3a481baea11b4e38d4b461.setContent(html_8a777ff136a143ce9f22c4437e8b44ec);
+        
+
+        marker_93de615c3a2747a4af626f37770c7c7c.bindPopup(popup_167d47d49c3a481baea11b4e38d4b461)
+        ;
+
+        
+    
+    
+            var marker_cdfb5fc3837c474db99fba4a76dd6276 = L.marker(
+                [10.3, -84.78],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_ad60b58c3dd14a9aa5ac3671e37f289b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1aa9ea93dd73477caae85259c026a674 = $(`<div id="html_1aa9ea93dd73477caae85259c026a674" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. B. Monteverde Cloud forest and swamp forest (premontane and lower montane rain forest formations) in and around the Monteverde reserve. Mostly on the Pacific watershed. Puntarenas and Alajuela Provinces.31/10-02/11/1975. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1975-10-31 00:00:00 <strong>Recolectores:</strong> Burger, William <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_ad60b58c3dd14a9aa5ac3671e37f289b.setContent(html_1aa9ea93dd73477caae85259c026a674);
+        
+
+        marker_cdfb5fc3837c474db99fba4a76dd6276.bindPopup(popup_ad60b58c3dd14a9aa5ac3671e37f289b)
+        ;
+
+        
+    
+    
+            var marker_df470a3c339e4b5fb1828621c3ef500a = L.marker(
+                [10.13, -84.55],
+                {}
+            ).addTo(marker_cluster_05123e2976b94530abf95ef66916f4bd);
+        
+    
+        var popup_f8b6cdedd1894c15bbdf0dc5114365b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1fdebc3621054a7b99201ed9681be08c = $(`<div id="html_1fdebc3621054a7b99201ed9681be08c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Palma y el Socorro de San Ramòn. <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Brenes, Alberto Manuel <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_f8b6cdedd1894c15bbdf0dc5114365b0.setContent(html_1fdebc3621054a7b99201ed9681be08c);
+        
+
+        marker_df470a3c339e4b5fb1828621c3ef500a.bindPopup(popup_f8b6cdedd1894c15bbdf0dc5114365b0)
+        ;
+
+        
+    
+    
+            var layer_control_6c7671f4b04941d481a7755928a487e2 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_f983184980b04eb5a1cf18ed89a9b2ca,
+                    "ESRI World Imagery" : tile_layer_bf58d0ec9bc3484fb3addeef4d8ffe40,
+                },
+                overlays :  {
+                    "macro_element_05123e2976b94530abf95ef66916f4bd" : marker_cluster_05123e2976b94530abf95ef66916f4bd,
+                },
+            };
+            L.control.layers(
+                layer_control_6c7671f4b04941d481a7755928a487e2.base_layers,
+                layer_control_6c7671f4b04941d481a7755928a487e2.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_18c8ce3b660f44d8a39f5f934016a3d5);
+            tile_layer_bf58d0ec9bc3484fb3addeef4d8ffe40.remove();
+        
+</script>

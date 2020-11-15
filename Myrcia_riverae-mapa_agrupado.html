@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8b5386ea3f1541238561edd755089d80 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8b5386ea3f1541238561edd755089d80" ></div>
+        
+</body>
+<script>    
+    
+            var map_8b5386ea3f1541238561edd755089d80 = L.map(
+                "map_8b5386ea3f1541238561edd755089d80",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_8b5386ea3f1541238561edd755089d80);
+
+            
+
+        
+    
+            var tile_layer_0fa5e34cb7bd4d758826d2201c5a0bcd = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8b5386ea3f1541238561edd755089d80);
+        
+    
+            var tile_layer_a0aaf7da0f7a4a60bea33c77eeb05cb9 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8b5386ea3f1541238561edd755089d80);
+        
+    
+            var marker_cluster_1b90f10ee6a54bdc805f523ca27e128c = L.markerClusterGroup(
+                {}
+            );
+            map_8b5386ea3f1541238561edd755089d80.addLayer(marker_cluster_1b90f10ee6a54bdc805f523ca27e128c);
+        
+    
+            var marker_ecd7fe116c2746d48c8dbf99724e2c4f = L.marker(
+                [8.645556, -83.16555600000001],
+                {}
+            ).addTo(marker_cluster_1b90f10ee6a54bdc805f523ca27e128c);
+        
+    
+        var popup_aa614c1cfaf14eb6bcc70b6ede5badfa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a09fa8ca53342028580aac57e8c184a = $(`<div id="html_5a09fa8ca53342028580aac57e8c184a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Golfito. Refugio Nacional de Vida Silvestre Golfito. Terrenos estatales al E del área, camino a las torres del ICE <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 2011-05-03 <strong>Recolectores:</strong> D. Santamaria A., L. Diego V. & G. VIllalobos <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_aa614c1cfaf14eb6bcc70b6ede5badfa.setContent(html_5a09fa8ca53342028580aac57e8c184a);
+        
+
+        marker_ecd7fe116c2746d48c8dbf99724e2c4f.bindPopup(popup_aa614c1cfaf14eb6bcc70b6ede5badfa)
+        ;
+
+        
+    
+    
+            var marker_afb08b52048a47f68c020e9e7c72277c = L.marker(
+                [8.6456, -83.1656],
+                {}
+            ).addTo(marker_cluster_1b90f10ee6a54bdc805f523ca27e128c);
+        
+    
+        var popup_94832edd4ccc4adaa31d0325860d3e1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13ee4aceab374e09bb5188b7910bd942 = $(`<div id="html_13ee4aceab374e09bb5188b7910bd942" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Refugio Nacional de Vida Silvestre Golfito, terrenos estatales al E del área, camino a las torres del ICE <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 2011-05-03 <strong>Recolectores:</strong> D. Santamaría Aguilar et al. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_94832edd4ccc4adaa31d0325860d3e1b.setContent(html_13ee4aceab374e09bb5188b7910bd942);
+        
+
+        marker_afb08b52048a47f68c020e9e7c72277c.bindPopup(popup_94832edd4ccc4adaa31d0325860d3e1b)
+        ;
+
+        
+    
+    
+            var marker_450e7c4117dc4cce96a584cca5dc4e4a = L.marker(
+                [8.645556, -83.16555600000001],
+                {}
+            ).addTo(marker_cluster_1b90f10ee6a54bdc805f523ca27e128c);
+        
+    
+        var popup_bc9b29edc3814c28a4d99e32662f241b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33ad194ff8d945438efe85c18e245796 = $(`<div id="html_33ad194ff8d945438efe85c18e245796" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Regugio Nacional de Vida Silvestre Golfito. Terrenos estatales al E del area, camino a las torres del ICE. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 2011-05-03 <strong>Recolectores:</strong> Daniel Santamaría|Luis Diego Vargas|G. Villalobos <strong>Identificadores:</strong> Estrada, Santamaria & Aguilar</div>`)[0];
+            popup_bc9b29edc3814c28a4d99e32662f241b.setContent(html_33ad194ff8d945438efe85c18e245796);
+        
+
+        marker_450e7c4117dc4cce96a584cca5dc4e4a.bindPopup(popup_bc9b29edc3814c28a4d99e32662f241b)
+        ;
+
+        
+    
+    
+            var layer_control_bc9c51f831a84cdda9be7256628a76c6 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_0fa5e34cb7bd4d758826d2201c5a0bcd,
+                    "ESRI World Imagery" : tile_layer_a0aaf7da0f7a4a60bea33c77eeb05cb9,
+                },
+                overlays :  {
+                    "macro_element_1b90f10ee6a54bdc805f523ca27e128c" : marker_cluster_1b90f10ee6a54bdc805f523ca27e128c,
+                },
+            };
+            L.control.layers(
+                layer_control_bc9c51f831a84cdda9be7256628a76c6.base_layers,
+                layer_control_bc9c51f831a84cdda9be7256628a76c6.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_8b5386ea3f1541238561edd755089d80);
+            tile_layer_a0aaf7da0f7a4a60bea33c77eeb05cb9.remove();
+        
+</script>

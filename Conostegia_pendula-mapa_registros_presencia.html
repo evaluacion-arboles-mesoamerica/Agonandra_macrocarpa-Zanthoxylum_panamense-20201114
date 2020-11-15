@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3c99b3b69a1a4ea0887c32103c98c13f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3c99b3b69a1a4ea0887c32103c98c13f" ></div>
+        
+</body>
+<script>    
+    
+            var map_3c99b3b69a1a4ea0887c32103c98c13f = L.map(
+                "map_3c99b3b69a1a4ea0887c32103c98c13f",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+
+            
+
+        
+    
+            var tile_layer_c2a36f7f284148d884384e83b363441e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+            var tile_layer_0a1d93e3ea614ee8bbdf24baae7bb114 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+            var circle_marker_d8c32298807749f7a013ef90cf550021 = L.circleMarker(
+                [9.80206, -83.17761],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_e9def6ee43b34955a3af3193d7854150 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d0d9a70c74954132aac989fb2d2b1b98 = $(`<div id="html_d0d9a70c74954132aac989fb2d2b1b98" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. La Amistad. Valle de la Estrella, Fila Matama. Cerca de 11 km SW del pueblo de Aguas Zarcas. Bosque nuboso primario. Predominando Quercus, Lozania, Cecropia, Drymis; el sotobosque predominando Geonoma sp. Bactris y varias especies de Melastomataceae. El suelo con gran cantidad de materia organica. <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 2007-10-26 <strong>Recolectores:</strong> Daniel Santamaría|et al. <strong>Identificadores:</strong> D. Solano</div>`)[0];
+            popup_e9def6ee43b34955a3af3193d7854150.setContent(html_d0d9a70c74954132aac989fb2d2b1b98);
+        
+
+        circle_marker_d8c32298807749f7a013ef90cf550021.bindPopup(popup_e9def6ee43b34955a3af3193d7854150)
+        ;
+
+        
+    
+    
+            var circle_marker_d886f80090174e4ea2167de5085653ad = L.circleMarker(
+                [9.7194, -83.7689],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_78d114ea56df4a0ca09e4202b7282185 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b4e75dc6e5764edf92ce873ad1589fdb = $(`<div id="html_b4e75dc6e5764edf92ce873ad1589fdb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Tapantí, Sendero Palmito. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1989-08-31 <strong>Recolectores:</strong> G. Umana, M. Valerio & R. Chacón <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_78d114ea56df4a0ca09e4202b7282185.setContent(html_b4e75dc6e5764edf92ce873ad1589fdb);
+        
+
+        circle_marker_d886f80090174e4ea2167de5085653ad.bindPopup(popup_78d114ea56df4a0ca09e4202b7282185)
+        ;
+
+        
+    
+    
+            var circle_marker_d493a8b4744248a2b002a2cbb6e60ca2 = L.circleMarker(
+                [9.73, -83.78],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_a4fc2f8607af4036b91b3a1f5742f6c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff4f35b44b334ae1a85bddd5966ef0fd = $(`<div id="html_ff4f35b44b334ae1a85bddd5966ef0fd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ref. Nac. F. Silvestre Tapanti Orilla del sendero Los Palmitos <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 1990-08-02 <strong>Recolectores:</strong> G. M. Umaña Dodero <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_a4fc2f8607af4036b91b3a1f5742f6c1.setContent(html_ff4f35b44b334ae1a85bddd5966ef0fd);
+        
+
+        circle_marker_d493a8b4744248a2b002a2cbb6e60ca2.bindPopup(popup_a4fc2f8607af4036b91b3a1f5742f6c1)
+        ;
+
+        
+    
+    
+            var circle_marker_7a3ef1ee618244d9837a4aabfc03e7cd = L.circleMarker(
+                [9.716667, -83.783333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_431987962b23424ebdeda0ed79aff608 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b62f4436c92549ddaea1daad9f1b266c = $(`<div id="html_b62f4436c92549ddaea1daad9f1b266c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tapanti Reserve ca 1 km S of jct. of Quebrada Salto and Rio Grande de Orosi, along trail leading eastward into mountains from road. <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 1987-09-01 <strong>Recolectores:</strong> Croat, Thomas B.; Grayum, Michael H. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_431987962b23424ebdeda0ed79aff608.setContent(html_b62f4436c92549ddaea1daad9f1b266c);
+        
+
+        circle_marker_7a3ef1ee618244d9837a4aabfc03e7cd.bindPopup(popup_431987962b23424ebdeda0ed79aff608)
+        ;
+
+        
+    
+    
+            var circle_marker_b8d71a4c30aa4964847f175f05892dad = L.circleMarker(
+                [9.719444000000001, -83.768889],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_9280456035e24608889da2b5fa869147 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31850f9c0f3b47298a0fb51e9e2c0c1d = $(`<div id="html_31850f9c0f3b47298a0fb51e9e2c0c1d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque National Tapanti. Sendero Palmito. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1989-08-01 <strong>Recolectores:</strong> Umaña, Gina; Valerio, M; Chacón, R. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_9280456035e24608889da2b5fa869147.setContent(html_31850f9c0f3b47298a0fb51e9e2c0c1d);
+        
+
+        circle_marker_b8d71a4c30aa4964847f175f05892dad.bindPopup(popup_9280456035e24608889da2b5fa869147)
+        ;
+
+        
+    
+    
+            var circle_marker_4f566becdc944cf39694e3feab106bd3 = L.circleMarker(
+                [10.210833000000001, -84.1125],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_eb8a65d7ec37473aae14201dfc989f82 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2efea01a1f8347be9f9025840bde166e = $(`<div id="html_2efea01a1f8347be9f9025840bde166e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La legua, finca Montreal. Ridge between headwaters of Rio Volcán and Rio San Fernando, just above trail to refugio. <strong>Elevación:</strong> 1740.0 m  <strong>Fecha:</strong> 1992-10-01 <strong>Recolectores:</strong> Boyle, Brad; Boyle, A.; Nelson, H. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_eb8a65d7ec37473aae14201dfc989f82.setContent(html_2efea01a1f8347be9f9025840bde166e);
+        
+
+        circle_marker_4f566becdc944cf39694e3feab106bd3.bindPopup(popup_eb8a65d7ec37473aae14201dfc989f82)
+        ;
+
+        
+    
+    
+            var circle_marker_2a665d041add4b19817697f6c7f4dbd6 = L.circleMarker(
+                [9.716667, -83.783333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_fb7773b888a149fc86d7b76c09a7d027 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c55e9582d40e48ec9f61929c5022eb27 = $(`<div id="html_c55e9582d40e48ec9f61929c5022eb27" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> In forest along creek debouching into Río Grende de Orosi from the E, ca. 1 km upstream from confluence of Quebrada Salta, Tapenti. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1984-07-01 <strong>Recolectores:</strong> Grayum, Michael H.; Sleeper, Pam <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_fb7773b888a149fc86d7b76c09a7d027.setContent(html_c55e9582d40e48ec9f61929c5022eb27);
+        
+
+        circle_marker_2a665d041add4b19817697f6c7f4dbd6.bindPopup(popup_fb7773b888a149fc86d7b76c09a7d027)
+        ;
+
+        
+    
+    
+            var circle_marker_4caff04c5d5a4e9a8d1c9cf87e3cc937 = L.circleMarker(
+                [9.733333, -83.783333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_140a72a5415c4d00aabed96477801d0b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b23247df92b04f6889a2b0877ae8d01e = $(`<div id="html_b23247df92b04f6889a2b0877ae8d01e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ref. Nac. F. Silvestre Tapanti Orilla del sendero Los Palmitos <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 1990-08-01 <strong>Recolectores:</strong> Umaña Dodero, Gina; Kennedy, H.; Nilsson, V.; Chacon, R. <strong>Identificadores:</strong> F. Almeda</div>`)[0];
+            popup_140a72a5415c4d00aabed96477801d0b.setContent(html_b23247df92b04f6889a2b0877ae8d01e);
+        
+
+        circle_marker_4caff04c5d5a4e9a8d1c9cf87e3cc937.bindPopup(popup_140a72a5415c4d00aabed96477801d0b)
+        ;
+
+        
+    
+    
+            var circle_marker_bb15b7997d6241018eb7d707342a2902 = L.circleMarker(
+                [9.7333, -83.7833],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_2488243a5c6443328d4b19fea6914a88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fdfebd5c6f1442c188e04bd347eb718e = $(`<div id="html_fdfebd5c6f1442c188e04bd347eb718e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ref. Nac. F. Silvestre Tapanti, Orilla del Sendero, Los Palmitos <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 1990-08-02 <strong>Recolectores:</strong> G. M. Umaña D., H. Kennedy, V. Nilsson & R. Chacon <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_2488243a5c6443328d4b19fea6914a88.setContent(html_fdfebd5c6f1442c188e04bd347eb718e);
+        
+
+        circle_marker_bb15b7997d6241018eb7d707342a2902.bindPopup(popup_2488243a5c6443328d4b19fea6914a88)
+        ;
+
+        
+    
+    
+            var circle_marker_72dd2630333649909e3a6cf24ee201c5 = L.circleMarker(
+                [9.71, -83.78],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_c4e521cfe9aa4da495e01c72387546cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00d77e0b6cdc4a59becc74a3edac9559 = $(`<div id="html_00d77e0b6cdc4a59becc74a3edac9559" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> In forest along creek debouching into Río Grande de Orosi from the east, ca. 1 km upstream from confluence of Quebrada Salta, Tapantí. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1984-07-12 <strong>Recolectores:</strong> Michael H. Grayum|Pamela J. Sleeper <strong>Identificadores:</strong> F. Almeda, CAS</div>`)[0];
+            popup_c4e521cfe9aa4da495e01c72387546cc.setContent(html_00d77e0b6cdc4a59becc74a3edac9559);
+        
+
+        circle_marker_72dd2630333649909e3a6cf24ee201c5.bindPopup(popup_c4e521cfe9aa4da495e01c72387546cc)
+        ;
+
+        
+    
+    
+            var circle_marker_fb13bb62a18247e28788c24c95987a2c = L.circleMarker(
+                [10.208333, -84.115833],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_3fe08e39bbc34f26ba562e2da10279ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5f43961f3714a368cb1ccf92d37a31a = $(`<div id="html_f5f43961f3714a368cb1ccf92d37a31a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca Montreal, off trail just east of Río San Fernando, immediately adjacent to Parque Nacional Braulio Carrillo, Primary Montane Wet Forest <strong>Elevación:</strong> 1660.0 m  <strong>Fecha:</strong> 1992-10-10 <strong>Recolectores:</strong> Brad Boyle|Alice Boyle|H. Nelson <strong>Identificadores:</strong> F. Almeda (CAS)</div>`)[0];
+            popup_3fe08e39bbc34f26ba562e2da10279ca.setContent(html_f5f43961f3714a368cb1ccf92d37a31a);
+        
+
+        circle_marker_fb13bb62a18247e28788c24c95987a2c.bindPopup(popup_3fe08e39bbc34f26ba562e2da10279ca)
+        ;
+
+        
+    
+    
+            var circle_marker_d7d9913e1f6b495f893edb403b42f2d0 = L.circleMarker(
+                [9.73333, -83.78333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_17fbe0faf4254f6b8851a521091fbdb4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75a20513db9643c4bcf15465bf4f3dee = $(`<div id="html_75a20513db9643c4bcf15465bf4f3dee" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Refugio Nacional de Vida Silvestre Tapantí, orilla del sendero Los Palmitos <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 1990-08-02 <strong>Recolectores:</strong> Gina Umaña Dodero|Helen Kennedy|Vanda Nilsson|Rafael Chacón <strong>Identificadores:</strong> G. Umaña & F. Almeda</div>`)[0];
+            popup_17fbe0faf4254f6b8851a521091fbdb4.setContent(html_75a20513db9643c4bcf15465bf4f3dee);
+        
+
+        circle_marker_d7d9913e1f6b495f893edb403b42f2d0.bindPopup(popup_17fbe0faf4254f6b8851a521091fbdb4)
+        ;
+
+        
+    
+    
+            var circle_marker_2385e271420540759138483caf0ffdfd = L.circleMarker(
+                [10.03888, -84.00416],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_a92b3a0e69e94304806ba05e1ad4052e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5553e5fa69724779af5caa2f7854692e = $(`<div id="html_5553e5fa69724779af5caa2f7854692e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida, Cuenca del Tárcoles, sendero sobre falda del Cerro Hondura, entrada a 500 m, después del tunel Zurqui hacia Guapiles <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2000-02-29 <strong>Recolectores:</strong> Luis Acosta|Víctor H. Ramírez <strong>Identificadores:</strong> F. Almeda (CAS)</div>`)[0];
+            popup_a92b3a0e69e94304806ba05e1ad4052e.setContent(html_5553e5fa69724779af5caa2f7854692e);
+        
+
+        circle_marker_2385e271420540759138483caf0ffdfd.bindPopup(popup_a92b3a0e69e94304806ba05e1ad4052e)
+        ;
+
+        
+    
+    
+            var circle_marker_fc62675c2d9841d99eb8b140d2706796 = L.circleMarker(
+                [9.75, -83.78],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_f2111c9d32e2437ebb2532443cb81706 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3e5e5fdcf9d41199fa5262de232d03f = $(`<div id="html_a3e5e5fdcf9d41199fa5262de232d03f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Tapantí, Valle del Reventazón, Tapantí, Sendero los Palmitos, Curso de plantas realizado en Tapantí <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1994-07-20 <strong>Recolectores:</strong> Freddy A. Quesada <strong>Identificadores:</strong> G. Umaña & F. Almeda</div>`)[0];
+            popup_f2111c9d32e2437ebb2532443cb81706.setContent(html_a3e5e5fdcf9d41199fa5262de232d03f);
+        
+
+        circle_marker_fc62675c2d9841d99eb8b140d2706796.bindPopup(popup_f2111c9d32e2437ebb2532443cb81706)
+        ;
+
+        
+    
+    
+            var circle_marker_87429478e16a4e98883b9017c2f6979c = L.circleMarker(
+                [9.75, -83.78],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_e22a0b2572c744abb48339c6521efbf6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_860d206b3dac42a6999d65ef82d5a715 = $(`<div id="html_860d206b3dac42a6999d65ef82d5a715" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Refugio Nacional de Vida Silvestre Tapantí, Sendero Palmito about 6 km from the main gate to the refuge <strong>Elevación:</strong> 1375.0 m  <strong>Fecha:</strong> 1992-03-05 <strong>Recolectores:</strong> Frank Almeda|Thomas F. Daniel|Gina Umaña Dodero <strong>Identificadores:</strong> F. Almeda</div>`)[0];
+            popup_e22a0b2572c744abb48339c6521efbf6.setContent(html_860d206b3dac42a6999d65ef82d5a715);
+        
+
+        circle_marker_87429478e16a4e98883b9017c2f6979c.bindPopup(popup_e22a0b2572c744abb48339c6521efbf6)
+        ;
+
+        
+    
+    
+            var circle_marker_87456639104e4dfaa32fbd81a3a3e784 = L.circleMarker(
+                [9.80206, -83.17761],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_e1868484b32e4be5b30c795e40f364d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e3aa39c646445bf8ed601081fc94f79 = $(`<div id="html_1e3aa39c646445bf8ed601081fc94f79" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Matama. <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 2007-10-26 <strong>Recolectores:</strong> Daniel Santamaría; A. K. Monro ; Daniel Solano ; Marcos Moraga ; Alexánder Francisco Rodríguez González ; Billen Gamboa R. <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_e1868484b32e4be5b30c795e40f364d5.setContent(html_1e3aa39c646445bf8ed601081fc94f79);
+        
+
+        circle_marker_87456639104e4dfaa32fbd81a3a3e784.bindPopup(popup_e1868484b32e4be5b30c795e40f364d5)
+        ;
+
+        
+    
+    
+            var circle_marker_7adf6fe6ab0a4d8d8da487823a1910e8 = L.circleMarker(
+                [9.80206, -83.17761],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_32e22d07ab364ed0ba602db8401a2c1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86e9a0d87e5a4d3d8da5e3aad39480e0 = $(`<div id="html_86e9a0d87e5a4d3d8da5e3aad39480e0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Matama. <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 2007-10-26 <strong>Recolectores:</strong> Daniel Santamaría; A. K. Monro ; Daniel Solano ; Marcos Moraga ; Alexánder Francisco Rodríguez González ; Billen Gamboa R. <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_32e22d07ab364ed0ba602db8401a2c1d.setContent(html_86e9a0d87e5a4d3d8da5e3aad39480e0);
+        
+
+        circle_marker_7adf6fe6ab0a4d8d8da487823a1910e8.bindPopup(popup_32e22d07ab364ed0ba602db8401a2c1d)
+        ;
+
+        
+    
+    
+            var circle_marker_7588da95d64f4237a330ce4e751ba924 = L.circleMarker(
+                [9.80206, -83.17761],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_484664294bba42bdb618305590f8cda0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e9404059aa045cc9534dd968091babe = $(`<div id="html_9e9404059aa045cc9534dd968091babe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Matama. <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 2007-10-26 <strong>Recolectores:</strong> Daniel Santamaría; A. K. Monro ; Daniel Solano ; Marcos Moraga ; Alexánder Francisco Rodríguez González ; Billen Gamboa R. <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_484664294bba42bdb618305590f8cda0.setContent(html_9e9404059aa045cc9534dd968091babe);
+        
+
+        circle_marker_7588da95d64f4237a330ce4e751ba924.bindPopup(popup_484664294bba42bdb618305590f8cda0)
+        ;
+
+        
+    
+    
+            var circle_marker_2203d7ea6d6845a0bf44a7907511c30d = L.circleMarker(
+                [9.80206, -83.17761],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_5b553215eb0848cf9e092112f943ace7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ea0844acf82410c9c903bf3c1e06639 = $(`<div id="html_9ea0844acf82410c9c903bf3c1e06639" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Matama. <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 2007-10-26 <strong>Recolectores:</strong> Daniel Santamaría; A. K. Monro ; Daniel Solano ; Marcos Moraga ; Alexánder Francisco Rodríguez González ; Billen Gamboa R. <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_5b553215eb0848cf9e092112f943ace7.setContent(html_9ea0844acf82410c9c903bf3c1e06639);
+        
+
+        circle_marker_2203d7ea6d6845a0bf44a7907511c30d.bindPopup(popup_5b553215eb0848cf9e092112f943ace7)
+        ;
+
+        
+    
+    
+            var circle_marker_18a6f9314895440886f74da31f030c43 = L.circleMarker(
+                [9.80206, -83.17761],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_fd48c8cf8edd46ba995f3828bcb59859 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44f93c04a5994a68b15c974bfa4c0763 = $(`<div id="html_44f93c04a5994a68b15c974bfa4c0763" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Matama. <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 2007-10-26 <strong>Recolectores:</strong> Daniel Santamaría; A. K. Monro ; Daniel Solano ; Marcos Moraga ; Alexánder Francisco Rodríguez González ; Billen Gamboa R. <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_fd48c8cf8edd46ba995f3828bcb59859.setContent(html_44f93c04a5994a68b15c974bfa4c0763);
+        
+
+        circle_marker_18a6f9314895440886f74da31f030c43.bindPopup(popup_fd48c8cf8edd46ba995f3828bcb59859)
+        ;
+
+        
+    
+    
+            var circle_marker_ff96691d55444c73baa32dfd10b5f986 = L.circleMarker(
+                [9.80206, -83.17761],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_b3476952ea9e456ba9f307c35ed19248 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5843f83b00c24af0b16e621f1b2379e0 = $(`<div id="html_5843f83b00c24af0b16e621f1b2379e0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Matama. <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 2007-10-26 <strong>Recolectores:</strong> Daniel Santamaría; A. K. Monro ; Daniel Solano ; Marcos Moraga ; Alexánder Francisco Rodríguez González ; Billen Gamboa R. <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_b3476952ea9e456ba9f307c35ed19248.setContent(html_5843f83b00c24af0b16e621f1b2379e0);
+        
+
+        circle_marker_ff96691d55444c73baa32dfd10b5f986.bindPopup(popup_b3476952ea9e456ba9f307c35ed19248)
+        ;
+
+        
+    
+    
+            var circle_marker_91d11650b98c4ca7b587c6fad2af22c3 = L.circleMarker(
+                [10.038889, -84.00416700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_27b647b46b504e48a0dbc8ffb3de0486 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8397bb4ef044d069220781c3f8297a1 = $(`<div id="html_c8397bb4ef044d069220781c3f8297a1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Carretera a Guapiles, cerca a la entrada al Parque Nacional Braulio Carrillo. Remanentes de bosque nuboso. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2000-02-29 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_27b647b46b504e48a0dbc8ffb3de0486.setContent(html_c8397bb4ef044d069220781c3f8297a1);
+        
+
+        circle_marker_91d11650b98c4ca7b587c6fad2af22c3.bindPopup(popup_27b647b46b504e48a0dbc8ffb3de0486)
+        ;
+
+        
+    
+    
+            var circle_marker_efce78dc7c244a71bbcc8e721911dba7 = L.circleMarker(
+                [10.038889, -84.00416700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_1c1782bdd42a4e63b8587911f6f078b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a994ba589fae436ca36e43a8eafd42e4 = $(`<div id="html_a994ba589fae436ca36e43a8eafd42e4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Carretera a Guapiles, cerca a la entrada al Parque Nacional Braulio Carrillo. Remanentes de bosque nuboso. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2000-02-29 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_1c1782bdd42a4e63b8587911f6f078b8.setContent(html_a994ba589fae436ca36e43a8eafd42e4);
+        
+
+        circle_marker_efce78dc7c244a71bbcc8e721911dba7.bindPopup(popup_1c1782bdd42a4e63b8587911f6f078b8)
+        ;
+
+        
+    
+    
+            var circle_marker_96463bcd4ec34d119ac3c68220389530 = L.circleMarker(
+                [10.038889, -84.00416700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_d2123cd66ea04f58b4121347fbb6cde3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d575f422f91b4aaeb5464410c7bbcd5c = $(`<div id="html_d575f422f91b4aaeb5464410c7bbcd5c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Carretera a Guapiles, cerca a la entrada al Parque Nacional Braulio Carrillo. Remanentes de bosque nuboso. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2000-02-29 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_d2123cd66ea04f58b4121347fbb6cde3.setContent(html_d575f422f91b4aaeb5464410c7bbcd5c);
+        
+
+        circle_marker_96463bcd4ec34d119ac3c68220389530.bindPopup(popup_d2123cd66ea04f58b4121347fbb6cde3)
+        ;
+
+        
+    
+    
+            var circle_marker_49c3c1ebeb3241fba5232d70b39c2b46 = L.circleMarker(
+                [10.210833000000001, -84.1125],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_721e0fdd81354e579df4aec62e916e01 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a93c5f0bc0b47478ee7f607d9599a68 = $(`<div id="html_8a93c5f0bc0b47478ee7f607d9599a68" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Legua, Finca Montreal. Ridge between headwaters of Rio Volcan and Rio San Fernando, just above trail to refugio at 1800 m. Primary Montane Wet Forest. <strong>Elevación:</strong> 1740.0 m  <strong>Fecha:</strong> 1992-10-09 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> Umaña, Gina</div>`)[0];
+            popup_721e0fdd81354e579df4aec62e916e01.setContent(html_8a93c5f0bc0b47478ee7f607d9599a68);
+        
+
+        circle_marker_49c3c1ebeb3241fba5232d70b39c2b46.bindPopup(popup_721e0fdd81354e579df4aec62e916e01)
+        ;
+
+        
+    
+    
+            var circle_marker_f26606cfca50439fb3a4b863f23a9f9e = L.circleMarker(
+                [9.75, -83.783333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_be855379bc83431b8d86b217021536b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60e9522b6d3e47cd841c35bdc9329567 = $(`<div id="html_60e9522b6d3e47cd841c35bdc9329567" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tapanti; Sendero los Palmitos, Curso de plantas realizado en Tapanti. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1994-07-20 <strong>Recolectores:</strong> Freddy A. Quesada <strong>Identificadores:</strong> Umaña, Gina</div>`)[0];
+            popup_be855379bc83431b8d86b217021536b5.setContent(html_60e9522b6d3e47cd841c35bdc9329567);
+        
+
+        circle_marker_f26606cfca50439fb3a4b863f23a9f9e.bindPopup(popup_be855379bc83431b8d86b217021536b5)
+        ;
+
+        
+    
+    
+            var circle_marker_1cd0a1099ad04343b16e4e98e68f946e = L.circleMarker(
+                [9.733333, -83.783333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_15e77bc1ebaa47ee989b28dc52237b75 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_373b23429d3146749926321bcd8efdd1 = $(`<div id="html_373b23429d3146749926321bcd8efdd1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Refugio Nacional de Vida Silvestre Tapanti, orilla de Sendero Los Palmitos <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 1990-08-02 <strong>Recolectores:</strong> Gina Umaña <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_15e77bc1ebaa47ee989b28dc52237b75.setContent(html_373b23429d3146749926321bcd8efdd1);
+        
+
+        circle_marker_1cd0a1099ad04343b16e4e98e68f946e.bindPopup(popup_15e77bc1ebaa47ee989b28dc52237b75)
+        ;
+
+        
+    
+    
+            var circle_marker_80fef1da788d45859907f2270fae3cba = L.circleMarker(
+                [10.03, -84.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_b9fd4fe49fd14e7a9953cb9c53f2d0dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_302ecdcba2804a278ac7e8fb1cd5a33c = $(`<div id="html_302ecdcba2804a278ac7e8fb1cd5a33c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero sobre falda del Cerro Hondura, entrada a 500 m; despuès del túnel Zurquí  hacia Guápiles. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2000-02-29 <strong>Recolectores:</strong> Acosta, Luis <strong>Identificadores:</strong> Rodríguez, Alexánder</div>`)[0];
+            popup_b9fd4fe49fd14e7a9953cb9c53f2d0dd.setContent(html_302ecdcba2804a278ac7e8fb1cd5a33c);
+        
+
+        circle_marker_80fef1da788d45859907f2270fae3cba.bindPopup(popup_b9fd4fe49fd14e7a9953cb9c53f2d0dd)
+        ;
+
+        
+    
+    
+            var circle_marker_ef856564fa964902be61bcbe8709ec94 = L.circleMarker(
+                [9.8, -83.95],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_daf17f13455d4aab83af9b75f00612f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_990373cc200746a6a799466409b45ee9 = $(`<div id="html_990373cc200746a6a799466409b45ee9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N.  Tapantí.  Sendero Palmito. <strong>Elevación:</strong> 1630.0 m  <strong>Fecha:</strong> 1993-09-24 <strong>Recolectores:</strong> Umaña, Gina <strong>Identificadores:</strong> Estrada, Armando</div>`)[0];
+            popup_daf17f13455d4aab83af9b75f00612f4.setContent(html_990373cc200746a6a799466409b45ee9);
+        
+
+        circle_marker_ef856564fa964902be61bcbe8709ec94.bindPopup(popup_daf17f13455d4aab83af9b75f00612f4)
+        ;
+
+        
+    
+    
+            var circle_marker_c163a970caa140bcac1ed2eae3e26f0a = L.circleMarker(
+                [10.21, -84.1],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_9775d66fa8ae48d798de3c7f54fd6710 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_649e260deec248c385f27f1190070498 = $(`<div id="html_649e260deec248c385f27f1190070498" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vara Blanca. San Rafael. P. N. Braulio Carrillo. <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1992-07-01 <strong>Recolectores:</strong> Ballestero, Miguel <strong>Identificadores:</strong> Estrada, Armando</div>`)[0];
+            popup_9775d66fa8ae48d798de3c7f54fd6710.setContent(html_649e260deec248c385f27f1190070498);
+        
+
+        circle_marker_c163a970caa140bcac1ed2eae3e26f0a.bindPopup(popup_9775d66fa8ae48d798de3c7f54fd6710)
+        ;
+
+        
+    
+    
+            var circle_marker_d94b78fe0a484f15bd5abbb88894f5a9 = L.circleMarker(
+                [9.75, -83.78],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_077926e2d9464e17bea1c96caab65e28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89a58dfbe3dd4ea68e7bac04401dc5b5 = $(`<div id="html_89a58dfbe3dd4ea68e7bac04401dc5b5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Tapantí Valle del Reventazón. Sendero Los Palmitos. Curso de plantas realizado en Tapantí. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1994-07-20 <strong>Recolectores:</strong> Quesada, Freddy <strong>Identificadores:</strong> G. Umaña & F. Almeda</div>`)[0];
+            popup_077926e2d9464e17bea1c96caab65e28.setContent(html_89a58dfbe3dd4ea68e7bac04401dc5b5);
+        
+
+        circle_marker_d94b78fe0a484f15bd5abbb88894f5a9.bindPopup(popup_077926e2d9464e17bea1c96caab65e28)
+        ;
+
+        
+    
+    
+            var circle_marker_b22e15c21b374066a500bc5636903d49 = L.circleMarker(
+                [9.75, -83.78],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_7a8a78bb3b014c929fd60437c9a07312 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4878888cc4f346b298ae10270355db55 = $(`<div id="html_4878888cc4f346b298ae10270355db55" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Tapantí-Macizo Cerro de La Muerte Refugio Nacional de Vida Silvestre Tapantí. Orilla del sendero Los Palmitos. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1990-08-02 <strong>Recolectores:</strong> Umaña, Gina <strong>Identificadores:</strong> Umaña, Gina</div>`)[0];
+            popup_7a8a78bb3b014c929fd60437c9a07312.setContent(html_4878888cc4f346b298ae10270355db55);
+        
+
+        circle_marker_b22e15c21b374066a500bc5636903d49.bindPopup(popup_7a8a78bb3b014c929fd60437c9a07312)
+        ;
+
+        
+    
+    
+            var circle_marker_3bb9a519beeb47d1b0e0ebce15d556cc = L.circleMarker(
+                [9.75, -83.78],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+        
+    
+        var popup_c0304da2548d4156b5b879e6992c2e11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4da84a5d607f45bdbf81ffda84718d73 = $(`<div id="html_4da84a5d607f45bdbf81ffda84718d73" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Tapantí-Macizo Cerro de La Muerte Refugio Nacional de Vida Silvestre Tapantí. Orilla del sendero Los Palmitos. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1990-08-02 <strong>Recolectores:</strong> Umaña, Gina <strong>Identificadores:</strong> G. Umaña & F. Almeda</div>`)[0];
+            popup_c0304da2548d4156b5b879e6992c2e11.setContent(html_4da84a5d607f45bdbf81ffda84718d73);
+        
+
+        circle_marker_3bb9a519beeb47d1b0e0ebce15d556cc.bindPopup(popup_c0304da2548d4156b5b879e6992c2e11)
+        ;
+
+        
+    
+    
+            var layer_control_0a3b58e0a35644afaad407b4a6f19704 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_c2a36f7f284148d884384e83b363441e,
+                    "ESRI World Imagery" : tile_layer_0a1d93e3ea614ee8bbdf24baae7bb114,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_0a3b58e0a35644afaad407b4a6f19704.base_layers,
+                layer_control_0a3b58e0a35644afaad407b4a6f19704.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_3c99b3b69a1a4ea0887c32103c98c13f);
+            tile_layer_0a1d93e3ea614ee8bbdf24baae7bb114.remove();
+        
+</script>

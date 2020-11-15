@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8069a17ec7dd47b984a4f0387a7d3903 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8069a17ec7dd47b984a4f0387a7d3903" ></div>
+        
+</body>
+<script>    
+    
+            var map_8069a17ec7dd47b984a4f0387a7d3903 = L.map(
+                "map_8069a17ec7dd47b984a4f0387a7d3903",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_8069a17ec7dd47b984a4f0387a7d3903);
+
+            
+
+        
+    
+            var tile_layer_6d7c6aaad6424db9865752d3ae7c9b99 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8069a17ec7dd47b984a4f0387a7d3903);
+        
+    
+            var tile_layer_eda9cf3707db417bbcf29113c566302c = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8069a17ec7dd47b984a4f0387a7d3903);
+        
+    
+            var marker_cluster_dc28d5bb5e4c46649a798025d5423139 = L.markerClusterGroup(
+                {}
+            );
+            map_8069a17ec7dd47b984a4f0387a7d3903.addLayer(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+            var marker_61a48e0064ee4490a24ff7c8d74be8ce = L.marker(
+                [9.0, -80.0],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_eb2a9849fe24421aad652fdf5963f45d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2aa9c7b1d12443478065020c4a2f418c = $(`<div id="html_2aa9c7b1d12443478065020c4a2f418c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Prov. de Chiriqui. Vcty. Finca Lerida. Upper forested southern slopes of the Quebrada Velo.; 5000 ft. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1947-07-25 <strong>Recolectores:</strong> Allen, P.H. (no. 4744) <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_eb2a9849fe24421aad652fdf5963f45d.setContent(html_2aa9c7b1d12443478065020c4a2f418c);
+        
+
+        marker_61a48e0064ee4490a24ff7c8d74be8ce.bindPopup(popup_eb2a9849fe24421aad652fdf5963f45d)
+        ;
+
+        
+    
+    
+            var marker_b15beeb3e6bb4d04935ccc69b81b73cb = L.marker(
+                [9.91, -84.16],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_12aebea14842494f9cc45ccbe07bb5b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d11cfe9a6d304e19ba3c13902d373212 = $(`<div id="html_d11cfe9a6d304e19ba3c13902d373212" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerros de Escazú; Escazú a Alto Trapezco por Bebedero.  [Origianl Label Coordinates 9°55'0"N 84°10'0"W] <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1993-10-03 <strong>Recolectores:</strong> Barry E. Hammel|Michael Garita|Omar Garita <strong>Identificadores:</strong> B. E. Hammel (MO)</div>`)[0];
+            popup_12aebea14842494f9cc45ccbe07bb5b4.setContent(html_d11cfe9a6d304e19ba3c13902d373212);
+        
+
+        marker_b15beeb3e6bb4d04935ccc69b81b73cb.bindPopup(popup_12aebea14842494f9cc45ccbe07bb5b4)
+        ;
+
+        
+    
+    
+            var marker_4af1d05d092e4575a681e54d2dbcd04a = L.marker(
+                [10.28, -84.78],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_1d1be07b638044e1bc6931d417a0032e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05ac084787134db780ebe38407659798 = $(`<div id="html_05ac084787134db780ebe38407659798" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monte Verde to San Luis Valley; cliff edge and canyon slopes along Río San Luis <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1988-07-14 <strong>Recolectores:</strong> Barry E. Hammel|William A. Haber|Willow Zuchowski <strong>Identificadores:</strong> C. M. Taylor</div>`)[0];
+            popup_1d1be07b638044e1bc6931d417a0032e.setContent(html_05ac084787134db780ebe38407659798);
+        
+
+        marker_4af1d05d092e4575a681e54d2dbcd04a.bindPopup(popup_1d1be07b638044e1bc6931d417a0032e)
+        ;
+
+        
+    
+    
+            var marker_60f05ee6ef9a42ffacb86dc05fe76173 = L.marker(
+                [10.28, -84.8],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_25911f1f182d43c6b61f4c1682e384c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_589197dd2ee14e479649443cb71d7c6a = $(`<div id="html_589197dd2ee14e479649443cb71d7c6a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> In woods around community of Monte Verde ca. 3 km down road past Pensión Flor Mar. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1985-06-09 <strong>Recolectores:</strong> Barry E. Hammel|Jill Trainer <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_25911f1f182d43c6b61f4c1682e384c5.setContent(html_589197dd2ee14e479649443cb71d7c6a);
+        
+
+        marker_60f05ee6ef9a42ffacb86dc05fe76173.bindPopup(popup_25911f1f182d43c6b61f4c1682e384c5)
+        ;
+
+        
+    
+    
+            var marker_4ae56bca6bae49f89fe0bf0db281af5d = L.marker(
+                [10.30583, -84.80861],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_281717864c4140c9859c5d8ce9e521d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef3193b9f9ae44e0a8de974c198f7068 = $(`<div id="html_ef3193b9f9ae44e0a8de974c198f7068" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, lower community forest patch <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1985-07-31 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> C. M. Taylor</div>`)[0];
+            popup_281717864c4140c9859c5d8ce9e521d3.setContent(html_ef3193b9f9ae44e0a8de974c198f7068);
+        
+
+        marker_4ae56bca6bae49f89fe0bf0db281af5d.bindPopup(popup_281717864c4140c9859c5d8ce9e521d3)
+        ;
+
+        
+    
+    
+            var marker_16602b5a4e9e4e999cc833b2a230d49d = L.marker(
+                [8.716660000000001, -82.21666],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_0d238570eff04e5083201ac8ccf4f743 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_85ae78abf13a4a518eae994985707416 = $(`<div id="html_85ae78abf13a4a518eae994985707416" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along the road between Gualaca and the Fortuna Dam site, at 7.9 mi NW of Los Planos de Hornito. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1980-04-09 <strong>Recolectores:</strong> Thomas M. Antonio <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_0d238570eff04e5083201ac8ccf4f743.setContent(html_85ae78abf13a4a518eae994985707416);
+        
+
+        marker_16602b5a4e9e4e999cc833b2a230d49d.bindPopup(popup_0d238570eff04e5083201ac8ccf4f743)
+        ;
+
+        
+    
+    
+            var marker_3b4566a33e4249c5b9fa9ba15d032b68 = L.marker(
+                [8.705556, -82.230556],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_8f91d69ae1ab4fdea5419ccf429591d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ca5066ae33a4864b01d318cbafcb4fa = $(`<div id="html_4ca5066ae33a4864b01d318cbafcb4fa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along the road to the Fortuna Dam site, N of Gualaca, 22.7 mi beyond the bridge over the Río Estí, 11.8 mi N of Los Planes de Hornito, 10.7 mi N of jct. to tunnel. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1979-11-26 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_8f91d69ae1ab4fdea5419ccf429591d8.setContent(html_4ca5066ae33a4864b01d318cbafcb4fa);
+        
+
+        marker_3b4566a33e4249c5b9fa9ba15d032b68.bindPopup(popup_8f91d69ae1ab4fdea5419ccf429591d8)
+        ;
+
+        
+    
+    
+            var marker_daba1b43229f4333ba77c952b18aa6bb = L.marker(
+                [8.48222, -81.09805],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_13bc2d834e8843ceb2eb61e5620c9be0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6beda7c9ea647778763899211f387b7 = $(`<div id="html_f6beda7c9ea647778763899211f387b7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Shoulder of Cerro Tuti [Tute] <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1977-05-25 <strong>Recolectores:</strong> James P. Folsom|B. Edwards|A. Edwards <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_13bc2d834e8843ceb2eb61e5620c9be0.setContent(html_f6beda7c9ea647778763899211f387b7);
+        
+
+        marker_daba1b43229f4333ba77c952b18aa6bb.bindPopup(popup_13bc2d834e8843ceb2eb61e5620c9be0)
+        ;
+
+        
+    
+    
+            var marker_5e27624c13aa4f16b4a1adeade64d065 = L.marker(
+                [8.826667, -82.485],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_a766a60a659845748e3968ca723cfe5e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a57f373e01644cd388595013e3452148 = $(`<div id="html_a57f373e01644cd388595013e3452148" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity Finca Lerida. Upper forested southern slopes of the Quebrada Velo <strong>Elevación:</strong> 1524.0 m  <strong>Fecha:</strong> 1947-07-25 <strong>Recolectores:</strong> Paul H. Allen <strong>Identificadores:</strong> M.Madison</div>`)[0];
+            popup_a766a60a659845748e3968ca723cfe5e.setContent(html_a57f373e01644cd388595013e3452148);
+        
+
+        marker_5e27624c13aa4f16b4a1adeade64d065.bindPopup(popup_a766a60a659845748e3968ca723cfe5e)
+        ;
+
+        
+    
+    
+            var marker_706a31a49f3e4fc48bf5019719b86e26 = L.marker(
+                [8.898608, -82.75200000000001],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_a44e45c27d8147d0bc3fef5bf503ea87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a0f37198ee44b589684a705f1d47fa7 = $(`<div id="html_2a0f37198ee44b589684a705f1d47fa7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quijada del Diablo, a 3 km NE de Mellizas, sobre limite entre Panama y Costa Rica. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1998-06-20 <strong>Recolectores:</strong> Billen Gamboa R. <strong>Identificadores:</strong> B. Hammel</div>`)[0];
+            popup_a44e45c27d8147d0bc3fef5bf503ea87.setContent(html_2a0f37198ee44b589684a705f1d47fa7);
+        
+
+        marker_706a31a49f3e4fc48bf5019719b86e26.bindPopup(popup_a44e45c27d8147d0bc3fef5bf503ea87)
+        ;
+
+        
+    
+    
+            var marker_1333aee04358477cbd10276787b1c983 = L.marker(
+                [9.889833, -84.156222],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_45b918efe9d74279b3ec1ef370e7936e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_892ee3134da5481095ede0389ae26fc9 = $(`<div id="html_892ee3134da5481095ede0389ae26fc9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerros de Escazú. Fila entre Bebedero  de Escazú y Salitral de Santa Ana, en camino sin salida hacia el Pico Blanco. <strong>Elevación:</strong> 1787.5 m  <strong>Fecha:</strong> 2014-09-10 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_45b918efe9d74279b3ec1ef370e7936e.setContent(html_892ee3134da5481095ede0389ae26fc9);
+        
+
+        marker_1333aee04358477cbd10276787b1c983.bindPopup(popup_45b918efe9d74279b3ec1ef370e7936e)
+        ;
+
+        
+    
+    
+            var marker_19f3673442b34eedaa423c277fb01f04 = L.marker(
+                [9.889833, -84.156222],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_1f152ab7851f44f39d5007333dbe9b24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_671fa910ec5947d3a8524367dc9277b5 = $(`<div id="html_671fa910ec5947d3a8524367dc9277b5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerros de Escazú. Fila entre Bebedero  de Escazú y Salitral de Santa Ana, en camino sin salida hacia el Pico Blanco. <strong>Elevación:</strong> 1787.5 m  <strong>Fecha:</strong> 2014-09-10 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_1f152ab7851f44f39d5007333dbe9b24.setContent(html_671fa910ec5947d3a8524367dc9277b5);
+        
+
+        marker_19f3673442b34eedaa423c277fb01f04.bindPopup(popup_1f152ab7851f44f39d5007333dbe9b24)
+        ;
+
+        
+    
+    
+            var marker_6de5d1611bc04283804560c06d333ffe = L.marker(
+                [9.889833, -84.156222],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_f36d41f411384f5fbe9148a209d2f388 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fbd9aeca73744825ac9a548e09afd021 = $(`<div id="html_fbd9aeca73744825ac9a548e09afd021" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerros de Escazú. Fila entre Bebedero  de Escazú y Salitral de Santa Ana, en camino sin salida hacia el Pico Blanco. <strong>Elevación:</strong> 1787.5 m  <strong>Fecha:</strong> 2014-09-10 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_f36d41f411384f5fbe9148a209d2f388.setContent(html_fbd9aeca73744825ac9a548e09afd021);
+        
+
+        marker_6de5d1611bc04283804560c06d333ffe.bindPopup(popup_f36d41f411384f5fbe9148a209d2f388)
+        ;
+
+        
+    
+    
+            var marker_2b3630a10c2146039ca8222762f92690 = L.marker(
+                [9.889833, -84.156222],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_43ed12e7cb9c44fd9e1ed7cf80775972 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb99be279d4d40cda76ce1fd290d6568 = $(`<div id="html_eb99be279d4d40cda76ce1fd290d6568" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerros de Escazú. Fila entre Bebedero  de Escazú y Salitral de Santa Ana, en camino sin salida hacia el Pico Blanco. <strong>Elevación:</strong> 1787.5 m  <strong>Fecha:</strong> 2014-09-10 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_43ed12e7cb9c44fd9e1ed7cf80775972.setContent(html_eb99be279d4d40cda76ce1fd290d6568);
+        
+
+        marker_2b3630a10c2146039ca8222762f92690.bindPopup(popup_43ed12e7cb9c44fd9e1ed7cf80775972)
+        ;
+
+        
+    
+    
+            var marker_b01f13e7bcbd41059ec519fdff1e55b4 = L.marker(
+                [9.890278, -84.186111],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_d104814dabb84d5faa18383ab28f52ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea322675aa464335bc054082518f8f0a = $(`<div id="html_ea322675aa464335bc054082518f8f0a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pabellón.  Camino que lleva a la laguna. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 2005-08-01 <strong>Recolectores:</strong> Daniel Santamaría <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_d104814dabb84d5faa18383ab28f52ec.setContent(html_ea322675aa464335bc054082518f8f0a);
+        
+
+        marker_b01f13e7bcbd41059ec519fdff1e55b4.bindPopup(popup_d104814dabb84d5faa18383ab28f52ec)
+        ;
+
+        
+    
+    
+            var marker_2013092c709c4556ac7defa895abde33 = L.marker(
+                [9.890278, -84.186111],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_414485077a9a4b5b9bb4317f8054e006 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c6ca03cf036446a8ea6f340c3735167 = $(`<div id="html_0c6ca03cf036446a8ea6f340c3735167" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pabellón.  Camino que lleva a la laguna. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 2005-08-01 <strong>Recolectores:</strong> Daniel Santamaría <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_414485077a9a4b5b9bb4317f8054e006.setContent(html_0c6ca03cf036446a8ea6f340c3735167);
+        
+
+        marker_2013092c709c4556ac7defa895abde33.bindPopup(popup_414485077a9a4b5b9bb4317f8054e006)
+        ;
+
+        
+    
+    
+            var marker_764b3c1e5ded473799ec14684795d1a4 = L.marker(
+                [9.624722, -83.962778],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_dd24433fb02e4a0184d7e4317c0ef9b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a14d1306ae04d748d3fba3d471bab70 = $(`<div id="html_7a14d1306ae04d748d3fba3d471bab70" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Santa María de Dota por Cedral, finca de J. Solís. <strong>Elevación:</strong> 1935.0 m  <strong>Fecha:</strong> 2005-08-03 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_dd24433fb02e4a0184d7e4317c0ef9b9.setContent(html_7a14d1306ae04d748d3fba3d471bab70);
+        
+
+        marker_764b3c1e5ded473799ec14684795d1a4.bindPopup(popup_dd24433fb02e4a0184d7e4317c0ef9b9)
+        ;
+
+        
+    
+    
+            var marker_83575503ea7b4e4d86c58d0f4aa9d5e2 = L.marker(
+                [9.624722, -83.962778],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_71c8abe4c361459a95bd6371389c9011 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98a385de4307471c86fecf4ddc8e9def = $(`<div id="html_98a385de4307471c86fecf4ddc8e9def" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Santa María de Dota por Cedral, finca de J. Solís. <strong>Elevación:</strong> 1935.0 m  <strong>Fecha:</strong> 2005-08-03 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_71c8abe4c361459a95bd6371389c9011.setContent(html_98a385de4307471c86fecf4ddc8e9def);
+        
+
+        marker_83575503ea7b4e4d86c58d0f4aa9d5e2.bindPopup(popup_71c8abe4c361459a95bd6371389c9011)
+        ;
+
+        
+    
+    
+            var marker_317d0694838f40acb2e8e56ae5ae258c = L.marker(
+                [9.624722, -83.962778],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_dc2a3f0623024cc0b44ef6501ea42837 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04d80bbb5eee47329abd51a67816a7ff = $(`<div id="html_04d80bbb5eee47329abd51a67816a7ff" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Santa María de Dota por Cedral, finca de J. Solís. <strong>Elevación:</strong> 1935.0 m  <strong>Fecha:</strong> 2005-08-03 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_dc2a3f0623024cc0b44ef6501ea42837.setContent(html_04d80bbb5eee47329abd51a67816a7ff);
+        
+
+        marker_317d0694838f40acb2e8e56ae5ae258c.bindPopup(popup_dc2a3f0623024cc0b44ef6501ea42837)
+        ;
+
+        
+    
+    
+            var marker_72b57205adb64688bd8c3fac00250270 = L.marker(
+                [9.848892999999999, -84.155565],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_3add081217164ae799791f9710591164 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4bf6d0a9c92a4117b8c5c26b7fd49db1 = $(`<div id="html_4bf6d0a9c92a4117b8c5c26b7fd49db1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Salvaje, Cerros de Escazu. <strong>Elevación:</strong> 1850.0 m  <strong>Fecha:</strong> 2002-09-20 <strong>Recolectores:</strong> Ricardo Kriebel; David Cordero <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_3add081217164ae799791f9710591164.setContent(html_4bf6d0a9c92a4117b8c5c26b7fd49db1);
+        
+
+        marker_72b57205adb64688bd8c3fac00250270.bindPopup(popup_3add081217164ae799791f9710591164)
+        ;
+
+        
+    
+    
+            var marker_657f6f5b4e8c4d4a890b2f25a780975c = L.marker(
+                [9.848892999999999, -84.155565],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_e06c976b5f324bf8b921dcd9fa02c154 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a343e2f2a33344649346ef2e724bc17b = $(`<div id="html_a343e2f2a33344649346ef2e724bc17b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Salvaje, Cerros de Escazu. <strong>Elevación:</strong> 1850.0 m  <strong>Fecha:</strong> 2002-09-20 <strong>Recolectores:</strong> Ricardo Kriebel; David Cordero <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_e06c976b5f324bf8b921dcd9fa02c154.setContent(html_a343e2f2a33344649346ef2e724bc17b);
+        
+
+        marker_657f6f5b4e8c4d4a890b2f25a780975c.bindPopup(popup_e06c976b5f324bf8b921dcd9fa02c154)
+        ;
+
+        
+    
+    
+            var marker_9290e22e13a14398b18261fface7b9c7 = L.marker(
+                [10.278074, -84.798908],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_9741fed871d74437a8b8a9bc3f51b47d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a6cee8877664858ace83fee3723edc3 = $(`<div id="html_1a6cee8877664858ace83fee3723edc3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca Buen Amigo, Camino a Río San Luis. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1988-07-14 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_9741fed871d74437a8b8a9bc3f51b47d.setContent(html_1a6cee8877664858ace83fee3723edc3);
+        
+
+        marker_9290e22e13a14398b18261fface7b9c7.bindPopup(popup_9741fed871d74437a8b8a9bc3f51b47d)
+        ;
+
+        
+    
+    
+            var marker_fb8dafcec43b4748acfc45c9ee74112c = L.marker(
+                [8.898608, -82.75200500000001],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_b3132d94c5ad43d3a7e635952fec7658 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af5adf4adcfb4e70a5fa48bb134eb6b5 = $(`<div id="html_af5adf4adcfb4e70a5fa48bb134eb6b5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quijada del Diablo, 3.1 Km NE. de Mellizas <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1998-06-20 <strong>Recolectores:</strong> Billen Gamboa R. <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_b3132d94c5ad43d3a7e635952fec7658.setContent(html_af5adf4adcfb4e70a5fa48bb134eb6b5);
+        
+
+        marker_fb8dafcec43b4748acfc45c9ee74112c.bindPopup(popup_b3132d94c5ad43d3a7e635952fec7658)
+        ;
+
+        
+    
+    
+            var marker_843b151aca324822bbc22ef9507374c0 = L.marker(
+                [8.898608, -82.75200500000001],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_e47bdf37798f4c339bf61f83c6bb76f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_098348643c5640a099d6fa6a88fe5973 = $(`<div id="html_098348643c5640a099d6fa6a88fe5973" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quijada del Diablo, 3.1 Km NE. de Mellizas <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1998-06-20 <strong>Recolectores:</strong> Billen Gamboa R. <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_e47bdf37798f4c339bf61f83c6bb76f3.setContent(html_098348643c5640a099d6fa6a88fe5973);
+        
+
+        marker_843b151aca324822bbc22ef9507374c0.bindPopup(popup_e47bdf37798f4c339bf61f83c6bb76f3)
+        ;
+
+        
+    
+    
+            var marker_c6f4c36f7693498683ddbc0e221983f5 = L.marker(
+                [8.898608, -82.75200500000001],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_07fb7094a668420190a5f2bf80933cdb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9314e2cab5ad4bb88a179d8ecfebec2d = $(`<div id="html_9314e2cab5ad4bb88a179d8ecfebec2d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quijada del Diablo, 3.1 Km NE. de Mellizas <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1998-06-20 <strong>Recolectores:</strong> Billen Gamboa R. <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_07fb7094a668420190a5f2bf80933cdb.setContent(html_9314e2cab5ad4bb88a179d8ecfebec2d);
+        
+
+        marker_c6f4c36f7693498683ddbc0e221983f5.bindPopup(popup_07fb7094a668420190a5f2bf80933cdb)
+        ;
+
+        
+    
+    
+            var marker_58fa9e1d8a854a1da84367f19d24be5b = L.marker(
+                [8.898608, -82.75200500000001],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_b2d75e24a4934cb4af8e34b6afa753fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0dd7b44aac9d4bc7868ae1c2624d6fe0 = $(`<div id="html_0dd7b44aac9d4bc7868ae1c2624d6fe0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quijada del Diablo, 3.1 Km NE. de Mellizas <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1998-06-20 <strong>Recolectores:</strong> Billen Gamboa R. <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_b2d75e24a4934cb4af8e34b6afa753fb.setContent(html_0dd7b44aac9d4bc7868ae1c2624d6fe0);
+        
+
+        marker_58fa9e1d8a854a1da84367f19d24be5b.bindPopup(popup_b2d75e24a4934cb4af8e34b6afa753fb)
+        ;
+
+        
+    
+    
+            var marker_bcfa365576b8468eadfaeee266ef9659 = L.marker(
+                [8.898608, -82.75200500000001],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_8f85fdb7acc3454dab201749f906f809 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8f2ad7f60a0e4d8494de7f718cc366a2 = $(`<div id="html_8f2ad7f60a0e4d8494de7f718cc366a2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quijada del Diablo, 3.1 Km NE. de Mellizas <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1998-06-20 <strong>Recolectores:</strong> Billen Gamboa R. <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_8f85fdb7acc3454dab201749f906f809.setContent(html_8f2ad7f60a0e4d8494de7f718cc366a2);
+        
+
+        marker_bcfa365576b8468eadfaeee266ef9659.bindPopup(popup_8f85fdb7acc3454dab201749f906f809)
+        ;
+
+        
+    
+    
+            var marker_4670cd1268d34f06af71b44c217987d8 = L.marker(
+                [9.916667, -84.166667],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_efeec4ee39464d1aa476877a9e8808df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4fc40f8bf5f04e4fb184e972db493bfb = $(`<div id="html_4fc40f8bf5f04e4fb184e972db493bfb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Escazu a Alto Tapezco por Bebedero; remanente de bosque primario y tacotales <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1993-10-03 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_efeec4ee39464d1aa476877a9e8808df.setContent(html_4fc40f8bf5f04e4fb184e972db493bfb);
+        
+
+        marker_4670cd1268d34f06af71b44c217987d8.bindPopup(popup_efeec4ee39464d1aa476877a9e8808df)
+        ;
+
+        
+    
+    
+            var marker_909775e77f364f179587f9c28b463133 = L.marker(
+                [8.978383000000001, -82.837289],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_f8f6367b226b4c3c9d8661f2b4b96a9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d565ef2a6204c19a243a40c6563bd6e = $(`<div id="html_1d565ef2a6204c19a243a40c6563bd6e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transecto Las Tablas - Cerro Echandi <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 1996-11-01 <strong>Recolectores:</strong> Javier Quesada; Alexander Rojas ; Enia Navarro ; Evelio Alfaro <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_f8f6367b226b4c3c9d8661f2b4b96a9c.setContent(html_1d565ef2a6204c19a243a40c6563bd6e);
+        
+
+        marker_909775e77f364f179587f9c28b463133.bindPopup(popup_f8f6367b226b4c3c9d8661f2b4b96a9c)
+        ;
+
+        
+    
+    
+            var marker_67c9e63608e6428e818acea1a8c7311f = L.marker(
+                [8.978383000000001, -82.837289],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_6f4588072c004de49d5283cbc95f874f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc80aec6f3b343fb8a66653d51e5ab2c = $(`<div id="html_cc80aec6f3b343fb8a66653d51e5ab2c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transecto Las Tablas - Cerro Echandi <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 1996-11-01 <strong>Recolectores:</strong> Javier Quesada; Alexander Rojas ; Enia Navarro ; Evelio Alfaro <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_6f4588072c004de49d5283cbc95f874f.setContent(html_cc80aec6f3b343fb8a66653d51e5ab2c);
+        
+
+        marker_67c9e63608e6428e818acea1a8c7311f.bindPopup(popup_6f4588072c004de49d5283cbc95f874f)
+        ;
+
+        
+    
+    
+            var marker_cf427a2ccacc4b68aac3365ad4f5f91b = L.marker(
+                [8.5, -82.25],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_2b1dcfe5170946bd96629c986df30822 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f95d0dc649444368b8b4e2991949441a = $(`<div id="html_f95d0dc649444368b8b4e2991949441a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1947-07-25 <strong>Recolectores:</strong> P. H. Allen <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_2b1dcfe5170946bd96629c986df30822.setContent(html_f95d0dc649444368b8b4e2991949441a);
+        
+
+        marker_cf427a2ccacc4b68aac3365ad4f5f91b.bindPopup(popup_2b1dcfe5170946bd96629c986df30822)
+        ;
+
+        
+    
+    
+            var marker_9bffc63620164733bbcf1c8008d2b031 = L.marker(
+                [10.0, -84.8333],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_a94a7b68151e44458a3913c1407fdc2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5be9480ca0834865a62bc81c01cdb3ff = $(`<div id="html_5be9480ca0834865a62bc81c01cdb3ff" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1988-07-14 <strong>Recolectores:</strong> B. E. Hammel <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_a94a7b68151e44458a3913c1407fdc2c.setContent(html_5be9480ca0834865a62bc81c01cdb3ff);
+        
+
+        marker_9bffc63620164733bbcf1c8008d2b031.bindPopup(popup_a94a7b68151e44458a3913c1407fdc2c)
+        ;
+
+        
+    
+    
+            var marker_fe366a04914d4dc7bb273d628bdf91ef = L.marker(
+                [8.52972, -82.25361],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_bd65e281b4414488b18cd3d878d990f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_059624f9b680488da87dcbec9df3146d = $(`<div id="html_059624f9b680488da87dcbec9df3146d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Chiriqui - Prov. de Chiriqui. Vcty. Finca Lerida. Upper forested southern slopes of the Quebrada Velo./Provincia de Chiriquí <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1947-07-25 <strong>Recolectores:</strong> Allen, P. H. (Coll. Delessert 1954) <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_bd65e281b4414488b18cd3d878d990f9.setContent(html_059624f9b680488da87dcbec9df3146d);
+        
+
+        marker_fe366a04914d4dc7bb273d628bdf91ef.bindPopup(popup_bd65e281b4414488b18cd3d878d990f9)
+        ;
+
+        
+    
+    
+            var marker_7f4c9c80822341a88790a4d81bd0dc08 = L.marker(
+                [9.46, -83.79],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_c485ea47a0954f84ab0b0d297ce1a85e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e030abe6e5e643429a408137f5862e14 = $(`<div id="html_e030abe6e5e643429a408137f5862e14" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. F. Los Santos Los Angeles. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1997-09-25 <strong>Recolectores:</strong> Estrada, Armando <strong>Identificadores:</strong> Estrada, Armando</div>`)[0];
+            popup_c485ea47a0954f84ab0b0d297ce1a85e.setContent(html_e030abe6e5e643429a408137f5862e14);
+        
+
+        marker_7f4c9c80822341a88790a4d81bd0dc08.bindPopup(popup_c485ea47a0954f84ab0b0d297ce1a85e)
+        ;
+
+        
+    
+    
+            var marker_edf93484c8894b8eaacac68511274470 = L.marker(
+                [10.28, -84.11],
+                {}
+            ).addTo(marker_cluster_dc28d5bb5e4c46649a798025d5423139);
+        
+    
+        var popup_4cb3ffc30f474c79bcbae69172960379 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f367ec70e1f46219fe3f823678fd6cf = $(`<div id="html_1f367ec70e1f46219fe3f823678fd6cf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde to San Luis Valley, cliff edge and canyon slopes along Río San Luis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1988-07-14 <strong>Recolectores:</strong> Hammel, Barry E. <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_4cb3ffc30f474c79bcbae69172960379.setContent(html_1f367ec70e1f46219fe3f823678fd6cf);
+        
+
+        marker_edf93484c8894b8eaacac68511274470.bindPopup(popup_4cb3ffc30f474c79bcbae69172960379)
+        ;
+
+        
+    
+    
+            var layer_control_a081912faea445db91c612106a2e6d9e = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_6d7c6aaad6424db9865752d3ae7c9b99,
+                    "ESRI World Imagery" : tile_layer_eda9cf3707db417bbcf29113c566302c,
+                },
+                overlays :  {
+                    "macro_element_dc28d5bb5e4c46649a798025d5423139" : marker_cluster_dc28d5bb5e4c46649a798025d5423139,
+                },
+            };
+            L.control.layers(
+                layer_control_a081912faea445db91c612106a2e6d9e.base_layers,
+                layer_control_a081912faea445db91c612106a2e6d9e.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_8069a17ec7dd47b984a4f0387a7d3903);
+            tile_layer_eda9cf3707db417bbcf29113c566302c.remove();
+        
+</script>

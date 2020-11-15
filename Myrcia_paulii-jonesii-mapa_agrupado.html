@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_efada6e2e4104ad1b8c9952b4f1e1a0f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_efada6e2e4104ad1b8c9952b4f1e1a0f" ></div>
+        
+</body>
+<script>    
+    
+            var map_efada6e2e4104ad1b8c9952b4f1e1a0f = L.map(
+                "map_efada6e2e4104ad1b8c9952b4f1e1a0f",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_efada6e2e4104ad1b8c9952b4f1e1a0f);
+
+            
+
+        
+    
+            var tile_layer_0cb1995bd3724b7d913f98f5b6f25dfa = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_efada6e2e4104ad1b8c9952b4f1e1a0f);
+        
+    
+            var tile_layer_70baf62504f042ebbc1155b86ac71b41 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_efada6e2e4104ad1b8c9952b4f1e1a0f);
+        
+    
+            var marker_cluster_49578894adf246c3904e0093c8372a4a = L.markerClusterGroup(
+                {}
+            );
+            map_efada6e2e4104ad1b8c9952b4f1e1a0f.addLayer(marker_cluster_49578894adf246c3904e0093c8372a4a);
+        
+    
+            var marker_7b9981aee2c64abdab9a1aadb71dc52b = L.marker(
+                [8.725141, -83.485302],
+                {}
+            ).addTo(marker_cluster_49578894adf246c3904e0093c8372a4a);
+        
+    
+        var popup_87959478af414f39a28ddbb584474e19 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92d6dc4e27ff45a486bc5d1458f81b50 = $(`<div id="html_92d6dc4e27ff45a486bc5d1458f81b50" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2015-10-08 21:04:00 <strong>Recolectores:</strong> Eduardo Chacón-Madrigal <strong>Identificadores:</strong> Eduardo Chacón-Madrigal</div>`)[0];
+            popup_87959478af414f39a28ddbb584474e19.setContent(html_92d6dc4e27ff45a486bc5d1458f81b50);
+        
+
+        marker_7b9981aee2c64abdab9a1aadb71dc52b.bindPopup(popup_87959478af414f39a28ddbb584474e19)
+        ;
+
+        
+    
+    
+            var marker_a8eab8639684433fb5e01761557d7c54 = L.marker(
+                [8.722222, -83.44166700000001],
+                {}
+            ).addTo(marker_cluster_49578894adf246c3904e0093c8372a4a);
+        
+    
+        var popup_226a6205a61b4aae9ec0c059d7823c52 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2388ccb8fcdd403e8148db76bb97738c = $(`<div id="html_2388ccb8fcdd403e8148db76bb97738c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce; Península de Osa. Bahía Chal, Los Mogos. <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1993-07-21 00:00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Aguilar, Santamaria & Estrada</div>`)[0];
+            popup_226a6205a61b4aae9ec0c059d7823c52.setContent(html_2388ccb8fcdd403e8148db76bb97738c);
+        
+
+        marker_a8eab8639684433fb5e01761557d7c54.bindPopup(popup_226a6205a61b4aae9ec0c059d7823c52)
+        ;
+
+        
+    
+    
+            var marker_71cc0f0fb4834a5987489e8aefd5d4f7 = L.marker(
+                [8.766667, -83.366667],
+                {}
+            ).addTo(marker_cluster_49578894adf246c3904e0093c8372a4a);
+        
+    
+        var popup_6d4a483a44a34b6aaa210825e2d6a1ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ce54d435597440fa3c716a17a2faaf5 = $(`<div id="html_6ce54d435597440fa3c716a17a2faaf5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Los Mogos. Bahia Chal. Entrada Chacuaco. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1994-08-24 00:00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Aguilar, Santamaria & Estrada</div>`)[0];
+            popup_6d4a483a44a34b6aaa210825e2d6a1ac.setContent(html_6ce54d435597440fa3c716a17a2faaf5);
+        
+
+        marker_71cc0f0fb4834a5987489e8aefd5d4f7.bindPopup(popup_6d4a483a44a34b6aaa210825e2d6a1ac)
+        ;
+
+        
+    
+    
+            var marker_be22a2d6a263406bab78a6c57d3d694b = L.marker(
+                [8.729167, -83.456944],
+                {}
+            ).addTo(marker_cluster_49578894adf246c3904e0093c8372a4a);
+        
+    
+        var popup_9bb158824ef243d8a21a6a15b89af351 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3cc6956d6e042e3a5b14443b098f786 = $(`<div id="html_f3cc6956d6e042e3a5b14443b098f786" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce. Bahia Chal. A 35 km de Chacarita. Entrada a Chocuaco, entre el cruce de Chocuaco y el bajo Quebrada Lagunas. <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 2012-03-24 00:00:00 <strong>Recolectores:</strong> Daniel Santamaría|Reinaldo Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_9bb158824ef243d8a21a6a15b89af351.setContent(html_f3cc6956d6e042e3a5b14443b098f786);
+        
+
+        marker_be22a2d6a263406bab78a6c57d3d694b.bindPopup(popup_9bb158824ef243d8a21a6a15b89af351)
+        ;
+
+        
+    
+    
+            var marker_92a7979556aa41d4beead346d5037c9b = L.marker(
+                [8.729167, -83.456944],
+                {}
+            ).addTo(marker_cluster_49578894adf246c3904e0093c8372a4a);
+        
+    
+        var popup_49d5ac373f2f496f940a7c886fb43f85 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9747caa810ea42b5ae7387fa9f4e5be7 = $(`<div id="html_9747caa810ea42b5ae7387fa9f4e5be7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce, Rincón, Bahia Chal, a 35 km de Chacarita, entrada Chocuaco, entre curce de Bajo Chocuaco y el bajo Quebrada Lagunas. <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 2009-09-24 00:00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_49d5ac373f2f496f940a7c886fb43f85.setContent(html_9747caa810ea42b5ae7387fa9f4e5be7);
+        
+
+        marker_92a7979556aa41d4beead346d5037c9b.bindPopup(popup_49d5ac373f2f496f940a7c886fb43f85)
+        ;
+
+        
+    
+    
+            var marker_308c946cb2af48d08022861573d6bc42 = L.marker(
+                [8.729167, -83.456944],
+                {}
+            ).addTo(marker_cluster_49578894adf246c3904e0093c8372a4a);
+        
+    
+        var popup_af94340822b34aa7b59dbfbde914f37a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae9c5ea96286487e82973687328fb751 = $(`<div id="html_ae9c5ea96286487e82973687328fb751" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bahia Chal. A 35 km de Chacarita. Entrada a Chocuaco, entre el cruce de Chocuaco y el bajo Quebrada Lagunas. <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 2012-03-24 00:00:00 <strong>Recolectores:</strong> Daniel Santamaría|Reinaldo Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_af94340822b34aa7b59dbfbde914f37a.setContent(html_ae9c5ea96286487e82973687328fb751);
+        
+
+        marker_308c946cb2af48d08022861573d6bc42.bindPopup(popup_af94340822b34aa7b59dbfbde914f37a)
+        ;
+
+        
+    
+    
+            var layer_control_82b9751c2e314c97aa67e4e071a5d616 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_0cb1995bd3724b7d913f98f5b6f25dfa,
+                    "ESRI World Imagery" : tile_layer_70baf62504f042ebbc1155b86ac71b41,
+                },
+                overlays :  {
+                    "macro_element_49578894adf246c3904e0093c8372a4a" : marker_cluster_49578894adf246c3904e0093c8372a4a,
+                },
+            };
+            L.control.layers(
+                layer_control_82b9751c2e314c97aa67e4e071a5d616.base_layers,
+                layer_control_82b9751c2e314c97aa67e4e071a5d616.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_efada6e2e4104ad1b8c9952b4f1e1a0f);
+            tile_layer_70baf62504f042ebbc1155b86ac71b41.remove();
+        
+</script>

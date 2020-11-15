@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a59ff04e026f40b6ae9545d51a5559d8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a59ff04e026f40b6ae9545d51a5559d8" ></div>
+        
+</body>
+<script>    
+    
+            var map_a59ff04e026f40b6ae9545d51a5559d8 = L.map(
+                "map_a59ff04e026f40b6ae9545d51a5559d8",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_a59ff04e026f40b6ae9545d51a5559d8);
+
+            
+
+        
+    
+            var tile_layer_7f3116f5fb81436a89ee37a8ca76b3de = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a59ff04e026f40b6ae9545d51a5559d8);
+        
+    
+            var tile_layer_8b84fd108d6f40c98a7454120852df03 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a59ff04e026f40b6ae9545d51a5559d8);
+        
+    
+            var marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b = L.markerClusterGroup(
+                {}
+            );
+            map_a59ff04e026f40b6ae9545d51a5559d8.addLayer(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+            var marker_27f68c4f1ea44dd791e84766cb184570 = L.marker(
+                [10.38, -84.05],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_18e1881e549649b79092b6f80a725bb6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e909853fac44d4bb9b5c8ec792021be = $(`<div id="html_5e909853fac44d4bb9b5c8ec792021be" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo; Llanura de San Carlos. Estación Magsasay. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1990-07-18 <strong>Recolectores:</strong> Barry E. Hammel|Alwyn H. Gentry|Helen Kennedy <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_18e1881e549649b79092b6f80a725bb6.setContent(html_5e909853fac44d4bb9b5c8ec792021be);
+        
+
+        marker_27f68c4f1ea44dd791e84766cb184570.bindPopup(popup_18e1881e549649b79092b6f80a725bb6)
+        ;
+
+        
+    
+    
+            var marker_9b540b8c5fd240808414af455d88a5f9 = L.marker(
+                [11.5, -84.21666],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_e4d8782fbfed47fd95ccde8743cb1ead = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a18acd7fbda40268660969397e2fd9a = $(`<div id="html_2a18acd7fbda40268660969397e2fd9a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Río Punta Gorda, al sur de San José. <strong>Elevación:</strong> 75.0 m  <strong>Fecha:</strong> 1994-02-27 <strong>Recolectores:</strong> R. M. Rueda|B. Hernández|I. Coronado G. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_e4d8782fbfed47fd95ccde8743cb1ead.setContent(html_2a18acd7fbda40268660969397e2fd9a);
+        
+
+        marker_9b540b8c5fd240808414af455d88a5f9.bindPopup(popup_e4d8782fbfed47fd95ccde8743cb1ead)
+        ;
+
+        
+    
+    
+            var marker_9c79bed9583d40e39580934bc963f625 = L.marker(
+                [11.583333, -84.0],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_dd4083c3dbbf4617b3c04cdaddaec2ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d861800993354f41b6998ec340b8cceb = $(`<div id="html_d861800993354f41b6998ec340b8cceb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Este del poblado de Nueva Atlanta. <strong>Elevación:</strong> 15.0 m  <strong>Fecha:</strong> 1994-02-20 <strong>Recolectores:</strong> R. M. Rueda|B. Hernández|I. Coronado G. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_dd4083c3dbbf4617b3c04cdaddaec2ab.setContent(html_d861800993354f41b6998ec340b8cceb);
+        
+
+        marker_9c79bed9583d40e39580934bc963f625.bindPopup(popup_dd4083c3dbbf4617b3c04cdaddaec2ab)
+        ;
+
+        
+    
+    
+            var marker_fa10c2cd62d04a99b186ba374a7a4bc4 = L.marker(
+                [10.95, -84.25],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_5dd784148d444d84870b605a996e7bd8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f26bdfbc02f44804ae1407189f09d6fa = $(`<div id="html_f26bdfbc02f44804ae1407189f09d6fa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sobre el Río San Juan, en el caño el Sarnoso, ubicado a una hora río abajo del puesto de MARENA, Bartola. <strong>Elevación:</strong> 75.0 m  <strong>Fecha:</strong> 1994-07-13 <strong>Recolectores:</strong> R. M. Rueda|B. Hernández|E. Palma <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_5dd784148d444d84870b605a996e7bd8.setContent(html_f26bdfbc02f44804ae1407189f09d6fa);
+        
+
+        marker_fa10c2cd62d04a99b186ba374a7a4bc4.bindPopup(popup_5dd784148d444d84870b605a996e7bd8)
+        ;
+
+        
+    
+    
+            var marker_f93a250b60cc4aabb9dc0c67d1dec862 = L.marker(
+                [10.29, -84.75],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_76d02a0369bc411b9dfe93ccd76634bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0bd757294cc2473b98efd4ee9360d35a = $(`<div id="html_0bd757294cc2473b98efd4ee9360d35a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde, Cordille de Tilarán, Estación Aleman's. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1991-10-17 <strong>Recolectores:</strong> Erick Bello C.|Eladio Cruz L.|Roy Cruz <strong>Identificadores:</strong> B. Hammel, 17 Feb./</div>`)[0];
+            popup_76d02a0369bc411b9dfe93ccd76634bb.setContent(html_0bd757294cc2473b98efd4ee9360d35a);
+        
+
+        marker_f93a250b60cc4aabb9dc0c67d1dec862.bindPopup(popup_76d02a0369bc411b9dfe93ccd76634bb)
+        ;
+
+        
+    
+    
+            var marker_a92e483f1cdb4247bd35e9d48bc0c32a = L.marker(
+                [10.33, -84.7],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_e57621861bf54774b18758847fdb67cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f41750cd48584ee68df87689bfb4e47d = $(`<div id="html_f41750cd48584ee68df87689bfb4e47d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde, Río Peñas Blancas, División Reserva Bosque Eterno de Los Niños y Finca I.Q.P.S.A. <strong>Elevación:</strong> 650.0 m  <strong>Fecha:</strong> 1990-03-24 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> B. Hammel, 17 Feb./</div>`)[0];
+            popup_e57621861bf54774b18758847fdb67cf.setContent(html_f41750cd48584ee68df87689bfb4e47d);
+        
+
+        marker_a92e483f1cdb4247bd35e9d48bc0c32a.bindPopup(popup_e57621861bf54774b18758847fdb67cf)
+        ;
+
+        
+    
+    
+            var marker_869a31b6c123468fbfd07c7e03703660 = L.marker(
+                [10.35, -84.66],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_b5509e4dbf644a7cbdcae5052e93c4c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b73a16400fb1420eb9ff43cfe5a227ef = $(`<div id="html_b73a16400fb1420eb9ff43cfe5a227ef" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> \Parque Nacional de Arenal, Cordillera de Tilarán, Río Aguas Gatas, Finca Ulate <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1990-01-29 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> B. E. Hammel (MO)</div>`)[0];
+            popup_b5509e4dbf644a7cbdcae5052e93c4c8.setContent(html_b73a16400fb1420eb9ff43cfe5a227ef);
+        
+
+        marker_869a31b6c123468fbfd07c7e03703660.bindPopup(popup_b5509e4dbf644a7cbdcae5052e93c4c8)
+        ;
+
+        
+    
+    
+            var marker_b51cdaa0b09c4503be991c44684d8ca6 = L.marker(
+                [10.21472, -84.60777],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_2abb151254ac46f4a632f903634535e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3526d1bcacd748ab84b1df392c65b9bd = $(`<div id="html_3526d1bcacd748ab84b1df392c65b9bd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal de San Ramón, En bosque alterado, finca de Bolivar Ruíz entrando a La Reserva <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1987-01-28 <strong>Recolectores:</strong> Gerardo Herrera Ch.|Ángel Solís <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_2abb151254ac46f4a632f903634535e1.setContent(html_3526d1bcacd748ab84b1df392c65b9bd);
+        
+
+        marker_b51cdaa0b09c4503be991c44684d8ca6.bindPopup(popup_2abb151254ac46f4a632f903634535e1)
+        ;
+
+        
+    
+    
+            var marker_d0f5df29ebc44fc39c191bfbfe863977 = L.marker(
+                [10.374722, -84.036111],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_95a2abf2abd34358ad2519c9ec5d733c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f40d440a3d744aabb7601551eb172a0 = $(`<div id="html_0f40d440a3d744aabb7601551eb172a0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Estación El Ceibo <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1989-11-22 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> B. E. Hammel (MO)</div>`)[0];
+            popup_95a2abf2abd34358ad2519c9ec5d733c.setContent(html_0f40d440a3d744aabb7601551eb172a0);
+        
+
+        marker_d0f5df29ebc44fc39c191bfbfe863977.bindPopup(popup_95a2abf2abd34358ad2519c9ec5d733c)
+        ;
+
+        
+    
+    
+            var marker_a10aefa998b4485e8ce1825f1edc7a53 = L.marker(
+                [11.59861, -83.6625],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_ef7f64369e1a417daba6ece0624a67cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7cd6360c209c4c9e9d59eab5655253aa = $(`<div id="html_7cd6360c209c4c9e9d59eab5655253aa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monkey Point <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 1981-10-24 <strong>Recolectores:</strong> P. P. Moreno|J. C. Sandino <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_ef7f64369e1a417daba6ece0624a67cb.setContent(html_7cd6360c209c4c9e9d59eab5655253aa);
+        
+
+        marker_a10aefa998b4485e8ce1825f1edc7a53.bindPopup(popup_ef7f64369e1a417daba6ece0624a67cb)
+        ;
+
+        
+    
+    
+            var marker_696e8e36850d40fab0b617134d2b4894 = L.marker(
+                [10.332778, -84.078889],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_741a8ac59b594313978706194e930c53 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0283a81bd884f8083f48162bf69c045 = $(`<div id="html_f0283a81bd884f8083f48162bf69c045" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Puesto El Ceibo, gently sloping area just above the steep rim of the Río Peje gorge on the west side, along side path that goes from guard house to water supply intake, about 15 minutes uphill. <strong>Elevación:</strong> 520.0 m  <strong>Fecha:</strong> 1992-12-09 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_741a8ac59b594313978706194e930c53.setContent(html_f0283a81bd884f8083f48162bf69c045);
+        
+
+        marker_696e8e36850d40fab0b617134d2b4894.bindPopup(popup_741a8ac59b594313978706194e930c53)
+        ;
+
+        
+    
+    
+            var marker_119eb4af4bce42cba7c7d4182897495a = L.marker(
+                [10.4, -83.56],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_ae3b10eff5764da2ae4aa75d3e334a06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d97c7eac2d9b4a298bc2df3be1bd16b5 = $(`<div id="html_d97c7eac2d9b4a298bc2df3be1bd16b5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Tortuguero Margen oriental del Río Sierpe. Bosque primario. <strong>Elevación:</strong> 40.0 m  <strong>Fecha:</strong> 1988-02-28 <strong>Recolectores:</strong> Rafael Robles <strong>Identificadores:</strong> B. E. Hammel (MO)</div>`)[0];
+            popup_ae3b10eff5764da2ae4aa75d3e334a06.setContent(html_d97c7eac2d9b4a298bc2df3be1bd16b5);
+        
+
+        marker_119eb4af4bce42cba7c7d4182897495a.bindPopup(popup_ae3b10eff5764da2ae4aa75d3e334a06)
+        ;
+
+        
+    
+    
+            var marker_9640aa73ac234e49b4ff1590a478de57 = L.marker(
+                [10.4, -83.55],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_b36ac0840c14440fa0e4891c824054de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88b5dee226584d48860ff54440e5db51 = $(`<div id="html_88b5dee226584d48860ff54440e5db51" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Tortuguero Lomas de Sierpe, 3 Km al O del puesto del P.N. en el Río Sierpe. Topografía quebrada con pendientes medianamente pronunciadas. Suelo bien drenado. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1988-08-13 <strong>Recolectores:</strong> Rafael Robles|Gerardo Herrera Ch.|Luis Flores <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_b36ac0840c14440fa0e4891c824054de.setContent(html_88b5dee226584d48860ff54440e5db51);
+        
+
+        marker_9640aa73ac234e49b4ff1590a478de57.bindPopup(popup_b36ac0840c14440fa0e4891c824054de)
+        ;
+
+        
+    
+    
+            var marker_0e7dfa2c07b04578afcb0439a94875af = L.marker(
+                [10.41, -83.56],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_81b990b9a73f42a5a409e995a13d8c66 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0ba4f24e99f4974b16ed05343521dbd = $(`<div id="html_e0ba4f24e99f4974b16ed05343521dbd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Tortuguero Estación Agua Fría, de la casa-estación, 600 m sobre el Sendero Real, 1 Km al Este,aproximadamente, por otro Sendero. Bosque primario. <strong>Elevación:</strong> 40.0 m  <strong>Fecha:</strong> 1987-11-04 <strong>Recolectores:</strong> Rafael Robles <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_81b990b9a73f42a5a409e995a13d8c66.setContent(html_e0ba4f24e99f4974b16ed05343521dbd);
+        
+
+        marker_0e7dfa2c07b04578afcb0439a94875af.bindPopup(popup_81b990b9a73f42a5a409e995a13d8c66)
+        ;
+
+        
+    
+    
+            var marker_98cdd544c0ca465aa8c5655e8eb94ccb = L.marker(
+                [10.28, -84.03],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_ad0e04167682447f99a9f2e86b72cf10 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4d0cb0cc00a4242846203f11644b34d = $(`<div id="html_e4d0cb0cc00a4242846203f11644b34d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rara Avis, ca. 15 km al suroeste de Horquetas. Camino Cañón, cerca de Río Atelopus. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1989-11-01 <strong>Recolectores:</strong> Orlando Vargas <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_ad0e04167682447f99a9f2e86b72cf10.setContent(html_e4d0cb0cc00a4242846203f11644b34d);
+        
+
+        marker_98cdd544c0ca465aa8c5655e8eb94ccb.bindPopup(popup_ad0e04167682447f99a9f2e86b72cf10)
+        ;
+
+        
+    
+    
+            var marker_4147917fa9ed44b8a51985f8f27db9e2 = L.marker(
+                [10.44, -83.57],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_5ab6fe6c759f443689565d578906f0db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c755c68ffe045b49b858becc8269080 = $(`<div id="html_9c755c68ffe045b49b858becc8269080" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Tortuguero Estación Agua Fría. Sendero El Aguacate, a 500 m de la entrada. <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1990-01-11 <strong>Recolectores:</strong> José Solano <strong>Identificadores:</strong> B. E. Hammel (MO)</div>`)[0];
+            popup_5ab6fe6c759f443689565d578906f0db.setContent(html_9c755c68ffe045b49b858becc8269080);
+        
+
+        marker_4147917fa9ed44b8a51985f8f27db9e2.bindPopup(popup_5ab6fe6c759f443689565d578906f0db)
+        ;
+
+        
+    
+    
+            var marker_cb81a47fd0ad45f4aa0c76b6c9e575ff = L.marker(
+                [10.45, -83.583333],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_1c217aee786643278fc26314b7706d88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_237e32b7783a4fed926501fc99ef3b5f = $(`<div id="html_237e32b7783a4fed926501fc99ef3b5f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Tortuguero Estación Aguas Frías. Colecta en Sendero Aguas Frías hasta entrada sendero Agua- cate. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1990-12-01 <strong>Recolectores:</strong> José Solano <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_1c217aee786643278fc26314b7706d88.setContent(html_237e32b7783a4fed926501fc99ef3b5f);
+        
+
+        marker_cb81a47fd0ad45f4aa0c76b6c9e575ff.bindPopup(popup_1c217aee786643278fc26314b7706d88)
+        ;
+
+        
+    
+    
+            var marker_31d14fdaf0ca4b47a1fe37e945182fdb = L.marker(
+                [9.42, -82.98],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_75054703829d4d7d9d0c20a9430d6438 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_003fc92eecc941ccaa7c79e6545e2d12 = $(`<div id="html_003fc92eecc941ccaa7c79e6545e2d12" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Internac. La Amistad Sunidii (Agua de Venado), Croriña. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1989-07-19 <strong>Recolectores:</strong> Abelardo Chacón <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_75054703829d4d7d9d0c20a9430d6438.setContent(html_003fc92eecc941ccaa7c79e6545e2d12);
+        
+
+        marker_31d14fdaf0ca4b47a1fe37e945182fdb.bindPopup(popup_75054703829d4d7d9d0c20a9430d6438)
+        ;
+
+        
+    
+    
+            var marker_df0d16b8d6d842419c28a6b1da720b51 = L.marker(
+                [9.78, -83.09],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_e81fce4e44b14dc6b5d02edd7732f740 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39d69f4d21484db5a19c28de8d138a4b = $(`<div id="html_39d69f4d21484db5a19c28de8d138a4b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Limón Cerro Muchilla, Fila Matama. CORDILLERA DE TALAMANCA <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1989-04-05 <strong>Recolectores:</strong> Rafael Robles|Abelardo Chacón <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_e81fce4e44b14dc6b5d02edd7732f740.setContent(html_39d69f4d21484db5a19c28de8d138a4b);
+        
+
+        marker_df0d16b8d6d842419c28a6b1da720b51.bindPopup(popup_e81fce4e44b14dc6b5d02edd7732f740)
+        ;
+
+        
+    
+    
+            var marker_61157af174404841892387bbbf0e981f = L.marker(
+                [10.35, -84.66],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_1a68daa0b269453d8f0a343a007d3989 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ca9e080ebd24c31994b87596c1d38e7 = $(`<div id="html_5ca9e080ebd24c31994b87596c1d38e7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde Río Peñas Blancas. Laguna Poco Sol. Sendero al río. <strong>Elevación:</strong> 650.0 m  <strong>Fecha:</strong> 1989-08-06 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> B. E. Hammel (MO)</div>`)[0];
+            popup_1a68daa0b269453d8f0a343a007d3989.setContent(html_5ca9e080ebd24c31994b87596c1d38e7);
+        
+
+        marker_61157af174404841892387bbbf0e981f.bindPopup(popup_1a68daa0b269453d8f0a343a007d3989)
+        ;
+
+        
+    
+    
+            var marker_8c3ae084696d468b987435756412a52e = L.marker(
+                [10.683333, -83.633333],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_157566413bb04c84bc8c4995cdc04a92 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea47fcd4fdae42428a72704778c79202 = $(`<div id="html_ea47fcd4fdae42428a72704778c79202" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Coronel, E of Laguna Danto. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1987-03-14 <strong>Recolectores:</strong> W. D. Stevens|Gerardo Herrera Ch.|O. M. Montiel J. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_157566413bb04c84bc8c4995cdc04a92.setContent(html_ea47fcd4fdae42428a72704778c79202);
+        
+
+        marker_8c3ae084696d468b987435756412a52e.bindPopup(popup_157566413bb04c84bc8c4995cdc04a92)
+        ;
+
+        
+    
+    
+            var marker_171d0f978538476d8c6ab4afc90ce413 = L.marker(
+                [10.666667, -83.666667],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_bfc1b843b2344bb9abc9df3cb8c9050a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44c3297f86074b8ca36e89dfa5217700 = $(`<div id="html_44c3297f86074b8ca36e89dfa5217700" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Coronel, E of Río Zapote, E of new road, higher parts of hill ca 1.5 km from Río Colorado. <strong>Elevación:</strong> 70.0 m  <strong>Fecha:</strong> 1987-03-13 <strong>Recolectores:</strong> W. D. Stevens|Gerardo Herrera Ch.|O. M. Montiel J. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_bfc1b843b2344bb9abc9df3cb8c9050a.setContent(html_44c3297f86074b8ca36e89dfa5217700);
+        
+
+        marker_171d0f978538476d8c6ab4afc90ce413.bindPopup(popup_bfc1b843b2344bb9abc9df3cb8c9050a)
+        ;
+
+        
+    
+    
+            var marker_a38ed8d711e04eccafe29ec1431c1625 = L.marker(
+                [11.63333, -84.35],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_473135cb1c57406198c41239d0f99695 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8cf488f5210f4fcc968aea263e1b6871 = $(`<div id="html_8cf488f5210f4fcc968aea263e1b6871" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Nueva Guinea, cerro cerca de Colonia Yolaina <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1982-08-13 <strong>Recolectores:</strong> M. Araquistain <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_473135cb1c57406198c41239d0f99695.setContent(html_8cf488f5210f4fcc968aea263e1b6871);
+        
+
+        marker_a38ed8d711e04eccafe29ec1431c1625.bindPopup(popup_473135cb1c57406198c41239d0f99695)
+        ;
+
+        
+    
+    
+            var marker_c8df7282f9eb4d31816a3d851a72f6b3 = L.marker(
+                [10.683333, -83.633333],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_21fadf13dc1a495db68e1a437b85f32d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a466c144b8e43ad90a542c51a73bf88 = $(`<div id="html_3a466c144b8e43ad90a542c51a73bf88" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Coronel, E of Laguna Danto. <strong>Elevación:</strong> 95.0 m  <strong>Fecha:</strong> 1986-01-16 <strong>Recolectores:</strong> W. D. Stevens <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_21fadf13dc1a495db68e1a437b85f32d.setContent(html_3a466c144b8e43ad90a542c51a73bf88);
+        
+
+        marker_c8df7282f9eb4d31816a3d851a72f6b3.bindPopup(popup_21fadf13dc1a495db68e1a437b85f32d)
+        ;
+
+        
+    
+    
+            var marker_825d500b03914e07b41511968e5b7bbb = L.marker(
+                [10.21472, -84.60777],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_a56b6371cd97499cad12ac04c255b3ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa38d9de537e443a8f1cd316778db1bd = $(`<div id="html_fa38d9de537e443a8f1cd316778db1bd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> camino entre la estación de la Reserva Forestal de San Ramón y el camino a la colonia Palmareña, finca de Don Bolivar Ruíz, margen derecha Río San Lorenzito <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1987-02-01 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_a56b6371cd97499cad12ac04c255b3ff.setContent(html_fa38d9de537e443a8f1cd316778db1bd);
+        
+
+        marker_825d500b03914e07b41511968e5b7bbb.bindPopup(popup_a56b6371cd97499cad12ac04c255b3ff)
+        ;
+
+        
+    
+    
+            var marker_f2c8b8e0052f4fed914bfc7854efff48 = L.marker(
+                [9.788611, -83.141667],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_9595aa34992e4ed1bc03d9d0b32e159c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa81dc946d7f49d4a53c8416296b3bde = $(`<div id="html_fa81dc946d7f49d4a53c8416296b3bde" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Limón El Progreso. Fila Matama. Valle de La Estrella. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1989-04-22 <strong>Recolectores:</strong> Gerardo Herrera Ch.|Abelardo Chacón <strong>Identificadores:</strong> B. E. Hammel (MO)</div>`)[0];
+            popup_9595aa34992e4ed1bc03d9d0b32e159c.setContent(html_fa81dc946d7f49d4a53c8416296b3bde);
+        
+
+        marker_f2c8b8e0052f4fed914bfc7854efff48.bindPopup(popup_9595aa34992e4ed1bc03d9d0b32e159c)
+        ;
+
+        
+    
+    
+            var marker_077da2d34aa5474692f26ec0df49b838 = L.marker(
+                [9.4, -82.96],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_2d9e2aacabf04cac8ffd26dc6b7df8d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3814fc6273ff47ce89ff51a3d7b39de5 = $(`<div id="html_3814fc6273ff47ce89ff51a3d7b39de5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sukut. De las juntas de Río Urén y Río Sukut 1.5 Km aguas arriba sobre éste, margen derecha siguiendo el sendero hacia Boca de Río Buruy. <strong>Elevación:</strong> 450.0 m  <strong>Fecha:</strong> 1989-07-08 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_2d9e2aacabf04cac8ffd26dc6b7df8d4.setContent(html_3814fc6273ff47ce89ff51a3d7b39de5);
+        
+
+        marker_077da2d34aa5474692f26ec0df49b838.bindPopup(popup_2d9e2aacabf04cac8ffd26dc6b7df8d4)
+        ;
+
+        
+    
+    
+            var marker_365eb0da81c54b1492556c105d9a869f = L.marker(
+                [11.566667, -84.366667],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_5035491273864a1eb0a49eff81a5f0e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de444c5c6a4a4cde81779cfd2f852580 = $(`<div id="html_de444c5c6a4a4cde81779cfd2f852580" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro El Escobín, 4 km de Colonia Serrano. <strong>Elevación:</strong> 125.0 m  <strong>Fecha:</strong> 1982-07-30 <strong>Recolectores:</strong> J. C. Sandino <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_5035491273864a1eb0a49eff81a5f0e0.setContent(html_de444c5c6a4a4cde81779cfd2f852580);
+        
+
+        marker_365eb0da81c54b1492556c105d9a869f.bindPopup(popup_5035491273864a1eb0a49eff81a5f0e0)
+        ;
+
+        
+    
+    
+            var marker_a25df2abb0054116bc28393e9c139ec4 = L.marker(
+                [10.33333, -84.68333],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_15e286984a3543629a63df3f1ede2cfc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f9e15e4e4fe4121b97357518f42606d = $(`<div id="html_0f9e15e4e4fe4121b97357518f42606d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde Río Peñas Blancas, hacia San Miguel <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1988-01-20 <strong>Recolectores:</strong> William A. Haber|Eladio Cruz L. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_15e286984a3543629a63df3f1ede2cfc.setContent(html_0f9e15e4e4fe4121b97357518f42606d);
+        
+
+        marker_a25df2abb0054116bc28393e9c139ec4.bindPopup(popup_15e286984a3543629a63df3f1ede2cfc)
+        ;
+
+        
+    
+    
+            var marker_085055826e374906a58865d657b4b86c = L.marker(
+                [10.3, -84.73333000000001],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_0d65d1482f2d4df083511f59ca1add5b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8cc76bcfe9f34c33a7b7a1fca9355f67 = $(`<div id="html_8cc76bcfe9f34c33a7b7a1fca9355f67" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde Río Peñas Blancas <strong>Elevación:</strong> 820.0 m  <strong>Fecha:</strong> 1988-01-24 <strong>Recolectores:</strong> William A. Haber|Eladio Cruz L. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_0d65d1482f2d4df083511f59ca1add5b.setContent(html_8cc76bcfe9f34c33a7b7a1fca9355f67);
+        
+
+        marker_085055826e374906a58865d657b4b86c.bindPopup(popup_0d65d1482f2d4df083511f59ca1add5b)
+        ;
+
+        
+    
+    
+            var marker_2cfc490840e34b939867b4cd06e90fec = L.marker(
+                [10.234722, -84.052778],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_fab4f7604dd14d3e9ba37184166b7e75 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_accbfda8c60546a5a4b3b5a2c9b73daa = $(`<div id="html_accbfda8c60546a5a4b3b5a2c9b73daa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nac. Braulio Carrillo Estación Magsasay. Detrás de la Estación entre bosque y potreros. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1990-09-29 <strong>Recolectores:</strong> Álvaro Fernández <strong>Identificadores:</strong> B. Hammel, 17 Feb./</div>`)[0];
+            popup_fab4f7604dd14d3e9ba37184166b7e75.setContent(html_accbfda8c60546a5a4b3b5a2c9b73daa);
+        
+
+        marker_2cfc490840e34b939867b4cd06e90fec.bindPopup(popup_fab4f7604dd14d3e9ba37184166b7e75)
+        ;
+
+        
+    
+    
+            var marker_2bd793b6dace4c5c9ed0c818a30ad9b0 = L.marker(
+                [10.643880000000001, -83.73611],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_1bd6abe27359418c81a56a4d2034d5c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f6a5fa1967f4458802c42d213473966 = $(`<div id="html_0f6a5fa1967f4458802c42d213473966" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.N.F.S. Barra del Colorado. Llanura de Tortuguero. Sardinas. <strong>Elevación:</strong> 17.5 m  <strong>Fecha:</strong> 1994-09-03 <strong>Recolectores:</strong> Flor Araya <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_1bd6abe27359418c81a56a4d2034d5c1.setContent(html_0f6a5fa1967f4458802c42d213473966);
+        
+
+        marker_2bd793b6dace4c5c9ed0c818a30ad9b0.bindPopup(popup_1bd6abe27359418c81a56a4d2034d5c1)
+        ;
+
+        
+    
+    
+            var marker_917d5da274164ab5a6babc3a1ce5567d = L.marker(
+                [11.6, -84.366667],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_d35d028b00be44c39132e6293eec3536 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70ed3f0844294eb3a2b1deb67d5b2362 = $(`<div id="html_70ed3f0844294eb3a2b1deb67d5b2362" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 6.3 km S of bridge at Colonia Yolaina and ca. 0.8 km S of ridge of Serranías de Yolaina on road to Colonia Manantiales (Colonia Somoza). <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1978-02-13 <strong>Recolectores:</strong> W. D. Stevens <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_d35d028b00be44c39132e6293eec3536.setContent(html_70ed3f0844294eb3a2b1deb67d5b2362);
+        
+
+        marker_917d5da274164ab5a6babc3a1ce5567d.bindPopup(popup_d35d028b00be44c39132e6293eec3536)
+        ;
+
+        
+    
+    
+            var marker_133667886ebd42c59a6f857ad50a29e1 = L.marker(
+                [10.966660000000001, -84.33333],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_b1e4c3ff8a074169968aa258b27f40e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cdded380940e4b6b854dbd46319df1f6 = $(`<div id="html_cdded380940e4b6b854dbd46319df1f6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Municipio de El Castillo, Refugio Bartola. <strong>Elevación:</strong> 60.0 m  <strong>Fecha:</strong> 2005-02-15 <strong>Recolectores:</strong> R. M. Rueda|L.D. Paguaga|H. Mendoza|Nelson Zamora|Daniel Solano <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_b1e4c3ff8a074169968aa258b27f40e6.setContent(html_cdded380940e4b6b854dbd46319df1f6);
+        
+
+        marker_133667886ebd42c59a6f857ad50a29e1.bindPopup(popup_b1e4c3ff8a074169968aa258b27f40e6)
+        ;
+
+        
+    
+    
+            var marker_87912c2ff7514e8587a32625a53e9fa6 = L.marker(
+                [10.402778, -84.05833299999999],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_30c8d37e74274e0a888cf5b36c3fb6c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b474804a547243b1ba35f9f9e99cb2fa = $(`<div id="html_b474804a547243b1ba35f9f9e99cb2fa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cuenca del Sarapiquí. Entre Bijagual y Magsasay. Bosques riparios sobre el río Mojon. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1998-03-11 <strong>Recolectores:</strong> Luis Diego Vargas|Alexánder Rodríguez|E. Ureña <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_30c8d37e74274e0a888cf5b36c3fb6c3.setContent(html_b474804a547243b1ba35f9f9e99cb2fa);
+        
+
+        marker_87912c2ff7514e8587a32625a53e9fa6.bindPopup(popup_30c8d37e74274e0a888cf5b36c3fb6c3)
+        ;
+
+        
+    
+    
+            var marker_e37ce06b63624c0ab7a40a6d697c2ad8 = L.marker(
+                [10.431389, -84.00361099999999],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_28b57bb06ca54022bbd59b2cbbbfc56a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8401ccf845154cb38926cb7bcd688fc9 = $(`<div id="html_8401ccf845154cb38926cb7bcd688fc9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. Finca La Selva, the OTS Field Station on the Río Puerto Viejo just E of its junction with the Río Sarapiquí. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1981-02-22 <strong>Recolectores:</strong> James P. Folsom <strong>Identificadores:</strong> C.M. Taylor, TYPE</div>`)[0];
+            popup_28b57bb06ca54022bbd59b2cbbbfc56a.setContent(html_8401ccf845154cb38926cb7bcd688fc9);
+        
+
+        marker_e37ce06b63624c0ab7a40a6d697c2ad8.bindPopup(popup_28b57bb06ca54022bbd59b2cbbbfc56a)
+        ;
+
+        
+    
+    
+            var marker_f2a98d56c1084b8ca1ba0c71a5467e7e = L.marker(
+                [10.431389, -84.00361099999999],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_2f411d0155a842949133feb04a520399 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1278a7935935499ab7996cf5051df4e7 = $(`<div id="html_1278a7935935499ab7996cf5051df4e7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva, 45 m. 3 km. S.E. of Puerto Viejo. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1997-01-22 <strong>Recolectores:</strong> Paul A. Opler <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_2f411d0155a842949133feb04a520399.setContent(html_1278a7935935499ab7996cf5051df4e7);
+        
+
+        marker_f2a98d56c1084b8ca1ba0c71a5467e7e.bindPopup(popup_2f411d0155a842949133feb04a520399)
+        ;
+
+        
+    
+    
+            var marker_9de0970109b94c62951320e9f702f63f = L.marker(
+                [10.41666, -83.98333000000001],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_9deef6d393bb4c2c84796399a6d2a14e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa5481675eb445ceb1387cda47f08b5d = $(`<div id="html_fa5481675eb445ceb1387cda47f08b5d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Original wet forest and Cocoa plantation on the property of Dr. L. Holdridge, about 2 km. Upstream on the Rio Puerto Viejo. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1967-01-05 <strong>Recolectores:</strong> William C. Burger|G. Mata U. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_9deef6d393bb4c2c84796399a6d2a14e.setContent(html_fa5481675eb445ceb1387cda47f08b5d);
+        
+
+        marker_9de0970109b94c62951320e9f702f63f.bindPopup(popup_9deef6d393bb4c2c84796399a6d2a14e)
+        ;
+
+        
+    
+    
+            var marker_9738faec73e7479cb5c2954778f400f7 = L.marker(
+                [10.5, -83.58333],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_36f7779764304bf6bf5d0af3b3b0f1c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e00e4eabe2f416daaa813891b5391e0 = $(`<div id="html_3e00e4eabe2f416daaa813891b5391e0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Palacios, ca 13 km W of Tortuguero village. On farm of Marvin Jiménez. One-ha sample plot in all forest dominated by Carapa ( 25% of basal area), Pentaclethra macroloba ( 22%) and Pterocarpus officinalis (13%). Understorey dominated by Astrocaryum alatum and Simira maxonii <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 1998-02-20 <strong>Recolectores:</strong> Karsten Thomsen <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_36f7779764304bf6bf5d0af3b3b0f1c9.setContent(html_3e00e4eabe2f416daaa813891b5391e0);
+        
+
+        marker_9738faec73e7479cb5c2954778f400f7.bindPopup(popup_36f7779764304bf6bf5d0af3b3b0f1c9)
+        ;
+
+        
+    
+    
+            var marker_cf3f20065181458597ca393b724d1a73 = L.marker(
+                [10.5, -83.58333],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_7dcc40d4021c4ed991ac838345370b91 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_48913e89fe9140a9a27dc2a651c7b43c = $(`<div id="html_48913e89fe9140a9a27dc2a651c7b43c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Palacios, ca 13 km W of Tortuguero village. On farm of Marvin Jiménez. One-ha sample plot in all forest dominated by Carapa ( 25% of basal area), Pentaclethra macroloba ( 22%) and Pterocarpus officinalis (13%). Understorey dominated by Astrocaryum alatum and Simira maxonii <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 1998-02-20 <strong>Recolectores:</strong> Karsten Thomsen <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_7dcc40d4021c4ed991ac838345370b91.setContent(html_48913e89fe9140a9a27dc2a651c7b43c);
+        
+
+        marker_cf3f20065181458597ca393b724d1a73.bindPopup(popup_7dcc40d4021c4ed991ac838345370b91)
+        ;
+
+        
+    
+    
+            var marker_b68ebde6654b4619ad75dfb161b70f4c = L.marker(
+                [10.14444, -83.95083000000001],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_c8cc8a800f834d8bb8d80fb82682a233 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd2d0e4693e94d19a9fcd82c254d415e = $(`<div id="html_fd2d0e4693e94d19a9fcd82c254d415e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estación Carrillo de la Fila al Cañon del Río Sucio, bosque muy húedo tropical-transición a premontano <strong>Elevación:</strong> 575.0 m  <strong>Fecha:</strong> 1983-11-12 <strong>Recolectores:</strong> Gerardo Herrera Ch.|Isidro A. Chacón G. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_c8cc8a800f834d8bb8d80fb82682a233.setContent(html_fd2d0e4693e94d19a9fcd82c254d415e);
+        
+
+        marker_b68ebde6654b4619ad75dfb161b70f4c.bindPopup(popup_c8cc8a800f834d8bb8d80fb82682a233)
+        ;
+
+        
+    
+    
+            var marker_aa737f498a38497195b6cb86fea21a8a = L.marker(
+                [10.43333, -84.01666],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_29ca5c19bb66499bb5199332cff9f229 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b823260e6c884b338dcb47a29c68c1ce = $(`<div id="html_b823260e6c884b338dcb47a29c68c1ce" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vincinity of Rio Frio Finca La Selva, W Puerto Viejo, <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1970-05-16 <strong>Recolectores:</strong> Gary S. Hartshorn <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_29ca5c19bb66499bb5199332cff9f229.setContent(html_b823260e6c884b338dcb47a29c68c1ce);
+        
+
+        marker_aa737f498a38497195b6cb86fea21a8a.bindPopup(popup_29ca5c19bb66499bb5199332cff9f229)
+        ;
+
+        
+    
+    
+            var marker_38c368164dec45e3af3b78b10ec6a814 = L.marker(
+                [10.13, -83.94],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_0a3bbe9130b147edb13f45c584f718b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a67237a676ae4ad2b0b8025cebc8f2d0 = $(`<div id="html_a67237a676ae4ad2b0b8025cebc8f2d0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Carrillo, Parque Nacional Braulio Carrillo, bosque muy húmedo tropical transición premontano <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1984-04-04 <strong>Recolectores:</strong> Luis Diego Gómez P.|Isidro A. Chacón G.|Gerardo Herrera Ch. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_0a3bbe9130b147edb13f45c584f718b4.setContent(html_a67237a676ae4ad2b0b8025cebc8f2d0);
+        
+
+        marker_38c368164dec45e3af3b78b10ec6a814.bindPopup(popup_0a3bbe9130b147edb13f45c584f718b4)
+        ;
+
+        
+    
+    
+            var marker_2fdd7cbad34d425e937eaff3a4e52481 = L.marker(
+                [10.31, -83.93],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_a896f72b977841a18ba448210e19fe11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2cff975ae2f4bcd89404da79ca7f17d = $(`<div id="html_a2cff975ae2f4bcd89404da79ca7f17d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quebrada Gonzalez; Guapiles; Sendero Las Palmas. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1996-09-11 <strong>Recolectores:</strong> Marvin Ramírez <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_a896f72b977841a18ba448210e19fe11.setContent(html_a2cff975ae2f4bcd89404da79ca7f17d);
+        
+
+        marker_2fdd7cbad34d425e937eaff3a4e52481.bindPopup(popup_a896f72b977841a18ba448210e19fe11)
+        ;
+
+        
+    
+    
+            var marker_34085e9159954f1b98aa1ffb41102010 = L.marker(
+                [10.43138, -84.00361],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_62f1095ad7644a86b7a4339d609b4364 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_139692b46d9c4594af60462027b9548a = $(`<div id="html_139692b46d9c4594af60462027b9548a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, the OTS field station on the Río Puerto Viejo just E of its junction with the Río Sarapiquí. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1982-11-12 <strong>Recolectores:</strong> Tim McDowell <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_62f1095ad7644a86b7a4339d609b4364.setContent(html_139692b46d9c4594af60462027b9548a);
+        
+
+        marker_34085e9159954f1b98aa1ffb41102010.bindPopup(popup_62f1095ad7644a86b7a4339d609b4364)
+        ;
+
+        
+    
+    
+            var marker_8faa991480b346faa649e32dee968147 = L.marker(
+                [10.43138, -84.00361],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_f0679513b0bf4d909f0705e06657149a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3381106b5aa44678898911630616d81 = $(`<div id="html_b3381106b5aa44678898911630616d81" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1981-02-11 <strong>Recolectores:</strong> James P. Folsom <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_f0679513b0bf4d909f0705e06657149a.setContent(html_b3381106b5aa44678898911630616d81);
+        
+
+        marker_8faa991480b346faa649e32dee968147.bindPopup(popup_f0679513b0bf4d909f0705e06657149a)
+        ;
+
+        
+    
+    
+            var marker_7b29de0aee764552b8efd01b38f9a845 = L.marker(
+                [11.15, -84.18333],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_fdb093e89c15489c99f332a23e812569 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5155de437b0d4cc29e6563b1078bdc48 = $(`<div id="html_5155de437b0d4cc29e6563b1078bdc48" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Indio-Maíz, Municipio de el Castillo, a lo largo del Caño Chontaleño. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1997-02-20 <strong>Recolectores:</strong> R. M. Rueda|I. Coronado G.|O. Aráuz|F. Flores <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_fdb093e89c15489c99f332a23e812569.setContent(html_5155de437b0d4cc29e6563b1078bdc48);
+        
+
+        marker_7b29de0aee764552b8efd01b38f9a845.bindPopup(popup_fdb093e89c15489c99f332a23e812569)
+        ;
+
+        
+    
+    
+            var marker_6d659241b5f34594887d93f22917ba2e = L.marker(
+                [11.15, -84.18333],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_805f1630192e497eb97a970f93a3fd4c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9bffc6e08cd142cc8166e845016f18f1 = $(`<div id="html_9bffc6e08cd142cc8166e845016f18f1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Indio-Maíz, Municipio de el Castillo, a lo largo del Caño Chontaleño. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1997-02-17 <strong>Recolectores:</strong> R. M. Rueda|I. Coronado G.|O. Aráuz|F. Flores <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_805f1630192e497eb97a970f93a3fd4c.setContent(html_9bffc6e08cd142cc8166e845016f18f1);
+        
+
+        marker_6d659241b5f34594887d93f22917ba2e.bindPopup(popup_805f1630192e497eb97a970f93a3fd4c)
+        ;
+
+        
+    
+    
+            var marker_dcd73cfdb4464c65872e34cd2a434a0d = L.marker(
+                [11.116660000000001, -84.21666],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_3ebbe0927fe34900976acfbe4997f621 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe7d6666996348819a79498510710d6d = $(`<div id="html_fe7d6666996348819a79498510710d6d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Indio-Maíz, Municipio de el Castillo, a lo largo del Caño Chontaleño. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1997-02-16 <strong>Recolectores:</strong> R. M. Rueda|I. Coronado G.|O. Aráuz|F. Flores <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_3ebbe0927fe34900976acfbe4997f621.setContent(html_fe7d6666996348819a79498510710d6d);
+        
+
+        marker_dcd73cfdb4464c65872e34cd2a434a0d.bindPopup(popup_3ebbe0927fe34900976acfbe4997f621)
+        ;
+
+        
+    
+    
+            var marker_77bccf0c619f4d3da6e8e11f3a3fe081 = L.marker(
+                [10.433333, -84.01666800000001],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_cccbd4f9e7174a0e8a0dd1f41d7276b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb0c90b7c3044fa785a507ebf951eae7 = $(`<div id="html_fb0c90b7c3044fa785a507ebf951eae7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> At confluence of Rio Sarapiqui and Rio Puerto Viejo, Atlantic Slope. Sendero Circular Cercano m 150 de los postes. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2003-06-30 <strong>Recolectores:</strong> Ricardo Kriebel; Nelson A. Zamora Villalobos ; Reinaldo Aguilar <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_cccbd4f9e7174a0e8a0dd1f41d7276b8.setContent(html_fb0c90b7c3044fa785a507ebf951eae7);
+        
+
+        marker_77bccf0c619f4d3da6e8e11f3a3fe081.bindPopup(popup_cccbd4f9e7174a0e8a0dd1f41d7276b8)
+        ;
+
+        
+    
+    
+            var marker_2607d18dff4a410ba27bee1736ec81d1 = L.marker(
+                [10.433333, -84.01666800000001],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_5197be5d72074829b55b477f37c9c35a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b73788b64e084fcf8a1f460e0f742b33 = $(`<div id="html_b73788b64e084fcf8a1f460e0f742b33" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> At confluence of Rio Sarapiqui and Rio Puerto Viejo, Atlantic Slope. Sendero Circular Cercano m 150 de los postes. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2003-06-30 <strong>Recolectores:</strong> Ricardo Kriebel; Nelson A. Zamora Villalobos ; Reinaldo Aguilar <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_5197be5d72074829b55b477f37c9c35a.setContent(html_b73788b64e084fcf8a1f460e0f742b33);
+        
+
+        marker_2607d18dff4a410ba27bee1736ec81d1.bindPopup(popup_5197be5d72074829b55b477f37c9c35a)
+        ;
+
+        
+    
+    
+            var marker_36c5dfeae6ef4e929a6b6c35375cf764 = L.marker(
+                [10.441667, -83.788889],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_fc4a3a746ffd4f729159916ead84265c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f55af743eb5243f78ad7d691f8d5c921 = $(`<div id="html_f55af743eb5243f78ad7d691f8d5c921" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Suerte. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 2002-11-02 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_fc4a3a746ffd4f729159916ead84265c.setContent(html_f55af743eb5243f78ad7d691f8d5c921);
+        
+
+        marker_36c5dfeae6ef4e929a6b6c35375cf764.bindPopup(popup_fc4a3a746ffd4f729159916ead84265c)
+        ;
+
+        
+    
+    
+            var marker_eba24105b3fb41a18dcc9d8a2be74973 = L.marker(
+                [10.556944, -84.052778],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_28eaff2a3684463696acfe9803c95eb4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f19e800ac5541009494b275ee47b275 = $(`<div id="html_0f19e800ac5541009494b275ee47b275" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Por el Cano Negro del Sur, rumbo a Lomas Sardinal; ca.  12 km linea recta N de Puerto Viejo. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1998-05-06 <strong>Recolectores:</strong> Barry Hammel; Alexánder Francisco Rodríguez González ; Victor Ramírez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_28eaff2a3684463696acfe9803c95eb4.setContent(html_0f19e800ac5541009494b275ee47b275);
+        
+
+        marker_eba24105b3fb41a18dcc9d8a2be74973.bindPopup(popup_28eaff2a3684463696acfe9803c95eb4)
+        ;
+
+        
+    
+    
+            var marker_737833e0d38b4baba2664b753b74eaa5 = L.marker(
+                [10.441868, -84.69137099999999],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_406457fa5bd94897970515c5fa159601 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_607afcbb00ec4168bda3ae9bbf1c13ab = $(`<div id="html_607afcbb00ec4168bda3ae9bbf1c13ab" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Chato <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 2000-08-22 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; Gerardo Soto <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_406457fa5bd94897970515c5fa159601.setContent(html_607afcbb00ec4168bda3ae9bbf1c13ab);
+        
+
+        marker_737833e0d38b4baba2664b753b74eaa5.bindPopup(popup_406457fa5bd94897970515c5fa159601)
+        ;
+
+        
+    
+    
+            var marker_47a8194518b44201a42957b043a6c91d = L.marker(
+                [10.441868, -84.69137099999999],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_2904f1a413604910b481304d84bedc0b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f70c46dabbec42aa85e9e7bcac08f27f = $(`<div id="html_f70c46dabbec42aa85e9e7bcac08f27f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Chato <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 2000-08-22 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; Gerardo Soto <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_2904f1a413604910b481304d84bedc0b.setContent(html_f70c46dabbec42aa85e9e7bcac08f27f);
+        
+
+        marker_47a8194518b44201a42957b043a6c91d.bindPopup(popup_2904f1a413604910b481304d84bedc0b)
+        ;
+
+        
+    
+    
+            var marker_b00ca684ab7b4cd4a0630f25596ee286 = L.marker(
+                [10.441868, -84.69137099999999],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_14e46349275e4e5890ccb3014f4225fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0184899e246146ccad2d2a2dd7b44efc = $(`<div id="html_0184899e246146ccad2d2a2dd7b44efc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Chato <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 2000-08-22 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; Gerardo Soto <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_14e46349275e4e5890ccb3014f4225fc.setContent(html_0184899e246146ccad2d2a2dd7b44efc);
+        
+
+        marker_b00ca684ab7b4cd4a0630f25596ee286.bindPopup(popup_14e46349275e4e5890ccb3014f4225fc)
+        ;
+
+        
+    
+    
+            var marker_39402ac6937849bbaf384b15ccb55169 = L.marker(
+                [10.441868, -84.69137099999999],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_58f0707a5ef94057b91f75deaac60913 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_930391c26a054f8aad9bc0e6f2673d37 = $(`<div id="html_930391c26a054f8aad9bc0e6f2673d37" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Chato <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 2000-08-22 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; Gerardo Soto <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_58f0707a5ef94057b91f75deaac60913.setContent(html_930391c26a054f8aad9bc0e6f2673d37);
+        
+
+        marker_39402ac6937849bbaf384b15ccb55169.bindPopup(popup_58f0707a5ef94057b91f75deaac60913)
+        ;
+
+        
+    
+    
+            var marker_70378fc3bccc4806ac906bd8bf770659 = L.marker(
+                [9.788611, -83.141667],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_1374f7ed173c4f3294531aff1041fd5d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3f9693879f44b07849ad1263109abf1 = $(`<div id="html_f3f9693879f44b07849ad1263109abf1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Progreso. Bosque transicional entre los 1200 m y 1500 m. Fila Matama. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1989-04-22 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_1374f7ed173c4f3294531aff1041fd5d.setContent(html_f3f9693879f44b07849ad1263109abf1);
+        
+
+        marker_70378fc3bccc4806ac906bd8bf770659.bindPopup(popup_1374f7ed173c4f3294531aff1041fd5d)
+        ;
+
+        
+    
+    
+            var marker_4a8a69484467415da4394fd1f3247b19 = L.marker(
+                [10.384167, -84.05],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_03c2ee3248ad4c079b7e63b29f2044e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5ee00ee1e574d1c92b53b273eec50c9 = $(`<div id="html_c5ee00ee1e574d1c92b53b273eec50c9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Magsasay. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1990-07-18 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_03c2ee3248ad4c079b7e63b29f2044e9.setContent(html_c5ee00ee1e574d1c92b53b273eec50c9);
+        
+
+        marker_4a8a69484467415da4394fd1f3247b19.bindPopup(popup_03c2ee3248ad4c079b7e63b29f2044e9)
+        ;
+
+        
+    
+    
+            var marker_23905624a47847a08432ed29955e1fec = L.marker(
+                [10.402778, -84.05833299999999],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_4ee14d1110034fedbb54ee158e57a70d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_785e5068e6fd40be9426e9f87a1a1707 = $(`<div id="html_785e5068e6fd40be9426e9f87a1a1707" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Magsasay. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1998-03-11 <strong>Recolectores:</strong> Luis Diego Vargas; Alexánder Francisco Rodríguez González ; Esteban Uren~a <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_4ee14d1110034fedbb54ee158e57a70d.setContent(html_785e5068e6fd40be9426e9f87a1a1707);
+        
+
+        marker_23905624a47847a08432ed29955e1fec.bindPopup(popup_4ee14d1110034fedbb54ee158e57a70d)
+        ;
+
+        
+    
+    
+            var marker_502074e7ae934a708f618ffddbb9553f = L.marker(
+                [10.402778, -84.05833299999999],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_d9b445e76e7d47d3af58fcb04ef3dd45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5dd8273fabf4887a6e9e8dc1ca8c5cc = $(`<div id="html_c5dd8273fabf4887a6e9e8dc1ca8c5cc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Magsasay. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1998-03-11 <strong>Recolectores:</strong> Luis Diego Vargas; Alexánder Francisco Rodríguez González ; Esteban Uren~a <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_d9b445e76e7d47d3af58fcb04ef3dd45.setContent(html_c5dd8273fabf4887a6e9e8dc1ca8c5cc);
+        
+
+        marker_502074e7ae934a708f618ffddbb9553f.bindPopup(popup_d9b445e76e7d47d3af58fcb04ef3dd45)
+        ;
+
+        
+    
+    
+            var marker_dcd7cd8bdfdb4455a9c4299ae990b5f9 = L.marker(
+                [10.402778, -84.05833299999999],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_5bec2c52782349af8252f24c05969603 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_916ce40860494e2fa751d44183c0d30c = $(`<div id="html_916ce40860494e2fa751d44183c0d30c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Magsasay. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1998-03-11 <strong>Recolectores:</strong> Luis Diego Vargas; Alexánder Francisco Rodríguez González ; Esteban Uren~a <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_5bec2c52782349af8252f24c05969603.setContent(html_916ce40860494e2fa751d44183c0d30c);
+        
+
+        marker_dcd7cd8bdfdb4455a9c4299ae990b5f9.bindPopup(popup_5bec2c52782349af8252f24c05969603)
+        ;
+
+        
+    
+    
+            var marker_71b30ff102044c80960d7338ae58bb47 = L.marker(
+                [10.643889, -83.736112],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_54787bb414a2465694dc28976eb51f3b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_debc174e3f0d4a16b01298d0da9f229a = $(`<div id="html_debc174e3f0d4a16b01298d0da9f229a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sardinas. <strong>Elevación:</strong> 17.5 m  <strong>Fecha:</strong> 1994-09-03 <strong>Recolectores:</strong> F. Araya <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_54787bb414a2465694dc28976eb51f3b.setContent(html_debc174e3f0d4a16b01298d0da9f229a);
+        
+
+        marker_71b30ff102044c80960d7338ae58bb47.bindPopup(popup_54787bb414a2465694dc28976eb51f3b)
+        ;
+
+        
+    
+    
+            var marker_1a6323c72057479c90970df6412836a9 = L.marker(
+                [10.333333, -84.7],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_7d98994598064855a404a967c1acb73f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60504be59fa149a497b24051f521c1e2 = $(`<div id="html_60504be59fa149a497b24051f521c1e2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Penas Blancas. Division Bosque Eterno de Los Ninos y Finca I.Q.P.S.A. <strong>Elevación:</strong> 650.0 m  <strong>Fecha:</strong> 1990-03-24 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_7d98994598064855a404a967c1acb73f.setContent(html_60504be59fa149a497b24051f521c1e2);
+        
+
+        marker_1a6323c72057479c90970df6412836a9.bindPopup(popup_7d98994598064855a404a967c1acb73f)
+        ;
+
+        
+    
+    
+            var marker_985966deea0646e7bdd959336038ab75 = L.marker(
+                [10.294444, -84.75],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_cbe291fa89814aa8afde120de0f7dbe6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_319e9f1bcd4e4524b55c76cd27eecc9f = $(`<div id="html_319e9f1bcd4e4524b55c76cd27eecc9f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Aleman s. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1991-10-17 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_cbe291fa89814aa8afde120de0f7dbe6.setContent(html_319e9f1bcd4e4524b55c76cd27eecc9f);
+        
+
+        marker_985966deea0646e7bdd959336038ab75.bindPopup(popup_cbe291fa89814aa8afde120de0f7dbe6)
+        ;
+
+        
+    
+    
+            var marker_54d8bd20e150468a9a7c115a810d71c8 = L.marker(
+                [10.444444, -83.57777800000001],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_07ccd11e20604be0ab17cb25776a9b9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6dd584b85e894d998636a58a4d3e399e = $(`<div id="html_6dd584b85e894d998636a58a4d3e399e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Agua Fria. Sendero Agua Fria hasta entrada Sendero Aguacate. <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1990-12-01 <strong>Recolectores:</strong> Jose Solano <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_07ccd11e20604be0ab17cb25776a9b9f.setContent(html_6dd584b85e894d998636a58a4d3e399e);
+        
+
+        marker_54d8bd20e150468a9a7c115a810d71c8.bindPopup(popup_07ccd11e20604be0ab17cb25776a9b9f)
+        ;
+
+        
+    
+    
+            var marker_c2bea62312574e8cbe4dca3a683dcc3a = L.marker(
+                [10.234722, -84.052778],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_d21167ed02bd4283a3e171acb8abbebf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad55f72e53d14d4ebb567aef0ab889dc = $(`<div id="html_ad55f72e53d14d4ebb567aef0ab889dc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Magsasay. Detras de la Estacion entre bosque y potreros. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1990-09-29 <strong>Recolectores:</strong> Alvaro Fernandez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_d21167ed02bd4283a3e171acb8abbebf.setContent(html_ad55f72e53d14d4ebb567aef0ab889dc);
+        
+
+        marker_c2bea62312574e8cbe4dca3a683dcc3a.bindPopup(popup_d21167ed02bd4283a3e171acb8abbebf)
+        ;
+
+        
+    
+    
+            var marker_24f1c68118cc44febde6ca7adb9d19a4 = L.marker(
+                [10.35, -84.666667],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_56f4bac24cc7461b8f52387fc3090d42 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e07720a51ca74f569f7e4bace6edca0e = $(`<div id="html_e07720a51ca74f569f7e4bace6edca0e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Aguas Gatas. Finca Ulate. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1990-01-29 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_56f4bac24cc7461b8f52387fc3090d42.setContent(html_e07720a51ca74f569f7e4bace6edca0e);
+        
+
+        marker_24f1c68118cc44febde6ca7adb9d19a4.bindPopup(popup_56f4bac24cc7461b8f52387fc3090d42)
+        ;
+
+        
+    
+    
+            var marker_ae809c42b178417f925aecaecbbacde9 = L.marker(
+                [9.402778, -82.961111],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_8d055059592b4f98bfcf6f9280e9ff06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_422ba86cf026449f9d6cd2b4815f5df0 = $(`<div id="html_422ba86cf026449f9d6cd2b4815f5df0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> De las juntas de Rio Uren y Rio Sukut 1.5 Km aguas arriba sobre este, margen derecha siguiendo el sendero hacia Boca de Rio Buruy. <strong>Elevación:</strong> 450.0 m  <strong>Fecha:</strong> 1989-07-08 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_8d055059592b4f98bfcf6f9280e9ff06.setContent(html_422ba86cf026449f9d6cd2b4815f5df0);
+        
+
+        marker_ae809c42b178417f925aecaecbbacde9.bindPopup(popup_8d055059592b4f98bfcf6f9280e9ff06)
+        ;
+
+        
+    
+    
+            var marker_79e3c48c344b4d938cae1f763d995ae3 = L.marker(
+                [10.319167, -83.936111],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_038f7cfac94a4e3db7363ced9c8848eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45514a97f9a64561876b8d7afd12a2d5 = $(`<div id="html_45514a97f9a64561876b8d7afd12a2d5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quebrada Gonzalez; Guapiles; Sendero La Garrapata. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1996-09-11 <strong>Recolectores:</strong> Victor Ramírez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_038f7cfac94a4e3db7363ced9c8848eb.setContent(html_45514a97f9a64561876b8d7afd12a2d5);
+        
+
+        marker_79e3c48c344b4d938cae1f763d995ae3.bindPopup(popup_038f7cfac94a4e3db7363ced9c8848eb)
+        ;
+
+        
+    
+    
+            var marker_9cf2c81579b147d4a3b1de7316bb0453 = L.marker(
+                [10.319167, -83.936111],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_d079c137eb2d48c087d471e25ca8c2b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9395cae80d844160ab202a67ef83a7c7 = $(`<div id="html_9395cae80d844160ab202a67ef83a7c7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quebrada Gonzalez; Guapiles; Sendero La Garrapata. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1996-09-11 <strong>Recolectores:</strong> Victor Ramírez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_d079c137eb2d48c087d471e25ca8c2b7.setContent(html_9395cae80d844160ab202a67ef83a7c7);
+        
+
+        marker_9cf2c81579b147d4a3b1de7316bb0453.bindPopup(popup_d079c137eb2d48c087d471e25ca8c2b7)
+        ;
+
+        
+    
+    
+            var marker_62ffa816d195458e94d5c04a0788b387 = L.marker(
+                [10.319167, -83.936111],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_980650186bb94289936bc8e6b4885d1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d5fdee884bd405d852fc5b8c9e2cb38 = $(`<div id="html_9d5fdee884bd405d852fc5b8c9e2cb38" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quebrada Gonzalez; Guapiles; Sendero La Garrapata. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1996-09-11 <strong>Recolectores:</strong> Victor Ramírez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_980650186bb94289936bc8e6b4885d1e.setContent(html_9d5fdee884bd405d852fc5b8c9e2cb38);
+        
+
+        marker_62ffa816d195458e94d5c04a0788b387.bindPopup(popup_980650186bb94289936bc8e6b4885d1e)
+        ;
+
+        
+    
+    
+            var marker_65ff66b6c2504a92b39d39fa91795174 = L.marker(
+                [10.319167, -83.936111],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_c0c9d8c4b7b0424ba0bf61f08e295cea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_74b2951a3fdc4a76ba73b648e0faa7fb = $(`<div id="html_74b2951a3fdc4a76ba73b648e0faa7fb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quebrada Gonzalez; Guapiles; Sendero La Garrapata. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1996-09-11 <strong>Recolectores:</strong> Victor Ramírez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_c0c9d8c4b7b0424ba0bf61f08e295cea.setContent(html_74b2951a3fdc4a76ba73b648e0faa7fb);
+        
+
+        marker_65ff66b6c2504a92b39d39fa91795174.bindPopup(popup_c0c9d8c4b7b0424ba0bf61f08e295cea)
+        ;
+
+        
+    
+    
+            var marker_b0ff7b725848418ab997b70d81afcf1e = L.marker(
+                [10.5, -84.0],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_eed2292feeba44d196d8d4524a5056d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19322789354943729561333ab9a9f610 = $(`<div id="html_19322789354943729561333ab9a9f610" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1981-02-11 <strong>Recolectores:</strong> J. P. Folsom <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_eed2292feeba44d196d8d4524a5056d2.setContent(html_19322789354943729561333ab9a9f610);
+        
+
+        marker_b0ff7b725848418ab997b70d81afcf1e.bindPopup(popup_eed2292feeba44d196d8d4524a5056d2)
+        ;
+
+        
+    
+    
+            var marker_c246ef361738471ea07fac25f4bcd489 = L.marker(
+                [10.5, -84.0],
+                {}
+            ).addTo(marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b);
+        
+    
+        var popup_43fa018312054ef98a106306a7cbc55d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_457f2924cbb54d7ab2edb40325fc2d70 = $(`<div id="html_457f2924cbb54d7ab2edb40325fc2d70" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1982-11-12 <strong>Recolectores:</strong> T. McDowell <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_43fa018312054ef98a106306a7cbc55d.setContent(html_457f2924cbb54d7ab2edb40325fc2d70);
+        
+
+        marker_c246ef361738471ea07fac25f4bcd489.bindPopup(popup_43fa018312054ef98a106306a7cbc55d)
+        ;
+
+        
+    
+    
+            var layer_control_b265184cbf4543c8bbbbe33e6138f823 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_7f3116f5fb81436a89ee37a8ca76b3de,
+                    "ESRI World Imagery" : tile_layer_8b84fd108d6f40c98a7454120852df03,
+                },
+                overlays :  {
+                    "macro_element_17dbb14a3b664314b7de85afe0b8fd6b" : marker_cluster_17dbb14a3b664314b7de85afe0b8fd6b,
+                },
+            };
+            L.control.layers(
+                layer_control_b265184cbf4543c8bbbbe33e6138f823.base_layers,
+                layer_control_b265184cbf4543c8bbbbe33e6138f823.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_a59ff04e026f40b6ae9545d51a5559d8);
+            tile_layer_8b84fd108d6f40c98a7454120852df03.remove();
+        
+</script>

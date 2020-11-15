@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_01b7d9d249594ccd8d95365d8989bfa6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_01b7d9d249594ccd8d95365d8989bfa6" ></div>
+        
+</body>
+<script>    
+    
+            var map_01b7d9d249594ccd8d95365d8989bfa6 = L.map(
+                "map_01b7d9d249594ccd8d95365d8989bfa6",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_01b7d9d249594ccd8d95365d8989bfa6);
+
+            
+
+        
+    
+            var tile_layer_85fb2e357b854810b6d29d6de3013adb = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_01b7d9d249594ccd8d95365d8989bfa6);
+        
+    
+            var tile_layer_e99e7b3757b34e5c90a17651c35b54c9 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_01b7d9d249594ccd8d95365d8989bfa6);
+        
+    
+            var marker_cluster_c38a02d464c34742b4bca557c098f208 = L.markerClusterGroup(
+                {}
+            );
+            map_01b7d9d249594ccd8d95365d8989bfa6.addLayer(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+            var marker_63d99d79975a48a08be3a2c0cd4355c8 = L.marker(
+                [10.182777999999999, -84.106667],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_da8867b2b7bf4f4ba9d6331d5c7aad4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a51dedfffceb4b2b9f0af66e16a5f972 = $(`<div id="html_a51dedfffceb4b2b9f0af66e16a5f972" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Sendero del Transecto, flat area to right of trail, Treeplot 2000 - 1 <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1992-07-29 <strong>Recolectores:</strong> Brad Boyle|Peter Hibbs <strong>Identificadores:</strong> CMT</div>`)[0];
+            popup_da8867b2b7bf4f4ba9d6331d5c7aad4a.setContent(html_a51dedfffceb4b2b9f0af66e16a5f972);
+        
+
+        marker_63d99d79975a48a08be3a2c0cd4355c8.bindPopup(popup_da8867b2b7bf4f4ba9d6331d5c7aad4a)
+        ;
+
+        
+    
+    
+            var marker_d689056c67e644928e504e0e3ae52ffc = L.marker(
+                [10.183333, -84.1],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_1fe11cb866f24e178fcce8733111c85f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7746912b5cab45ce8a4df3d5b9ea15d6 = $(`<div id="html_7746912b5cab45ce8a4df3d5b9ea15d6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Atlantic slope of Cordillera Central, N on main trail for 20 minute walk from Chateaux Barva (2060 m). <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 2004-01-13 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1fe11cb866f24e178fcce8733111c85f.setContent(html_7746912b5cab45ce8a4df3d5b9ea15d6);
+        
+
+        marker_d689056c67e644928e504e0e3ae52ffc.bindPopup(popup_1fe11cb866f24e178fcce8733111c85f)
+        ;
+
+        
+    
+    
+            var marker_023f909b5dd84156840eaa5f4e6a6705 = L.marker(
+                [10.2, -84.1],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_533ddf234fff483c8bd2856b2ef4fb11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5c77dc7a7cc4c6aaead8fc208a81d59 = $(`<div id="html_b5c77dc7a7cc4c6aaead8fc208a81d59" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Atlantic slope of Cordillera Central from Finca Gurdian (1700 m) hike 4 hours to tent at 1740 m, the final hour in the park, then ca. 45 min N on main trail. <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 2004-02-19 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_533ddf234fff483c8bd2856b2ef4fb11.setContent(html_b5c77dc7a7cc4c6aaead8fc208a81d59);
+        
+
+        marker_023f909b5dd84156840eaa5f4e6a6705.bindPopup(popup_533ddf234fff483c8bd2856b2ef4fb11)
+        ;
+
+        
+    
+    
+            var marker_0621a5c22a214f07951173852b369564 = L.marker(
+                [10.183333, -84.1],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_11f82d3b5ad04f7ca41f9a8b4442cbf1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_178957efa1a74f1393be4263069e2e87 = $(`<div id="html_178957efa1a74f1393be4263069e2e87" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Atlantic slope of Cordillera Central, S on main trail for 2 hours walk from Chateaux Barva (2060 m). <strong>Elevación:</strong> 1900.0 m  <strong>Fecha:</strong> 2004-01-21 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_11f82d3b5ad04f7ca41f9a8b4442cbf1.setContent(html_178957efa1a74f1393be4263069e2e87);
+        
+
+        marker_0621a5c22a214f07951173852b369564.bindPopup(popup_11f82d3b5ad04f7ca41f9a8b4442cbf1)
+        ;
+
+        
+    
+    
+            var marker_6c60cb1460e7439fafa80ce104da15db = L.marker(
+                [10.233333, -84.1],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_4cb16c68c8c743ab9e0f07031659b4a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9fdf6e3a050e496d814ccea7624ac3aa = $(`<div id="html_9fdf6e3a050e496d814ccea7624ac3aa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Atlantic slope of the Cordillera Central, from Finca Gurdian (1700 m) hike 4 hours to tent at 1740 m, then ca. 1 hour S on main trail. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2006-01-06 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_4cb16c68c8c743ab9e0f07031659b4a0.setContent(html_9fdf6e3a050e496d814ccea7624ac3aa);
+        
+
+        marker_6c60cb1460e7439fafa80ce104da15db.bindPopup(popup_4cb16c68c8c743ab9e0f07031659b4a0)
+        ;
+
+        
+    
+    
+            var marker_ce18732552c94b31821d000445ef8583 = L.marker(
+                [10.216667, -84.1],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_0b86d929bf3c449bb498d7d714e2aba7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f4710a970024d58b711e07dcd585a9d = $(`<div id="html_0f4710a970024d58b711e07dcd585a9d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Atlantic slope of Cordillera Central from Finca Gurdian (1700 m) hike 4 hours to tent at 1740 m, then ca. 20 minutes S on main trail. <strong>Elevación:</strong> 1720.0 m  <strong>Fecha:</strong> 2006-01-05 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_0b86d929bf3c449bb498d7d714e2aba7.setContent(html_0f4710a970024d58b711e07dcd585a9d);
+        
+
+        marker_ce18732552c94b31821d000445ef8583.bindPopup(popup_0b86d929bf3c449bb498d7d714e2aba7)
+        ;
+
+        
+    
+    
+            var marker_983721e926784364b42393214cbf1c12 = L.marker(
+                [10.226944999999999, -84.094167],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_107a53a476f946e4b3a34583769d776f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c601215b8d9046c4a5f8e4d962066c58 = $(`<div id="html_c601215b8d9046c4a5f8e4d962066c58" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Atlantic slope of the Cordillera Central, from Finca Gurdian hike 4 hrs to tentsite at 1740 m, then hike ca. 1 hr S on main trail. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2005-05-19 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> CMT</div>`)[0];
+            popup_107a53a476f946e4b3a34583769d776f.setContent(html_c601215b8d9046c4a5f8e4d962066c58);
+        
+
+        marker_983721e926784364b42393214cbf1c12.bindPopup(popup_107a53a476f946e4b3a34583769d776f)
+        ;
+
+        
+    
+    
+            var marker_3fc0f8344c5842619ec7c5143d4ce328 = L.marker(
+                [10.191389, -84.10333299999999],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_55820250713b4417bead988ad6767695 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36452089c9d0468f9cc14e178b44d3b0 = $(`<div id="html_36452089c9d0468f9cc14e178b44d3b0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Atlantic slope of the Cordillera Central, from Finca Gurdian hike 4 hrs to tentsite at 1740 m, then hike ca. 1.5 hrs up on main trail. <strong>Elevación:</strong> 1860.0 m  <strong>Fecha:</strong> 2005-03-31 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> Gilman & Taylor - TYPE</div>`)[0];
+            popup_55820250713b4417bead988ad6767695.setContent(html_36452089c9d0468f9cc14e178b44d3b0);
+        
+
+        marker_3fc0f8344c5842619ec7c5143d4ce328.bindPopup(popup_55820250713b4417bead988ad6767695)
+        ;
+
+        
+    
+    
+            var marker_0385f225f8334d09ae235a5d082af50c = L.marker(
+                [10.213611, -84.10055600000001],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_8581474f46494acc99738386886c5ae4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4caad094f144196ac039bea4746da41 = $(`<div id="html_d4caad094f144196ac039bea4746da41" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Atlantic slope of the Cordillera Central, from Finca Gurdian hike 4 hrs to tentsite at 1740 m, then hike ca. 20 min S on main trail. <strong>Elevación:</strong> 1720.0 m  <strong>Fecha:</strong> 2005-01-28 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> CMT</div>`)[0];
+            popup_8581474f46494acc99738386886c5ae4.setContent(html_d4caad094f144196ac039bea4746da41);
+        
+
+        marker_0385f225f8334d09ae235a5d082af50c.bindPopup(popup_8581474f46494acc99738386886c5ae4)
+        ;
+
+        
+    
+    
+            var marker_c58565304ad94781b9e6da49860aadc3 = L.marker(
+                [10.218611, -84.099722],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_07a5ae3ceda440e995bd7b50289cfba4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c92e360b4e649c090fc9d573623db08 = $(`<div id="html_9c92e360b4e649c090fc9d573623db08" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Atlantic slope of the Cordillera Central, from Finca Gurdian hike 4 hrs to tentsite at 1740 m, then hike ca. 25 min S on main trail. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 2004-06-03 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> CMT</div>`)[0];
+            popup_07a5ae3ceda440e995bd7b50289cfba4.setContent(html_9c92e360b4e649c090fc9d573623db08);
+        
+
+        marker_c58565304ad94781b9e6da49860aadc3.bindPopup(popup_07a5ae3ceda440e995bd7b50289cfba4)
+        ;
+
+        
+    
+    
+            var marker_5533a0efcb394d89bc228cdb8fbdb07f = L.marker(
+                [10.186111, -84.105],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_d186b6d4945948fc87086383c98055fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6db3785e7f454d9390177cbb6eeb3238 = $(`<div id="html_6db3785e7f454d9390177cbb6eeb3238" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Atlantic slope of the Cordillera Central, S on main trail for 50 min to 1 hr walk from Chateaux Barva. <strong>Elevación:</strong> 1960.0 m  <strong>Fecha:</strong> 2004-01-19 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> CMT</div>`)[0];
+            popup_d186b6d4945948fc87086383c98055fc.setContent(html_6db3785e7f454d9390177cbb6eeb3238);
+        
+
+        marker_5533a0efcb394d89bc228cdb8fbdb07f.bindPopup(popup_d186b6d4945948fc87086383c98055fc)
+        ;
+
+        
+    
+    
+            var marker_bc2f35fdaa134a4282018e28de7b1157 = L.marker(
+                [10.218611, -84.099722],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_37096204de0048ed9fa00db90f79973a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bac1b9f5ea1e4dc6bca4d91456c88d7d = $(`<div id="html_bac1b9f5ea1e4dc6bca4d91456c88d7d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Atlantic slope of the Cordillera Central, from Finca Gurdian hike 4 hrs to tentsite at 1740 m, then hike ca. 25 min S on main trail. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 2004-02-13 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_37096204de0048ed9fa00db90f79973a.setContent(html_bac1b9f5ea1e4dc6bca4d91456c88d7d);
+        
+
+        marker_bc2f35fdaa134a4282018e28de7b1157.bindPopup(popup_37096204de0048ed9fa00db90f79973a)
+        ;
+
+        
+    
+    
+            var marker_2438952754f9416d863d472423e9ceab = L.marker(
+                [10.226944999999999, -84.0775],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_29c52d3be71b4608b07575c38e992228 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2314b6892f6649b48f8cf640ec9e12e9 = $(`<div id="html_2314b6892f6649b48f8cf640ec9e12e9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Atlantic slope of the Cordillera Central, from Finca Gurdian hike 4 hrs to tent site at 1740 m, then hike ca. 1 hr S on main trail. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2004-02-12 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> CMT</div>`)[0];
+            popup_29c52d3be71b4608b07575c38e992228.setContent(html_2314b6892f6649b48f8cf640ec9e12e9);
+        
+
+        marker_2438952754f9416d863d472423e9ceab.bindPopup(popup_29c52d3be71b4608b07575c38e992228)
+        ;
+
+        
+    
+    
+            var marker_88d91fb5dc7e423981fb084197ddec59 = L.marker(
+                [10.226944, -84.09416999999999],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_c1539170bd9349778bbf47924296c957 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27d5e4e7b28449e3a0e3f3ca84c3b7b4 = $(`<div id="html_27d5e4e7b28449e3a0e3f3ca84c3b7b4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Braulio Carrillo. Atlantic slope of the Cordillera Volcanica Central. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2004-12-02 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> A. Gilman</div>`)[0];
+            popup_c1539170bd9349778bbf47924296c957.setContent(html_27d5e4e7b28449e3a0e3f3ca84c3b7b4);
+        
+
+        marker_88d91fb5dc7e423981fb084197ddec59.bindPopup(popup_c1539170bd9349778bbf47924296c957)
+        ;
+
+        
+    
+    
+            var marker_fb286b1210074013aff6e16fbf28372c = L.marker(
+                [10.226944, -84.094167],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_5e90febb43a1441e909fee5330bf835f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_107ee558f86d4549a346fa008aaae966 = $(`<div id="html_107ee558f86d4549a346fa008aaae966" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Atlantic slope of the Cordillera Volcánica Central. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2004-12-02 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> Gilman, Alex</div>`)[0];
+            popup_5e90febb43a1441e909fee5330bf835f.setContent(html_107ee558f86d4549a346fa008aaae966);
+        
+
+        marker_fb286b1210074013aff6e16fbf28372c.bindPopup(popup_5e90febb43a1441e909fee5330bf835f)
+        ;
+
+        
+    
+    
+            var marker_21e7371fe5a543568811bb4cf479fc95 = L.marker(
+                [10.226944, -84.094167],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_57a10a7174e54127b8cf3d7f6732b253 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db2742394e7049d39157515b28d9faee = $(`<div id="html_db2742394e7049d39157515b28d9faee" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Atlantic slope of the Cordillera Volcánica Central. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2004-12-02 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> Gilman, Alex</div>`)[0];
+            popup_57a10a7174e54127b8cf3d7f6732b253.setContent(html_db2742394e7049d39157515b28d9faee);
+        
+
+        marker_21e7371fe5a543568811bb4cf479fc95.bindPopup(popup_57a10a7174e54127b8cf3d7f6732b253)
+        ;
+
+        
+    
+    
+            var marker_4811e0a1c8be46d3beb809acb6f6149a = L.marker(
+                [10.218611, -84.099722],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_32584156fa7b42f7b5fac8e171ecfa08 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7dc37ffc4e844e42b784b7fcd386b8c6 = $(`<div id="html_7dc37ffc4e844e42b784b7fcd386b8c6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Atlantic slope of the Cordillera Volcánica Central. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 2004-02-13 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> Gilman, Alex</div>`)[0];
+            popup_32584156fa7b42f7b5fac8e171ecfa08.setContent(html_7dc37ffc4e844e42b784b7fcd386b8c6);
+        
+
+        marker_4811e0a1c8be46d3beb809acb6f6149a.bindPopup(popup_32584156fa7b42f7b5fac8e171ecfa08)
+        ;
+
+        
+    
+    
+            var marker_0c157d6189194c48b92698e63faa52e9 = L.marker(
+                [10.226944, -84.094167],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_41c7ed62388c456d952927e29258c543 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_67236704dc004dcd8456f221edeee37d = $(`<div id="html_67236704dc004dcd8456f221edeee37d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Atlantic slope of the Cordillera Volcánica Central. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2004-12-02 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> Gilman, Alex</div>`)[0];
+            popup_41c7ed62388c456d952927e29258c543.setContent(html_67236704dc004dcd8456f221edeee37d);
+        
+
+        marker_0c157d6189194c48b92698e63faa52e9.bindPopup(popup_41c7ed62388c456d952927e29258c543)
+        ;
+
+        
+    
+    
+            var marker_8c52fb8f0afd48a5bfa9f11b1730a1bf = L.marker(
+                [10.226944, -84.094167],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_845b894850da45b3b37674a03e60ea88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_311b9e780d1b434d8312f921c1ac9012 = $(`<div id="html_311b9e780d1b434d8312f921c1ac9012" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Atlantic slope of the Cordillera Volcánica Central. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2004-12-02 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> Gilman, Alex</div>`)[0];
+            popup_845b894850da45b3b37674a03e60ea88.setContent(html_311b9e780d1b434d8312f921c1ac9012);
+        
+
+        marker_8c52fb8f0afd48a5bfa9f11b1730a1bf.bindPopup(popup_845b894850da45b3b37674a03e60ea88)
+        ;
+
+        
+    
+    
+            var marker_daefaaecb7af49b5876ada099c54c306 = L.marker(
+                [10.191389, -84.10333299999999],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_52e30d0e76e14f49806f0e47fd314e23 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3da55e4cc1b1499496be08175d6f4152 = $(`<div id="html_3da55e4cc1b1499496be08175d6f4152" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Atlantic slope of the Cordillera Volcánica Central. <strong>Elevación:</strong> 1830.0 m  <strong>Fecha:</strong> 2005-03-31 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> Gilman, Alex</div>`)[0];
+            popup_52e30d0e76e14f49806f0e47fd314e23.setContent(html_3da55e4cc1b1499496be08175d6f4152);
+        
+
+        marker_daefaaecb7af49b5876ada099c54c306.bindPopup(popup_52e30d0e76e14f49806f0e47fd314e23)
+        ;
+
+        
+    
+    
+            var marker_f442535855c845b2972ae743cc1b0716 = L.marker(
+                [10.226944, -84.094167],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_a8004f3c2ad74533843228b0af61dd91 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_098cba09b4c64374beea68ab09fa5fdd = $(`<div id="html_098cba09b4c64374beea68ab09fa5fdd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Atlantic slope of the Cordillera Volcánica Central. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2004-12-02 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> Gilman, Alex</div>`)[0];
+            popup_a8004f3c2ad74533843228b0af61dd91.setContent(html_098cba09b4c64374beea68ab09fa5fdd);
+        
+
+        marker_f442535855c845b2972ae743cc1b0716.bindPopup(popup_a8004f3c2ad74533843228b0af61dd91)
+        ;
+
+        
+    
+    
+            var marker_27ed116d460d4077b20c0ee6e6d6e02e = L.marker(
+                [10.226944, -84.094167],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_da30538fc9d946408f18592a8947ce61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed6f6ad646f54ef180be80fa5ae810bf = $(`<div id="html_ed6f6ad646f54ef180be80fa5ae810bf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Atlantic slope of the Cordillera Volcánica Central. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2004-12-02 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> Gilman, Alex</div>`)[0];
+            popup_da30538fc9d946408f18592a8947ce61.setContent(html_ed6f6ad646f54ef180be80fa5ae810bf);
+        
+
+        marker_27ed116d460d4077b20c0ee6e6d6e02e.bindPopup(popup_da30538fc9d946408f18592a8947ce61)
+        ;
+
+        
+    
+    
+            var marker_63df21e46b154a51ac2817b522f2dec7 = L.marker(
+                [10.226944, -84.094167],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_75736b000dbe4338a55c1cdbba8562e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82ce1f5970f042bcbdc95dbc0b225176 = $(`<div id="html_82ce1f5970f042bcbdc95dbc0b225176" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Atlantic slope of the Cordillera Volcánica Central. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2004-12-02 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> Gilman, Alex</div>`)[0];
+            popup_75736b000dbe4338a55c1cdbba8562e3.setContent(html_82ce1f5970f042bcbdc95dbc0b225176);
+        
+
+        marker_63df21e46b154a51ac2817b522f2dec7.bindPopup(popup_75736b000dbe4338a55c1cdbba8562e3)
+        ;
+
+        
+    
+    
+            var marker_edbed52b32c84426821dba7facbb12d7 = L.marker(
+                [10.226944, -84.094167],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_a7db4a8ab1764b3aa5c6ec233944cb75 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_304922489a564d83b93e09df56b0a4c5 = $(`<div id="html_304922489a564d83b93e09df56b0a4c5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Atlantic slope of the Cordillera Volcánica Central. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2004-12-02 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> Gilman, Alex</div>`)[0];
+            popup_a7db4a8ab1764b3aa5c6ec233944cb75.setContent(html_304922489a564d83b93e09df56b0a4c5);
+        
+
+        marker_edbed52b32c84426821dba7facbb12d7.bindPopup(popup_a7db4a8ab1764b3aa5c6ec233944cb75)
+        ;
+
+        
+    
+    
+            var marker_f02ef857f29a4dd6bd8fd28ee201740b = L.marker(
+                [10.226944, -84.094167],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_69a732188afc45f6a353ad898d334251 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_95ac8d34f52f40219cb06e5422e37ac5 = $(`<div id="html_95ac8d34f52f40219cb06e5422e37ac5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Atlantic slope of the Cordillera Volcánica Central. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2004-12-02 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> Gilman, Alex</div>`)[0];
+            popup_69a732188afc45f6a353ad898d334251.setContent(html_95ac8d34f52f40219cb06e5422e37ac5);
+        
+
+        marker_f02ef857f29a4dd6bd8fd28ee201740b.bindPopup(popup_69a732188afc45f6a353ad898d334251)
+        ;
+
+        
+    
+    
+            var marker_886e839d85bb405c9aead380b42c9b05 = L.marker(
+                [10.218611, -84.099722],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_0e67dde62c0e4f85b750d363bc4cbe12 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0664ebd96a3405ebec8a4ae5bfde5fc = $(`<div id="html_a0664ebd96a3405ebec8a4ae5bfde5fc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Atlantic slope of the Cordillera Volcánica Central. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 2004-02-13 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> Gilman, Alex</div>`)[0];
+            popup_0e67dde62c0e4f85b750d363bc4cbe12.setContent(html_a0664ebd96a3405ebec8a4ae5bfde5fc);
+        
+
+        marker_886e839d85bb405c9aead380b42c9b05.bindPopup(popup_0e67dde62c0e4f85b750d363bc4cbe12)
+        ;
+
+        
+    
+    
+            var marker_179f9bce51484965a4c645775aad788f = L.marker(
+                [10.226944, -84.094167],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_a685b7295fcd4e38ae1892d2f7cea38b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be1c1e49c8cb4655b7a1313957c5891d = $(`<div id="html_be1c1e49c8cb4655b7a1313957c5891d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Atlantic slope of the Cordillera Volcánica Central. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2004-12-02 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> Gilman, Alex</div>`)[0];
+            popup_a685b7295fcd4e38ae1892d2f7cea38b.setContent(html_be1c1e49c8cb4655b7a1313957c5891d);
+        
+
+        marker_179f9bce51484965a4c645775aad788f.bindPopup(popup_a685b7295fcd4e38ae1892d2f7cea38b)
+        ;
+
+        
+    
+    
+            var marker_be7d3d783992455ebd85eb0fb177019b = L.marker(
+                [10.186111, -84.105],
+                {}
+            ).addTo(marker_cluster_c38a02d464c34742b4bca557c098f208);
+        
+    
+        var popup_263e2401f8294ed6bb33e8efd71a4f9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e7429927cf141599cf463a623a0f6da = $(`<div id="html_7e7429927cf141599cf463a623a0f6da" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Atlantic slope of the Cordillera Volcánica Central. <strong>Elevación:</strong> 1960.0 m  <strong>Fecha:</strong> 2004-01-19 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> Gilman, Alex</div>`)[0];
+            popup_263e2401f8294ed6bb33e8efd71a4f9d.setContent(html_7e7429927cf141599cf463a623a0f6da);
+        
+
+        marker_be7d3d783992455ebd85eb0fb177019b.bindPopup(popup_263e2401f8294ed6bb33e8efd71a4f9d)
+        ;
+
+        
+    
+    
+            var layer_control_fac50d52fbdb43499dfc350d3d1cdee7 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_85fb2e357b854810b6d29d6de3013adb,
+                    "ESRI World Imagery" : tile_layer_e99e7b3757b34e5c90a17651c35b54c9,
+                },
+                overlays :  {
+                    "macro_element_c38a02d464c34742b4bca557c098f208" : marker_cluster_c38a02d464c34742b4bca557c098f208,
+                },
+            };
+            L.control.layers(
+                layer_control_fac50d52fbdb43499dfc350d3d1cdee7.base_layers,
+                layer_control_fac50d52fbdb43499dfc350d3d1cdee7.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_01b7d9d249594ccd8d95365d8989bfa6);
+            tile_layer_e99e7b3757b34e5c90a17651c35b54c9.remove();
+        
+</script>

@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_782f65fc404a41faaa7cc51fa22d162f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_782f65fc404a41faaa7cc51fa22d162f" ></div>
+        
+</body>
+<script>    
+    
+            var map_782f65fc404a41faaa7cc51fa22d162f = L.map(
+                "map_782f65fc404a41faaa7cc51fa22d162f",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+
+            
+
+        
+    
+            var tile_layer_ebfe6cf9bd964030a1b93fe7d00e7e33 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+            var tile_layer_752d5a8984de449f866d921dcae246ba = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+            var circle_marker_74b84be71fd04fa49f566d0b43dfd82a = L.circleMarker(
+                [10.911111, -85.466667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_9bbe5a329a884d86a148819971711c96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b3c78e03f954718a0c7c0c61f2c3ae6 = $(`<div id="html_7b3c78e03f954718a0c7c0c61f2c3ae6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Guanacaste.  Cuenca del Tempisque.  Sector Cacao hacia la Estación 2.5 Km después del río Góngora, en bosque remanente. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 2000-05-01 <strong>Recolectores:</strong> Luis Acosta|Víctor H. Ramírez|Gerardo Soto|Geovanny Sancho <strong>Identificadores:</strong> Ricardo Callejas (HUA)</div>`)[0];
+            popup_9bbe5a329a884d86a148819971711c96.setContent(html_7b3c78e03f954718a0c7c0c61f2c3ae6);
+        
+
+        circle_marker_74b84be71fd04fa49f566d0b43dfd82a.bindPopup(popup_9bbe5a329a884d86a148819971711c96)
+        ;
+
+        
+    
+    
+            var circle_marker_86fa6686f0b544cabd71dc9e889b7626 = L.circleMarker(
+                [5.892682, -75.199412],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_a59a78cf8efe4a94b4937e0af73f91d0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2468a521d03d487cb6ff751ec375c991 = $(`<div id="html_2468a521d03d487cb6ff751ec375c991" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vereda El Porvenir <strong>Elevación:</strong> 1169.0 m  <strong>Fecha:</strong> 2015-11-20 <strong>Recolectores:</strong> Natali Ospina | Julieth Velasquez | Oscar Galeano <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_a59a78cf8efe4a94b4937e0af73f91d0.setContent(html_2468a521d03d487cb6ff751ec375c991);
+        
+
+        circle_marker_86fa6686f0b544cabd71dc9e889b7626.bindPopup(popup_a59a78cf8efe4a94b4937e0af73f91d0)
+        ;
+
+        
+    
+    
+            var circle_marker_c383ddcb81754473b3202c935268e473 = L.circleMarker(
+                [5.892682, -75.199412],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_05f9849a4f754a07acc7f3eb457d6944 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b06ae927da3e436f9049884d11e5d4b6 = $(`<div id="html_b06ae927da3e436f9049884d11e5d4b6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vereda El Porvenir <strong>Elevación:</strong> 1169.0 m  <strong>Fecha:</strong> 2015-11-20 <strong>Recolectores:</strong> Natali Ospina | Julieth Velasquez | Oscar Galeano <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_05f9849a4f754a07acc7f3eb457d6944.setContent(html_b06ae927da3e436f9049884d11e5d4b6);
+        
+
+        circle_marker_c383ddcb81754473b3202c935268e473.bindPopup(popup_05f9849a4f754a07acc7f3eb457d6944)
+        ;
+
+        
+    
+    
+            var circle_marker_50a00aff33e14bd9be3ce24970d29ed0 = L.circleMarker(
+                [8.9, -82.766667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_b7b4182cadb44246bd7a086c0f9092c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b855d7ca9ba4f94b33591dd0044dc0b = $(`<div id="html_8b855d7ca9ba4f94b33591dd0044dc0b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Foothills of the Cordillera de Talamanca, between Sitio Cotón (Cotonsito) and Mellizas. <strong>Elevación:</strong> 1375.0 m  <strong>Fecha:</strong> 1984-03-11 <strong>Recolectores:</strong> Gerrit Davidse|Luis Diego Gómez P.|Gerardo Herrera Ch.|C.R. Chacón|Isidro A. Chacón G. <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_b7b4182cadb44246bd7a086c0f9092c6.setContent(html_8b855d7ca9ba4f94b33591dd0044dc0b);
+        
+
+        circle_marker_50a00aff33e14bd9be3ce24970d29ed0.bindPopup(popup_b7b4182cadb44246bd7a086c0f9092c6)
+        ;
+
+        
+    
+    
+            var circle_marker_5589f42dc8e949779fb35536fbcc102d = L.circleMarker(
+                [8.941667, -82.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_113efb685a4d4595b6b8c7e08fd4ce4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6961fd39e6584dfba864de2a0b770e0e = $(`<div id="html_6961fd39e6584dfba864de2a0b770e0e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Forest along trail between Las Alturas and Cotonsito, along the Río Cotón. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1983-08-31 <strong>Recolectores:</strong> Gerrit Davidse <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_113efb685a4d4595b6b8c7e08fd4ce4a.setContent(html_6961fd39e6584dfba864de2a0b770e0e);
+        
+
+        circle_marker_5589f42dc8e949779fb35536fbcc102d.bindPopup(popup_113efb685a4d4595b6b8c7e08fd4ce4a)
+        ;
+
+        
+    
+    
+            var circle_marker_43fee831d7c94412bd95c76008bf2c75 = L.circleMarker(
+                [10.91, -85.33],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_76f5ea8c4fa8422d95f28564c9c11400 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b59fcff56f6c4dfa8ff761082c486659 = $(`<div id="html_b59fcff56f6c4dfa8ff761082c486659" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Dos Ríos, Siguiendo la margen izquierda del Río Cucaracho 1 Km aguas abajo a partir del puente camino a Brasilia.  [Original Label Coordinates 10°55' N 85°20' W] <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1987-11-04 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_76f5ea8c4fa8422d95f28564c9c11400.setContent(html_b59fcff56f6c4dfa8ff761082c486659);
+        
+
+        circle_marker_43fee831d7c94412bd95c76008bf2c75.bindPopup(popup_76f5ea8c4fa8422d95f28564c9c11400)
+        ;
+
+        
+    
+    
+            var circle_marker_5e589d97c87c4caf8011ac05a526f590 = L.circleMarker(
+                [8.916667, -82.716667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_74fea02f9f954193bc79887927b6a8dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b91cdc9151d488d8f9d4b73fe1c8ec3 = $(`<div id="html_1b91cdc9151d488d8f9d4b73fe1c8ec3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Pando area. [Coordinates on orginal label: 82°43'W, 8°52'N]. <strong>Elevación:</strong> 2200.0 m  <strong>Fecha:</strong> 1982-08-24 <strong>Recolectores:</strong> Clem W. Hamilton|Henry Stockwell|Annette Aiello <strong>Identificadores:</strong> Ricardo Callejas (HUA)</div>`)[0];
+            popup_74fea02f9f954193bc79887927b6a8dd.setContent(html_1b91cdc9151d488d8f9d4b73fe1c8ec3);
+        
+
+        circle_marker_5e589d97c87c4caf8011ac05a526f590.bindPopup(popup_74fea02f9f954193bc79887927b6a8dd)
+        ;
+
+        
+    
+    
+            var circle_marker_8a0720d7b457483e9247326a55deaed3 = L.circleMarker(
+                [16.935833, -88.987222],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_deac2f7aec5b437b8986da30f1bd9011 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4211e9118f02483e9db1d205a0959407 = $(`<div id="html_4211e9118f02483e9db1d205a0959407" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mollejon Creek, on Inner Circle road. 5 km S of Augustine, Mountain Pine Ridge Forest Reserve. Broadleaved riparian forest <strong>Elevación:</strong> 490.0 m  <strong>Fecha:</strong> 1988-07-22 <strong>Recolectores:</strong> Jorge A. Meave|Augustine How <strong>Identificadores:</strong> Ricardo Callejas P.</div>`)[0];
+            popup_deac2f7aec5b437b8986da30f1bd9011.setContent(html_4211e9118f02483e9db1d205a0959407);
+        
+
+        circle_marker_8a0720d7b457483e9247326a55deaed3.bindPopup(popup_deac2f7aec5b437b8986da30f1bd9011)
+        ;
+
+        
+    
+    
+            var circle_marker_5db55f6850b34a72963ccbc1934acad3 = L.circleMarker(
+                [9.075, -83.083333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_7ac152c8d65d4027b9cef61f89cbe813 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8553370549d146a6b4099e70b483b1fb = $(`<div id="html_8553370549d146a6b4099e70b483b1fb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Foothills of the Cordillera de Talamanca, vicinity of Helechales, along the Río Guineal. Premontane wet forest along river. <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 1984-03-29 <strong>Recolectores:</strong> Gerrit Davidse|Gerardo Herrera Ch. <strong>Identificadores:</strong> M. H. Grayum (MO)</div>`)[0];
+            popup_7ac152c8d65d4027b9cef61f89cbe813.setContent(html_8553370549d146a6b4099e70b483b1fb);
+        
+
+        circle_marker_5db55f6850b34a72963ccbc1934acad3.bindPopup(popup_7ac152c8d65d4027b9cef61f89cbe813)
+        ;
+
+        
+    
+    
+            var circle_marker_c5cb833667b945d2a6845b466576da24 = L.circleMarker(
+                [12.283333, -85.083333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_529b348cc49a4768b61d3c5e55d4c16a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6abf81d2dc9441886d2db04f43ca7c8 = $(`<div id="html_b6abf81d2dc9441886d2db04f43ca7c8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Las Nubes, El Tamagás y Loma San Gregorio, ca 2 km al N de Santo Domingo; bosque húmedo tropical <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1984-01-20 <strong>Recolectores:</strong> Alfredo Grijalva P.|D.E. Ríos <strong>Identificadores:</strong> Ricardo Callejas P.</div>`)[0];
+            popup_529b348cc49a4768b61d3c5e55d4c16a.setContent(html_b6abf81d2dc9441886d2db04f43ca7c8);
+        
+
+        circle_marker_c5cb833667b945d2a6845b466576da24.bindPopup(popup_529b348cc49a4768b61d3c5e55d4c16a)
+        ;
+
+        
+    
+    
+            var circle_marker_333772b4cdd549e2b22cf75b6516d8c4 = L.circleMarker(
+                [8.88, -82.84],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_265b33120a7b427c8cccc7ad34c061f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_90bc24bd430d47918f1cf1da42f174a6 = $(`<div id="html_90bc24bd430d47918f1cf1da42f174a6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zona Protectora Las Tablas Sector Río Negro abajo. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1990-10-21 <strong>Recolectores:</strong> Gerardo Mora <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_265b33120a7b427c8cccc7ad34c061f2.setContent(html_90bc24bd430d47918f1cf1da42f174a6);
+        
+
+        circle_marker_333772b4cdd549e2b22cf75b6516d8c4.bindPopup(popup_265b33120a7b427c8cccc7ad34c061f2)
+        ;
+
+        
+    
+    
+            var circle_marker_3fb8ee3cb5a34907b04ef9104dfe65f0 = L.circleMarker(
+                [12.283333, -85.083333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_0f25f0b669fe437584e041be9354d1f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01a8bc1abf5a458e8789c79a25eea6fc = $(`<div id="html_01a8bc1abf5a458e8789c79a25eea6fc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque de galería a lo largo de río al pie de Loma San Gregorio <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 1985-01-25 <strong>Recolectores:</strong> J. C. Sandino <strong>Identificadores:</strong> Ricardo Callejas P.</div>`)[0];
+            popup_0f25f0b669fe437584e041be9354d1f1.setContent(html_01a8bc1abf5a458e8789c79a25eea6fc);
+        
+
+        circle_marker_3fb8ee3cb5a34907b04ef9104dfe65f0.bindPopup(popup_0f25f0b669fe437584e041be9354d1f1)
+        ;
+
+        
+    
+    
+            var circle_marker_b300c62bdf5f47cd8046147ca164de15 = L.circleMarker(
+                [11.033333, -85.408333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_d1576064b6864fc29ea69393e429308c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e00d4ee3ba754854b741281eb6230160 = $(`<div id="html_e00d4ee3ba754854b741281eb6230160" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Guanacaste, Estación Pitilla. Sendero El Mismo y Fila Orosilito. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1991-04-04 <strong>Recolectores:</strong> Petrona Ríos Castro <strong>Identificadores:</strong> Ricardo Callejas P.</div>`)[0];
+            popup_d1576064b6864fc29ea69393e429308c.setContent(html_e00d4ee3ba754854b741281eb6230160);
+        
+
+        circle_marker_b300c62bdf5f47cd8046147ca164de15.bindPopup(popup_d1576064b6864fc29ea69393e429308c)
+        ;
+
+        
+    
+    
+            var circle_marker_4dd4abdddaa441fcbb3419f90b42faf5 = L.circleMarker(
+                [8.933333, -82.833333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_4331b5f79b99436f8738c27d1b221a58 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9571cd09ec74d82aed0ffc0eb8ea07f = $(`<div id="html_d9571cd09ec74d82aed0ffc0eb8ea07f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> To the east of hairpin ca. 1 km SE of Las Alturas de Coto Brus, on road from San Vito. <strong>Elevación:</strong> 1415.0 m  <strong>Fecha:</strong> 1985-07-13 <strong>Recolectores:</strong> Michael H. Grayum|Barry E. Hammel <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_4331b5f79b99436f8738c27d1b221a58.setContent(html_d9571cd09ec74d82aed0ffc0eb8ea07f);
+        
+
+        circle_marker_4dd4abdddaa441fcbb3419f90b42faf5.bindPopup(popup_4331b5f79b99436f8738c27d1b221a58)
+        ;
+
+        
+    
+    
+            var circle_marker_7a26bf33b6b0449c9b28e302d14bba4c = L.circleMarker(
+                [9.360555999999999, -83.663611],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_b39f52eef4fd4fc78b974215bcf2fbb9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dddda15e5115485fac48305402648eda = $(`<div id="html_dddda15e5115485fac48305402648eda" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of El General <strong>Elevación:</strong> 670.0 m  <strong>Fecha:</strong> 1939-01-01 <strong>Recolectores:</strong> Alexander F. Skutch <strong>Identificadores:</strong> Ricardo Callejas P.</div>`)[0];
+            popup_b39f52eef4fd4fc78b974215bcf2fbb9.setContent(html_dddda15e5115485fac48305402648eda);
+        
+
+        circle_marker_7a26bf33b6b0449c9b28e302d14bba4c.bindPopup(popup_b39f52eef4fd4fc78b974215bcf2fbb9)
+        ;
+
+        
+    
+    
+            var circle_marker_bf28166b07a9497ca89fdfd50cdc5ea6 = L.circleMarker(
+                [9.036389, -83.0225],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_c403d6c3ff0a4b0883a966144c502f78 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_689349a868de4cb18f45f623adb72f41 = $(`<div id="html_689349a868de4cb18f45f623adb72f41" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. La Amistad. Cuenca Térraba-Sierpe. Est. Altamira, sendero. <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 1999-04-22 <strong>Recolectores:</strong> Edgar Mora Castro|Armando Soto|R. Barton|Socorro Ávila <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_c403d6c3ff0a4b0883a966144c502f78.setContent(html_689349a868de4cb18f45f623adb72f41);
+        
+
+        circle_marker_bf28166b07a9497ca89fdfd50cdc5ea6.bindPopup(popup_c403d6c3ff0a4b0883a966144c502f78)
+        ;
+
+        
+    
+    
+            var circle_marker_139c9cea752a402e8fba402bbcff479d = L.circleMarker(
+                [8.945833, -82.858056],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_852ad22a09cc440081f2ef0da864e623 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_528d7ccb4c884c3e82285d34f6403f9c = $(`<div id="html_528d7ccb4c884c3e82285d34f6403f9c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Las Tablas. Cuenca Terraba-Sierpe. Z.P. Las Tablas, Est. Biológica Las Alturas, juntas de río Bella Vista y cotón, colectando a orillas del potrero y río. <strong>Elevación:</strong> 1320.0 m  <strong>Fecha:</strong> 1999-09-06 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_852ad22a09cc440081f2ef0da864e623.setContent(html_528d7ccb4c884c3e82285d34f6403f9c);
+        
+
+        circle_marker_139c9cea752a402e8fba402bbcff479d.bindPopup(popup_852ad22a09cc440081f2ef0da864e623)
+        ;
+
+        
+    
+    
+            var circle_marker_5a4682f32707410a9d074b4e62c5b922 = L.circleMarker(
+                [16.916667, -94.675],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_73536ae816014acda3e17474fed2f90b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_134e0182fdf54133bfe89c3746b6f323 = $(`<div id="html_134e0182fdf54133bfe89c3746b6f323" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mpio. Sta. Maria Chimalapa, cafetales cerca de Sta. Maria. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1984-06-20 <strong>Recolectores:</strong> Heriberto Hernández G. <strong>Identificadores:</strong> Ricardo Callejas P.</div>`)[0];
+            popup_73536ae816014acda3e17474fed2f90b.setContent(html_134e0182fdf54133bfe89c3746b6f323);
+        
+
+        circle_marker_5a4682f32707410a9d074b4e62c5b922.bindPopup(popup_73536ae816014acda3e17474fed2f90b)
+        ;
+
+        
+    
+    
+            var circle_marker_720ef922ff6a4333b45a6282e9334d55 = L.circleMarker(
+                [9.374167, -83.656944],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_cd7a03160d334648be8afa370e7a51c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e12030468a694fe5b95c1b6f4843f8c4 = $(`<div id="html_e12030468a694fe5b95c1b6f4843f8c4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of El General <strong>Elevación:</strong> 730.0 m  <strong>Fecha:</strong> 1936-12-01 <strong>Recolectores:</strong> Alexander F. Skutch <strong>Identificadores:</strong> Ricardo Callejas P.</div>`)[0];
+            popup_cd7a03160d334648be8afa370e7a51c2.setContent(html_e12030468a694fe5b95c1b6f4843f8c4);
+        
+
+        circle_marker_720ef922ff6a4333b45a6282e9334d55.bindPopup(popup_cd7a03160d334648be8afa370e7a51c2)
+        ;
+
+        
+    
+    
+            var circle_marker_941a8cd6cb4548b786f362cd025e7af8 = L.circleMarker(
+                [17.2, -94.65],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_fd7cf5f8a7ac49ce8771c469ee5c9b58 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cda1b556ea064af69c34909768ee6ee6 = $(`<div id="html_cda1b556ea064af69c34909768ee6ee6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Lomas al S del Pob. 2 (3 km al S del entronque de la terraceria La Laguna-Sarabia con Camino al N a Pob. 2). <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1983-12-10 <strong>Recolectores:</strong> Thomas L. Wendt|I. Navarrete|T. Atkinson <strong>Identificadores:</strong> Ricardo Callejas P.</div>`)[0];
+            popup_fd7cf5f8a7ac49ce8771c469ee5c9b58.setContent(html_cda1b556ea064af69c34909768ee6ee6);
+        
+
+        circle_marker_941a8cd6cb4548b786f362cd025e7af8.bindPopup(popup_fd7cf5f8a7ac49ce8771c469ee5c9b58)
+        ;
+
+        
+    
+    
+            var circle_marker_98d68322922542d28f7bed8266d2d29d = L.circleMarker(
+                [17.483333, -95.766667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_7aca74dac55c40b99088ad7d689cddd1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78844df42094452dbda86a3c89d0c8fb = $(`<div id="html_78844df42094452dbda86a3c89d0c8fb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mpio. San Juan la Lana, ca. 1 km S of the bridge at San Juan del Rio. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1985-12-15 <strong>Recolectores:</strong> Michael H. Nee <strong>Identificadores:</strong> Ricardo Callejas P.</div>`)[0];
+            popup_7aca74dac55c40b99088ad7d689cddd1.setContent(html_78844df42094452dbda86a3c89d0c8fb);
+        
+
+        circle_marker_98d68322922542d28f7bed8266d2d29d.bindPopup(popup_7aca74dac55c40b99088ad7d689cddd1)
+        ;
+
+        
+    
+    
+            var circle_marker_7fd85376c49140928f43377a6e2d4a0b = L.circleMarker(
+                [8.91, -82.78],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_4fa30e5efead4138b87d62908e64ed3f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19df41cbf95648708dde14b82510f927 = $(`<div id="html_19df41cbf95648708dde14b82510f927" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1997-04-10 <strong>Recolectores:</strong> Enia Navarro V.|Annia Picado <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_4fa30e5efead4138b87d62908e64ed3f.setContent(html_19df41cbf95648708dde14b82510f927);
+        
+
+        circle_marker_7fd85376c49140928f43377a6e2d4a0b.bindPopup(popup_4fa30e5efead4138b87d62908e64ed3f)
+        ;
+
+        
+    
+    
+            var circle_marker_bca51ba9cb0845cfb635fd0f9af9c522 = L.circleMarker(
+                [9.3925, -83.641389],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_90f843bc86124e728a63a6cb4c6f16bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01689b00fd1b470ab526e432de8af0c6 = $(`<div id="html_01689b00fd1b470ab526e432de8af0c6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of El General <strong>Elevación:</strong> 975.0 m  <strong>Fecha:</strong> 1936-01-01 <strong>Recolectores:</strong> Alexander F. Skutch <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_90f843bc86124e728a63a6cb4c6f16bc.setContent(html_01689b00fd1b470ab526e432de8af0c6);
+        
+
+        circle_marker_bca51ba9cb0845cfb635fd0f9af9c522.bindPopup(popup_90f843bc86124e728a63a6cb4c6f16bc)
+        ;
+
+        
+    
+    
+            var circle_marker_5a9dbfe47b7f439689e5bc2757aa8278 = L.circleMarker(
+                [8.93, -82.85],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_72fd5dfb84d04b008282cfe672453d7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f55ce7d3b97344d3a8ad165cb2f85ade = $(`<div id="html_f55ce7d3b97344d3a8ad165cb2f85ade" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Logged primary forest along road to Las Alturas. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1972-07-10 <strong>Recolectores:</strong> Roy W. Lent <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_72fd5dfb84d04b008282cfe672453d7d.setContent(html_f55ce7d3b97344d3a8ad165cb2f85ade);
+        
+
+        circle_marker_5a9dbfe47b7f439689e5bc2757aa8278.bindPopup(popup_72fd5dfb84d04b008282cfe672453d7d)
+        ;
+
+        
+    
+    
+            var circle_marker_5fc6f83fd66d45f09cb4c7fb0927dfef = L.circleMarker(
+                [9.346667, -83.6575],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_f30f88d572d8414291e06807e82c4fdc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4df8534b3a154e8cb4399d0a1474310a = $(`<div id="html_4df8534b3a154e8cb4399d0a1474310a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of El General <strong>Elevación:</strong> 640.0 m  <strong>Fecha:</strong> 1939-04-01 <strong>Recolectores:</strong> Alexander F. Skutch <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_f30f88d572d8414291e06807e82c4fdc.setContent(html_4df8534b3a154e8cb4399d0a1474310a);
+        
+
+        circle_marker_5fc6f83fd66d45f09cb4c7fb0927dfef.bindPopup(popup_f30f88d572d8414291e06807e82c4fdc)
+        ;
+
+        
+    
+    
+            var circle_marker_68b4d34eec484bc19de3959977cc0b00 = L.circleMarker(
+                [8.91, -82.75],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_a453d537e9034c2399c7bb9e8675f371 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_366c860fb22f42529b88a05e5f767df6 = $(`<div id="html_366c860fb22f42529b88a05e5f767df6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Pando, ridges above the Rio Coton and the Rio Negro. Near Lucha, remnants near pastures on Rio Coton. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1982-02-19 <strong>Recolectores:</strong> Kerry Barringer|Luis Diego Gómez P. <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_a453d537e9034c2399c7bb9e8675f371.setContent(html_366c860fb22f42529b88a05e5f767df6);
+        
+
+        circle_marker_68b4d34eec484bc19de3959977cc0b00.bindPopup(popup_a453d537e9034c2399c7bb9e8675f371)
+        ;
+
+        
+    
+    
+            var circle_marker_579bd3273cfd44e199179c89eb3cde51 = L.circleMarker(
+                [17.016667, -88.5],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_88c4bc72bc4e47c487311c59a26accea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_603ab726b2b2489790e00ef845611de8 = $(`<div id="html_603ab726b2b2489790e00ef845611de8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Middlesex <strong>Elevación:</strong> 60.96 m  <strong>Fecha:</strong> 1929-11-23 <strong>Recolectores:</strong> William A. Schipp <strong>Identificadores:</strong> Ricardo Callejas P.</div>`)[0];
+            popup_88c4bc72bc4e47c487311c59a26accea.setContent(html_603ab726b2b2489790e00ef845611de8);
+        
+
+        circle_marker_579bd3273cfd44e199179c89eb3cde51.bindPopup(popup_88c4bc72bc4e47c487311c59a26accea)
+        ;
+
+        
+    
+    
+            var circle_marker_44be6cc58eda4960a883c81135c25ead = L.circleMarker(
+                [16.951944, -88.435278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_722076dc04564e08b34cb2eed72e1825 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42ec7285f1684aa68c669ec3fcf6a879 = $(`<div id="html_42ec7285f1684aa68c669ec3fcf6a879" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Stann Creek Valley, Mountain Cow Ridge. In broken ridge <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1940-12-10 <strong>Recolectores:</strong> Percy H. Gentle <strong>Identificadores:</strong> Ricardo Callejas P.</div>`)[0];
+            popup_722076dc04564e08b34cb2eed72e1825.setContent(html_42ec7285f1684aa68c669ec3fcf6a879);
+        
+
+        circle_marker_44be6cc58eda4960a883c81135c25ead.bindPopup(popup_722076dc04564e08b34cb2eed72e1825)
+        ;
+
+        
+    
+    
+            var circle_marker_7f6e5ac2c1214d878a15aca50c2a8e7f = L.circleMarker(
+                [17.066667000000002, -88.6],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_8356bac61d784a6aa7c6de501fbde88a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9cce542034743f28946baec4cb781ec = $(`<div id="html_c9cce542034743f28946baec4cb781ec" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hummingbird Highway, south of Belmopan, vicinity of mile 28. Premontane wet forest <strong>Elevación:</strong> 91.44 m  <strong>Fecha:</strong> 1973-06-14 <strong>Recolectores:</strong> Alwyn H. Gentry <strong>Identificadores:</strong> Ricardo Callejas P.</div>`)[0];
+            popup_8356bac61d784a6aa7c6de501fbde88a.setContent(html_c9cce542034743f28946baec4cb781ec);
+        
+
+        circle_marker_7f6e5ac2c1214d878a15aca50c2a8e7f.bindPopup(popup_8356bac61d784a6aa7c6de501fbde88a)
+        ;
+
+        
+    
+    
+            var circle_marker_19b59a7cb5a64e7a8d63688b5aac99c7 = L.circleMarker(
+                [13.516667000000002, -85.616667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_b28bd835dd364be8a396599fe8bf82bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb747d4806024e36bcd13ec44e700a50 = $(`<div id="html_eb747d4806024e36bcd13ec44e700a50" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Natural Kilambé. Muncipio de Bocay, Comunidad San Miguel de Kilambé. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 2001-01-06 <strong>Recolectores:</strong> R. M. Rueda|M. Garmendia|N. Toval|A. Rivera|H. Mendoza|L.D. Paguaga <strong>Identificadores:</strong> Ricardo Callejas P.</div>`)[0];
+            popup_b28bd835dd364be8a396599fe8bf82bb.setContent(html_eb747d4806024e36bcd13ec44e700a50);
+        
+
+        circle_marker_19b59a7cb5a64e7a8d63688b5aac99c7.bindPopup(popup_b28bd835dd364be8a396599fe8bf82bb)
+        ;
+
+        
+    
+    
+            var circle_marker_7baf0f6d1ce840b993788c9ccb2821a0 = L.circleMarker(
+                [13.633332999999999, -86.166667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_ba53297068d64a709874446d9e580d16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_476439f913114a9d9ab7c8cc0d113fb2 = $(`<div id="html_476439f913114a9d9ab7c8cc0d113fb2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro La Jumuyca, 3 km al sur de Susucayán <strong>Elevación:</strong> 750.0 m  <strong>Fecha:</strong> 1985-06-21 <strong>Recolectores:</strong> P. P. Moreno <strong>Identificadores:</strong> Ricardo Callejas P.</div>`)[0];
+            popup_ba53297068d64a709874446d9e580d16.setContent(html_476439f913114a9d9ab7c8cc0d113fb2);
+        
+
+        circle_marker_7baf0f6d1ce840b993788c9ccb2821a0.bindPopup(popup_ba53297068d64a709874446d9e580d16)
+        ;
+
+        
+    
+    
+            var circle_marker_e5b060c5cd134f1f99431b937aaed769 = L.circleMarker(
+                [8.9, -82.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_9ac6ed494062440b8b2651d24c71c039 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_64517a737388468393a59b73d16e2004 = $(`<div id="html_64517a737388468393a59b73d16e2004" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Las Tablas. Cordillera de Talamanca. Sector Tablas, Estación Progreso, camino Tablas. <strong>Elevación:</strong> 1220.0 m  <strong>Fecha:</strong> 1996-03-11 <strong>Recolectores:</strong> Enia Navarro V. <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_9ac6ed494062440b8b2651d24c71c039.setContent(html_64517a737388468393a59b73d16e2004);
+        
+
+        circle_marker_e5b060c5cd134f1f99431b937aaed769.bindPopup(popup_9ac6ed494062440b8b2651d24c71c039)
+        ;
+
+        
+    
+    
+            var circle_marker_611f1ee6bcb64814b8fc15687ca9e2da = L.circleMarker(
+                [9.026945, -83.00805600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_97dc9bdfe22e4cce8ae28198f17679e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ed07114bb234f2abb083b6d4a04a709 = $(`<div id="html_3ed07114bb234f2abb083b6d4a04a709" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cuenca Térraba-Sierpe.  Alrededor del puesto Altamira. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1997-01-15 <strong>Recolectores:</strong> F. J. Quesada <strong>Identificadores:</strong> Ricardo Callejas (HUA)</div>`)[0];
+            popup_97dc9bdfe22e4cce8ae28198f17679e5.setContent(html_3ed07114bb234f2abb083b6d4a04a709);
+        
+
+        circle_marker_611f1ee6bcb64814b8fc15687ca9e2da.bindPopup(popup_97dc9bdfe22e4cce8ae28198f17679e5)
+        ;
+
+        
+    
+    
+            var circle_marker_d3739faf89144bd4afedd707916caf32 = L.circleMarker(
+                [9.83, -83.57],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_93dcba92cd6a4223a504e1b99fe1df50 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f954bf2c8f0c4d61aa4d0afdf025a0af = $(`<div id="html_f954bf2c8f0c4d61aa4d0afdf025a0af" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cuenca del Reventazón, Tuis, en las cercanias del caserio, Santa Gertrudis, a orilla de la calle.  [Original label coordinates 9°50'0"N   83°34'30"W]. <strong>Elevación:</strong> 770.0 m  <strong>Fecha:</strong> 1996-11-23 <strong>Recolectores:</strong> Alexánder Rodríguez <strong>Identificadores:</strong> Ricardo Callejas (HUA)</div>`)[0];
+            popup_93dcba92cd6a4223a504e1b99fe1df50.setContent(html_f954bf2c8f0c4d61aa4d0afdf025a0af);
+        
+
+        circle_marker_d3739faf89144bd4afedd707916caf32.bindPopup(popup_93dcba92cd6a4223a504e1b99fe1df50)
+        ;
+
+        
+    
+    
+            var circle_marker_97651701d6734babad8331361b27a604 = L.circleMarker(
+                [8.94, -82.83],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_4723c342738e436a9175492613b4fc97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61b5234f3aad4a5bb3d85d5eec9e0986 = $(`<div id="html_61b5234f3aad4a5bb3d85d5eec9e0986" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Est. Biologica Las Alturas. Sendero a Cerro Echandi. <strong>Elevación:</strong> 1540.0 m  <strong>Fecha:</strong> 1997-10-28 <strong>Recolectores:</strong> Billen Gamboa R. <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_4723c342738e436a9175492613b4fc97.setContent(html_61b5234f3aad4a5bb3d85d5eec9e0986);
+        
+
+        circle_marker_97651701d6734babad8331361b27a604.bindPopup(popup_4723c342738e436a9175492613b4fc97)
+        ;
+
+        
+    
+    
+            var circle_marker_45ad328e98454e88aae55883c05e33ae = L.circleMarker(
+                [9.29, -83.76],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_98b56faec37d415481795e5970ad74c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef0f1e51c4474a769ce204d6d2070fc0 = $(`<div id="html_ef0f1e51c4474a769ce204d6d2070fc0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Costeña, Fila Tinamastes, en la Fila del Farallón remanentes de bosque y márgenes de bosque <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1996-02-23 <strong>Recolectores:</strong> Barry E. Hammel|Sachiko Yasuda|José Á. González R.|T. Bermúdez <strong>Identificadores:</strong> Ricardo Callejas (HUA)</div>`)[0];
+            popup_98b56faec37d415481795e5970ad74c6.setContent(html_ef0f1e51c4474a769ce204d6d2070fc0);
+        
+
+        circle_marker_45ad328e98454e88aae55883c05e33ae.bindPopup(popup_98b56faec37d415481795e5970ad74c6)
+        ;
+
+        
+    
+    
+            var circle_marker_6543fd66140a4cb4885cd91d3374280b = L.circleMarker(
+                [16.390278, -89.111111],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_610cf31258b142d7b628292f7411cb87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e90e8e46111a4072aa2421170bbc57da = $(`<div id="html_e90e8e46111a4072aa2421170bbc57da" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Columbia River Forest Reserve: Little Quartz Ridge, SW slopes, NE of Camp 1. Shady, rocky creek bed among tall, moist, mostly evergreen forest on border between limestone and volcanic soils. MAP coordinates. <strong>Elevación:</strong> 825.0 m  <strong>Fecha:</strong> 1997-02-21 <strong>Recolectores:</strong> Bruce K. Holst <strong>Identificadores:</strong> Ricardo Callejas P.</div>`)[0];
+            popup_610cf31258b142d7b628292f7411cb87.setContent(html_e90e8e46111a4072aa2421170bbc57da);
+        
+
+        circle_marker_6543fd66140a4cb4885cd91d3374280b.bindPopup(popup_610cf31258b142d7b628292f7411cb87)
+        ;
+
+        
+    
+    
+            var circle_marker_29666eaee47749de9e311fab22774692 = L.circleMarker(
+                [15.299722000000001, -89.703889],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_14f154ad712c4fbfacabb9acb14216ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c102102316a4f5b9a9af8527f1ea124 = $(`<div id="html_6c102102316a4f5b9a9af8527f1ea124" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca Mercedes, Telemán. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1988-07-12 <strong>Recolectores:</strong> Pedro Tenorio L.|Esteban M. Martínez S.|Herbert Droege|M. Díaz <strong>Identificadores:</strong> Ricardo Callejas P.</div>`)[0];
+            popup_14f154ad712c4fbfacabb9acb14216ec.setContent(html_6c102102316a4f5b9a9af8527f1ea124);
+        
+
+        circle_marker_29666eaee47749de9e311fab22774692.bindPopup(popup_14f154ad712c4fbfacabb9acb14216ec)
+        ;
+
+        
+    
+    
+            var circle_marker_b0fc52009f744f29be24655ba94a9511 = L.circleMarker(
+                [10.441667, -84.619444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_19896098f7a942af938193f8703f016a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19517a2468ad4b24b748af0cc86f529e = $(`<div id="html_19517a2468ad4b24b748af0cc86f529e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida.  Cuenca del San Carlos.  Fortuna, El bosque (San Martín, El Burrito). Reserva Biologica Dendrobates. Alrededores de Quebrada Piedrita. <strong>Elevación:</strong> 825.0 m  <strong>Fecha:</strong> 2007-05-12 <strong>Recolectores:</strong> Alexánder Rodríguez <strong>Identificadores:</strong> Ricardo Callejas P.</div>`)[0];
+            popup_19896098f7a942af938193f8703f016a.setContent(html_19517a2468ad4b24b748af0cc86f529e);
+        
+
+        circle_marker_b0fc52009f744f29be24655ba94a9511.bindPopup(popup_19896098f7a942af938193f8703f016a)
+        ;
+
+        
+    
+    
+            var circle_marker_f6fd48ea0c604b5698b5647479d6ae02 = L.circleMarker(
+                [9.084444, -83.07],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_4c9c3132992f45968f218d2a446de12e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2b11458c38b4fa18f6cfa467e4ccc5a = $(`<div id="html_a2b11458c38b4fa18f6cfa467e4ccc5a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida.  Cuenca Térraba-Sierpe.  Potrero Grande, Hacienda Helechales, ruta a Tres Colinas. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2006-04-26 <strong>Recolectores:</strong> Alexánder Rodríguez|Daniel Solano|Daniel Santamaría <strong>Identificadores:</strong> Ricardo Callejas P.</div>`)[0];
+            popup_4c9c3132992f45968f218d2a446de12e.setContent(html_a2b11458c38b4fa18f6cfa467e4ccc5a);
+        
+
+        circle_marker_f6fd48ea0c604b5698b5647479d6ae02.bindPopup(popup_4c9c3132992f45968f218d2a446de12e)
+        ;
+
+        
+    
+    
+            var circle_marker_74d5ad19f0e24c7fac6a9051d9ef0d4f = L.circleMarker(
+                [10.955326, -85.491567],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_372e4faf202f4d9cb4e35c08efe08b43 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f8f6198f0e14255af5b29438617179c = $(`<div id="html_9f8f6198f0e14255af5b29438617179c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Guanacaste.  Cuenca del Tempisque.  Volcán Orosí, Estación Biológica Maritza. Trail to Cacao Station, ca. 1 km from Maritza comedor, ~ 100 km into first patch of primary forest. N side of trail.  0.1 ha Transect Maritza. <strong>Elevación:</strong> 650.0 m  <strong>Fecha:</strong> 2003-03-12 <strong>Recolectores:</strong> Brad Boyle|William A. Haber|Willow Zuchowski <strong>Identificadores:</strong> Ricardo Callejas P.</div>`)[0];
+            popup_372e4faf202f4d9cb4e35c08efe08b43.setContent(html_9f8f6198f0e14255af5b29438617179c);
+        
+
+        circle_marker_74d5ad19f0e24c7fac6a9051d9ef0d4f.bindPopup(popup_372e4faf202f4d9cb4e35c08efe08b43)
+        ;
+
+        
+    
+    
+            var circle_marker_c83d9d939e4d465c941e15c8e284130b = L.circleMarker(
+                [9.069445, -83.038889],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_9d0fe0c98b1e477abdbf12bbd5ab6447 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5dbceb1c6af844529f30c62ad1154a3d = $(`<div id="html_5dbceb1c6af844529f30c62ad1154a3d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. La Amistad. Cuenca Térraba-Sierpe. Biolley, Sabanas Esperanza. <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 2006-02-10 <strong>Recolectores:</strong> Alexánder Rodríguez|Daniel Santamaría <strong>Identificadores:</strong> Ricardo Callejas P.</div>`)[0];
+            popup_9d0fe0c98b1e477abdbf12bbd5ab6447.setContent(html_5dbceb1c6af844529f30c62ad1154a3d);
+        
+
+        circle_marker_c83d9d939e4d465c941e15c8e284130b.bindPopup(popup_9d0fe0c98b1e477abdbf12bbd5ab6447)
+        ;
+
+        
+    
+    
+            var circle_marker_31c3f1538c9f4e3d90ebbaddd88e4df6 = L.circleMarker(
+                [10.928611, -85.469444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_5090c322fe894e508e9c9a57d603debb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84061a182779495b9f91c9e1f3e5906d = $(`<div id="html_84061a182779495b9f91c9e1f3e5906d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Guanacaste.  Cordillera de Guanacaste.  Estación Cacao; Cerro Cacao. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1995-02-09 <strong>Recolectores:</strong> Rodolfo Quirós|IV Curso de Parataxónomos <strong>Identificadores:</strong> Ricardo Callejas P.</div>`)[0];
+            popup_5090c322fe894e508e9c9a57d603debb.setContent(html_84061a182779495b9f91c9e1f3e5906d);
+        
+
+        circle_marker_31c3f1538c9f4e3d90ebbaddd88e4df6.bindPopup(popup_5090c322fe894e508e9c9a57d603debb)
+        ;
+
+        
+    
+    
+            var circle_marker_cd26f1d4df304ef6a334fca8ca5276b1 = L.circleMarker(
+                [10.928611, -85.469444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_cd5dea26f5c44a9093e1e8aa9cbe2c99 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cae92b6904d84108b79f4ec0db0a7fb0 = $(`<div id="html_cae92b6904d84108b79f4ec0db0a7fb0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Guanacaste.  Cordillera de Guanacaste.  Estación Cacao; Sendero a casa de Fran. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1995-02-08 <strong>Recolectores:</strong> Luis Angulo|IV Curso de Parataxónomos <strong>Identificadores:</strong> Ricardo Callejas P.</div>`)[0];
+            popup_cd5dea26f5c44a9093e1e8aa9cbe2c99.setContent(html_cae92b6904d84108b79f4ec0db0a7fb0);
+        
+
+        circle_marker_cd26f1d4df304ef6a334fca8ca5276b1.bindPopup(popup_cd5dea26f5c44a9093e1e8aa9cbe2c99)
+        ;
+
+        
+    
+    
+            var circle_marker_db8a5c7f2cd348c6a7409239a11d8920 = L.circleMarker(
+                [9.028333, -82.965],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_6a9bb3a94d904ca9aa369b2c7ffca5f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26eded4b64d54297b8303f45d846903c = $(`<div id="html_26eded4b64d54297b8303f45d846903c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. La Amistad. Cuenca Térraba-Sierpe. Colecta en bosque en el límite oeste de la estación. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 2000-08-02 <strong>Recolectores:</strong> Luis Acosta|Víctor H. Ramírez <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_6a9bb3a94d904ca9aa369b2c7ffca5f0.setContent(html_26eded4b64d54297b8303f45d846903c);
+        
+
+        circle_marker_db8a5c7f2cd348c6a7409239a11d8920.bindPopup(popup_6a9bb3a94d904ca9aa369b2c7ffca5f0)
+        ;
+
+        
+    
+    
+            var circle_marker_2837d18b13e2474188c098d16ab28088 = L.circleMarker(
+                [8.912222, -82.79555500000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_65138650fa944cf3add3b1d0364838a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3706ff990d842a89bf7201569552a89 = $(`<div id="html_a3706ff990d842a89bf7201569552a89" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida. Cuenca Térraba-Sierpe. Zona Protectora Las Tablas. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2002-04-30 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_65138650fa944cf3add3b1d0364838a2.setContent(html_a3706ff990d842a89bf7201569552a89);
+        
+
+        circle_marker_2837d18b13e2474188c098d16ab28088.bindPopup(popup_65138650fa944cf3add3b1d0364838a2)
+        ;
+
+        
+    
+    
+            var circle_marker_8d140bf1e66942beb4444dde07dafdfc = L.circleMarker(
+                [9.033889, -83.01083299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+        
+    
+        var popup_4193d86224c34368a2ba12721bb91c0e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e04201c357148d6a9b71ec96662f0cb = $(`<div id="html_0e04201c357148d6a9b71ec96662f0cb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. La Amistad. Cuenca Térraba-Sierpe. A.C.L.A., P.I.L.A., Est. Altamira, Sendero Gigantes del Bosque, colectando a orillas del sendero. <strong>Elevación:</strong> 1460.0 m  <strong>Fecha:</strong> 1999-04-06 <strong>Recolectores:</strong> Milady Alfaro|Evelio Alfaro <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_4193d86224c34368a2ba12721bb91c0e.setContent(html_0e04201c357148d6a9b71ec96662f0cb);
+        
+
+        circle_marker_8d140bf1e66942beb4444dde07dafdfc.bindPopup(popup_4193d86224c34368a2ba12721bb91c0e)
+        ;
+
+        
+    
+    
+            var layer_control_6b77b43ed4464e06b62d2d1974aada33 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_ebfe6cf9bd964030a1b93fe7d00e7e33,
+                    "ESRI World Imagery" : tile_layer_752d5a8984de449f866d921dcae246ba,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_6b77b43ed4464e06b62d2d1974aada33.base_layers,
+                layer_control_6b77b43ed4464e06b62d2d1974aada33.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_782f65fc404a41faaa7cc51fa22d162f);
+            tile_layer_752d5a8984de449f866d921dcae246ba.remove();
+        
+</script>
